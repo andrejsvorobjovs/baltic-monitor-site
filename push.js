@@ -5,7 +5,7 @@
 (function () {
   // Public key only — this identifies the app to the push service, it is
   // not a secret. The matching private key never leaves the backend.
-  var VAPID_PUBLIC_KEY = "REPLACE_WITH_REAL_VAPID_PUBLIC_KEY";
+  var VAPID_PUBLIC_KEY = "BPE7HLxOToYIhV0SPgjdwl5LZv3sBsJtb_LdT443sZ9rBkZIQefs7lvR_JWnqcCfci8fw5YizlZYSZQq5QOUONY";
   var SUBSCRIBE_URL = "https://baltic-monitor-push.vercel.app/api/subscribe";
 
   var btn = document.getElementById("push-btn");
