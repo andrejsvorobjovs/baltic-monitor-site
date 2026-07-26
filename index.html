@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baltic Signal Monitor — Independent Baltic Security Signals</title>
+<meta name="description" content="A free, independent early-warning channel tracking Baltic/Russia security signals across 39 sources — official services, wire outlets, and disinformation trackers. Not affiliated with any government.">
+<style>
+  :root {
+    --ink: #f1f3f2;
+    --ink-text: #1b2230;
+    --ink-dim: #5b6472;
+    --border: #d9dcd8;
+    --card: #ffffff;
+    --accent: #1f7570;
+    --accent-text: #ffffff;
+    --ok: #2f7d46;
+    --watch: #9a6a24;
+    --warn: #a4433a;
+    --mono: #eef1ef;
+  }
+  :root[data-theme="dark"] {
+    --ink: #10161f;
+    --ink-text: #e9edec;
+    --ink-dim: #8b93a3;
+    --border: #232b38;
+    --card: #161d29;
+    --accent: #4db8b0;
+    --accent-text: #0b1a19;
+    --ok: #5cc37c;
+    --watch: #d9a548;
+    --warn: #e07162;
+    --mono: #0d1420;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #10161f;
+      --ink-text: #e9edec;
+      --ink-dim: #8b93a3;
+      --border: #232b38;
+      --card: #161d29;
+      --accent: #4db8b0;
+      --accent-text: #0b1a19;
+      --ok: #5cc37c;
+      --watch: #d9a548;
+      --warn: #e07162;
+      --mono: #0d1420;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--ink-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif; }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-variant-numeric: tabular-nums; }
+
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  header.site {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+  header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .wordmark { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+  .wordmark .serif { font-style: italic; }
+  nav.top { display: flex; gap: 24px; }
+  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: 13.5px; letter-spacing: 0.02em; }
+  nav.top a:hover { color: var(--ink-text); }
+
+  /* ---- Hero: editorial, left-aligned, instrument readout beside it ---- */
+  .hero { padding: 72px 0 56px; }
+  .hero .grid {
+    display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start;
+  }
+  @media (max-width: 760px) { .hero .grid { grid-template-columns: 1fr; } }
+  .eyebrow {
+    font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 16px;
+  }
+  .hero h1 {
+    font-size: clamp(30px, 4.4vw, 46px);
+    line-height: 1.12; margin: 0 0 20px; letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .hero p.lede { font-size: 17px; color: var(--ink-dim); max-width: 52ch; margin: 0 0 28px; }
+
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 22px; border-radius: 3px; font-weight: 600; font-size: 14.5px;
+    text-decoration: none; border: 1px solid transparent;
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-text); }
+  .btn.ghost { border-color: var(--border); color: var(--ink-text); }
+
+  /* ---- Instrument readout panel ---- */
+  .readout {
+    background: var(--mono); border: 1px solid var(--border); border-radius: 4px;
+    padding: 20px 22px;
+  }
+  .readout .rt-head {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-dim);
+    padding-bottom: 12px; margin-bottom: 14px; border-bottom: 1px dashed var(--border);
+  }
+  .blip {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--ok); flex: none;
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 60%, transparent);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  .blip.watch { background: var(--watch); }
+  .blip.warn { background: var(--warn); }
+  @media (prefers-reduced-motion: reduce) { .blip { animation: none; } }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 45%, transparent); }
+    70%  { box-shadow: 0 0 0 7px color-mix(in srgb, currentColor 0%, transparent); }
+    100% { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 0%, transparent); }
+  }
+  .rt-row { display: flex; justify-content: space-between; padding: 7px 0; font-size: 13.5px; }
+  .rt-row + .rt-row { border-top: 1px solid var(--border); }
+  .rt-row .k { color: var(--ink-dim); }
+  .rt-row .v { font-weight: 600; }
+
+  /* ---- Sections ---- */
+  section { padding: 52px 0; border-top: 1px solid var(--border); }
+  .sec-head { display: grid; grid-template-columns: 1fr 2fr; gap: 24px; margin-bottom: 28px; }
+  @media (max-width: 700px) { .sec-head { grid-template-columns: 1fr; gap: 8px; } }
+  .sec-head .eyebrow { margin: 0; }
+  .sec-head h2 { font-size: 24px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .sec-head p { color: var(--ink-dim); margin: 0; max-width: 46ch; font-size: 15px; }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 700px) { .split { grid-template-columns: 1fr; } }
+  .panel { border-left: 2px solid var(--accent); padding: 4px 0 4px 20px; }
+  .panel.dim { border-left-color: var(--border); }
+  .panel h3 { margin: 0 0 8px; font-size: 15px; letter-spacing: 0.02em; }
+  .panel p { margin: 0; color: var(--ink-dim); font-size: 14.5px; }
+
+  /* ---- Tier table (report style, not cards) ---- */
+  table.tiers { width: 100%; border-collapse: collapse; }
+  table.tiers th {
+    text-align: left; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-dim); font-weight: 600; padding: 0 0 10px; border-bottom: 1px solid var(--border);
+  }
+  table.tiers td {
+    padding: 16px 0; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 14.5px;
+  }
+  table.tiers tr:last-child td { border-bottom: none; }
+  table.tiers td.tier-name { font-weight: 700; white-space: nowrap; padding-right: 20px; }
+  table.tiers td.tier-desc { color: var(--ink-dim); }
+  table.tiers td.tier-n { text-align: right; white-space: nowrap; color: var(--ink-dim); }
+
+  .levels { display: flex; gap: 0; margin-top: 32px; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  @media (max-width: 700px) { .levels { flex-direction: column; } }
+  .level { flex: 1; padding: 16px 18px; }
+  .level + .level { border-left: 1px solid var(--border); }
+  @media (max-width: 700px) { .level + .level { border-left: none; border-top: 1px solid var(--border); } }
+  .level .lv-name { font-weight: 700; font-size: 13.5px; letter-spacing: 0.03em; }
+  .level p { margin: 6px 0 0; color: var(--ink-dim); font-size: 13.5px; }
+  .level.ok .lv-name { color: var(--ok); }
+  .level.watch .lv-name { color: var(--watch); }
+  .level.warn .lv-name { color: var(--warn); }
+
+  /* ---- Live stat strip (instrument style) ---- */
+  .stat-strip {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--border); border-radius: 4px; overflow: hidden; background: var(--mono);
+  }
+  @media (max-width: 560px) { .stat-strip { grid-template-columns: repeat(2, 1fr); } }
+  .stat-cell { padding: 20px; text-align: center; }
+  .stat-cell + .stat-cell { border-left: 1px solid var(--border); }
+  @media (max-width: 560px) { .stat-cell:nth-child(3) { border-left: none; } }
+  .stat-cell .n { font-size: 26px; font-weight: 700; }
+  .stat-cell .l { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
+  #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
+
+  /* ---- FAQ (report Q/A, not accordion cards) ---- */
+  .qa { border-top: 1px solid var(--border); padding: 20px 0; }
+  .qa:last-child { border-bottom: 1px solid var(--border); }
+  .qa .q { font-weight: 700; font-size: 15px; margin: 0 0 6px; }
+  .qa .a { margin: 0; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
+
+  footer { padding: 40px 0 64px; }
+  footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
+  footer .fine { margin-top: 16px; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="wordmark"><span class="serif">Baltic</span> Signal Monitor</div>
+    <nav class="top">
+      <a href="#how">Method</a>
+      <a href="#status">Status</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <div class="grid">
+    <div>
+      <p class="eyebrow">Independent · Free · Not affiliated with any government</p>
+      <h1 class="serif">Signal, not alarm, on the Baltic frontier</h1>
+      <p class="lede">
+        Automated tracking of Russia/Baltic security signals across 39 sources —
+        national security services, wire outlets, and disinformation trackers —
+        scored for independent corroboration before anything is ever flagged.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://t.me/YOUR_CHANNEL_USERNAME">Join on Telegram</a>
+        <a class="btn ghost" href="#how">Read the method</a>
+      </div>
+    </div>
+    <div class="readout mono">
+      <div class="rt-head"><span class="blip" id="status-dot"></span><span id="status-text">Reading status…</span></div>
+      <div class="rt-row"><span class="k">Last scan</span><span class="v" id="rt-last">—</span></div>
+      <div class="rt-row"><span class="k">Result</span><span class="v" id="rt-level">—</span></div>
+      <div class="rt-row"><span class="k">Since</span><span class="v" id="rt-since">—</span></div>
+      <div class="rt-row"><span class="k">Corrections</span><span class="v" id="rt-corrections">—</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="what">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Read this first</p>
+      <div>
+        <h2>What this is — and isn't</h2>
+      </div>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <h3>What it does</h3>
+        <p>Scans public news, official government sources, and structured event
+        data for Baltic/Russia security signals, then scores results by how
+        many independent sources corroborate the same story before flagging
+        anything as a real alert.</p>
+      </div>
+      <div class="panel dim">
+        <h3>What it is not</h3>
+        <p>Not an official government, NATO, or intelligence source, and not
+        affiliated with any of them. Not verified intelligence or a predictor
+        of the future — a keyword-and-corroboration score, built and run by
+        one person. It can miss things, and it can occasionally be wrong.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Method</p>
+      <div>
+        <h2>How the signal is scored</h2>
+        <p>Every source sits in a trust tier. No single source, however alarming, can trigger a real alert alone — only independent corroboration across tiers does.</p>
+      </div>
+    </div>
+
+    <table class="tiers">
+      <thead><tr><th>Tier</th><th>What qualifies</th><th style="text-align:right">Count</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="tier-name">Tier 1</td>
+          <td class="tier-desc">National security/intelligence services (Estonia, Latvia, Lithuania), NATO, ISW, wire services.</td>
+          <td class="tier-n">10 sources</td>
+        </tr>
+        <tr>
+          <td class="tier-name">Tier 2</td>
+          <td class="tier-desc">National broadcasters, security think tanks, investigative outlets.</td>
+          <td class="tier-n">22 sources</td>
+        </tr>
+        <tr>
+          <td class="tier-name">Tier 3</td>
+          <td class="tier-desc">Published reporting <em>about</em> circulating claims — tracked, never counted as evidence, never able to trigger an alert.</td>
+          <td class="tier-n">7 sources</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="levels">
+      <div class="level ok"><div class="lv-name">QUIET</div><p>Nothing relevant matched this scan.</p></div>
+      <div class="level watch"><div class="lv-name">WATCH</div><p>Relevant, but not yet corroborated by an independent source.</p></div>
+      <div class="level warn"><div class="lv-name">WARN</div><p>The same story, confirmed by two or more independent trusted sources.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="status">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Track record</p>
+      <div>
+        <h2>Live, not curated</h2>
+        <p>Pulled automatically from the same data the Telegram channel uses — nothing shown here is prepared separately for this page.</p>
+      </div>
+    </div>
+    <div class="stat-strip mono">
+      <div class="stat-cell"><div class="n" id="stat-total">—</div><div class="l">Scans logged</div></div>
+      <div class="stat-cell"><div class="n" id="stat-quiet">—</div><div class="l">Quiet</div></div>
+      <div class="stat-cell"><div class="n" id="stat-watch">—</div><div class="l">Watch</div></div>
+      <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Warn</div></div>
+    </div>
+    <p id="status-error">Live status temporarily unavailable — check the Telegram channel directly for current status.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Before you ask</p>
+      <div><h2>Common questions</h2></div>
+    </div>
+    <div class="qa">
+      <p class="q">What if you get something wrong?</p>
+      <p class="a">It gets logged and published as a correction, not quietly fixed — the count above is the full record. Occasionally being wrong and saying so openly is more trustworthy than a suspiciously spotless record.</p>
+    </div>
+    <div class="qa">
+      <p class="q">Do you see who's following this?</p>
+      <p class="a">No — Telegram channels don't show the admin who subscribed, only a total count. This page and the channel don't collect or store personal data about you.</p>
+    </div>
+    <div class="qa">
+      <p class="q">Will this stay free?</p>
+      <p class="a">Yes. If a donation option is ever added, it won't buy faster or better alerts — everyone gets exactly the same thing, at the same time, regardless.</p>
+    </div>
+    <div class="qa">
+      <p class="q">Is this an official warning system?</p>
+      <p class="a">No. If you're worried about an actual emergency, always check your own country's official channels first: Estonia — kriis.ee · Latvia — vugd.gov.lv · Lithuania — lrv.lt.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Baltic Signal Monitor is an independent, personally-built monitoring tool.
+      It is not an official government, NATO, or intelligence source, and is not
+      affiliated with any of them. Corrections are logged and published openly,
+      not hidden.
+    </p>
+    <p class="fine mono" id="generated-note">Live data loads automatically on each visit.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  fetch('status.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function (d) {
+      var dot = document.getElementById('status-dot');
+      if (d.last_level === 'WARN') dot.classList.add('warn');
+      else if (d.last_level === 'WATCH') dot.classList.add('watch');
+
+      document.getElementById('status-text').textContent = d.status_text;
+      document.getElementById('rt-last').textContent = d.freshness_msg || d.last_level;
+      document.getElementById('rt-level').textContent = d.last_level;
+      document.getElementById('rt-since').textContent = d.since;
+      document.getElementById('rt-corrections').textContent = d.correction_count;
+
+      document.getElementById('stat-total').textContent = d.total_scans;
+      document.getElementById('stat-quiet').textContent = d.quiet_count;
+      document.getElementById('stat-watch').textContent = d.watch_count;
+      document.getElementById('stat-warn').textContent = d.warn_count;
+      document.getElementById('generated-note').textContent =
+        'Live data generated ' + d.generated_at + ', tracking since ' + d.since + '.';
+    })
+    .catch(function () {
+      document.getElementById('status-text').textContent = 'Status unavailable';
+      document.getElementById('status-error').style.display = 'block';
+    });
+})();
+</script>
+
+</body>
+</html>
