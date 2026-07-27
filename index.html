@@ -206,6 +206,8 @@
   .item-meta .lvl { font-weight: 700; }
   .item-meta .lvl.watch { color: var(--watch); }
   .item-meta .lvl.warn { color: var(--warn); }
+  .item-row .body { font-size: 14.5px; color: var(--ink-text); margin-top: 2px; }
+  .history-row .unreachable { color: var(--watch); margin-left: 6px; }
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
@@ -334,7 +336,7 @@
       <p class="eyebrow">Track record</p>
       <div>
         <h2>Live, not curated</h2>
-        <p>Pulled automatically from the same data the Telegram channel uses — nothing shown here is prepared separately for this page.</p>
+        <p>Pulled automatically from the same data the Telegram channel uses — nothing shown here is prepared separately for this page. Scans run automatically every ~4 hours (6x/day), not continuously.</p>
       </div>
     </div>
     <div class="stat-strip mono">
@@ -349,6 +351,10 @@
     <div class="item-log" id="item-log-wrap" style="display:none;">
       <p class="item-log-head">Recent flagged items — sourced</p>
       <div id="item-log"></div>
+    </div>
+    <div class="item-log" id="corrections-log-wrap">
+      <p class="item-log-head">Corrections history</p>
+      <div id="corrections-log"><div class="history-empty">Loading…</div></div>
     </div>
     <p id="status-error">Live status temporarily unavailable — check the Telegram channel directly for current status.</p>
   </div>
@@ -434,6 +440,15 @@
           var lvl = document.createElement('span');
           lvl.className = 'lvl ' + String(h.level || '').toLowerCase();
           lvl.textContent = h.level + ' (' + h.count + ' flagged)';
+          // A QUIET result during a scan where sources didn't respond
+          // isn't a real all-clear — flag it rather than let it look
+          // identical to a scan where everything actually checked out.
+          if (h.failed_count) {
+            var unreachable = document.createElement('span');
+            unreachable.className = 'unreachable';
+            unreachable.textContent = '— ' + h.failed_count + ' source(s) unreachable';
+            lvl.appendChild(unreachable);
+          }
 
           row.appendChild(ts);
           row.appendChild(lvl);
@@ -476,6 +491,33 @@
         });
       } else {
         itemLogWrap.style.display = 'none';
+      }
+
+      var correctionsLog = document.getElementById('corrections-log');
+      correctionsLog.textContent = '';
+      var corrections = d.recent_corrections || [];
+      if (corrections.length === 0) {
+        var noCorrections = document.createElement('div');
+        noCorrections.className = 'history-empty';
+        noCorrections.textContent = 'None issued so far — clean record to date.';
+        correctionsLog.appendChild(noCorrections);
+      } else {
+        corrections.forEach(function (c) {
+          var row = document.createElement('div');
+          row.className = 'item-row';
+
+          var meta = document.createElement('div');
+          meta.className = 'item-meta';
+          meta.textContent = (c.ts || '').slice(0, 10) + (c.context ? ' · ' + c.context : '');
+
+          var body = document.createElement('div');
+          body.className = 'body';
+          body.textContent = c.text || '';
+
+          row.appendChild(meta);
+          row.appendChild(body);
+          correctionsLog.appendChild(row);
+        });
       }
     })
     .catch(function () {
