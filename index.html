@@ -354,6 +354,7 @@
     </div>
     <div class="item-log" id="corrections-log-wrap">
       <p class="item-log-head">Corrections history</p>
+      <p style="font-size:13px;color:var(--ink-dim);margin:0 0 10px;">Self-reported when a mistake is noticed — not an automated audit. A clean record means nothing has been caught and reported yet.</p>
       <div id="corrections-log"><div class="history-empty">Loading…</div></div>
     </div>
     <p id="status-error">Live status temporarily unavailable — check the Telegram channel directly for current status.</p>
@@ -368,7 +369,15 @@
     </div>
     <div class="qa">
       <p class="q">What if you get something wrong?</p>
-      <p class="a">It gets logged and published as a correction, not quietly fixed — the count above is the full record. Occasionally being wrong and saying so openly is more trustworthy than a suspiciously spotless record.</p>
+      <p class="a">It gets logged and published as a correction, not quietly fixed — the list above is the full record of what's been reported this way. Occasionally being wrong and saying so openly is more trustworthy than a suspiciously spotless record. One honest limit: this isn't an automated audit — a correction only appears if a mistake is actually noticed and manually reported. A clean record means nothing has been caught and reported yet, not a formal guarantee of zero errors.</p>
+    </div>
+    <div class="qa">
+      <p class="q">What does "N source(s) unreachable" mean?</p>
+      <p class="a">A source's feed didn't respond during that scan — a network hiccup, a site being temporarily down. It means that particular result may be less complete than usual, not that something was hidden. We'd rather show this than let a QUIET result during a broken scan look identical to a real all-clear.</p>
+    </div>
+    <div class="qa">
+      <p class="q">Why don't you list the exact sources?</p>
+      <p class="a">So the scoring can't be gamed — naming exactly which outlets can trigger an alert would let someone target or exploit the specific sources that matter. Tier and count are public; the moment a source actually produces a real WATCH/WARN, its name and link are shown too (see "Recent flagged items" above).</p>
     </div>
     <div class="qa">
       <p class="q">Do you see who's following this?</p>
