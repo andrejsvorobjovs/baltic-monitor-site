@@ -1,115 +1,135 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-07-27T15:03:05.462093+00:00",
+  "last_run_utc": "2026-07-27T16:01:56.711294+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.2h ago",
+  "freshness_msg": "Last scan: 0.1h ago",
   "since": "2026-07-19",
-  "total_scans": 54,
-  "quiet_count": 45,
+  "total_scans": 55,
+  "quiet_count": 46,
   "watch_count": 9,
   "warn_count": 0,
   "correction_count": 0,
-  "generated_at": "2026-07-27 15:13 UTC",
+  "generated_at": "2026-07-27 16:07 UTC",
   "recent_history": [
+    {
+      "ts": "2026-07-27T16:01:56.713582+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0
+    },
     {
       "ts": "2026-07-27T15:03:05.464567+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-27T14:23:06.202078+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-27T13:43:56.900868+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-27T13:26:02.948077+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-27T11:01:10.468496+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-27T10:51:15.748249+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-27T06:38:58.964423+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-27T04:52:10.897730+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-27T00:27:23.284553+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-26T20:16:51.248231+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-26T16:11:43.470272+00:00",
       "level": "WATCH",
-      "count": 1
+      "count": 1,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-26T12:11:46.563423+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-26T10:02:04.126304+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-26T09:38:49.605322+00:00",
       "level": "WATCH",
-      "count": 1
+      "count": 1,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-26T07:22:37.171830+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-25T22:27:37.592718+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-25T20:59:04.224273+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-25T19:22:11.454790+00:00",
       "level": "QUIET",
-      "count": 0
+      "count": 0,
+      "failed_count": 0
     },
     {
       "ts": "2026-07-25T13:50:01.633152+00:00",
       "level": "QUIET",
-      "count": 0
-    },
-    {
-      "ts": "2026-07-25T08:18:40.850066+00:00",
-      "level": "WATCH",
-      "count": 1
+      "count": 0,
+      "failed_count": 0
     }
   ],
   "recent_items": [
@@ -234,5 +254,6 @@
         "hybrid_incident"
       ]
     }
-  ]
+  ],
+  "recent_corrections": []
 }
