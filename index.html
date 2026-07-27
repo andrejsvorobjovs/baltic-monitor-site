@@ -194,6 +194,18 @@
   .history-row .lvl.watch { color: var(--watch); }
   .history-row .lvl.warn { color: var(--warn); }
   .history-empty { color: var(--ink-dim); font-size: 13.5px; padding: 12px 0; }
+
+  .item-log { margin-top: 28px; }
+  .item-log-head { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase;
+                   color: var(--ink-dim); margin: 0 0 10px; }
+  .item-row { padding: 12px 0; border-top: 1px solid var(--border); }
+  .item-row a { color: var(--ink-text); font-weight: 600; font-size: 14.5px;
+                text-decoration: none; }
+  .item-row a:hover { text-decoration: underline; }
+  .item-meta { font-size: 12.5px; color: var(--ink-dim); margin-top: 4px; }
+  .item-meta .lvl { font-weight: 700; }
+  .item-meta .lvl.watch { color: var(--watch); }
+  .item-meta .lvl.warn { color: var(--warn); }
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
@@ -334,6 +346,10 @@
     <div class="history-log mono" id="history-log">
       <div class="history-empty">Loading recent scans…</div>
     </div>
+    <div class="item-log" id="item-log-wrap" style="display:none;">
+      <p class="item-log-head">Recent flagged items — sourced</p>
+      <div id="item-log"></div>
+    </div>
     <p id="status-error">Live status temporarily unavailable — check the Telegram channel directly for current status.</p>
   </div>
 </section>
@@ -422,6 +438,43 @@
           row.appendChild(lvl);
           log.appendChild(row);
         });
+      }
+
+      var itemLog = document.getElementById('item-log');
+      var itemLogWrap = document.getElementById('item-log-wrap');
+      itemLog.textContent = '';
+      var items = d.recent_items || [];
+      if (items.length > 0) {
+        itemLogWrap.style.display = '';
+        items.forEach(function (it) {
+          var row = document.createElement('div');
+          row.className = 'item-row';
+
+          var link = document.createElement('a');
+          // Only ever link http(s) — defense in depth even though this
+          // comes from our own backend, not user input.
+          if (/^https?:\/\//i.test(it.link || '')) {
+            link.href = it.link;
+            link.target = '_blank';
+            link.rel = 'noopener';
+          }
+          link.textContent = it.title || '(untitled)';
+
+          var meta = document.createElement('div');
+          meta.className = 'item-meta';
+          var lvlSpan = document.createElement('span');
+          lvlSpan.className = 'lvl ' + String(it.level || '').toLowerCase();
+          lvlSpan.textContent = it.level || '';
+          meta.appendChild(lvlSpan);
+          meta.appendChild(document.createTextNode(
+            ' · ' + (it.source || '') + ' · ' + (it.ts || '').slice(0, 10)));
+
+          row.appendChild(link);
+          row.appendChild(meta);
+          itemLog.appendChild(row);
+        });
+      } else {
+        itemLogWrap.style.display = 'none';
       }
     })
     .catch(function () {
