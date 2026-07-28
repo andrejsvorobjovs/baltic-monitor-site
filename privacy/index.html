@@ -154,12 +154,19 @@
   <p>
     That subscription is stored in a small database (Upstash Redis,
     reached through Vercel) for exactly one reason: knowing where to
-    deliver a notification. If a subscription stops working — browser
-    uninstalled, permission revoked, device gone — it's automatically
-    deleted the next time a delivery to it fails, rather than kept
-    indefinitely. To stop receiving alerts, disable notifications for the
-    site in your browser's own settings; the subscription becomes invalid
-    on our end and gets cleaned up automatically on the next alert.
+    deliver a notification. It's deleted automatically — whichever
+    happens first: a delivery to it fails permanently (browser
+    uninstalled, permission revoked, device gone), or it simply turns a
+    year old, whether or not it's still working. Nothing is kept
+    indefinitely. To stop receiving alerts sooner, disable notifications
+    for the site in your browser's own settings; the subscription becomes
+    invalid on our end and gets cleaned up automatically the same way.
+  </p>
+  <p>
+    The project's operator can also see how many subscriptions are
+    currently stored, and clear them, through a password-protected admin
+    page — no additional identifying detail is exposed there beyond what's
+    already described on this page.
   </p>
 
   <h2>The website itself</h2>

@@ -157,12 +157,18 @@
   <p>
     See tellimus salvestatakse väikeses andmebaasis (Upstash Redis,
     ligipääsetav Verceli kaudu) täpselt ühel põhjusel: teadmaks, kuhu
-    teavitus edastada. Kui tellimus lakkab töötamast — brauser
-    desinstallitud, luba tühistatud, seade kadunud — kustutatakse see
-    automaatselt järgmisel korral, kui edastus ebaõnnestub, mitte ei
-    hoita tähtajatult. Teavituste peatamiseks keela saidi teavitused oma
-    brauseri enda seadetes; tellimus muutub meie poolel kehtetuks ja
-    puhastatakse automaatselt järgmise teavituse käigus.
+    teavitus edastada. See kustutatakse automaatselt — olenevalt sellest,
+    kumb juhtub enne: edastus sellele ebaõnnestub lõplikult (brauser
+    desinstallitud, luba tühistatud, seade kadunud) või see lihtsalt saab
+    aastaseks, olenemata sellest, kas see ikka veel töötab. Midagi ei
+    hoita tähtajatult. Teavituste kiiremaks peatamiseks keela saidi
+    teavitused oma brauseri enda seadetes; tellimus muutub meie poolel
+    kehtetuks ja puhastatakse automaatselt samal moel.
+  </p>
+  <p>
+    Projekti haldaja näeb samuti, mitu tellimust on parasjagu salvestatud,
+    ja saab need kustutada parooliga kaitstud haldusvaate kaudu — seal ei
+    avaldata rohkem tuvastavat teavet, kui sellel lehel juba kirjeldatud.
   </p>
 
   <h2>Veebisait ise</h2>
