@@ -43,7 +43,7 @@
   }
 
   navigator.serviceWorker
-    .register("sw.js")
+    .register("/sw.js")
     .then(function (reg) {
       return reg.pushManager.getSubscription();
     })
