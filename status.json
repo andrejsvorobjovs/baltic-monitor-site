@@ -1,16 +1,22 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-07-28T09:46:59.964677+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-07-28T13:02:40.200128+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 61,
+  "total_scans": 62,
   "quiet_count": 52,
-  "watch_count": 9,
+  "watch_count": 10,
   "warn_count": 0,
   "correction_count": 0,
-  "generated_at": "2026-07-28 09:46 UTC",
+  "generated_at": "2026-07-28 13:02 UTC",
   "recent_history": [
+    {
+      "ts": "2026-07-28T13:02:40.201712+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0
+    },
     {
       "ts": "2026-07-28T09:46:59.966946+00:00",
       "level": "QUIET",
@@ -124,15 +130,20 @@
       "level": "QUIET",
       "count": 0,
       "failed_count": 0
-    },
-    {
-      "ts": "2026-07-26T10:02:04.126304+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-07-28T13:02:40.202085+00:00",
+      "level": "WATCH",
+      "title": "Drone incursions sow fear, chaos along NATO's Baltic and Finnish borders - Reuters",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdWtBZ2NFQWdpMUQ5dkRMZHpMVElFNkZNZnNWRzV1eHZZanc1ZHJRQWkyMnNxM2dvbGRua3pSTTcxTlpuSDVTcGtpUFpaUmJ0MDBZTUVaeFlINjF0ZnZHdi01UWlZNnJFZ3NheEZ6bXk1SF9ZYzdXbXVqMGFxdVl2ejdqc3c2cEdUX2FtUDdMR0lPaGFLQ1B6ZDdfc2t3X2RzNEE4aHFlU3loYlZETXg2dmpRTVp3VWp0R0NmaXRWR1RGYVYwMDdsQw?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ]
+    },
     {
       "ts": "2026-07-26T16:11:43.470801+00:00",
       "level": "WATCH",
