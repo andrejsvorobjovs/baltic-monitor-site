@@ -211,7 +211,21 @@
   .stat-cell .n { font-size: 26px; font-weight: 700; }
   .stat-cell .l { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
 
-  .history-log { margin-top: 20px; border-top: 1px solid var(--border); }
+  .log-details { margin-top: 20px; border-top: 1px solid var(--border); }
+  .log-details summary {
+    cursor: pointer; padding: 14px 0; font-size: 11.5px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-dim); font-weight: 600;
+    list-style: none;
+  }
+  .log-details summary::-webkit-details-marker { display: none; }
+  .log-details summary::before {
+    content: '▸'; display: inline-block; margin-right: 8px; font-size: 11px;
+    transition: transform 0.15s ease;
+  }
+  .log-details[open] summary::before { transform: rotate(90deg); }
+  .log-details summary .count { color: var(--ink-text); font-weight: 700; }
+  .log-details summary:hover { color: var(--ink-text); }
+
   .history-row { display: flex; justify-content: space-between; padding: 9px 0; font-size: 13.5px; }
   .history-row + .history-row { border-top: 1px solid var(--border); }
   .history-row .ts { color: var(--ink-dim); }
@@ -221,9 +235,6 @@
   .history-row .lvl.warn { color: var(--warn); }
   .history-empty { color: var(--ink-dim); font-size: 13.5px; padding: 12px 0; }
 
-  .item-log { margin-top: 28px; }
-  .item-log-head { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase;
-                   color: var(--ink-dim); margin: 0 0 10px; }
   .item-row { padding: 12px 0; border-top: 1px solid var(--border); }
   .item-row a { color: var(--ink-text); font-weight: 600; font-size: 14.5px;
                 text-decoration: none; }
@@ -375,18 +386,21 @@
       <div class="stat-cell"><div class="n" id="stat-watch">—</div><div class="l">Watch</div></div>
       <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Warn</div></div>
     </div>
-    <div class="history-log mono" id="history-log">
-      <div class="history-empty">Loading recent scans…</div>
-    </div>
-    <div class="item-log" id="item-log-wrap" style="display:none;">
-      <p class="item-log-head">Recent flagged items — sourced</p>
+    <details class="log-details" id="history-log-wrap">
+      <summary>Recent scan history <span class="count" id="history-count"></span></summary>
+      <div class="history-log mono" id="history-log">
+        <div class="history-empty">Loading recent scans…</div>
+      </div>
+    </details>
+    <details class="log-details" id="item-log-wrap" style="display:none;" open>
+      <summary>Recent flagged items — sourced <span class="count" id="item-count"></span></summary>
       <div id="item-log"></div>
-    </div>
-    <div class="item-log" id="corrections-log-wrap">
-      <p class="item-log-head">Corrections history</p>
-      <p style="font-size:13px;color:var(--ink-dim);margin:0 0 10px;">Self-reported when a mistake is noticed — not an automated audit. A clean record means nothing has been caught and reported yet.</p>
+    </details>
+    <details class="log-details" id="corrections-log-wrap">
+      <summary>Corrections history <span class="count" id="corrections-count"></span></summary>
+      <p style="font-size:13px;color:var(--ink-dim);margin:10px 0;">Self-reported when a mistake is noticed — not an automated audit. A clean record means nothing has been caught and reported yet.</p>
       <div id="corrections-log"><div class="history-empty">Loading…</div></div>
-    </div>
+    </details>
     <p id="status-error">Live status temporarily unavailable — check the Telegram channel directly for current status.</p>
   </div>
 </section>
@@ -467,6 +481,7 @@
       var log = document.getElementById('history-log');
       log.textContent = '';
       var hist = d.recent_history || [];
+      document.getElementById('history-count').textContent = '(' + hist.length + ')';
       if (hist.length === 0) {
         var empty = document.createElement('div');
         empty.className = 'history-empty';
@@ -504,6 +519,7 @@
       var itemLogWrap = document.getElementById('item-log-wrap');
       itemLog.textContent = '';
       var items = d.recent_items || [];
+      document.getElementById('item-count').textContent = '(' + items.length + ')';
       if (items.length > 0) {
         itemLogWrap.style.display = '';
         items.forEach(function (it) {
@@ -540,6 +556,7 @@
       var correctionsLog = document.getElementById('corrections-log');
       correctionsLog.textContent = '';
       var corrections = d.recent_corrections || [];
+      document.getElementById('corrections-count').textContent = '(' + corrections.length + ')';
       if (corrections.length === 0) {
         var noCorrections = document.createElement('div');
         noCorrections.className = 'history-empty';
