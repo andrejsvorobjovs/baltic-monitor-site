@@ -30,10 +30,18 @@ self.addEventListener("notificationclick", function (event) {
 
   event.waitUntil(
     clients.matchAll({ type: "window" }).then(function (clientList) {
+      // Compare origin only, not the full URL (which includes "#status") —
+      // an exact match almost never happens since most open tabs sit at
+      // the plain page URL without that fragment, so this used to open a
+      // new tab on every click even when the site was already open.
+      var targetOrigin = new URL(url).origin;
       for (var i = 0; i < clientList.length; i++) {
         var client = clientList[i];
-        if (client.url === url && "focus" in client) {
-          return client.focus();
+        if (new URL(client.url).origin === targetOrigin && "focus" in client) {
+          return client.focus().then(function (focused) {
+            if ("navigate" in focused) return focused.navigate(url);
+            return focused;
+          });
         }
       }
       if (clients.openWindow) {

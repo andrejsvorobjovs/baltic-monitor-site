@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy — Baltic Signal Monitor</title>
+<meta name="description" content="What Baltic Signal Monitor collects, what it doesn't, and who sees what — explained plainly, not in legal boilerplate.">
+<link rel="canonical" href="https://balticsignalmonitor.com/privacy/">
+<link rel="icon" type="image/png" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+
+<!-- Language versions -->
+<link rel="alternate" hreflang="en" href="https://balticsignalmonitor.com/privacy/">
+<link rel="alternate" hreflang="et" href="https://balticsignalmonitor.com/et/privacy/">
+<link rel="alternate" hreflang="lv" href="https://balticsignalmonitor.com/lv/privacy/">
+<link rel="alternate" hreflang="lt" href="https://balticsignalmonitor.com/lt/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://balticsignalmonitor.com/privacy/">
+
+<meta name="robots" content="noindex, follow">
+<style>
+  :root {
+    --ink: #f1f3f2;
+    --ink-text: #1b2230;
+    --ink-dim: #5b6472;
+    --border: #d9dcd8;
+    --card: #ffffff;
+    --accent: #1f7570;
+    --accent-text: #ffffff;
+    --mono: #eef1ef;
+  }
+  :root[data-theme="dark"] {
+    --ink: #10161f;
+    --ink-text: #e9edec;
+    --ink-dim: #8b93a3;
+    --border: #232b38;
+    --card: #161d29;
+    --accent: #4db8b0;
+    --accent-text: #0b1a19;
+    --mono: #0d1420;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #10161f;
+      --ink-text: #e9edec;
+      --ink-dim: #8b93a3;
+      --border: #232b38;
+      --card: #161d29;
+      --accent: #4db8b0;
+      --accent-text: #0b1a19;
+      --mono: #0d1420;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--ink-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  header.site { border-bottom: 1px solid var(--border); padding: 18px 0; }
+  header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .wordmark { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+  .wordmark .serif { font-style: italic; }
+  nav.top { display: flex; gap: 24px; align-items: baseline; }
+  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: 13.5px; letter-spacing: 0.02em; }
+  nav.top a:hover { color: var(--ink-text); }
+  .lang-switch { font-size: 12.5px; color: var(--ink-dim); }
+  .lang-switch a { color: var(--ink-dim); }
+  .lang-switch a.active { color: var(--ink-text); font-weight: 700; }
+  .lang-switch a:hover { color: var(--ink-text); }
+
+  main { padding: 56px 0 40px; }
+  .eyebrow {
+    font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 36px); margin: 0 0 16px; letter-spacing: -0.01em; }
+  h2 { font-size: 18px; margin: 40px 0 10px; }
+  p { color: var(--ink-dim); font-size: 15px; margin: 0 0 14px; max-width: 62ch; }
+  p.lede { color: var(--ink-text); font-size: 16.5px; max-width: 60ch; }
+  .card {
+    background: var(--mono); border: 1px solid var(--border); border-radius: 4px;
+    padding: 18px 22px; margin: 24px 0;
+  }
+  .card p { margin: 0; }
+  ul { color: var(--ink-dim); font-size: 15px; max-width: 62ch; padding-left: 20px; }
+  li { margin: 0 0 8px; }
+  footer { padding: 32px 0 64px; border-top: 1px solid var(--border); margin-top: 24px; }
+  footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
+  footer .fine { margin-top: 12px; font-size: 12px; }
+  .back { display: inline-block; margin-top: 8px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="wordmark"><span class="serif">Baltic</span> Signal Monitor</div>
+    <nav class="top">
+      <a href="/#how">Method</a>
+      <a href="/#status">Status</a>
+      <a href="/#faq">FAQ</a>
+      <span class="lang-switch">
+        <a href="/privacy/" class="active">EN</a> · <a href="/et/privacy/">ET</a> · <a href="/lv/privacy/">LV</a> · <a href="/lt/privacy/">LT</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="eyebrow">Privacy</p>
+  <h1>What this project collects — and what it doesn't</h1>
+  <p class="lede">
+    There's no legal team behind this — it's built and run by one person.
+    So instead of boilerplate, here's a direct explanation of what data
+    this project touches, and what it deliberately never does.
+  </p>
+
+  <div class="card">
+    <p><strong>The short version:</strong> no ads, no analytics, no
+    tracking scripts, no cookies. Nothing is sold or shared with anyone.
+    The only data collected is the minimum needed to deliver an alert —
+    nothing else.</p>
+  </div>
+
+  <h2>If you follow this on Telegram</h2>
+  <p>
+    Joining the Telegram channel is a normal Telegram subscription — the
+    same relationship you'd have with any public channel. As the
+    channel's admin, I can see who's subscribed; that's standard Telegram
+    functionality, not something built for this project, and not
+    something I can turn off. Other subscribers can't see each other, and
+    the subscriber list is never exported, stored elsewhere, sold, or
+    shared beyond what Telegram itself already provides to any channel
+    owner. To stop, just leave or mute the channel in Telegram — there's
+    nothing stored outside Telegram to separately delete.
+  </p>
+
+  <h2>If you use browser push alerts</h2>
+  <p>
+    Clicking "Enable Browser Alerts" creates an anonymous subscription: a
+    randomly-issued web address and an encryption key, generated by your
+    own browser (Chrome, Firefox, Safari, etc.) — not by this project. It
+    carries no name, email, or account of any kind attached; there is no
+    way for this project to identify who's behind any given subscription.
+  </p>
+  <p>
+    That subscription is stored in a small database (Upstash Redis,
+    reached through Vercel) for exactly one reason: knowing where to
+    deliver a notification. If a subscription stops working — browser
+    uninstalled, permission revoked, device gone — it's automatically
+    deleted the next time a delivery to it fails, rather than kept
+    indefinitely. To stop receiving alerts, disable notifications for the
+    site in your browser's own settings; the subscription becomes invalid
+    on our end and gets cleaned up automatically on the next alert.
+  </p>
+
+  <h2>The website itself</h2>
+  <p>
+    Visiting balticsignalmonitor.com sets no cookies, runs no analytics,
+    and doesn't track visitors in any way. The live numbers on the page
+    come from your browser fetching a small public status file
+    (<code>status.json</code>) — a plain file request, no different from
+    loading an image.
+  </p>
+
+  <h2>Third parties this depends on</h2>
+  <ul>
+    <li><strong>GitHub Pages</strong> — hosts this website.</li>
+    <li><strong>Telegram</strong> — runs the channel described above.</li>
+    <li><strong>Vercel + Upstash</strong> — host and store browser push
+    subscriptions, exactly as described above.</li>
+    <li><strong>Ko-fi</strong> — the optional "Support this project"
+    button. Ko-fi only sees anything if you choose to click through and
+    use it; that transaction is covered by Ko-fi's own privacy policy,
+    not this project's.</li>
+  </ul>
+  <p>
+    None of these get more data than what's described on this page, and
+    this project doesn't layer any additional tracking on top of what
+    each of them already does on its own.
+  </p>
+
+  <h2>Questions</h2>
+  <p>
+    This is a one-person, non-commercial project — if you have a question
+    about anything on this page, or want something looked into, write to
+    <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a>.
+  </p>
+
+  <a class="back" href="/">← Back to the main page</a>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Baltic Signal Monitor is an independent, personally-built monitoring
+      tool — not an official government, NATO, or intelligence source, and
+      not affiliated with any of them.
+    </p>
+    <p class="fine mono">Found a security issue? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

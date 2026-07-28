@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privātums — Baltic Signal Monitor</title>
+<meta name="description" content="Ko Baltic Signal Monitor vāc, ko nevāc un kas ko redz — izskaidrots vienkārši, nevis juridiskā valodā.">
+<link rel="canonical" href="https://balticsignalmonitor.com/lv/privacy/">
+<link rel="icon" type="image/png" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+
+<!-- Language versions -->
+<link rel="alternate" hreflang="en" href="https://balticsignalmonitor.com/privacy/">
+<link rel="alternate" hreflang="et" href="https://balticsignalmonitor.com/et/privacy/">
+<link rel="alternate" hreflang="lv" href="https://balticsignalmonitor.com/lv/privacy/">
+<link rel="alternate" hreflang="lt" href="https://balticsignalmonitor.com/lt/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://balticsignalmonitor.com/privacy/">
+
+<meta name="robots" content="noindex, follow">
+<style>
+  :root {
+    --ink: #f1f3f2;
+    --ink-text: #1b2230;
+    --ink-dim: #5b6472;
+    --border: #d9dcd8;
+    --card: #ffffff;
+    --accent: #1f7570;
+    --accent-text: #ffffff;
+    --mono: #eef1ef;
+  }
+  :root[data-theme="dark"] {
+    --ink: #10161f;
+    --ink-text: #e9edec;
+    --ink-dim: #8b93a3;
+    --border: #232b38;
+    --card: #161d29;
+    --accent: #4db8b0;
+    --accent-text: #0b1a19;
+    --mono: #0d1420;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #10161f;
+      --ink-text: #e9edec;
+      --ink-dim: #8b93a3;
+      --border: #232b38;
+      --card: #161d29;
+      --accent: #4db8b0;
+      --accent-text: #0b1a19;
+      --mono: #0d1420;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--ink-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  header.site { border-bottom: 1px solid var(--border); padding: 18px 0; }
+  header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .wordmark { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+  .wordmark .serif { font-style: italic; }
+  nav.top { display: flex; gap: 24px; align-items: baseline; }
+  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: 13.5px; letter-spacing: 0.02em; }
+  nav.top a:hover { color: var(--ink-text); }
+  .lang-switch { font-size: 12.5px; color: var(--ink-dim); }
+  .lang-switch a { color: var(--ink-dim); }
+  .lang-switch a.active { color: var(--ink-text); font-weight: 700; }
+  .lang-switch a:hover { color: var(--ink-text); }
+
+  main { padding: 56px 0 40px; }
+  .eyebrow {
+    font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 36px); margin: 0 0 16px; letter-spacing: -0.01em; }
+  h2 { font-size: 18px; margin: 40px 0 10px; }
+  p { color: var(--ink-dim); font-size: 15px; margin: 0 0 14px; max-width: 62ch; }
+  p.lede { color: var(--ink-text); font-size: 16.5px; max-width: 60ch; }
+  .card {
+    background: var(--mono); border: 1px solid var(--border); border-radius: 4px;
+    padding: 18px 22px; margin: 24px 0;
+  }
+  .card p { margin: 0; }
+  ul { color: var(--ink-dim); font-size: 15px; max-width: 62ch; padding-left: 20px; }
+  li { margin: 0 0 8px; }
+  footer { padding: 32px 0 64px; border-top: 1px solid var(--border); margin-top: 24px; }
+  footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
+  footer .fine { margin-top: 12px; font-size: 12px; }
+  .back { display: inline-block; margin-top: 8px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="wordmark"><span class="serif">Baltic</span> Signal Monitor</div>
+    <nav class="top">
+      <a href="/lv/#how">Metode</a>
+      <a href="/lv/#status">Statuss</a>
+      <a href="/lv/#faq">BUJ</a>
+      <span class="lang-switch">
+        <a href="/privacy/">EN</a> · <a href="/et/privacy/">ET</a> · <a href="/lv/privacy/" class="active">LV</a> · <a href="/lt/privacy/">LT</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="eyebrow">Privātums</p>
+  <h1>Ko šis projekts vāc — un ko nevāc</h1>
+  <p class="lede">
+    Aiz šī nestāv juridiska komanda — to veido un uztur viena persona.
+    Tāpēc standarta juridiska teksta vietā šeit ir tiešs skaidrojums par
+    to, kādus datus šis projekts skar un ko tas apzināti nekad nedara.
+  </p>
+
+  <div class="card">
+    <p><strong>Īsā versija:</strong> nav reklāmu, analītikas, izsekošanas
+    skriptu vai sīkdatņu. Nekas netiek pārdots vai kopīgots ar kādu.
+    Tiek vākti tikai minimāli dati, kas nepieciešami paziņojuma
+    piegādei — nekas cits.</p>
+  </div>
+
+  <h2>Ja seko līdzi Telegram</h2>
+  <p>
+    Pievienošanās Telegram kanālam ir parasta Telegram abonēšana — tāda
+    pati attiecība, kāda tev būtu ar jebkuru publisku kanālu. Kā kanāla
+    administrators, es redzu, kas ir abonējis; tā ir standarta Telegram
+    funkcionalitāte, nevis kaut kas, kas veidots tieši šim projektam, un
+    kaut kas, ko es nevaru izslēgt. Citi abonenti nevar redzēt viens
+    otru, un abonentu saraksts nekad netiek eksportēts, glabāts citur,
+    pārdots vai kopīgots vairāk, nekā Telegram pats jau nodrošina
+    jebkuram kanāla īpašniekam. Lai pārtrauktu, vienkārši pamet vai
+    apklusini kanālu Telegram — ārpus Telegram nekas netiek glabāts, ko
+    atsevišķi dzēst.
+  </p>
+
+  <h2>Ja izmanto pārlūka push paziņojumus</h2>
+  <p>
+    Nospiežot pogu "Iespējot pārlūka paziņojumus", tiek izveidots
+    anonīms abonements: nejauši ģenerēta tīmekļa adrese un šifrēšanas
+    atslēga, ko izveido tavs pārlūks (Chrome, Firefox, Safari u.c.) —
+    nevis šis projekts. Tam nav pievienots ne vārds, ne e-pasts, ne
+    jebkāda veida konts; šim projektam nav iespējas noteikt, kas ir aiz
+    konkrētā abonementa.
+  </p>
+  <p>
+    Šis abonements tiek glabāts nelielā datubāzē (Upstash Redis,
+    pieejama caur Vercel) tieši viena iemesla dēļ: lai zinātu, kur
+    piegādāt paziņojumu. Ja abonements pārstāj darboties — pārlūks
+    atinstalēts, atļauja atsaukta, ierīce pazudusi — tas tiek
+    automātiski dzēsts nākamajā reizē, kad piegāde neizdodas, nevis
+    glabāts bezgalīgi. Lai pārtrauktu saņemt paziņojumus, atspējo šīs
+    vietnes paziņojumus sava pārlūka iestatījumos; abonements kļūst
+    nederīgs mūsu pusē un tiek automātiski iztīrīts nākamajā paziņojuma
+    reizē.
+  </p>
+
+  <h2>Pati vietne</h2>
+  <p>
+    balticsignalmonitor.com apmeklēšana neuzstāda sīkdatnes, nedarbina
+    analītiku un nekādā veidā neizseko apmeklētājus. Lapā redzamie
+    reāllaika skaitļi rodas no tā, ka tavs pārlūks ielādē nelielu
+    publisku statusa failu (<code>status.json</code>) — parasts faila
+    pieprasījums, kas neatšķiras no attēla ielādes.
+  </p>
+
+  <h2>Trešās puses, no kurām šis projekts ir atkarīgs</h2>
+  <ul>
+    <li><strong>GitHub Pages</strong> — mitina šo vietni.</li>
+    <li><strong>Telegram</strong> — nodrošina iepriekš aprakstīto
+    kanālu.</li>
+    <li><strong>Vercel + Upstash</strong> — mitina un glabā pārlūka push
+    abonementus tieši tā, kā aprakstīts iepriekš.</li>
+    <li><strong>Ko-fi</strong> — izvēles poga "Atbalsti šo projektu".
+    Ko-fi redz kaut ko tikai tad, ja izvēlies to nospiest un izmantot;
+    šis darījums ir pakļauts Ko-fi pašas privātuma politikai, nevis šī
+    projekta politikai.</li>
+  </ul>
+  <p>
+    Neviena no tām nesaņem vairāk datu, kā aprakstīts šajā lapā, un šis
+    projekts nepievieno nekādu papildu izsekošanu tam, ko katra no tām
+    jau dara pati par sevi.
+  </p>
+
+  <h2>Jautājumi</h2>
+  <p>
+    Šis ir vienas personas, nekomerciāls projekts — ja tev ir jautājums
+    par kaut ko šajā lapā vai vēlies, lai kaut kas tiktu pārbaudīts,
+    raksti uz
+    <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a>.
+  </p>
+
+  <a class="back" href="/lv/">← Atpakaļ uz sākumlapu</a>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Baltic Signal Monitor ir neatkarīgs, personīgi veidots
+      pārraudzības rīks — nevis oficiāls valdības, NATO vai izlūkošanas
+      avots, un nav saistīts ar nevienu no tiem.
+    </p>
+    <p class="fine mono">Atklāji drošības problēmu? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

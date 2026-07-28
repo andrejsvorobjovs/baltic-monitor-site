@@ -11,14 +11,46 @@
   var btn = document.getElementById("push-btn");
   if (!btn) return;
 
-  var LABELS = {
-    unsupported: "Not supported on this browser",
-    default: "Enable Browser Alerts",
-    subscribing: "Enabling…",
-    subscribed: "Alerts Enabled ✓",
-    denied: "Notifications blocked in browser settings",
-    error: "Something went wrong — tap to retry",
+  // Shared across all four language pages — button text must match
+  // whichever page it's running on, not just the initial server-rendered
+  // "Loading…" text, or every non-English visitor sees English labels
+  // the moment this script takes over.
+  var LABELS_BY_LANG = {
+    en: {
+      unsupported: "Not supported on this browser",
+      default: "Enable Browser Alerts",
+      subscribing: "Enabling…",
+      subscribed: "Alerts Enabled ✓",
+      denied: "Notifications blocked in browser settings",
+      error: "Something went wrong — tap to retry",
+    },
+    et: {
+      unsupported: "Selles brauseris ei toetata",
+      default: "Luba brauseri teavitused",
+      subscribing: "Lubamine…",
+      subscribed: "Teavitused lubatud ✓",
+      denied: "Teavitused on brauseri seadetes blokeeritud",
+      error: "Midagi läks valesti — proovi uuesti",
+    },
+    lv: {
+      unsupported: "Šajā pārlūkā netiek atbalstīts",
+      default: "Iespējot pārlūka paziņojumus",
+      subscribing: "Iespējošana…",
+      subscribed: "Paziņojumi iespējoti ✓",
+      denied: "Paziņojumi bloķēti pārlūka iestatījumos",
+      error: "Kaut kas nogāja greizi — pieskaries, lai mēģinātu vēlreiz",
+    },
+    lt: {
+      unsupported: "Šioje naršyklėje nepalaikoma",
+      default: "Įjungti naršyklės pranešimus",
+      subscribing: "Įjungiama…",
+      subscribed: "Pranešimai įjungti ✓",
+      denied: "Pranešimai užblokuoti naršyklės nustatymuose",
+      error: "Kažkas nutiko — bandykite dar kartą",
+    },
   };
+  var pageLang = (document.documentElement.lang || "en").slice(0, 2).toLowerCase();
+  var LABELS = LABELS_BY_LANG[pageLang] || LABELS_BY_LANG.en;
 
   function setState(state) {
     btn.dataset.state = state;
