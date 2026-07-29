@@ -259,7 +259,7 @@
   .item-meta .lvl.watch { color: var(--watch); }
   .item-meta .lvl.warn { color: var(--warn); }
   .item-row .body { font-size: 14.5px; color: var(--ink-text); margin-top: 2px; }
-  .history-row .unreachable { color: var(--watch); margin-left: 6px; }
+  .history-row .unreachable { color: var(--watch); margin-left: 6px; text-decoration: underline dotted; text-underline-offset: 2px; }
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
@@ -437,7 +437,7 @@
       <p class="q">Kas notiek, ja jūs kļūdāties?</p>
       <p class="a">Kļūda tiek reģistrēta un publicēta kā labojums, nevis klusi izlabota — augstāk redzamais saraksts ir pilnīgs pārskats par to, kas tā ziņots. Reizēm kļūdīties un to atklāti atzīt ir uzticamāk nekā aizdomīgi nevainojama vēsture. Viens godīgs ierobežojums: šis nav automatizēts audits — labojums parādās tikai tad, ja kļūda tiešām tiek pamanīta un manuāli ziņota. Tīra vēsture nozīmē, ka nekas vēl nav pamanīts un ziņots, nevis formālu garantiju par nulles kļūdām.</p>
     </div>
-    <div class="qa">
+    <div class="qa" id="faq-unreachable">
       <p class="q">Ko nozīmē „N avots(i) nav sasniedzami”?</p>
       <p class="a">Avota plūsma neatbildēja šī skenējuma laikā — parasti tas ir parasts, atsevišķs traucējums. Reizēm uzreiz neizdodas liela avotu grupa: šis projekts darbojas uz bezmaksas, koplietotas mitināšanas (GitHub Actions), un šim koplietotajam serveru klāsteram dažkārt tiek piešķirts serveris, kura IP adresi Google jau ir ierobežojis cita, nesaistīta iemesla dēļ — tas vienlaicīgi bloķē visus Google News avotus vienā skenējumā. Kad tas tiek atklāts, skenējums to tagad atpazīst apmēram minūtes laikā un automātiski mēģina vēlreiz citā serverī, nevis gaida nākamo plānoto skenējumu. Jebkurā gadījumā tas nozīmē, ka šis rezultāts var būt mazāk pilnīgs nekā parasti — nevis ka kaut kas tika slēpts. Mēs labāk to parādām, nekā ļaujam klusuma rezultātam bojāta skenējuma laikā izskatīties identiskam ar reālu "viss kārtībā" stāvokli.</p>
     </div>
@@ -541,8 +541,10 @@
           // isn't a real all-clear — flag it rather than let it look
           // identical to a scan where everything actually checked out.
           if (h.failed_count) {
-            var unreachable = document.createElement('span');
+            var unreachable = document.createElement('a');
             unreachable.className = 'unreachable';
+            unreachable.href = '#faq-unreachable';
+            unreachable.title = 'Kāpēc avoti dažreiz neizdodas visi vienlaikus — skatiet BUJ zemāk';
             unreachable.textContent = '— ' + h.failed_count + ' avots(i) nesasniedzami';
             lvl.appendChild(unreachable);
           }

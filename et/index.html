@@ -259,7 +259,7 @@
   .item-meta .lvl.watch { color: var(--watch); }
   .item-meta .lvl.warn { color: var(--warn); }
   .item-row .body { font-size: 14.5px; color: var(--ink-text); margin-top: 2px; }
-  .history-row .unreachable { color: var(--watch); margin-left: 6px; }
+  .history-row .unreachable { color: var(--watch); margin-left: 6px; text-decoration: underline dotted; text-underline-offset: 2px; }
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
@@ -437,7 +437,7 @@
       <p class="q">Mis saab, kui te eksite?</p>
       <p class="a">Viga logitakse ja avaldatakse parandusena, mitte ei parandata vaikselt — ülaltoodud loend on täielik ülevaade sellest, millest on sel viisil teatatud. Aeg-ajalt eksimine ja selle avalik tunnistamine on usaldusväärsem kui kahtlaselt laitmatu ajalugu. Üks aus piirang: see ei ole automatiseeritud audit — parandus ilmub ainult siis, kui viga tegelikult märgatakse ja käsitsi teatatakse. Puhas ajalugu tähendab, et midagi pole veel tuvastatud ega teatatud, mitte formaalset garantiid nullveast.</p>
     </div>
-    <div class="qa">
+    <div class="qa" id="faq-unreachable">
       <p class="q">Mida tähendab „N allikas(t) ei vastanud”?</p>
       <p class="a">Allika voog ei vastanud selle skanni ajal — enamasti on see tavaline, üksik häire. Aeg-ajalt ebaõnnestub aga suur hulk allikaid korraga: see projekt töötab tasuta, jagatud hostimisel (GitHub Actions) ning see jagatud serveripark saab mõnikord serveri, mille IP-aadressi Google on juba mingil muul põhjusel piiranud — see blokeerib ühe skanni jooksul korraga kõik Google Newsi kaudu töötavad allikad. Kui see tuvastatakse, tunneb skann selle nüüd umbes minutiga ära ja proovib automaatselt uuesti teisel serveril, selle asemel et oodata järgmist plaanipärast skanni. Igal juhul tähendab see, et tulemus võib olla tavapärasest vähem täielik — mitte et midagi varjati. Eelistame seda näidata, kui lasta katkise skanni ajal saadud vaiksel tulemusel näida identsena tegeliku kõik-korras olekuga.</p>
     </div>
@@ -541,8 +541,10 @@
           // isn't a real all-clear — flag it rather than let it look
           // identical to a scan where everything actually checked out.
           if (h.failed_count) {
-            var unreachable = document.createElement('span');
+            var unreachable = document.createElement('a');
             unreachable.className = 'unreachable';
+            unreachable.href = '#faq-unreachable';
+            unreachable.title = 'Miks allikad vahel korraga ebaõnnestuvad — vaata KKK-d allpool';
             unreachable.textContent = '— ' + h.failed_count + ' allikas(t) ei vastanud';
             lvl.appendChild(unreachable);
           }

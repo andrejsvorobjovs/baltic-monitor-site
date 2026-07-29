@@ -258,7 +258,7 @@
   .item-meta .lvl.watch { color: var(--watch); }
   .item-meta .lvl.warn { color: var(--warn); }
   .item-row .body { font-size: 14.5px; color: var(--ink-text); margin-top: 2px; }
-  .history-row .unreachable { color: var(--watch); margin-left: 6px; }
+  .history-row .unreachable { color: var(--watch); margin-left: 6px; text-decoration: underline dotted; text-underline-offset: 2px; }
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
@@ -432,7 +432,7 @@
       <p class="q">What if you get something wrong?</p>
       <p class="a">It gets logged and published as a correction, not quietly fixed — the list above is the full record of what's been reported this way. Occasionally being wrong and saying so openly is more trustworthy than a suspiciously spotless record. One honest limit: this isn't an automated audit — a correction only appears if a mistake is actually noticed and manually reported. A clean record means nothing has been caught and reported yet, not a formal guarantee of zero errors.</p>
     </div>
-    <div class="qa">
+    <div class="qa" id="faq-unreachable">
       <p class="q">What does "N source(s) unreachable" mean?</p>
       <p class="a">A source's feed didn't respond during that scan — usually a normal, isolated hiccup. Occasionally a large batch fails all at once instead: this project runs on free, shared hosting (GitHub Actions), and that shared pool sometimes gets a server whose IP address Google has already rate-limited for unrelated reasons, which blocks every Google-News-routed source in one scan together. When that's detected, the scan now recognizes it within about a minute and automatically retries on a different server, rather than waiting for the next scheduled run. Either way, it means that result may be less complete than usual — not that something was hidden. We'd rather show this than let a broken scan look identical to a real all-clear.</p>
     </div>
@@ -532,8 +532,10 @@
           // isn't a real all-clear — flag it rather than let it look
           // identical to a scan where everything actually checked out.
           if (h.failed_count) {
-            var unreachable = document.createElement('span');
+            var unreachable = document.createElement('a');
             unreachable.className = 'unreachable';
+            unreachable.href = '#faq-unreachable';
+            unreachable.title = 'Why sources sometimes fail together — see the FAQ below';
             unreachable.textContent = '— ' + h.failed_count + ' source(s) unreachable';
             lvl.appendChild(unreachable);
           }

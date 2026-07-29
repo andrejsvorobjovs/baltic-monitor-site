@@ -259,7 +259,7 @@
   .item-meta .lvl.watch { color: var(--watch); }
   .item-meta .lvl.warn { color: var(--warn); }
   .item-row .body { font-size: 14.5px; color: var(--ink-text); margin-top: 2px; }
-  .history-row .unreachable { color: var(--watch); margin-left: 6px; }
+  .history-row .unreachable { color: var(--watch); margin-left: 6px; text-decoration: underline dotted; text-underline-offset: 2px; }
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
@@ -437,7 +437,7 @@
       <p class="q">Kas atsitinka, jei suklystate?</p>
       <p class="a">Klaida užregistruojama ir paskelbiama kaip pataisymas, o ne tyliai ištaisoma — aukščiau esantis sąrašas yra pilnas apie tai praneštų dalykų įrašas. Retkarčiais suklysti ir tai atvirai pripažinti yra patikimiau nei įtartinai nepriekaištinga istorija. Vienas sąžiningas apribojimas: tai nėra automatizuotas auditas — pataisymas atsiranda tik tada, kai klaida iš tikrųjų pastebima ir apie ją pranešama rankiniu būdu. Švari istorija reiškia, kad kol kas niekas nebuvo pastebėta ir apie tai nepranešta, o ne formalią garantiją dėl nulinių klaidų.</p>
     </div>
-    <div class="qa">
+    <div class="qa" id="faq-unreachable">
       <p class="q">Ką reiškia „N šaltinis(-iai) nepasiekiamas(-i)"?</p>
       <p class="a">Šaltinio srautas neatsakė šio nuskaitymo metu — dažniausiai tai įprastas, pavienis trikdis. Kartais iš karto nepavyksta didelė šaltinių grupė: šis projektas veikia nemokamame, bendrai naudojamame serveryje (GitHub Actions), o šiam bendram serverių telkiniui kartais atitenka serveris, kurio IP adresą „Google" jau apribojo dėl nesusijusios priežasties — tai vienu metu užblokuoja visus per „Google News" veikiančius šaltinius tame pačiame nuskaityme. Kai tai aptinkama, nuskaitymas dabar atpažįsta tai per maždaug minutę ir automatiškai bando dar kartą kitame serveryje, užuot laukęs kito suplanuoto nuskaitymo. Bet kuriuo atveju tai reiškia, kad rezultatas gali būti mažiau išsamus nei įprastai — o ne kad kažkas buvo paslėpta. Verčiau tai parodyti, nei leisti ramaus rezultato per sutrikusį nuskaitymą atrodyti identiškai tikram viskas-tvarkoje būviui.</p>
     </div>
@@ -541,8 +541,10 @@
           // isn't a real all-clear — flag it rather than let it look
           // identical to a scan where everything actually checked out.
           if (h.failed_count) {
-            var unreachable = document.createElement('span');
+            var unreachable = document.createElement('a');
             unreachable.className = 'unreachable';
+            unreachable.href = '#faq-unreachable';
+            unreachable.title = 'Kodėl šaltiniai kartais nepavyksta visi kartu — žr. DUK žemiau';
             unreachable.textContent = '— ' + h.failed_count + ' šaltinis(-iai) nepasiekiamas(-i)';
             lvl.appendChild(unreachable);
           }
