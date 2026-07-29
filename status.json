@@ -1,16 +1,22 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-07-29T09:53:26.406312+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-07-29T13:12:33.444392+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 69,
+  "total_scans": 70,
   "quiet_count": 59,
-  "watch_count": 10,
+  "watch_count": 11,
   "warn_count": 0,
   "correction_count": 0,
-  "generated_at": "2026-07-29 09:53 UTC",
+  "generated_at": "2026-07-29 13:12 UTC",
   "recent_history": [
+    {
+      "ts": "2026-07-29T13:12:33.446723+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0
+    },
     {
       "ts": "2026-07-29T09:53:26.408641+00:00",
       "level": "QUIET",
@@ -124,15 +130,20 @@
       "level": "QUIET",
       "count": 0,
       "failed_count": 0
-    },
-    {
-      "ts": "2026-07-27T11:01:10.468496+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-07-29T13:12:33.447434+00:00",
+      "level": "WATCH",
+      "title": "Estonia sends additional border guards to Latvia over migrants from Belarus",
+      "source": "GDELT Cloud (POLITICAL)",
+      "link": "https://gdeltcloud.com/events/estonia-sends-additional-border-guards-to-latvia-over-migran--cameoplus_e9f71b82dc052f7a",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ]
+    },
     {
       "ts": "2026-07-28T13:02:40.202085+00:00",
       "level": "WATCH",
