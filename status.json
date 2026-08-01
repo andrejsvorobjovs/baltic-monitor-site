@@ -1,16 +1,22 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-07-31T20:33:22.451470+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-01T00:18:13.574351+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 85,
+  "total_scans": 86,
   "quiet_count": 73,
-  "watch_count": 12,
+  "watch_count": 13,
   "warn_count": 0,
   "correction_count": 0,
-  "generated_at": "2026-07-31 20:33 UTC",
+  "generated_at": "2026-08-01 00:18 UTC",
   "recent_history": [
+    {
+      "ts": "2026-08-01T00:18:13.576651+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 0
+    },
     {
       "ts": "2026-07-31T20:33:22.454057+00:00",
       "level": "QUIET",
@@ -124,15 +130,42 @@
       "level": "QUIET",
       "count": 0,
       "failed_count": 0
-    },
-    {
-      "ts": "2026-07-29T00:38:16.210027+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 60
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-01T00:18:13.577487+00:00",
+      "level": "WATCH",
+      "title": "Lithuania delivers protest note to Russia over strikes on Ukraine, airspace violations",
+      "source": "GDELT Cloud (POLITICAL)",
+      "link": "https://gdeltcloud.com/events/lithuania-delivers-protest-note-to-russia-over-strikes-on-uk--cameoplus_bf22278e480f987e",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ]
+    },
+    {
+      "ts": "2026-08-01T00:18:13.577487+00:00",
+      "level": "WATCH",
+      "title": "Lithuania sends 32 firefighters to help France fight wildfires",
+      "source": "GDELT Cloud (ENVIRONMENT)",
+      "link": "https://gdeltcloud.com/events/lithuania-sends-32-firefighters-to-help-france-fight-wildfir--cameoplus_abd98d23478b1c3b",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ]
+    },
+    {
+      "ts": "2026-08-01T00:18:13.577487+00:00",
+      "level": "WATCH",
+      "title": "Drone incursions sow fear, chaos along NATO's Baltic and Finnish borders - Reuters",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdWtBZ2NFQWdpMUQ5dkRMZHpMVElFNkZNZnNWRzV1eHZZanc1ZHJRQWkyMnNxM2dvbGRua3pSTTcxTlpuSDVTcGtpUFpaUmJ0MDBZTUVaeFlINjF0ZnZHdi01UWlZNnJFZ3NheEZ6bXk1SF9ZYzdXbXVqMGFxdVl2ejdqc3c2cEdUX2FtUDdMR0lPaGFLQ1B6ZDdfc2t3X2RzNEE4aHFlU3loYlZETXg2dmpRTVp3VWp0R0NmaXRWR1RGYVYwMDdsQw?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ]
+    },
     {
       "ts": "2026-07-29T16:43:08.598276+00:00",
       "level": "WATCH",
@@ -260,28 +293,6 @@
       "title": "An adviser to the Lithuanian president ruled out a Russian military invasion but expects provocations - LIGA.net",
       "source": "General wire coverage",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZ3B0SmcyakQyejB3djhTTUdYdDA4dE0yTDhndzVjTjJlbzlyVlQwLWFzcVN1c1NIZnRGRjNIRUZWaXJKQXBmT0hOcG9OS0hoQXgyS28wT1pneURWcktRc2hnM1dyOURvWWhJV3k3R3QzRXZCN1cxbG8wZU43emZhZUtKSElyWFgwX2JnZzNiWk9XSFFFQV93dmstSklLSVhhbVlzNjZyN2Vmb0lPUW5KUWY0THNPZF9naTd5V2RqNkpkVWpabWV3S0dWdUNqS19FRXVz?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ]
-    },
-    {
-      "ts": "2026-07-20T20:12:32.385554+00:00",
-      "level": "WATCH",
-      "title": "Lithuania proposes constitutional changes to allow nuclear weapons on its soil",
-      "source": "GDELT Cloud",
-      "link": "https://gdeltcloud.com/events/lithuania-proposes-constitutional-changes-to-allow-nuclear-w--cameoplus_5e9cb23ca02f3a3c",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ]
-    },
-    {
-      "ts": "2026-07-20T20:12:32.385554+00:00",
-      "level": "WATCH",
-      "title": "Lithuania warns Poland about alleged Russian provocations",
-      "source": "GDELT Cloud",
-      "link": "https://gdeltcloud.com/events/lithuania-warns-poland-about-alleged-russian-provocations--cameoplus_b8f27852dd48375a",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
