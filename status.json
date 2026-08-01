@@ -1,16 +1,22 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-01T12:15:34.532928+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 1.8h ago",
+  "last_run_utc": "2026-08-01T16:17:30.503638+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 89,
+  "total_scans": 90,
   "quiet_count": 76,
-  "watch_count": 13,
+  "watch_count": 14,
   "warn_count": 0,
   "correction_count": 0,
-  "generated_at": "2026-08-01 14:00 UTC",
+  "generated_at": "2026-08-01 16:17 UTC",
   "recent_history": [
+    {
+      "ts": "2026-08-01T16:17:30.506082+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0
+    },
     {
       "ts": "2026-08-01T12:15:34.535282+00:00",
       "level": "QUIET",
@@ -124,15 +130,20 @@
       "level": "WATCH",
       "count": 1,
       "failed_count": 0
-    },
-    {
-      "ts": "2026-07-29T13:12:33.446723+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-01T16:17:30.506999+00:00",
+      "level": "WATCH",
+      "title": "Lithuania delivers protest note to Russia over strikes on Ukraine, airspace violations",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/lithuania-delivers-protest-note-to-russia-over-strikes-on-uk--cameoplus_bf22278e480f987e",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ]
+    },
     {
       "ts": "2026-08-01T00:18:13.577487+00:00",
       "level": "WATCH",
@@ -282,17 +293,6 @@
       "title": "NATO would reinforce Lithuania if Russia escalates provocations, presidential aide says - LRT",
       "source": "LRT (Lithuania)",
       "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZTYyQ2djRENZekhEVTZteDV1NnBUOENyb0FUV292LWM4bEhKVWd6TjlqZ3JBVjNmaHp3WjNOZmoxeGJrdy1CMzFRRmRueThBd1RKaklRc1BxTGpqckFHbklrVW5OdVZQTzkwNmtiVm9wMXYxb09OQXBrYU9lRFA3d1dEcTQ5SFdIMFVCVmVVbWI4RVl2cjNLSlpoSlJWMXhDNFJ5WkdMazFGTUVDcjAxT0NCU1JjXzBNR0xwUHJadEhDbFlUVkk5VTN6aHJyOVY3?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ]
-    },
-    {
-      "ts": "2026-07-21T14:18:19.539278+00:00",
-      "level": "WATCH",
-      "title": "An adviser to the Lithuanian president ruled out a Russian military invasion but expects provocations - LIGA.net",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZ3B0SmcyakQyejB3djhTTUdYdDA4dE0yTDhndzVjTjJlbzlyVlQwLWFzcVN1c1NIZnRGRjNIRUZWaXJKQXBmT0hOcG9OS0hoQXgyS28wT1pneURWcktRc2hnM1dyOURvWWhJV3k3R3QzRXZCN1cxbG8wZU43emZhZUtKSElyWFgwX2JnZzNiWk9XSFFFQV93dmstSklLSVhhbVlzNjZyN2Vmb0lPUW5KUWY0THNPZF9naTd5V2RqNkpkVWpabWV3S0dWdUNqS19FRXVz?oc=5",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
