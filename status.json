@@ -1,16 +1,22 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-03T10:59:57.959772+00:00",
+  "last_run_utc": "2026-08-03T13:54:52.554837+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 100,
-  "quiet_count": 86,
+  "total_scans": 101,
+  "quiet_count": 87,
   "watch_count": 14,
   "warn_count": 0,
   "correction_count": 0,
-  "generated_at": "2026-08-03 10:59 UTC",
+  "generated_at": "2026-08-03 13:54 UTC",
   "recent_history": [
+    {
+      "ts": "2026-08-03T13:54:52.557169+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0
+    },
     {
       "ts": "2026-08-03T10:59:57.962048+00:00",
       "level": "QUIET",
@@ -121,12 +127,6 @@
     },
     {
       "ts": "2026-07-31T10:00:02.954191+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1
-    },
-    {
-      "ts": "2026-07-31T06:27:58.575999+00:00",
       "level": "QUIET",
       "count": 0,
       "failed_count": 1
