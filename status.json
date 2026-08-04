@@ -1,16 +1,22 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-04T17:09:16.831350+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-04T20:48:05.098755+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 108,
+  "total_scans": 109,
   "quiet_count": 94,
-  "watch_count": 14,
+  "watch_count": 15,
   "warn_count": 0,
   "correction_count": 0,
-  "generated_at": "2026-08-04 17:09 UTC",
+  "generated_at": "2026-08-04 20:48 UTC",
   "recent_history": [
+    {
+      "ts": "2026-08-04T20:48:05.101262+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0
+    },
     {
       "ts": "2026-08-04T17:09:16.833068+00:00",
       "level": "QUIET",
@@ -124,15 +130,20 @@
       "level": "WATCH",
       "count": 1,
       "failed_count": 0
-    },
-    {
-      "ts": "2026-08-01T12:15:34.535282+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-04T20:48:05.102295+00:00",
+      "level": "WATCH",
+      "title": "Latvia plans to send about 20 soldiers to Strait of Hormuz",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/latvia-plans-to-send-about-20-soldiers-to-strait-of-hormuz--cameoplus_c7debeac1e901184",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ]
+    },
     {
       "ts": "2026-08-01T16:17:30.506999+00:00",
       "level": "WATCH",
@@ -285,17 +296,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ]
-    },
-    {
-      "ts": "2026-07-21T19:45:23.917451+00:00",
-      "level": "WATCH",
-      "title": "NATO would reinforce Lithuania if Russia escalates provocations, presidential aide says - LRT",
-      "source": "LRT (Lithuania)",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZTYyQ2djRENZekhEVTZteDV1NnBUOENyb0FUV292LWM4bEhKVWd6TjlqZ3JBVjNmaHp3WjNOZmoxeGJrdy1CMzFRRmRueThBd1RKaklRc1BxTGpqckFHbklrVW5OdVZQTzkwNmtiVm9wMXYxb09OQXBrYU9lRFA3d1dEcTQ5SFdIMFVCVmVVbWI4RVl2cjNLSlpoSlJWMXhDNFJ5WkdMazFGTUVDcjAxT0NCU1JjXzBNR0xwUHJadEhDbFlUVkk5VTN6aHJyOVY3?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ]
     }
   ],
