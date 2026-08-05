@@ -601,9 +601,20 @@
 
           var detail = document.createElement('div');
           detail.className = 'detail';
-          var scannedText = (typeof h.sources_scanned === 'number')
-            ? h.sources_scanned + ' source(s) scanned (Tier 1/2/3 + GDELT)'
-            : 'sources-scanned count not recorded for this older scan';
+          // "+ GDELT" only appears when gdelt_ran is actually true for
+          // this scan -- real bug, caught from a screenshot: this used
+          // to be a hardcoded suffix (and sources_scanned itself used to
+          // add 1 for GDELT), so "X source(s) scanned" here silently
+          // disagreed with the "total_sources" figure used elsewhere on
+          // this same page. Both now always use the same roster count.
+          var scannedText;
+          if (typeof h.sources_scanned !== 'number') {
+            scannedText = 'sources-scanned count not recorded for this older scan';
+          } else if (h.gdelt_ran) {
+            scannedText = h.sources_scanned + ' source(s) scanned (Tier 1/2/3 + GDELT)';
+          } else {
+            scannedText = h.sources_scanned + ' source(s) scanned (Tier 1/2/3)';
+          }
           var detailParts = [scannedText, (h.tier3_count || 0) + ' rumor/disinfo item(s) tracked'];
           // Mirrors Telegram's own digest headline ("X relevant item(s)
           // found, Y new since last scan" / "Z excluded as stale") — real

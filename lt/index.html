@@ -615,9 +615,14 @@
 
           var detail = document.createElement('div');
           detail.className = 'detail';
-          var scannedText = (typeof h.sources_scanned === 'number')
-            ? h.sources_scanned + ' šaltiniai patikrinti (1/2/3 lygis + GDELT)'
-            : 'šio senesnio nuskaitymo šaltinių skaičius neįrašytas';
+          var scannedText;
+          if (typeof h.sources_scanned !== 'number') {
+            scannedText = 'šio senesnio nuskaitymo šaltinių skaičius neįrašytas';
+          } else if (h.gdelt_ran) {
+            scannedText = h.sources_scanned + ' šaltiniai patikrinti (1/2/3 lygis + GDELT)';
+          } else {
+            scannedText = h.sources_scanned + ' šaltiniai patikrinti (1/2/3 lygis)';
+          }
           var detailParts = [scannedText, (h.tier3_count || 0) + ' gandų/dezinformacijos elementas(-ai) stebimas(-i)'];
           if (typeof h.new_items_count === 'number') {
             detailParts.push(h.new_items_count + ' naujas(-i) elementas(-ai) peržiūrėtas(-i)');

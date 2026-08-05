@@ -609,9 +609,14 @@
 
           var detail = document.createElement('div');
           detail.className = 'detail';
-          var scannedText = (typeof h.sources_scanned === 'number')
-            ? h.sources_scanned + ' avoti pārbaudīti (1./2./3. līmenis + GDELT)'
-            : 'šim vecākajam skenējumam avotu skaits nav reģistrēts';
+          var scannedText;
+          if (typeof h.sources_scanned !== 'number') {
+            scannedText = 'šim vecākajam skenējumam avotu skaits nav reģistrēts';
+          } else if (h.gdelt_ran) {
+            scannedText = h.sources_scanned + ' avoti pārbaudīti (1./2./3. līmenis + GDELT)';
+          } else {
+            scannedText = h.sources_scanned + ' avoti pārbaudīti (1./2./3. līmenis)';
+          }
           var detailParts = [scannedText, (h.tier3_count || 0) + ' baumu/dezinformācijas vienība(s) izsekota(s)'];
           if (typeof h.new_items_count === 'number') {
             detailParts.push(h.new_items_count + ' jauns vienums(-i) pārskatīts(-i)');

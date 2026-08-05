@@ -609,9 +609,14 @@
 
           var detail = document.createElement('div');
           detail.className = 'detail';
-          var scannedText = (typeof h.sources_scanned === 'number')
-            ? h.sources_scanned + ' allikat skannitud (1./2./3. tase + GDELT)'
-            : 'selle vanema skaneeringu allikate arvu ei salvestatud';
+          var scannedText;
+          if (typeof h.sources_scanned !== 'number') {
+            scannedText = 'selle vanema skaneeringu allikate arvu ei salvestatud';
+          } else if (h.gdelt_ran) {
+            scannedText = h.sources_scanned + ' allikat skannitud (1./2./3. tase + GDELT)';
+          } else {
+            scannedText = h.sources_scanned + ' allikat skannitud (1./2./3. tase)';
+          }
           var detailParts = [scannedText, (h.tier3_count || 0) + ' kuulujutu/desinfo üksust jälgitud'];
           if (typeof h.new_items_count === 'number') {
             detailParts.push(h.new_items_count + ' uut objekti läbi vaadatud');
