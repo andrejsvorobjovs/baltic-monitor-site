@@ -2,14 +2,14 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-08-05T20:47:13.473262+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 0.1h ago",
   "since": "2026-07-19",
   "total_scans": 120,
   "quiet_count": 105,
   "watch_count": 15,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-05 20:47 UTC",
+  "generated_at": "2026-08-05 20:50 UTC",
   "total_sources": 87,
   "tier1_sources": 19,
   "tier2_sources": 57,
@@ -495,6 +495,16 @@
     }
   ],
   "recent_updates": [
+    {
+      "ts": "2026-08-05T20:50:31.498288+00:00",
+      "title": "Corrections now reach the site immediately",
+      "text": "Published corrections used to only update this repo's own private log -- the public site's Corrections history section wouldn't show it until the next scheduled scan happened to run, sometimes hours later. Fixed so a correction reaches the site the moment it's published."
+    },
+    {
+      "ts": "2026-08-05T20:48:21.917933+00:00",
+      "title": "Fixed duplicate stories in the RSS feed and site",
+      "text": "Some flagged stories were briefly showing up twice (in feed.xml and on the site's Recent flagged items list) when the same event got re-detected under a new link. Fixed at the source and added a safety net so it can't recur."
+    },
     {
       "ts": "2026-08-05T17:16:05+00:00",
       "title": "Poland added as a tracked country",
