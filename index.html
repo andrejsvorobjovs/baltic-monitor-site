@@ -592,8 +592,43 @@
           var scannedText = (typeof h.sources_scanned === 'number')
             ? h.sources_scanned + ' source(s) scanned (Tier 1/2/3 + GDELT)'
             : 'sources-scanned count not recorded for this older scan';
-          detail.textContent = scannedText + ' · ' + (h.tier3_count || 0) + ' rumor/disinfo item(s) tracked';
+          var detailParts = [scannedText, (h.tier3_count || 0) + ' rumor/disinfo item(s) tracked'];
+          // Mirrors Telegram's own digest headline ("X relevant item(s)
+          // found, Y new since last scan" / "Z excluded as stale") — real
+          // feedback that the site showed less evidence of work done per
+          // scan than Telegram already did. new_items_count is omitted
+          // (not shown as 0) for older entries logged before this field
+          // existed; stale_count only shows when non-zero, same as
+          // Telegram's own conditional.
+          if (typeof h.new_items_count === 'number') {
+            detailParts.push(h.new_items_count + ' new item(s) reviewed');
+          }
+          if (h.stale_count) {
+            detailParts.push(h.stale_count + ' stale item(s) excluded');
+          }
+          detail.textContent = detailParts.join(' · ');
           row.appendChild(detail);
+
+          // Category breakdown across this scan's flagged items, mirroring
+          // Telegram's own "Markers: troop movement: 2, cyber: 1" summary
+          // line — computed from the same items already listed below, no
+          // extra data needed.
+          var markerCounts = {};
+          (h.items || []).forEach(function (it) {
+            (it.categories || []).forEach(function (c) {
+              markerCounts[c] = (markerCounts[c] || 0) + 1;
+            });
+          });
+          var markerKeys = Object.keys(markerCounts);
+          if (markerKeys.length) {
+            markerKeys.sort(function (a, b) { return markerCounts[b] - markerCounts[a]; });
+            var markers = document.createElement('div');
+            markers.style.marginTop = '4px';
+            markers.textContent = 'Markers: ' + markerKeys.map(function (c) {
+              return c.replace(/_/g, ' ') + ': ' + markerCounts[c];
+            }).join(', ');
+            row.appendChild(markers);
+          }
 
           // Links each flagged item directly on the scan that produced it —
           // otherwise "WATCH (1 flagged)" gave no way to see WHAT was
@@ -621,7 +656,8 @@
             if (metaParts.length) {
               var itemMeta = document.createElement('span');
               itemMeta.className = 'detail-item-meta';
-              itemMeta.textContent = ' — ' + metaParts.join(' · ');
+              var tierPrefix = it.tier ? '[' + String(it.tier).toUpperCase() + '] ' : '';
+              itemMeta.textContent = ' — ' + tierPrefix + metaParts.join(' · ');
               itemRow.appendChild(itemMeta);
             }
 
@@ -659,8 +695,9 @@
           lvlSpan.className = 'lvl ' + String(it.level || '').toLowerCase();
           lvlSpan.textContent = it.level || '';
           meta.appendChild(lvlSpan);
+          var tierPrefix = it.tier ? ' [' + String(it.tier).toUpperCase() + ']' : '';
           meta.appendChild(document.createTextNode(
-            ' · ' + (it.source || '') + ' · ' + (it.ts || '').slice(0, 10)));
+            tierPrefix + ' · ' + (it.source || '') + ' · ' + (it.ts || '').slice(0, 10)));
           if (it.categories && it.categories.length) {
             meta.appendChild(document.createTextNode(
               ' · ' + it.categories.map(function (c) {
