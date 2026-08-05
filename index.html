@@ -541,6 +541,18 @@
       document.getElementById('generated-note').textContent =
         'Live data generated ' + d.generated_at + ', tracking since ' + d.since + '.';
 
+      // Same GDELT classification + Goldstein-scale intensity detail the
+      // Telegram digest already shows per GDELT item — empty for every
+      // other tier, which never has these fields set in the first place.
+      function gdeltDetailText(it) {
+        var parts = [it.gdelt_category, it.gdelt_subcategory, it.gdelt_event_code].filter(Boolean);
+        var text = parts.length ? ' · GDELT: ' + parts.join(' / ') : '';
+        if (typeof it.goldstein === 'number') {
+          text += ' · Goldstein: ' + it.goldstein;
+        }
+        return text;
+      }
+
       var log = document.getElementById('history-log');
       log.textContent = '';
       var hist = d.recent_history || [];
@@ -657,7 +669,7 @@
               var itemMeta = document.createElement('span');
               itemMeta.className = 'detail-item-meta';
               var tierPrefix = it.tier ? '[' + String(it.tier).toUpperCase() + '] ' : '';
-              itemMeta.textContent = ' — ' + tierPrefix + metaParts.join(' · ');
+              itemMeta.textContent = ' — ' + tierPrefix + metaParts.join(' · ') + gdeltDetailText(it);
               itemRow.appendChild(itemMeta);
             }
 
@@ -703,6 +715,10 @@
               ' · ' + it.categories.map(function (c) {
                 return String(c).replace(/_/g, ' ');
               }).join(', ')));
+          }
+          var gdeltText = gdeltDetailText(it);
+          if (gdeltText) {
+            meta.appendChild(document.createTextNode(gdeltText));
           }
 
           row.appendChild(link);
