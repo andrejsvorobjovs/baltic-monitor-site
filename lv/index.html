@@ -257,6 +257,10 @@
   .history-row .lvl.watch { color: var(--watch); }
   .history-row .lvl.warn { color: var(--warn); }
   .history-row .detail { color: var(--ink-dim); font-size: 12.5px; padding: 6px 0 0; }
+  .history-row .detail-item { padding: 5px 0 0; }
+  .history-row .detail-item a { color: var(--ink-text); font-weight: 600; font-size: 12.5px; text-decoration: none; }
+  .history-row .detail-item a:hover { text-decoration: underline; }
+  .history-row .detail-item-meta { color: var(--ink-dim); font-size: 11.5px; }
   .history-empty { color: var(--ink-dim); font-size: 13.5px; padding: 12px 0; }
 
   .item-row { padding: 12px 0; border-top: 1px solid var(--border); }
@@ -587,6 +591,39 @@
           detail.textContent = scannedText + ' · ' + (h.tier3_count || 0) + ' baumu/dezinformācijas vienība(s) izsekota(s)';
           row.appendChild(detail);
 
+          // Links each flagged item directly on the scan that produced it —
+          // otherwise "WATCH (1 flagged)" gave no way to see WHAT was
+          // flagged without hunting the separate Recent Flagged Items list.
+          (h.items || []).forEach(function (it) {
+            var itemRow = document.createElement('div');
+            itemRow.className = 'detail-item';
+
+            var itemLink = document.createElement('a');
+            if (/^https?:\/\//i.test(it.link || '')) {
+              itemLink.href = it.link;
+              itemLink.target = '_blank';
+              itemLink.rel = 'noopener';
+            }
+            itemLink.textContent = it.title || '(bez nosaukuma)';
+            itemRow.appendChild(itemLink);
+
+            var metaParts = [];
+            if (it.source) metaParts.push(it.source);
+            if (it.categories && it.categories.length) {
+              metaParts.push(it.categories.map(function (c) {
+                return String(c).replace(/_/g, ' ');
+              }).join(', '));
+            }
+            if (metaParts.length) {
+              var itemMeta = document.createElement('span');
+              itemMeta.className = 'detail-item-meta';
+              itemMeta.textContent = ' — ' + metaParts.join(' · ');
+              itemRow.appendChild(itemMeta);
+            }
+
+            row.appendChild(itemRow);
+          });
+
           log.appendChild(row);
         });
       }
@@ -620,6 +657,12 @@
           meta.appendChild(lvlSpan);
           meta.appendChild(document.createTextNode(
             ' · ' + (it.source || '') + ' · ' + (it.ts || '').slice(0, 10)));
+          if (it.categories && it.categories.length) {
+            meta.appendChild(document.createTextNode(
+              ' · ' + it.categories.map(function (c) {
+                return String(c).replace(/_/g, ' ');
+              }).join(', ')));
+          }
 
           row.appendChild(link);
           row.appendChild(meta);
