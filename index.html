@@ -271,6 +271,7 @@
   .item-meta .lvl.watch { color: var(--watch); }
   .item-meta .lvl.warn { color: var(--warn); }
   .item-row .body { font-size: 14.5px; color: var(--ink-text); margin-top: 2px; }
+  .item-row .title { font-weight: 600; font-size: 14.5px; color: var(--ink-text); margin-top: 4px; }
   .history-row .unreachable { color: var(--watch); margin-left: 6px; text-decoration: underline dotted; text-underline-offset: 2px; }
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
@@ -431,6 +432,11 @@
       <summary>Corrections history <span class="count" id="corrections-count"></span></summary>
       <p style="font-size:13px;color:var(--ink-dim);margin:10px 0;">Self-reported when a mistake is noticed — not an automated audit. A clean record means nothing has been caught and reported yet.</p>
       <div id="corrections-log"><div class="history-empty">Loading…</div></div>
+    </details>
+    <details class="log-details" id="updates-log-wrap">
+      <summary>What's new <span class="count" id="updates-count"></span></summary>
+      <p style="font-size:13px;color:var(--ink-dim);margin:10px 0;">A plain-language log of features and fixes shipped over time.</p>
+      <div id="updates-log"><div class="history-empty">Loading…</div></div>
     </details>
     <p id="status-error">Live status temporarily unavailable — check the Telegram channel directly for current status.</p>
   </div>
@@ -765,6 +771,39 @@
           row.appendChild(meta);
           row.appendChild(body);
           correctionsLog.appendChild(row);
+        });
+      }
+
+      var updatesLog = document.getElementById('updates-log');
+      updatesLog.textContent = '';
+      var updates = d.recent_updates || [];
+      document.getElementById('updates-count').textContent = '(' + updates.length + ')';
+      if (updates.length === 0) {
+        var noUpdates = document.createElement('div');
+        noUpdates.className = 'history-empty';
+        noUpdates.textContent = 'Nothing logged yet.';
+        updatesLog.appendChild(noUpdates);
+      } else {
+        updates.forEach(function (u) {
+          var row = document.createElement('div');
+          row.className = 'item-row';
+
+          var meta = document.createElement('div');
+          meta.className = 'item-meta';
+          meta.textContent = (u.ts || '').slice(0, 10);
+
+          var title = document.createElement('div');
+          title.className = 'title';
+          title.textContent = u.title || '';
+
+          var body = document.createElement('div');
+          body.className = 'body';
+          body.textContent = u.text || '';
+
+          row.appendChild(meta);
+          row.appendChild(title);
+          row.appendChild(body);
+          updatesLog.appendChild(row);
         });
       }
     })
