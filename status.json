@@ -9,10 +9,10 @@
   "watch_count": 15,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-05 20:50 UTC",
-  "total_sources": 87,
+  "generated_at": "2026-08-05 20:53 UTC",
+  "total_sources": 88,
   "tier1_sources": 19,
-  "tier2_sources": 57,
+  "tier2_sources": 58,
   "tier3_sources": 11,
   "recent_history": [
     {
@@ -496,6 +496,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-05T20:53:59.707924+00:00",
+      "title": "Poland's Foreign Ministry added",
+      "text": "Closed the last parity gap from Poland's addition earlier -- every other tracked country already had its Foreign Ministry covered, Poland now does too. Total: 88 sources."
+    },
+    {
       "ts": "2026-08-05T20:50:31.498288+00:00",
       "title": "Corrections now reach the site immediately",
       "text": "Published corrections used to only update this repo's own private log -- the public site's Corrections history section wouldn't show it until the next scheduled scan happened to run, sometimes hours later. Fixed so a correction reaches the site the moment it's published."
@@ -639,11 +644,6 @@
       "ts": "2026-07-25T22:24:50+00:00",
       "title": "Automated test suite",
       "text": "Built an automated test suite covering the scoring and relevance logic, catching a real bug in the process."
-    },
-    {
-      "ts": "2026-07-25T21:59:04+00:00",
-      "title": "Public trust FAQ, local-language sources, and owner alerting",
-      "text": "Added a public trust/FAQ section explaining how scoring works, added Estonian/Latvian/Lithuanian-language source feeds, and wired up an alert to the owner if a scheduled scan itself fails."
     }
   ]
 }
