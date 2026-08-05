@@ -2,14 +2,14 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-08-05T17:29:17.283851+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 0.6h ago",
   "since": "2026-07-19",
   "total_scans": 117,
   "quiet_count": 102,
   "watch_count": 15,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-05 17:29 UTC",
+  "generated_at": "2026-08-05 18:02 UTC",
   "total_sources": 87,
   "tier1_sources": 19,
   "tier2_sources": 57,
@@ -508,6 +508,148 @@
       "ts": "2026-08-04T20:45:44.779097+00:00",
       "text": "A recent WATCH-level flag was wrong: a story about Lithuania sending firefighters to help France fight wildfires was mistakenly flagged as a Baltic security signal. Cause: a scoring bug \u2014 generic words like 'deployed' and 'reinforcements' (meant to catch real troop movements) were also matching ordinary disaster-response language. That bug, and several similar ones found in a full audit of the scoring keywords, has been fixed. The false positive stays in the historical record below rather than being quietly deleted \u2014 see our policy on this.",
       "context": "Lithuania sends 32 firefighters to help France fight wildfires \u2014 flagged WATCH, 2026-08-01"
+    }
+  ],
+  "recent_updates": [
+    {
+      "ts": "2026-08-05T17:16:05+00:00",
+      "title": "Poland added as a tracked country",
+      "text": "Added as a source only, not as a new relevance trigger -- a pure Poland-Russia story still needs a genuine Baltic connection to be flagged. Brings the total to 87 sources."
+    },
+    {
+      "ts": "2026-08-05T11:19:31+00:00",
+      "title": "Fixed \"sources scanned\" not matching \"total sources\"",
+      "text": "Two numbers on the site that should always agree were quietly drifting apart under certain conditions. Fixed so they always match."
+    },
+    {
+      "ts": "2026-08-05T10:57:42+00:00",
+      "title": "Swedish Armed Forces added",
+      "text": "Added to Tier 2."
+    },
+    {
+      "ts": "2026-08-05T10:55:12+00:00",
+      "title": "Fixed a silent-hang risk in source fetching",
+      "text": "A single unresponsive source could previously stall an entire scan indefinitely. Fixed with a hard timeout."
+    },
+    {
+      "ts": "2026-08-05T06:18:38+00:00",
+      "title": "GDELT event classification added to item detail",
+      "text": "Flagged items now show the structured event category and intensity score behind them, not just the headline."
+    },
+    {
+      "ts": "2026-08-05T05:19:36+00:00",
+      "title": "Hardened keyword matching",
+      "text": "Added word-boundary and negation checks to the scoring logic, closing a class of false-positive bugs."
+    },
+    {
+      "ts": "2026-08-05T02:28:26+00:00",
+      "title": "Recent scan history became clickable",
+      "text": "Every row in \"Recent scans\" now expands to show exactly what was checked and why, including QUIET results."
+    },
+    {
+      "ts": "2026-08-04T20:55:29+00:00",
+      "title": "Fixed a real false positive: an unrelated overseas deployment",
+      "text": "Latvia's own troop contribution to an international maritime mission near the Strait of Hormuz had been wrongly flagged as a Baltic-Russia signal. Fixed and logged publicly as a correction."
+    },
+    {
+      "ts": "2026-08-03T10:53:04+00:00",
+      "title": "Two more security think tanks added",
+      "text": "Closed a remaining per-country coverage gap in Tier 2's think-tank sources."
+    },
+    {
+      "ts": "2026-08-02T10:53:34+00:00",
+      "title": "NATO CCDCOE and Foreign Ministries added",
+      "text": "NATO's Cooperative Cyber Defence Centre of Excellence and the three Baltic states' Foreign Ministries added as sources."
+    },
+    {
+      "ts": "2026-08-01T07:14:03+00:00",
+      "title": "Audited every scoring keyword for false positives",
+      "text": "After catching a real false positive (an unrelated wildfire-relief story wrongly flagged), every keyword in the scoring list was audited and hardened against similar non-security matches."
+    },
+    {
+      "ts": "2026-07-31T10:51:55+00:00",
+      "title": "National CERT/cyber-security agencies added",
+      "text": "Added as Tier 2 sources across the tracked countries."
+    },
+    {
+      "ts": "2026-07-30T14:11:53+00:00",
+      "title": "Daily evening report added",
+      "text": "A short daily summary now goes out at roughly 21:00 Riga time."
+    },
+    {
+      "ts": "2026-07-30T14:09:28+00:00",
+      "title": "Routine all-clear scans go fully silent",
+      "text": "A scan that finds nothing relevant no longer sends any message at all -- only a real WATCH/WARN, or a source failure, reaches the public channel."
+    },
+    {
+      "ts": "2026-07-30T10:54:41+00:00",
+      "title": "Border and coast guard agencies added",
+      "text": "Added as Tier 2 sources across the tracked countries."
+    },
+    {
+      "ts": "2026-07-29T11:11:32+00:00",
+      "title": "Warning label on Russian state-media links",
+      "text": "The rumor-tracking digest now visibly flags when a tracked item comes from Russian state media."
+    },
+    {
+      "ts": "2026-07-29T04:27:44+00:00",
+      "title": "Faster recovery from source blocks",
+      "text": "Added fast-fail detection and automatic retry on a fresh runner for when many sources get rate-limited at once, instead of a scan silently coming back empty."
+    },
+    {
+      "ts": "2026-07-28T10:56:12+00:00",
+      "title": "Precise defence-ministry feeds",
+      "text": "Replaced broad national-news searches with dedicated Ministry of Defence feeds for Estonia, Latvia, Lithuania, and Finland."
+    },
+    {
+      "ts": "2026-07-28T08:12:11+00:00",
+      "title": "RSS feed, status badge, and full site translations",
+      "text": "Added a subscribable RSS feed, an embeddable status badge, and complete Estonian/Latvian/Lithuanian translations of the whole site."
+    },
+    {
+      "ts": "2026-07-27T14:18:58+00:00",
+      "title": "Russian state media tracked, never counted as evidence",
+      "text": "Russian state media and officials added to the lowest trust tier (Tier 3) -- tracked to see the narrative, never able to trigger an alert on their own."
+    },
+    {
+      "ts": "2026-07-27T13:58:19+00:00",
+      "title": "Finland and Sweden added as tracked countries",
+      "text": "Real news coverage added for both countries, not just their national security services."
+    },
+    {
+      "ts": "2026-07-27T11:44:00+00:00",
+      "title": "Source citations for flagged items",
+      "text": "Every WATCH/WARN item on the site now links to the original reporting it came from, the same way the Telegram channel already does."
+    },
+    {
+      "ts": "2026-07-27T09:43:45+00:00",
+      "title": "Custom domain",
+      "text": "The site moved to its own domain, balticsignalmonitor.com."
+    },
+    {
+      "ts": "2026-07-26T14:35:28+00:00",
+      "title": "Browser push alerts added",
+      "text": "Added Web Push as a second, Telegram-independent alert channel -- no app or account needed, just a browser notification tied to this site."
+    },
+    {
+      "ts": "2026-07-26T09:44:36+00:00",
+      "title": "Public landing page launched",
+      "text": "This site went live, showing real-time status pulled straight from the scan engine instead of requiring a Telegram join to see anything."
+    },
+    {
+      "ts": "2026-07-26T05:47:35+00:00",
+      "title": "National intelligence services added as top-trust sources",
+      "text": "Estonia's, Latvia's, and Lithuania's own national intelligence/security services added as Tier 1 (highest-trust) sources."
+    },
+    {
+      "ts": "2026-07-25T22:24:50+00:00",
+      "title": "Automated test suite",
+      "text": "Built an automated test suite covering the scoring and relevance logic, catching a real bug in the process."
+    },
+    {
+      "ts": "2026-07-25T21:59:04+00:00",
+      "title": "Public trust FAQ, local-language sources, and owner alerting",
+      "text": "Added a public trust/FAQ section explaining how scoring works, added Estonian/Latvian/Lithuanian-language source feeds, and wired up an alert to the owner if a scheduled scan itself fails."
     }
   ]
 }
