@@ -379,17 +379,17 @@
         <tr>
           <td class="tier-name">Tier 1</td>
           <td class="tier-desc">National security/intelligence services (Estonia, Latvia, Lithuania, Finland, Sweden), NATO, ISW, wire services.</td>
-          <td class="tier-n">16 sources</td>
+          <td class="tier-n"><span id="tier1-count">17</span> sources</td>
         </tr>
         <tr>
           <td class="tier-name">Tier 2</td>
           <td class="tier-desc">National broadcasters, security think tanks, investigative outlets.</td>
-          <td class="tier-n">35 sources</td>
+          <td class="tier-n"><span id="tier2-count">52</span> sources</td>
         </tr>
         <tr>
           <td class="tier-name">Tier 3</td>
           <td class="tier-desc">Disinformation fact-checkers, plus Russian state media/officials themselves — tracked to see the narrative, never counted as evidence, never able to trigger an alert.</td>
-          <td class="tier-n">11 sources</td>
+          <td class="tier-n"><span id="tier3-count">11</span> sources</td>
         </tr>
       </tbody>
     </table>
@@ -520,6 +520,18 @@
       // cached status.json (missing the field) never blanks this out.
       if (typeof d.total_sources === 'number') {
         document.getElementById('source-count').textContent = d.total_sources;
+      }
+      // Same live-not-hardcoded fix, applied to the per-tier breakdown in
+      // the "How the signal is scored" table — it drifted just as stale
+      // as the headline source count did (was hardcoded 16/35/11 = 62).
+      if (typeof d.tier1_sources === 'number') {
+        document.getElementById('tier1-count').textContent = d.tier1_sources;
+      }
+      if (typeof d.tier2_sources === 'number') {
+        document.getElementById('tier2-count').textContent = d.tier2_sources;
+      }
+      if (typeof d.tier3_sources === 'number') {
+        document.getElementById('tier3-count').textContent = d.tier3_sources;
       }
 
       document.getElementById('stat-total').textContent = d.total_scans;

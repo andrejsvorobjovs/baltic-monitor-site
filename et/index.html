@@ -383,17 +383,17 @@
         <tr>
           <td class="tier-name">Tase 1</td>
           <td class="tier-desc">Riiklikud julgeoleku-/luureteenistused (Eesti, Läti, Leedu, Soome, Rootsi), NATO, ISW, uudisteagentuurid.</td>
-          <td class="tier-n">16 allikat</td>
+          <td class="tier-n"><span id="tier1-count">17</span> allikat</td>
         </tr>
         <tr>
           <td class="tier-name">Tase 2</td>
           <td class="tier-desc">Riiklikud ringhäälinguorganisatsioonid, julgeoleku mõttekojad, uuriva ajakirjanduse väljaanded.</td>
-          <td class="tier-n">35 allikat</td>
+          <td class="tier-n"><span id="tier2-count">52</span> allikat</td>
         </tr>
         <tr>
           <td class="tier-name">Tase 3</td>
           <td class="tier-desc">Desinformatsiooni faktikontrollijad ning Venemaa riigimeedia/ametnikud ise — jälgitakse narratiivi nägemiseks, ei loeta kunagi tõendiks ega saa kunagi hoiatust käivitada.</td>
-          <td class="tier-n">11 allikat</td>
+          <td class="tier-n"><span id="tier3-count">11</span> allikat</td>
         </tr>
       </tbody>
     </table>
@@ -528,6 +528,18 @@
       // cached status.json (missing the field) never blanks this out.
       if (typeof d.total_sources === 'number') {
         document.getElementById('source-count').textContent = d.total_sources;
+      }
+      // Same live-not-hardcoded fix, applied to the per-tier breakdown in
+      // the "How the signal is scored" table — it drifted just as stale
+      // as the headline source count did (was hardcoded 16/35/11 = 62).
+      if (typeof d.tier1_sources === 'number') {
+        document.getElementById('tier1-count').textContent = d.tier1_sources;
+      }
+      if (typeof d.tier2_sources === 'number') {
+        document.getElementById('tier2-count').textContent = d.tier2_sources;
+      }
+      if (typeof d.tier3_sources === 'number') {
+        document.getElementById('tier3-count').textContent = d.tier3_sources;
       }
 
       document.getElementById('stat-total').textContent = d.total_scans;

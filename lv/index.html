@@ -383,17 +383,17 @@
         <tr>
           <td class="tier-name">1. līmenis</td>
           <td class="tier-desc">Valsts drošības/izlūkošanas dienesti (Igaunija, Latvija, Lietuva, Somija, Zviedrija), NATO, ISW, ziņu aģentūras.</td>
-          <td class="tier-n">16 avoti</td>
+          <td class="tier-n"><span id="tier1-count">17</span> avoti</td>
         </tr>
         <tr>
           <td class="tier-name">2. līmenis</td>
           <td class="tier-desc">Valsts raidorganizācijas, drošības domnīcas, izmeklējošās žurnālistikas izdevumi.</td>
-          <td class="tier-n">35 avoti</td>
+          <td class="tier-n"><span id="tier2-count">52</span> avoti</td>
         </tr>
         <tr>
           <td class="tier-name">3. līmenis</td>
           <td class="tier-desc">Dezinformācijas faktu pārbaudītāji, kā arī Krievijas valsts plašsaziņas līdzekļi/amatpersonas pašas — tiek sekots, lai redzētu naratīvu, nekad netiek uzskatīts par pierādījumu, nekad nevar izraisīt brīdinājumu.</td>
-          <td class="tier-n">11 avoti</td>
+          <td class="tier-n"><span id="tier3-count">11</span> avoti</td>
         </tr>
       </tbody>
     </table>
@@ -528,6 +528,18 @@
       // cached status.json (missing the field) never blanks this out.
       if (typeof d.total_sources === 'number') {
         document.getElementById('source-count').textContent = d.total_sources;
+      }
+      // Same live-not-hardcoded fix, applied to the per-tier breakdown in
+      // the "How the signal is scored" table — it drifted just as stale
+      // as the headline source count did (was hardcoded 16/35/11 = 62).
+      if (typeof d.tier1_sources === 'number') {
+        document.getElementById('tier1-count').textContent = d.tier1_sources;
+      }
+      if (typeof d.tier2_sources === 'number') {
+        document.getElementById('tier2-count').textContent = d.tier2_sources;
+      }
+      if (typeof d.tier3_sources === 'number') {
+        document.getElementById('tier3-count').textContent = d.tier3_sources;
       }
 
       document.getElementById('stat-total').textContent = d.total_scans;
