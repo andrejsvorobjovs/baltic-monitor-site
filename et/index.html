@@ -519,10 +519,26 @@
       else if (d.last_level === 'WATCH') dot.classList.add('watch');
 
       var STATUS_TEXT_MAP = { 'Operating normally': 'Töötab tavapäraselt', 'Attention needed': 'Vajalik tähelepanu' };
-      document.getElementById('status-text').textContent = STATUS_TEXT_MAP[d.status_text] || d.status_text;
+      var statusTextLocalized = STATUS_TEXT_MAP[d.status_text] || d.status_text;
+      document.getElementById('status-text').textContent = statusTextLocalized;
       var freshness = d.freshness_msg || d.last_level;
       var freshMatch = /^Last scan: ([\d.]+)h ago$/.exec(freshness);
-      if (freshMatch) freshness = 'Viimane skann: ' + freshMatch[1] + ' tundi tagasi';
+      // Second, rarer case: the watchdog itself found the scan stale (not
+      // just a healthy "Last scan: Xh ago"). Previously unhandled -- this
+      // English sentence would have leaked straight through untranslated
+      // on exactly the one occasion something is actually wrong. Final
+      // else-if is a generic localized fallback for the two even rarer
+      // messages (no scan ever completed / unparseable state file) so
+      // raw English can never leak here no matter the exact wording.
+      var staleMatch = /^Last successful scan was ([\d.]+)h ago \(expected within (\d+)h\)/.exec(freshness);
+      if (freshMatch) {
+        freshness = 'Viimane skann: ' + freshMatch[1] + ' tundi tagasi';
+      } else if (staleMatch) {
+        freshness = 'Viimane õnnestunud skann ' + staleMatch[1] + ' tundi tagasi (oodati '
+          + staleMatch[2] + ' tunni jooksul) — ajastatud töövoog võib olla peatunud.';
+      } else if (d.status_text === 'Attention needed') {
+        freshness = statusTextLocalized + ' — üksikasjad pole hetkel kättesaadavad.';
+      }
       document.getElementById('rt-last').textContent = freshness;
       document.getElementById('rt-level').textContent = d.last_level;
       document.getElementById('rt-since').textContent = d.since;

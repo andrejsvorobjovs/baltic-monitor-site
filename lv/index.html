@@ -466,7 +466,7 @@
     </div>
     <div class="qa">
       <p class="q">Vai jūs redzat, kas seko šim kanālam?</p>
-      <p class="a">Telegram — jā, kā kanāla administrators, tas ir normāli jebkuram Telegram kanāla īpašniekam. Pārlūkprogrammas push abonenti ir citādi: viņiem nav pievienots vārds vai identitāte, tikai anonīms ierīces marķieris, tāpēc es nevaru redzēt, kas viņi ir. Citi Telegram abonenti neredz cits citu, un nekas netiek eksportēts, glabāts citur, pārdots vai kopīgots ārpus paša Telegram.</p>
+      <p class="a">Telegram — jā, kā kanāla administrators, tas ir normāli jebkuram Telegram kanāla īpašniekam, nevis kaut kas šim projektam īpaši izveidots. Pārlūkprogrammas push abonenti ir citādi: viņiem nav pievienots vārds vai identitāte, tikai anonīms ierīces marķieris, tāpēc es nevaru redzēt, kas viņi ir. Citi Telegram abonenti neredz cits citu, un nekas netiek eksportēts, glabāts citur, pārdots vai kopīgots ārpus paša Telegram.</p>
     </div>
     <div class="qa">
       <p class="q">Kas notiek, ja pēc iespējošanas nesaņemu pārlūkprogrammas paziņojumus?</p>
@@ -519,10 +519,26 @@
       else if (d.last_level === 'WATCH') dot.classList.add('watch');
 
       var STATUS_TEXT_MAP = { 'Operating normally': 'Darbojas normāli', 'Attention needed': 'Nepieciešama uzmanība' };
-      document.getElementById('status-text').textContent = STATUS_TEXT_MAP[d.status_text] || d.status_text;
+      var statusTextLocalized = STATUS_TEXT_MAP[d.status_text] || d.status_text;
+      document.getElementById('status-text').textContent = statusTextLocalized;
       var freshness = d.freshness_msg || d.last_level;
       var freshMatch = /^Last scan: ([\d.]+)h ago$/.exec(freshness);
-      if (freshMatch) freshness = 'Pēdējais skenējums: pirms ' + freshMatch[1] + ' h';
+      // Second, rarer case: the watchdog itself found the scan stale (not
+      // just a healthy "Last scan: Xh ago"). Previously unhandled -- this
+      // English sentence would have leaked straight through untranslated
+      // on exactly the one occasion something is actually wrong. Final
+      // else-if is a generic localized fallback for the two even rarer
+      // messages (no scan ever completed / unparseable state file) so
+      // raw English can never leak here no matter the exact wording.
+      var staleMatch = /^Last successful scan was ([\d.]+)h ago \(expected within (\d+)h\)/.exec(freshness);
+      if (freshMatch) {
+        freshness = 'Pēdējais skenējums: pirms ' + freshMatch[1] + ' h';
+      } else if (staleMatch) {
+        freshness = 'Pēdējais veiksmīgais skenējums pirms ' + staleMatch[1] + ' h (gaidīts '
+          + staleMatch[2] + ' h laikā) — ieplānotā darbplūsma, iespējams, ir apstājusies.';
+      } else if (d.status_text === 'Attention needed') {
+        freshness = statusTextLocalized + ' — informācija par iemeslu pašlaik nav pieejama.';
+      }
       document.getElementById('rt-last').textContent = freshness;
       document.getElementById('rt-level').textContent = d.last_level;
       document.getElementById('rt-since').textContent = d.since;

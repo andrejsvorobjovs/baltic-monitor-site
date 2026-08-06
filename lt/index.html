@@ -466,7 +466,7 @@
     </div>
     <div class="qa">
       <p class="q">Ar matote, kas tai seka?</p>
-      <p class="a">Telegram — taip, kaip kanalo administratorius, tai įprasta bet kuriam Telegram kanalo savininkui. Naršyklės push prenumeratoriai yra kitokie: prie jų nepridėtas nei vardas, nei tapatybė, tik anoniminis įrenginio žymuo, todėl aš negaliu matyti, kas jie yra. Kiti Telegram prenumeratoriai nemato vieni kitų, ir niekas neeksportuojama, nesaugoma kitur, neparduodama ar nesidalijama už paties Telegram ribų.</p>
+      <p class="a">Telegram — taip, kaip kanalo administratorius, tai įprasta bet kuriam Telegram kanalo savininkui, o ne kažkas specialiai sukurta šiam projektui. Naršyklės push prenumeratoriai yra kitokie: prie jų nepridėtas nei vardas, nei tapatybė, tik anoniminis įrenginio žymuo, todėl aš negaliu matyti, kas jie yra. Kiti Telegram prenumeratoriai nemato vieni kitų, ir niekas neeksportuojama, nesaugoma kitur, neparduodama ar nesidalijama už paties Telegram ribų.</p>
     </div>
     <div class="qa">
       <p class="q">Kas atsitinka, jei įjungus negaunu naršyklės pranešimų?</p>
@@ -519,10 +519,26 @@
       else if (d.last_level === 'WATCH') dot.classList.add('watch');
 
       var STATUS_TEXT_MAP = { 'Operating normally': 'Veikia normaliai', 'Attention needed': 'Reikia dėmesio' };
-      document.getElementById('status-text').textContent = STATUS_TEXT_MAP[d.status_text] || d.status_text;
+      var statusTextLocalized = STATUS_TEXT_MAP[d.status_text] || d.status_text;
+      document.getElementById('status-text').textContent = statusTextLocalized;
       var freshness = d.freshness_msg || d.last_level;
       var freshMatch = /^Last scan: ([\d.]+)h ago$/.exec(freshness);
-      if (freshMatch) freshness = 'Paskutinis nuskaitymas: prieš ' + freshMatch[1] + ' val.';
+      // Second, rarer case: the watchdog itself found the scan stale (not
+      // just a healthy "Last scan: Xh ago"). Previously unhandled -- this
+      // English sentence would have leaked straight through untranslated
+      // on exactly the one occasion something is actually wrong. Final
+      // else-if is a generic localized fallback for the two even rarer
+      // messages (no scan ever completed / unparseable state file) so
+      // raw English can never leak here no matter the exact wording.
+      var staleMatch = /^Last successful scan was ([\d.]+)h ago \(expected within (\d+)h\)/.exec(freshness);
+      if (freshMatch) {
+        freshness = 'Paskutinis nuskaitymas: prieš ' + freshMatch[1] + ' val.';
+      } else if (staleMatch) {
+        freshness = 'Paskutinis sėkmingas nuskaitymas prieš ' + staleMatch[1] + ' val. (tikėtasi per '
+          + staleMatch[2] + ' val.) — suplanuotas darbo procesas galėjo sustoti.';
+      } else if (d.status_text === 'Attention needed') {
+        freshness = statusTextLocalized + ' — informacija apie priežastį šiuo metu neprieinama.';
+      }
       document.getElementById('rt-last').textContent = freshness;
       document.getElementById('rt-level').textContent = d.last_level;
       document.getElementById('rt-since').textContent = d.since;
