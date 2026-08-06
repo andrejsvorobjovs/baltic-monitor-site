@@ -2,17 +2,17 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-08-06T00:18:10.187211+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 2.6h ago",
   "since": "2026-07-19",
   "total_scans": 121,
   "quiet_count": 106,
   "watch_count": 15,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-06 00:18 UTC",
-  "total_sources": 88,
+  "generated_at": "2026-08-06 02:51 UTC",
+  "total_sources": 89,
   "tier1_sources": 19,
-  "tier2_sources": 58,
+  "tier2_sources": 59,
   "tier3_sources": 11,
   "recent_history": [
     {
@@ -496,6 +496,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-06T02:51:15.143550+00:00",
+      "title": "Poland's national broadcaster added",
+      "text": "TVP World, Poland's public broadcaster's English-language international news channel, closes the last remaining gap -- every tracked country now has one. Total: 89 sources."
+    },
+    {
       "ts": "2026-08-05T20:53:59.707924+00:00",
       "title": "Poland's Foreign Ministry added",
       "text": "Closed the last parity gap from Poland's addition earlier -- every other tracked country already had its Foreign Ministry covered, Poland now does too. Total: 88 sources."
@@ -639,11 +644,6 @@
       "ts": "2026-07-26T05:47:35+00:00",
       "title": "National intelligence services added as top-trust sources",
       "text": "Estonia's, Latvia's, and Lithuania's own national intelligence/security services added as Tier 1 (highest-trust) sources."
-    },
-    {
-      "ts": "2026-07-25T22:24:50+00:00",
-      "title": "Automated test suite",
-      "text": "Built an automated test suite covering the scoring and relevance logic, catching a real bug in the process."
     }
   ]
 }
