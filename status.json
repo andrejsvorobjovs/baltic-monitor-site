@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-06T20:59:00.610367+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-07T00:54:58.926520+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 125,
+  "total_scans": 126,
   "quiet_count": 110,
-  "watch_count": 15,
+  "watch_count": 16,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-06 20:59 UTC",
-  "total_sources": 90,
+  "generated_at": "2026-08-07 00:54 UTC",
+  "total_sources": 96,
   "tier1_sources": 19,
-  "tier2_sources": 60,
+  "tier2_sources": 66,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-07T00:54:58.929577+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 96,
+      "gdelt_ran": true,
+      "new_items_count": 62,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Lithuanian foreign minister says Germany brigade helps deter Russia",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/lithuanian-foreign-minister-says-germany-brigade-helps-deter--conflict_189fd62989310161",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "Strategic developments",
+          "gdelt_subcategory": "Headquarters or base established",
+          "gdelt_event_code": "",
+          "goldstein": -7.2
+        }
+      ]
+    },
     {
       "ts": "2026-08-06T20:59:00.613154+00:00",
       "level": "QUIET",
@@ -242,21 +269,25 @@
       "new_items_count": null,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-04T09:55:59.312444+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": null,
-      "gdelt_ran": null,
-      "new_items_count": null,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-07T00:54:58.930767+00:00",
+      "level": "WATCH",
+      "title": "Lithuanian foreign minister says Germany brigade helps deter Russia",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/lithuanian-foreign-minister-says-germany-brigade-helps-deter--conflict_189fd62989310161",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "Strategic developments",
+      "gdelt_subcategory": "Headquarters or base established",
+      "gdelt_event_code": "",
+      "goldstein": -7.2
+    },
     {
       "ts": "2026-08-04T20:48:05.102295+00:00",
       "level": "WATCH",
@@ -496,6 +527,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-06T20:52:37.490363+00:00",
+      "title": "6 new civil-preparedness sources",
+      "text": "Added a source category we'd missed entirely: national civil emergency/crisis-preparedness agencies (Estonia, Latvia, Lithuania, Finland, Sweden, Poland) \u2014 the agencies behind household crisis guidance and public-warning-system tests. 90 -> 96 sources."
+    },
+    {
       "ts": "2026-08-06T17:53:35.498788+00:00",
       "title": "Instant Telegram commands again, via webhook this time",
       "text": "/scan, /mute, /ignore, /quietmode were removed as polling commands (~1.8h average lag on GitHub's best-effort schedule). Back now via a webhook in the baltic-monitor-push Vercel project -- Telegram delivers the command instantly instead of waiting for a scheduled poll. Two auth layers before anything runs: a Telegram webhook secret, then the sender's chat id must match the owner's exactly. See baltic-monitor-push's README for setup."
@@ -639,11 +675,6 @@
       "ts": "2026-07-29T04:27:44+00:00",
       "title": "Faster recovery from source blocks",
       "text": "Added fast-fail detection and automatic retry on a fresh runner for when many sources get rate-limited at once, instead of a scan silently coming back empty."
-    },
-    {
-      "ts": "2026-07-28T10:56:12+00:00",
-      "title": "Precise defence-ministry feeds",
-      "text": "Replaced broad national-news searches with dedicated Ministry of Defence feeds for Estonia, Latvia, Lithuania, and Finland."
     }
   ]
 }
