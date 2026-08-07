@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-07T01:54:13.161129+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 1.5h ago",
+  "last_run_utc": "2026-08-07T05:11:35.768608+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 127,
+  "total_scans": 128,
   "quiet_count": 111,
-  "watch_count": 16,
+  "watch_count": 17,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-07 03:25 UTC",
+  "generated_at": "2026-08-07 05:11 UTC",
   "total_sources": 102,
   "tier1_sources": 19,
   "tier2_sources": 72,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-07T05:11:35.771927+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 102,
+      "gdelt_ran": true,
+      "new_items_count": 19,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Lithuanian opposition to convene extraordinary NSGK meeting over alleged Russian provocations",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/lithuanian-opposition-to-convene-extraordinary-nsgk-meeting--cameoplus_4ec4d303d05eac93",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "036 \u00b7 Intent to Meet/negotiate",
+          "gdelt_event_code": "036",
+          "goldstein": 4
+        }
+      ]
+    },
     {
       "ts": "2026-08-07T01:54:13.164338+00:00",
       "level": "QUIET",
@@ -257,21 +284,25 @@
       "new_items_count": null,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-04T17:09:16.833068+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": null,
-      "gdelt_ran": null,
-      "new_items_count": null,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-07T05:11:35.773195+00:00",
+      "level": "WATCH",
+      "title": "Lithuanian opposition to convene extraordinary NSGK meeting over alleged Russian provocations",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/lithuanian-opposition-to-convene-extraordinary-nsgk-meeting--cameoplus_4ec4d303d05eac93",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "036 \u00b7 Intent to Meet/negotiate",
+      "gdelt_event_code": "036",
+      "goldstein": 4
+    },
     {
       "ts": "2026-08-07T00:54:58.930767+00:00",
       "level": "WATCH",
@@ -489,22 +520,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-07-20T20:12:32.385554+00:00",
-      "level": "WATCH",
-      "title": "Lithuania warns Poland about alleged Russian provocations",
-      "source": "GDELT Cloud",
-      "link": "https://gdeltcloud.com/events/lithuania-warns-poland-about-alleged-russian-provocations--cameoplus_b8f27852dd48375a",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "",
       "gdelt_category": "",
