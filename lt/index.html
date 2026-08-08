@@ -216,7 +216,7 @@
 
   /* ---- Live stat strip (instrument style) ---- */
   .stat-strip {
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(5, 1fr);
     border: 1px solid var(--border); border-radius: 4px; overflow: hidden; background: var(--mono);
   }
   @media (max-width: 560px) { .stat-strip { grid-template-columns: repeat(2, 1fr); } }
@@ -421,6 +421,7 @@
       <div class="stat-cell"><div class="n" id="stat-quiet">—</div><div class="l">Ramu</div></div>
       <div class="stat-cell"><div class="n" id="stat-watch">—</div><div class="l">Stebima</div></div>
       <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Perspėjimas</div></div>
+      <div class="stat-cell"><div class="n" id="stat-rate">—</div><div class="l">Pataisymų dažnis</div></div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Naujausia nuskaitymų istorija <span class="count" id="history-count"></span></summary>
@@ -454,7 +455,7 @@
     </div>
     <div class="qa">
       <p class="q">Kas atsitinka, jei suklystate?</p>
-      <p class="a">Klaida užregistruojama ir paskelbiama kaip pataisymas, o ne tyliai ištaisoma — aukščiau esantis sąrašas yra pilnas apie tai praneštų dalykų įrašas. Retkarčiais suklysti ir tai atvirai pripažinti yra patikimiau nei įtartinai nepriekaištinga istorija. Vienas sąžiningas apribojimas: tai nėra automatizuotas auditas — pataisymas atsiranda tik tada, kai klaida iš tikrųjų pastebima ir apie ją pranešama rankiniu būdu. Švari istorija reiškia, kad kol kas niekas nebuvo pastebėta ir apie tai nepranešta, o ne formalią garantiją dėl nulinių klaidų.</p>
+      <p class="a">Klaida užregistruojama ir paskelbiama kaip pataisymas, o ne tyliai ištaisoma — aukščiau esantis sąrašas yra pilnas apie tai praneštų dalykų įrašas. Retkarčiais suklysti ir tai atvirai pripažinti yra patikimiau nei įtartinai nepriekaištinga istorija. Vienas sąžiningas apribojimas: tai nėra automatizuotas auditas — pataisymas atsiranda tik tada, kai klaida iš tikrųjų pastebima ir apie ją pranešama rankiniu būdu. Švari istorija reiškia, kad kol kas niekas nebuvo pastebėta ir apie tai nepranešta, o ne formalią garantiją dėl nulinių klaidų. Aukščiau pateiktas „pataisymų dažnis" yra pataisymų skaičius, padalytas iš skenavimų skaičiaus, mastelio suvokimui — o ne nepriklausomai patvirtintas tikslumo įvertinimas.</p>
     </div>
     <div class="qa" id="faq-unreachable">
       <p class="q">Ką reiškia „N šaltinis(-iai) nepasiekiamas(-i)"?</p>
@@ -574,6 +575,12 @@
       document.getElementById('stat-quiet').textContent = d.quiet_count;
       document.getElementById('stat-watch').textContent = d.watch_count;
       document.getElementById('stat-warn').textContent = d.warn_count;
+      if (typeof d.total_scans === 'number' && d.total_scans > 0 &&
+          typeof d.correction_count === 'number') {
+        var rate = (d.correction_count / d.total_scans) * 100;
+        document.getElementById('stat-rate').textContent =
+          rate === 0 ? '0%' : (rate < 0.1 ? '<0.1%' : rate.toFixed(1) + '%');
+      }
       document.getElementById('generated-note').textContent =
         'Gyvi duomenys sugeneruoti ' + d.generated_at + ', sekama nuo ' + d.since + '.';
 

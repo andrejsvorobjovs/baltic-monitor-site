@@ -215,7 +215,7 @@
 
   /* ---- Live stat strip (instrument style) ---- */
   .stat-strip {
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(5, 1fr);
     border: 1px solid var(--border); border-radius: 4px; overflow: hidden; background: var(--mono);
   }
   @media (max-width: 560px) { .stat-strip { grid-template-columns: repeat(2, 1fr); } }
@@ -417,6 +417,7 @@
       <div class="stat-cell"><div class="n" id="stat-quiet">—</div><div class="l">Quiet</div></div>
       <div class="stat-cell"><div class="n" id="stat-watch">—</div><div class="l">Watch</div></div>
       <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Warn</div></div>
+      <div class="stat-cell"><div class="n" id="stat-rate">—</div><div class="l">Correction rate</div></div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Recent scan history <span class="count" id="history-count"></span></summary>
@@ -450,7 +451,7 @@
     </div>
     <div class="qa">
       <p class="q">What if you get something wrong?</p>
-      <p class="a">It gets logged and published as a correction, not quietly fixed — the list above is the full record of what's been reported this way. Occasionally being wrong and saying so openly is more trustworthy than a suspiciously spotless record. One honest limit: this isn't an automated audit — a correction only appears if a mistake is actually noticed and manually reported. A clean record means nothing has been caught and reported yet, not a formal guarantee of zero errors.</p>
+      <p class="a">It gets logged and published as a correction, not quietly fixed — the list above is the full record of what's been reported this way. Occasionally being wrong and saying so openly is more trustworthy than a suspiciously spotless record. One honest limit: this isn't an automated audit — a correction only appears if a mistake is actually noticed and manually reported. A clean record means nothing has been caught and reported yet, not a formal guarantee of zero errors. The "correction rate" figure above is corrections divided by scans, for scale — not an independently verified accuracy score.</p>
     </div>
     <div class="qa" id="faq-unreachable">
       <p class="q">What does "N source(s) unreachable" mean?</p>
@@ -544,6 +545,16 @@
       document.getElementById('stat-quiet').textContent = d.quiet_count;
       document.getElementById('stat-watch').textContent = d.watch_count;
       document.getElementById('stat-warn').textContent = d.warn_count;
+      // Corrections were already shown as a raw count elsewhere on this
+      // page; a rate reads more honestly here specifically because this
+      // strip sits right next to the scan count it's a fraction of —
+      // "2" means something different next to "137" than on its own.
+      if (typeof d.total_scans === 'number' && d.total_scans > 0 &&
+          typeof d.correction_count === 'number') {
+        var rate = (d.correction_count / d.total_scans) * 100;
+        document.getElementById('stat-rate').textContent =
+          rate === 0 ? '0%' : (rate < 0.1 ? '<0.1%' : rate.toFixed(1) + '%');
+      }
       document.getElementById('generated-note').textContent =
         'Live data generated ' + d.generated_at + ', tracking since ' + d.since + '.';
 

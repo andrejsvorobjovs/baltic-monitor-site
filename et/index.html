@@ -216,7 +216,7 @@
 
   /* ---- Live stat strip (instrument style) ---- */
   .stat-strip {
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(5, 1fr);
     border: 1px solid var(--border); border-radius: 4px; overflow: hidden; background: var(--mono);
   }
   @media (max-width: 560px) { .stat-strip { grid-template-columns: repeat(2, 1fr); } }
@@ -421,6 +421,7 @@
       <div class="stat-cell"><div class="n" id="stat-quiet">—</div><div class="l">Vaikne</div></div>
       <div class="stat-cell"><div class="n" id="stat-watch">—</div><div class="l">Jälgimine</div></div>
       <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Hoiatus</div></div>
+      <div class="stat-cell"><div class="n" id="stat-rate">—</div><div class="l">Paranduste määr</div></div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Hiljutine skannimise ajalugu <span class="count" id="history-count"></span></summary>
@@ -454,7 +455,7 @@
     </div>
     <div class="qa">
       <p class="q">Mis saab, kui te eksite?</p>
-      <p class="a">Viga logitakse ja avaldatakse parandusena, mitte ei parandata vaikselt — ülaltoodud loend on täielik ülevaade sellest, millest on sel viisil teatatud. Aeg-ajalt eksimine ja selle avalik tunnistamine on usaldusväärsem kui kahtlaselt laitmatu ajalugu. Üks aus piirang: see ei ole automatiseeritud audit — parandus ilmub ainult siis, kui viga tegelikult märgatakse ja käsitsi teatatakse. Puhas ajalugu tähendab, et midagi pole veel tuvastatud ega teatatud, mitte formaalset garantiid nullveast.</p>
+      <p class="a">Viga logitakse ja avaldatakse parandusena, mitte ei parandata vaikselt — ülaltoodud loend on täielik ülevaade sellest, millest on sel viisil teatatud. Aeg-ajalt eksimine ja selle avalik tunnistamine on usaldusväärsem kui kahtlaselt laitmatu ajalugu. Üks aus piirang: see ei ole automatiseeritud audit — parandus ilmub ainult siis, kui viga tegelikult märgatakse ja käsitsi teatatakse. Puhas ajalugu tähendab, et midagi pole veel tuvastatud ega teatatud, mitte formaalset garantiid nullveast. Ülaltoodud "paranduste määr" on paranduste arv jagatud skannimiste arvuga, mastaabi mõistmiseks — mitte sõltumatult kinnitatud täpsuse hinnang.</p>
     </div>
     <div class="qa" id="faq-unreachable">
       <p class="q">Mida tähendab „N allikas(t) ei vastanud”?</p>
@@ -568,6 +569,12 @@
       document.getElementById('stat-quiet').textContent = d.quiet_count;
       document.getElementById('stat-watch').textContent = d.watch_count;
       document.getElementById('stat-warn').textContent = d.warn_count;
+      if (typeof d.total_scans === 'number' && d.total_scans > 0 &&
+          typeof d.correction_count === 'number') {
+        var rate = (d.correction_count / d.total_scans) * 100;
+        document.getElementById('stat-rate').textContent =
+          rate === 0 ? '0%' : (rate < 0.1 ? '<0.1%' : rate.toFixed(1) + '%');
+      }
       document.getElementById('generated-note').textContent =
         'Elavad andmed genereeritud ' + d.generated_at + ', jälgitud alates ' + d.since + '.';
 

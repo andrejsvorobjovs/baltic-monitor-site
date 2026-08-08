@@ -216,7 +216,7 @@
 
   /* ---- Live stat strip (instrument style) ---- */
   .stat-strip {
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(5, 1fr);
     border: 1px solid var(--border); border-radius: 4px; overflow: hidden; background: var(--mono);
   }
   @media (max-width: 560px) { .stat-strip { grid-template-columns: repeat(2, 1fr); } }
@@ -421,6 +421,7 @@
       <div class="stat-cell"><div class="n" id="stat-quiet">—</div><div class="l">Klusums</div></div>
       <div class="stat-cell"><div class="n" id="stat-watch">—</div><div class="l">Novērošana</div></div>
       <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Brīdinājums</div></div>
+      <div class="stat-cell"><div class="n" id="stat-rate">—</div><div class="l">Labojumu īpatsvars</div></div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Nesenā skenējumu vēsture <span class="count" id="history-count"></span></summary>
@@ -454,7 +455,7 @@
     </div>
     <div class="qa">
       <p class="q">Kas notiek, ja jūs kļūdāties?</p>
-      <p class="a">Kļūda tiek reģistrēta un publicēta kā labojums, nevis klusi izlabota — augstāk redzamais saraksts ir pilnīgs pārskats par to, kas tā ziņots. Reizēm kļūdīties un to atklāti atzīt ir uzticamāk nekā aizdomīgi nevainojama vēsture. Viens godīgs ierobežojums: šis nav automatizēts audits — labojums parādās tikai tad, ja kļūda tiešām tiek pamanīta un manuāli ziņota. Tīra vēsture nozīmē, ka nekas vēl nav pamanīts un ziņots, nevis formālu garantiju par nulles kļūdām.</p>
+      <p class="a">Kļūda tiek reģistrēta un publicēta kā labojums, nevis klusi izlabota — augstāk redzamais saraksts ir pilnīgs pārskats par to, kas tā ziņots. Reizēm kļūdīties un to atklāti atzīt ir uzticamāk nekā aizdomīgi nevainojama vēsture. Viens godīgs ierobežojums: šis nav automatizēts audits — labojums parādās tikai tad, ja kļūda tiešām tiek pamanīta un manuāli ziņota. Tīra vēsture nozīmē, ka nekas vēl nav pamanīts un ziņots, nevis formālu garantiju par nulles kļūdām. Iepriekš redzamais "labojumu īpatsvars" ir labojumu skaits dalīts ar skenēšanu skaitu, mēroga izpratnei — nevis neatkarīgi pārbaudīts precizitātes rādītājs.</p>
     </div>
     <div class="qa" id="faq-unreachable">
       <p class="q">Ko nozīmē „N avots(i) nav sasniedzami”?</p>
@@ -568,6 +569,12 @@
       document.getElementById('stat-quiet').textContent = d.quiet_count;
       document.getElementById('stat-watch').textContent = d.watch_count;
       document.getElementById('stat-warn').textContent = d.warn_count;
+      if (typeof d.total_scans === 'number' && d.total_scans > 0 &&
+          typeof d.correction_count === 'number') {
+        var rate = (d.correction_count / d.total_scans) * 100;
+        document.getElementById('stat-rate').textContent =
+          rate === 0 ? '0%' : (rate < 0.1 ? '<0.1%' : rate.toFixed(1) + '%');
+      }
       document.getElementById('generated-note').textContent =
         'Dzīvie dati ģenerēti ' + d.generated_at + ', seko kopš ' + d.since + '.';
 
