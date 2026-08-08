@@ -1,20 +1,61 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-08T08:08:44.349560+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-08T11:49:15.820154+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 135,
+  "total_scans": 136,
   "quiet_count": 118,
-  "watch_count": 17,
+  "watch_count": 18,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-08 08:08 UTC",
+  "generated_at": "2026-08-08 11:49 UTC",
   "total_sources": 112,
   "tier1_sources": 19,
   "tier2_sources": 82,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-08T11:49:15.823770+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 112,
+      "gdelt_ran": true,
+      "new_items_count": 30,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Lithuanian Seimas NSGK chair refuses to convene meeting over alleged provocations",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/lithuanian-seimas-nsgk-chair-refuses-to-convene-meeting-over--cameoplus_4cd8275f54430f87",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "125 \u00b7 Reject Proposal to Meet/negotiate (-5.0)",
+          "gdelt_event_code": "125",
+          "goldstein": -5
+        },
+        {
+          "title": "Lithuanian politicians split over President Naus\u0117da plan to agree on defense funding after 2030",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/lithuanian-politicians-split-over-president-nauseda-plan-to--cameoplus_6edcf807fc3d9e27",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "026 \u00b7 Appeal to Meet/negotiate",
+          "gdelt_event_code": "026",
+          "goldstein": 3
+        }
+      ]
+    },
     {
       "ts": "2026-08-08T08:08:44.353162+00:00",
       "level": "QUIET",
@@ -272,21 +313,41 @@
       "new_items_count": 163,
       "stale_count": 2,
       "items": []
-    },
-    {
-      "ts": "2026-08-05T16:57:15.031276+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 81,
-      "gdelt_ran": true,
-      "new_items_count": 118,
-      "stale_count": 2,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-08T11:49:15.825107+00:00",
+      "level": "WATCH",
+      "title": "Lithuanian politicians split over President Naus\u0117da plan to agree on defense funding after 2030",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/lithuanian-politicians-split-over-president-nauseda-plan-to--cameoplus_6edcf807fc3d9e27",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "026 \u00b7 Appeal to Meet/negotiate",
+      "gdelt_event_code": "026",
+      "goldstein": 3
+    },
+    {
+      "ts": "2026-08-08T11:49:15.825107+00:00",
+      "level": "WATCH",
+      "title": "Lithuanian Seimas NSGK chair refuses to convene meeting over alleged provocations",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/lithuanian-seimas-nsgk-chair-refuses-to-convene-meeting-over--cameoplus_4cd8275f54430f87",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "125 \u00b7 Reject Proposal to Meet/negotiate (-5.0)",
+      "gdelt_event_code": "125",
+      "goldstein": -5
+    },
     {
       "ts": "2026-08-07T05:11:35.773195+00:00",
       "level": "WATCH",
@@ -494,38 +555,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-07-21T14:18:19.539278+00:00",
-      "level": "WATCH",
-      "title": "An adviser to the Lithuanian president ruled out a Russian military invasion but expects provocations - LIGA.net",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZ3B0SmcyakQyejB3djhTTUdYdDA4dE0yTDhndzVjTjJlbzlyVlQwLWFzcVN1c1NIZnRGRjNIRUZWaXJKQXBmT0hOcG9OS0hoQXgyS28wT1pneURWcktRc2hnM1dyOURvWWhJV3k3R3QzRXZCN1cxbG8wZU43emZhZUtKSElyWFgwX2JnZzNiWk9XSFFFQV93dmstSklLSVhhbVlzNjZyN2Vmb0lPUW5KUWY0THNPZF9naTd5V2RqNkpkVWpabWV3S0dWdUNqS19FRXVz?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-07-20T20:12:32.385554+00:00",
-      "level": "WATCH",
-      "title": "Lithuania proposes constitutional changes to allow nuclear weapons on its soil",
-      "source": "GDELT Cloud",
-      "link": "https://gdeltcloud.com/events/lithuania-proposes-constitutional-changes-to-allow-nuclear-w--cameoplus_5e9cb23ca02f3a3c",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -541,6 +570,11 @@
     }
   ],
   "recent_updates": [
+    {
+      "ts": "2026-08-08T08:50:50.423248+00:00",
+      "title": "Fixed a real gap: grid/pipeline sources own incident reports would have been dropped",
+      "text": "A backtest against the grid/pipeline operator sources added earlier today found a real gap: an incident report on one of those operators own domain (\"Elering confirms cable damage, sabotage suspected\") often never names the country, so it was being silently treated as irrelevant -- exactly the sources added to catch this incident class early. Fixed by treating each operator name as a location signal, plus catching the actual hedged first-report language (\"pressure dropped,\" \"external damage\") the real 2023 incident was genuinely described with, not just the word sabotage."
+    },
     {
       "ts": "2026-08-07T09:03:21.599937+00:00",
       "title": "Monthly and yearly summaries added, all periodic reports now evening-only",
@@ -685,11 +719,6 @@
       "ts": "2026-07-30T14:11:53+00:00",
       "title": "Daily evening report added",
       "text": "A short daily summary now goes out at roughly 21:00 Riga time."
-    },
-    {
-      "ts": "2026-07-30T14:09:28+00:00",
-      "title": "Routine all-clear scans go fully silent",
-      "text": "A scan that finds nothing relevant no longer sends any message at all -- only a real WATCH/WARN, or a source failure, reaches the public channel."
     }
   ]
 }
