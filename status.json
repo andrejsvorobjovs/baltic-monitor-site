@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-08T11:49:15.820154+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.6h ago",
+  "last_run_utc": "2026-08-08T15:51:02.661954+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 136,
-  "quiet_count": 118,
+  "total_scans": 137,
+  "quiet_count": 119,
   "watch_count": 18,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-08 13:23 UTC",
+  "generated_at": "2026-08-08 15:51 UTC",
   "total_sources": 112,
   "tier1_sources": 19,
   "tier2_sources": 82,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-08T15:51:02.665216+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 112,
+      "gdelt_ran": true,
+      "new_items_count": 30,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-08T11:49:15.823770+00:00",
       "level": "WATCH",
@@ -301,18 +313,6 @@
       "new_items_count": 149,
       "stale_count": 4,
       "items": []
-    },
-    {
-      "ts": "2026-08-05T17:29:17.285822+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 87,
-      "gdelt_ran": true,
-      "new_items_count": 163,
-      "stale_count": 2,
-      "items": []
     }
   ],
   "recent_items": [
@@ -571,6 +571,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-08T14:55:09.846147+00:00",
+      "title": "Fixed: volunteer defence force and national CERT sources were silently invisible",
+      "text": "Same class of bug as the grid/pipeline TSO fix: sources for Estonia's Kaitseliit, Latvia's Zemessardze, Lithuania's KASP, Sweden's Hemv\u00e4rnet, Poland's WOT, Finland's MPK, and national CERTs (CERT-EE, CERT.LV, CERT-SE, CERT Polska) often report incidents without naming the country, so their own reporting was being silently dropped as 'not relevant.' Fixed by recognizing each distinctive name as a location signal, with ambiguous short acronyms (KASP/WOT/MPK) requiring a defence-related companion word to avoid colliding with unrelated meanings (Kaspersky, World of Tanks, generic parliamentary shorthand)."
+    },
+    {
       "ts": "2026-08-08T08:50:50.423248+00:00",
       "title": "Fixed a real gap: grid/pipeline sources own incident reports would have been dropped",
       "text": "A backtest against the grid/pipeline operator sources added earlier today found a real gap: an incident report on one of those operators own domain (\"Elering confirms cable damage, sabotage suspected\") often never names the country, so it was being silently treated as irrelevant -- exactly the sources added to catch this incident class early. Fixed by treating each operator name as a location signal, plus catching the actual hedged first-report language (\"pressure dropped,\" \"external damage\") the real 2023 incident was genuinely described with, not just the word sabotage."
@@ -714,11 +719,6 @@
       "ts": "2026-07-31T10:51:55+00:00",
       "title": "National CERT/cyber-security agencies added",
       "text": "Added as Tier 2 sources across the tracked countries."
-    },
-    {
-      "ts": "2026-07-30T14:11:53+00:00",
-      "title": "Daily evening report added",
-      "text": "A short daily summary now goes out at roughly 21:00 Riga time."
     }
   ]
 }
