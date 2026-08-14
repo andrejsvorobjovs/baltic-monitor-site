@@ -226,7 +226,16 @@
   .stat-cell .n { font-size: 26px; font-weight: 700; }
   .stat-cell .l { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
 
-  .chart-block { margin-top: 24px; }
+  .charts-wrap { margin-top: 24px; }
+  .range-selector { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
+  .range-btn {
+    font: inherit; font-size: 12px; padding: 5px 11px; border-radius: 3px;
+    border: 1px solid var(--border); background: transparent; color: var(--ink-dim);
+    cursor: pointer;
+  }
+  .range-btn:hover { color: var(--ink-text); border-color: var(--ink-dim); }
+  .range-btn.active { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .chart-block { margin-top: 20px; }
   .chart-block h3 { font-size: 14px; margin: 0 0 4px; }
   .chart-caption { font-size: 12.5px; color: var(--ink-dim); margin: 0 0 10px; max-width: 62ch; }
   .chart-svg-wrap {
@@ -434,15 +443,18 @@
       <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Perspėjimas</div></div>
       <div class="stat-cell"><div class="n" id="stat-rate">—</div><div class="l">Pataisymų dažnis</div></div>
     </div>
-    <div class="chart-block">
-      <h3>Eskalacijos intensyvumas laikui bėgant</h3>
-      <p class="chart-caption">Kiekvienas taškas — vienas nuskaitymas, nuspalvintas pagal rezultatą (žalia = ramu, geltona = stebima, raudona = perspėjimas). Linija rodo vidutinį GDELT žinių toną, kai jis prieinamas — kuo neigiamesnis, tuo sunerimusi/priešiškesnė žiniasklaidos nuotaika, o ne prognozė.</p>
-      <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
-    </div>
-    <div class="chart-block">
-      <h3>Gandų/dezinformacijos stebėjimas laikui bėgant</h3>
-      <p class="chart-caption">Kiek gandų/dezinformacijos elementų (3 lygis — niekada negali savarankiškai sukelti tikro perspėjimo) buvo stebima kiekvieno nuskaitymo metu.</p>
-      <div id="chart-rumors" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+    <div class="charts-wrap">
+      <div class="range-selector mono" id="chart-range-selector"></div>
+      <div class="chart-block">
+        <h3>Eskalacijos intensyvumas laikui bėgant</h3>
+        <p class="chart-caption">Kiekvienas taškas — vienas nuskaitymas, nuspalvintas pagal rezultatą (žalia = ramu, geltona = stebima, raudona = perspėjimas). Linija rodo vidutinį GDELT žinių toną, kai jis prieinamas — kuo aukščiau linija, tuo sunerimusi/priešiškesnė žiniasklaidos nuotaika; tai ne prognozė.</p>
+        <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Gandų/dezinformacijos stebėjimas laikui bėgant</h3>
+        <p class="chart-caption">Kiek gandų/dezinformacijos elementų (3 lygis — niekada negali savarankiškai sukelti tikro perspėjimo) buvo stebima kiekvieno nuskaitymo metu.</p>
+        <div id="chart-rumors" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Naujausia nuskaitymų istorija <span class="count" id="history-count"></span></summary>
@@ -893,7 +905,7 @@
     var hasTone = toneVals.length > 0;
     var maxAbs = hasTone ? Math.max(1, Math.max.apply(null, toneVals.map(Math.abs))) : 1;
     var yTop = PAD_T, yBottom = H - PAD_B, yMid = (yTop + yBottom) / 2;
-    function yFor(tone) { return yMid - (tone / maxAbs) * (yMid - yTop); }
+    function yFor(tone) { return yMid + (tone / maxAbs) * (yMid - yTop); }
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
       'aria-label': 'Escalation intensity over time' });
@@ -969,12 +981,57 @@
     container.appendChild(svg);
   }
 
+  var RANGE_OPTIONS = [
+    { key: '1d', label: '1D', days: 1 },
+    { key: '1w', label: '1W', days: 7 },
+    { key: '1m', label: '1M', days: 30 },
+    { key: '6m', label: '6M', days: 182 },
+    { key: '1y', label: '1Y', days: 365 },
+  ];
+  var DEFAULT_RANGE_KEY = '1m';
+  var allChartPoints = [];
+  var currentRangeKey = DEFAULT_RANGE_KEY;
+
+  function filterPointsByRange(points, days) {
+    var cutoff = Date.now() - days * 86400000;
+    return points.filter(function (p) {
+      var t = Date.parse(p.ts);
+      return !isNaN(t) && t >= cutoff;
+    });
+  }
+
+  function renderCharts() {
+    var opt = RANGE_OPTIONS.filter(function (r) { return r.key === currentRangeKey; })[0] || RANGE_OPTIONS[2];
+    var filtered = filterPointsByRange(allChartPoints, opt.days);
+    renderIntensityChart(document.getElementById('chart-intensity'), filtered);
+    renderRumorChart(document.getElementById('chart-rumors'), filtered);
+  }
+
+  function buildRangeSelector() {
+    var container = document.getElementById('chart-range-selector');
+    container.textContent = '';
+    RANGE_OPTIONS.forEach(function (opt) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'range-btn' + (opt.key === currentRangeKey ? ' active' : '');
+      btn.textContent = opt.label;
+      btn.addEventListener('click', function () {
+        if (currentRangeKey === opt.key) return;
+        currentRangeKey = opt.key;
+        Array.prototype.forEach.call(container.children, function (c) { c.classList.remove('active'); });
+        btn.classList.add('active');
+        renderCharts();
+      });
+      container.appendChild(btn);
+    });
+  }
+
   fetch('/chart_data.json', { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
     .then(function (d) {
-      var points = d.points || [];
-      renderIntensityChart(document.getElementById('chart-intensity'), points);
-      renderRumorChart(document.getElementById('chart-rumors'), points);
+      allChartPoints = d.points || [];
+      buildRangeSelector();
+      renderCharts();
     })
     .catch(function () {
       emptyChart(document.getElementById('chart-intensity'), 'Diagramos duomenys laikinai nepasiekiami.');
