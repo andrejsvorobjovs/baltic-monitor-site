@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-14T20:00:48.369885+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-14T23:49:08.596490+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 177,
+  "total_scans": 178,
   "quiet_count": 157,
-  "watch_count": 20,
+  "watch_count": 21,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-14 20:00 UTC",
+  "generated_at": "2026-08-14 23:49 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-14T23:49:08.601837+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": true,
+      "new_items_count": 21,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Beavers from NATO territory \u2018invade\u2019 Kaliningrad, Russian media say - TVP World",
+          "source": "TVP World (Poland)",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWmhkUjlCeUxWWnNrODRWSC04QmIxWVFOQ0w1TTRmSVl3MlFkR1dkX3NvTnpjTDFUNllhczFIS3l6N2xKLWs2Y2I0UXV4bFd5STJTOUUyUi1YaGJyT3pnbS1rMFdONS1NU0tGTlJ2RHRtZ0lSWC0xbGNYSmQ4TlVuRG1zVW8wMmt1RUY0bmVB?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-14T20:00:48.375449+00:00",
       "level": "QUIET",
@@ -272,21 +299,25 @@
       "new_items_count": 25,
       "stale_count": 2,
       "items": []
-    },
-    {
-      "ts": "2026-08-11T20:18:51.777616+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 136,
-      "gdelt_ran": true,
-      "new_items_count": 38,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-14T23:49:08.603856+00:00",
+      "level": "WATCH",
+      "title": "Beavers from NATO territory \u2018invade\u2019 Kaliningrad, Russian media say - TVP World",
+      "source": "TVP World (Poland)",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWmhkUjlCeUxWWnNrODRWSC04QmIxWVFOQ0w1TTRmSVl3MlFkR1dkX3NvTnpjTDFUNllhczFIS3l6N2xKLWs2Y2I0UXV4bFd5STJTOUUyUi1YaGJyT3pnbS1rMFdONS1NU0tGTlJ2RHRtZ0lSWC0xbGNYSmQ4TlVuRG1zVW8wMmt1RUY0bmVB?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-14T12:08:05.770031+00:00",
       "level": "WATCH",
@@ -501,22 +532,6 @@
       "title": "Lithuanian minister rejects Dombrava plan to staff Latvia border with 100 Lithuanians",
       "source": "GDELT Cloud (POLITICAL)",
       "link": "https://gdeltcloud.com/events/lithuanian-minister-rejects-dombrava-plan-to-staff-latvia-bo--cameoplus_412c26f38cca504b",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-07-23T14:21:54.459462+00:00",
-      "level": "WATCH",
-      "title": "Lithuania reviews Latvia\u2019s request for border protection assistance",
-      "source": "GDELT Cloud (POLITICAL)",
-      "link": "https://gdeltcloud.com/events/lithuania-reviews-latvias-request-for-border-protection-assi--cameoplus_933f67bb646d3cf3",
       "categories": [
         "troop_movement",
         "baltic_specific"
