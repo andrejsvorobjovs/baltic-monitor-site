@@ -225,6 +225,16 @@
   .stat-cell .n { font-size: 26px; font-weight: 700; }
   .stat-cell .l { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
 
+  .chart-block { margin-top: 24px; }
+  .chart-block h3 { font-size: 14px; margin: 0 0 4px; }
+  .chart-caption { font-size: 12.5px; color: var(--ink-dim); margin: 0 0 10px; max-width: 62ch; }
+  .chart-svg-wrap {
+    border: 1px solid var(--border); border-radius: 4px; background: var(--mono);
+    padding: 12px 8px; overflow-x: auto;
+  }
+  .chart-svg-wrap svg { display: block; min-width: 100%; }
+  .chart-empty { padding: 20px; text-align: center; color: var(--ink-dim); font-size: 13px; }
+
   .log-details { margin-top: 20px; border-top: 1px solid var(--border); }
   .log-details summary {
     cursor: pointer; padding: 14px 0; font-size: 11.5px; letter-spacing: 0.08em;
@@ -419,6 +429,16 @@
       <div class="stat-cell"><div class="n" id="stat-watch">—</div><div class="l">Watch</div></div>
       <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Warn</div></div>
       <div class="stat-cell"><div class="n" id="stat-rate">—</div><div class="l">Correction rate</div></div>
+    </div>
+    <div class="chart-block">
+      <h3>Escalation intensity over time</h3>
+      <p class="chart-caption">Each dot is one scan, colored by its result (green = quiet, amber = watch, red = warn). The line is GDELT's average coverage tone where available — more negative means more alarmed/hostile press coverage, not a forecast.</p>
+      <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
+    </div>
+    <div class="chart-block">
+      <h3>Rumor/disinfo tracking over time</h3>
+      <p class="chart-caption">How many rumor/disinformation items (Tier 3 — never able to trigger a real alert on its own) were tracked per scan.</p>
+      <div id="chart-rumors" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Recent scan history <span class="count" id="history-count"></span></summary>
@@ -826,6 +846,144 @@
     .catch(function () {
       document.getElementById('status-text').textContent = 'Status unavailable';
       document.getElementById('status-error').style.display = 'block';
+    });
+})();
+
+// Escalation-intensity and rumor-tracking charts — a separate fetch from
+// status.json on purpose: chart_data.json holds a longer time series
+// (CHART_HISTORY_LIMIT in main.py, ~200 scans/33 days) than status.json's
+// recent_history is meant to hold (a 20-entry track-record log, not
+// chart data), and a failure here must never break the status panel
+// above, so it's an independent try, not chained onto that fetch.
+(function () {
+  var LEVEL_COLOR = { QUIET: 'var(--accent)', WATCH: 'var(--watch)', WARN: 'var(--warn)' };
+
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+    for (var k in attrs) { el.setAttribute(k, attrs[k]); }
+    return el;
+  }
+
+  function shortDate(ts) {
+    return (ts || '').slice(0, 10);
+  }
+
+  function emptyChart(container, message) {
+    container.textContent = '';
+    var div = document.createElement('div');
+    div.className = 'chart-empty';
+    div.textContent = message;
+    container.appendChild(div);
+  }
+
+  // Shared coordinate setup: evenly spaced by index (not real elapsed
+  // time) — scans aren't perfectly evenly spaced (best-effort GitHub
+  // scheduling, plus health-check vs scan cadence differ), so index-
+  // spacing keeps the shape readable rather than compressing gaps and
+  // stretching dense periods in a way that's harder to read at a glance.
+  var W = 800, H = 220, PAD_L = 34, PAD_R = 12, PAD_T = 16, PAD_B = 26;
+  function xFor(i, n) {
+    if (n <= 1) return PAD_L;
+    return PAD_L + (i / (n - 1)) * (W - PAD_L - PAD_R);
+  }
+
+  function renderIntensityChart(container, points) {
+    if (!points.length) { emptyChart(container, 'Not enough history yet — this builds up over time.'); return; }
+    container.textContent = '';
+
+    var toneVals = points.map(function (p) { return p.tone; }).filter(function (t) { return typeof t === 'number'; });
+    var hasTone = toneVals.length > 0;
+    var maxAbs = hasTone ? Math.max(1, Math.max.apply(null, toneVals.map(Math.abs))) : 1;
+    var yTop = PAD_T, yBottom = H - PAD_B, yMid = (yTop + yBottom) / 2;
+    function yFor(tone) { return yMid - (tone / maxAbs) * (yMid - yTop); }
+
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
+      'aria-label': 'Escalation intensity over time' });
+
+    // Zero baseline for the tone line (tone straddles positive/negative).
+    if (hasTone) {
+      svg.appendChild(svgEl('line', {
+        x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
+        stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
+      }));
+      var path = '', started = false;
+      points.forEach(function (p, i) {
+        if (typeof p.tone !== 'number') { started = false; return; }
+        var x = xFor(i, points.length), y = yFor(p.tone);
+        path += (started ? 'L' : 'M') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+        started = true;
+      });
+      svg.appendChild(svgEl('path', { d: path.trim(), fill: 'none', stroke: 'var(--ink-dim)', 'stroke-width': 1.5 }));
+    }
+
+    // One dot per scan, colored by level, positioned on the tone line
+    // when tone is known, else on the zero baseline.
+    points.forEach(function (p, i) {
+      var x = xFor(i, points.length);
+      var y = (hasTone && typeof p.tone === 'number') ? yFor(p.tone) : yMid;
+      var r = p.level === 'WARN' ? 4 : (p.level === 'WATCH' ? 3.5 : 2);
+      svg.appendChild(svgEl('circle', {
+        cx: x.toFixed(1), cy: y.toFixed(1), r: r,
+        fill: LEVEL_COLOR[p.level] || 'var(--ink-dim)',
+      })).appendChild(svgEl('title', {})).textContent =
+        shortDate(p.ts) + ' — ' + (p.level || 'unknown') +
+        (typeof p.tone === 'number' ? ' — tone ' + p.tone.toFixed(2) : '');
+    });
+
+    svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = shortDate(points[0].ts);
+    svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
+      .textContent = shortDate(points[points.length - 1].ts);
+
+    container.appendChild(svg);
+  }
+
+  function renderRumorChart(container, points) {
+    if (!points.length) { emptyChart(container, 'Not enough history yet — this builds up over time.'); return; }
+    container.textContent = '';
+
+    var counts = points.map(function (p) { return p.tier3_count || 0; });
+    var maxCount = Math.max(1, Math.max.apply(null, counts));
+    var yTop = PAD_T, yBottom = H - PAD_B;
+    var barW = Math.max(1, ((W - PAD_L - PAD_R) / points.length) * 0.7);
+
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
+      'aria-label': 'Rumor and disinformation tracking over time' });
+
+    points.forEach(function (p, i) {
+      var x = xFor(i, points.length);
+      var count = p.tier3_count || 0;
+      var barH = (count / maxCount) * (yBottom - yTop);
+      var bar = svgEl('rect', {
+        x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
+        width: barW.toFixed(1), height: Math.max(0.5, barH).toFixed(1),
+        fill: 'var(--accent)', opacity: 0.85,
+      });
+      bar.appendChild(svgEl('title', {})).textContent =
+        shortDate(p.ts) + ' — ' + count + ' rumor/disinfo item(s)';
+      svg.appendChild(bar);
+    });
+
+    svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = 'max ' + maxCount + '/scan';
+    svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = shortDate(points[0].ts);
+    svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
+      .textContent = shortDate(points[points.length - 1].ts);
+
+    container.appendChild(svg);
+  }
+
+  fetch('/chart_data.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function (d) {
+      var points = d.points || [];
+      renderIntensityChart(document.getElementById('chart-intensity'), points);
+      renderRumorChart(document.getElementById('chart-rumors'), points);
+    })
+    .catch(function () {
+      emptyChart(document.getElementById('chart-intensity'), 'Chart data temporarily unavailable.');
+      emptyChart(document.getElementById('chart-rumors'), 'Chart data temporarily unavailable.');
     });
 })();
 </script>
