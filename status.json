@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-14T16:15:36.338771+00:00",
+  "last_run_utc": "2026-08-14T20:00:48.369885+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 176,
-  "quiet_count": 156,
+  "total_scans": 177,
+  "quiet_count": 157,
   "watch_count": 20,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-14 16:15 UTC",
+  "generated_at": "2026-08-14 20:00 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-14T20:00:48.375449+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": true,
+      "new_items_count": 56,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-14T16:15:36.343046+00:00",
       "level": "QUIET",
@@ -271,18 +283,6 @@
       "gdelt_ran": true,
       "new_items_count": 38,
       "stale_count": 0,
-      "items": []
-    },
-    {
-      "ts": "2026-08-11T16:22:22.959367+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 135,
-      "gdelt_ran": true,
-      "new_items_count": 45,
-      "stale_count": 1,
       "items": []
     }
   ],
@@ -542,6 +542,26 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-14T19:35:17.134959+00:00",
+      "title": "NOTAM messages now plain-language, not raw aviation codes",
+      "text": "The /notam command (and the automatic scan context that uses the same data) used to show raw ICAO NOTAM shorthand -- field codes and aviation abbreviations that aren't meaningful without training. It now translates that into plain sentences with normal dates."
+    },
+    {
+      "ts": "2026-08-14T19:26:32.744800+00:00",
+      "title": "AIS, military aircraft, and Latvia NOTAM now feed automatic scans",
+      "text": "These three checks used to be on-demand only (Telegram commands you had to trigger yourself). Now they run automatically as part of every scan: if a scan already flags WATCH or WARN from the normal news scoring, unusual ship or aircraft activity or a newly-published military NOTAM gets added as extra context on that alert. None of the three can trigger an alert by themselves -- this project never lets one source alone do that."
+    },
+    {
+      "ts": "2026-08-14T18:55:31.288103+00:00",
+      "title": "Fixed: chart tone direction and 1D-1Y range selector scale",
+      "text": "The escalation-intensity chart's tone axis was backwards (worse plotted lower); flipped so higher now always means worse. The 1D/1W/1M/6M/1Y range buttons also now actually rescale the chart to the selected window instead of always stretching whatever data exists to fill the full width. History window bumped from ~33 days to ~1 year to support the longer ranges."
+    },
+    {
+      "ts": "2026-08-14T18:48:57.092929+00:00",
+      "title": "New: /notam command -- Latvia military-activity NOTAM tracking (Phase 1)",
+      "text": "Added a fourth on-demand check alongside GPSJam/AIS/military: current NOTAMs (official aviation notices) from Latvia's national Aeronautical Information Service, filtered to ones mentioning military activity -- restricted airspace activations, parachute exercises, and similar. Checkable any time via the Telegram bot. Latvia only for now; Estonia and Lithuania coverage may follow. Same design as the other three: informational only, never triggers an alert on its own, no API key needed."
+    },
+    {
       "ts": "2026-08-14T10:18:45.642784+00:00",
       "title": "New: escalation-intensity and rumor-tracking charts",
       "text": "Two new charts on the site's Track Record section: one showing escalation intensity over time (GDELT coverage tone, plus each scan colored by its actual QUIET/WATCH/WARN result), and one showing rumor/disinformation tracking volume over time. Builds on today's fix to how rumors are detected, so the rumor chart now reflects real activity instead of a filter that was silently missing most of it."
@@ -670,26 +690,6 @@
       "ts": "2026-08-06T08:52:02.467348+00:00",
       "title": "Poland's think tank added",
       "text": "PISM (Polish Institute of International Affairs) closes the last remaining gap -- every tracked country now has a national security/foreign-policy think tank. Total: 90 sources."
-    },
-    {
-      "ts": "2026-08-06T02:51:15.143550+00:00",
-      "title": "Poland's national broadcaster added",
-      "text": "TVP World, Poland's public broadcaster's English-language international news channel, closes the last remaining gap -- every tracked country now has one. Total: 89 sources."
-    },
-    {
-      "ts": "2026-08-05T20:53:59.707924+00:00",
-      "title": "Poland's Foreign Ministry added",
-      "text": "Closed the last parity gap from Poland's addition earlier -- every other tracked country already had its Foreign Ministry covered, Poland now does too. Total: 88 sources."
-    },
-    {
-      "ts": "2026-08-05T20:50:31.498288+00:00",
-      "title": "Corrections now reach the site immediately",
-      "text": "Published corrections used to only update this repo's own private log -- the public site's Corrections history section wouldn't show it until the next scheduled scan happened to run, sometimes hours later. Fixed so a correction reaches the site the moment it's published."
-    },
-    {
-      "ts": "2026-08-05T20:48:21.917933+00:00",
-      "title": "Fixed duplicate stories in the RSS feed and site",
-      "text": "Some flagged stories were briefly showing up twice (in feed.xml and on the site's Recent flagged items list) when the same event got re-detected under a new link. Fixed at the source and added a safety net so it can't recur."
     }
   ]
 }
