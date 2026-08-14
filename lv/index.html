@@ -885,13 +885,25 @@
     container.appendChild(div);
   }
 
+  // Shared coordinate setup: x position is real elapsed time within
+  // [rangeStart, rangeEnd] — a FIXED-width window matching the selected
+  // range (1 day/week/month/6 months/year), not "however many points
+  // happen to exist stretched to fill the chart". A real bug this fixes:
+  // with only ~1 month of real history collected so far, clicking 1Y
+  // used to look identical to clicking 1M (the same handful of points
+  // just re-stretched across the same width) -- now 1 month of real data
+  // inside a 1-year window correctly occupies ~1/12 of the width, with
+  // the rest left honestly blank rather than misleadingly stretched.
   var W = 800, H = 220, PAD_L = 34, PAD_R = 12, PAD_T = 16, PAD_B = 26;
-  function xFor(i, n) {
-    if (n <= 1) return PAD_L;
-    return PAD_L + (i / (n - 1)) * (W - PAD_L - PAD_R);
+  function xForTs(ts, rangeStart, rangeEnd) {
+    var t = Date.parse(ts);
+    if (isNaN(t)) return null;
+    var frac = (t - rangeStart) / (rangeEnd - rangeStart);
+    frac = Math.max(0, Math.min(1, frac));
+    return PAD_L + frac * (W - PAD_L - PAD_R);
   }
 
-  function renderIntensityChart(container, points) {
+  function renderIntensityChart(container, points, rangeStart, rangeEnd) {
     if (!points.length) { emptyChart(container, 'Vēl nav pietiekami daudz vēstures — tas veidojas laika gaitā.'); return; }
     container.textContent = '';
 
@@ -910,17 +922,19 @@
         stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
       }));
       var path = '', started = false;
-      points.forEach(function (p, i) {
+      points.forEach(function (p) {
         if (typeof p.tone !== 'number') { started = false; return; }
-        var x = xFor(i, points.length), y = yFor(p.tone);
+        var x = xForTs(p.ts, rangeStart, rangeEnd), y = yFor(p.tone);
+        if (x === null) { started = false; return; }
         path += (started ? 'L' : 'M') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
         started = true;
       });
       svg.appendChild(svgEl('path', { d: path.trim(), fill: 'none', stroke: 'var(--ink-dim)', 'stroke-width': 1.5 }));
     }
 
-    points.forEach(function (p, i) {
-      var x = xFor(i, points.length);
+    points.forEach(function (p) {
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) return;
       var y = (hasTone && typeof p.tone === 'number') ? yFor(p.tone) : yMid;
       var r = p.level === 'WARN' ? 4 : (p.level === 'WATCH' ? 3.5 : 2);
       svg.appendChild(svgEl('circle', {
@@ -932,27 +946,29 @@
     });
 
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
-      .textContent = shortDate(points[0].ts);
+      .textContent = shortDate(new Date(rangeStart).toISOString());
     svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
-      .textContent = shortDate(points[points.length - 1].ts);
+      .textContent = shortDate(new Date(rangeEnd).toISOString());
 
     container.appendChild(svg);
   }
 
-  function renderRumorChart(container, points) {
+  function renderRumorChart(container, points, rangeStart, rangeEnd, rangeDays) {
     if (!points.length) { emptyChart(container, 'Vēl nav pietiekami daudz vēstures — tas veidojas laika gaitā.'); return; }
     container.textContent = '';
 
     var counts = points.map(function (p) { return p.tier3_count || 0; });
     var maxCount = Math.max(1, Math.max.apply(null, counts));
     var yTop = PAD_T, yBottom = H - PAD_B;
-    var barW = Math.max(1, ((W - PAD_L - PAD_R) / points.length) * 0.7);
+    var expectedSlots = Math.max(rangeDays * 6, 1);
+    var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
       'aria-label': 'Rumor and disinformation tracking over time' });
 
-    points.forEach(function (p, i) {
-      var x = xFor(i, points.length);
+    points.forEach(function (p) {
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) return;
       var count = p.tier3_count || 0;
       var barH = (count / maxCount) * (yBottom - yTop);
       var bar = svgEl('rect', {
@@ -968,9 +984,9 @@
     svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = 'max ' + maxCount + '/scan';
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
-      .textContent = shortDate(points[0].ts);
+      .textContent = shortDate(new Date(rangeStart).toISOString());
     svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
-      .textContent = shortDate(points[points.length - 1].ts);
+      .textContent = shortDate(new Date(rangeEnd).toISOString());
 
     container.appendChild(svg);
   }
@@ -996,9 +1012,11 @@
 
   function renderCharts() {
     var opt = RANGE_OPTIONS.filter(function (r) { return r.key === currentRangeKey; })[0] || RANGE_OPTIONS[2];
+    var rangeEnd = Date.now();
+    var rangeStart = rangeEnd - opt.days * 86400000;
     var filtered = filterPointsByRange(allChartPoints, opt.days);
-    renderIntensityChart(document.getElementById('chart-intensity'), filtered);
-    renderRumorChart(document.getElementById('chart-rumors'), filtered);
+    renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
+    renderRumorChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days);
   }
 
   function buildRangeSelector() {
