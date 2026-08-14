@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-14T00:09:01.744385+00:00",
+  "last_run_utc": "2026-08-14T05:12:03.956730+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 2.8h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 171,
-  "quiet_count": 152,
+  "total_scans": 172,
+  "quiet_count": 153,
   "watch_count": 19,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-14 02:59 UTC",
+  "generated_at": "2026-08-14 05:12 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-14T05:12:03.962175+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": true,
+      "new_items_count": 49,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-14T00:09:01.749624+00:00",
       "level": "QUIET",
@@ -255,18 +267,6 @@
       "sources_scanned": 134,
       "gdelt_ran": true,
       "new_items_count": 39,
-      "stale_count": 1,
-      "items": []
-    },
-    {
-      "ts": "2026-08-10T20:12:34.694624+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 134,
-      "gdelt_ran": true,
-      "new_items_count": 42,
       "stale_count": 1,
       "items": []
     }
@@ -527,6 +527,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-14T03:52:52.322664+00:00",
+      "title": "New: /military command -- live military aircraft snapshot (Phase 1)",
+      "text": "Added a third on-demand check alongside GPSJam/AIS: a live snapshot of military aircraft in the Baltic region via adsb.lol's free, unfiltered ADS-B feed, checkable any time via the Telegram bot. Same design as the other two -- informational only, never triggers an alert on its own, and clearly states it only sees aircraft actively broadcasting (many military flights don't). First of three planned phases in a broader force-posture tracking effort; naval and OSINT-tracker phases are next."
+    },
+    {
       "ts": "2026-08-12T16:48:54.249164+00:00",
       "title": "Clearer explanations: QUIET/WATCH/WARN, tiers, and what the map shows",
       "text": "Added a plain-language guide to the pinned channel message and every map post explaining what QUIET/WATCH/WARN mean, what the source tiers are, and -- important -- that the on-demand map shows raw, unfiltered background data where most dots are NOT security alerts. Also added a matching FAQ entry on the site explaining the GDELT/Goldstein detail shown on some items."
@@ -670,11 +675,6 @@
       "ts": "2026-08-05T11:19:31+00:00",
       "title": "Fixed \"sources scanned\" not matching \"total sources\"",
       "text": "Two numbers on the site that should always agree were quietly drifting apart under certain conditions. Fixed so they always match."
-    },
-    {
-      "ts": "2026-08-05T10:57:42+00:00",
-      "title": "Swedish Armed Forces added",
-      "text": "Added to Tier 2."
     }
   ]
 }
