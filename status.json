@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-15T04:03:26.475982+00:00",
+  "last_run_utc": "2026-08-15T07:54:34.731516+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 179,
-  "quiet_count": 158,
+  "total_scans": 180,
+  "quiet_count": 159,
   "watch_count": 21,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-15 04:03 UTC",
+  "generated_at": "2026-08-15 07:54 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-15T07:54:34.736819+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": true,
+      "new_items_count": 14,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-15T04:03:26.481528+00:00",
       "level": "QUIET",
@@ -287,18 +299,6 @@
       "new_items_count": 32,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-12T05:10:11.792704+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 136,
-      "gdelt_ran": true,
-      "new_items_count": 20,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
@@ -557,6 +557,16 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-15T05:13:16.584310+00:00",
+      "title": "Fixed: scheduled health checks were wasting GitHub Actions minutes",
+      "text": "The automated twice-daily health check was re-checking every single source the same expensive way a full scan does, even though a much cheaper check already covers what it needs to catch. This was quietly using roughly half of this project's free monthly automation budget for no real benefit -- fixed with no change to scan frequency or freshness."
+    },
+    {
+      "ts": "2026-08-15T04:58:09.689959+00:00",
+      "title": "Fixed: WATCH/WARN digests could silently fail to send to Telegram",
+      "text": "Some real alerts' full digest message (the one with the actual headline and link) could silently never reach the channel, depending on which signal categories matched -- caused by an unescaped Markdown character in how categories were listed. Only the shorter summary message was reliably getting through. Category names now display as plain text (e.g. 'nato conflict risk') which fixes the underlying cause for every case, not just the one that surfaced it."
+    },
+    {
       "ts": "2026-08-14T19:35:17.134959+00:00",
       "title": "NOTAM messages now plain-language, not raw aviation codes",
       "text": "The /notam command (and the automatic scan context that uses the same data) used to show raw ICAO NOTAM shorthand -- field codes and aviation abbreviations that aren't meaningful without training. It now translates that into plain sentences with normal dates."
@@ -695,16 +705,6 @@
       "ts": "2026-08-06T17:21:44.573342+00:00",
       "title": "Historical backtest added -- and a real airspace-wording gap fixed",
       "text": "WARN has never fired in real scan history, so its accuracy was never actually exercised. Added two backtests modeling real, confirmed incidents (the 2023 Baltic Sea pipeline/cable sabotage, the 2025 Estonian airspace violation) run through the full scoring pipeline. Writing the second one caught a real false negative: official statements say jets \"violated Estonian airspace,\" not the literal \"airspace violation\" the keyword list required, so a genuine Tier-1 statement worded that way would have been silently dropped. Fixed and locked in with a regression test. 231 tests passing."
-    },
-    {
-      "ts": "2026-08-06T14:50:00.896837+00:00",
-      "title": "Finland, Sweden, and Poland now covered by our richest data source",
-      "text": "A real gap found during maintenance: GDELT's structured event data (our richest detection layer) was only ever being fetched for Estonia, Latvia, and Lithuania -- Finland, Sweden, and Poland were tracked everywhere else but never included in this specific query. Fixed."
-    },
-    {
-      "ts": "2026-08-06T08:52:02.467348+00:00",
-      "title": "Poland's think tank added",
-      "text": "PISM (Polish Institute of International Affairs) closes the last remaining gap -- every tracked country now has a national security/foreign-policy think tank. Total: 90 sources."
     }
   ]
 }
