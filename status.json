@@ -1,20 +1,75 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-17T15:50:37.281492+00:00",
+  "last_run_utc": "2026-08-17T19:52:09.306431+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 194,
+  "total_scans": 195,
   "quiet_count": 171,
-  "watch_count": 23,
+  "watch_count": 24,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-17 15:50 UTC",
+  "generated_at": "2026-08-17 19:52 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-17T19:52:09.312475+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": true,
+      "new_items_count": 30,
+      "stale_count": 1,
+      "items": [
+        {
+          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - LA.LV",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQLTVRdmRWQnBjVGJPSmNaYjEzdDdoMzJSRGJtMkNBclhKdjk4ZmptalZHbnJyNlRTMjBKRTJpNWY4REdON0t5YTQwYkNPMEp4UEYzcWxLNTFBTl9aNEFtSkdMdlUzdWJNeVJlWFJNZUp0RmZXbzBQOEJ5VXludVEzZmJzSzBRVDRWUlhCWXhiY1lJM3ZBcmNGTXNmMUYyd1hmbXlkbHZ1NWM2R0Zla0F6ZHI3SjlCZzZ1bDA5dWRKaFJ6UElrVG1F?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Jauns.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMTZxc3J0NEJ2Z1J6dmlTYnBHalYwVHdtM3ByVnlZV2ZBV0JXbGF6eWx4QVBLcnNuS2w3UUJKd3VsRzRnbTN2SDR2d2Y0S1lEeGRXaTZMT0Q5WnQ1WnpwaEZiT3UwZmdXWUJ4cGVBaGlsS3hNS2JzSWNtaUlKeFZrSWFtN3RrNXlwR0xFWUd4Z1V6dXBnVzNKM0dEU2Vld3c2aDdFVWU1RHRWUQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Inbox.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWXMwVWRjREViaTVqQkdYRnZTOEJaUGlDVEh0QjhITHpiN21yY25yWmoyaEpYVGN6ZFpUbHZERkJrZmlncnBhbjFrM0VGel80UkVvRnBDOWZqcDRvbDR0UERWX2hvQ3NMN3h4Q2c2dnRHVlJZZ0UydkpFakxyZ2JuNDIzMU05aGh5dW9KRThNNzRHeURvaE9yaDJuSnpRRUloWnJtcUFpcDRGTnRFelE?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-17T15:50:37.287191+00:00",
       "level": "WATCH",
@@ -315,36 +370,57 @@
       "new_items_count": 64,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-14T12:08:05.768648+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 13,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Drone incursions sow fear, chaos along NATO's Baltic and Finnish borders - Reuters",
-          "source": "Reuters (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSnhVUFlGN1hNN0dsY0Z2cERoTHZwRDBuMUZMWnBnM1RJMnlpWGx5SDE2UHlUcjRBTDlmNzE1Z1dmazllSzVoSU9BYlppN2xlWEFXMUVJb242WlR3aGVrcGZhblBWQzdpTS1qT3dEdGlOZ1o5NHZUWFRKTkVCcWpYa25UbWJLMTI4VnNtZTlpTFhvZjFnS0xPdFpLVkw3bUtEZWFiN3pubkxvaU5LWFRVTWc4dDFFNU1XXzZieURGR01ZZ29odTZhdQ?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier1",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-17T19:52:09.314643+00:00",
+      "level": "WATCH",
+      "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Inbox.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWXMwVWRjREViaTVqQkdYRnZTOEJaUGlDVEh0QjhITHpiN21yY25yWmoyaEpYVGN6ZFpUbHZERkJrZmlncnBhbjFrM0VGel80UkVvRnBDOWZqcDRvbDR0UERWX2hvQ3NMN3h4Q2c2dnRHVlJZZ0UydkpFakxyZ2JuNDIzMU05aGh5dW9KRThNNzRHeURvaE9yaDJuSnpRRUloWnJtcUFpcDRGTnRFelE?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-08-17T19:52:09.314643+00:00",
+      "level": "WATCH",
+      "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Jauns.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMTZxc3J0NEJ2Z1J6dmlTYnBHalYwVHdtM3ByVnlZV2ZBV0JXbGF6eWx4QVBLcnNuS2w3UUJKd3VsRzRnbTN2SDR2d2Y0S1lEeGRXaTZMT0Q5WnQ1WnpwaEZiT3UwZmdXWUJ4cGVBaGlsS3hNS2JzSWNtaUlKeFZrSWFtN3RrNXlwR0xFWUd4Z1V6dXBnVzNKM0dEU2Vld3c2aDdFVWU1RHRWUQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-08-17T19:52:09.314643+00:00",
+      "level": "WATCH",
+      "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - LA.LV",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQLTVRdmRWQnBjVGJPSmNaYjEzdDdoMzJSRGJtMkNBclhKdjk4ZmptalZHbnJyNlRTMjBKRTJpNWY4REdON0t5YTQwYkNPMEp4UEYzcWxLNTFBTl9aNEFtSkdMdlUzdWJNeVJlWFJNZUp0RmZXbzBQOEJ5VXludVEzZmJzSzBRVDRWUlhCWXhiY1lJM3ZBcmNGTXNmMUYyd1hmbXlkbHZ1NWM2R0Zla0F6ZHI3SjlCZzZ1bDA5dWRKaFJ6UElrVG1F?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-17T15:50:37.289407+00:00",
       "level": "WATCH",
@@ -527,54 +603,6 @@
       "title": "Lithuania delivers protest note to Russia over strikes on Ukraine, airspace violations",
       "source": "GDELT Cloud (POLITICAL)",
       "link": "https://gdeltcloud.com/events/lithuania-delivers-protest-note-to-russia-over-strikes-on-uk--cameoplus_bf22278e480f987e",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-01T00:18:13.577487+00:00",
-      "level": "WATCH",
-      "title": "Lithuania sends 32 firefighters to help France fight wildfires",
-      "source": "GDELT Cloud (ENVIRONMENT)",
-      "link": "https://gdeltcloud.com/events/lithuania-sends-32-firefighters-to-help-france-fight-wildfir--cameoplus_abd98d23478b1c3b",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-07-29T13:12:33.447434+00:00",
-      "level": "WATCH",
-      "title": "Estonia sends additional border guards to Latvia over migrants from Belarus",
-      "source": "GDELT Cloud (POLITICAL)",
-      "link": "https://gdeltcloud.com/events/estonia-sends-additional-border-guards-to-latvia-over-migran--cameoplus_e9f71b82dc052f7a",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-07-28T13:02:40.202085+00:00",
-      "level": "WATCH",
-      "title": "Drone incursions sow fear, chaos along NATO's Baltic and Finnish borders - Reuters",
-      "source": "Reuters (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdWtBZ2NFQWdpMUQ5dkRMZHpMVElFNkZNZnNWRzV1eHZZanc1ZHJRQWkyMnNxM2dvbGRua3pSTTcxTlpuSDVTcGtpUFpaUmJ0MDBZTUVaeFlINjF0ZnZHdi01UWlZNnJFZ3NheEZ6bXk1SF9ZYzdXbXVqMGFxdVl2ejdqc3c2cEdUX2FtUDdMR0lPaGFLQ1B6ZDdfc2t3X2RzNEE4aHFlU3loYlZETXg2dmpRTVp3VWp0R0NmaXRWR1RGYVYwMDdsQw?oc=5",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
