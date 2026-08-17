@@ -1,20 +1,75 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-17T19:52:09.306431+00:00",
+  "last_run_utc": "2026-08-17T23:48:52.433531+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 195,
+  "total_scans": 196,
   "quiet_count": 171,
-  "watch_count": 24,
+  "watch_count": 25,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-17 19:52 UTC",
+  "generated_at": "2026-08-17 23:48 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-17T23:48:52.439255+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": false,
+      "new_items_count": 32,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Russia deploying warships to Baltic Sea, posing threat to regional countries \u2013 Bild - Ukrinform",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQjBHMVdZbUwtckxFckZ0U2NQUmJVclZEdGo1VTVsaGR2VWZvc3c3MlFfZ1dZd0NQVmlnVGxTMkRGU1FUQTBlN2RKS1F3c3ZVd2RGZ0E0TktfOHZyYnQ3ZTRqUkI2Z0JTWVhkdHJGc2JHeGVnU0xtUUtyN1hFRkctSkJSaFB6U29QdjVzOFlIN2tSck05QTNnRUtOUWNReE8taFNKbWRUNUpmVnJCMDlONm1LVThRaU9zMUNOWTg2bXRJNVp4SE55VDI3T1lwYm1L0gHWAUFVX3lxTE1fV3hMeUtsRWZHMnJkLWpYd0MzcDhuMUp5Y2lidzRleC1DNndZbjFVQkFmbHRXTlhQOC1uTjA0NjdwRDk5UFJwNjQ0cWdzN29ObVNMTm5xOEVlSjRtUWo0THN3TTM5VjRaQXNHV2VqeFZEeDdyakpEM1J6QTJ2MFJ3NktjMWxQSVZoZWpSS1ZtTFRDSGFoRjJ0a1dMOUl1R2RwQVlIZUJBZzVGNnRITFI5RXN0M3h5SDczQmpCNFFsOXItQ3ZwV0dWaTN1N2pkWlNqY243dVE?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Pieaugo\u0161as ba\u017eas par sabot\u0101\u017eu Baltijas valst\u012bs: NATO br\u012bdina par Krievijas oper\u0101cij\u0101m - lente.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMkE5WVgzcEt0bHVSYnpQQnRXcHZncUFqb1RnVXpBbkhvckh5UXRiVWFUc0ZPQUtjYkNpLWNZTGU2cU0waDctNHFNZGh1cGdONzB1a0NUUGdSZnRvTGo4YzhvR0JlNWF3X0VPLThsMlhwZXhRcFg2VDRvS3hfTDNQZ2RhNEVhZUR0dUVHelEzanZGeWpDeV9WMlFKSFUwdGhQYW5EZVU1S2Q4aGdYQ1BkcEppWjY4OTQ0bFB0aFVSc3h3S0NNQTVr?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNajItSVBqYVFiVDBoRm5kaUhWMENWVnhpOThNYnpMY1pwQ0RJa0lsN042YUNqcHhHaGhTX3Q3UXBVdkwzYjJhOWJxdUxsSnhNNVMzd1hZdnA0TW5uek8zM3hxVjJ3RFNrZEthcXlkS2JYeWVYajQwN2dLT2xQVjV0aHR6bmYwb1g1LU52TDg4alhBNzI4SnFGNzRpZlFBTDViZktGUm1WWWpjUnpHU3djaDA2eHhZR2x4TjdHbUYxZ1M4aGthZnVxeFVxdlJDc1BsdkQ2UWZYTkp3Y0xLWmNpV1o5NjFuaG1PRFlHMmlMdlVWYWZKVDNPakFB?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-17T19:52:09.312475+00:00",
       "level": "WATCH",
@@ -358,21 +413,57 @@
       "new_items_count": 56,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-14T16:15:36.343046+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 64,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-17T23:48:52.441581+00:00",
+      "level": "WATCH",
+      "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNajItSVBqYVFiVDBoRm5kaUhWMENWVnhpOThNYnpMY1pwQ0RJa0lsN042YUNqcHhHaGhTX3Q3UXBVdkwzYjJhOWJxdUxsSnhNNVMzd1hZdnA0TW5uek8zM3hxVjJ3RFNrZEthcXlkS2JYeWVYajQwN2dLT2xQVjV0aHR6bmYwb1g1LU52TDg4alhBNzI4SnFGNzRpZlFBTDViZktGUm1WWWpjUnpHU3djaDA2eHhZR2x4TjdHbUYxZ1M4aGthZnVxeFVxdlJDc1BsdkQ2UWZYTkp3Y0xLWmNpV1o5NjFuaG1PRFlHMmlMdlVWYWZKVDNPakFB?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-08-17T23:48:52.441581+00:00",
+      "level": "WATCH",
+      "title": "Pieaugo\u0161as ba\u017eas par sabot\u0101\u017eu Baltijas valst\u012bs: NATO br\u012bdina par Krievijas oper\u0101cij\u0101m - lente.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMkE5WVgzcEt0bHVSYnpQQnRXcHZncUFqb1RnVXpBbkhvckh5UXRiVWFUc0ZPQUtjYkNpLWNZTGU2cU0waDctNHFNZGh1cGdONzB1a0NUUGdSZnRvTGo4YzhvR0JlNWF3X0VPLThsMlhwZXhRcFg2VDRvS3hfTDNQZ2RhNEVhZUR0dUVHelEzanZGeWpDeV9WMlFKSFUwdGhQYW5EZVU1S2Q4aGdYQ1BkcEppWjY4OTQ0bFB0aFVSc3h3S0NNQTVr?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-08-17T23:48:52.441581+00:00",
+      "level": "WATCH",
+      "title": "Russia deploying warships to Baltic Sea, posing threat to regional countries \u2013 Bild - Ukrinform",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQjBHMVdZbUwtckxFckZ0U2NQUmJVclZEdGo1VTVsaGR2VWZvc3c3MlFfZ1dZd0NQVmlnVGxTMkRGU1FUQTBlN2RKS1F3c3ZVd2RGZ0E0TktfOHZyYnQ3ZTRqUkI2Z0JTWVhkdHJGc2JHeGVnU0xtUUtyN1hFRkctSkJSaFB6U29QdjVzOFlIN2tSck05QTNnRUtOUWNReE8taFNKbWRUNUpmVnJCMDlONm1LVThRaU9zMUNOWTg2bXRJNVp4SE55VDI3T1lwYm1L0gHWAUFVX3lxTE1fV3hMeUtsRWZHMnJkLWpYd0MzcDhuMUp5Y2lidzRleC1DNndZbjFVQkFmbHRXTlhQOC1uTjA0NjdwRDk5UFJwNjQ0cWdzN29ObVNMTm5xOEVlSjRtUWo0THN3TTM5VjRaQXNHV2VqeFZEeDdyakpEM1J6QTJ2MFJ3NktjMWxQSVZoZWpSS1ZtTFRDSGFoRjJ0a1dMOUl1R2RwQVlIZUJBZzVGNnRITFI5RXN0M3h5SDczQmpCNFFsOXItQ3ZwV0dWaTN1N2pkWlNqY243dVE?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-17T19:52:09.314643+00:00",
       "level": "WATCH",
@@ -564,54 +655,6 @@
       "gdelt_subcategory": "036 \u00b7 Intent to Meet/negotiate",
       "gdelt_event_code": "036",
       "goldstein": 4
-    },
-    {
-      "ts": "2026-08-07T00:54:58.930767+00:00",
-      "level": "WATCH",
-      "title": "Lithuanian foreign minister says Germany brigade helps deter Russia",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/lithuanian-foreign-minister-says-germany-brigade-helps-deter--conflict_189fd62989310161",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "Strategic developments",
-      "gdelt_subcategory": "Headquarters or base established",
-      "gdelt_event_code": "",
-      "goldstein": -7.2
-    },
-    {
-      "ts": "2026-08-04T20:48:05.102295+00:00",
-      "level": "WATCH",
-      "title": "Latvia plans to send about 20 soldiers to Strait of Hormuz",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/latvia-plans-to-send-about-20-soldiers-to-strait-of-hormuz--cameoplus_c7debeac1e901184",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-01T00:18:13.577487+00:00",
-      "level": "WATCH",
-      "title": "Lithuania delivers protest note to Russia over strikes on Ukraine, airspace violations",
-      "source": "GDELT Cloud (POLITICAL)",
-      "link": "https://gdeltcloud.com/events/lithuania-delivers-protest-note-to-russia-over-strikes-on-uk--cameoplus_bf22278e480f987e",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
