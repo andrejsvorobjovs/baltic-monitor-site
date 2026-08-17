@@ -1,20 +1,61 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-17T11:49:25.706785+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 1.2h ago",
+  "last_run_utc": "2026-08-17T15:50:37.281492+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 193,
+  "total_scans": 194,
   "quiet_count": 171,
-  "watch_count": 22,
+  "watch_count": 23,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-17 13:04 UTC",
+  "generated_at": "2026-08-17 15:50 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-17T15:50:37.287191+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": true,
+      "new_items_count": 45,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Bild: Russia is deploying warships to the Baltic Sea amid Putin's threats against Europeans - LIGA.net",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTUd6aXRTcG5YamJ6eHg4akd4Z1Jna011SGRMYTBaRkk0SnBVV2Q1T3dQenVRUmtIU25PNkI4bkhGeGFDa0NrVm11TG1Bc0t0REdNcFFZM29BcFlNeW5USVB2ZkJ3aWpvaEJOaDlTbDBSYWNSVTZaREVCOEU2YmtXY0RJQ1BJOFhEMDNpNi1UUFlSU19vQnNwbm13cF9KV3FjdzNqTlBSUlh2TUtsNmItZElYdjl2N3ZYQzVpTThvOWl1UEHSAcgBQVVfeXFMTTBveHpRbHZlX2w4bS1EblVIcmVuOWRya1d1NzdDRXBtNW80Tzd5T21fUktjREl5QXYyaktzSGZ6YzFzSEhXWlpMTmVpR2REMjZzaEJ1QVdGUEwtZVFlWWFkSDdueTNvQXZ0YnhrVFljVmgzYWphWUgyVHR0WExpbHZiTV85bDlnRzhwYlFKSkFxQ1J4cTZfak5XS2ZCa1VfWHhkVExiYzhGa2J2TE1KcGVTVURMUlgwZ2Fha0lqVHF3WmhCQlp3Tno?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Inbox.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZW9reEl0cU96QjBwQk1vejJPUERjSGRMSDZDZDUtZDVZWHVkanpWWkU5bU43azZZNVMtZlJVS2poa1BUS3pwNFppS3VQSUtQb0tDNHktMFJGUFY2OFFGakhJMW1VUFV2QmNGeVlWeFNGaTgzNDE0RDVCSzNPeXQ4dHBXRzBqbTZyYy1EVDhnOVB0cnAzcF9URE5UNDhaWWdyZmluNHZNcGgzYWktTlBTNlE4NGpNNTVyWGQtRF9adlk?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-17T11:49:25.712185+00:00",
       "level": "QUIET",
@@ -301,21 +342,41 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-08-14T10:42:44.948179+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 32,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-17T15:50:37.289407+00:00",
+      "level": "WATCH",
+      "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Inbox.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZW9reEl0cU96QjBwQk1vejJPUERjSGRMSDZDZDUtZDVZWHVkanpWWkU5bU43azZZNVMtZlJVS2poa1BUS3pwNFppS3VQSUtQb0tDNHktMFJGUFY2OFFGakhJMW1VUFV2QmNGeVlWeFNGaTgzNDE0RDVCSzNPeXQ4dHBXRzBqbTZyYy1EVDhnOVB0cnAzcF9URE5UNDhaWWdyZmluNHZNcGgzYWktTlBTNlE4NGpNNTVyWGQtRF9adlk?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-08-17T15:50:37.289407+00:00",
+      "level": "WATCH",
+      "title": "Bild: Russia is deploying warships to the Baltic Sea amid Putin's threats against Europeans - LIGA.net",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTUd6aXRTcG5YamJ6eHg4akd4Z1Jna011SGRMYTBaRkk0SnBVV2Q1T3dQenVRUmtIU25PNkI4bkhGeGFDa0NrVm11TG1Bc0t0REdNcFFZM29BcFlNeW5USVB2ZkJ3aWpvaEJOaDlTbDBSYWNSVTZaREVCOEU2YmtXY0RJQ1BJOFhEMDNpNi1UUFlSU19vQnNwbm13cF9KV3FjdzNqTlBSUlh2TUtsNmItZElYdjl2N3ZYQzVpTThvOWl1UEHSAcgBQVVfeXFMTTBveHpRbHZlX2w4bS1EblVIcmVuOWRya1d1NzdDRXBtNW80Tzd5T21fUktjREl5QXYyaktzSGZ6YzFzSEhXWlpMTmVpR2REMjZzaEJ1QVdGUEwtZVFlWWFkSDdueTNvQXZ0YnhrVFljVmgzYWphWUgyVHR0WExpbHZiTV85bDlnRzhwYlFKSkFxQ1J4cTZfak5XS2ZCa1VfWHhkVExiYzhGa2J2TE1KcGVTVURMUlgwZ2Fha0lqVHF3WmhCQlp3Tno?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-17T08:15:11.660590+00:00",
       "level": "WATCH",
@@ -523,38 +584,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-07-26T09:38:49.605815+00:00",
-      "level": "WATCH",
-      "title": "Turkey deploys F-16 jets on NATO mission, Strategic Contribution announced",
-      "source": "GDELT Cloud (CONFLICT)",
-      "link": "https://gdeltcloud.com/events/turkey-deploys-f-16-jets-on-nato-mission-strategic-contribut--conflict_f9c4f5258726568d",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-07-25T08:18:40.850544+00:00",
-      "level": "WATCH",
-      "title": "Russian diplomat says Estonia is concealing reports of Ukrainian drones",
-      "source": "GDELT Cloud (POLITICAL)",
-      "link": "https://gdeltcloud.com/events/russian-diplomat-says-estonia-is-concealing-reports-of-ukrai--cameoplus_0ca0bbc2122161b2",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -570,6 +599,11 @@
     }
   ],
   "recent_updates": [
+    {
+      "ts": "2026-08-17T15:02:39.456580+00:00",
+      "title": "Baltic Notices to Mariners tracking (/notmar)",
+      "text": "Added /notmar: on-demand check of Estonia's and Latvia's official Notices to Mariners bulletins, filtered to security-relevant activity (military exercises, submarine cable/pipeline notices, restricted zones). Same informational-only pattern as /gpsjam, /ais, and /military -- never triggers an alert on its own. Lithuania isn't covered yet; its official site blocks automated access, the same gap /notam already has."
+    },
     {
       "ts": "2026-08-15T05:13:16.584310+00:00",
       "title": "Fixed: scheduled health checks were wasting GitHub Actions minutes",
@@ -714,11 +748,6 @@
       "ts": "2026-08-06T17:28:03.217375+00:00",
       "title": "Fixed real translation gaps on the ET/LV/LT site pages",
       "text": "Full review of the Estonian/Latvian/Lithuanian site text against the English original. Found a real bug: the watchdog's \"Attention needed\" freshness message was never translated -- only the healthy \"Last scan: Xh ago\" pattern was, so the one unhealthy message would have shown raw English on exactly the occasion something is actually wrong. Fixed, plus a dropped clause restored in the LV/LT FAQ for parity with EN/ET. Rest of the translated text read as complete and accurate."
-    },
-    {
-      "ts": "2026-08-06T17:21:44.573342+00:00",
-      "title": "Historical backtest added -- and a real airspace-wording gap fixed",
-      "text": "WARN has never fired in real scan history, so its accuracy was never actually exercised. Added two backtests modeling real, confirmed incidents (the 2023 Baltic Sea pipeline/cable sabotage, the 2025 Estonian airspace violation) run through the full scoring pipeline. Writing the second one caught a real false negative: official statements say jets \"violated Estonian airspace,\" not the literal \"airspace violation\" the keyword list required, so a genuine Tier-1 statement worded that way would have been silently dropped. Fixed and locked in with a regression test. 231 tests passing."
     }
   ]
 }
