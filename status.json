@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-18T11:48:32.328830+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.3h ago",
+  "last_run_utc": "2026-08-18T15:57:23.345353+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 199,
-  "quiet_count": 172,
+  "total_scans": 200,
+  "quiet_count": 173,
   "watch_count": 27,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-18 13:06 UTC",
+  "generated_at": "2026-08-18 15:57 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-18T15:57:23.351911+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": true,
+      "new_items_count": 14,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-18T11:48:32.334745+00:00",
       "level": "WATCH",
@@ -430,18 +442,6 @@
       "new_items_count": 37,
       "stale_count": 2,
       "items": []
-    },
-    {
-      "ts": "2026-08-15T07:54:34.736819+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 14,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
@@ -700,6 +700,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-18T13:15:04.208151+00:00",
+      "title": "AIS now flags self-declared military/law-enforcement vessels",
+      "text": "Extended /ais and its automatic scan check to read a vessel's own self-declared ship type (a standard AIS field), flagging any that identify as Military, Law Enforcement, or Noncombatant. Deliberately not based on a curated list of specific ships -- only on what each vessel's own transponder broadcasts, honestly caveated since most vessels won't show a type in any single snapshot."
+    },
+    {
       "ts": "2026-08-18T09:55:31.212144+00:00",
       "title": "Fixed: GDELT Cloud enrichment was silently capped for half of every month",
       "text": "Found the real cause of the recent GDELT Cloud failures: the free plan's 100-request monthly quota, burned through by this project's own usage in about half the month. Cut the automatic scan's GDELT Cloud calls from 6x/day to 3x/day so the free quota now lasts the full month. Map pins and severity scores on flagged items will be a bit less frequent, but core detection was never affected either way."
@@ -843,11 +848,6 @@
       "ts": "2026-08-06T17:44:29.083318+00:00",
       "title": "External heartbeat added, closing a real blind spot",
       "text": "The Aug 6 GitHub Actions/Pages outage exposed a gap: the watchdog only notices a problem if GitHub actually runs it -- during that outage the watchdog itself sat queued for over an hour, unable to catch its own non-execution. health-check.yml now pings an external dead-man's-switch service (healthchecks.io) that alerts on its own infrastructure if a ping stops arriving, independent of GitHub or anything else this project runs on. Opt-in via a HEALTHCHECKS_PING_URL secret -- see README Setup."
-    },
-    {
-      "ts": "2026-08-06T17:36:11.866081+00:00",
-      "title": "Public JSON API added for the live status data",
-      "text": "A documented, versioned read API (GET https://baltic-monitor-push.vercel.app/api/status) now sits alongside the Telegram channel, browser push, and RSS feed -- for anyone who wants to build on this data (a script, another site, a bot) without scraping HTML or depending on the landing page's own internal status.json, which can change shape whenever that page's UI needs something new. No auth, no rate limit -- same data that is already fully public on the site."
     }
   ]
 }
