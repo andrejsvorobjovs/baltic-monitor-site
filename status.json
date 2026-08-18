@@ -1,20 +1,61 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-18T04:07:55.776177+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-18T08:05:53.133417+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 197,
+  "total_scans": 198,
   "quiet_count": 172,
-  "watch_count": 25,
+  "watch_count": 26,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-18 04:07 UTC",
+  "generated_at": "2026-08-18 08:05 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-18T08:05:53.139218+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": false,
+      "new_items_count": 10,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Russia deploying warships to Baltic Sea, posing threat to regional countries \u2013 Bild - Ukrinform",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVVRMUEZKUkNjYlNxZnAxRm9UMkpqY2FGY1pLWmYxak9MWjZrb3A4X0NjbUxPVmpDSnhBZ0FtN3IyUmhwRUk1RzE0VjFRZnNJdktGSlRxWWN3emkyZ3JPbWRkcWVjQjFpTlhtQ1F4S2RlcnU4TjJtcmZIV2c2V0hGcU1COXV2cnVEVjJUQ1gwSFN4SzkzRzVlQTJkU1VjX09FanhYekFNTW42S3hPRXdIZ3Y3cU1pVnBYOXM4eUdnclh6M2k0QWN0VDRR0gHPAUFVX3lxTFBFWXdtRGJ3d3FCSlBIN2RBZGtUX2Z0TzMzNTFzTXhZQ1hVS1pOTmxGZU10RnM0MmZuaTRHUjVNSFp1NWtmRHR4b2RJNms2VDNsU0tROE1ybjhYajZ2X2dVdkc0UWp6Z21PalZZS1NLNzJ5bnRWVmZ1ak81NS13RnhHbjVKYjNyek1nSGtSQWNkdzhERDZWU2RMY3N4cnh1VEc3OVlZa0d2MXpGOEFsVHFMUUt4SkdLZWJmSHVONVdzalkzSUxhUE1Sd1JETGpQMA?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSFpPbjBxNDdwVkRsaktsazliYzZZZ3BzeURLNXJiZFFHRjdEeHpZeVRJY3h1RW1MYldiOHYtbGpFTXRyMy1sblN6X2FXWU1ES1FuYVFqUHo0VmVITDJIYkozMlFhSVYwUGpTazlreXBLeVo3eVQ5VHdXdjl5MHlmYVhjVWQyTm5xMnR4UFFxbldJMVlGemlFYkpMMnA5ZlBtVjlDTmhmbzI2YTRGR01hOWhPT20ycHFMdXJxV3F6NjQyS3V1Smtma2UzRUlGSTl1bGZHeVc1dkR5blUyZFNUblU2cXRLSEk?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-18T04:07:55.781897+00:00",
       "level": "QUIET",
@@ -386,36 +427,41 @@
       "new_items_count": 55,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-14T23:49:08.601837+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 21,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Beavers from NATO territory \u2018invade\u2019 Kaliningrad, Russian media say - TVP World",
-          "source": "TVP World (Poland)",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWmhkUjlCeUxWWnNrODRWSC04QmIxWVFOQ0w1TTRmSVl3MlFkR1dkX3NvTnpjTDFUNllhczFIS3l6N2xKLWs2Y2I0UXV4bFd5STJTOUUyUi1YaGJyT3pnbS1rMFdONS1NU0tGTlJ2RHRtZ0lSWC0xbGNYSmQ4TlVuRG1zVW8wMmt1RUY0bmVB?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-18T08:05:53.141537+00:00",
+      "level": "WATCH",
+      "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSFpPbjBxNDdwVkRsaktsazliYzZZZ3BzeURLNXJiZFFHRjdEeHpZeVRJY3h1RW1MYldiOHYtbGpFTXRyMy1sblN6X2FXWU1ES1FuYVFqUHo0VmVITDJIYkozMlFhSVYwUGpTazlreXBLeVo3eVQ5VHdXdjl5MHlmYVhjVWQyTm5xMnR4UFFxbldJMVlGemlFYkpMMnA5ZlBtVjlDTmhmbzI2YTRGR01hOWhPT20ycHFMdXJxV3F6NjQyS3V1Smtma2UzRUlGSTl1bGZHeVc1dkR5blUyZFNUblU2cXRLSEk?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-08-18T08:05:53.141537+00:00",
+      "level": "WATCH",
+      "title": "Russia deploying warships to Baltic Sea, posing threat to regional countries \u2013 Bild - Ukrinform",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVVRMUEZKUkNjYlNxZnAxRm9UMkpqY2FGY1pLWmYxak9MWjZrb3A4X0NjbUxPVmpDSnhBZ0FtN3IyUmhwRUk1RzE0VjFRZnNJdktGSlRxWWN3emkyZ3JPbWRkcWVjQjFpTlhtQ1F4S2RlcnU4TjJtcmZIV2c2V0hGcU1COXV2cnVEVjJUQ1gwSFN4SzkzRzVlQTJkU1VjX09FanhYekFNTW42S3hPRXdIZ3Y3cU1pVnBYOXM4eUdnclh6M2k0QWN0VDRR0gHPAUFVX3lxTFBFWXdtRGJ3d3FCSlBIN2RBZGtUX2Z0TzMzNTFzTXhZQ1hVS1pOTmxGZU10RnM0MmZuaTRHUjVNSFp1NWtmRHR4b2RJNms2VDNsU0tROE1ybjhYajZ2X2dVdkc0UWp6Z21PalZZS1NLNzJ5bnRWVmZ1ak81NS13RnhHbjVKYjNyek1nSGtSQWNkdzhERDZWU2RMY3N4cnh1VEc3OVlZa0d2MXpGOEFsVHFMUUt4SkdLZWJmSHVONVdzalkzSUxhUE1Sd1JETGpQMA?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-17T23:48:52.441581+00:00",
       "level": "WATCH",
@@ -623,38 +669,6 @@
       "gdelt_subcategory": "026 \u00b7 Appeal to Meet/negotiate",
       "gdelt_event_code": "026",
       "goldstein": 3
-    },
-    {
-      "ts": "2026-08-08T11:49:15.825107+00:00",
-      "level": "WATCH",
-      "title": "Lithuanian Seimas NSGK chair refuses to convene meeting over alleged provocations",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/lithuanian-seimas-nsgk-chair-refuses-to-convene-meeting-over--cameoplus_4cd8275f54430f87",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "125 \u00b7 Reject Proposal to Meet/negotiate (-5.0)",
-      "gdelt_event_code": "125",
-      "goldstein": -5
-    },
-    {
-      "ts": "2026-08-07T05:11:35.773195+00:00",
-      "level": "WATCH",
-      "title": "Lithuanian opposition to convene extraordinary NSGK meeting over alleged Russian provocations",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/lithuanian-opposition-to-convene-extraordinary-nsgk-meeting--cameoplus_4ec4d303d05eac93",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "036 \u00b7 Intent to Meet/negotiate",
-      "gdelt_event_code": "036",
-      "goldstein": 4
     }
   ],
   "recent_corrections": [
