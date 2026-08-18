@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-18T15:57:23.345353+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-18T19:50:02.131357+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 200,
+  "total_scans": 201,
   "quiet_count": 173,
-  "watch_count": 27,
+  "watch_count": 28,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-18 15:57 UTC",
+  "generated_at": "2026-08-18 19:50 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-18T19:50:02.137238+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 138,
+      "gdelt_ran": false,
+      "new_items_count": 38,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - LA.LV",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb1Nfd2lpMlNJWnM1T0ZvdGJSendRWVVLM0JfTndJZ01NNzVfXy0xQThsMF9HYmhFYVdXc0NzLUxGaURXZGdRZzRzQktsa0lpNGpvdjZuRFVuNzR2dGswdXhuX0pyX1VwaW5od2stQkJ5d2xQdnpUdHFQQVBJb2tGeTdyRFVTSzVKOVczaEFXSGdEQkNmY25lOWxsTXNFRDVNdFAwMXVkUENzQkZ6eFZNWm5ob2JTYzJRVk8wM3IydzU1Q2pucG5ZZEhNQUVLVWZMU3A2Sw?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-18T15:57:23.351911+00:00",
       "level": "QUIET",
@@ -430,21 +457,25 @@
       "new_items_count": 13,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-15T11:43:41.873503+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 37,
-      "stale_count": 2,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-18T19:50:02.139657+00:00",
+      "level": "WATCH",
+      "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - LA.LV",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb1Nfd2lpMlNJWnM1T0ZvdGJSendRWVVLM0JfTndJZ01NNzVfXy0xQThsMF9HYmhFYVdXc0NzLUxGaURXZGdRZzRzQktsa0lpNGpvdjZuRFVuNzR2dGswdXhuX0pyX1VwaW5od2stQkJ5d2xQdnpUdHFQQVBJb2tGeTdyRFVTSzVKOVczaEFXSGdEQkNmY25lOWxsTXNFRDVNdFAwMXVkUENzQkZ6eFZNWm5ob2JTYzJRVk8wM3IydzU1Q2pucG5ZZEhNQUVLVWZMU3A2Sw?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-18T11:48:32.337121+00:00",
       "level": "WATCH",
@@ -668,22 +699,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-08-12T16:20:22.087706+00:00",
-      "level": "WATCH",
-      "title": "800 Danish soldiers arrive at military base in Latvia",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/800-danish-soldiers-arrive-at-military-base-in-latvia--cameoplus_0908297f65c303cf",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "154 \u00b7 Mobilize/increase Armed Forces",
-      "gdelt_event_code": "154",
-      "goldstein": -7.2
     }
   ],
   "recent_corrections": [
