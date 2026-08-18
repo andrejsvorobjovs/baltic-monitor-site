@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-18T08:05:53.133417+00:00",
+  "last_run_utc": "2026-08-18T11:48:32.328830+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 198,
+  "total_scans": 199,
   "quiet_count": 172,
-  "watch_count": 26,
+  "watch_count": 27,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-18 08:05 UTC",
+  "generated_at": "2026-08-18 11:48 UTC",
   "total_sources": 138,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 11,
   "recent_history": [
+    {
+      "ts": "2026-08-18T11:48:32.334745+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 1,
+      "sources_scanned": 138,
+      "gdelt_ran": false,
+      "new_items_count": 53,
+      "stale_count": 1,
+      "items": [
+        {
+          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNSExkX0xYZ0FORnlObzJBRGp5MHpxYXpQVmw3anRvMWhpYjdIeTZZNG5kRW1SNUJGWk1ORExjY29ENngwSVpLLWRwR3VBU0toOHhGNzhwZ0NCSGpHYU96dHdaV2o5OFNCT1VwazFQN1h2ZEs3Ym9GN3lPVDIwT1c0akNMQzY0Z1ZEaUZoVEdXWndTZ0RxR3h0R1hPZDVXYzFZV01aa3gxX1dBNW1aamlHdDBTbllYdGZtbkhaVEYyV0l0MWxwejJsV0tTOXI3bTVDT0wzZUp2N0JBWERrZk5BWGU0TWVabWc?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-18T08:05:53.139218+00:00",
       "level": "WATCH",
@@ -415,21 +442,25 @@
       "new_items_count": 14,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-15T04:03:26.481528+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 55,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-18T11:48:32.337121+00:00",
+      "level": "WATCH",
+      "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNSExkX0xYZ0FORnlObzJBRGp5MHpxYXpQVmw3anRvMWhpYjdIeTZZNG5kRW1SNUJGWk1ORExjY29ENngwSVpLLWRwR3VBU0toOHhGNzhwZ0NCSGpHYU96dHdaV2o5OFNCT1VwazFQN1h2ZEs3Ym9GN3lPVDIwT1c0akNMQzY0Z1ZEaUZoVEdXWndTZ0RxR3h0R1hPZDVXYzFZV01aa3gxX1dBNW1aamlHdDBTbllYdGZtbkhaVEYyV0l0MWxwejJsV0tTOXI3bTVDT0wzZUp2N0JBWERrZk5BWGU0TWVabWc?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-18T08:05:53.141537+00:00",
       "level": "WATCH",
@@ -653,22 +684,6 @@
       "gdelt_subcategory": "154 \u00b7 Mobilize/increase Armed Forces",
       "gdelt_event_code": "154",
       "goldstein": -7.2
-    },
-    {
-      "ts": "2026-08-08T11:49:15.825107+00:00",
-      "level": "WATCH",
-      "title": "Lithuanian politicians split over President Naus\u0117da plan to agree on defense funding after 2030",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/lithuanian-politicians-split-over-president-nauseda-plan-to--cameoplus_6edcf807fc3d9e27",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "026 \u00b7 Appeal to Meet/negotiate",
-      "gdelt_event_code": "026",
-      "goldstein": 3
     }
   ],
   "recent_corrections": [
@@ -684,6 +699,11 @@
     }
   ],
   "recent_updates": [
+    {
+      "ts": "2026-08-18T09:55:31.212144+00:00",
+      "title": "Fixed: GDELT Cloud enrichment was silently capped for half of every month",
+      "text": "Found the real cause of the recent GDELT Cloud failures: the free plan's 100-request monthly quota, burned through by this project's own usage in about half the month. Cut the automatic scan's GDELT Cloud calls from 6x/day to 3x/day so the free quota now lasts the full month. Map pins and severity scores on flagged items will be a bit less frequent, but core detection was never affected either way."
+    },
     {
       "ts": "2026-08-17T15:02:39.456580+00:00",
       "title": "Baltic Notices to Mariners tracking (/notmar)",
@@ -828,11 +848,6 @@
       "ts": "2026-08-06T17:36:11.866081+00:00",
       "title": "Public JSON API added for the live status data",
       "text": "A documented, versioned read API (GET https://baltic-monitor-push.vercel.app/api/status) now sits alongside the Telegram channel, browser push, and RSS feed -- for anyone who wants to build on this data (a script, another site, a bot) without scraping HTML or depending on the landing page's own internal status.json, which can change shape whenever that page's UI needs something new. No auth, no rate limit -- same data that is already fully public on the site."
-    },
-    {
-      "ts": "2026-08-06T17:28:03.217375+00:00",
-      "title": "Fixed real translation gaps on the ET/LV/LT site pages",
-      "text": "Full review of the Estonian/Latvian/Lithuanian site text against the English original. Found a real bug: the watchdog's \"Attention needed\" freshness message was never translated -- only the healthy \"Last scan: Xh ago\" pattern was, so the one unhealthy message would have shown raw English on exactly the occasion something is actually wrong. Fixed, plus a dropped clause restored in the LV/LT FAQ for parity with EN/ET. Rest of the translated text read as complete and accurate."
     }
   ]
 }
