@@ -914,7 +914,7 @@
     function yFor(tone) { return yMid + (tone / maxAbs) * (yMid - yTop); }
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Escalation intensity over time' });
+      'aria-label': 'Eskalatsiooni intensiivsus aja jooksul' });
 
     if (hasTone) {
       svg.appendChild(svgEl('line', {
@@ -942,7 +942,7 @@
         fill: LEVEL_COLOR[p.level] || 'var(--ink-dim)',
       })).appendChild(svgEl('title', {})).textContent =
         shortDate(p.ts) + ' — ' + (p.level || 'unknown') +
-        (typeof p.tone === 'number' ? ' — tone ' + p.tone.toFixed(2) : '');
+        (typeof p.tone === 'number' ? ' — toon ' + p.tone.toFixed(2) : '');
     });
 
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
@@ -964,7 +964,7 @@
     var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Rumor and disinformation tracking over time' });
+      'aria-label': 'Kuulujuttude/desinfo jälgimine aja jooksul' });
 
     points.forEach(function (p) {
       var x = xForTs(p.ts, rangeStart, rangeEnd);
@@ -977,7 +977,7 @@
         fill: 'var(--accent)', opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' rumor/disinfo item(s)';
+        shortDate(p.ts) + ' — ' + count + ' kuulujutu/desinfo üksust';
       svg.appendChild(bar);
     });
 
