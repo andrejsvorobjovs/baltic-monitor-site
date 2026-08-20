@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-20T19:54:32.310479+00:00",
+  "last_run_utc": "2026-08-20T23:51:51.586934+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 213,
-  "quiet_count": 182,
+  "total_scans": 214,
+  "quiet_count": 183,
   "watch_count": 31,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-20 19:54 UTC",
+  "generated_at": "2026-08-20 23:51 UTC",
   "total_sources": 140,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-20T23:51:51.593164+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 140,
+      "gdelt_ran": false,
+      "new_items_count": 25,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-20T19:54:32.317244+00:00",
       "level": "QUIET",
@@ -421,47 +433,6 @@
           "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Inbox.lv",
           "source": "Latvian-language general (via GNews)",
           "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWXMwVWRjREViaTVqQkdYRnZTOEJaUGlDVEh0QjhITHpiN21yY25yWmoyaEpYVGN6ZFpUbHZERkJrZmlncnBhbjFrM0VGel80UkVvRnBDOWZqcDRvbDR0UERWX2hvQ3NMN3h4Q2c2dnRHVlJZZ0UydkpFakxyZ2JuNDIzMU05aGh5dW9KRThNNzRHeURvaE9yaDJuSnpRRUloWnJtcUFpcDRGTnRFelE?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
-    },
-    {
-      "ts": "2026-08-17T15:50:37.287191+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 45,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Bild: Russia is deploying warships to the Baltic Sea amid Putin's threats against Europeans - LIGA.net",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTUd6aXRTcG5YamJ6eHg4akd4Z1Jna011SGRMYTBaRkk0SnBVV2Q1T3dQenVRUmtIU25PNkI4bkhGeGFDa0NrVm11TG1Bc0t0REdNcFFZM29BcFlNeW5USVB2ZkJ3aWpvaEJOaDlTbDBSYWNSVTZaREVCOEU2YmtXY0RJQ1BJOFhEMDNpNi1UUFlSU19vQnNwbm13cF9KV3FjdzNqTlBSUlh2TUtsNmItZElYdjl2N3ZYQzVpTThvOWl1UEHSAcgBQVVfeXFMTTBveHpRbHZlX2w4bS1EblVIcmVuOWRya1d1NzdDRXBtNW80Tzd5T21fUktjREl5QXYyaktzSGZ6YzFzSEhXWlpMTmVpR2REMjZzaEJ1QVdGUEwtZVFlWWFkSDdueTNvQXZ0YnhrVFljVmgzYWphWUgyVHR0WExpbHZiTV85bDlnRzhwYlFKSkFxQ1J4cTZfak5XS2ZCa1VfWHhkVExiYzhGa2J2TE1KcGVTVURMUlgwZ2Fha0lqVHF3WmhCQlp3Tno?oc=5",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        },
-        {
-          "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Inbox.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZW9reEl0cU96QjBwQk1vejJPUERjSGRMSDZDZDUtZDVZWHVkanpWWkU5bU43azZZNVMtZlJVS2poa1BUS3pwNFppS3VQSUtQb0tDNHktMFJGUFY2OFFGakhJMW1VUFV2QmNGeVlWeFNGaTgzNDE0RDVCSzNPeXQ4dHBXRzBqbTZyYy1EVDhnOVB0cnAzcF9URE5UNDhaWWdyZmluNHZNcGgzYWktTlBTNlE4NGpNNTVyWGQtRF9adlk?oc=5",
           "categories": [
             "baltic_specific",
             "nato_conflict_risk"
