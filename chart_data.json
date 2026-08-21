@@ -1567,6 +1567,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-08-21T19:44:58.299064+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -1815,6 +1822,10 @@
     {
       "ts": "2026-08-21T18:04:58.526756+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-08-21T19:43:28.238896+00:00",
+      "count": 0
     }
   ],
   "military_points": [
@@ -2009,6 +2020,10 @@
     {
       "ts": "2026-08-21T18:04:58.995749+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-08-21T19:43:28.901344+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -2047,43 +2062,68 @@
     {
       "ts": "2026-08-21T18:05:01.863979+00:00",
       "count": 60
+    },
+    {
+      "ts": "2026-08-21T19:43:31.444717+00:00",
+      "count": 60
     }
   ],
   "escalation_index_points": [
     {
       "ts": "2026-08-21T10:32:31.385748+00:00",
       "deviation_pct": null,
-      "sources_included": 0
+      "sources_included": 0,
+      "narrative": null,
+      "band": null
     },
     {
       "ts": "2026-08-21T11:48:12.369651+00:00",
       "deviation_pct": null,
-      "sources_included": 0
+      "sources_included": 0,
+      "narrative": null,
+      "band": null
     },
     {
       "ts": "2026-08-21T12:34:55.729292+00:00",
       "deviation_pct": null,
-      "sources_included": 0
+      "sources_included": 0,
+      "narrative": null,
+      "band": null
     },
     {
       "ts": "2026-08-21T13:22:14.971234+00:00",
       "deviation_pct": null,
-      "sources_included": 0
+      "sources_included": 0,
+      "narrative": null,
+      "band": null
     },
     {
       "ts": "2026-08-21T15:37:03.424169+00:00",
       "deviation_pct": null,
-      "sources_included": 0
+      "sources_included": 0,
+      "narrative": null,
+      "band": null
     },
     {
       "ts": "2026-08-21T15:58:33.907238+00:00",
       "deviation_pct": null,
-      "sources_included": 0
+      "sources_included": 0,
+      "narrative": null,
+      "band": null
     },
     {
       "ts": "2026-08-21T18:05:01.864215+00:00",
       "deviation_pct": null,
-      "sources_included": 1
+      "sources_included": 1,
+      "narrative": null,
+      "band": null
+    },
+    {
+      "ts": "2026-08-21T19:43:31.444936+00:00",
+      "deviation_pct": null,
+      "sources_included": 1,
+      "narrative": "GPS jamming 30% above baseline.",
+      "band": null
     }
   ]
 }
