@@ -381,7 +381,7 @@
 <section id="escalation-index">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Apkopotais eskalācijas indekss</p>
+      <p class="eyebrow">Signāla novirzes indekss</p>
       <div>
         <h2>Cik tālu šodiena atrodas no ierastā</h2>
         <p>Aprēķina vidējo no četriem neatkarīgi uzraudzītiem jēlsignāliem —
@@ -498,7 +498,7 @@
     <div class="charts-wrap">
       <div class="range-selector mono" id="chart-range-selector"></div>
       <div class="chart-block">
-        <h3>Apkopotais eskalācijas indekss laika gaitā</h3>
+        <h3>Signāla novirzes indekss laika gaitā</h3>
         <p class="chart-caption">Vidējā novirze no bāzes līmeņa GPS traucējumiem, AIS, militārajiem gaisa kuģiem un termiskajiem karstuma punktiem (tiem, kuriem jau ir pietiekami daudz vēstures). Mērījums par to, cik tālu katrs skenējums atrodas no ierastā — nekad prognoze un nošķirts no WARN/WATCH/QUIET rezultāta.</p>
         <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
       </div>
@@ -1078,7 +1078,7 @@
     function yFor(v) { return yMid - (v / maxAbs) * (yMid - yTop); }
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Apkopotais eskalācijas indekss laika gaitā' });
+      'aria-label': 'Signāla novirzes indekss laika gaitā' });
 
     svg.appendChild(svgEl('line', {
       x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,

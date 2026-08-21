@@ -381,7 +381,7 @@
 <section id="escalation-index">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Sudėtinis eskalacijos indeksas</p>
+      <p class="eyebrow">Signalo nuokrypio indeksas</p>
       <div>
         <h2>Kiek šiandiena nutolusi nuo įprasto</h2>
         <p>Apskaičiuoja vidurkį iš keturių nepriklausomai stebimų neapdorotų
@@ -498,7 +498,7 @@
     <div class="charts-wrap">
       <div class="range-selector mono" id="chart-range-selector"></div>
       <div class="chart-block">
-        <h3>Sudėtinis eskalacijos indeksas laikui bėgant</h3>
+        <h3>Signalo nuokrypio indeksas laikui bėgant</h3>
         <p class="chart-caption">Vidutinis nuokrypis nuo bazinio lygio GPS trukdžiams, AIS, kariniams orlaiviams ir šiluminiams karštiesiems taškams (tiems, kurie jau turi pakankamai istorijos). Matas, rodantis, kiek kiekvienas nuskaitymas nutolęs nuo įprasto — niekada prognozė ir atskiras nuo WARN/WATCH/QUIET rezultato.</p>
         <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
       </div>
@@ -1091,7 +1091,7 @@
     function yFor(v) { return yMid - (v / maxAbs) * (yMid - yTop); }
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Sudėtinis eskalacijos indeksas laikui bėgant' });
+      'aria-label': 'Signalo nuokrypio indeksas laikui bėgant' });
 
     svg.appendChild(svgEl('line', {
       x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,

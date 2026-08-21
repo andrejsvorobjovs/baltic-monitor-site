@@ -379,7 +379,7 @@
 <section id="escalation-index">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Composite Escalation Index</p>
+      <p class="eyebrow">Signal Deviation Index</p>
       <div>
         <h2>How far today sits from normal</h2>
         <p>Averages four independently-tracked raw signals — GPS-jamming,
@@ -493,7 +493,7 @@
     <div class="charts-wrap">
       <div class="range-selector mono" id="chart-range-selector"></div>
       <div class="chart-block">
-        <h3>Composite Escalation Index over time</h3>
+        <h3>Signal Deviation Index over time</h3>
         <p class="chart-caption">Average deviation from baseline across GPS-jamming, AIS, military aircraft, and thermal hotspots (whichever have enough history yet). A measurement of how far each scan sits from normal — never a forecast, and separate from the WARN/WATCH/QUIET result.</p>
         <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
       </div>
@@ -1084,7 +1084,7 @@
     container.appendChild(svg);
   }
 
-  // Zero-centered line chart for the Composite Escalation Index -- a
+  // Zero-centered line chart for the Signal Deviation Index -- a
   // signed percentage deviation (can be negative), so unlike
   // renderCountChart's bars this needs a symmetric y-axis around a real
   // zero baseline, same shape as renderIntensityChart's tone line above
@@ -1102,7 +1102,7 @@
     function yFor(v) { return yMid - (v / maxAbs) * (yMid - yTop); }
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Composite Escalation Index over time' });
+      'aria-label': 'Signal Deviation Index over time' });
 
     svg.appendChild(svgEl('line', {
       x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,

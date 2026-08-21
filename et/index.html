@@ -381,7 +381,7 @@
 <section id="escalation-index">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Koondatud eskalatsiooniindeks</p>
+      <p class="eyebrow">Signaali kõrvalekalde indeks</p>
       <div>
         <h2>Kui kaugel on tänane päev tavapärasest</h2>
         <p>Arvutab keskmise neljast sõltumatult jälgitavast toorsignaalist —
@@ -498,7 +498,7 @@
     <div class="charts-wrap">
       <div class="range-selector mono" id="chart-range-selector"></div>
       <div class="chart-block">
-        <h3>Koondatud eskalatsiooniindeks aja jooksul</h3>
+        <h3>Signaali kõrvalekalde indeks aja jooksul</h3>
         <p class="chart-caption">Keskmine kõrvalekalle algtasemest GPS-häirete, AIS-i, sõjaväe õhusõidukite ja termiliste kuumapunktide lõikes (nende seast, millel on juba piisavalt ajalugu). Mõõt selle kohta, kui kaugel iga skann on tavapärasest — mitte kunagi prognoos ja eraldiseisev WARN/WATCH/QUIET tulemusest.</p>
         <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
       </div>
@@ -1078,7 +1078,7 @@
     function yFor(v) { return yMid - (v / maxAbs) * (yMid - yTop); }
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Koondatud eskalatsiooniindeks aja jooksul' });
+      'aria-label': 'Signaali kõrvalekalde indeks aja jooksul' });
 
     svg.appendChild(svgEl('line', {
       x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
