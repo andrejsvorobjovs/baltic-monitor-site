@@ -232,6 +232,7 @@
   @media (max-width: 560px) { .stat-cell:nth-child(3) { border-left: none; } }
   .stat-cell .n { font-size: 26px; font-weight: 700; }
   .stat-cell .l { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
+  .stat-strip.n2 { grid-template-columns: repeat(2, 1fr); }
 
   .charts-wrap { margin-top: 24px; }
   .range-selector { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
@@ -375,6 +376,36 @@
   </div>
 </div>
 
+<section id="escalation-index">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Composite Escalation Index</p>
+      <div>
+        <h2>How far today sits from normal</h2>
+        <p>Averages four independently-tracked raw signals — GPS-jamming,
+        AIS vessel activity, military aircraft, and thermal hotspots —
+        against each one's own recent baseline. A measurement of current
+        deviation, not a forecast: it never overrides the WARN/WATCH/QUIET
+        result above, and can read elevated on a day that stays QUIET
+        there. <a href="#status">Full breakdown ↓</a></p>
+      </div>
+    </div>
+    <div class="stat-strip n2">
+      <div class="stat-cell">
+        <div class="n mono" id="eidx-value">—</div>
+        <div class="l">vs. 30-day baseline</div>
+      </div>
+      <div class="stat-cell">
+        <div class="n mono" id="eidx-sources">—</div>
+        <div class="l">signals elevated</div>
+      </div>
+    </div>
+    <div class="charts-wrap">
+      <div id="chart-eidx-top" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
+    </div>
+  </div>
+</section>
+
 <section id="what">
   <div class="wrap">
     <div class="sec-head">
@@ -461,6 +492,11 @@
     </div>
     <div class="charts-wrap">
       <div class="range-selector mono" id="chart-range-selector"></div>
+      <div class="chart-block">
+        <h3>Composite Escalation Index over time</h3>
+        <p class="chart-caption">Average deviation from baseline across GPS-jamming, AIS, military aircraft, and thermal hotspots (whichever have enough history yet). A measurement of how far each scan sits from normal — never a forecast, and separate from the WARN/WATCH/QUIET result.</p>
+        <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
+      </div>
       <div class="chart-block">
         <h3>Escalation intensity over time</h3>
         <p class="chart-caption">Each dot is one scan, colored by its result (green = quiet, amber = watch, red = warn). The line is GDELT's average coverage tone where available — the higher the line, the more alarmed/hostile the press coverage; not a forecast.</p>
@@ -1048,6 +1084,83 @@
     container.appendChild(svg);
   }
 
+  // Zero-centered line chart for the Composite Escalation Index -- a
+  // signed percentage deviation (can be negative), so unlike
+  // renderCountChart's bars this needs a symmetric y-axis around a real
+  // zero baseline, same shape as renderIntensityChart's tone line above
+  // but generalized to any {ts, deviation_pct} series rather than being
+  // coupled to WATCH/WARN dot coloring. Positive (above baseline) plots
+  // upward -- more elevated reads as visually higher, matching the
+  // "escalation" framing this index was built for.
+  function renderEidxChart(container, points, rangeStart, rangeEnd) {
+    var withValue = points.filter(function (p) { return typeof p.deviation_pct === 'number'; });
+    if (!withValue.length) { emptyChart(container, 'Not enough history yet — this builds up over time.'); return; }
+    container.textContent = '';
+
+    var maxAbs = Math.max(1, Math.max.apply(null, withValue.map(function (p) { return Math.abs(p.deviation_pct); })));
+    var yTop = PAD_T, yBottom = H - PAD_B, yMid = (yTop + yBottom) / 2;
+    function yFor(v) { return yMid - (v / maxAbs) * (yMid - yTop); }
+
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
+      'aria-label': 'Composite Escalation Index over time' });
+
+    svg.appendChild(svgEl('line', {
+      x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
+      stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
+    }));
+
+    var path = '', started = false;
+    points.forEach(function (p) {
+      if (typeof p.deviation_pct !== 'number') { started = false; return; }
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) { started = false; return; }
+      path += (started ? 'L' : 'M') + x.toFixed(1) + ',' + yFor(p.deviation_pct).toFixed(1) + ' ';
+      started = true;
+    });
+    svg.appendChild(svgEl('path', { d: path.trim(), fill: 'none', stroke: 'var(--accent)', 'stroke-width': 1.5 }));
+
+    withValue.forEach(function (p) {
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) return;
+      var y = yFor(p.deviation_pct);
+      svg.appendChild(svgEl('circle', { cx: x.toFixed(1), cy: y.toFixed(1), r: 2, fill: 'var(--accent)' }))
+        .appendChild(svgEl('title', {})).textContent =
+        shortDate(p.ts) + ' — ' + (p.deviation_pct >= 0 ? '+' : '') + p.deviation_pct.toFixed(0) +
+        '% vs. baseline (' + (p.sources_included || 0) + '/4 signals)';
+    });
+
+    svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = '±' + Math.round(maxAbs) + '%';
+    svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = shortDate(new Date(rangeStart).toISOString());
+    svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
+      .textContent = shortDate(new Date(rangeEnd).toISOString());
+
+    container.appendChild(svg);
+  }
+
+  // Current-reading stat strip at the top of the page -- the LATEST point
+  // only (chart_data.json's escalation_index_points is already
+  // chronological, one entry per scan). Independent of the range
+  // selector below on purpose: this is "right now," not a historical view.
+  function renderEidxCurrent(points) {
+    var valueEl = document.getElementById('eidx-value');
+    var sourcesEl = document.getElementById('eidx-sources');
+    if (!points.length) {
+      valueEl.textContent = '—';
+      sourcesEl.textContent = 'No data yet';
+      return;
+    }
+    var latest = points[points.length - 1];
+    if (typeof latest.deviation_pct !== 'number') {
+      valueEl.textContent = 'Not enough data yet';
+      sourcesEl.textContent = (latest.sources_included || 0) + ' of 4 tracked';
+      return;
+    }
+    valueEl.textContent = (latest.deviation_pct >= 0 ? '+' : '') + latest.deviation_pct.toFixed(0) + '%';
+    sourcesEl.textContent = (latest.sources_included || 0) + ' of 4';
+  }
+
   // Time-range selector — client-side filter over the full fetched series
   // (chart_data.json now holds up to CHART_HISTORY_LIMIT=2200 points,
   // ~1 year at the current 6 scans/day cadence, see main.py). Filtering
@@ -1067,6 +1180,13 @@
   var allAisPoints = [];
   var allMilitaryPoints = [];
   var allFirmsPoints = [];
+  var allEidxPoints = [];
+  var EIDX_TOP_WIDGET_DAYS = 30; // the hero widget's mini chart stays a fixed
+                                   // 30-day "recent normal" view, independent
+                                   // of the range selector below -- it's a
+                                   // stable current-reading snapshot, not a
+                                   // historical explorer (that's what the
+                                   // full chart further down is for)
   var currentRangeKey = DEFAULT_RANGE_KEY;
 
   function filterPointsByRange(points, days) {
@@ -1114,6 +1234,8 @@
         ariaLabel: 'Thermal hotspots over time',
         tooltipSuffix: 'thermal hotspot(s)',
       });
+    renderEidxChart(document.getElementById('chart-escalation-index'),
+      filterPointsByRange(allEidxPoints, opt.days), rangeStart, rangeEnd);
   }
 
   function buildRangeSelector() {
@@ -1143,13 +1265,20 @@
       allAisPoints = d.ais_points || [];
       allMilitaryPoints = d.military_points || [];
       allFirmsPoints = d.firms_points || [];
+      allEidxPoints = d.escalation_index_points || [];
+      renderEidxCurrent(allEidxPoints);
+      renderEidxChart(document.getElementById('chart-eidx-top'),
+        filterPointsByRange(allEidxPoints, EIDX_TOP_WIDGET_DAYS),
+        Date.now() - EIDX_TOP_WIDGET_DAYS * 86400000, Date.now());
       buildRangeSelector();
       renderCharts();
     })
     .catch(function () {
-      ['chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Chart data temporarily unavailable.');
       });
+      document.getElementById('eidx-value').textContent = '—';
+      document.getElementById('eidx-sources').textContent = 'Unavailable';
     });
 })();
 </script>

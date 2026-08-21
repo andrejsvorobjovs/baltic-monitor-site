@@ -14,8 +14,12 @@ that the main project's health-check workflow updates automatically.
   the main project on every scan/health check (no need to edit by hand)
 - `chart_data.json` — longer time series behind the homepage's charts
   (escalation intensity, rumor/disinfo tracking, GPS-jamming, AIS vessel
-  count, military aircraft count, NASA FIRMS thermal hotspots), same
-  auto-update mechanism
+  count, military aircraft count, NASA FIRMS thermal hotspots, and the
+  Composite Escalation Index — an average of the other four's own
+  deviation-from-baseline percentages, shown both as a prominent widget
+  near the top of the page and as a full chart further down; a
+  measurement, never a prediction, and never affects the WARN/WATCH/QUIET
+  result), same auto-update mechanism
 - `feed.xml` — RSS feed of recent flagged items, same auto-update mechanism
 - `map/index.html` — a live map (Leaflet.js + OpenStreetMap tiles)
   plotting recent AIS ship, military ADS-B aircraft, GPS-jamming, and NASA
