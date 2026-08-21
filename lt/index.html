@@ -1079,7 +1079,7 @@
 
     if (!opts.hideMaxLabel) {
       svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-        .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
+        .textContent = '0–' + maxCount + (opts.maxSuffix || '/scan');
     }
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());

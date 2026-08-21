@@ -1085,8 +1085,12 @@
     });
 
     if (!opts.hideMaxLabel) {
+      // "0-N" rather than just "max N" -- states BOTH ends of the y-axis in
+      // one label, since these bar charts have no other axis markings (no
+      // tick labels, no gridlines) and a hover tooltip is the only other way
+      // to read an exact value -- which doesn't exist at all on touch/mobile.
       svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-        .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
+        .textContent = '0–' + maxCount + (opts.maxSuffix || '/scan');
     }
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());
