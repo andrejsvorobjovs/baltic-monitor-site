@@ -301,10 +301,21 @@
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
-  .qa { border-top: 1px solid var(--border); padding: 20px 0; }
+  .qa { border-top: 1px solid var(--border); }
   .qa:last-child { border-bottom: 1px solid var(--border); }
-  .qa .q { font-weight: 700; font-size: 15px; margin: 0 0 6px; }
-  .qa .a { margin: 0; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
+  .qa summary.q {
+    font-weight: 700; font-size: 15px; margin: 0;
+    padding: 20px 32px 20px 0; cursor: pointer; list-style: none; position: relative;
+  }
+  .qa summary.q::-webkit-details-marker { display: none; }
+  .qa summary.q::after {
+    content: "+"; position: absolute; right: 4px; top: 18px;
+    font-size: 20px; line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .qa[open] summary.q::after { content: "\2212"; }
+  .qa summary.q:hover { color: var(--accent); }
+  .qa summary.q:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .qa .a { margin: 0 0 20px; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
 
   footer { padding: 40px 0 64px; }
   footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
@@ -489,38 +500,38 @@
       <p class="eyebrow">Before you ask</p>
       <div><h2>Common questions</h2></div>
     </div>
-    <div class="qa">
-      <p class="q">What if you get something wrong?</p>
+    <details class="qa">
+      <summary class="q">What if you get something wrong?</summary>
       <p class="a">It gets logged and published as a correction, not quietly fixed — the list above is the full record of what's been reported this way. Occasionally being wrong and saying so openly is more trustworthy than a suspiciously spotless record. One honest limit: this isn't an automated audit — a correction only appears if a mistake is actually noticed and manually reported. A clean record means nothing has been caught and reported yet, not a formal guarantee of zero errors. The "correction rate" figure above is corrections divided by scans, for scale — not an independently verified accuracy score.</p>
-    </div>
-    <div class="qa" id="faq-gdelt">
-      <p class="q">What are the GDELT classification codes and "Goldstein" score I sometimes see?</p>
+    </details>
+    <details class="qa" id="faq-gdelt">
+      <summary class="q">What are the GDELT classification codes and "Goldstein" score I sometimes see?</summary>
       <p class="a">GDELT is a public database that automatically codes political and conflict-related news worldwide into structured categories, with a standard severity rating called the Goldstein scale (-10 to +10 — more negative means more hostile/conflictual). When a flagged item comes from GDELT, its category and Goldstein score are shown alongside it as extra context. This is just added detail on an item that already qualified: any GDELT-sourced item shown here has already passed the exact same relevance and corroboration checks as every other flagged item on this page — it is not raw or unfiltered data. (When a WATCH or WARN is posted, the Telegram channel automatically attaches a map — but it only plots the specific events that triggered that alert, not a general snapshot of regional activity.)</p>
-    </div>
-    <div class="qa" id="faq-unreachable">
-      <p class="q">What does "N source(s) unreachable" mean?</p>
+    </details>
+    <details class="qa" id="faq-unreachable">
+      <summary class="q">What does "N source(s) unreachable" mean?</summary>
       <p class="a">A source's feed didn't respond during that scan — usually a normal, isolated hiccup. Occasionally a large batch fails all at once instead: this project runs on free, shared hosting (GitHub Actions), and that shared pool sometimes gets a server whose IP address Google has already rate-limited for unrelated reasons, which blocks every Google-News-routed source in one scan together. When that's detected, the scan now recognizes it within about a minute and automatically retries on a different server, rather than waiting for the next scheduled run. Either way, it means that result may be less complete than usual — not that something was hidden. We'd rather show this than let a broken scan look identical to a real all-clear.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Why don't you list the exact sources?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Why don't you list the exact sources?</summary>
       <p class="a">So the scoring can't be gamed — naming exactly which outlets can trigger an alert would let someone target or exploit the specific sources that matter. Tier and count are public; the moment a source actually produces a real WATCH/WARN, its name and link are shown too (see "Recent flagged items" above).</p>
-    </div>
-    <div class="qa">
-      <p class="q">Do you see who's following this?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Do you see who's following this?</summary>
       <p class="a">On Telegram, yes — as the channel admin, that's normal for any Telegram channel owner, not something built specifically for this project. Browser push subscribers are different: no name or identity is attached, just an anonymous device token, so I can't see who anyone is there. Other Telegram subscribers can't see each other, and nothing is exported, stored elsewhere, sold, or shared beyond what Telegram itself already handles.</p>
-    </div>
-    <div class="qa">
-      <p class="q">What if I don't get browser alerts after enabling them?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">What if I don't get browser alerts after enabling them?</summary>
       <p class="a">Mobile browsers can be inconsistent here — a phone's battery optimization, or the browser's own per-site notification setting, can silently mute alerts with no error shown anywhere. The most common cause: check that notifications for this site aren't muted directly inside your browser's own settings (not just your phone's system settings) — that's usually it.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Will this stay free?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Will this stay free?</summary>
       <p class="a">Yes. There's an optional tip button (Ko-fi) for anyone who wants to support the project — it won't buy faster or better alerts; everyone gets exactly the same thing, at the same time, regardless.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Is this an official warning system?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Is this an official warning system?</summary>
       <p class="a">No. If you're worried about an actual emergency, always check your own country's official channels first: Estonia — kriis.ee · Latvia — vugd.gov.lv · Lithuania — lrv.lt.</p>
-    </div>
+    </details>
   </div>
 </section>
 
@@ -1073,6 +1084,27 @@
       emptyChart(document.getElementById('chart-intensity'), 'Chart data temporarily unavailable.');
       emptyChart(document.getElementById('chart-rumors'), 'Chart data temporarily unavailable.');
     });
+})();
+</script>
+
+<script>
+// FAQ answers are collapsed <details> by default (added so the page reads
+// shorter at a glance) -- most modern browsers already auto-expand a
+// <details> when a same-page link targets content inside it, but this
+// makes it explicit rather than relying on that alone, since the
+// "unreachable" status link above jumps straight to one specific answer.
+(function () {
+  function openFaqTarget() {
+    var hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    var el = document.getElementById(hash.slice(1));
+    if (el && el.tagName === 'DETAILS') {
+      el.open = true;
+      el.scrollIntoView({ block: 'start' });
+    }
+  }
+  window.addEventListener('hashchange', openFaqTarget);
+  openFaqTarget();
 })();
 </script>
 

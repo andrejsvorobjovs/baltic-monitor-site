@@ -302,10 +302,21 @@
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
-  .qa { border-top: 1px solid var(--border); padding: 20px 0; }
+  .qa { border-top: 1px solid var(--border); }
   .qa:last-child { border-bottom: 1px solid var(--border); }
-  .qa .q { font-weight: 700; font-size: 15px; margin: 0 0 6px; }
-  .qa .a { margin: 0; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
+  .qa summary.q {
+    font-weight: 700; font-size: 15px; margin: 0;
+    padding: 20px 32px 20px 0; cursor: pointer; list-style: none; position: relative;
+  }
+  .qa summary.q::-webkit-details-marker { display: none; }
+  .qa summary.q::after {
+    content: "+"; position: absolute; right: 4px; top: 18px;
+    font-size: 20px; line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .qa[open] summary.q::after { content: "\2212"; }
+  .qa summary.q:hover { color: var(--accent); }
+  .qa summary.q:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .qa .a { margin: 0 0 20px; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
 
   footer { padding: 40px 0 64px; }
   footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
@@ -492,38 +503,38 @@
       <p class="eyebrow">Pirms jautā</p>
       <div><h2>Biežāk uzdotie jautājumi</h2></div>
     </div>
-    <div class="qa">
-      <p class="q">Kas notiek, ja jūs kļūdāties?</p>
+    <details class="qa">
+      <summary class="q">Kas notiek, ja jūs kļūdāties?</summary>
       <p class="a">Kļūda tiek reģistrēta un publicēta kā labojums, nevis klusi izlabota — augstāk redzamais saraksts ir pilnīgs pārskats par to, kas tā ziņots. Reizēm kļūdīties un to atklāti atzīt ir uzticamāk nekā aizdomīgi nevainojama vēsture. Viens godīgs ierobežojums: šis nav automatizēts audits — labojums parādās tikai tad, ja kļūda tiešām tiek pamanīta un manuāli ziņota. Tīra vēsture nozīmē, ka nekas vēl nav pamanīts un ziņots, nevis formālu garantiju par nulles kļūdām. Iepriekš redzamais "labojumu īpatsvars" ir labojumu skaits dalīts ar skenēšanu skaitu, mēroga izpratnei — nevis neatkarīgi pārbaudīts precizitātes rādītājs.</p>
-    </div>
-    <div class="qa" id="faq-gdelt">
-      <p class="q">Ko nozīmē GDELT klasifikācijas kodi un "Goldsteina" rādītājs, ko dažkārt redzu?</p>
+    </details>
+    <details class="qa" id="faq-gdelt">
+      <summary class="q">Ko nozīmē GDELT klasifikācijas kodi un "Goldsteina" rādītājs, ko dažkārt redzu?</summary>
       <p class="a">GDELT ir publiska datubāze, kas automātiski kodē pasaules politiskās un konfliktu ziņas strukturētās kategorijās, ar standarta smaguma novērtējumu, ko sauc par Goldsteina skalu (-10 līdz +10 — jo negatīvāks, jo naidīgāks/konfliktējošāks). Kad atzīmētā vienība nāk no GDELT, tās kategorija un Goldsteina rādītājs tiek parādīti līdzās kā papildu konteksts. Tā ir tikai papildu informācija par vienību, kas jau ir kvalificējusies: jebkura šeit redzamā GDELT vienība jau ir izgājusi tieši tādas pašas atbilstības un apstiprinājuma pārbaudes kā jebkura cita atzīmētā vienība šajā lapā — tie nav neapstrādāti vai nefiltrēti dati. (Kad tiek publicēts WATCH vai WARN, Telegram kanāls automātiski pievieno karti — taču tā parāda tikai konkrētos notikumus, kas izraisīja šo brīdinājumu, nevis vispārēju reģiona momentuzņēmumu.)</p>
-    </div>
-    <div class="qa" id="faq-unreachable">
-      <p class="q">Ko nozīmē „N avots(i) nav sasniedzami”?</p>
+    </details>
+    <details class="qa" id="faq-unreachable">
+      <summary class="q">Ko nozīmē „N avots(i) nav sasniedzami”?</summary>
       <p class="a">Avota plūsma neatbildēja šī skenējuma laikā — parasti tas ir parasts, atsevišķs traucējums. Reizēm uzreiz neizdodas liela avotu grupa: šis projekts darbojas uz bezmaksas, koplietotas mitināšanas (GitHub Actions), un šim koplietotajam serveru klāsteram dažkārt tiek piešķirts serveris, kura IP adresi Google jau ir ierobežojis cita, nesaistīta iemesla dēļ — tas vienlaicīgi bloķē visus Google News avotus vienā skenējumā. Kad tas tiek atklāts, skenējums to tagad atpazīst apmēram minūtes laikā un automātiski mēģina vēlreiz citā serverī, nevis gaida nākamo plānoto skenējumu. Jebkurā gadījumā tas nozīmē, ka šis rezultāts var būt mazāk pilnīgs nekā parasti — nevis ka kaut kas tika slēpts. Mēs labāk to parādām, nekā ļaujam klusuma rezultātam bojāta skenējuma laikā izskatīties identiskam ar reālu "viss kārtībā" stāvokli.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Kāpēc jūs neuzskaitāt precīzos avotus?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Kāpēc jūs neuzskaitāt precīzos avotus?</summary>
       <p class="a">Lai vērtēšanas sistēmu nevarētu izspēlēt — precīza to izdevumu nosaukšana, kas var izraisīt brīdinājumu, ļautu kādam mērķtiecīgi izmantot tieši tos avotus, kas ir svarīgi. Līmenis un skaits ir publiski; brīdī, kad avots tiešām rada reālu WATCH/WARN, tiek parādīts arī tā nosaukums un saite (skatīt „Nesen atzīmētie notikumi” iepriekš).</p>
-    </div>
-    <div class="qa">
-      <p class="q">Vai jūs redzat, kas seko šim kanālam?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Vai jūs redzat, kas seko šim kanālam?</summary>
       <p class="a">Telegram — jā, kā kanāla administrators, tas ir normāli jebkuram Telegram kanāla īpašniekam, nevis kaut kas šim projektam īpaši izveidots. Pārlūkprogrammas push abonenti ir citādi: viņiem nav pievienots vārds vai identitāte, tikai anonīms ierīces marķieris, tāpēc es nevaru redzēt, kas viņi ir. Citi Telegram abonenti neredz cits citu, un nekas netiek eksportēts, glabāts citur, pārdots vai kopīgots ārpus paša Telegram.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Kas notiek, ja pēc iespējošanas nesaņemu pārlūkprogrammas paziņojumus?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Kas notiek, ja pēc iespējošanas nesaņemu pārlūkprogrammas paziņojumus?</summary>
       <p class="a">Mobilās pārlūkprogrammas šeit var būt nekonsekventas — tālruņa akumulatora optimizācija vai pārlūkprogrammas pašas vietnes paziņojumu iestatījums var klusi apslāpēt paziņojumus bez jebkādas kļūdas parādīšanas. Visbiežākais iemesls: pārbaudi, vai šīs vietnes paziņojumi nav apklusināti tieši tavas pārlūkprogrammas iestatījumos (nevis tikai tālruņa sistēmas iestatījumos) — parasti tas ir tas.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Vai tas paliks bezmaksas?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Vai tas paliks bezmaksas?</summary>
       <p class="a">Jā. Ir pieejama brīvprātīga atbalsta poga (Ko-fi) tiem, kas vēlas atbalstīt projektu — tā nedod nevienam ātrākus vai labākus brīdinājumus; visi saņem tieši to pašu, tajā pašā laikā, neatkarīgi no tā.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Vai šī ir oficiāla brīdināšanas sistēma?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Vai šī ir oficiāla brīdināšanas sistēma?</summary>
       <p class="a">Nē. Ja uztraucaties par reālu ārkārtas situāciju, vienmēr vispirms pārbaudiet savas valsts oficiālos kanālus: Igaunija — kriis.ee · Latvija — vugd.gov.lv · Lietuva — lrv.lt.</p>
-    </div>
+    </details>
   </div>
 </section>
 
@@ -1055,6 +1066,22 @@
       emptyChart(document.getElementById('chart-intensity'), 'Diagrammas dati īslaicīgi nav pieejami.');
       emptyChart(document.getElementById('chart-rumors'), 'Diagrammas dati īslaicīgi nav pieejami.');
     });
+})();
+</script>
+
+<script>
+(function () {
+  function openFaqTarget() {
+    var hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    var el = document.getElementById(hash.slice(1));
+    if (el && el.tagName === 'DETAILS') {
+      el.open = true;
+      el.scrollIntoView({ block: 'start' });
+    }
+  }
+  window.addEventListener('hashchange', openFaqTarget);
+  openFaqTarget();
 })();
 </script>
 

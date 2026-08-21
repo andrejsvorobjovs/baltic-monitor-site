@@ -302,10 +302,21 @@
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
-  .qa { border-top: 1px solid var(--border); padding: 20px 0; }
+  .qa { border-top: 1px solid var(--border); }
   .qa:last-child { border-bottom: 1px solid var(--border); }
-  .qa .q { font-weight: 700; font-size: 15px; margin: 0 0 6px; }
-  .qa .a { margin: 0; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
+  .qa summary.q {
+    font-weight: 700; font-size: 15px; margin: 0;
+    padding: 20px 32px 20px 0; cursor: pointer; list-style: none; position: relative;
+  }
+  .qa summary.q::-webkit-details-marker { display: none; }
+  .qa summary.q::after {
+    content: "+"; position: absolute; right: 4px; top: 18px;
+    font-size: 20px; line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .qa[open] summary.q::after { content: "\2212"; }
+  .qa summary.q:hover { color: var(--accent); }
+  .qa summary.q:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .qa .a { margin: 0 0 20px; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
 
   footer { padding: 40px 0 64px; }
   footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
@@ -492,38 +503,38 @@
       <p class="eyebrow">Prieš klausiant</p>
       <div><h2>Dažnai užduodami klausimai</h2></div>
     </div>
-    <div class="qa">
-      <p class="q">Kas atsitinka, jei suklystate?</p>
+    <details class="qa">
+      <summary class="q">Kas atsitinka, jei suklystate?</summary>
       <p class="a">Klaida užregistruojama ir paskelbiama kaip pataisymas, o ne tyliai ištaisoma — aukščiau esantis sąrašas yra pilnas apie tai praneštų dalykų įrašas. Retkarčiais suklysti ir tai atvirai pripažinti yra patikimiau nei įtartinai nepriekaištinga istorija. Vienas sąžiningas apribojimas: tai nėra automatizuotas auditas — pataisymas atsiranda tik tada, kai klaida iš tikrųjų pastebima ir apie ją pranešama rankiniu būdu. Švari istorija reiškia, kad kol kas niekas nebuvo pastebėta ir apie tai nepranešta, o ne formalią garantiją dėl nulinių klaidų. Aukščiau pateiktas „pataisymų dažnis" yra pataisymų skaičius, padalytas iš skenavimų skaičiaus, mastelio suvokimui — o ne nepriklausomai patvirtintas tikslumo įvertinimas.</p>
-    </div>
-    <div class="qa" id="faq-gdelt">
-      <p class="q">Ką reiškia GDELT klasifikacijos kodai ir "Goldstein" balas, kurį kartais matau?</p>
+    </details>
+    <details class="qa" id="faq-gdelt">
+      <summary class="q">Ką reiškia GDELT klasifikacijos kodai ir "Goldstein" balas, kurį kartais matau?</summary>
       <p class="a">GDELT yra vieša duomenų bazė, kuri automatiškai koduoja pasaulio politines ir konfliktų naujienas į struktūrizuotas kategorijas, su standartiniu sunkumo įvertinimu, vadinamu Goldstein skale (-10 iki +10 — kuo neigiamesnis, tuo priešiškesnis/konfliktiškesnis). Kai pažymėtas elementas ateina iš GDELT, jo kategorija ir Goldstein balas rodomi šalia kaip papildomas kontekstas. Tai tik papildoma detalė apie elementą, kuris jau kvalifikavosi: bet kuris čia rodomas GDELT elementas jau praėjo lygiai tuos pačius aktualumo ir patvirtinimo patikrinimus kaip ir bet kuris kitas pažymėtas elementas šiame puslapyje — tai nėra neapdoroti ar nefiltruoti duomenys. (Kai paskelbiamas WATCH arba WARN, Telegram kanalas automatiškai prideda žemėlapį — tačiau jame rodomi tik konkretūs įvykiai, sukėlę šį įspėjimą, o ne bendra regiono būklės nuotrauka.)</p>
-    </div>
-    <div class="qa" id="faq-unreachable">
-      <p class="q">Ką reiškia „N šaltinis(-iai) nepasiekiamas(-i)"?</p>
+    </details>
+    <details class="qa" id="faq-unreachable">
+      <summary class="q">Ką reiškia „N šaltinis(-iai) nepasiekiamas(-i)"?</summary>
       <p class="a">Šaltinio srautas neatsakė šio nuskaitymo metu — dažniausiai tai įprastas, pavienis trikdis. Kartais iš karto nepavyksta didelė šaltinių grupė: šis projektas veikia nemokamame, bendrai naudojamame serveryje (GitHub Actions), o šiam bendram serverių telkiniui kartais atitenka serveris, kurio IP adresą „Google" jau apribojo dėl nesusijusios priežasties — tai vienu metu užblokuoja visus per „Google News" veikiančius šaltinius tame pačiame nuskaityme. Kai tai aptinkama, nuskaitymas dabar atpažįsta tai per maždaug minutę ir automatiškai bando dar kartą kitame serveryje, užuot laukęs kito suplanuoto nuskaitymo. Bet kuriuo atveju tai reiškia, kad rezultatas gali būti mažiau išsamus nei įprastai — o ne kad kažkas buvo paslėpta. Verčiau tai parodyti, nei leisti ramaus rezultato per sutrikusį nuskaitymą atrodyti identiškai tikram viskas-tvarkoje būviui.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Kodėl nenurodote tikslių šaltinių?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Kodėl nenurodote tikslių šaltinių?</summary>
       <p class="a">Kad vertinimo sistemos nebūtų galima apgauti — tikslus leidinių, galinčių sukelti perspėjimą, įvardijimas leistų kam nors nusitaikyti į konkrečius svarbius šaltinius arba juos išnaudoti. Lygis ir skaičius yra vieši; kai tik šaltinis iš tikrųjų sukuria realų WATCH/WARN, parodomas ir jo pavadinimas bei nuoroda (žr. „Naujausi pažymėti įvykiai" aukščiau).</p>
-    </div>
-    <div class="qa">
-      <p class="q">Ar matote, kas tai seka?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Ar matote, kas tai seka?</summary>
       <p class="a">Telegram — taip, kaip kanalo administratorius, tai įprasta bet kuriam Telegram kanalo savininkui, o ne kažkas specialiai sukurta šiam projektui. Naršyklės push prenumeratoriai yra kitokie: prie jų nepridėtas nei vardas, nei tapatybė, tik anoniminis įrenginio žymuo, todėl aš negaliu matyti, kas jie yra. Kiti Telegram prenumeratoriai nemato vieni kitų, ir niekas neeksportuojama, nesaugoma kitur, neparduodama ar nesidalijama už paties Telegram ribų.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Kas atsitinka, jei įjungus negaunu naršyklės pranešimų?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Kas atsitinka, jei įjungus negaunu naršyklės pranešimų?</summary>
       <p class="a">Mobiliosios naršyklės čia gali būti nenuoseklios — telefono baterijos optimizavimas arba pačios naršyklės svetainės pranešimų nustatymas gali tyliai nutildyti pranešimus be jokios matomos klaidos. Dažniausia priežastis: patikrink, ar šios svetainės pranešimai nėra nutildyti tiesiogiai tavo naršyklės nustatymuose (ne tik telefono sistemos nustatymuose) — dažniausiai tai ir yra priežastis.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Ar tai visada bus nemokama?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Ar tai visada bus nemokama?</summary>
       <p class="a">Taip. Yra savanoriško paramos mygtukas (Ko-fi) tiems, kurie nori paremti projektą — jis niekam nesuteikia greitesnių ar geresnių perspėjimų; visi gauna lygiai tą patį, tuo pačiu metu, nepriklausomai nuo to.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Ar tai oficiali perspėjimo sistema?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Ar tai oficiali perspėjimo sistema?</summary>
       <p class="a">Ne. Jei nerimaujate dėl realios ekstremalios situacijos, visada pirmiausia tikrinkite savo šalies oficialius kanalus: Estija — kriis.ee · Latvija — vugd.gov.lv · Lietuva — lrv.lt.</p>
-    </div>
+    </details>
   </div>
 </section>
 
@@ -1068,6 +1079,22 @@
       emptyChart(document.getElementById('chart-intensity'), 'Diagramos duomenys laikinai nepasiekiami.');
       emptyChart(document.getElementById('chart-rumors'), 'Diagramos duomenys laikinai nepasiekiami.');
     });
+})();
+</script>
+
+<script>
+(function () {
+  function openFaqTarget() {
+    var hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    var el = document.getElementById(hash.slice(1));
+    if (el && el.tagName === 'DETAILS') {
+      el.open = true;
+      el.scrollIntoView({ block: 'start' });
+    }
+  }
+  window.addEventListener('hashchange', openFaqTarget);
+  openFaqTarget();
 })();
 </script>
 
