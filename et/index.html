@@ -233,6 +233,7 @@
   @media (max-width: 560px) { .stat-cell:nth-child(3) { border-left: none; } }
   .stat-cell .n { font-size: 26px; font-weight: 700; }
   .stat-cell .l { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
+  .stat-strip.n2 { grid-template-columns: repeat(2, 1fr); }
 
   .charts-wrap { margin-top: 24px; }
   .range-selector { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
@@ -377,6 +378,37 @@
   </div>
 </div>
 
+<section id="escalation-index">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Koondatud eskalatsiooniindeks</p>
+      <div>
+        <h2>Kui kaugel on tänane päev tavapärasest</h2>
+        <p>Arvutab keskmise neljast sõltumatult jälgitavast toorsignaalist —
+        GPS-häired, AIS-laevaliiklus, sõjaväe õhusõidukid ja termilised
+        kuumapunktid — võrreldes iga signaali enda hiljutise algtasemega.
+        See on praeguse kõrvalekalde mõõt, mitte prognoos: see ei muuda
+        kunagi ülal olevat WARN/WATCH/QUIET tulemust ja võib näidata
+        kõrgendatud taset ka päeval, mil see tulemus jääb QUIET-tasemele.
+        <a href="#status">Täielik ülevaade ↓</a></p>
+      </div>
+    </div>
+    <div class="stat-strip n2">
+      <div class="stat-cell">
+        <div class="n mono" id="eidx-value">—</div>
+        <div class="l">vs. 30 päeva algtase</div>
+      </div>
+      <div class="stat-cell">
+        <div class="n mono" id="eidx-sources">—</div>
+        <div class="l">signaali kõrgendatud</div>
+      </div>
+    </div>
+    <div class="charts-wrap">
+      <div id="chart-eidx-top" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
+    </div>
+  </div>
+</section>
+
 <section id="what">
   <div class="wrap">
     <div class="sec-head">
@@ -465,6 +497,11 @@
     </div>
     <div class="charts-wrap">
       <div class="range-selector mono" id="chart-range-selector"></div>
+      <div class="chart-block">
+        <h3>Koondatud eskalatsiooniindeks aja jooksul</h3>
+        <p class="chart-caption">Keskmine kõrvalekalle algtasemest GPS-häirete, AIS-i, sõjaväe õhusõidukite ja termiliste kuumapunktide lõikes (nende seast, millel on juba piisavalt ajalugu). Mõõt selle kohta, kui kaugel iga skann on tavapärasest — mitte kunagi prognoos ja eraldiseisev WARN/WATCH/QUIET tulemusest.</p>
+        <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
+      </div>
       <div class="chart-block">
         <h3>Eskalatsiooni intensiivsus aja jooksul</h3>
         <p class="chart-caption">Iga punkt on üks skann, värvitud tulemuse järgi (roheline = vaikne, kollane = jälgimine, punane = hoiatus). Joon näitab GDELT-i keskmist kajastuse tooni, kui see on saadaval — mida kõrgemal joon on, seda murettekitavam/vaenulikum meediakajastus; mitte ennustus.</p>
@@ -1031,6 +1068,71 @@
     container.appendChild(svg);
   }
 
+  function renderEidxChart(container, points, rangeStart, rangeEnd) {
+    var withValue = points.filter(function (p) { return typeof p.deviation_pct === 'number'; });
+    if (!withValue.length) { emptyChart(container, 'Piisavalt ajalugu pole veel kogunenud — see kasvab aja jooksul.'); return; }
+    container.textContent = '';
+
+    var maxAbs = Math.max(1, Math.max.apply(null, withValue.map(function (p) { return Math.abs(p.deviation_pct); })));
+    var yTop = PAD_T, yBottom = H - PAD_B, yMid = (yTop + yBottom) / 2;
+    function yFor(v) { return yMid - (v / maxAbs) * (yMid - yTop); }
+
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
+      'aria-label': 'Koondatud eskalatsiooniindeks aja jooksul' });
+
+    svg.appendChild(svgEl('line', {
+      x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
+      stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
+    }));
+
+    var path = '', started = false;
+    points.forEach(function (p) {
+      if (typeof p.deviation_pct !== 'number') { started = false; return; }
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) { started = false; return; }
+      path += (started ? 'L' : 'M') + x.toFixed(1) + ',' + yFor(p.deviation_pct).toFixed(1) + ' ';
+      started = true;
+    });
+    svg.appendChild(svgEl('path', { d: path.trim(), fill: 'none', stroke: 'var(--accent)', 'stroke-width': 1.5 }));
+
+    withValue.forEach(function (p) {
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) return;
+      var y = yFor(p.deviation_pct);
+      svg.appendChild(svgEl('circle', { cx: x.toFixed(1), cy: y.toFixed(1), r: 2, fill: 'var(--accent)' }))
+        .appendChild(svgEl('title', {})).textContent =
+        shortDate(p.ts) + ' — ' + (p.deviation_pct >= 0 ? '+' : '') + p.deviation_pct.toFixed(0) +
+        '% vs. algtase (' + (p.sources_included || 0) + '/4 signaali)';
+    });
+
+    svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = '±' + Math.round(maxAbs) + '%';
+    svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = shortDate(new Date(rangeStart).toISOString());
+    svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
+      .textContent = shortDate(new Date(rangeEnd).toISOString());
+
+    container.appendChild(svg);
+  }
+
+  function renderEidxCurrent(points) {
+    var valueEl = document.getElementById('eidx-value');
+    var sourcesEl = document.getElementById('eidx-sources');
+    if (!points.length) {
+      valueEl.textContent = '—';
+      sourcesEl.textContent = 'Andmed puuduvad';
+      return;
+    }
+    var latest = points[points.length - 1];
+    if (typeof latest.deviation_pct !== 'number') {
+      valueEl.textContent = 'Andmeid pole veel piisavalt';
+      sourcesEl.textContent = (latest.sources_included || 0) + ' / 4 jälgitud';
+      return;
+    }
+    valueEl.textContent = (latest.deviation_pct >= 0 ? '+' : '') + latest.deviation_pct.toFixed(0) + '%';
+    sourcesEl.textContent = (latest.sources_included || 0) + ' / 4';
+  }
+
   var RANGE_OPTIONS = [
     { key: '1d', label: '1D', days: 1 },
     { key: '1w', label: '1W', days: 7 },
@@ -1044,6 +1146,8 @@
   var allAisPoints = [];
   var allMilitaryPoints = [];
   var allFirmsPoints = [];
+  var allEidxPoints = [];
+  var EIDX_TOP_WIDGET_DAYS = 30;
   var currentRangeKey = DEFAULT_RANGE_KEY;
 
   function filterPointsByRange(points, days) {
@@ -1091,6 +1195,8 @@
         ariaLabel: 'Termilised kuumapunktid aja jooksul',
         tooltipSuffix: 'termilist kuumapunkti',
       });
+    renderEidxChart(document.getElementById('chart-escalation-index'),
+      filterPointsByRange(allEidxPoints, opt.days), rangeStart, rangeEnd);
   }
 
   function buildRangeSelector() {
@@ -1120,13 +1226,20 @@
       allAisPoints = d.ais_points || [];
       allMilitaryPoints = d.military_points || [];
       allFirmsPoints = d.firms_points || [];
+      allEidxPoints = d.escalation_index_points || [];
+      renderEidxCurrent(allEidxPoints);
+      renderEidxChart(document.getElementById('chart-eidx-top'),
+        filterPointsByRange(allEidxPoints, EIDX_TOP_WIDGET_DAYS),
+        Date.now() - EIDX_TOP_WIDGET_DAYS * 86400000, Date.now());
       buildRangeSelector();
       renderCharts();
     })
     .catch(function () {
-      ['chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Diagrammi andmed ajutiselt kättesaamatud.');
       });
+      document.getElementById('eidx-value').textContent = '—';
+      document.getElementById('eidx-sources').textContent = 'Pole saadaval';
     });
 })();
 </script>

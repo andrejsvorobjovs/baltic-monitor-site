@@ -233,6 +233,7 @@
   @media (max-width: 560px) { .stat-cell:nth-child(3) { border-left: none; } }
   .stat-cell .n { font-size: 26px; font-weight: 700; }
   .stat-cell .l { font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
+  .stat-strip.n2 { grid-template-columns: repeat(2, 1fr); }
 
   .charts-wrap { margin-top: 24px; }
   .range-selector { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
@@ -377,6 +378,37 @@
   </div>
 </div>
 
+<section id="escalation-index">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Sudėtinis eskalacijos indeksas</p>
+      <div>
+        <h2>Kiek šiandiena nutolusi nuo įprasto</h2>
+        <p>Apskaičiuoja vidurkį iš keturių nepriklausomai stebimų neapdorotų
+        signalų — GPS trukdžių, AIS laivų aktyvumo, karinių orlaivių ir
+        šiluminių karštųjų taškų — lyginant su kiekvieno signalo paties
+        naujausiu baziniu lygiu. Tai dabartinio nuokrypio matas, o ne
+        prognozė: jis niekada nepakeičia aukščiau esančio WARN/WATCH/QUIET
+        rezultato ir gali rodyti padidėjusį lygį net dieną, kai tas
+        rezultatas lieka QUIET. <a href="#status">Pilna suvestinė ↓</a></p>
+      </div>
+    </div>
+    <div class="stat-strip n2">
+      <div class="stat-cell">
+        <div class="n mono" id="eidx-value">—</div>
+        <div class="l">vs. 30 dienų bazinis lygis</div>
+      </div>
+      <div class="stat-cell">
+        <div class="n mono" id="eidx-sources">—</div>
+        <div class="l">signalai padidėję</div>
+      </div>
+    </div>
+    <div class="charts-wrap">
+      <div id="chart-eidx-top" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+    </div>
+  </div>
+</section>
+
 <section id="what">
   <div class="wrap">
     <div class="sec-head">
@@ -465,6 +497,11 @@
     </div>
     <div class="charts-wrap">
       <div class="range-selector mono" id="chart-range-selector"></div>
+      <div class="chart-block">
+        <h3>Sudėtinis eskalacijos indeksas laikui bėgant</h3>
+        <p class="chart-caption">Vidutinis nuokrypis nuo bazinio lygio GPS trukdžiams, AIS, kariniams orlaiviams ir šiluminiams karštiesiems taškams (tiems, kurie jau turi pakankamai istorijos). Matas, rodantis, kiek kiekvienas nuskaitymas nutolęs nuo įprasto — niekada prognozė ir atskiras nuo WARN/WATCH/QUIET rezultato.</p>
+        <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
       <div class="chart-block">
         <h3>Eskalacijos intensyvumas laikui bėgant</h3>
         <p class="chart-caption">Kiekvienas taškas — vienas nuskaitymas, nuspalvintas pagal rezultatą (žalia = ramu, geltona = stebima, raudona = perspėjimas). Linija rodo vidutinį GDELT žinių toną, kai jis prieinamas — kuo aukščiau linija, tuo sunerimusi/priešiškesnė žiniasklaidos nuotaika; tai ne prognozė.</p>
@@ -1044,6 +1081,71 @@
     container.appendChild(svg);
   }
 
+  function renderEidxChart(container, points, rangeStart, rangeEnd) {
+    var withValue = points.filter(function (p) { return typeof p.deviation_pct === 'number'; });
+    if (!withValue.length) { emptyChart(container, 'Kol kas nepakanka istorijos — ji kaupiasi laikui bėgant.'); return; }
+    container.textContent = '';
+
+    var maxAbs = Math.max(1, Math.max.apply(null, withValue.map(function (p) { return Math.abs(p.deviation_pct); })));
+    var yTop = PAD_T, yBottom = H - PAD_B, yMid = (yTop + yBottom) / 2;
+    function yFor(v) { return yMid - (v / maxAbs) * (yMid - yTop); }
+
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
+      'aria-label': 'Sudėtinis eskalacijos indeksas laikui bėgant' });
+
+    svg.appendChild(svgEl('line', {
+      x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
+      stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
+    }));
+
+    var path = '', started = false;
+    points.forEach(function (p) {
+      if (typeof p.deviation_pct !== 'number') { started = false; return; }
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) { started = false; return; }
+      path += (started ? 'L' : 'M') + x.toFixed(1) + ',' + yFor(p.deviation_pct).toFixed(1) + ' ';
+      started = true;
+    });
+    svg.appendChild(svgEl('path', { d: path.trim(), fill: 'none', stroke: 'var(--accent)', 'stroke-width': 1.5 }));
+
+    withValue.forEach(function (p) {
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) return;
+      var y = yFor(p.deviation_pct);
+      svg.appendChild(svgEl('circle', { cx: x.toFixed(1), cy: y.toFixed(1), r: 2, fill: 'var(--accent)' }))
+        .appendChild(svgEl('title', {})).textContent =
+        shortDate(p.ts) + ' — ' + (p.deviation_pct >= 0 ? '+' : '') + p.deviation_pct.toFixed(0) +
+        '% vs. bazinis lygis (' + (p.sources_included || 0) + '/4 signalai)';
+    });
+
+    svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = '±' + Math.round(maxAbs) + '%';
+    svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = shortDate(new Date(rangeStart).toISOString());
+    svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
+      .textContent = shortDate(new Date(rangeEnd).toISOString());
+
+    container.appendChild(svg);
+  }
+
+  function renderEidxCurrent(points) {
+    var valueEl = document.getElementById('eidx-value');
+    var sourcesEl = document.getElementById('eidx-sources');
+    if (!points.length) {
+      valueEl.textContent = '—';
+      sourcesEl.textContent = 'Duomenų dar nėra';
+      return;
+    }
+    var latest = points[points.length - 1];
+    if (typeof latest.deviation_pct !== 'number') {
+      valueEl.textContent = 'Kol kas nepakanka duomenų';
+      sourcesEl.textContent = (latest.sources_included || 0) + ' / 4 stebimų';
+      return;
+    }
+    valueEl.textContent = (latest.deviation_pct >= 0 ? '+' : '') + latest.deviation_pct.toFixed(0) + '%';
+    sourcesEl.textContent = (latest.sources_included || 0) + ' / 4';
+  }
+
   var RANGE_OPTIONS = [
     { key: '1d', label: '1D', days: 1 },
     { key: '1w', label: '1W', days: 7 },
@@ -1057,6 +1159,8 @@
   var allAisPoints = [];
   var allMilitaryPoints = [];
   var allFirmsPoints = [];
+  var allEidxPoints = [];
+  var EIDX_TOP_WIDGET_DAYS = 30;
   var currentRangeKey = DEFAULT_RANGE_KEY;
 
   function filterPointsByRange(points, days) {
@@ -1104,6 +1208,8 @@
         ariaLabel: 'Šiluminiai karštieji taškai laikui bėgant',
         tooltipSuffix: 'šiluminį(-ius) karštąjį(-uosius) tašką(-us)',
       });
+    renderEidxChart(document.getElementById('chart-escalation-index'),
+      filterPointsByRange(allEidxPoints, opt.days), rangeStart, rangeEnd);
   }
 
   function buildRangeSelector() {
@@ -1133,13 +1239,20 @@
       allAisPoints = d.ais_points || [];
       allMilitaryPoints = d.military_points || [];
       allFirmsPoints = d.firms_points || [];
+      allEidxPoints = d.escalation_index_points || [];
+      renderEidxCurrent(allEidxPoints);
+      renderEidxChart(document.getElementById('chart-eidx-top'),
+        filterPointsByRange(allEidxPoints, EIDX_TOP_WIDGET_DAYS),
+        Date.now() - EIDX_TOP_WIDGET_DAYS * 86400000, Date.now());
       buildRangeSelector();
       renderCharts();
     })
     .catch(function () {
-      ['chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Diagramos duomenys laikinai nepasiekiami.');
       });
+      document.getElementById('eidx-value').textContent = '—';
+      document.getElementById('eidx-sources').textContent = 'Nepasiekiama';
     });
 })();
 </script>
