@@ -2,14 +2,14 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-08-21T13:23:40.670823+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 0.7h ago",
   "since": "2026-07-19",
   "total_scans": 221,
   "quiet_count": 189,
   "watch_count": 32,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-21 13:23 UTC",
+  "generated_at": "2026-08-21 14:06 UTC",
   "total_sources": 151,
   "tier1_sources": 31,
   "tier2_sources": 107,
@@ -579,7 +579,7 @@
     {
       "ts": "2026-08-21T12:14:26.088720+00:00",
       "title": "Germany and Denmark brought up to full Baltic Sea coverage depth (151 sources)",
-      "text": "Owner-requested: \"include every Baltic Sea country in our project, except Russia.\" Of the 8 non-Russia Baltic Sea littoral states, 6 (Estonia, Latvia, Lithuania, Finland, Sweden, Poland) already had full Tier 2 depth -- border/coast guard, national CERT, civil emergency/crisis-preparedness agency, volunteer/territorial defence force, national grid/pipeline TSO, national broadcaster, security think tank. Germany and Denmark had only 3-4 sources each (intelligence service, MoD, MFA), added earlier as source-only countries. 11 new sources close that gap: German Bundespolizei (border), BSI (CERT), BBK (civil emergency), 50Hertz (grid TSO -- the one specifically serving Germany's Baltic Sea-facing northeast, since Germany has four regional TSOs with no single national one), Deutsche Welle (broadcaster); Danish CFCS (CERT), Beredskabsstyrelsen (civil emergency), Hjemmev\u00e6rnet (volunteer defence), Energinet (grid TSO), DR (broadcaster), DIIS (think tank). Two genuine gaps documented rather than forced: Denmark has no standalone border/coast-guard agency (folded into the Navy, unlike Sweden's separate Kustbevakningen), and Germany has no volunteer/territorial-defence tradition to match the Baltic/Nordic Home Guard model (THW is civilian disaster relief, not a military reserve). All domains confirmed real via web search; each query's Google News RSS mechanism confirmed live (CFCS currently returns zero current matches -- a real, working, quiet feed, not a broken one, same honest state as any other quiet source here).\n\nAlso fixed the exact staleness bug this project already found and fixed once for Finland/Sweden/Poland: GDELT_CLOUD_COUNTRIES and COUNTRY_CENTROIDS now include DEU/DNK in the same change that added the sources, not a follow-up fix later. Added the two genuinely new German/Danish baltic_specific keywords not already covered by the existing Swedish entries: \"Lettland\"/\"Ostsee\" (de), \"Letland\"/\"\u00d8sters\u00f8en\" (dk).\n\nNo scoring/trust-tier change: same \"source only\" treatment as every other non-Baltic-states country here -- a pure Germany/Denmark-Russia story still needs a genuine Baltic connection (baltic_specific) to be flagged, exactly as Finland/Sweden/Poland already work. 140 -> 151 sources, 8 new tests (630 total)."
+      "text": "Owner-requested: \"include every Baltic Sea country in our project, except Russia.\" Of the 8 non-Russia Baltic Sea littoral states, 6 (Estonia, Latvia, Lithuania, Finland, Sweden, Poland) already had full Tier 2 depth -- border/coast guard, national CERT, civil emergency/crisis-preparedness agency, volunteer/territorial defence force, national grid/pipeline TSO, national broadcaster, security think tank. Germany and Denmark had only 3-4 sources each (intelligence service, MoD, MFA), added earlier as source-only countries. 11 new sources close that gap: a border/coast-guard channel, national CERT, civil-emergency agency, grid TSO, and national broadcaster for Germany; a national CERT, civil-emergency agency, volunteer-defence force, grid TSO, national broadcaster, and think tank for Denmark. Two genuine gaps documented rather than forced: Denmark has no standalone border/coast-guard agency (folded into the Navy, unlike Sweden's separate Kustbevakningen), and Germany has no volunteer/territorial-defence tradition to match the Baltic/Nordic Home Guard model (THW is civilian disaster relief, not a military reserve). All domains confirmed real via web search; each query's Google News RSS mechanism confirmed live (one currently returns zero current matches -- a real, working, quiet feed, not a broken one, same honest state as any other quiet source here).\n\nAlso fixed the exact staleness bug this project already found and fixed once for Finland/Sweden/Poland: GDELT_CLOUD_COUNTRIES and COUNTRY_CENTROIDS now include DEU/DNK in the same change that added the sources, not a follow-up fix later. Added the two genuinely new German/Danish baltic_specific keywords not already covered by the existing Swedish entries: \"Lettland\"/\"Ostsee\" (de), \"Letland\"/\"\u00d8sters\u00f8en\" (dk).\n\nNo scoring/trust-tier change: same \"source only\" treatment as every other non-Baltic-states country here -- a pure Germany/Denmark-Russia story still needs a genuine Baltic connection (baltic_specific) to be flagged, exactly as Finland/Sweden/Poland already work. 140 -> 151 sources, 8 new tests (630 total)."
     },
     {
       "ts": "2026-08-21T09:45:51.896543+00:00",
@@ -629,7 +629,7 @@
     {
       "ts": "2026-08-20T16:24:39.705312+00:00",
       "title": "New OSINT sources for military tracking",
-      "text": "Added Bellingcat and TWZ (The War Zone) as Tier 3 sources \u2014 specialist outlets that verify military exercises and equipment movements from open-source evidence, closing out the last piece of Baltic Signal Monitor's force-posture tracking (after aircraft and ship tracking). These stay in the lowest-confidence tier, same as all Tier 3 sources, never counted as confirmation on their own."
+      "text": "Added two more specialist OSINT outlets as Tier 3 sources, verifying military exercises and equipment movements from open-source evidence, closing out the last piece of Baltic Signal Monitor's force-posture tracking (after aircraft and ship tracking). These stay in the lowest-confidence tier, same as all Tier 3 sources, never counted as confirmation on their own."
     },
     {
       "ts": "2026-08-18T13:15:04.208151+00:00",
@@ -713,13 +713,13 @@
     },
     {
       "ts": "2026-08-08T23:09:09.840620+00:00",
-      "title": "VSquare and Atlantic Council DFRLab added, a duplicate source fixed",
-      "text": "Added two more sources: VSquare, a Central European investigative journalism network tracking Russian military buildup along the NATO border, and Atlantic Council's DFRLab, whose reporting has used satellite imagery to identify Russian troop buildups. Also fixed a duplicate: Bellingcat had accidentally been added twice under the same name, now merged into one entry with the better-performing query. Now tracking 131 sources."
+      "title": "Two new OSINT investigative sources added, a duplicate source fixed",
+      "text": "Added two more investigative OSINT sources: a Central European journalism network tracking Russian military buildup along the NATO border, and an open-source research lab whose reporting has used satellite imagery to identify Russian troop buildups. Also fixed a duplicate source entry, now merged into one. Now tracking 131 sources."
     },
     {
       "ts": "2026-08-08T22:34:50.335134+00:00",
-      "title": "Bellingcat added as a source",
-      "text": "Added Bellingcat, the respected investigative OSINT outlet, to Tier 2 \u2014 its coverage of GRU Unit 29155 (the clandestine sabotage unit behind the Skripal poisoning and multiple European destabilization operations) is directly relevant to the hybrid incidents this project tracks. Now tracking 130 sources."
+      "title": "A new OSINT investigative source added",
+      "text": "Added a respected investigative OSINT outlet to Tier 2 \u2014 its coverage of Russian clandestine sabotage operations, including the Skripal poisoning and multiple European destabilization operations, is directly relevant to the hybrid incidents this project tracks. Now tracking 130 sources."
     }
   ]
 }
