@@ -2,14 +2,14 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-08-21T15:59:56.094346+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 1.7h ago",
+  "freshness_msg": "Last scan: 2.0h ago",
   "since": "2026-07-19",
   "total_scans": 223,
   "quiet_count": 190,
   "watch_count": 33,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-21 17:43 UTC",
+  "generated_at": "2026-08-21 18:01 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
@@ -570,6 +570,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-21T18:01:22.124810+00:00",
+      "title": "Fixed: a flagged story could link straight to a Russian state-media site",
+      "text": "GDELT-sourced items used their raw source URL as the public link, which could point directly at a Russian state-media/government domain -- untrustworthy for anyone tapping through from a browser notification. Now routed to a neutral page instead; the story is still tracked and cited by name."
+    },
+    {
       "ts": "2026-08-21T17:43:34.264086+00:00",
       "title": "Fixed: syndicated duplicates still showing in Recent flagged items",
       "text": "Same article text under different outlet names (\"...- Inbox.lv\" vs \"...- LA.LV\") wasn't caught by the earlier title dedup since the outlet suffix differed. Now strips it before comparing."
@@ -713,11 +718,6 @@
       "ts": "2026-08-14T03:52:52.322664+00:00",
       "title": "New: /military command -- live military aircraft snapshot (Phase 1)",
       "text": "Added /military: on-demand military aircraft snapshot (Phase 1)."
-    },
-    {
-      "ts": "2026-08-12T16:48:54.249164+00:00",
-      "title": "Clearer explanations: QUIET/WATCH/WARN, tiers, and what the map shows",
-      "text": "Added plain-language explanations of QUIET/WATCH/WARN, tiers, and the map."
     }
   ]
 }
