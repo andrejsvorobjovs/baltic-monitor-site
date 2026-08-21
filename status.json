@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-21T08:09:32.198765+00:00",
+  "last_run_utc": "2026-08-21T10:34:00.811933+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 217,
-  "quiet_count": 185,
+  "total_scans": 218,
+  "quiet_count": 186,
   "watch_count": 32,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-21 08:09 UTC",
+  "generated_at": "2026-08-21 10:34 UTC",
   "total_sources": 140,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-21T10:34:00.818122+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 140,
+      "gdelt_ran": false,
+      "new_items_count": 8,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-21T08:09:32.205559+00:00",
       "level": "QUIET",
@@ -332,47 +344,6 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-08-18T08:05:53.139218+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": false,
-      "new_items_count": 10,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Russia deploying warships to Baltic Sea, posing threat to regional countries \u2013 Bild - Ukrinform",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVVRMUEZKUkNjYlNxZnAxRm9UMkpqY2FGY1pLWmYxak9MWjZrb3A4X0NjbUxPVmpDSnhBZ0FtN3IyUmhwRUk1RzE0VjFRZnNJdktGSlRxWWN3emkyZ3JPbWRkcWVjQjFpTlhtQ1F4S2RlcnU4TjJtcmZIV2c2V0hGcU1COXV2cnVEVjJUQ1gwSFN4SzkzRzVlQTJkU1VjX09FanhYekFNTW42S3hPRXdIZ3Y3cU1pVnBYOXM4eUdnclh6M2k0QWN0VDRR0gHPAUFVX3lxTFBFWXdtRGJ3d3FCSlBIN2RBZGtUX2Z0TzMzNTFzTXhZQ1hVS1pOTmxGZU10RnM0MmZuaTRHUjVNSFp1NWtmRHR4b2RJNms2VDNsU0tROE1ybjhYajZ2X2dVdkc0UWp6Z21PalZZS1NLNzJ5bnRWVmZ1ak81NS13RnhHbjVKYjNyek1nSGtSQWNkdzhERDZWU2RMY3N4cnh1VEc3OVlZa0d2MXpGOEFsVHFMUUt4SkdLZWJmSHVONVdzalkzSUxhUE1Sd1JETGpQMA?oc=5",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        },
-        {
-          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSFpPbjBxNDdwVkRsaktsazliYzZZZ3BzeURLNXJiZFFHRjdEeHpZeVRJY3h1RW1MYldiOHYtbGpFTXRyMy1sblN6X2FXWU1ES1FuYVFqUHo0VmVITDJIYkozMlFhSVYwUGpTazlreXBLeVo3eVQ5VHdXdjl5MHlmYVhjVWQyTm5xMnR4UFFxbldJMVlGemlFYkpMMnA5ZlBtVjlDTmhmbzI2YTRGR01hOWhPT20ycHFMdXJxV3F6NjQyS3V1Smtma2UzRUlGSTl1bGZHeVc1dkR5blUyZFNUblU2cXRLSEk?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -631,6 +602,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-21T09:45:51.896543+00:00",
+      "title": "New: Composite Escalation Index -- a public trend line, not a prediction",
+      "text": "Owner-requested: \"we are not predicting the future... we are tracking escalation and measure it.\" Added a new composite measurement built entirely from four numbers this project already computes every scan -- each Tier-1 signal's own deviation-from-trailing-baseline percentage (GPS-jamming, AIS vessels, military aircraft, FIRMS thermal hotspots; compute_gpsjam_deviation()/compute_ais_deviation()/compute_military_deviation()/compute_firms_deviation()). Those four were previously only computed on a WATCH/WARN scan, purely to build a digest context line -- now computed on EVERY scan (pure math over history already recorded, no extra fetch), and compute_composite_escalation_index() averages whichever of the four currently have a valid baseline (at least 2 of 4 required, each clamped to +/-300% before averaging so one noisy source can't dominate) into one number: how far today's readings sit from normal, across independently-verified signals. Persisted every scan to a new escalation_index_history.json (mirroring gpsjam/ais/military/firms_history.json exactly) and published via generate_public_chart_data()'s new escalation_index_points array. Deliberately NOT a probability, a prediction, or a replacement for the corroboration-gated WARN/WATCH/QUIET trigger in score_and_group(), which this never touches -- same 'show the real data, say plainly what it isn't' posture as /satellite's refusal to do ML change-detection. On the site: a new prominent widget right after the hero showing the current reading plus 'N of 4 signals elevated', and a full history chart in the Track record section alongside the other five. 13 new tests (616 -> 629)."
+    },
+    {
       "ts": "2026-08-21T06:15:51.328391+00:00",
       "title": "Bluesky added as a fourth public alert channel",
       "text": "Added Bluesky (AT Protocol) as a fourth, Telegram-independent public alert channel, mirroring the existing Mastodon channel exactly: only an actual WATCH/WARN or a recovery back to QUIET, never routine QUIET scans or the weekly/daily/trend reports, same plain-text 'quick alert, link to site' shape (now shared between both via a common _format_short_alert_post() helper), just re-capped to Bluesky's tighter 300-grapheme post limit instead of Mastodon's ~500-character one. Unlike Mastodon's static bearer token, Bluesky's API is session-based -- each post authenticates fresh via com.atproto.server.createSession then writes the post via com.atproto.repo.createRecord, both endpoint shapes confirmed against real, current lexicon docs and a live request before writing any code. A fresh session per post (no caching) is deliberate and safe: this only fires on infrequent real alerts, and Bluesky's own documented rate limit (30 createSession calls per 5 minutes, 300/day) leaves huge headroom. Auth is a Bluesky App Password (Settings -> App Passwords on bsky.app), never the main account password. New secrets: BLUESKY_HANDLE and BLUESKY_APP_PASSWORD; posting cleanly no-ops until both are set. Its on-demand test command (test_bluesky) deliberately never writes a public post -- Bluesky has no Mastodon-style private/followers-only visibility to fall back on, so it only verifies session creation, confirming the credentials work without ever showing test noise on the public timeline. No PII collected, no scoring changes. 19 new tests (597 -> 616)."
@@ -774,11 +750,6 @@
       "ts": "2026-08-08T20:12:36.839466+00:00",
       "title": "USA, UK, and Germany added as source countries",
       "text": "Added nine sources across the US, UK, and Germany \u2014 each country's public-facing intelligence/security body (US ODNI, UK NCSC, German BfV), defence and foreign ministries (US DoD/State, UK MOD, German BMVg/Federal Foreign Office), and Germany's leading security think tank (SWP) \u2014 following the same source-only approach already used for Poland: these count as evidence only when a story actually names a Baltic country or flashpoint, not for every Russia-related story from these sources. Now tracking 123 sources."
-    },
-    {
-      "ts": "2026-08-08T18:51:28.506289+00:00",
-      "title": "Two new sources: Hybrid CoE and ENISA",
-      "text": "Added Hybrid CoE (the EU/NATO Centre of Excellence for Countering Hybrid Threats) and ENISA (the EU's cybersecurity agency) to Tier 1 \u2014 both are EU/NATO institutional bodies chartered for exactly the incident classes this project tracks, same stature as the NATO StratCom COE and CCDCOE sources already covered. Now tracking 114 sources across 6 countries and the EU/NATO level."
     }
   ]
 }
