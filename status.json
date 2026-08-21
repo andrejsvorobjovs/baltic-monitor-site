@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-21T15:38:29.342438+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-08-21T15:59:56.094346+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 222,
-  "quiet_count": 189,
+  "total_scans": 223,
+  "quiet_count": 190,
   "watch_count": 33,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-21 15:38 UTC",
+  "generated_at": "2026-08-21 15:59 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-21T15:59:56.099495+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 5,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-21T15:38:29.349061+00:00",
       "level": "WATCH",
@@ -301,33 +313,6 @@
       "new_items_count": 14,
       "stale_count": 1,
       "items": []
-    },
-    {
-      "ts": "2026-08-19T04:09:53.686197+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 15,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPalJFUW5reGxuTmlSU1AyUnBnSFZXZmlDRHlJcW1PLVVndHV5SW5tdHpUQi0wTjNBTXNmb2I0d015YXhSR3RQSEx0eWgyamZXdXlaWUVqN3hQbHlXalo5cFFCVmt3cGZRMkRNOFVyVW9NVXNkRW1ES2c5RjN5TldSVFlIc2hxdDNOZFE3WkxpVTk5aU9xOVB0WjI0bXFzQkpMbGtOeFZZeE5LaW5VOHh0RzYxWWQzWG9UbTBJRDEwMk5HRWZmVVFaOGZYNWsxektraXNlamU0XzBicUpxWkxlT3Z6Xzc0WG8?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
