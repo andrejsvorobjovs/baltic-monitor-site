@@ -509,7 +509,7 @@
       </div>
       <div class="chart-block">
         <h3>Eskalatsiooni intensiivsus aja jooksul</h3>
-        <p class="chart-caption">Iga punkt on üks skann, värvitud tulemuse järgi (roheline = vaikne, kollane = jälgimine, punane = hoiatus). Joon näitab GDELT-i keskmist kajastuse tooni, kui see on saadaval — mida kõrgemal joon on, seda murettekitavam/vaenulikum meediakajastus; mitte ennustus.</p>
+        <p class="chart-caption">Iga punkt on üks skann, värvitud tulemuse järgi (roheline = vaikne, kollane = jälgimine, punane = hoiatus). Joon näitab GDELT-i keskmist kajastuse tooni, kui see on saadaval — mida kõrgemal joon on, seda murettekitavam/vaenulikum meediakajastus; mitte ennustus. Katkendjoon on 0 (neutraalne toon), mitte diagrammi põhi — skannid, millel sel korral GDELT andmeid pole, asetsevad sellel vaikimisi, mitte sellepärast, et kajastus oleks tegelikult olnud neutraalne.</p>
         <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
       </div>
       <div class="chart-block">
@@ -1003,6 +1003,10 @@
         x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
         stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
       }));
+      svg.appendChild(svgEl('text', { x: PAD_L, y: yMid - 3, 'font-size': 9, fill: 'var(--ink-dim)' }))
+        .textContent = '0 (neutraalne toon)';
+      svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+        .textContent = '±' + maxAbs.toFixed(1) + ' tooni vahemik';
       var path = '', started = false;
       points.forEach(function (p) {
         if (typeof p.tone !== 'number') { started = false; return; }

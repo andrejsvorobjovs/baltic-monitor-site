@@ -509,7 +509,7 @@
       </div>
       <div class="chart-block">
         <h3>Eskalācijas intensitāte laika gaitā</h3>
-        <p class="chart-caption">Katrs punkts ir viens skenējums, iekrāsots pēc rezultāta (zaļš = klusums, dzeltens = novērošana, sarkans = brīdinājums). Līnija rāda GDELT vidējo ziņu toni, kur pieejams — jo augstāk līnija, jo satrauktāka/naidīgāka mediju atspoguļojums; nevis prognoze.</p>
+        <p class="chart-caption">Katrs punkts ir viens skenējums, iekrāsots pēc rezultāta (zaļš = klusums, dzeltens = novērošana, sarkans = brīdinājums). Līnija rāda GDELT vidējo ziņu toni, kur pieejams — jo augstāk līnija, jo satrauktāka/naidīgāka mediju atspoguļojums; nevis prognoze. Punktētā līnija ir 0 (neitrāls tonis), nevis diagrammas apakša — skenējumi, kuriem tajā reizē nav GDELT datu, pēc noklusējuma atrodas uz tās, nevis tāpēc, ka atspoguļojums patiešām būtu bijis neitrāls.</p>
         <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
       </div>
       <div class="chart-block">
@@ -1003,6 +1003,10 @@
         x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
         stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
       }));
+      svg.appendChild(svgEl('text', { x: PAD_L, y: yMid - 3, 'font-size': 9, fill: 'var(--ink-dim)' }))
+        .textContent = '0 (neitrāls tonis)';
+      svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+        .textContent = '±' + maxAbs.toFixed(1) + ' toņa diapazons';
       var path = '', started = false;
       points.forEach(function (p) {
         if (typeof p.tone !== 'number') { started = false; return; }

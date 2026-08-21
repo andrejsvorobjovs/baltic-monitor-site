@@ -504,7 +504,7 @@
       </div>
       <div class="chart-block">
         <h3>Escalation intensity over time</h3>
-        <p class="chart-caption">Each dot is one scan, colored by its result (green = quiet, amber = watch, red = warn). The line is GDELT's average coverage tone where available — the higher the line, the more alarmed/hostile the press coverage; not a forecast.</p>
+        <p class="chart-caption">Each dot is one scan, colored by its result (green = quiet, amber = watch, red = warn). The line is GDELT's average coverage tone where available — the higher the line, the more alarmed/hostile the press coverage; not a forecast. The dashed line is 0 (neutral tone), not the bottom of the chart — scans with no GDELT data that scan sit on it by default, not because coverage was actually neutral.</p>
         <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
       </div>
       <div class="chart-block">
@@ -1000,12 +1000,21 @@
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
       'aria-label': 'Escalation intensity over time' });
 
-    // Zero baseline for the tone line (tone straddles positive/negative).
+    // Zero baseline for the tone line (tone straddles positive/negative, so
+    // this sits in the MIDDLE of the chart, not the bottom -- unlike the
+    // count charts' 0-at-the-floor axis). Labeled explicitly (owner: "why
+    // does this start in the air? baseline should be at the base, right?")
+    // since without a number here, the middle dashed line reads as
+    // unexplained rather than as the actual zero point.
     if (hasTone) {
       svg.appendChild(svgEl('line', {
         x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
         stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
       }));
+      svg.appendChild(svgEl('text', { x: PAD_L, y: yMid - 3, 'font-size': 9, fill: 'var(--ink-dim)' }))
+        .textContent = '0 (neutral tone)';
+      svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+        .textContent = '±' + maxAbs.toFixed(1) + ' tone range';
       var path = '', started = false;
       points.forEach(function (p) {
         if (typeof p.tone !== 'number') { started = false; return; }

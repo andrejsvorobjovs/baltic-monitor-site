@@ -509,7 +509,7 @@
       </div>
       <div class="chart-block">
         <h3>Eskalacijos intensyvumas laikui bėgant</h3>
-        <p class="chart-caption">Kiekvienas taškas — vienas nuskaitymas, nuspalvintas pagal rezultatą (žalia = ramu, geltona = stebima, raudona = perspėjimas). Linija rodo vidutinį GDELT žinių toną, kai jis prieinamas — kuo aukščiau linija, tuo sunerimusi/priešiškesnė žiniasklaidos nuotaika; tai ne prognozė.</p>
+        <p class="chart-caption">Kiekvienas taškas — vienas nuskaitymas, nuspalvintas pagal rezultatą (žalia = ramu, geltona = stebima, raudona = perspėjimas). Linija rodo vidutinį GDELT žinių toną, kai jis prieinamas — kuo aukščiau linija, tuo sunerimusi/priešiškesnė žiniasklaidos nuotaika; tai ne prognozė. Punktyrinė linija yra 0 (neutralus tonas), o ne diagramos apačia — nuskaitymai, kurių tą kartą neturi GDELT duomenų, pagal numatytuosius nustatymus atsiduria ant jos, o ne todėl, kad nušvietimas iš tikrųjų buvo neutralus.</p>
         <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
       </div>
       <div class="chart-block">
@@ -1016,6 +1016,10 @@
         x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
         stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
       }));
+      svg.appendChild(svgEl('text', { x: PAD_L, y: yMid - 3, 'font-size': 9, fill: 'var(--ink-dim)' }))
+        .textContent = '0 (neutralus tonas)';
+      svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+        .textContent = '±' + maxAbs.toFixed(1) + ' tono diapazonas';
       var path = '', started = false;
       points.forEach(function (p) {
         if (typeof p.tone !== 'number') { started = false; return; }
