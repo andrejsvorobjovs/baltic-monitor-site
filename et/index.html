@@ -472,6 +472,26 @@
         <p class="chart-caption">Mitu kuulujutu/desinfo üksust (tase 3 — ei saa kunagi iseseisvalt hoiatust käivitada) igal skannil jälgiti.</p>
         <div id="chart-rumors" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
       </div>
+      <div class="chart-block">
+        <h3>GPS-häirete intensiivsus aja jooksul</h3>
+        <p class="chart-caption">Kõrge häirega GPSJam-i lahtrid, mis tuvastati päevas Läänemere piirkonnas. Kogutud lennukite teatatud GPS-täpsuse põhjal — korreleerub tahtliku segamisega, kuid ei kinnita seda.</p>
+        <div id="chart-gpsjam" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>AIS-laevade arv aja jooksul</h3>
+        <p class="chart-caption">Skannimise ajal lühikese AIS-kuulamisakna jooksul tuvastatud laevad. Pole ammendav kate — ainult need laevad, mis selle akna jooksul juhtusid teatama.</p>
+        <div id="chart-ais" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Sõjaväe õhusõidukite arv aja jooksul</h3>
+        <p class="chart-caption">Skannimise ajal ADS-B signaali edastavad õhusõidukid Läänemere piirkonnas. Paljud sõjalennud lendavad signaali väljas või võltsituna, seega on see osaline pilt.</p>
+        <div id="chart-military" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Termilised kuumapunktid aja jooksul</h3>
+        <p class="chart-caption">Satelliidi termilised anomaaliad, mis tuvastati skannimise ajal Läänemere piirkonnas. Toored soojussignatuuri andmed — metsatulekahjud ja põllumajanduslik põletamine käivitavad selle sama kergesti kui miski muu.</p>
+        <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Hiljutine skannimise ajalugu <span class="count" id="history-count"></span></summary>
@@ -970,23 +990,23 @@
     container.appendChild(svg);
   }
 
-  function renderRumorChart(container, points, rangeStart, rangeEnd, rangeDays) {
+  function renderCountChart(container, points, rangeStart, rangeEnd, rangeDays, opts) {
     if (!points.length) { emptyChart(container, 'Piisavalt ajalugu pole veel kogunenud — see kasvab aja jooksul.'); return; }
     container.textContent = '';
 
-    var counts = points.map(function (p) { return p.tier3_count || 0; });
+    var counts = points.map(opts.countField);
     var maxCount = Math.max(1, Math.max.apply(null, counts));
     var yTop = PAD_T, yBottom = H - PAD_B;
-    var expectedSlots = Math.max(rangeDays * 6, 1);
+    var expectedSlots = Math.max(rangeDays * (opts.slotsPerDay || 6), 1);
     var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Kuulujuttude/desinfo jälgimine aja jooksul' });
+      'aria-label': opts.ariaLabel });
 
     points.forEach(function (p) {
       var x = xForTs(p.ts, rangeStart, rangeEnd);
       if (x === null) return;
-      var count = p.tier3_count || 0;
+      var count = opts.countField(p);
       var barH = (count / maxCount) * (yBottom - yTop);
       var bar = svgEl('rect', {
         x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
@@ -994,12 +1014,12 @@
         fill: 'var(--accent)', opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' kuulujutu/desinfo üksust';
+        shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
       svg.appendChild(bar);
     });
 
     svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-      .textContent = 'max ' + maxCount + '/scan';
+      .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());
     svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
@@ -1017,6 +1037,10 @@
   ];
   var DEFAULT_RANGE_KEY = '1m';
   var allChartPoints = [];
+  var allGpsjamPoints = [];
+  var allAisPoints = [];
+  var allMilitaryPoints = [];
+  var allFirmsPoints = [];
   var currentRangeKey = DEFAULT_RANGE_KEY;
 
   function filterPointsByRange(points, days) {
@@ -1033,7 +1057,37 @@
     var rangeStart = rangeEnd - opt.days * 86400000;
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
-    renderRumorChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days);
+    renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
+      countField: function (p) { return p.tier3_count || 0; },
+      ariaLabel: 'Kuulujuttude/desinfo jälgimine aja jooksul',
+      tooltipSuffix: 'kuulujutu/desinfo üksust',
+    });
+    renderCountChart(document.getElementById('chart-gpsjam'),
+      filterPointsByRange(allGpsjamPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'GPS-häirete intensiivsus aja jooksul',
+        tooltipSuffix: 'kõrge häirega lahtrit',
+        maxSuffix: '/day',
+        slotsPerDay: 1,
+      });
+    renderCountChart(document.getElementById('chart-ais'),
+      filterPointsByRange(allAisPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'AIS-laevade arv aja jooksul',
+        tooltipSuffix: 'vaadeldud laeva',
+      });
+    renderCountChart(document.getElementById('chart-military'),
+      filterPointsByRange(allMilitaryPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Sõjaväe õhusõidukite arv aja jooksul',
+        tooltipSuffix: 'ADS-B signaali edastavat õhusõidukit',
+      });
+    renderCountChart(document.getElementById('chart-firms'),
+      filterPointsByRange(allFirmsPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Termilised kuumapunktid aja jooksul',
+        tooltipSuffix: 'termilist kuumapunkti',
+      });
   }
 
   function buildRangeSelector() {
@@ -1059,12 +1113,17 @@
     .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
     .then(function (d) {
       allChartPoints = d.points || [];
+      allGpsjamPoints = d.gpsjam_points || [];
+      allAisPoints = d.ais_points || [];
+      allMilitaryPoints = d.military_points || [];
+      allFirmsPoints = d.firms_points || [];
       buildRangeSelector();
       renderCharts();
     })
     .catch(function () {
-      emptyChart(document.getElementById('chart-intensity'), 'Diagrammi andmed ajutiselt kättesaamatud.');
-      emptyChart(document.getElementById('chart-rumors'), 'Diagrammi andmed ajutiselt kättesaamatud.');
+      ['chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms'].forEach(function (id) {
+        emptyChart(document.getElementById(id), 'Diagrammi andmed ajutiselt kättesaamatud.');
+      });
     });
 })();
 </script>
