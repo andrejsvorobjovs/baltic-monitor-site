@@ -42,6 +42,18 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
+<!-- Leaflet.markercluster 1.5.3 -- GPS-jamming alone can be 100+ points in
+     a small area (H3 cells tile densely), which without clustering
+     renders as a solid mass of overlapping circles, drowning out every
+     other layer underneath. Groups nearby points into a count badge that
+     expands on click/zoom instead. -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+      integrity="sha256-YU3qCpj/P06tdPBJGPax0bm6Q1wltfwjsho5TR4+TYc=" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+      integrity="sha256-YSWCMtmNZNwqex4CEw1nQhvFub2lmU7vcCKP+XVwwXA=" crossorigin="">
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
+        integrity="sha256-Hk4dIpcqOSb0hZjgyvFOP+cEmDXUKKNE/tT542ZbNQg=" crossorigin=""></script>
+
 <style>
   :root {
     --ink: #f1f3f2;
@@ -361,10 +373,36 @@
     });
   }
 
-  var aisLayer = L.layerGroup();
-  var milLayer = L.layerGroup();
-  var gpsjamLayer = L.layerGroup();
-  var firmsLayer = L.layerGroup();
+  // Clustered point layers: without this, GPS-jamming alone (100+ H3
+  // cells in a compact area) renders as an unreadable mass of overlapping
+  // circles that drowns out every other layer underneath it. Each
+  // layer's cluster bubble is colored to match that layer's own marker
+  // color (same legend colors), so a clustered view still reads as "this
+  // is mostly jamming cells" at a glance rather than a generic blob.
+  function makeClusterGroup(color) {
+    return L.markerClusterGroup({
+      maxClusterRadius: 50,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      iconCreateFunction: function (cluster) {
+        var count = cluster.getChildCount();
+        var size = count < 10 ? 30 : (count < 50 ? 36 : 44);
+        return L.divIcon({
+          html: '<div style="background:' + color + ';width:' + size + 'px;height:' + size + 'px;' +
+                'border-radius:50%;display:flex;align-items:center;justify-content:center;' +
+                'color:#fff;font-weight:700;font-size:' + (size < 36 ? 11 : 13) + 'px;' +
+                'box-shadow:0 0 0 2px rgba(0,0,0,0.25);">' + count + '</div>',
+          className: '',
+          iconSize: [size, size],
+        });
+      },
+    });
+  }
+
+  var aisLayer = makeClusterGroup('#2f7d9c');
+  var milLayer = makeClusterGroup('#b23a48');
+  var gpsjamLayer = makeClusterGroup('#8e44ad');
+  var firmsLayer = makeClusterGroup('#e2793d');
   var cableLayer = L.layerGroup();
 
   [aisLayer, milLayer, gpsjamLayer, firmsLayer, cableLayer].forEach(function (l) { l.addTo(map); });
