@@ -503,6 +503,11 @@
         <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
       </div>
       <div class="chart-block">
+        <h3>WATCH/WARN įspėjimai laikui bėgant</h3>
+        <p class="chart-caption">Kiekviena juosta yra vienas nuskaitymas, pasiekęs WATCH (gintarinė) arba WARN (raudona) lygį; QUIET nuskaitymai juostos nerodo. Juostos aukštis atspindi lygį, o ne dydį lygio viduje — WARN visada aukštesnė nei WATCH.</p>
+        <div id="chart-watchwarn" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
+      <div class="chart-block">
         <h3>Eskalacijos intensyvumas laikui bėgant</h3>
         <p class="chart-caption">Kiekvienas taškas — vienas nuskaitymas, nuspalvintas pagal rezultatą (žalia = ramu, geltona = stebima, raudona = perspėjimas). Linija rodo vidutinį GDELT žinių toną, kai jis prieinamas — kuo aukščiau linija, tuo sunerimusi/priešiškesnė žiniasklaidos nuotaika; tai ne prognozė.</p>
         <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
@@ -1064,15 +1069,18 @@
       var bar = svgEl('rect', {
         x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
         width: barW.toFixed(1), height: Math.max(0.5, barH).toFixed(1),
-        fill: 'var(--accent)', opacity: 0.85,
+        fill: opts.colorField ? opts.colorField(p) : 'var(--accent)', opacity: 0.85,
       });
-      bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
+      bar.appendChild(svgEl('title', {})).textContent = opts.tooltipField
+        ? shortDate(p.ts) + ' — ' + opts.tooltipField(p)
+        : shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
       svg.appendChild(bar);
     });
 
-    svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-      .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
+    if (!opts.hideMaxLabel) {
+      svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+        .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
+    }
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());
     svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
@@ -1177,6 +1185,13 @@
     var rangeStart = rangeEnd - opt.days * 86400000;
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
+    renderCountChart(document.getElementById('chart-watchwarn'), filtered, rangeStart, rangeEnd, opt.days, {
+      countField: function (p) { return p.level === 'WARN' ? 2 : (p.level === 'WATCH' ? 1 : 0); },
+      colorField: function (p) { return p.level === 'WARN' ? 'var(--warn)' : 'var(--watch)'; },
+      tooltipField: function (p) { return p.level || 'unknown'; },
+      ariaLabel: 'WATCH ir WARN įspėjimai laikui bėgant',
+      hideMaxLabel: true,
+    });
     renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
       countField: function (p) { return p.tier3_count || 0; },
       ariaLabel: 'Gandų/dezinformacijos stebėjimas laikui bėgant',
@@ -1248,7 +1263,7 @@
       renderCharts();
     })
     .catch(function () {
-      ['chart-eidx-top', 'chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Diagramos duomenys laikinai nepasiekiami.');
       });
       document.getElementById('eidx-value').textContent = '—';

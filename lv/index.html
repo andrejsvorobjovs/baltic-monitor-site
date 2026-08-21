@@ -503,6 +503,11 @@
         <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
       </div>
       <div class="chart-block">
+        <h3>WATCH/WARN brīdinājumi laika gaitā</h3>
+        <p class="chart-caption">Katrs stabiņš ir viens skenējums, kas sasniedza WATCH (dzeltens) vai WARN (sarkans) līmeni; QUIET skenējumi stabiņu nerāda. Stabiņa augstums atspoguļo līmeni, nevis apjomu līmeņa ietvaros — WARN vienmēr ir augstāks nekā WATCH.</p>
+        <div id="chart-watchwarn" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
+      </div>
+      <div class="chart-block">
         <h3>Eskalācijas intensitāte laika gaitā</h3>
         <p class="chart-caption">Katrs punkts ir viens skenējums, iekrāsots pēc rezultāta (zaļš = klusums, dzeltens = novērošana, sarkans = brīdinājums). Līnija rāda GDELT vidējo ziņu toni, kur pieejams — jo augstāk līnija, jo satrauktāka/naidīgāka mediju atspoguļojums; nevis prognoze.</p>
         <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
@@ -1051,15 +1056,18 @@
       var bar = svgEl('rect', {
         x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
         width: barW.toFixed(1), height: Math.max(0.5, barH).toFixed(1),
-        fill: 'var(--accent)', opacity: 0.85,
+        fill: opts.colorField ? opts.colorField(p) : 'var(--accent)', opacity: 0.85,
       });
-      bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
+      bar.appendChild(svgEl('title', {})).textContent = opts.tooltipField
+        ? shortDate(p.ts) + ' — ' + opts.tooltipField(p)
+        : shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
       svg.appendChild(bar);
     });
 
-    svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-      .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
+    if (!opts.hideMaxLabel) {
+      svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+        .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
+    }
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());
     svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
@@ -1164,6 +1172,13 @@
     var rangeStart = rangeEnd - opt.days * 86400000;
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
+    renderCountChart(document.getElementById('chart-watchwarn'), filtered, rangeStart, rangeEnd, opt.days, {
+      countField: function (p) { return p.level === 'WARN' ? 2 : (p.level === 'WATCH' ? 1 : 0); },
+      colorField: function (p) { return p.level === 'WARN' ? 'var(--warn)' : 'var(--watch)'; },
+      tooltipField: function (p) { return p.level || 'unknown'; },
+      ariaLabel: 'WATCH un WARN brīdinājumi laika gaitā',
+      hideMaxLabel: true,
+    });
     renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
       countField: function (p) { return p.tier3_count || 0; },
       ariaLabel: 'Baumu/dezinformācijas izsekošana laika gaitā',
@@ -1235,7 +1250,7 @@
       renderCharts();
     })
     .catch(function () {
-      ['chart-eidx-top', 'chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Diagrammas dati īslaicīgi nav pieejami.');
       });
       document.getElementById('eidx-value').textContent = '—';
