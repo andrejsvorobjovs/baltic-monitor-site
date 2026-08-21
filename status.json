@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-20T23:51:51.586934+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 2.1h ago",
+  "last_run_utc": "2026-08-21T04:13:22.464839+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 214,
+  "total_scans": 215,
   "quiet_count": 183,
-  "watch_count": 31,
+  "watch_count": 32,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-21 01:56 UTC",
+  "generated_at": "2026-08-21 04:13 UTC",
   "total_sources": 140,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-21T04:13:22.471062+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 140,
+      "gdelt_ran": true,
+      "new_items_count": 21,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZm8yclBUa2x4SFZGcmRjT29vQWQxekJhSHZOWjhENTVGdFk2czQxUDY5b0w4WFNOVFBCamRXSDI5MXRpSWJvMV83OTd4TjlIQ0ZOWjJiLTUteUZKME43VlJlRFlIYm13bTNpbklnOFBDYXgyQjE3c2h6dEZ6NVh2aTB6WC05Slh5VmUtRzF4b0owMGxsLXVFd0MyUEI5WVd1YnBQeEhmWDRYVGtRdG5kMXJZSnhCSjlNVVA0Mk1QcUY2a1hqdHRRYXhPWF95OThiOTR2SFFvX00yTHJCWXRYWEFsaWdVelk?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-20T23:51:51.593164+00:00",
       "level": "QUIET",
@@ -389,64 +416,25 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-08-17T19:52:09.312475+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": true,
-      "new_items_count": 30,
-      "stale_count": 1,
-      "items": [
-        {
-          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - LA.LV",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQLTVRdmRWQnBjVGJPSmNaYjEzdDdoMzJSRGJtMkNBclhKdjk4ZmptalZHbnJyNlRTMjBKRTJpNWY4REdON0t5YTQwYkNPMEp4UEYzcWxLNTFBTl9aNEFtSkdMdlUzdWJNeVJlWFJNZUp0RmZXbzBQOEJ5VXludVEzZmJzSzBRVDRWUlhCWXhiY1lJM3ZBcmNGTXNmMUYyd1hmbXlkbHZ1NWM2R0Zla0F6ZHI3SjlCZzZ1bDA5dWRKaFJ6UElrVG1F?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        },
-        {
-          "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Jauns.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMTZxc3J0NEJ2Z1J6dmlTYnBHalYwVHdtM3ByVnlZV2ZBV0JXbGF6eWx4QVBLcnNuS2w3UUJKd3VsRzRnbTN2SDR2d2Y0S1lEeGRXaTZMT0Q5WnQ1WnpwaEZiT3UwZmdXWUJ4cGVBaGlsS3hNS2JzSWNtaUlKeFZrSWFtN3RrNXlwR0xFWUd4Z1V6dXBnVzNKM0dEU2Vld3c2aDdFVWU1RHRWUQ?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        },
-        {
-          "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Inbox.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWXMwVWRjREViaTVqQkdYRnZTOEJaUGlDVEh0QjhITHpiN21yY25yWmoyaEpYVGN6ZFpUbHZERkJrZmlncnBhbjFrM0VGel80UkVvRnBDOWZqcDRvbDR0UERWX2hvQ3NMN3h4Q2c2dnRHVlJZZ0UydkpFakxyZ2JuNDIzMU05aGh5dW9KRThNNzRHeURvaE9yaDJuSnpRRUloWnJtcUFpcDRGTnRFelE?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-21T04:13:22.474005+00:00",
+      "level": "WATCH",
+      "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZm8yclBUa2x4SFZGcmRjT29vQWQxekJhSHZOWjhENTVGdFk2czQxUDY5b0w4WFNOVFBCamRXSDI5MXRpSWJvMV83OTd4TjlIQ0ZOWjJiLTUteUZKME43VlJlRFlIYm13bTNpbklnOFBDYXgyQjE3c2h6dEZ6NVh2aTB6WC05Slh5VmUtRzF4b0owMGxsLXVFd0MyUEI5WVd1YnBQeEhmWDRYVGtRdG5kMXJZSnhCSjlNVVA0Mk1QcUY2a1hqdHRRYXhPWF95OThiOTR2SFFvX00yTHJCWXRYWEFsaWdVelk?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-20T08:08:30.406606+00:00",
       "level": "WATCH",
@@ -664,22 +652,6 @@
       "categories": [
         "baltic_specific",
         "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-17T15:50:37.289407+00:00",
-      "level": "WATCH",
-      "title": "Bild: Russia is deploying warships to the Baltic Sea amid Putin's threats against Europeans - LIGA.net",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTUd6aXRTcG5YamJ6eHg4akd4Z1Jna011SGRMYTBaRkk0SnBVV2Q1T3dQenVRUmtIU25PNkI4bkhGeGFDa0NrVm11TG1Bc0t0REdNcFFZM29BcFlNeW5USVB2ZkJ3aWpvaEJOaDlTbDBSYWNSVTZaREVCOEU2YmtXY0RJQ1BJOFhEMDNpNi1UUFlSU19vQnNwbm13cF9KV3FjdzNqTlBSUlh2TUtsNmItZElYdjl2N3ZYQzVpTThvOWl1UEHSAcgBQVVfeXFMTTBveHpRbHZlX2w4bS1EblVIcmVuOWRya1d1NzdDRXBtNW80Tzd5T21fUktjREl5QXYyaktzSGZ6YzFzSEhXWlpMTmVpR2REMjZzaEJ1QVdGUEwtZVFlWWFkSDdueTNvQXZ0YnhrVFljVmgzYWphWUgyVHR0WExpbHZiTV85bDlnRzhwYlFKSkFxQ1J4cTZfak5XS2ZCa1VfWHhkVExiYzhGa2J2TE1KcGVTVURMUlgwZ2Fha0lqVHF3WmhCQlp3Tno?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
       ],
       "tier": "tier2",
       "gdelt_category": "",
