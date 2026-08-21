@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-21T04:13:22.464839+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-08-21T04:53:32.967976+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 215,
-  "quiet_count": 183,
+  "total_scans": 216,
+  "quiet_count": 184,
   "watch_count": 32,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-21 04:13 UTC",
+  "generated_at": "2026-08-21 04:53 UTC",
   "total_sources": 140,
   "tier1_sources": 31,
   "tier2_sources": 96,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-21T04:53:32.974361+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 140,
+      "gdelt_ran": false,
+      "new_items_count": 2,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-21T04:13:22.471062+00:00",
       "level": "WATCH",
@@ -361,61 +373,6 @@
       "new_items_count": 17,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-17T23:48:52.439255+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": false,
-      "new_items_count": 32,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Russia deploying warships to Baltic Sea, posing threat to regional countries \u2013 Bild - Ukrinform",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQjBHMVdZbUwtckxFckZ0U2NQUmJVclZEdGo1VTVsaGR2VWZvc3c3MlFfZ1dZd0NQVmlnVGxTMkRGU1FUQTBlN2RKS1F3c3ZVd2RGZ0E0TktfOHZyYnQ3ZTRqUkI2Z0JTWVhkdHJGc2JHeGVnU0xtUUtyN1hFRkctSkJSaFB6U29QdjVzOFlIN2tSck05QTNnRUtOUWNReE8taFNKbWRUNUpmVnJCMDlONm1LVThRaU9zMUNOWTg2bXRJNVp4SE55VDI3T1lwYm1L0gHWAUFVX3lxTE1fV3hMeUtsRWZHMnJkLWpYd0MzcDhuMUp5Y2lidzRleC1DNndZbjFVQkFmbHRXTlhQOC1uTjA0NjdwRDk5UFJwNjQ0cWdzN29ObVNMTm5xOEVlSjRtUWo0THN3TTM5VjRaQXNHV2VqeFZEeDdyakpEM1J6QTJ2MFJ3NktjMWxQSVZoZWpSS1ZtTFRDSGFoRjJ0a1dMOUl1R2RwQVlIZUJBZzVGNnRITFI5RXN0M3h5SDczQmpCNFFsOXItQ3ZwV0dWaTN1N2pkWlNqY243dVE?oc=5",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        },
-        {
-          "title": "Pieaugo\u0161as ba\u017eas par sabot\u0101\u017eu Baltijas valst\u012bs: NATO br\u012bdina par Krievijas oper\u0101cij\u0101m - lente.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMkE5WVgzcEt0bHVSYnpQQnRXcHZncUFqb1RnVXpBbkhvckh5UXRiVWFUc0ZPQUtjYkNpLWNZTGU2cU0waDctNHFNZGh1cGdONzB1a0NUUGdSZnRvTGo4YzhvR0JlNWF3X0VPLThsMlhwZXhRcFg2VDRvS3hfTDNQZ2RhNEVhZUR0dUVHelEzanZGeWpDeV9WMlFKSFUwdGhQYW5EZVU1S2Q4aGdYQ1BkcEppWjY4OTQ0bFB0aFVSc3h3S0NNQTVr?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        },
-        {
-          "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - Inbox.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNajItSVBqYVFiVDBoRm5kaUhWMENWVnhpOThNYnpMY1pwQ0RJa0lsN042YUNqcHhHaGhTX3Q3UXBVdkwzYjJhOWJxdUxsSnhNNVMzd1hZdnA0TW5uek8zM3hxVjJ3RFNrZEthcXlkS2JYeWVYajQwN2dLT2xQVjV0aHR6bmYwb1g1LU52TDg4alhBNzI4SnFGNzRpZlFBTDViZktGUm1WWWpjUnpHU3djaDA2eHhZR2x4TjdHbUYxZ1M4aGthZnVxeFVxdlJDc1BsdkQ2UWZYTkp3Y0xLWmNpV1o5NjFuaG1PRFlHMmlMdlVWYWZKVDNPakFB?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -674,6 +631,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-21T00:49:23.728084+00:00",
+      "title": "New: a real map on the public site (AIS, military aircraft, GPS jamming, thermal hotspots)",
+      "text": "Closes the last piece of the estwarden.eu competitive gap named in the FIRMS/satellite entries above: this project already fetched real positions every scan for AIS ships, military ADS-B aircraft, GPSJam H3 cells, and FIRMS thermal hotspots, but only ever persisted aggregate COUNTS (ais_history.json/military_history.json/gpsjam_history.json/firms_history.json) -- never the actual lat/lon points, so none of it was ever plotted anywhere. record_map_positions() now records a bounded, pruned rolling window (72h, documented in main.py alongside every other constant) of real positions across all four sources to a new map_positions.json, reusing whatever run_scan() already fetched for the existing count-based Phase 2 blocks -- no duplicate fetching. generate_public_map_data() (same pattern as generate_public_status_json()/generate_public_chart_data()) publishes a small, capped slice (150 points/layer max) to public_map_data.json, copied to the public site repo as map_data.json by scan.yml, same mechanism as status.json/chart_data.json. GPSJam cells are deduped by (hex, date) and FIRMS hotspots by (lat, lon, acq_date, acq_time) so re-fetching the same underlying detection across consecutive scans does not write duplicate points; AIS/military positions are never deduped, since every scan there is a genuinely fresh live sample and repeat points are what let the map show real movement. Same trust posture as everywhere else this data appears: not curated, self-declared/spoofable where applicable, purely informational, never itself a trigger -- this only changes the PRESENTATION of data already collected every scan and already shared with the owner via Telegram, not what is collected. The actual map page (Leaflet.js + OpenStreetMap tiles, plus a static undersea-cable reference layer) lives in the baltic-monitor-site repo -- see that repo own README. 25 new tests (567 -> 592)."
+    },
+    {
       "ts": "2026-08-21T00:38:13.065814+00:00",
       "title": "New: /satellite -- raw Sentinel-2 imagery, deliberately no ML interpretation",
       "text": "Added /satellite <site>, sending a real, recent, best-effort cloud-free true-color Sentinel-2 photo (free Copernicus Data Space Ecosystem imagery) of a named site -- Baltiysk, Chkalovsk, Pskov, or Luga -- straight to the private chat, exactly as received. Deliberately does NOT do what a dead but more advanced competitor, estwarden.eu, used to: run ML object detection to call a garrison 'empty' or 'occupied'. A false automated claim about troop movements would cost this project the trust it depends on, so that interpretation step is a considered non-feature, not a gap -- the caption says so outright. On-demand only, permanently -- no scan-time scoring, no baseline, no alerting."
@@ -817,11 +779,6 @@
       "ts": "2026-08-08T08:50:50.423248+00:00",
       "title": "Fixed a real gap: grid/pipeline sources own incident reports would have been dropped",
       "text": "A backtest against the grid/pipeline operator sources added earlier today found a real gap: an incident report on one of those operators own domain (\"Elering confirms cable damage, sabotage suspected\") often never names the country, so it was being silently treated as irrelevant -- exactly the sources added to catch this incident class early. Fixed by treating each operator name as a location signal, plus catching the actual hedged first-report language (\"pressure dropped,\" \"external damage\") the real 2023 incident was genuinely described with, not just the word sabotage."
-    },
-    {
-      "ts": "2026-08-07T09:03:21.599937+00:00",
-      "title": "Monthly and yearly summaries added, all periodic reports now evening-only",
-      "text": "Two new periodic roundups alongside the existing daily and weekly ones: a monthly digest (past 30 days) and a yearly digest (past 365 days), both posted to the channel. Also fixed: the weekly digest was firing in the morning (~11:23 Riga) -- moved to the same ~20:00 Riga evening slot the daily report already uses, so every periodic summary now lands in the evening, never during the day."
     }
   ]
 }
