@@ -302,10 +302,21 @@
   #status-error { display: none; color: var(--ink-dim); font-size: 13px; margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
-  .qa { border-top: 1px solid var(--border); padding: 20px 0; }
+  .qa { border-top: 1px solid var(--border); }
   .qa:last-child { border-bottom: 1px solid var(--border); }
-  .qa .q { font-weight: 700; font-size: 15px; margin: 0 0 6px; }
-  .qa .a { margin: 0; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
+  .qa summary.q {
+    font-weight: 700; font-size: 15px; margin: 0;
+    padding: 20px 32px 20px 0; cursor: pointer; list-style: none; position: relative;
+  }
+  .qa summary.q::-webkit-details-marker { display: none; }
+  .qa summary.q::after {
+    content: "+"; position: absolute; right: 4px; top: 18px;
+    font-size: 20px; line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .qa[open] summary.q::after { content: "\2212"; }
+  .qa summary.q:hover { color: var(--accent); }
+  .qa summary.q:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .qa .a { margin: 0 0 20px; color: var(--ink-dim); font-size: 14.5px; max-width: 60ch; }
 
   footer { padding: 40px 0 64px; }
   footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
@@ -492,38 +503,38 @@
       <p class="eyebrow">Enne kui küsid</p>
       <div><h2>Korduma kippuvad küsimused</h2></div>
     </div>
-    <div class="qa">
-      <p class="q">Mis saab, kui te eksite?</p>
+    <details class="qa">
+      <summary class="q">Mis saab, kui te eksite?</summary>
       <p class="a">Viga logitakse ja avaldatakse parandusena, mitte ei parandata vaikselt — ülaltoodud loend on täielik ülevaade sellest, millest on sel viisil teatatud. Aeg-ajalt eksimine ja selle avalik tunnistamine on usaldusväärsem kui kahtlaselt laitmatu ajalugu. Üks aus piirang: see ei ole automatiseeritud audit — parandus ilmub ainult siis, kui viga tegelikult märgatakse ja käsitsi teatatakse. Puhas ajalugu tähendab, et midagi pole veel tuvastatud ega teatatud, mitte formaalset garantiid nullveast. Ülaltoodud "paranduste määr" on paranduste arv jagatud skannimiste arvuga, mastaabi mõistmiseks — mitte sõltumatult kinnitatud täpsuse hinnang.</p>
-    </div>
-    <div class="qa" id="faq-gdelt">
-      <p class="q">Mida tähendavad GDELT klassifikatsioonikoodid ja "Goldsteini" skoor, mida vahel näen?</p>
+    </details>
+    <details class="qa" id="faq-gdelt">
+      <summary class="q">Mida tähendavad GDELT klassifikatsioonikoodid ja "Goldsteini" skoor, mida vahel näen?</summary>
       <p class="a">GDELT on avalik andmebaas, mis kodeerib automaatselt maailma poliitilisi ja konfliktiga seotud uudiseid struktureeritud kategooriatesse, koos standardse raskusastme hinnanguga nimega Goldsteini skaala (-10 kuni +10 — mida negatiivsem, seda vaenulikum/konfliktsem). Kui märgitud üksus pärineb GDELT-ist, näidatakse selle kategooriat ja Goldsteini skoori koos lisakontekstina. See on lihtsalt lisadetail üksuse kohta, mis on juba kvalifitseerunud: iga siin näidatud GDELT-põhine üksus on juba läbinud täpselt samad asjakohasuse ja kinnituse kontrollid nagu iga teine märgitud üksus sellel lehel — see ei ole töötlemata ega filtreerimata andmed. (Kui postitatakse WATCH või WARN, lisab Telegrami kanal automaatselt kaardi — kuid see kajastab ainult neid konkreetseid sündmusi, mis selle hoiatuse käivitasid, mitte üldist piirkonna hetkeseisu.)</p>
-    </div>
-    <div class="qa" id="faq-unreachable">
-      <p class="q">Mida tähendab „N allikas(t) ei vastanud”?</p>
+    </details>
+    <details class="qa" id="faq-unreachable">
+      <summary class="q">Mida tähendab „N allikas(t) ei vastanud”?</summary>
       <p class="a">Allika voog ei vastanud selle skanni ajal — enamasti on see tavaline, üksik häire. Aeg-ajalt ebaõnnestub aga suur hulk allikaid korraga: see projekt töötab tasuta, jagatud hostimisel (GitHub Actions) ning see jagatud serveripark saab mõnikord serveri, mille IP-aadressi Google on juba mingil muul põhjusel piiranud — see blokeerib ühe skanni jooksul korraga kõik Google Newsi kaudu töötavad allikad. Kui see tuvastatakse, tunneb skann selle nüüd umbes minutiga ära ja proovib automaatselt uuesti teisel serveril, selle asemel et oodata järgmist plaanipärast skanni. Igal juhul tähendab see, et tulemus võib olla tavapärasest vähem täielik — mitte et midagi varjati. Eelistame seda näidata, kui lasta katkise skanni ajal saadud vaiksel tulemusel näida identsena tegeliku kõik-korras olekuga.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Miks te ei loetle täpseid allikaid?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Miks te ei loetle täpseid allikaid?</summary>
       <p class="a">Et hindamissüsteemi ei saaks ära kasutada — täpselt nende väljaannete nimetamine, mis saavad hoiatuse käivitada, võimaldaks kellelgi sihikule võtta või ära kasutada just neid allikaid, mis loevad. Tase ja arv on avalikud; hetkel, mil allikas tegelikult toodab tegeliku WATCH/WARN, näidatakse ka selle nime ja linki (vt „Hiljutised märgitud sündmused” eespool).</p>
-    </div>
-    <div class="qa">
-      <p class="q">Kas te näete, kes seda jälgib?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Kas te näete, kes seda jälgib?</summary>
       <p class="a">Telegramis jah — kanali administraatorina on see tavapärane iga Telegrami kanali omaniku jaoks, mitte midagi selle projekti jaoks spetsiaalselt loodut. Brauseri push-tellijad on teistsugused: nimi ega identiteet pole lisatud, ainult anonüümne seadme tunnus, nii et ma ei näe, kes keegi seal on. Teised Telegrami tellijad ei näe üksteist ja midagi ei ekspordita, salvestata mujal, müüda ega jagata väljaspool seda, mida Telegram ise juba käsitleb.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Mis siis, kui ma ei saa pärast sisselülitamist brauseri teavitusi?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Mis siis, kui ma ei saa pärast sisselülitamist brauseri teavitusi?</summary>
       <p class="a">Mobiilibrauserid võivad siin olla ebajärjekindlad — telefoni akutoite optimeerimine või brauseri enda saidipõhine teavituste seadistus võib teavitused vaikselt vaigistada ilma ühegi veata. Kõige levinum põhjus: kontrolli, et selle saidi teavitused pole vaigistatud otse sinu brauseri enda seadetes (mitte ainult telefoni süsteemi seadetes) — tavaliselt on see põhjus.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Kas see jääb tasuta?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Kas see jääb tasuta?</summary>
       <p class="a">Jah. On olemas vabatahtlik toetusnupp (Ko-fi) neile, kes soovivad projekti toetada — see ei osta kiiremaid ega paremaid teavitusi; kõik saavad täpselt sama asja, samal ajal, olenemata sellest.</p>
-    </div>
-    <div class="qa">
-      <p class="q">Kas see on ametlik hoiatussüsteem?</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Kas see on ametlik hoiatussüsteem?</summary>
       <p class="a">Ei. Kui muretsed tegeliku hädaolukorra pärast, kontrolli alati kõigepealt oma riigi ametlikke kanaleid: Eesti — kriis.ee · Läti — vugd.gov.lv · Leedu — lrv.lt.</p>
-    </div>
+    </details>
   </div>
 </section>
 
@@ -1055,6 +1066,22 @@
       emptyChart(document.getElementById('chart-intensity'), 'Diagrammi andmed ajutiselt kättesaamatud.');
       emptyChart(document.getElementById('chart-rumors'), 'Diagrammi andmed ajutiselt kättesaamatud.');
     });
+})();
+</script>
+
+<script>
+(function () {
+  function openFaqTarget() {
+    var hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    var el = document.getElementById(hash.slice(1));
+    if (el && el.tagName === 'DETAILS') {
+      el.open = true;
+      el.scrollIntoView({ block: 'start' });
+    }
+  }
+  window.addEventListener('hashchange', openFaqTarget);
+  openFaqTarget();
 })();
 </script>
 
