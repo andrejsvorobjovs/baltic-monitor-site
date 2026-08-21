@@ -1065,8 +1065,17 @@
     });
 
     if (!opts.hideMaxLabel) {
-      svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-        .textContent = '0–' + maxCount + (opts.maxSuffix || '/scan');
+      var yMidAxis = (yTop + yBottom) / 2;
+      [[yBottom, 0], [yMidAxis, Math.round(maxCount / 2)], [yTop, maxCount]].forEach(function (ref) {
+        var y = ref[0], val = ref[1];
+        svg.appendChild(svgEl('line', {
+          x1: PAD_L, x2: W - PAD_R, y1: y.toFixed(1), y2: y.toFixed(1),
+          stroke: 'var(--ink-dim)', 'stroke-width': 1, opacity: 0.25,
+        }));
+        svg.appendChild(svgEl('text', {
+          x: PAD_L, y: (y - 3).toFixed(1), 'font-size': 9, fill: 'var(--ink-dim)',
+        })).textContent = val;
+      });
     }
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());
