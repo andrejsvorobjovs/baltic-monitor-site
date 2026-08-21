@@ -12,8 +12,10 @@ that the main project's health-check workflow updates automatically.
 - `index.html` — the page itself
 - `status.json` — live track-record data, overwritten automatically by
   the main project on every scan/health check (no need to edit by hand)
-- `chart_data.json` — longer escalation/rumor-tracking time series behind
-  the homepage's charts, same auto-update mechanism
+- `chart_data.json` — longer time series behind the homepage's charts
+  (escalation intensity, rumor/disinfo tracking, GPS-jamming, AIS vessel
+  count, military aircraft count, NASA FIRMS thermal hotspots), same
+  auto-update mechanism
 - `feed.xml` — RSS feed of recent flagged items, same auto-update mechanism
 - `map/index.html` — a live map (Leaflet.js + OpenStreetMap tiles)
   plotting recent AIS ship, military ADS-B aircraft, GPS-jamming, and NASA

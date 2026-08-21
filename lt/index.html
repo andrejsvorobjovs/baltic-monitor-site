@@ -472,6 +472,26 @@
         <p class="chart-caption">Kiek gandų/dezinformacijos elementų (3 lygis — niekada negali savarankiškai sukelti tikro perspėjimo) buvo stebima kiekvieno nuskaitymo metu.</p>
         <div id="chart-rumors" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
       </div>
+      <div class="chart-block">
+        <h3>GPS trikdymo intensyvumas laikui bėgant</h3>
+        <p class="chart-caption">Didelio trikdymo GPSJam narveliai, aptikti per dieną Baltijos regione. Surinkta iš orlaivių pranešto GPS tikslumo — koreliuoja su tyčiniu trikdymu, bet to nepatvirtina.</p>
+        <div id="chart-gpsjam" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>AIS laivų skaičius laikui bėgant</h3>
+        <p class="chart-caption">Laivai, stebėti per trumpą tiesioginį AIS klausymosi langą kiekvieno nuskaitymo metu. Ne išsami aprėptis — tik tie laivai, kurie atsitiktinai pranešė per tą langą.</p>
+        <div id="chart-ais" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Karinių orlaivių skaičius laikui bėgant</h3>
+        <p class="chart-caption">Orlaiviai, skleidžiantys ADS-B signalą kiekvieno nuskaitymo metu Baltijos regione. Daugelis karinių skrydžių skraido išjungę arba klastodami signalą, todėl tai tik dalinis vaizdas.</p>
+        <div id="chart-military" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Šiluminiai karštieji taškai laikui bėgant</h3>
+        <p class="chart-caption">Palydovo šiluminės anomalijos, aptiktos kiekvieno nuskaitymo metu Baltijos regione. Neapdoroti šilumos signatūros duomenys — miškų gaisrai ir žemės ūkio deginimas juos sukelia taip pat lengvai kaip ir bet kas kitas.</p>
+        <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Naujausia nuskaitymų istorija <span class="count" id="history-count"></span></summary>
@@ -983,23 +1003,23 @@
     container.appendChild(svg);
   }
 
-  function renderRumorChart(container, points, rangeStart, rangeEnd, rangeDays) {
+  function renderCountChart(container, points, rangeStart, rangeEnd, rangeDays, opts) {
     if (!points.length) { emptyChart(container, 'Kol kas nepakanka istorijos — ji kaupiasi laikui bėgant.'); return; }
     container.textContent = '';
 
-    var counts = points.map(function (p) { return p.tier3_count || 0; });
+    var counts = points.map(opts.countField);
     var maxCount = Math.max(1, Math.max.apply(null, counts));
     var yTop = PAD_T, yBottom = H - PAD_B;
-    var expectedSlots = Math.max(rangeDays * 6, 1);
+    var expectedSlots = Math.max(rangeDays * (opts.slotsPerDay || 6), 1);
     var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Gandų/dezinformacijos stebėjimas laikui bėgant' });
+      'aria-label': opts.ariaLabel });
 
     points.forEach(function (p) {
       var x = xForTs(p.ts, rangeStart, rangeEnd);
       if (x === null) return;
-      var count = p.tier3_count || 0;
+      var count = opts.countField(p);
       var barH = (count / maxCount) * (yBottom - yTop);
       var bar = svgEl('rect', {
         x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
@@ -1007,12 +1027,12 @@
         fill: 'var(--accent)', opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' gandų/dezinformacijos elementas(-ai)';
+        shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
       svg.appendChild(bar);
     });
 
     svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-      .textContent = 'max ' + maxCount + '/scan';
+      .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());
     svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
@@ -1030,6 +1050,10 @@
   ];
   var DEFAULT_RANGE_KEY = '1m';
   var allChartPoints = [];
+  var allGpsjamPoints = [];
+  var allAisPoints = [];
+  var allMilitaryPoints = [];
+  var allFirmsPoints = [];
   var currentRangeKey = DEFAULT_RANGE_KEY;
 
   function filterPointsByRange(points, days) {
@@ -1046,7 +1070,37 @@
     var rangeStart = rangeEnd - opt.days * 86400000;
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
-    renderRumorChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days);
+    renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
+      countField: function (p) { return p.tier3_count || 0; },
+      ariaLabel: 'Gandų/dezinformacijos stebėjimas laikui bėgant',
+      tooltipSuffix: 'gandų/dezinformacijos elementas(-ai)',
+    });
+    renderCountChart(document.getElementById('chart-gpsjam'),
+      filterPointsByRange(allGpsjamPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'GPS trikdymo intensyvumas laikui bėgant',
+        tooltipSuffix: 'didelio trikdymo narvelį(-ius)',
+        maxSuffix: '/day',
+        slotsPerDay: 1,
+      });
+    renderCountChart(document.getElementById('chart-ais'),
+      filterPointsByRange(allAisPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'AIS laivų skaičius laikui bėgant',
+        tooltipSuffix: 'stebėtą(-us) laivą(-us)',
+      });
+    renderCountChart(document.getElementById('chart-military'),
+      filterPointsByRange(allMilitaryPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Karinių orlaivių skaičius laikui bėgant',
+        tooltipSuffix: 'orlaivį(-ius) su ADS-B',
+      });
+    renderCountChart(document.getElementById('chart-firms'),
+      filterPointsByRange(allFirmsPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Šiluminiai karštieji taškai laikui bėgant',
+        tooltipSuffix: 'šiluminį(-ius) karštąjį(-uosius) tašką(-us)',
+      });
   }
 
   function buildRangeSelector() {
@@ -1072,12 +1126,17 @@
     .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
     .then(function (d) {
       allChartPoints = d.points || [];
+      allGpsjamPoints = d.gpsjam_points || [];
+      allAisPoints = d.ais_points || [];
+      allMilitaryPoints = d.military_points || [];
+      allFirmsPoints = d.firms_points || [];
       buildRangeSelector();
       renderCharts();
     })
     .catch(function () {
-      emptyChart(document.getElementById('chart-intensity'), 'Diagramos duomenys laikinai nepasiekiami.');
-      emptyChart(document.getElementById('chart-rumors'), 'Diagramos duomenys laikinai nepasiekiami.');
+      ['chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms'].forEach(function (id) {
+        emptyChart(document.getElementById(id), 'Diagramos duomenys laikinai nepasiekiami.');
+      });
     });
 })();
 </script>

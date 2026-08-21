@@ -472,6 +472,26 @@
         <p class="chart-caption">Cik baumu/dezinformācijas vienību (3. līmenis — nekad nevar pats izraisīt reālu brīdinājumu) tika izsekots katrā skenējumā.</p>
         <div id="chart-rumors" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
       </div>
+      <div class="chart-block">
+        <h3>GPS traucēšanas intensitāte laika gaitā</h3>
+        <p class="chart-caption">Augsta traucējuma GPSJam šūnas, kas dienā atklātas Baltijas reģionā. Apkopotas no lidmašīnu ziņotās GPS precizitātes — korelē ar apzinātu traucēšanu, bet to neapstiprina.</p>
+        <div id="chart-gpsjam" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>AIS kuģu skaits laika gaitā</h3>
+        <p class="chart-caption">Skenējuma laikā īsā tiešraides AIS klausīšanās logā novēroti kuģi. Nav izsmeļošs pārklājums — tikai tie kuģi, kas šajā logā nejauši ziņoja.</p>
+        <div id="chart-ais" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Militāro gaisa kuģu skaits laika gaitā</h3>
+        <p class="chart-caption">Gaisa kuģi, kas skenējuma laikā raida ADS-B Baltijas reģionā. Daudzi militārie lidojumi lido ar izslēgtu vai viltotu signālu, tāpēc šis ir nepilnīgs priekšstats.</p>
+        <div id="chart-military" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Termiskie karstuma punkti laika gaitā</h3>
+        <p class="chart-caption">Satelīta termiskās anomālijas, kas atklātas skenējuma laikā Baltijas reģionā. Neapstrādāti siltuma paraksta dati — meža ugunsgrēki un lauksaimniecības dedzināšana tos izraisa tikpat viegli kā jebkas cits.</p>
+        <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Nesenā skenējumu vēsture <span class="count" id="history-count"></span></summary>
@@ -970,23 +990,23 @@
     container.appendChild(svg);
   }
 
-  function renderRumorChart(container, points, rangeStart, rangeEnd, rangeDays) {
+  function renderCountChart(container, points, rangeStart, rangeEnd, rangeDays, opts) {
     if (!points.length) { emptyChart(container, 'Vēl nav pietiekami daudz vēstures — tas veidojas laika gaitā.'); return; }
     container.textContent = '';
 
-    var counts = points.map(function (p) { return p.tier3_count || 0; });
+    var counts = points.map(opts.countField);
     var maxCount = Math.max(1, Math.max.apply(null, counts));
     var yTop = PAD_T, yBottom = H - PAD_B;
-    var expectedSlots = Math.max(rangeDays * 6, 1);
+    var expectedSlots = Math.max(rangeDays * (opts.slotsPerDay || 6), 1);
     var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Baumu/dezinformācijas izsekošana laika gaitā' });
+      'aria-label': opts.ariaLabel });
 
     points.forEach(function (p) {
       var x = xForTs(p.ts, rangeStart, rangeEnd);
       if (x === null) return;
-      var count = p.tier3_count || 0;
+      var count = opts.countField(p);
       var barH = (count / maxCount) * (yBottom - yTop);
       var bar = svgEl('rect', {
         x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
@@ -994,12 +1014,12 @@
         fill: 'var(--accent)', opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' baumu/dezinformācijas vienība(s)';
+        shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
       svg.appendChild(bar);
     });
 
     svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-      .textContent = 'max ' + maxCount + '/scan';
+      .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());
     svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
@@ -1017,6 +1037,10 @@
   ];
   var DEFAULT_RANGE_KEY = '1m';
   var allChartPoints = [];
+  var allGpsjamPoints = [];
+  var allAisPoints = [];
+  var allMilitaryPoints = [];
+  var allFirmsPoints = [];
   var currentRangeKey = DEFAULT_RANGE_KEY;
 
   function filterPointsByRange(points, days) {
@@ -1033,7 +1057,37 @@
     var rangeStart = rangeEnd - opt.days * 86400000;
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
-    renderRumorChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days);
+    renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
+      countField: function (p) { return p.tier3_count || 0; },
+      ariaLabel: 'Baumu/dezinformācijas izsekošana laika gaitā',
+      tooltipSuffix: 'baumu/dezinformācijas vienība(s)',
+    });
+    renderCountChart(document.getElementById('chart-gpsjam'),
+      filterPointsByRange(allGpsjamPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'GPS traucēšanas intensitāte laika gaitā',
+        tooltipSuffix: 'augsta traucējuma šūna(-s)',
+        maxSuffix: '/day',
+        slotsPerDay: 1,
+      });
+    renderCountChart(document.getElementById('chart-ais'),
+      filterPointsByRange(allAisPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'AIS kuģu skaits laika gaitā',
+        tooltipSuffix: 'novēroti kuģi',
+      });
+    renderCountChart(document.getElementById('chart-military'),
+      filterPointsByRange(allMilitaryPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Militāro gaisa kuģu skaits laika gaitā',
+        tooltipSuffix: 'gaisa kuģi ar ADS-B',
+      });
+    renderCountChart(document.getElementById('chart-firms'),
+      filterPointsByRange(allFirmsPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Termiskie karstuma punkti laika gaitā',
+        tooltipSuffix: 'termiskie karstuma punkti',
+      });
   }
 
   function buildRangeSelector() {
@@ -1059,12 +1113,17 @@
     .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
     .then(function (d) {
       allChartPoints = d.points || [];
+      allGpsjamPoints = d.gpsjam_points || [];
+      allAisPoints = d.ais_points || [];
+      allMilitaryPoints = d.military_points || [];
+      allFirmsPoints = d.firms_points || [];
       buildRangeSelector();
       renderCharts();
     })
     .catch(function () {
-      emptyChart(document.getElementById('chart-intensity'), 'Diagrammas dati īslaicīgi nav pieejami.');
-      emptyChart(document.getElementById('chart-rumors'), 'Diagrammas dati īslaicīgi nav pieejami.');
+      ['chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms'].forEach(function (id) {
+        emptyChart(document.getElementById(id), 'Diagrammas dati īslaicīgi nav pieejami.');
+      });
     });
 })();
 </script>

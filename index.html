@@ -469,6 +469,26 @@
         <p class="chart-caption">How many rumor/disinformation items (Tier 3 — never able to trigger a real alert on its own) were tracked per scan.</p>
         <div id="chart-rumors" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
       </div>
+      <div class="chart-block">
+        <h3>GPS-jamming intensity over time</h3>
+        <p class="chart-caption">High-interference GPSJam cells detected per day in the Baltic region. Crowdsourced from aircraft-reported GPS accuracy — correlates with, but doesn't confirm, deliberate jamming.</p>
+        <div id="chart-gpsjam" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>AIS vessel count over time</h3>
+        <p class="chart-caption">Vessels observed per scan during a short live AIS listen window. Not exhaustive coverage — whichever ships happened to report during that window.</p>
+        <div id="chart-ais" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Military aircraft count over time</h3>
+        <p class="chart-caption">Aircraft broadcasting ADS-B per scan in the Baltic region. Many military flights fly with it off or spoofed, so this is a partial picture.</p>
+        <div id="chart-military" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Thermal hotspots over time</h3>
+        <p class="chart-caption">Satellite thermal-anomaly detections per scan in the Baltic region. Raw heat-signature data — wildfires and agricultural burning trigger it as readily as anything else.</p>
+        <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Recent scan history <span class="count" id="history-count"></span></summary>
@@ -977,11 +997,17 @@
     container.appendChild(svg);
   }
 
-  function renderRumorChart(container, points, rangeStart, rangeEnd, rangeDays) {
+  // Generalized bar chart for any "one count per point" series — rumor/
+  // disinfo tracking was the first of these; GPS-jamming/AIS/military
+  // aircraft/FIRMS (added 2026-08-21, owner-requested: "more graphs like
+  // estwarden had") are the same shape (a count field over time), so this
+  // is one shared renderer instead of five copy-pasted chart functions.
+  // opts: { countField(p)->number, ariaLabel, tooltipSuffix, maxSuffix }
+  function renderCountChart(container, points, rangeStart, rangeEnd, rangeDays, opts) {
     if (!points.length) { emptyChart(container, 'Not enough history yet — this builds up over time.'); return; }
     container.textContent = '';
 
-    var counts = points.map(function (p) { return p.tier3_count || 0; });
+    var counts = points.map(opts.countField);
     var maxCount = Math.max(1, Math.max.apply(null, counts));
     var yTop = PAD_T, yBottom = H - PAD_B;
     // Bar width reflects the SELECTED RANGE's expected slot density (6
@@ -989,16 +1015,16 @@
     // sparse dataset in a wide range (e.g. 1 month of data under a 1Y
     // selection) gets narrow bars matching a full year's worth of slots,
     // not wide bars sized for the handful of points that happen to exist.
-    var expectedSlots = Math.max(rangeDays * 6, 1);
+    var expectedSlots = Math.max(rangeDays * (opts.slotsPerDay || 6), 1);
     var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Rumor and disinformation tracking over time' });
+      'aria-label': opts.ariaLabel });
 
     points.forEach(function (p) {
       var x = xForTs(p.ts, rangeStart, rangeEnd);
       if (x === null) return;
-      var count = p.tier3_count || 0;
+      var count = opts.countField(p);
       var barH = (count / maxCount) * (yBottom - yTop);
       var bar = svgEl('rect', {
         x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
@@ -1006,12 +1032,12 @@
         fill: 'var(--accent)', opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' rumor/disinfo item(s)';
+        shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
       svg.appendChild(bar);
     });
 
     svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
-      .textContent = 'max ' + maxCount + '/scan';
+      .textContent = 'max ' + maxCount + (opts.maxSuffix || '/scan');
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
       .textContent = shortDate(new Date(rangeStart).toISOString());
     svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
@@ -1035,6 +1061,10 @@
   ];
   var DEFAULT_RANGE_KEY = '1m';
   var allChartPoints = [];
+  var allGpsjamPoints = [];
+  var allAisPoints = [];
+  var allMilitaryPoints = [];
+  var allFirmsPoints = [];
   var currentRangeKey = DEFAULT_RANGE_KEY;
 
   function filterPointsByRange(points, days) {
@@ -1051,7 +1081,37 @@
     var rangeStart = rangeEnd - opt.days * 86400000;
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
-    renderRumorChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days);
+    renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
+      countField: function (p) { return p.tier3_count || 0; },
+      ariaLabel: 'Rumor and disinformation tracking over time',
+      tooltipSuffix: 'rumor/disinfo item(s)',
+    });
+    renderCountChart(document.getElementById('chart-gpsjam'),
+      filterPointsByRange(allGpsjamPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'GPS-jamming intensity over time',
+        tooltipSuffix: 'high-interference cell(s)',
+        maxSuffix: '/day',
+        slotsPerDay: 1, // GPSJam publishes once/day, not per scan — see chart_data.json
+      });
+    renderCountChart(document.getElementById('chart-ais'),
+      filterPointsByRange(allAisPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'AIS vessel count over time',
+        tooltipSuffix: 'vessel(s) observed',
+      });
+    renderCountChart(document.getElementById('chart-military'),
+      filterPointsByRange(allMilitaryPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Military aircraft count over time',
+        tooltipSuffix: 'aircraft broadcasting ADS-B',
+      });
+    renderCountChart(document.getElementById('chart-firms'),
+      filterPointsByRange(allFirmsPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Thermal hotspots over time',
+        tooltipSuffix: 'thermal hotspot(s)',
+      });
   }
 
   function buildRangeSelector() {
@@ -1077,12 +1137,17 @@
     .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
     .then(function (d) {
       allChartPoints = d.points || [];
+      allGpsjamPoints = d.gpsjam_points || [];
+      allAisPoints = d.ais_points || [];
+      allMilitaryPoints = d.military_points || [];
+      allFirmsPoints = d.firms_points || [];
       buildRangeSelector();
       renderCharts();
     })
     .catch(function () {
-      emptyChart(document.getElementById('chart-intensity'), 'Chart data temporarily unavailable.');
-      emptyChart(document.getElementById('chart-rumors'), 'Chart data temporarily unavailable.');
+      ['chart-intensity', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms'].forEach(function (id) {
+        emptyChart(document.getElementById(id), 'Chart data temporarily unavailable.');
+      });
     });
 })();
 </script>
