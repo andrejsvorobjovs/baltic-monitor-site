@@ -19,6 +19,7 @@
 
 <!-- Open Graph / social share preview -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Baltic Signal Monitor">
 <meta property="og:url" content="https://balticsignalmonitor.com/et/">
 <meta property="og:title" content="Baltic Signal Monitor — Sõltumatud Balti julgeolekusignaalid">
 <meta property="og:description" content="Tasuta, sõltumatu OSINT (avatud lähtekoodiga luure) varajase hoiatuse kanal, mis jälgib Balti mere ja Venemaa julgeolekusignaale kümnete usaldusväärsete allikate põhjal — ametlikud teenistused, uudisteagentuurid ja desinformatsiooni jälgijad. Ei ole seotud ühegi valitsusega.">
@@ -37,9 +38,14 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Baltic Signal Monitor",
+  "alternateName": "Baltic Security Monitor",
   "url": "https://balticsignalmonitor.com/et/",
   "inLanguage": "et",
-  "description": "Tasuta, sõltumatu OSINT (avatud lähtekoodiga luure) varajase hoiatuse kanal, mis jälgib Balti mere ja Venemaa julgeolekusignaale kümnete usaldusväärsete allikate põhjal — ametlikud teenistused, uudisteagentuurid ja desinformatsiooni jälgijad. Ei ole seotud ühegi valitsusega."
+  "description": "Tasuta, sõltumatu OSINT (avatud lähtekoodiga luure) varajase hoiatuse kanal, mis jälgib Balti mere ja Venemaa julgeolekusignaale kümnete usaldusväärsete allikate põhjal — ametlikud teenistused, uudisteagentuurid ja desinformatsiooni jälgijad. Ei ole seotud ühegi valitsusega.",
+  "sameAs": [
+    "https://t.me/baltic_signal_monitor",
+    "https://mastodon.social/@BalticSignalMonitor"
+  ]
 }
 </script>
 <style>
@@ -914,7 +920,7 @@
     function yFor(tone) { return yMid + (tone / maxAbs) * (yMid - yTop); }
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Escalation intensity over time' });
+      'aria-label': 'Eskalatsiooni intensiivsus aja jooksul' });
 
     if (hasTone) {
       svg.appendChild(svgEl('line', {
@@ -942,7 +948,7 @@
         fill: LEVEL_COLOR[p.level] || 'var(--ink-dim)',
       })).appendChild(svgEl('title', {})).textContent =
         shortDate(p.ts) + ' — ' + (p.level || 'unknown') +
-        (typeof p.tone === 'number' ? ' — tone ' + p.tone.toFixed(2) : '');
+        (typeof p.tone === 'number' ? ' — toon ' + p.tone.toFixed(2) : '');
     });
 
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
@@ -964,7 +970,7 @@
     var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Rumor and disinformation tracking over time' });
+      'aria-label': 'Kuulujuttude/desinfo jälgimine aja jooksul' });
 
     points.forEach(function (p) {
       var x = xForTs(p.ts, rangeStart, rangeEnd);
@@ -977,7 +983,7 @@
         fill: 'var(--accent)', opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' rumor/disinfo item(s)';
+        shortDate(p.ts) + ' — ' + count + ' kuulujutu/desinfo üksust';
       svg.appendChild(bar);
     });
 

@@ -19,6 +19,7 @@
 
 <!-- Open Graph / social share preview -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Baltic Signal Monitor">
 <meta property="og:url" content="https://balticsignalmonitor.com/lt/">
 <meta property="og:title" content="Baltic Signal Monitor — Nepriklausomi Baltijos saugumo signalai">
 <meta property="og:description" content="Nemokamas, nepriklausomas OSINT (atvirojo kodo žvalgybos) ankstyvojo perspėjimo kanalas, sekantis Baltijos jūros regiono ir Rusijos saugumo signalus naudojant dešimtis patikimų šaltinių — oficialias tarnybas, naujienų agentūras ir dezinformacijos sekimo įrankius. Nesusijęs su jokia vyriausybe.">
@@ -37,9 +38,14 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Baltic Signal Monitor",
+  "alternateName": "Baltic Security Monitor",
   "url": "https://balticsignalmonitor.com/lt/",
   "inLanguage": "lt",
-  "description": "Nemokamas, nepriklausomas OSINT (atvirojo kodo žvalgybos) ankstyvojo perspėjimo kanalas, sekantis Baltijos jūros regiono ir Rusijos saugumo signalus naudojant dešimtis patikimų šaltinių — oficialias tarnybas, naujienų agentūras ir dezinformacijos sekimo įrankius. Nesusijęs su jokia vyriausybe."
+  "description": "Nemokamas, nepriklausomas OSINT (atvirojo kodo žvalgybos) ankstyvojo perspėjimo kanalas, sekantis Baltijos jūros regiono ir Rusijos saugumo signalus naudojant dešimtis patikimų šaltinių — oficialias tarnybas, naujienų agentūras ir dezinformacijos sekimo įrankius. Nesusijęs su jokia vyriausybe.",
+  "sameAs": [
+    "https://t.me/baltic_signal_monitor",
+    "https://mastodon.social/@BalticSignalMonitor"
+  ]
 }
 </script>
 <style>
@@ -404,17 +410,17 @@
         <tr>
           <td class="tier-name">1 lygis</td>
           <td class="tier-desc">Nacionalinės saugumo/žvalgybos tarnybos (Estija, Latvija, Lietuva, Suomija, Švedija, Lenkija), NATO, ISW, naujienų agentūros.</td>
-          <td class="tier-n"><span id="tier1-count">31</span> šaltinių</td>
+          <td class="tier-n">Šaltinių: <span id="tier1-count">31</span></td>
         </tr>
         <tr>
           <td class="tier-name">2 lygis</td>
           <td class="tier-desc">Nacionaliniai transliuotojai, saugumo analitikos centrai, tiriamosios žurnalistikos leidiniai.</td>
-          <td class="tier-n"><span id="tier2-count">96</span> šaltiniai</td>
+          <td class="tier-n">Šaltinių: <span id="tier2-count">96</span></td>
         </tr>
         <tr>
           <td class="tier-name">3 lygis</td>
           <td class="tier-desc">Dezinformacijos faktų tikrintojai bei patys Rusijos valstybinės žiniasklaidos/pareigūnų šaltiniai — sekami, kad būtų matomas naratyvas, niekada nelaikomi įrodymu, niekada negali sukelti perspėjimo.</td>
-          <td class="tier-n"><span id="tier3-count">13</span> šaltinių</td>
+          <td class="tier-n">Šaltinių: <span id="tier3-count">13</span></td>
         </tr>
       </tbody>
     </table>
@@ -592,12 +598,19 @@
       // Same live-not-hardcoded fix, applied to the per-tier breakdown in
       // the "How the signal is scored" table — it drifted just as stale
       // as the headline source count did (was hardcoded 16/35/11 = 62).
-      // NOTE (Lithuanian only): the noun after each number ("šaltinių" vs
-      // "šaltiniai") is a hardcoded static suffix chosen to match today's
-      // live counts (17/52/11), since Lithuanian declines the noun by the
-      // number's last digit. If a tier's count later crosses a declension
-      // boundary (e.g. lands on ...1, ...12-19, or ...0), a human needs to
-      // fix the noun form by hand — this isn't auto-corrected.
+      // FIXED (Lithuanian only, real bug found 2026-08-20): the table used
+      // to read "31 šaltinių" — nominative-governed noun forms
+      // ("šaltinių"/"šaltiniai") hardcoded to match the live counts at
+      // write time, which is grammatically WRONG the moment a tier's
+      // count crosses a declension boundary (Lithuanian declines the
+      // noun by the number's last digit: ...1 takes nominative singular,
+      // ...2-9 takes nominative plural, ...0/11-19 takes genitive
+      // plural) — exactly what happened when tier1 went 17 -> 31. Fixed
+      // permanently by rephrasing to "Šaltinių: 31" — genitive plural
+      // used as an invariant label (standard Lithuanian for a table/list
+      // count, same idiom as "Balų: 5"), which stays grammatically
+      // correct at any live count, closing this bug class for good
+      // rather than just correcting today's numbers.
       if (typeof d.tier1_sources === 'number') {
         document.getElementById('tier1-count').textContent = d.tier1_sources;
       }
@@ -920,7 +933,7 @@
     function yFor(tone) { return yMid + (tone / maxAbs) * (yMid - yTop); }
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Escalation intensity over time' });
+      'aria-label': 'Eskalacijos intensyvumas laikui bėgant' });
 
     if (hasTone) {
       svg.appendChild(svgEl('line', {
@@ -948,7 +961,7 @@
         fill: LEVEL_COLOR[p.level] || 'var(--ink-dim)',
       })).appendChild(svgEl('title', {})).textContent =
         shortDate(p.ts) + ' — ' + (p.level || 'unknown') +
-        (typeof p.tone === 'number' ? ' — tone ' + p.tone.toFixed(2) : '');
+        (typeof p.tone === 'number' ? ' — tonas ' + p.tone.toFixed(2) : '');
     });
 
     svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
@@ -970,7 +983,7 @@
     var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
 
     var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
-      'aria-label': 'Rumor and disinformation tracking over time' });
+      'aria-label': 'Gandų/dezinformacijos stebėjimas laikui bėgant' });
 
     points.forEach(function (p) {
       var x = xForTs(p.ts, rangeStart, rangeEnd);
@@ -983,7 +996,7 @@
         fill: 'var(--accent)', opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent =
-        shortDate(p.ts) + ' — ' + count + ' rumor/disinfo item(s)';
+        shortDate(p.ts) + ' — ' + count + ' gandų/dezinformacijos elementas(-ai)';
       svg.appendChild(bar);
     });
 
