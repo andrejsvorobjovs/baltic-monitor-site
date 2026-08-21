@@ -397,6 +397,7 @@
     <div class="stat-strip n2">
       <div class="stat-cell">
         <div class="n mono" id="eidx-value">—</div>
+        <div class="l" id="eidx-band"></div>
         <div class="l">vs. 30 päeva algtase</div>
       </div>
       <div class="stat-cell">
@@ -404,6 +405,7 @@
         <div class="l">signaali kõrgendatud</div>
       </div>
     </div>
+    <p class="chart-caption" id="eidx-narrative"></p>
     <div class="charts-wrap">
       <div id="chart-eidx-top" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
     </div>
@@ -1140,12 +1142,18 @@
   function renderEidxCurrent(points) {
     var valueEl = document.getElementById('eidx-value');
     var sourcesEl = document.getElementById('eidx-sources');
+    var bandEl = document.getElementById('eidx-band');
+    var narrativeEl = document.getElementById('eidx-narrative');
     if (!points.length) {
       valueEl.textContent = '—';
       sourcesEl.textContent = 'Andmed puuduvad';
+      bandEl.textContent = '';
+      narrativeEl.textContent = '';
       return;
     }
     var latest = points[points.length - 1];
+    bandEl.textContent = latest.band || '';
+    narrativeEl.textContent = latest.narrative || '';
     if (typeof latest.deviation_pct !== 'number') {
       valueEl.textContent = 'Andmeid pole veel piisavalt';
       sourcesEl.textContent = (latest.sources_included || 0) + ' / 4 jälgitud';

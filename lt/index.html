@@ -397,6 +397,7 @@
     <div class="stat-strip n2">
       <div class="stat-cell">
         <div class="n mono" id="eidx-value">—</div>
+        <div class="l" id="eidx-band"></div>
         <div class="l">vs. 30 dienų bazinis lygis</div>
       </div>
       <div class="stat-cell">
@@ -404,6 +405,7 @@
         <div class="l">signalai padidėję</div>
       </div>
     </div>
+    <p class="chart-caption" id="eidx-narrative"></p>
     <div class="charts-wrap">
       <div id="chart-eidx-top" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
     </div>
@@ -1153,12 +1155,18 @@
   function renderEidxCurrent(points) {
     var valueEl = document.getElementById('eidx-value');
     var sourcesEl = document.getElementById('eidx-sources');
+    var bandEl = document.getElementById('eidx-band');
+    var narrativeEl = document.getElementById('eidx-narrative');
     if (!points.length) {
       valueEl.textContent = '—';
       sourcesEl.textContent = 'Duomenų dar nėra';
+      bandEl.textContent = '';
+      narrativeEl.textContent = '';
       return;
     }
     var latest = points[points.length - 1];
+    bandEl.textContent = latest.band || '';
+    narrativeEl.textContent = latest.narrative || '';
     if (typeof latest.deviation_pct !== 'number') {
       valueEl.textContent = 'Kol kas nepakanka duomenų';
       sourcesEl.textContent = (latest.sources_included || 0) + ' / 4 stebimų';
