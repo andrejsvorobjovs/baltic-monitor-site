@@ -504,7 +504,7 @@
       </div>
       <div class="chart-block">
         <h3>WATCH/WARN įspėjimai laikui bėgant</h3>
-        <p class="chart-caption">Kiekviena juosta yra vienas nuskaitymas, pasiekęs WATCH (gintarinė) arba WARN (raudona) lygį; QUIET nuskaitymai juostos nerodo. Juostos aukštis atspindi lygį, o ne dydį lygio viduje — WARN visada aukštesnė nei WATCH.</p>
+        <p class="chart-caption">Kiekviena juosta yra vienas nuskaitymas, pasiekęs WATCH (gintarinė) arba WARN (raudona) lygį; QUIET nuskaitymai juostos nerodo. Juostos aukštis rodo, kiek aktualių elementų sukėlė šį nuskaitymą, o ne sunkumo laipsnį.</p>
         <div id="chart-watchwarn" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
       </div>
       <div class="chart-block">
@@ -1186,11 +1186,11 @@
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
     renderCountChart(document.getElementById('chart-watchwarn'), filtered, rangeStart, rangeEnd, opt.days, {
-      countField: function (p) { return p.level === 'WARN' ? 2 : (p.level === 'WATCH' ? 1 : 0); },
+      countField: function (p) { return (p.level === 'WATCH' || p.level === 'WARN') ? Math.max(1, p.count || 0) : 0; },
       colorField: function (p) { return p.level === 'WARN' ? 'var(--warn)' : 'var(--watch)'; },
-      tooltipField: function (p) { return p.level || 'unknown'; },
+      tooltipField: function (p) { return (p.level || 'unknown') + ' — ' + (p.count || 0) + ' elementas(-ai)'; },
       ariaLabel: 'WATCH ir WARN įspėjimai laikui bėgant',
-      hideMaxLabel: true,
+      tooltipSuffix: 'elementas(-ai)',
     });
     renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
       countField: function (p) { return p.tier3_count || 0; },

@@ -504,7 +504,7 @@
       </div>
       <div class="chart-block">
         <h3>WATCH/WARN hoiatused aja jooksul</h3>
-        <p class="chart-caption">Iga tulp on üks skann, mis jõudis tasemele WATCH (kollane) või WARN (punane); QUIET skannid tulpa ei näita. Tulba kõrgus peegeldab taset, mitte suurust taseme sees — WARN on alati kõrgem kui WATCH.</p>
+        <p class="chart-caption">Iga tulp on üks skann, mis jõudis tasemele WATCH (kollane) või WARN (punane); QUIET skannid tulpa ei näita. Tulba kõrgus näitab, mitu asjakohast üksust selle skanni käivitas, mitte raskusastet.</p>
         <div id="chart-watchwarn" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
       </div>
       <div class="chart-block">
@@ -1173,11 +1173,11 @@
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
     renderCountChart(document.getElementById('chart-watchwarn'), filtered, rangeStart, rangeEnd, opt.days, {
-      countField: function (p) { return p.level === 'WARN' ? 2 : (p.level === 'WATCH' ? 1 : 0); },
+      countField: function (p) { return (p.level === 'WATCH' || p.level === 'WARN') ? Math.max(1, p.count || 0) : 0; },
       colorField: function (p) { return p.level === 'WARN' ? 'var(--warn)' : 'var(--watch)'; },
-      tooltipField: function (p) { return p.level || 'unknown'; },
+      tooltipField: function (p) { return (p.level || 'unknown') + ' — ' + (p.count || 0) + ' üksust'; },
       ariaLabel: 'WATCH ja WARN hoiatused aja jooksul',
-      hideMaxLabel: true,
+      tooltipSuffix: 'üksust',
     });
     renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
       countField: function (p) { return p.tier3_count || 0; },

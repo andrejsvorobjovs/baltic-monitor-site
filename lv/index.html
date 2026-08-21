@@ -504,7 +504,7 @@
       </div>
       <div class="chart-block">
         <h3>WATCH/WARN brīdinājumi laika gaitā</h3>
-        <p class="chart-caption">Katrs stabiņš ir viens skenējums, kas sasniedza WATCH (dzeltens) vai WARN (sarkans) līmeni; QUIET skenējumi stabiņu nerāda. Stabiņa augstums atspoguļo līmeni, nevis apjomu līmeņa ietvaros — WARN vienmēr ir augstāks nekā WATCH.</p>
+        <p class="chart-caption">Katrs stabiņš ir viens skenējums, kas sasniedza WATCH (dzeltens) vai WARN (sarkans) līmeni; QUIET skenējumi stabiņu nerāda. Stabiņa augstums rāda, cik daudz atbilstošu vienību izraisīja šo skenējumu, nevis smaguma pakāpi.</p>
         <div id="chart-watchwarn" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
       </div>
       <div class="chart-block">
@@ -1173,11 +1173,11 @@
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
     renderCountChart(document.getElementById('chart-watchwarn'), filtered, rangeStart, rangeEnd, opt.days, {
-      countField: function (p) { return p.level === 'WARN' ? 2 : (p.level === 'WATCH' ? 1 : 0); },
+      countField: function (p) { return (p.level === 'WATCH' || p.level === 'WARN') ? Math.max(1, p.count || 0) : 0; },
       colorField: function (p) { return p.level === 'WARN' ? 'var(--warn)' : 'var(--watch)'; },
-      tooltipField: function (p) { return p.level || 'unknown'; },
+      tooltipField: function (p) { return (p.level || 'unknown') + ' — ' + (p.count || 0) + ' vienība(s)'; },
       ariaLabel: 'WATCH un WARN brīdinājumi laika gaitā',
-      hideMaxLabel: true,
+      tooltipSuffix: 'vienība(s)',
     });
     renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
       countField: function (p) { return p.tier3_count || 0; },

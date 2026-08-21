@@ -499,7 +499,7 @@
       </div>
       <div class="chart-block">
         <h3>WATCH/WARN alerts over time</h3>
-        <p class="chart-caption">Each bar is one scan that reached WATCH (amber) or WARN (red); QUIET scans show no bar. Bar height reflects level, not magnitude within a level — WARN is always taller than WATCH.</p>
+        <p class="chart-caption">Each bar is one scan that reached WATCH (amber) or WARN (red); QUIET scans show no bar. Bar height is how many relevant items triggered that scan, not a severity score.</p>
         <div id="chart-watchwarn" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
       </div>
       <div class="chart-block">
@@ -1216,11 +1216,11 @@
     var filtered = filterPointsByRange(allChartPoints, opt.days);
     renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
     renderCountChart(document.getElementById('chart-watchwarn'), filtered, rangeStart, rangeEnd, opt.days, {
-      countField: function (p) { return p.level === 'WARN' ? 2 : (p.level === 'WATCH' ? 1 : 0); },
+      countField: function (p) { return (p.level === 'WATCH' || p.level === 'WARN') ? Math.max(1, p.count || 0) : 0; },
       colorField: function (p) { return p.level === 'WARN' ? 'var(--warn)' : 'var(--watch)'; },
-      tooltipField: function (p) { return p.level || 'unknown'; },
+      tooltipField: function (p) { return (p.level || 'unknown') + ' — ' + (p.count || 0) + ' item(s)'; },
       ariaLabel: 'WATCH and WARN alerts over time',
-      hideMaxLabel: true,
+      tooltipSuffix: 'item(s)',
     });
     renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
       countField: function (p) { return p.tier3_count || 0; },
