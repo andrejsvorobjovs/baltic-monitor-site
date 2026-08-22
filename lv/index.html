@@ -254,6 +254,12 @@
   }
   .chart-svg-wrap svg { display: block; min-width: 100%; }
   .chart-empty { padding: 20px; text-align: center; color: var(--ink-dim); font-size: 13px; }
+  .sat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .sat-card { border: 1px solid var(--border); border-radius: 4px; background: var(--mono); padding: 10px; }
+  .sat-card img { width: 100%; aspect-ratio: 1; image-rendering: pixelated; border-radius: 3px; display: block; background: #111; }
+  .sat-card .sat-label { font-size: 11.5px; color: var(--ink-dim); margin-top: 8px; line-height: 1.3; }
+  .sat-card .sat-score { font-size: 13px; font-weight: 700; margin-top: 4px; }
+  .sat-card .sat-date { font-size: 11px; color: var(--ink-dim); margin-top: 2px; }
 
   .log-details { margin-top: 20px; border-top: 1px solid var(--border); }
   .log-details summary {
@@ -539,6 +545,11 @@
         <h3>Termiskie karstuma punkti laika gaitā</h3>
         <p class="chart-caption">Satelīta termiskās anomālijas, kas atklātas skenējuma laikā Baltijas reģionā. Neapstrādāti siltuma paraksta dati — meža ugunsgrēki un lauksaimniecības dedzināšana tos izraisa tikpat viegli kā jebkas cits.</p>
         <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
+      </div>
+      <div class="chart-block" id="sat-block" style="display:none;">
+        <h3>Satelītattēlu izmaiņu noteikšana</h3>
+        <p class="chart-caption">Neapstrādāta pikseļu atšķirība starp diviem jaunākajiem izvēlēto vietu (Krievijas militāro bāzu pie Baltijas jūras) satelītattēliem — pārbaudīts pēc pieprasījuma, nevis katrā skenējumā. Tas ir fotogrāfiju salīdzinājums, nevis objektu atpazīšana: laikapstākļi, gadalaiks, apgaismojums un reāla darbība šo skaitli ietekmē vienādi. Nekas netiek apgalvots par to, kas tieši mainījās.</p>
+        <div class="sat-grid" id="sat-grid"></div>
       </div>
     </div>
     <details class="log-details" id="history-log-wrap">
@@ -1278,6 +1289,49 @@
       document.getElementById('eidx-value').textContent = '—';
       document.getElementById('eidx-sources').textContent = 'Nav pieejams';
     });
+})();
+</script>
+
+<script>
+(function () {
+  function renderSatelliteGrid(data) {
+    var grid = document.getElementById('sat-grid');
+    var block = document.getElementById('sat-block');
+    if (!grid || !block) return;
+    var sites = (data && data.sites) || {};
+    var keys = Object.keys(sites);
+    if (keys.length === 0) return;
+    grid.textContent = '';
+    keys.forEach(function (key) {
+      var s = sites[key];
+      var card = document.createElement('div');
+      card.className = 'sat-card';
+      var img = document.createElement('img');
+      img.src = s.thumbnail_data_uri;
+      img.alt = s.label;
+      card.appendChild(img);
+      var label = document.createElement('div');
+      label.className = 'sat-label';
+      label.textContent = s.label;
+      card.appendChild(label);
+      var score = document.createElement('div');
+      score.className = 'sat-score';
+      score.textContent = (typeof s.change_score === 'number')
+        ? s.change_score.toFixed(0) + '% izmaiņu kopš ' + s.compared_to
+        : 'Pirmais attēls — vēl nav salīdzinājuma';
+      card.appendChild(score);
+      var date = document.createElement('div');
+      date.className = 'sat-date';
+      date.textContent = 'Uzņemts ' + s.date;
+      card.appendChild(date);
+      grid.appendChild(card);
+    });
+    block.style.display = '';
+  }
+  fetch('/satellite_data.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(renderSatelliteGrid)
+    .catch(function () {});
 })();
 </script>
 
