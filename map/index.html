@@ -293,28 +293,38 @@
       scan — whichever vessels happened to report during that window, not
       exhaustive coverage. A vessel showing as Military/Law
       Enforcement/Noncombatant is reading its own transponder's
-      self-declared type code, not a verified identity.</p>
+      self-declared type code, not a verified identity. The time slider
+      below the map shows only the single most recent scan's ships at any
+      point — older sightings of the same vessel don't pile up as it
+      moves through the window.</p>
     </div>
     <div class="panel">
       <h3>✈️ Military aircraft</h3>
       <p>ADS-B positions from adsb.lol's free military-flagged feed. Only
       shows aircraft actively broadcasting — many military flights fly
       with it off, spoofed, or unavailable, so this is a partial picture,
-      never exhaustive coverage.</p>
+      never exhaustive coverage. Same as AIS ships above, the time slider
+      shows only the latest scan's aircraft at any point, not an
+      accumulation of every past sighting.</p>
     </div>
     <div class="panel">
       <h3>🛰️ GPS-jamming cells</h3>
       <p>GPSJam's own "High interference" H3 cells (crowdsourced from
       aircraft-reported GPS accuracy), plotted at each cell's center.
       Correlates with, but doesn't confirm, actual jamming — and this
-      region has chronic background jamming even on an ordinary day.</p>
+      region has chronic background jamming even on an ordinary day.
+      Unlike ships and aircraft, each cell is only recorded once per day,
+      so the time slider builds these up cumulatively across the window
+      instead of showing only the latest scan.</p>
     </div>
     <div class="panel">
       <h3>🔥 Thermal hotspots</h3>
       <p>NASA FIRMS (VIIRS) satellite heat-signature detections. Raw
       thermal data, not confirmed military or security activity —
       wildfires, agricultural burning, and industrial flares all trigger a
-      detection just as readily as anything else would.</p>
+      detection just as readily as anything else would. Each detection is
+      recorded once, so like GPS-jamming cells these build up cumulatively
+      on the time slider rather than showing only the latest scan.</p>
     </div>
     <div class="panel">
       <h3>Undersea cables &amp; pipelines</h3>
@@ -514,25 +524,50 @@
         return dt.getUTCDate() + ' ' + MONTHS[dt.getUTCMonth()] + ' ' + hh + ':' + mm + ' UTC';
       }
 
-      var layerPairs = [
-        [aisLayer, aisRecords], [milLayer, milRecords],
-        [gpsjamLayer, gpsjamRecords], [firmsLayer, firmsRecords],
-      ];
+      // AIS and military aircraft are appended fresh every scan with NO
+      // dedup (record_map_positions() in main.py just appends whatever
+      // was seen that scan) -- a ship sitting in port for the whole 72h
+      // retention window would otherwise leave up to ~18 stale, near-
+      // identical pins on top of each other by the time the slider
+      // reaches "now". currentScanOnly() shows just the single most
+      // recent scan at or before the cutoff, so the "ship/aircraft"
+      // picture never grows no matter how many days the window covers.
+      // GPS-jamming cells and thermal hotspots ARE already deduplicated
+      // server-side (one entry per real cell/day or satellite pass, see
+      // the same function) -- letting those accumulate across the
+      // window is real, bounded history worth keeping visible, the same
+      // cumulative picture /gpsjam and /firms already report.
+      function currentScanOnly(records, cutoff) {
+        var latestTs = null;
+        records.forEach(function (r) {
+          if (r.ts <= cutoff && (latestTs === null || r.ts > latestTs)) latestTs = r.ts;
+        });
+        return latestTs === null ? [] : records.filter(function (r) { return r.ts === latestTs; });
+      }
+
+      function cumulative(records, cutoff) {
+        return records.filter(function (r) { return r.ts <= cutoff; });
+      }
 
       function renderUpTo(idx) {
         var cutoff = uniqueTimes[idx];
-        layerPairs.forEach(function (pair) {
-          var layer = pair[0], records = pair[1];
-          layer.clearLayers();
-          records.forEach(function (r) {
-            if (r.ts <= cutoff) layer.addLayer(r.marker);
+        var visibleAis = currentScanOnly(aisRecords, cutoff);
+        var visibleMil = currentScanOnly(milRecords, cutoff);
+        var visibleGpsjam = cumulative(gpsjamRecords, cutoff);
+        var visibleFirms = cumulative(firmsRecords, cutoff);
+
+        [[aisLayer, visibleAis], [milLayer, visibleMil], [gpsjamLayer, visibleGpsjam], [firmsLayer, visibleFirms]]
+          .forEach(function (pair) {
+            var layer = pair[0], visible = pair[1];
+            layer.clearLayers();
+            visible.forEach(function (r) { layer.addLayer(r.marker); });
           });
-        });
-        var visibleCount = allRecords.filter(function (r) { return r.ts <= cutoff; }).length;
+
         document.getElementById('ts-label').textContent =
           'Showing activity through ' + formatTs(cutoff) + ' — scan ' + (idx + 1) + ' of ' + uniqueTimes.length + '.';
         document.getElementById('map-counts').textContent =
-          visibleCount + ' of ' + allRecords.length + ' position(s) shown.';
+          visibleAis.length + ' ship(s), ' + visibleMil.length + ' aircraft (latest scan) — ' +
+          visibleGpsjam.length + ' jamming cell(s), ' + visibleFirms.length + ' hotspot(s) (this window).';
       }
 
       if (uniqueTimes.length > 0) {
