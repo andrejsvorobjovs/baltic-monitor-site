@@ -157,6 +157,18 @@
     padding: 10px 4px 0; font-size: 12.5px; color: var(--ink-dim);
   }
 
+  /* ---- Time scrubber ---- */
+  .time-scrubber { padding: 12px 18px 14px; border-top: 1px solid var(--border); }
+  .ts-row { display: flex; align-items: center; gap: 10px; }
+  .ts-row input[type="range"] { flex: 1; accent-color: var(--accent); min-width: 0; }
+  .ts-row button {
+    flex: none; border: 1px solid var(--border); background: var(--card); color: var(--ink-text);
+    border-radius: 4px; padding: 5px 10px; font-size: 13px; line-height: 1.2; cursor: pointer;
+  }
+  .ts-row button:hover:not(:disabled) { background: var(--mono); }
+  .ts-row button:disabled { opacity: 0.4; cursor: default; }
+  .ts-label { margin-top: 8px; font-size: 12.5px; color: var(--ink-dim); text-align: center; }
+
   /* Leaflet control theming — the default light-only chrome would clash
      with dark mode otherwise. */
   .leaflet-container { background: var(--mono); font-family: inherit; }
@@ -246,6 +258,15 @@
 
   <div class="map-card">
     <div id="map" role="application" aria-label="Map of recent Baltic Sea AIS, military aircraft, GPS jamming, and thermal hotspot positions"></div>
+    <div class="time-scrubber" id="time-scrubber" style="display:none;">
+      <div class="ts-row">
+        <button type="button" id="ts-prev" aria-label="Previous scan">◀</button>
+        <input type="range" id="ts-slider" min="0" max="0" value="0" step="1" aria-label="Scan time">
+        <button type="button" id="ts-next" aria-label="Next scan">▶</button>
+        <button type="button" id="ts-live">Latest</button>
+      </div>
+      <div class="ts-label mono" id="ts-label"></div>
+    </div>
     <p id="map-note">Live position data temporarily unavailable — the map
       tiles and cable reference layer above still work, but recent AIS/
       military/GPS-jamming/FIRMS positions couldn't be loaded this visit.
@@ -421,45 +442,135 @@
   fetch('/map_data.json', { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
     .then(function (d) {
-      (d.ais || []).forEach(function (v) {
+      function parseTs(ts) {
+        var ms = Date.parse(ts);
+        return isNaN(ms) ? null : ms;
+      }
+
+      // Markers are built up front but NOT added to their layer yet --
+      // see the time scrubber below, which decides what's actually
+      // visible. Anything with an unparseable/missing ts is dropped
+      // rather than shown at every scrubber position by default.
+      function buildRecords(list, makeMarker) {
+        return (list || []).reduce(function (out, item) {
+          var ts = parseTs(item.ts);
+          if (ts !== null) out.push({ ts: ts, marker: makeMarker(item) });
+          return out;
+        }, []);
+      }
+
+      var aisRecords = buildRecords(d.ais, function (v) {
         var typeLabel = AIS_SHIP_TYPE_LABELS[v.ship_type] || null;
         var navLabel = AIS_NAV_STATUS_LABELS[v.nav_status] || null;
         var html = '<b>' + escapeHtml(v.name || 'AIS vessel') + '</b><br>' +
           (typeLabel ? 'Self-declared type: ' + escapeHtml(typeLabel) + '<br>' : '') +
           (navLabel ? 'Nav status: ' + escapeHtml(navLabel) + '<br>' : '') +
           escapeHtml(v.ts);
-        L.marker([v.lat, v.lon], { icon: AIS_ICON }).bindPopup(html).addTo(aisLayer);
+        return L.marker([v.lat, v.lon], { icon: AIS_ICON }).bindPopup(html);
       });
 
-      (d.military_aircraft || []).forEach(function (a) {
+      var milRecords = buildRecords(d.military_aircraft, function (a) {
         var html = '<b>' + escapeHtml(a.flight || '(no callsign)') + '</b> (' + escapeHtml(a.type || '?') + ')<br>' +
           (typeof a.alt_baro === 'number' ? a.alt_baro + 'ft<br>' : '') +
           escapeHtml(a.ts);
-        L.marker([a.lat, a.lon], { icon: MIL_ICON }).bindPopup(html).addTo(milLayer);
+        return L.marker([a.lat, a.lon], { icon: MIL_ICON }).bindPopup(html);
       });
 
-      (d.gpsjam_cells || []).forEach(function (c) {
+      var gpsjamRecords = buildRecords(d.gpsjam_cells, function (c) {
         var html = '<b>GPS-jamming cell</b><br>' +
           (typeof c.severity === 'number' ? c.severity + '% of aircraft reporting bad GPS<br>' : '') +
           'Date: ' + escapeHtml(c.date || c.ts);
-        L.marker([c.lat, c.lon], { icon: GPSJAM_ICON }).bindPopup(html).addTo(gpsjamLayer);
+        return L.marker([c.lat, c.lon], { icon: GPSJAM_ICON }).bindPopup(html);
       });
 
-      (d.firms || []).forEach(function (h) {
+      var firmsRecords = buildRecords(d.firms, function (h) {
         var html = '<b>Thermal hotspot</b><br>' +
           (typeof h.frp === 'number' ? h.frp.toFixed(1) + 'MW FRP<br>' : '') +
           (h.confidence ? 'Confidence: ' + escapeHtml(h.confidence) + '<br>' : '') +
           escapeHtml((h.acq_date || '?') + ' ' + (h.acq_time || '?') + ' UTC');
-        L.marker([h.lat, h.lon], { icon: FIRMS_ICON }).bindPopup(html).addTo(firmsLayer);
+        return L.marker([h.lat, h.lon], { icon: FIRMS_ICON }).bindPopup(html);
       });
 
-      var counts = (d.ais || []).length + (d.military_aircraft || []).length +
-        (d.gpsjam_cells || []).length + (d.firms || []).length;
+      // ---- Time scrubber: step through actual scan snapshots instead of
+      // dumping the whole rolling window on the map at once ----
+      // Every point already carries the real timestamp it was recorded
+      // at (map_positions.json in main.py) -- this was previously just
+      // discarded client-side, so the map always looked like every
+      // position from the last 72h (MAP_POSITIONS_MAX_AGE_HOURS)
+      // overlaid with no way to tell recent from stale. Each slider tick
+      // is a real distinct scan timestamp (the union across all four
+      // sources, not an arbitrary time slice); moving it shows only
+      // positions recorded at or before that tick. The rightmost/default
+      // position reproduces the old "show everything" behavior exactly.
+      var allRecords = [].concat(aisRecords, milRecords, gpsjamRecords, firmsRecords);
+      var uniqueTimes = Array.from(new Set(allRecords.map(function (r) { return r.ts; })))
+        .sort(function (a, b) { return a - b; });
+
+      var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      function formatTs(ms) {
+        var dt = new Date(ms);
+        var hh = String(dt.getUTCHours()).padStart(2, '0');
+        var mm = String(dt.getUTCMinutes()).padStart(2, '0');
+        return dt.getUTCDate() + ' ' + MONTHS[dt.getUTCMonth()] + ' ' + hh + ':' + mm + ' UTC';
+      }
+
+      var layerPairs = [
+        [aisLayer, aisRecords], [milLayer, milRecords],
+        [gpsjamLayer, gpsjamRecords], [firmsLayer, firmsRecords],
+      ];
+
+      function renderUpTo(idx) {
+        var cutoff = uniqueTimes[idx];
+        layerPairs.forEach(function (pair) {
+          var layer = pair[0], records = pair[1];
+          layer.clearLayers();
+          records.forEach(function (r) {
+            if (r.ts <= cutoff) layer.addLayer(r.marker);
+          });
+        });
+        var visibleCount = allRecords.filter(function (r) { return r.ts <= cutoff; }).length;
+        document.getElementById('ts-label').textContent =
+          'Showing activity through ' + formatTs(cutoff) + ' — scan ' + (idx + 1) + ' of ' + uniqueTimes.length + '.';
+        document.getElementById('map-counts').textContent =
+          visibleCount + ' of ' + allRecords.length + ' position(s) shown.';
+      }
+
+      if (uniqueTimes.length > 0) {
+        var slider = document.getElementById('ts-slider');
+        var prevBtn = document.getElementById('ts-prev');
+        var nextBtn = document.getElementById('ts-next');
+        var liveBtn = document.getElementById('ts-live');
+        var lastIdx = uniqueTimes.length - 1;
+
+        slider.min = 0;
+        slider.max = lastIdx;
+        slider.value = lastIdx;
+        slider.disabled = lastIdx === 0;
+        prevBtn.disabled = nextBtn.disabled = liveBtn.disabled = lastIdx === 0;
+
+        slider.addEventListener('input', function () { renderUpTo(parseInt(slider.value, 10)); });
+        prevBtn.addEventListener('click', function () {
+          slider.value = Math.max(0, parseInt(slider.value, 10) - 1);
+          renderUpTo(parseInt(slider.value, 10));
+        });
+        nextBtn.addEventListener('click', function () {
+          slider.value = Math.min(lastIdx, parseInt(slider.value, 10) + 1);
+          renderUpTo(parseInt(slider.value, 10));
+        });
+        liveBtn.addEventListener('click', function () {
+          slider.value = lastIdx;
+          renderUpTo(lastIdx);
+        });
+
+        document.getElementById('time-scrubber').style.display = 'block';
+        renderUpTo(lastIdx);
+      } else {
+        document.getElementById('map-counts').textContent = '0 position(s) plotted this window.';
+      }
+
       document.getElementById('map-generated').textContent =
         'Positions generated ' + (d.generated_at || '?') + ', covering the last ' +
         (d.window_hours || 72) + 'h.';
-      document.getElementById('map-counts').textContent =
-        counts + ' position(s) plotted this window.';
     })
     .catch(function () {
       document.getElementById('map-note').style.display = 'block';
