@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-22T04:06:16.488234+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-08-22T07:58:39.677735+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 227,
-  "quiet_count": 193,
+  "total_scans": 228,
+  "quiet_count": 194,
   "watch_count": 34,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-22 04:06 UTC",
+  "generated_at": "2026-08-22 07:58 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-22T07:58:39.684294+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 22,
+      "stale_count": 1,
+      "items": []
+    },
     {
       "ts": "2026-08-22T04:06:16.494750+00:00",
       "level": "WATCH",
@@ -316,18 +328,6 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-08-19T23:49:05.812650+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 138,
-      "gdelt_ran": false,
-      "new_items_count": 11,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
@@ -585,6 +585,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-22T07:26:26.722086+00:00",
+      "title": "Removed: /satellite (raw Sentinel-2 imagery)",
+      "text": "Free Sentinel-2 imagery was too low-resolution to be genuinely useful, and higher-resolution commercial/SAR imagery is not affordable at this project's scale, so the feature was removed entirely."
+    },
+    {
       "ts": "2026-08-21T19:39:31.679806+00:00",
       "title": "New: /satellite change detection -- pixel differences, not AI verdicts",
       "text": "Owner-requested, deliberately scoped after weighing estwarden.eu's automated garrison-occupancy detection: /satellite now shows how much a site's imagery differs from the last clear shot, as a plain pixel-difference percentage. No object detection, no \"occupied/empty\" claims -- just the number, always caveated, never wired into scoring."
@@ -728,11 +733,6 @@
       "ts": "2026-08-14T18:48:57.092929+00:00",
       "title": "New: /notam command -- Latvia military-activity NOTAM tracking (Phase 1)",
       "text": "Added /notam: Latvia military-activity NOTAM tracking (Phase 1)."
-    },
-    {
-      "ts": "2026-08-14T10:18:45.642784+00:00",
-      "title": "New: escalation-intensity and rumor-tracking charts",
-      "text": "Added escalation-intensity and rumor-tracking charts."
     }
   ]
 }
