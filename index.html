@@ -62,7 +62,7 @@
     --accent: #1f7570;
     --accent-text: #ffffff;
     --ok: #2f7d46;
-    --watch: #9a6a24;
+    --watch: #8b5f20;
     --warn: #a4433a;
     --mono: #eef1ef;
   }
@@ -132,7 +132,16 @@
   .hero .grid {
     display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start;
   }
-  @media (max-width: 760px) { .hero .grid { grid-template-columns: 1fr; } }
+  @media (max-width: 760px) {
+    .hero .grid { grid-template-columns: 1fr; }
+    /* On a phone, the live status readout would otherwise land BELOW
+       the full headline/lede/CTA-button block in source order --
+       exactly what someone opening this site actually wants to see
+       first ("is something happening right now") ends up scrolled
+       past. Reordered to appear first at this width only; desktop's
+       side-by-side two-column layout is untouched. */
+    .hero .readout { order: -1; margin-bottom: 28px; }
+  }
   .eyebrow {
     font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
     color: var(--accent); font-weight: 600; margin: 0 0 16px;
