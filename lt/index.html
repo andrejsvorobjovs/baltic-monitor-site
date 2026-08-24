@@ -1090,15 +1090,20 @@
       if (x === null) return;
       var count = opts.countField(p);
       var barH = (count / maxCount) * (yBottom - yTop);
+      var barColor = opts.colorField ? opts.colorField(p) : 'var(--accent)';
       var bar = svgEl('rect', {
         x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
         width: barW.toFixed(1), height: Math.max(0.5, barH).toFixed(1),
-        fill: opts.colorField ? opts.colorField(p) : 'var(--accent)', opacity: 0.85,
+        fill: barColor, opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent = opts.tooltipField
         ? shortDate(p.ts) + ' — ' + opts.tooltipField(p)
         : shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
       svg.appendChild(bar);
+      svg.appendChild(svgEl('circle', {
+        cx: x.toFixed(1), cy: (yBottom - barH).toFixed(1), r: 1.8,
+        fill: barColor, opacity: 0.9,
+      }));
     });
 
     if (!opts.hideMaxLabel) {

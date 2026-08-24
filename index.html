@@ -1104,15 +1104,27 @@
       if (x === null) return;
       var count = opts.countField(p);
       var barH = (count / maxCount) * (yBottom - yTop);
+      var barColor = opts.colorField ? opts.colorField(p) : 'var(--accent)';
       var bar = svgEl('rect', {
         x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
         width: barW.toFixed(1), height: Math.max(0.5, barH).toFixed(1),
-        fill: opts.colorField ? opts.colorField(p) : 'var(--accent)', opacity: 0.85,
+        fill: barColor, opacity: 0.85,
       });
       bar.appendChild(svgEl('title', {})).textContent = opts.tooltipField
         ? shortDate(p.ts) + ' — ' + opts.tooltipField(p)
         : shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
       svg.appendChild(bar);
+      // A zero-count bar collapses to a sub-pixel sliver sitting exactly on
+      // the baseline gridline -- honest (it really is zero), but on a
+      // sparse dataset (a rare signal like grid outages with only one or
+      // two points so far) that reads as "no data" rather than "confirmed
+      // zero". A small dot at the bar's own top -- the 0 line itself, for
+      // a zero point -- makes a real reading visible without inflating its
+      // apparent height.
+      svg.appendChild(svgEl('circle', {
+        cx: x.toFixed(1), cy: (yBottom - barH).toFixed(1), r: 1.8,
+        fill: barColor, opacity: 0.9,
+      }));
     });
 
     // Real y-axis: three reference lines (0/mid/max) with a number at each,
