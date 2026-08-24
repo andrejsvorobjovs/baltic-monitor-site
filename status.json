@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-24T19:55:10.572320+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-24T23:49:28.276211+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 244,
+  "total_scans": 245,
   "quiet_count": 210,
-  "watch_count": 34,
+  "watch_count": 35,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-24 19:55 UTC",
+  "generated_at": "2026-08-24 23:49 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-24T23:49:28.280923+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 20,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "'It's war against the West' \u2014 Latvian PM on Russian provocations against European countries - The Kyiv Independent",
+          "source": "Kyiv Independent",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa2N5S1VPaW1MS3VhMFYzYXlSdEt1YnZ0QUM0ZmUwb2duWTNEczFjRmJtRmcwQzdkcGgzRlVzbnViRUpEUVIyR0ZzSGhlSFJGdWlKREwyelpRcEZuNm9rdnl4S1dIWENQc3pNa3lhbHlJaTFhT3dPbzBsNmpvUnNSZU8ycE5YcHBETkN5V01Ud01ZSmlTbklkbW04bEwwVjVranNNYV9QbUZIdXhPNTFnWQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-24T19:55:10.578325+00:00",
       "level": "QUIET",
@@ -257,21 +284,25 @@
       "new_items_count": 29,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-21T19:44:58.299064+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 15,
-      "stale_count": 1,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-24T23:49:28.282680+00:00",
+      "level": "WATCH",
+      "title": "'It's war against the West' \u2014 Latvian PM on Russian provocations against European countries - The Kyiv Independent",
+      "source": "Kyiv Independent",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa2N5S1VPaW1MS3VhMFYzYXlSdEt1YnZ0QUM0ZmUwb2duWTNEczFjRmJtRmcwQzdkcGgzRlVzbnViRUpEUVIyR0ZzSGhlSFJGdWlKREwyelpRcEZuNm9rdnl4S1dIWENQc3pNa3lhbHlJaTFhT3dPbzBsNmpvUnNSZU8ycE5YcHBETkN5V01Ud01ZSmlTbklkbW04bEwwVjVranNNYV9QbUZIdXhPNTFnWQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-22T04:06:16.497403+00:00",
       "level": "WATCH",
@@ -494,22 +525,6 @@
       "gdelt_subcategory": "125 \u00b7 Reject Proposal to Meet/negotiate (-5.0)",
       "gdelt_event_code": "125",
       "goldstein": -5
-    },
-    {
-      "ts": "2026-08-07T05:11:35.773195+00:00",
-      "level": "WATCH",
-      "title": "Lithuanian opposition to convene extraordinary NSGK meeting over alleged Russian provocations",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/lithuanian-opposition-to-convene-extraordinary-nsgk-meeting--cameoplus_4ec4d303d05eac93",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "036 \u00b7 Intent to Meet/negotiate",
-      "gdelt_event_code": "036",
-      "goldstein": 4
     }
   ],
   "recent_corrections": [
