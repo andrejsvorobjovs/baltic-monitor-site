@@ -549,6 +549,11 @@
         <p class="chart-caption">Palydovo šiluminės anomalijos, aptiktos kiekvieno nuskaitymo metu Baltijos regione. Neapdoroti šilumos signatūros duomenys — miškų gaisrai ir žemės ūkio deginimas juos sukelia taip pat lengvai kaip ir bet kas kitas.</p>
         <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
       </div>
+      <div class="chart-block">
+        <h3>Elektros tinklo sutrikimai laikui bėgant</h3>
+        <p class="chart-caption">Priverstiniai (neplanuoti) gamybos įrenginių sutrikimai per kiekvieną nuskaitymą Estijoje, Latvijoje ir Lietuvoje, naudojant oficialią ENTSO-E ES sutrikimų pranešimo platformą. Beveik visada įprastas įrangos gedimas, o ne sabotažas — povandeninių kabelių / perdavimo sutrikimai dar neįtraukti.</p>
+        <div id="chart-entsoe" class="chart-svg-wrap"><div class="history-empty">Kraunama…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Naujausia nuskaitymų istorija <span class="count" id="history-count"></span></summary>
@@ -1201,6 +1206,7 @@
   var allAisPoints = [];
   var allMilitaryPoints = [];
   var allFirmsPoints = [];
+  var allEntsoePoints = [];
   var allEidxPoints = [];
   var EIDX_TOP_WIDGET_DAYS = 30;
   var currentRangeKey = DEFAULT_RANGE_KEY;
@@ -1257,6 +1263,12 @@
         ariaLabel: 'Šiluminiai karštieji taškai laikui bėgant',
         tooltipSuffix: 'šiluminį(-ius) karštąjį(-uosius) tašką(-us)',
       });
+    renderCountChart(document.getElementById('chart-entsoe'),
+      filterPointsByRange(allEntsoePoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Elektros tinklo sutrikimai laikui bėgant',
+        tooltipSuffix: 'priverstinį(-ius) sutrikimą(-us)',
+      });
     renderEidxChart(document.getElementById('chart-escalation-index'),
       filterPointsByRange(allEidxPoints, opt.days), rangeStart, rangeEnd);
   }
@@ -1288,6 +1300,7 @@
       allAisPoints = d.ais_points || [];
       allMilitaryPoints = d.military_points || [];
       allFirmsPoints = d.firms_points || [];
+      allEntsoePoints = d.entsoe_points || [];
       allEidxPoints = d.escalation_index_points || [];
       renderEidxCurrent(allEidxPoints);
       renderEidxChart(document.getElementById('chart-eidx-top'),
@@ -1297,7 +1310,7 @@
       renderCharts();
     })
     .catch(function () {
-      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-entsoe', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Diagramos duomenys laikinai nepasiekiami.');
       });
       document.getElementById('eidx-value').textContent = '—';

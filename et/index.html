@@ -549,6 +549,11 @@
         <p class="chart-caption">Satelliidi termilised anomaaliad, mis tuvastati skannimise ajal Läänemere piirkonnas. Toored soojussignatuuri andmed — metsatulekahjud ja põllumajanduslik põletamine käivitavad selle sama kergesti kui miski muu.</p>
         <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
       </div>
+      <div class="chart-block">
+        <h3>Elektrivõrgu katkestused aja jooksul</h3>
+        <p class="chart-caption">Sunnitud (planeerimata) tootmisüksuste katkestused skannimise kohta Eestis, Lätis ja Leedus, ENTSO-E ametliku ELi katkestuste teatamise platvormi kaudu. Peaaegu alati tavaline seadmerike, mitte sabotaaž — merealuste kaablite/ülekandekatkestused pole veel kaetud.</p>
+        <div id="chart-entsoe" class="chart-svg-wrap"><div class="history-empty">Laadimine…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Hiljutine skannimise ajalugu <span class="count" id="history-count"></span></summary>
@@ -1188,6 +1193,7 @@
   var allAisPoints = [];
   var allMilitaryPoints = [];
   var allFirmsPoints = [];
+  var allEntsoePoints = [];
   var allEidxPoints = [];
   var EIDX_TOP_WIDGET_DAYS = 30;
   var currentRangeKey = DEFAULT_RANGE_KEY;
@@ -1244,6 +1250,12 @@
         ariaLabel: 'Termilised kuumapunktid aja jooksul',
         tooltipSuffix: 'termilist kuumapunkti',
       });
+    renderCountChart(document.getElementById('chart-entsoe'),
+      filterPointsByRange(allEntsoePoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Elektrivõrgu katkestused aja jooksul',
+        tooltipSuffix: 'sunnitud katkestust',
+      });
     renderEidxChart(document.getElementById('chart-escalation-index'),
       filterPointsByRange(allEidxPoints, opt.days), rangeStart, rangeEnd);
   }
@@ -1275,6 +1287,7 @@
       allAisPoints = d.ais_points || [];
       allMilitaryPoints = d.military_points || [];
       allFirmsPoints = d.firms_points || [];
+      allEntsoePoints = d.entsoe_points || [];
       allEidxPoints = d.escalation_index_points || [];
       renderEidxCurrent(allEidxPoints);
       renderEidxChart(document.getElementById('chart-eidx-top'),
@@ -1284,7 +1297,7 @@
       renderCharts();
     })
     .catch(function () {
-      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-entsoe', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Diagrammi andmed ajutiselt kättesaamatud.');
       });
       document.getElementById('eidx-value').textContent = '—';

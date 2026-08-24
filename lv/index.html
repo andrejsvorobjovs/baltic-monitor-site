@@ -549,6 +549,11 @@
         <p class="chart-caption">Satelīta termiskās anomālijas, kas atklātas skenējuma laikā Baltijas reģionā. Neapstrādāti siltuma paraksta dati — meža ugunsgrēki un lauksaimniecības dedzināšana tos izraisa tikpat viegli kā jebkas cits.</p>
         <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
       </div>
+      <div class="chart-block">
+        <h3>Elektrotīkla pārtraukumi laika gaitā</h3>
+        <p class="chart-caption">Piespiedu (neplānoti) ražošanas iekārtu pārtraukumi katrā skenējumā Igaunijā, Latvijā un Lietuvā, izmantojot ENTSO-E oficiālo ES pārtraukumu ziņošanas platformu. Gandrīz vienmēr parasta iekārtu kļūme, nevis sabotāža — zemūdens kabeļu/pārvades pārtraukumi vēl netiek aptverti.</p>
+        <div id="chart-entsoe" class="chart-svg-wrap"><div class="history-empty">Ielādē…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Nesenā skenējumu vēsture <span class="count" id="history-count"></span></summary>
@@ -1188,6 +1193,7 @@
   var allAisPoints = [];
   var allMilitaryPoints = [];
   var allFirmsPoints = [];
+  var allEntsoePoints = [];
   var allEidxPoints = [];
   var EIDX_TOP_WIDGET_DAYS = 30;
   var currentRangeKey = DEFAULT_RANGE_KEY;
@@ -1244,6 +1250,12 @@
         ariaLabel: 'Termiskie karstuma punkti laika gaitā',
         tooltipSuffix: 'termiskie karstuma punkti',
       });
+    renderCountChart(document.getElementById('chart-entsoe'),
+      filterPointsByRange(allEntsoePoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Elektrotīkla pārtraukumi laika gaitā',
+        tooltipSuffix: 'piespiedu pārtraukumi',
+      });
     renderEidxChart(document.getElementById('chart-escalation-index'),
       filterPointsByRange(allEidxPoints, opt.days), rangeStart, rangeEnd);
   }
@@ -1275,6 +1287,7 @@
       allAisPoints = d.ais_points || [];
       allMilitaryPoints = d.military_points || [];
       allFirmsPoints = d.firms_points || [];
+      allEntsoePoints = d.entsoe_points || [];
       allEidxPoints = d.escalation_index_points || [];
       renderEidxCurrent(allEidxPoints);
       renderEidxChart(document.getElementById('chart-eidx-top'),
@@ -1284,7 +1297,7 @@
       renderCharts();
     })
     .catch(function () {
-      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-entsoe', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Diagrammas dati īslaicīgi nav pieejami.');
       });
       document.getElementById('eidx-value').textContent = '—';

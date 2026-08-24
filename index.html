@@ -546,6 +546,11 @@
         <p class="chart-caption">Satellite thermal-anomaly detections per scan in the Baltic region. Raw heat-signature data — wildfires and agricultural burning trigger it as readily as anything else.</p>
         <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
       </div>
+      <div class="chart-block">
+        <h3>Power grid outages over time</h3>
+        <p class="chart-caption">Forced (unplanned) generation-unit outages per scan in Estonia, Latvia, and Lithuania, via ENTSO-E's official EU outage-reporting platform. Almost always ordinary equipment failure, not sabotage — undersea-cable/transmission outages aren't covered yet.</p>
+        <div id="chart-entsoe" class="chart-svg-wrap"><div class="history-empty">Loading…</div></div>
+      </div>
     </div>
     <details class="log-details" id="history-log-wrap">
       <summary>Recent scan history <span class="count" id="history-count"></span></summary>
@@ -1238,6 +1243,7 @@
   var allAisPoints = [];
   var allMilitaryPoints = [];
   var allFirmsPoints = [];
+  var allEntsoePoints = [];
   var allEidxPoints = [];
   var EIDX_TOP_WIDGET_DAYS = 30; // the hero widget's mini chart stays a fixed
                                    // 30-day "recent normal" view, independent
@@ -1299,6 +1305,12 @@
         ariaLabel: 'Thermal hotspots over time',
         tooltipSuffix: 'thermal hotspot(s)',
       });
+    renderCountChart(document.getElementById('chart-entsoe'),
+      filterPointsByRange(allEntsoePoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Power grid outages over time',
+        tooltipSuffix: 'forced outage(s)',
+      });
     renderEidxChart(document.getElementById('chart-escalation-index'),
       filterPointsByRange(allEidxPoints, opt.days), rangeStart, rangeEnd);
   }
@@ -1330,6 +1342,7 @@
       allAisPoints = d.ais_points || [];
       allMilitaryPoints = d.military_points || [];
       allFirmsPoints = d.firms_points || [];
+      allEntsoePoints = d.entsoe_points || [];
       allEidxPoints = d.escalation_index_points || [];
       renderEidxCurrent(allEidxPoints);
       renderEidxChart(document.getElementById('chart-eidx-top'),
@@ -1339,7 +1352,7 @@
       renderCharts();
     })
     .catch(function () {
-      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-escalation-index'].forEach(function (id) {
+      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-entsoe', 'chart-escalation-index'].forEach(function (id) {
         emptyChart(document.getElementById(id), 'Chart data temporarily unavailable.');
       });
       document.getElementById('eidx-value').textContent = '—';
