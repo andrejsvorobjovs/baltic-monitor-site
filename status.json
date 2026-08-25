@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-25T19:57:42.921371+00:00",
+  "last_run_utc": "2026-08-25T23:51:43.279940+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 250,
-  "quiet_count": 215,
+  "total_scans": 251,
+  "quiet_count": 216,
   "watch_count": 35,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-25 19:57 UTC",
+  "generated_at": "2026-08-25 23:51 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-25T23:51:43.287007+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 10,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-25T19:57:42.929349+00:00",
       "level": "QUIET",
@@ -255,18 +267,6 @@
       "sources_scanned": 152,
       "gdelt_ran": false,
       "new_items_count": 27,
-      "stale_count": 0,
-      "items": []
-    },
-    {
-      "ts": "2026-08-22T19:47:51.754074+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": true,
-      "new_items_count": 22,
       "stale_count": 0,
       "items": []
     }
