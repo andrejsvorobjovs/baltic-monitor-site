@@ -1,20 +1,60 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-27T18:19:58.837565+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-27T18:38:23.545111+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 259,
+  "total_scans": 260,
   "quiet_count": 221,
-  "watch_count": 38,
+  "watch_count": 39,
   "warn_count": 0,
   "correction_count": 2,
-  "generated_at": "2026-08-27 18:19 UTC",
+  "generated_at": "2026-08-27 18:38 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-27T18:38:23.552699+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 27,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "CIA chief used Moscow visit to warn Russia against attacks on NATO allies, helping Iran - Politico",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdXJmZzRqSjRoUUJ5VnRxdEJGRU83RWc5RjVhMjVZLWZEN2pKV25uVVIwalkwR2F0R3p1dmp3RWZSaUhwZUVZS2ZUd09CZWlJcFFtak5FcDNBeW1HTFFvc0hqOUxwcklITE9NSEtVZGRzeXVnLTFyLWZfR1dxV0tidDM1R3ROZUVTTHc?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Skubus \u012fsp\u0117jimas Maskvai: ultimatumo s\u0105lygos \u2013 ant stalo Baltijos \u0161ali\u0173 likimas - Mokslo ir technologij\u0173 pasaulis",
+          "source": "Lithuanian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA4TVJoWTV2ZWhGX2hDUzZzVjNTQUxTS1lFV0tJRkg1dkVWVWNSdUxkU3lmSHVLYi14NUhIMFI1OGJvcFVLWDFMNGRGbGFOeVpwSlkzc1k2eU5ESll3c3ByZm1LQQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-27T18:19:58.845180+00:00",
       "level": "QUIET",
@@ -300,21 +340,40 @@
       "new_items_count": 6,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-24T08:20:06.133392+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 14,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-27T18:38:23.555795+00:00",
+      "level": "WATCH",
+      "title": "Skubus \u012fsp\u0117jimas Maskvai: ultimatumo s\u0105lygos \u2013 ant stalo Baltijos \u0161ali\u0173 likimas - Mokslo ir technologij\u0173 pasaulis",
+      "source": "Lithuanian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA4TVJoWTV2ZWhGX2hDUzZzVjNTQUxTS1lFV0tJRkg1dkVWVWNSdUxkU3lmSHVLYi14NUhIMFI1OGJvcFVLWDFMNGRGbGFOeVpwSlkzc1k2eU5ESll3c3ByZm1LQQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-08-27T18:38:23.555795+00:00",
+      "level": "WATCH",
+      "title": "CIA chief used Moscow visit to warn Russia against attacks on NATO allies, helping Iran - Politico",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdXJmZzRqSjRoUUJ5VnRxdEJGRU83RWc5RjVhMjVZLWZEN2pKV25uVVIwalkwR2F0R3p1dmp3RWZSaUhwZUVZS2ZUd09CZWlJcFFtak5FcDNBeW1HTFFvc0hqOUxwcklITE9NSEtVZGRzeXVnLTFyLWZfR1dxV0tidDM1R3ROZUVTTHc?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-27T14:23:23.622802+00:00",
       "level": "WATCH",
@@ -513,38 +572,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-17T08:15:11.660590+00:00",
-      "level": "WATCH",
-      "title": "Mobiliz\u0101cija Krievij\u0101 main\u012btu dro\u0161\u012bbas situ\u0101ciju ar\u012b Baltij\u0101, br\u012bdina Igaunijas milit\u0101rpersonas - Puaro",
-      "source": "LSM (Latvian-language, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSTVTMTlPMFFkT0FnN2p4SU5Xc1Bkai1TNGZIUW1VeVp3akdlMWw5VnN1S2RCWm1yamxLeFhqVC04bkJwVmoyOUhDTDRQb0VMWHNvSGFuakR0SlpsLTc0RjhoaUxDS0pQTlZ4Mnc1Y1BtT3YyS2lzektUaWJuWnkyem1tRTB2MDBoSUctTFo2SjhNVXhwS0tZREhUQm12SUU5M2ZNLThBOEZqMkZXQ3Z3WXlKYzhYd0V1?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-14T23:49:08.603856+00:00",
-      "level": "WATCH",
-      "title": "Beavers from NATO territory \u2018invade\u2019 Kaliningrad, Russian media say - TVP World",
-      "source": "TVP World (Poland)",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWmhkUjlCeUxWWnNrODRWSC04QmIxWVFOQ0w1TTRmSVl3MlFkR1dkX3NvTnpjTDFUNllhczFIS3l6N2xKLWs2Y2I0UXV4bFd5STJTOUUyUi1YaGJyT3pnbS1rMFdONS1NU0tGTlJ2RHRtZ0lSWC0xbGNYSmQ4TlVuRG1zVW8wMmt1RUY0bmVB?oc=5",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
       ],
       "tier": "tier2",
       "gdelt_category": "",
