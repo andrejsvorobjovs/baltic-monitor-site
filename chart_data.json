@@ -1819,6 +1819,13 @@
       "count": 2,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-08-27T21:16:39.507570+00:00",
+      "level": "WARN",
+      "count": 2,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -2235,6 +2242,10 @@
     {
       "ts": "2026-08-27T18:36:41.892422+00:00",
       "count": 247
+    },
+    {
+      "ts": "2026-08-27T21:14:45.050459+00:00",
+      "count": 218
     }
   ],
   "military_points": [
@@ -2573,6 +2584,10 @@
     {
       "ts": "2026-08-27T18:36:42.620287+00:00",
       "count": 4
+    },
+    {
+      "ts": "2026-08-27T21:14:45.620333+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -2723,6 +2738,10 @@
     {
       "ts": "2026-08-27T18:36:46.110881+00:00",
       "count": 51
+    },
+    {
+      "ts": "2026-08-27T21:14:48.456711+00:00",
+      "count": 51
     }
   ],
   "entsoe_points": [
@@ -2804,6 +2823,10 @@
     },
     {
       "ts": "2026-08-27T18:36:55.608987+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-08-27T21:15:06.046372+00:00",
       "count": 0
     }
   ],
@@ -3108,6 +3131,13 @@
       "sources_included": 1,
       "narrative": "GPS jamming 33% above baseline.",
       "band": null
+    },
+    {
+      "ts": "2026-08-27T21:15:06.046846+00:00",
+      "deviation_pct": 19.158918905586894,
+      "sources_included": 3,
+      "narrative": "GPS jamming 33% above baseline; AIS vessel activity 125% above baseline; military aircraft 100% below baseline.",
+      "band": "within normal range"
     }
   ]
 }

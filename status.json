@@ -1,20 +1,59 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-27T18:38:23.545111+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-08-27T21:16:39.499580+00:00",
+  "last_level": "WARN",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 260,
+  "total_scans": 261,
   "quiet_count": 221,
   "watch_count": 39,
-  "warn_count": 0,
+  "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-08-27 18:38 UTC",
+  "generated_at": "2026-08-27 21:16 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-27T21:16:39.507570+00:00",
+      "level": "WARN",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 30,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Putin\u2019s \u2018little green men\u2019 could attack Nato from within - The Telegraph",
+          "source": "The Telegraph (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOV05BQ0VmNUhiZ1Z1SzlSTFVXZ0RRVC14b19OS2dfcnZidU53NWlQRFhrR3FidGF3VF9wSW1BMVdVZUJ3Z3hiUVd4T1VzTExjaFRCelpsalZvNUFoNFJmM1JFMW1oTTNpNGh0cGVLUEdiaDl2NGhwUGE2UU1GdXdtNS12MnBFY2N5X3hfWHgxWDJ4STlJaGRSbUFZbW5YTmtpcTcxS0ZHcw?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Trump Dismisses Fears of Russian Strike On NATO After CIA Chief Visits Moscow - rferl.org",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81TlRPS1NJcDRSU0hILTQ2X2dnNnYzTnBWM3pBQXpxOFZ3N3VzM040c0dKeGY0S0VzbkJ6X1JGSE9hNU1fS1E5ajlFbVg3c2dsTTlrVTJqMDRTTUtPZTZDSkVkY1BYVWVsb3ZUNVZKNlVuZFA3U3VodUpLUTB0QdIBgAFBVV95cUxQeDFhcVBKSnlwZDA2d0I2WEJuM0E4d2hBZWlhaFFJdmM1UGRYd0tLemFfS0xNRWRCanhLMDJ6dUJEbUhwc0E4X2l2aXhzNHZ0OEdWZW9DNXNOVVhQMmtmRHlSZnlld1kxZzkzcHFtVlFLLW5Va0NFaFMwa3o0dl95Mw?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-27T18:38:23.552699+00:00",
       "level": "WATCH",
@@ -328,21 +367,39 @@
       "new_items_count": 22,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-24T08:50:13.752268+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 6,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-27T21:16:39.510727+00:00",
+      "level": "WARN",
+      "title": "Trump Dismisses Fears of Russian Strike On NATO After CIA Chief Visits Moscow - rferl.org",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81TlRPS1NJcDRSU0hILTQ2X2dnNnYzTnBWM3pBQXpxOFZ3N3VzM040c0dKeGY0S0VzbkJ6X1JGSE9hNU1fS1E5ajlFbVg3c2dsTTlrVTJqMDRTTUtPZTZDSkVkY1BYVWVsb3ZUNVZKNlVuZFA3U3VodUpLUTB0QdIBgAFBVV95cUxQeDFhcVBKSnlwZDA2d0I2WEJuM0E4d2hBZWlhaFFJdmM1UGRYd0tLemFfS0xNRWRCanhLMDJ6dUJEbUhwc0E4X2l2aXhzNHZ0OEdWZW9DNXNOVVhQMmtmRHlSZnlld1kxZzkzcHFtVlFLLW5Va0NFaFMwa3o0dl95Mw?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-08-27T21:16:39.510727+00:00",
+      "level": "WARN",
+      "title": "Putin\u2019s \u2018little green men\u2019 could attack Nato from within - The Telegraph",
+      "source": "The Telegraph (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOV05BQ0VmNUhiZ1Z1SzlSTFVXZ0RRVC14b19OS2dfcnZidU53NWlQRFhrR3FidGF3VF9wSW1BMVdVZUJ3Z3hiUVd4T1VzTExjaFRCelpsalZvNUFoNFJmM1JFMW1oTTNpNGh0cGVLUEdiaDl2NGhwUGE2UU1GdXdtNS12MnBFY2N5X3hfWHgxWDJ4STlJaGRSbUFZbW5YTmtpcTcxS0ZHcw?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-27T18:38:23.555795+00:00",
       "level": "WATCH",
@@ -540,38 +597,6 @@
       "categories": [
         "baltic_specific",
         "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-17T15:50:37.289407+00:00",
-      "level": "WATCH",
-      "title": "Zin\u0101ms, k\u0101 NATO var\u0113tu r\u012bkoties, ja Putins iz\u0161\u0137irtos uzbrukt Baltijai - Inbox.lv",
-      "source": "Latvian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZW9reEl0cU96QjBwQk1vejJPUERjSGRMSDZDZDUtZDVZWHVkanpWWkU5bU43azZZNVMtZlJVS2poa1BUS3pwNFppS3VQSUtQb0tDNHktMFJGUFY2OFFGakhJMW1VUFV2QmNGeVlWeFNGaTgzNDE0RDVCSzNPeXQ4dHBXRzBqbTZyYy1EVDhnOVB0cnAzcF9URE5UNDhaWWdyZmluNHZNcGgzYWktTlBTNlE4NGpNNTVyWGQtRF9adlk?oc=5",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-17T15:50:37.289407+00:00",
-      "level": "WATCH",
-      "title": "Bild: Russia is deploying warships to the Baltic Sea amid Putin's threats against Europeans - LIGA.net",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTUd6aXRTcG5YamJ6eHg4akd4Z1Jna011SGRMYTBaRkk0SnBVV2Q1T3dQenVRUmtIU25PNkI4bkhGeGFDa0NrVm11TG1Bc0t0REdNcFFZM29BcFlNeW5USVB2ZkJ3aWpvaEJOaDlTbDBSYWNSVTZaREVCOEU2YmtXY0RJQ1BJOFhEMDNpNi1UUFlSU19vQnNwbm13cF9KV3FjdzNqTlBSUlh2TUtsNmItZElYdjl2N3ZYQzVpTThvOWl1UEHSAcgBQVVfeXFMTTBveHpRbHZlX2w4bS1EblVIcmVuOWRya1d1NzdDRXBtNW80Tzd5T21fUktjREl5QXYyaktzSGZ6YzFzSEhXWlpMTmVpR2REMjZzaEJ1QVdGUEwtZVFlWWFkSDdueTNvQXZ0YnhrVFljVmgzYWphWUgyVHR0WExpbHZiTV85bDlnRzhwYlFKSkFxQ1J4cTZfak5XS2ZCa1VfWHhkVExiYzhGa2J2TE1KcGVTVURMUlgwZ2Fha0lqVHF3WmhCQlp3Tno?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
       ],
       "tier": "tier2",
       "gdelt_category": "",
