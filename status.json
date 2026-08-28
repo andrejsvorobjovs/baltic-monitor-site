@@ -1,20 +1,46 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-28T03:50:47.494281+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-28T07:11:47.005506+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 263,
+  "total_scans": 264,
   "quiet_count": 222,
-  "watch_count": 40,
+  "watch_count": 41,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-08-28 03:50 UTC",
+  "generated_at": "2026-08-28 07:11 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-28T07:11:47.013016+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 18,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Krievija var\u0113tu m\u0113\u0123in\u0101t p\u0101rbaud\u012bt NATO 5. panta iztur\u012bbu, secina ISW - tv3.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa1d6eGh6SkozbGVscDRDcU9sN1B6VnFoTFVJYXlhWjUwemxoci02TElGTXFDOEF0S3M0VUpsc2hzZ2RKT244STZoWTRkVzhJQUN6d1NUOHNTUjBNT1BydmExc1IyOU1HdTczbUVzZnZIeTZJcG1sZEgtY2JSY3BoeXZtSTJ4RDVYdW01MnNGQk5hVTVqTjJWSXZWQU5DTHM?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-28T03:50:47.499993+00:00",
       "level": "QUIET",
@@ -369,21 +395,24 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-08-24T19:55:10.578325+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 20,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-28T07:11:47.016377+00:00",
+      "level": "WATCH",
+      "title": "Krievija var\u0113tu m\u0113\u0123in\u0101t p\u0101rbaud\u012bt NATO 5. panta iztur\u012bbu, secina ISW - tv3.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa1d6eGh6SkozbGVscDRDcU9sN1B6VnFoTFVJYXlhWjUwemxoci02TElGTXFDOEF0S3M0VUpsc2hzZ2RKT244STZoWTRkVzhJQUN6d1NUOHNTUjBNT1BydmExc1IyOU1HdTczbUVzZnZIeTZJcG1sZEgtY2JSY3BoeXZtSTJ4RDVYdW01MnNGQk5hVTVqTjJWSXZWQU5DTHM?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-27T21:16:39.510727+00:00",
       "level": "WARN",
@@ -595,22 +624,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-17T19:52:09.314643+00:00",
-      "level": "WATCH",
-      "title": "NATO gatavojas iesp\u0113jamam Krievijas uzbrukumam Baltijas valst\u012bm! \u201cBild\u201d atkl\u0101j, ka ir izstr\u0101d\u0101tas tr\u012bs strat\u0113\u0123ijas - LA.LV",
-      "source": "Latvian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQLTVRdmRWQnBjVGJPSmNaYjEzdDdoMzJSRGJtMkNBclhKdjk4ZmptalZHbnJyNlRTMjBKRTJpNWY4REdON0t5YTQwYkNPMEp4UEYzcWxLNTFBTl9aNEFtSkdMdlUzdWJNeVJlWFJNZUp0RmZXbzBQOEJ5VXludVEzZmJzSzBRVDRWUlhCWXhiY1lJM3ZBcmNGTXNmMUYyd1hmbXlkbHZ1NWM2R0Zla0F6ZHI3SjlCZzZ1bDA5dWRKaFJ6UElrVG1F?oc=5",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
       ],
       "tier": "tier2",
       "gdelt_category": "",
