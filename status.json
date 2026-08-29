@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-29T13:35:40.865115+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-29T15:52:52.200449+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 273,
+  "total_scans": 274,
   "quiet_count": 229,
-  "watch_count": 43,
+  "watch_count": 44,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-08-29 13:35 UTC",
+  "generated_at": "2026-08-29 15:52 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-29T15:52:52.206905+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 17,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Landsber\u0123is TV3 Zi\u0146\u0101m: Krievija var m\u0113\u0123in\u0101t p\u0101rbaud\u012bt NATO reakciju uz provok\u0101cij\u0101m Baltij\u0101 - Inbox.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOeTNuZ2pYQjlFYzFqcmxlT0x2RTRldGtudExLNm1iY0MyVGFkc05rbDMzNS1RTUxVOE1wUEdXVkx0LWg4M1Nya0VaSFZqUVNDY0F2bkg2VGRsNUl3RGxua2E1Y2FmQndRVVBEdDBEdUZoenpRX0l4T2VsRmNCNEF1WmItNEgzaGp2UktSR2V5eEtUVWhqaTgwRW1yTkthaXY4MEtvVTVVbmFQMm42cUtVREpnQU5DSXhZV2lfejdWTlF5OTFVamZaeVRZdVc?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-29T13:35:40.870289+00:00",
       "level": "QUIET",
@@ -397,18 +424,6 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-08-26T11:55:08.008052+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 17,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
