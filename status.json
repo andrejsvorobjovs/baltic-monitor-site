@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-30T18:53:41.842268+00:00",
+  "last_run_utc": "2026-08-30T22:14:19.485767+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 281,
-  "quiet_count": 233,
+  "total_scans": 282,
+  "quiet_count": 234,
   "watch_count": 47,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-08-30 18:53 UTC",
+  "generated_at": "2026-08-30 22:14 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-30T22:14:19.494760+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 9,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-30T18:53:41.850269+00:00",
       "level": "QUIET",
@@ -344,32 +356,6 @@
       "new_items_count": 5,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-28T00:39:39.909256+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": true,
-      "new_items_count": 18,
-      "stale_count": 1,
-      "items": [
-        {
-          "title": "Trump Dismisses Fears of Russian Strike On NATO After CIA Chief Visits Moscow - rferl.org",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQeDFhcVBKSnlwZDA2d0I2WEJuM0E4d2hBZWlhaFFJdmM1UGRYd0tLemFfS0xNRWRCanhLMDJ6dUJEbUhwc0E4X2l2aXhzNHZ0OEdWZW9DNXNOVVhQMmtmRHlSZnlld1kxZzkzcHFtVlFLLW5Va0NFaFMwa3o0dl95M9IBgAFBVV95cUxQeDFhcVBKSnlwZDA2d0I2WEJuM0E4d2hBZWlhaFFJdmM1UGRYd0tLemFfS0xNRWRCanhLMDJ6dUJEbUhwc0E4X2l2aXhzNHZ0OEdWZW9DNXNOVVhQMmtmRHlSZnlld1kxZzkzcHFtVlFLLW5Va0NFaFMwa3o0dl95Mw?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -619,6 +605,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-08-30T20:31:19.899514+00:00",
+      "title": "Fixed: NATO training near Kaliningrad going uncaught",
+      "text": "A real NATO exercise near Kaliningrad was not flagged because the relevance filter only matched the literal phrase \"military exercise\" -- most outlets actually write \"drills\"/\"wargames\"/\"manoeuvres\" instead. Added coverage for those terms (gated on military context where the bare word has an everyday meaning too), so this class of story is caught going forward."
+    },
+    {
       "ts": "2026-08-24T08:05:24.483648+00:00",
       "title": "New: power grid outages charted on the public site",
       "text": "The forced (unplanned) generation-unit outage data /gridoutage already fetches from ENTSO-E is now also recorded every scan and charted on the site -- a new \"Power grid outages over time\" trend alongside GPS-jamming, AIS, military aircraft, and thermal hotspots. Still informational only, same as /gridoutage always was."
@@ -762,11 +753,6 @@
       "ts": "2026-08-18T09:55:31.212144+00:00",
       "title": "Fixed: GDELT Cloud enrichment was silently capped for half of every month",
       "text": "Fixed: GDELT Cloud was hitting its free-tier quota mid-month."
-    },
-    {
-      "ts": "2026-08-17T15:02:39.456580+00:00",
-      "title": "Baltic Notices to Mariners tracking (/notmar)",
-      "text": "Added /notmar: Notices to Mariners tracking for Estonia and Latvia."
     }
   ],
   "entsoe_outage_count": 0,
