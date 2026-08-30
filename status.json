@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-30T01:30:34.547835+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.9h ago",
+  "last_run_utc": "2026-08-30T09:27:14.562744+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 277,
-  "quiet_count": 231,
+  "total_scans": 278,
+  "quiet_count": 232,
   "watch_count": 45,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-08-30 05:21 UTC",
+  "generated_at": "2026-08-30 09:27 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-30T09:27:14.570631+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": true,
+      "new_items_count": 16,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-08-30T01:30:34.555621+00:00",
       "level": "WATCH",
@@ -383,33 +395,6 @@
       "new_items_count": 0,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-27T14:23:23.619663+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": true,
-      "new_items_count": 49,
-      "stale_count": 1,
-      "items": [
-        {
-          "title": "Landsber\u0123is TV3 Zi\u0146\u0101m: Krievija var m\u0113\u0123in\u0101t p\u0101rbaud\u012bt NATO reakciju uz provok\u0101cij\u0101m Baltij\u0101 - tv3.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUTdtQUtYRW1Ec0oxcHlJOFRGS1lmdHFWdzgyWWxZODJYNTF5Zmp3bkp0c1BMcURiRHlET2tFQ0lXa0U0SzNYUHc2Y3QwWWFodXZMcWRWQWZZM0g3Y2REN0dkazU4T2xRcHNlNm1CTFZnSV9aMk9FMHJjYVRoMmpsa1JkV1B0MjFiSWkyMlZJRlhWX0I1QU1pNjB4S2Ixa3lqNGRtOFlNUkdaaWt3ekF0REpLenVDNHBjTDh5MA?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
