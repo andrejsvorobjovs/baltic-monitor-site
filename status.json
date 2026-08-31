@@ -1,20 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-31T01:40:56.655918+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.8h ago",
+  "last_run_utc": "2026-08-31T09:56:59.077627+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 283,
-  "quiet_count": 234,
+  "total_scans": 284,
+  "quiet_count": 235,
   "watch_count": 48,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-08-31 05:30 UTC",
+  "generated_at": "2026-08-31 09:56 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-31T09:56:59.084461+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": true,
+      "new_items_count": 24,
+      "stale_count": 1,
+      "items": []
+    },
     {
       "ts": "2026-08-31T01:40:56.662550+00:00",
       "level": "WATCH",
@@ -335,32 +347,6 @@
           "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNREZZd2libzVmOEd4cE9hNjROdFZac2dmNTl4ZnZpcVlISWduQkpBNXNwd2pIMHNsRERtTWF2Ty1YY2lqR0VXalBTdWJzQjQ0ZGFtVlFMbFduYll2dllKWWctT1BfWXZJZ25MRUppcFB3bjVKbk56NE50QXB3c1FhWEN0ek9hcnRMWWNyOElwZklRRW85NkdCTTI4cThOSzk3V1E?oc=5",
           "categories": [
             "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
-    },
-    {
-      "ts": "2026-08-28T07:11:47.013016+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 18,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Krievija var\u0113tu m\u0113\u0123in\u0101t p\u0101rbaud\u012bt NATO 5. panta iztur\u012bbu, secina ISW - tv3.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa1d6eGh6SkozbGVscDRDcU9sN1B6VnFoTFVJYXlhWjUwemxoci02TElGTXFDOEF0S3M0VUpsc2hzZ2RKT244STZoWTRkVzhJQUN6d1NUOHNTUjBNT1BydmExc1IyOU1HdTczbUVzZnZIeTZJcG1sZEgtY2JSY3BoeXZtSTJ4RDVYdW01MnNGQk5hVTVqTjJWSXZWQU5DTHM?oc=5",
-          "categories": [
             "nato_conflict_risk"
           ],
           "tier": "tier2",
