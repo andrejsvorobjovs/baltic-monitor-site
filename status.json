@@ -1,20 +1,46 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-30T22:14:19.485767+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-08-31T01:40:56.655918+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 282,
+  "total_scans": 283,
   "quiet_count": 234,
-  "watch_count": 47,
+  "watch_count": 48,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-08-30 22:14 UTC",
+  "generated_at": "2026-08-31 01:40 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-31T01:40:56.662550+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 22,
+      "stale_count": 1,
+      "items": [
+        {
+          "title": "What a Russian Attack on NATO Could Look Like As CIA Trip Fuels Speculation - Newsweek",
+          "source": "BNS (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMG1xR1REcXlqcVhBR3FsazZpdTh0eVpSTzBsVldOcHhqUXZMbElJVDZ3ZWMyTEluQkdTX2xJaVFQaDJpQjZwUUcwMWxYWGhyeUo3STFYdk5kSVp4SUIyWi00OE5pUG53OWplVU5LS1JkclhLS09IY0cwWU9fMGVEc0tLd0xQMEc1bFFTd0p3TUVXQURrQ0M0UE9zZlVHakNQd2dZUzNWRnpWTnBZclE?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-30T22:14:19.494760+00:00",
       "level": "QUIET",
@@ -344,21 +370,24 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-08-28T03:50:47.499993+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 5,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-31T01:40:56.676472+00:00",
+      "level": "WATCH",
+      "title": "What a Russian Attack on NATO Could Look Like As CIA Trip Fuels Speculation - Newsweek",
+      "source": "BNS (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMG1xR1REcXlqcVhBR3FsazZpdTh0eVpSTzBsVldOcHhqUXZMbElJVDZ3ZWMyTEluQkdTX2xJaVFQaDJpQjZwUUcwMWxYWGhyeUo3STFYdk5kSVp4SUIyWi00OE5pUG53OWplVU5LS1JkclhLS09IY0cwWU9fMGVEc0tLd0xQMEc1bFFTd0p3TUVXQURrQ0M0UE9zZlVHakNQd2dZUzNWRnpWTnBZclE?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-30T01:30:34.559102+00:00",
       "level": "WATCH",
@@ -569,22 +598,6 @@
         "nato_conflict_risk"
       ],
       "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-20T08:08:30.406606+00:00",
-      "level": "WATCH",
-      "title": "NATO b\u016btiski maina Baltijas aizsardz\u012bbas pl\u0101nu: tr\u012bs so\u013ci Krievijas uzbrukuma aptur\u0113\u0161anai - Puaro",
-      "source": "Latvian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOWNseWU4UVdESkR5WkJ1N3N1YjhhbDV1N3ZYbUdSZmdmaC03cEVSMllCbVhFaHpGVG85VUk1dWp4YlRwNmxnNURQTGt2Y2RST1l5OWNXZy1JUThINWFuQW42SDRtdzQ1aU9PVWp4RTBMbml5MkowczFsNlRrT3dtUW1rb1J6eWZJQUpVZUgyYzNYb1VCWE9IMzB2V2Nhbl95SGg4YmF6U190UnozbTZ4aw?oc=5",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
       "gdelt_category": "",
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
