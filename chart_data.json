@@ -1987,6 +1987,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-08-31T15:21:53.973656+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -2515,6 +2522,10 @@
     {
       "ts": "2026-08-31T09:53:46.620546+00:00",
       "count": 208
+    },
+    {
+      "ts": "2026-08-31T15:18:38.315561+00:00",
+      "count": 171
     }
   ],
   "military_points": [
@@ -2949,6 +2960,10 @@
     {
       "ts": "2026-08-31T09:53:47.316209+00:00",
       "count": 6
+    },
+    {
+      "ts": "2026-08-31T15:18:38.789077+00:00",
+      "count": 3
     }
   ],
   "firms_points": [
@@ -3179,6 +3194,10 @@
     {
       "ts": "2026-08-31T09:53:50.660222+00:00",
       "count": 13
+    },
+    {
+      "ts": "2026-08-31T15:18:41.114555+00:00",
+      "count": 22
     }
   ],
   "entsoe_points": [
@@ -3356,6 +3375,10 @@
     },
     {
       "ts": "2026-08-31T09:55:34.457876+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-08-31T15:20:30.840643+00:00",
       "count": 0
     }
   ],
@@ -3827,6 +3850,13 @@
       "deviation_pct": 18.124585292301166,
       "sources_included": 3,
       "narrative": "GPS jamming 46% above baseline; AIS vessel activity 69% above baseline; thermal hotspots 61% below baseline.",
+      "band": "within normal range"
+    },
+    {
+      "ts": "2026-08-31T15:20:30.841227+00:00",
+      "deviation_pct": 16.98662136790482,
+      "sources_included": 3,
+      "narrative": "GPS jamming 46% above baseline; AIS vessel activity, thermal hotspots steady.",
       "band": "within normal range"
     }
   ]
