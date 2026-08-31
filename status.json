@@ -1,20 +1,46 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-08-31T18:18:42.464533+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.8h ago",
+  "last_run_utc": "2026-08-31T21:05:48.400853+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 286,
+  "total_scans": 287,
   "quiet_count": 237,
-  "watch_count": 48,
+  "watch_count": 49,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-08-31 19:07 UTC",
+  "generated_at": "2026-08-31 21:05 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-08-31T21:05:48.409408+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": false,
+      "new_items_count": 9,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Analitikas \u012fvertino, kaip Rusija gali i\u0161bandyti NATO vienyb\u0119: tarp tik\u0117tin\u0173 taikini\u0173 \u2013 trys \u0161alys - Delfi",
+          "source": "Lithuanian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxONExRYTBEVVp1MXA5T000ZUFqV2FoNDkxNDN3dlFvVG9nUnRQN0xLRVQ3aHIxM0hZNFRtMVBITE10ekc3ZjdKLUgwamlGaXp1SnphUEVfbUkzWkVxelVBNmtLY0VkNkxtUndWWGEyVzBKMUtkVF9ocnBIckNRSTlpZlMxTlcwN3ZnU2dQbkpRZEhyREVGN0hvbVl6SVY5WWtsQ1c3TmZKMjNLSUlqMzFrdldEbllDM3U3Tll0V0J5QXFPYlZyRE1LV2h0MzZkX1dVN0ZGYnU2QkxsUUs1?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-08-31T18:18:42.473118+00:00",
       "level": "QUIET",
@@ -315,35 +341,24 @@
       "new_items_count": 8,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-28T21:38:45.721333+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 8,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Europe confident Russia is not preparing attack on NATO - Bloomberg - RBC-Ukraine",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRFM2Tm9YR2NsTnc5dlZFSk80eDdST1lheDVfVzhVZG9wTDZWUFg5eVJ2djBCbUZ0WE9jNTFIWUs5TjNkOU50SFJNZFBBRVBxbGxsclVGQjJWRlVuX0taS1ZkUE1pazFxeXBrU2lyMm1iXzVZa0JZWmJMVVg3azJNQ0d5QWFQRWlFY0R1THRzeWE5Zw?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-08-31T21:05:48.413008+00:00",
+      "level": "WATCH",
+      "title": "Analitikas \u012fvertino, kaip Rusija gali i\u0161bandyti NATO vienyb\u0119: tarp tik\u0117tin\u0173 taikini\u0173 \u2013 trys \u0161alys - Delfi",
+      "source": "Lithuanian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxONExRYTBEVVp1MXA5T000ZUFqV2FoNDkxNDN3dlFvVG9nUnRQN0xLRVQ3aHIxM0hZNFRtMVBITE10ekc3ZjdKLUgwamlGaXp1SnphUEVfbUkzWkVxelVBNmtLY0VkNkxtUndWWGEyVzBKMUtkVF9ocnBIckNRSTlpZlMxTlcwN3ZnU2dQbkpRZEhyREVGN0hvbVl6SVY5WWtsQ1c3TmZKMjNLSUlqMzFrdldEbllDM3U3Tll0V0J5QXFPYlZyRE1LV2h0MzZkX1dVN0ZGYnU2QkxsUUs1?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-31T01:40:56.676472+00:00",
       "level": "WATCH",
@@ -554,21 +569,6 @@
         "nato_conflict_risk"
       ],
       "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-21T15:38:29.351704+00:00",
-      "level": "WATCH",
-      "title": "Putin is in a corner. He may need to attack Nato despite being bogged down in Ukraine - The Telegraph",
-      "source": "The Telegraph (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUTdPdkZ1WFM5QnU0b1FDV0lGaU1vVW40NllDU2tub3RkeGd5ZmZ3b1NaVWVmMXk5UkZ3Zi10OHU3RWdsdzdtMFBUTVJiVlFnUGhLY280cXVXWGRva01nUXN6Y2VqemRjZGRiVmpRRGJFd2ZJTS1Xb0xjMzFZTEN2U0hJRXp3YlNHMkpSZnA5eF9MaV9kQ0VYN2hWbWJ1eVByOGc?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier1",
       "gdelt_category": "",
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
