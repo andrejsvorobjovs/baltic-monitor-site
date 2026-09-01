@@ -225,6 +225,8 @@
   /* "What does NOT raise the level" disclosure under the level table.
      Deliberately quiet styling: this is methodology detail for readers
      who want it, not a headline. */
+  /* Resilience note under the tier table. */
+  .resil { margin-top: 14px; font-size: 0.9rem; line-height: 1.6; opacity: 0.8; }
   .not-alert { margin-top: 20px; border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; background: var(--panel, transparent); }
   .not-alert h3 { font-size: 0.95rem; margin: 0 0 10px; letter-spacing: 0.01em; }
   .not-alert ul { margin: 0; padding-left: 20px; }
@@ -490,6 +492,11 @@
         </tr>
       </tbody>
     </table>
+    <p class="resil">Enamik allikaid j&otilde;uab kohale &uuml;he uudisteagregaatori kaudu, mis on aeg-ajalt
+      korraga kogu skaneerimise blokeerinud. Et &uuml;ks katkestus ei j&auml;taks monitori pimedaks, loetakse
+      <strong><span id="direct-feed-count">15</span> kanalit</strong> lisaks otse v&auml;ljaannete endi juurest
+      &mdash; nende seas Eesti, L&auml;ti ja Leedu rahvusringh&auml;&auml;lingud, nii inglise kui kohalikus keeles.
+      M&otilde;lemat teed kaudu j&otilde;udev v&auml;ljaanne loeb ikka &uuml;heks allikaks, mitte iseenda kinnituseks.</p>
 
     <div class="levels">
       <div class="level ok"><div class="lv-name">QUIET</div><p>Selle skanni käigus ei leitud midagi asjakohast.</p></div>
@@ -719,6 +726,13 @@
       }
       if (typeof d.tier3_sources === 'number') {
         document.getElementById('tier3-count').textContent = d.tier3_sources;
+      }
+      // Direct publisher feeds — the resilience layer. Same live-not-
+      // hardcoded rule as every count above: the static number in the
+      // markup is only a fallback for when status.json can't be read.
+      if (typeof d.direct_feed_sources === 'number') {
+        var dfEl = document.getElementById('direct-feed-count');
+        if (dfEl) { dfEl.textContent = d.direct_feed_sources; }
       }
 
       document.getElementById('stat-total').textContent = d.total_scans;
