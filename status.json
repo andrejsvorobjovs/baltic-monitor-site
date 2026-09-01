@@ -1,20 +1,117 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-01T18:42:04.507064+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-09-01T19:37:16.238441+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 293,
-  "quiet_count": 240,
-  "watch_count": 52,
+  "total_scans": 295,
+  "quiet_count": 241,
+  "watch_count": 53,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-01 18:42 UTC",
+  "generated_at": "2026-09-01 19:37 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-01T19:37:16.245448+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 13,
+      "stale_count": 0,
+      "items": []
+    },
+    {
+      "ts": "2026-09-01T19:12:55.652074+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 15,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 338,
+      "stale_count": 1,
+      "items": [
+        {
+          "title": "Officer: Ukraine downs 80% of Russian weapons in record attacks",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610125117/officer-ukraine-downs-80-of-russian-weapons-in-record-attacks",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Young Latvians invited to step forward for military service",
+          "source": "LSM (Latvia)",
+          "link": "https://eng.lsm.lv/article/society/defence/01.09.2026-young-latvians-invited-to-step-forward-for-military-service.a661301/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Some seek compensation following CSDD cyber attack in Latvia",
+          "source": "LSM (Latvia)",
+          "link": "https://eng.lsm.lv/article/society/society/01.09.2026-some-seek-compensation-following-csdd-cyber-attack-in-latvia.a661168/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Eksperte: Kompens\u0101ciju p\u0113c CSDD datu nopl\u016bdes var pras\u012bt ar\u012b pirms DVI l\u0113muma",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/latvija/01.09.2026-eksperte-kompensaciju-pec-csdd-datu-nopludes-var-prasit-ari-pirms-dvi-lemuma.a661263/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "Estonian foreign intelligence chief: \u00abIn Russia everyone knows that mobilization is coming\u00bb",
+          "source": "Postimees (Estonia)",
+          "link": "https://pmo.ee/8537932",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-09-01T18:42:04.515265+00:00",
       "level": "WATCH",
@@ -22,6 +119,7 @@
       "failed_count": 1,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": true,
       "new_items_count": 29,
       "stale_count": 0,
@@ -49,6 +147,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 12,
       "stale_count": 0,
@@ -61,6 +160,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 25,
       "stale_count": 0,
@@ -88,6 +188,7 @@
       "failed_count": 1,
       "tier3_count": 1,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": true,
       "new_items_count": 15,
       "stale_count": 0,
@@ -115,6 +216,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 10,
       "stale_count": 0,
@@ -127,6 +229,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 11,
       "stale_count": 0,
@@ -139,6 +242,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 9,
       "stale_count": 0,
@@ -165,6 +269,7 @@
       "failed_count": 1,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": true,
       "new_items_count": 13,
       "stale_count": 0,
@@ -177,6 +282,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 38,
       "stale_count": 0,
@@ -189,6 +295,7 @@
       "failed_count": 1,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": true,
       "new_items_count": 24,
       "stale_count": 1,
@@ -201,6 +308,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 22,
       "stale_count": 1,
@@ -227,6 +335,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 9,
       "stale_count": 0,
@@ -239,6 +348,7 @@
       "failed_count": 1,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": true,
       "new_items_count": 16,
       "stale_count": 0,
@@ -251,6 +361,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 22,
       "stale_count": 0,
@@ -278,6 +389,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 6,
       "stale_count": 0,
@@ -305,6 +417,7 @@
       "failed_count": 1,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": true,
       "new_items_count": 16,
       "stale_count": 0,
@@ -317,6 +430,7 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 12,
       "stale_count": 0,
@@ -343,49 +457,11 @@
       "failed_count": 0,
       "tier3_count": 0,
       "sources_scanned": 152,
+      "scan_type": "full",
       "gdelt_ran": false,
       "new_items_count": 7,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-29T18:40:03.836849+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": true,
-      "new_items_count": 7,
-      "stale_count": 0,
-      "items": []
-    },
-    {
-      "ts": "2026-08-29T15:52:52.206905+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 17,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Landsber\u0123is TV3 Zi\u0146\u0101m: Krievija var m\u0113\u0123in\u0101t p\u0101rbaud\u012bt NATO reakciju uz provok\u0101cij\u0101m Baltij\u0101 - Inbox.lv",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOeTNuZ2pYQjlFYzFqcmxlT0x2RTRldGtudExLNm1iY0MyVGFkc05rbDMzNS1RTUxVOE1wUEdXVkx0LWg4M1Nya0VaSFZqUVNDY0F2bkg2VGRsNUl3RGxua2E1Y2FmQndRVVBEdDBEdUZoenpRX0l4T2VsRmNCNEF1WmItNEgzaGp2UktSR2V5eEtUVWhqaTgwRW1yTkthaXY4MEtvVTVVbmFQMm42cUtVREpnQU5DSXhZV2lfejdWTlF5OTFVamZaeVRZdVc?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -635,6 +711,26 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-09-01T19:06:18.290547+00:00",
+      "title": "New: faster early warning between full scans",
+      "text": "The full 150-source sweep takes about 19 minutes, so it can only run six times a day -- meaning up to 9.5 hours could pass between looks. A new lightweight check now runs every 2 hours over the direct publisher feeds (ERR, LSM, Delfi, Postimees, Yle and others) and raises an early warning if something real appears. It stays completely silent otherwise."
+    },
+    {
+      "ts": "2026-09-01T18:59:36.432424+00:00",
+      "title": "Fewer, better alerts",
+      "text": "Reviewing every alert ever sent found many were reassuring news (\"officials say no attack is coming\"), scenario/analysis pieces, or the same story repeating for days. Those are now shown as context instead of arriving as an alert. Replayed over the full history this removes about half the notifications while keeping every genuine incident."
+    },
+    {
+      "ts": "2026-09-01T18:59:36.432420+00:00",
+      "title": "New: direct publisher feeds for resilience",
+      "text": "Until now every tracked source was reached through Google News, which has occasionally blocked the whole scan at once. The monitor now also reads 15 feeds straight from the publishers themselves -- ERR, LSM, Delfi, Postimees, Yle, Meduza and others -- so a Google outage no longer means a blind spot. They are also far faster to fetch."
+    },
+    {
+      "ts": "2026-09-01T18:59:36.432391+00:00",
+      "title": "Fixed: one source could trigger a WARN on its own",
+      "text": "WARN is supposed to mean several independent sources report the same thing. A configuration quirk let a single organisation listed under two tiers score as its own corroboration. Confirmation is now counted per organisation, not per feed, so WARN means what it says."
+    },
+    {
       "ts": "2026-08-30T20:31:19.899514+00:00",
       "title": "Fixed: NATO training near Kaliningrad going uncaught",
       "text": "A real NATO exercise near Kaliningrad was not flagged because the relevance filter only matched the literal phrase \"military exercise\" -- most outlets actually write \"drills\"/\"wargames\"/\"manoeuvres\" instead. Added coverage for those terms (gated on military context where the bare word has an everyday meaning too), so this class of story is caught going forward."
@@ -763,26 +859,6 @@
       "ts": "2026-08-21T00:08:57.006992+00:00",
       "title": "NASA FIRMS thermal hotspot tracking (/firms)",
       "text": "Added /firms: NASA satellite thermal-hotspot tracking."
-    },
-    {
-      "ts": "2026-08-20T18:27:17.523403+00:00",
-      "title": "Fixed: mute-list false negative and a GDELT accounting bug",
-      "text": "Fixed a mute-list false negative and a GDELT accounting bug."
-    },
-    {
-      "ts": "2026-08-20T16:24:39.705312+00:00",
-      "title": "New OSINT sources for military tracking",
-      "text": "Added two OSINT sources for military tracking."
-    },
-    {
-      "ts": "2026-08-18T13:15:04.208151+00:00",
-      "title": "AIS now flags self-declared military/law-enforcement vessels",
-      "text": "AIS now flags self-declared military/law-enforcement vessels."
-    },
-    {
-      "ts": "2026-08-18T09:55:31.212144+00:00",
-      "title": "Fixed: GDELT Cloud enrichment was silently capped for half of every month",
-      "text": "Fixed: GDELT Cloud was hitting its free-tier quota mid-month."
     }
   ],
   "entsoe_outage_count": 0,
