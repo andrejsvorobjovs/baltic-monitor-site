@@ -811,6 +811,13 @@
           var scannedText;
           if (typeof h.sources_scanned !== 'number') {
             scannedText = 'selle vanema skaneeringu allikate arvu ei salvestatud';
+          } else if (h.scan_type === 'fast') {
+            // A fast early-warning pass reads only the direct publisher
+            // feeds, so its source count is ~15 rather than the full
+            // roster's 150+. Labelling it identically to a full scan
+            // would read as "most sources failed" — the opposite of what
+            // happened. See run_fast_scan() in main.py.
+            scannedText = h.sources_scanned + ' otsekanalit väljaannetelt — kiire varajase hoiatuse kontroll täisskannide vahel';
           } else if (h.gdelt_ran) {
             scannedText = h.sources_scanned + ' allikat skannitud (1./2./3. tase + GDELT)';
           } else {

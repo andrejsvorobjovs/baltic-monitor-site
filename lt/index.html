@@ -824,6 +824,13 @@
           var scannedText;
           if (typeof h.sources_scanned !== 'number') {
             scannedText = 'šio senesnio nuskaitymo šaltinių skaičius neįrašytas';
+          } else if (h.scan_type === 'fast') {
+            // A fast early-warning pass reads only the direct publisher
+            // feeds, so its source count is ~15 rather than the full
+            // roster's 150+. Labelling it identically to a full scan
+            // would read as "most sources failed" — the opposite of what
+            // happened. See run_fast_scan() in main.py.
+            scannedText = h.sources_scanned + ' tiesioginiai leidėjų kanalai — greita ankstyvojo įspėjimo patikra tarp pilnų nuskaitymų';
           } else if (h.gdelt_ran) {
             scannedText = h.sources_scanned + ' šaltiniai patikrinti (1/2/3 lygis + GDELT)';
           } else {
