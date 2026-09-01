@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-01T02:08:41.236095+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 2.9h ago",
+  "last_run_utc": "2026-09-01T08:53:08.240076+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 289,
+  "total_scans": 290,
   "quiet_count": 239,
-  "watch_count": 49,
+  "watch_count": 50,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-01 05:04 UTC",
+  "generated_at": "2026-09-01 08:53 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-01T08:53:08.248923+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "gdelt_ran": true,
+      "new_items_count": 15,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Military mobilization in the Baltic states, security measures in Finland, and NATO deploys fighter jets for surveillance - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOQUVvZ2RxeDQ0bTFHNkRud2VUMEpwZkM4a3I2WXU0UG9ObE5MZW5JeHZfQ05oQmtya2d4UjVTMnFUaGo5NGp3MmhGTHgwTURQVndBX195SFh0UEpBZ0w3UW9TM0VWTjhVZlY3TXlhRzJQZFUySGtOWEhqSkE4UTlhdWVQbWNnaEFsdDU3OGZ2Y2Z6X1Z3MGJOSlhIaTV6SUtHNmt5RmFJbF9qV2hDMUdweGxXNEk5eU9VVjBTMGthUS1PYTRxTWdPMG1rR2gyWU10NXpoRXdOUkRRbHcxQVl5VlNQYnRQYnFmRE1LY2IzeDZURC1UaVliV3VDcW5iMklhWUd2WA?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-09-01T02:08:41.244615+00:00",
       "level": "QUIET",
@@ -329,21 +356,25 @@
       "new_items_count": 19,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-29T04:25:33.678820+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 17,
-      "stale_count": 1,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-01T08:53:08.252591+00:00",
+      "level": "WATCH",
+      "title": "Military mobilization in the Baltic states, security measures in Finland, and NATO deploys fighter jets for surveillance - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOQUVvZ2RxeDQ0bTFHNkRud2VUMEpwZkM4a3I2WXU0UG9ObE5MZW5JeHZfQ05oQmtya2d4UjVTMnFUaGo5NGp3MmhGTHgwTURQVndBX195SFh0UEpBZ0w3UW9TM0VWTjhVZlY3TXlhRzJQZFUySGtOWEhqSkE4UTlhdWVQbWNnaEFsdDU3OGZ2Y2Z6X1Z3MGJOSlhIaTV6SUtHNmt5RmFJbF9qV2hDMUdweGxXNEk5eU9VVjBTMGthUS1PYTRxTWdPMG1rR2gyWU10NXpoRXdOUkRRbHcxQVl5VlNQYnRQYnFmRE1LY2IzeDZURC1UaVliV3VDcW5iMklhWUd2WA?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-08-31T21:05:48.413008+00:00",
       "level": "WATCH",
@@ -551,22 +582,6 @@
       "categories": [
         "baltic_specific",
         "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-22T04:06:16.497403+00:00",
-      "level": "WATCH",
-      "title": "NATO tr\u012bs so\u013cu pl\u0101ns, ja Putins uzbruks Baltijai - NRA",
-      "source": "Latvian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1WeE40YUtQeWhPNWt2dUJkQTFzMFk3TldnTTJjRkRaUzRmSnY5TkgzUWY0OTJuQ0RFNGpwQl9aU1RBNWdKS3Y1ajJ1ZUUxakRFbHE3X21KT3ZOcEpzbjFCdUV0NTRDb0NtTXdCaDE5Qm1jNHc3ZEJhYlVfQQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
       ],
       "tier": "tier2",
       "gdelt_category": "",
