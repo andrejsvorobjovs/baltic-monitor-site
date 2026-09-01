@@ -222,6 +222,14 @@
   table.tiers td.tier-n { text-align: right; white-space: nowrap; color: var(--ink-dim); }
 
   .levels { display: flex; gap: 0; margin-top: 32px; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  /* "What does NOT raise the level" disclosure under the level table.
+     Deliberately quiet styling: this is methodology detail for readers
+     who want it, not a headline. */
+  .not-alert { margin-top: 20px; border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; background: var(--panel, transparent); }
+  .not-alert h3 { font-size: 0.95rem; margin: 0 0 10px; letter-spacing: 0.01em; }
+  .not-alert ul { margin: 0; padding-left: 20px; }
+  .not-alert li { margin: 6px 0; line-height: 1.55; }
+  .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: 0.9rem; line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
   .level + .level { border-left: 1px solid var(--border); }
@@ -487,6 +495,15 @@
       <div class="level ok"><div class="lv-name">QUIET</div><p>Šajā skenējumā netika atrasts nekas atbilstošs.</p></div>
       <div class="level watch"><div class="lv-name">WATCH</div><p>Atbilstošs, bet vēl nav apstiprināts no neatkarīga avota.</p></div>
       <div class="level warn"><div class="lv-name">WARN</div><p>Tas pats stāsts, ko apstiprina divi vai vairāki neatkarīgi uzticami avoti.</p></div>
+    </div>
+    <div class="not-alert">
+      <h3>Kas tiek reģistrēts, bet <em>nepaaugstina</em> līmeni</h3>
+      <ul>
+        <li><strong>Nomierinoša informācija.</strong> Ziņa, ka uzbrukums netiek gatavots (&bdquo;amatpersonas saka, ka Krievija negatavo uzbrukumu&ldquo;), ir būtisks konteksts, taču tā nav brīdinājums un nekad netiek sūtīta kā brīdinājums.</li>
+        <li><strong>Scenāriji un analīze.</strong> Skaidrojošs raksts par to, kā uzbrukums varētu izskatīties, vai analītiķis, kurš saka, ka Krievija <em>varētu</em> pārbaudīt NATO, ir viedokļraksts &mdash; nevis ziņojums, ka kaut kas ir noticis.</li>
+        <li><strong>Jau ziņotie stāsti.</strong> Tas pats stāsts ar jaunu saiti trīs dienas neizraisa atkārtotu brīdinājumu. Ja tas vēlāk iegūst neatkarīgu apstiprinājumu, par šo izmaiņu brīdinājums tiek nosūtīts.</li>
+      </ul>
+      <p class="na-why">Šie ieraksti paliek skenēšanas reģistrā kā konteksts. Iemesls ir vienkāršs: brīdinājumu kanāls, kas ceļ trauksmi par nomierinošām ziņām, māca cilvēkus to ignorēt &mdash; un tad tiek ignorēts arī tas viens brīdinājums, kas patiešām ir svarīgs. Konkrēts ziņotais incidents &mdash; pārgriezts kabelis, drons, kas šķērso robežu &mdash; nekad netiek šādi izfiltrēts, pat ja amatpersonas to noniecina.</p>
     </div>
   </div>
 </section>

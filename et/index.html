@@ -222,6 +222,14 @@
   table.tiers td.tier-n { text-align: right; white-space: nowrap; color: var(--ink-dim); }
 
   .levels { display: flex; gap: 0; margin-top: 32px; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  /* "What does NOT raise the level" disclosure under the level table.
+     Deliberately quiet styling: this is methodology detail for readers
+     who want it, not a headline. */
+  .not-alert { margin-top: 20px; border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; background: var(--panel, transparent); }
+  .not-alert h3 { font-size: 0.95rem; margin: 0 0 10px; letter-spacing: 0.01em; }
+  .not-alert ul { margin: 0; padding-left: 20px; }
+  .not-alert li { margin: 6px 0; line-height: 1.55; }
+  .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: 0.9rem; line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
   .level + .level { border-left: 1px solid var(--border); }
@@ -487,6 +495,15 @@
       <div class="level ok"><div class="lv-name">QUIET</div><p>Selle skanni käigus ei leitud midagi asjakohast.</p></div>
       <div class="level watch"><div class="lv-name">WATCH</div><p>Asjakohane, kuid pole veel sõltumatu allika poolt kinnitatud.</p></div>
       <div class="level warn"><div class="lv-name">WARN</div><p>Sama lugu, mida kinnitab kaks või enam sõltumatut usaldusväärset allikat.</p></div>
+    </div>
+    <div class="not-alert">
+      <h3>Mida logitakse, kuid mis <em>ei</em> tõsta taset</h3>
+      <ul>
+        <li><strong>Rahustav teave.</strong> Lugu, mis teatab, et rünnakut ei tule (&bdquo;ametnikud ütlevad, et Venemaa ei valmista rünnakut ette&ldquo;), on asjakohane taust, kuid see ei ole hoiatus ja seda ei saadeta kunagi hoiatusena.</li>
+        <li><strong>Stsenaariumid ja analüüs.</strong> Selgitav lugu sellest, milline rünnak võiks välja näha, või analüütik, kes ütleb, et Venemaa <em>võib</em> NATOt proovile panna, on arvamuslugu &mdash; mitte teade, et midagi juhtus.</li>
+        <li><strong>Juba teatatud lood.</strong> Sama lugu uue lingi all ei anna kolme päeva jooksul uut häiret. Kui see hiljem saab sõltumatu kinnituse, siis see edasiminek siiski teavitab.</li>
+      </ul>
+      <p class="na-why">Need kirjed jäävad skaneerimise registrisse taustana. Põhjus on lihtne: hoiatuskanal, mis annab häire rahustavate uudiste peale, õpetab inimesi seda eirama &mdash; ja siis eiratakse ka seda üht häiret, mis tegelikult loeb. Konkreetset teatatud intsidenti &mdash; kaabli katkestamist, drooni piiriületust &mdash; ei filtreerita kunagi sel viisil välja, isegi kui ametnikud selle tähtsust vähendavad.</p>
     </div>
   </div>
 </section>

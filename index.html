@@ -223,6 +223,14 @@
   table.tiers td.tier-n { text-align: right; white-space: nowrap; color: var(--ink-dim); }
 
   .levels { display: flex; gap: 0; margin-top: 32px; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  /* "What does NOT raise the level" disclosure under the level table.
+     Deliberately quiet styling: this is methodology detail for readers
+     who want it, not a headline. */
+  .not-alert { margin-top: 20px; border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; background: var(--panel, transparent); }
+  .not-alert h3 { font-size: 0.95rem; margin: 0 0 10px; letter-spacing: 0.01em; }
+  .not-alert ul { margin: 0; padding-left: 20px; }
+  .not-alert li { margin: 6px 0; line-height: 1.55; }
+  .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: 0.9rem; line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
   .level + .level { border-left: 1px solid var(--border); }
@@ -484,6 +492,15 @@
       <div class="level ok"><div class="lv-name">QUIET</div><p>Nothing relevant matched this scan.</p></div>
       <div class="level watch"><div class="lv-name">WATCH</div><p>Relevant, but not yet corroborated by an independent source.</p></div>
       <div class="level warn"><div class="lv-name">WARN</div><p>The same story, confirmed by two or more independent trusted sources.</p></div>
+    </div>
+    <div class="not-alert">
+      <h3>What is logged but does <em>not</em> raise the level</h3>
+      <ul>
+        <li><strong>Reassurance.</strong> A story reporting that no attack is coming (&ldquo;officials say Russia is not preparing an attack&rdquo;) is relevant context, but it is not a warning and is never sent as one.</li>
+        <li><strong>Scenarios and analysis.</strong> An explainer imagining what an attack could look like, or an analyst saying Russia <em>might</em> test NATO, is a comment piece &mdash; not a report that something happened.</li>
+        <li><strong>Stories already reported.</strong> The same story resurfacing under a new link does not alert again for three days. If it later gains independent corroboration, that upgrade does still alert.</li>
+      </ul>
+      <p class="na-why">These items still appear in the scan record, marked as context. The reason is simple: an alert channel that cries wolf for reassuring news trains people to ignore it, and then the one alert that matters gets ignored too. A concrete reported incident &mdash; a cable cut, a drone crossing a border &mdash; is never filtered out this way, even if officials are quoted downplaying it.</p>
     </div>
   </div>
 </section>
