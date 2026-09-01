@@ -1,20 +1,47 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-01T15:46:13.349214+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.9h ago",
+  "last_run_utc": "2026-09-01T18:42:04.507064+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 292,
+  "total_scans": 293,
   "quiet_count": 240,
-  "watch_count": 51,
+  "watch_count": 52,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-01 16:37 UTC",
+  "generated_at": "2026-09-01 18:42 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-01T18:42:04.515265+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "gdelt_ran": true,
+      "new_items_count": 29,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Lietuvas ekspoliti\u0137e: N\u0101kamais Krievijas p\u0101rbaud\u012bjums NATO var b\u016bt daudz b\u012bstam\u0101ks - Puaro",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTXlLbjhONlR5UVpVbVY3TW50YVZOWHdMMmM0ZzZmN3BEb3BMdkhsV1F6UUljVVZVckpOdm9FR2d2ZjhtZDFXeUpXbEhnMEtYaTh2SWhqTUZRTlBXZVprd3VrVTItT1A3NmxucGdYb2VLSUYxZFRSaVNDOVgydXQxSHQ3VzlNUm1OYWZpQUI1SG43UU5sd1NvT0NEeFhxa0c3TlhZOFNLVQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-09-01T15:46:13.356149+00:00",
       "level": "QUIET",
@@ -359,21 +386,25 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-08-29T13:35:40.870289+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "gdelt_ran": false,
-      "new_items_count": 22,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-01T18:42:04.518932+00:00",
+      "level": "WATCH",
+      "title": "Lietuvas ekspoliti\u0137e: N\u0101kamais Krievijas p\u0101rbaud\u012bjums NATO var b\u016bt daudz b\u012bstam\u0101ks - Puaro",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTXlLbjhONlR5UVpVbVY3TW50YVZOWHdMMmM0ZzZmN3BEb3BMdkhsV1F6UUljVVZVckpOdm9FR2d2ZjhtZDFXeUpXbEhnMEtYaTh2SWhqTUZRTlBXZVprd3VrVTItT1A3NmxucGdYb2VLSUYxZFRSaVNDOVgydXQxSHQ3VzlNUm1OYWZpQUI1SG43UU5sd1NvT0NEeFhxa0c3TlhZOFNLVQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-01T12:53:22.508189+00:00",
       "level": "WATCH",
@@ -580,21 +611,6 @@
       "title": "CIA chief made secret Moscow visit to warn Putin against attack on Nato - The Telegraph",
       "source": "The Telegraph (via GNews)",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZVNxdnBzQmxNY1FpV2JHcDA2ek90MXRyZnVvb3dzaWNDRUxXTUh2bmpPODNFVUZ5eVBMcFROUzh3TVBEQ0hndVROSWZnUnZmUW00QjlQdkQ4UGZxRG5heDZ4V2stLVBrV2R0UUdlR21iOVJYMUY5aHNBTVRhdlNtckljQjA1WlpYZTAxYkI0dU9EYVk?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-26T16:45:01.159203+00:00",
-      "level": "WATCH",
-      "title": "The CIA might just have given an alarming signal that Putin is about to attack Nato - The Telegraph",
-      "source": "The Telegraph (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZG5CX0ZYQWxLZmY4SE40cE9hYlNtRjhveDZHb2V0VFJQNS1ZT3l6MXRIWC1yeGphSHdJZnd5MUNiT2M5QTFJZldYRVYtSmpNWi1BZ2hURjJqWkFYc1JXci1oTUhTcVEzZEV1NnptUEJhNTRTU1pPdDRQQnFsVXFxQkl5LUZmTXhyRUExN1hsRQ?oc=5",
       "categories": [
         "nato_conflict_risk"
       ],
