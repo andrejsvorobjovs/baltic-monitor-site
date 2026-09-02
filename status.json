@@ -1,20 +1,48 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-02T18:55:11.834649+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-09-02T22:03:45.405197+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 304,
+  "total_scans": 305,
   "quiet_count": 245,
-  "watch_count": 58,
+  "watch_count": 59,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-02 18:55 UTC",
+  "generated_at": "2026-09-02 22:03 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-02T22:03:45.414743+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 43,
+      "stale_count": 1,
+      "items": [
+        {
+          "title": "Is the CIA's Moscow visit a sign of a coming Russian provocation in the Baltics? - The Kyiv Independent",
+          "source": "Kyiv Independent",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRFVtdV9VOXk2RmhpWmloMUR4VS1oVEZ1b0tXa2kxWEMyV2JycWlldFloVXdvbmZURnRoNXVKVExjcllrSWJZWXlBREdwQnBmSWFhQU42Q012Vi1NaUhjVlIzMHBWMjJJS1cteHNnejMzT1hwMGY1a0k2V3ZpbTB4ZHpjWnM4bUM5UzUzZGlHVUZTeG9NaS1yMUt3YW01VTNmQ3lIU005Y3R1MGc?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-09-02T18:55:11.844487+00:00",
       "level": "QUIET",
@@ -539,22 +567,25 @@
       "new_items_count": 13,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-31T15:21:53.973656+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 38,
-      "stale_count": 0,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-02T22:03:45.418717+00:00",
+      "level": "WATCH",
+      "title": "Is the CIA's Moscow visit a sign of a coming Russian provocation in the Baltics? - The Kyiv Independent",
+      "source": "Kyiv Independent",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRFVtdV9VOXk2RmhpWmloMUR4VS1oVEZ1b0tXa2kxWEMyV2JycWlldFloVXdvbmZURnRoNXVKVExjcllrSWJZWXlBREdwQnBmSWFhQU42Q012Vi1NaUhjVlIzMHBWMjJJS1cteHNnejMzT1hwMGY1a0k2V3ZpbTB4ZHpjWnM4bUM5UzUzZGlHVUZTeG9NaS1yMUt3YW01VTNmQ3lIU005Y3R1MGc?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-02T15:22:37.177885+00:00",
       "level": "WATCH",
@@ -767,21 +798,6 @@
       "title": "Russia won't use nuclear weapons against Ukraine or attack NATO, Finland's president says - The Kyiv Independent",
       "source": "Kyiv Independent",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYUVPX3hJSTFnMzJPTUFhTDBUX3dQTjdWVzg5LWNTY0V1akNrRGRxOFpLN3BwS3VtaGxfWGVQRHoycjh5V2dzSlRuOWxFaVlXNE1qdWhESHpJV0pkcElxRlUzREtJMlZjdTB4MnZHZC1xbWpaNEhveVNfbTlSVFFzNnJqZXR2dk1DVmJVLUxZSjJlWU1wVzU4c2VVQ1ltYnkx?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-28T21:38:45.724611+00:00",
-      "level": "WATCH",
-      "title": "Europe confident Russia is not preparing attack on NATO - Bloomberg - RBC-Ukraine",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRFM2Tm9YR2NsTnc5dlZFSk80eDdST1lheDVfVzhVZG9wTDZWUFg5eVJ2djBCbUZ0WE9jNTFIWUs5TjNkOU50SFJNZFBBRVBxbGxsclVGQjJWRlVuX0taS1ZkUE1pazFxeXBrU2lyMm1iXzVZa0JZWmJMVVg3azJNQ0d5QWFQRWlFY0R1THRzeWE5Zw?oc=5",
       "categories": [
         "nato_conflict_risk"
       ],
