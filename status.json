@@ -1,20 +1,61 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-03T15:15:03.908687+00:00",
+  "last_run_utc": "2026-09-03T18:50:08.404724+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 1.2h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 310,
-  "quiet_count": 247,
-  "watch_count": 62,
+  "total_scans": 312,
+  "quiet_count": 248,
+  "watch_count": 63,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-03 16:24 UTC",
+  "generated_at": "2026-09-03 18:50 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-03T18:50:08.414883+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 126,
+      "stale_count": 2,
+      "items": []
+    },
+    {
+      "ts": "2026-09-03T16:39:35.812032+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 22,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 77,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Saksa droonijuhtumis kahtlustatav L\u00e4ti kodanik elas aastaid Venemaal",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610127757/saksa-droonijuhtumis-kahtlustatav-lati-kodanik-elas-aastaid-venemaal",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-09-03T15:15:03.917825+00:00",
       "level": "QUIET",
@@ -561,47 +602,6 @@
           "categories": [
             "baltic_specific",
             "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-01T15:46:13.356149+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 12,
-      "stale_count": 0,
-      "items": []
-    },
-    {
-      "ts": "2026-09-01T12:53:22.505241+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 25,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Kremlin warns Baltic states of \u2018devastating\u2019 response after drone incursion - London Business News",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2doRGJQb0VxSlAzQ3VYSXViYVpWQ2VQUk5kMnEyOGUtTE5SMG12bktKRXNkT1loT1lMcGQxVHphUzZ5eFJ4S0ctWGdxSmVrUWp4U0QxY0ZGdjhtQjE3QnRVYVJLb3BrU191ZGtxUGlsQjNUUWplS1lwNzNWT1NOUGVIcUNzTldCQlJRZGQtbWR0WVRZc19JS1RzSFlZX2JGZ0FUaDYwSEI0dw?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
           ],
           "tier": "tier2",
           "gdelt_category": "",
