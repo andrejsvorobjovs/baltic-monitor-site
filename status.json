@@ -1,20 +1,75 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-03T01:23:55.605930+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 3.0h ago",
+  "last_run_utc": "2026-09-03T08:17:04.597233+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 306,
+  "total_scans": 307,
   "quiet_count": 246,
-  "watch_count": 59,
+  "watch_count": 60,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-03 04:21 UTC",
+  "generated_at": "2026-09-03 08:17 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-03T08:17:04.607507+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 273,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "The Russian attack NATO expects is already here [ANALYSIS] - TVP World",
+          "source": "TVP World (Poland)",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaDg1d1JJMnB2b1ppYnExNDFwTktoT2RsTUVsMkYzWnQ0OTYzNGM2bDFtc3R4ZTF5NXJ2eVBLSkhGS01zMGRXSlRrc002WGUxWEhGbTY1bVl2RGI2ZnNJSEd3V25zbTBpT0VyOE4wQlhSamR5bjltQUJHX2VtOXBhMFo3Q3owd242Q1pjYmF2YUY?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "NATO will be projecting oak in Latvia over next two weeks",
+          "source": "LSM (Latvia)",
+          "link": "https://eng.lsm.lv/article/society/defence/03.09.2026-nato-will-be-projecting-oak-in-latvia-over-next-two-weeks.a661571/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        },
+        {
+          "title": "\u0411\u0443\u043c \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430 \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0445 \u043f\u0430\u0440\u043a\u043e\u0432 \u043f\u043e\u0448\u0435\u043b \u043d\u0430 \u0441\u043f\u0430\u0434",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610126767/bum-stroitelstva-solnechnyh-parkov-poshel-na-spad",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-09-03T01:23:55.614996+00:00",
       "level": "QUIET",
@@ -540,36 +595,56 @@
       "new_items_count": 11,
       "stale_count": 0,
       "items": []
-    },
-    {
-      "ts": "2026-08-31T21:05:48.409408+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 9,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Analitikas \u012fvertino, kaip Rusija gali i\u0161bandyti NATO vienyb\u0119: tarp tik\u0117tin\u0173 taikini\u0173 \u2013 trys \u0161alys - Delfi",
-          "source": "Lithuanian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxONExRYTBEVVp1MXA5T000ZUFqV2FoNDkxNDN3dlFvVG9nUnRQN0xLRVQ3aHIxM0hZNFRtMVBITE10ekc3ZjdKLUgwamlGaXp1SnphUEVfbUkzWkVxelVBNmtLY0VkNkxtUndWWGEyVzBKMUtkVF9ocnBIckNRSTlpZlMxTlcwN3ZnU2dQbkpRZEhyREVGN0hvbVl6SVY5WWtsQ1c3TmZKMjNLSUlqMzFrdldEbllDM3U3Tll0V0J5QXFPYlZyRE1LV2h0MzZkX1dVN0ZGYnU2QkxsUUs1?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-03T08:17:04.611682+00:00",
+      "level": "WATCH",
+      "title": "\u0411\u0443\u043c \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430 \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0445 \u043f\u0430\u0440\u043a\u043e\u0432 \u043f\u043e\u0448\u0435\u043b \u043d\u0430 \u0441\u043f\u0430\u0434",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610126767/bum-stroitelstva-solnechnyh-parkov-poshel-na-spad",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-03T08:17:04.611682+00:00",
+      "level": "WATCH",
+      "title": "NATO will be projecting oak in Latvia over next two weeks",
+      "source": "LSM (Latvia)",
+      "link": "https://eng.lsm.lv/article/society/defence/03.09.2026-nato-will-be-projecting-oak-in-latvia-over-next-two-weeks.a661571/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-03T08:17:04.611682+00:00",
+      "level": "WATCH",
+      "title": "The Russian attack NATO expects is already here [ANALYSIS] - TVP World",
+      "source": "TVP World (Poland)",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaDg1d1JJMnB2b1ppYnExNDFwTktoT2RsTUVsMkYzWnQ0OTYzNGM2bDFtc3R4ZTF5NXJ2eVBLSkhGS01zMGRXSlRrc002WGUxWEhGbTY1bVl2RGI2ZnNJSEd3V25zbTBpT0VyOE4wQlhSamR5bjltQUJHX2VtOXBhMFo3Q3owd242Q1pjYmF2YUY?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-02T22:03:45.418717+00:00",
       "level": "WATCH",
@@ -755,51 +830,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-31T21:05:48.413008+00:00",
-      "level": "WATCH",
-      "title": "Analitikas \u012fvertino, kaip Rusija gali i\u0161bandyti NATO vienyb\u0119: tarp tik\u0117tin\u0173 taikini\u0173 \u2013 trys \u0161alys - Delfi",
-      "source": "Lithuanian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxONExRYTBEVVp1MXA5T000ZUFqV2FoNDkxNDN3dlFvVG9nUnRQN0xLRVQ3aHIxM0hZNFRtMVBITE10ekc3ZjdKLUgwamlGaXp1SnphUEVfbUkzWkVxelVBNmtLY0VkNkxtUndWWGEyVzBKMUtkVF9ocnBIckNRSTlpZlMxTlcwN3ZnU2dQbkpRZEhyREVGN0hvbVl6SVY5WWtsQ1c3TmZKMjNLSUlqMzFrdldEbllDM3U3Tll0V0J5QXFPYlZyRE1LV2h0MzZkX1dVN0ZGYnU2QkxsUUs1?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-31T01:40:56.676472+00:00",
-      "level": "WATCH",
-      "title": "What a Russian Attack on NATO Could Look Like As CIA Trip Fuels Speculation - Newsweek",
-      "source": "BNS (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMG1xR1REcXlqcVhBR3FsazZpdTh0eVpSTzBsVldOcHhqUXZMbElJVDZ3ZWMyTEluQkdTX2xJaVFQaDJpQjZwUUcwMWxYWGhyeUo3STFYdk5kSVp4SUIyWi00OE5pUG53OWplVU5LS1JkclhLS09IY0cwWU9fMGVEc0tLd0xQMEc1bFFTd0p3TUVXQURrQ0M0UE9zZlVHakNQd2dZUzNWRnpWTnBZclE?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-08-30T01:30:34.559102+00:00",
-      "level": "WATCH",
-      "title": "Russia won't use nuclear weapons against Ukraine or attack NATO, Finland's president says - The Kyiv Independent",
-      "source": "Kyiv Independent",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYUVPX3hJSTFnMzJPTUFhTDBUX3dQTjdWVzg5LWNTY0V1akNrRGRxOFpLN3BwS3VtaGxfWGVQRHoycjh5V2dzSlRuOWxFaVlXNE1qdWhESHpJV0pkcElxRlUzREtJMlZjdTB4MnZHZC1xbWpaNEhveVNfbTlSVFFzNnJqZXR2dk1DVmJVLUxZSjJlWU1wVzU4c2VVQ1ltYnkx?oc=5",
-      "categories": [
-        "nato_conflict_risk"
       ],
       "tier": "tier2",
       "gdelt_category": "",
