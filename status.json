@@ -1,20 +1,33 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-03T18:50:08.404724+00:00",
+  "last_run_utc": "2026-09-03T21:57:19.538515+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 312,
-  "quiet_count": 248,
+  "total_scans": 313,
+  "quiet_count": 249,
   "watch_count": 63,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-03 18:50 UTC",
+  "generated_at": "2026-09-03 21:57 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-03T21:57:19.548140+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 69,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-09-03T18:50:08.414883+00:00",
       "level": "QUIET",
@@ -574,34 +587,6 @@
           "categories": [
             "baltic_specific",
             "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-01T18:42:04.515265+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 29,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "Lietuvas ekspoliti\u0137e: N\u0101kamais Krievijas p\u0101rbaud\u012bjums NATO var b\u016bt daudz b\u012bstam\u0101ks - Puaro",
-          "source": "Latvian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTXlLbjhONlR5UVpVbVY3TW50YVZOWHdMMmM0ZzZmN3BEb3BMdkhsV1F6UUljVVZVckpOdm9FR2d2ZjhtZDFXeUpXbEhnMEtYaTh2SWhqTUZRTlBXZVprd3VrVTItT1A3NmxucGdYb2VLSUYxZFRSaVNDOVgydXQxSHQ3VzlNUm1OYWZpQUI1SG43UU5sd1NvT0NEeFhxa0c3TlhZOFNLVQ?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
           ],
           "tier": "tier2",
           "gdelt_category": "",
