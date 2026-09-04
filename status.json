@@ -1,20 +1,33 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-04T15:12:10.185107+00:00",
+  "last_run_utc": "2026-09-04T18:36:00.204499+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 1.1h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 317,
-  "quiet_count": 253,
+  "total_scans": 318,
+  "quiet_count": 254,
   "watch_count": 63,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-04 16:19 UTC",
+  "generated_at": "2026-09-04 18:36 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-04T18:36:00.214779+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 122,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-09-04T15:12:10.195965+00:00",
       "level": "QUIET",
@@ -459,34 +472,6 @@
           "categories": [
             "troop_movement",
             "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-02T05:00:13.528649+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 22,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 70,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "\u041a\u043e\u043c\u043f\u0435\u043d\u0441\u0430\u0446\u0438\u044e \u043f\u043e\u0441\u043b\u0435 \u0443\u0442\u0435\u0447\u043a\u0438 \u0434\u0430\u043d\u043d\u044b\u0445 CSDD \u043c\u043e\u0436\u043d\u043e \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u0442\u044c \u0435\u0449\u0435 \u0434\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u044f DVI \u2014 \u044d\u043a\u0441\u043f\u0435\u0440\u0442",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/obschestvo/02.09.2026-kompensaciyu-posle-utecki-dannyx-csdd-mozno-trebovat-eshhe-do-reseniya-dvi-ekspert.a661336/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
           ],
           "tier": "tier2",
           "gdelt_category": "",
