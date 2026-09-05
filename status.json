@@ -1,20 +1,61 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-05T09:25:29.567801+00:00",
+  "last_run_utc": "2026-09-05T11:34:16.291574+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 322,
-  "quiet_count": 257,
-  "watch_count": 64,
+  "total_scans": 324,
+  "quiet_count": 258,
+  "watch_count": 65,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-05 09:25 UTC",
+  "generated_at": "2026-09-05 11:34 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-05T11:34:16.301908+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 37,
+      "stale_count": 0,
+      "items": []
+    },
+    {
+      "ts": "2026-09-05T10:53:34.928418+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 26,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 142,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "R. Kaunas: Lietuva ai\u0161kiai \u012fvardija agresori\u0173 ir geba objektyviai reaguoti \u012f hibridines gr\u0117smes",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/05/news/r-kaunas-lietuva-aiskiai-ivardija-agresoriu-ir-geba-objektyviai-reaguoti-i-hibridines-gresmes-43882927/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-09-05T09:25:29.576249+00:00",
       "level": "QUIET",
@@ -365,50 +406,6 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-09-02T18:55:11.844487+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 81,
-      "stale_count": 1,
-      "items": []
-    },
-    {
-      "ts": "2026-09-02T16:50:11.329435+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 22,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 49,
-      "stale_count": 0,
-      "items": [
-        {
-          "title": "\u00ab\u0412\u0441\u0435 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0438 \u0442\u0435\u0440\u0440\u043e\u0440\u0438\u0437\u043c\u0430 \u043f\u0440\u0438 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0435 \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0430\u00bb",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/02/vse-priznaki-terrorizma-pri-podderzhke-gosudarstva",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident",
-            "shadow_fleet",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -666,6 +663,36 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-09-05T11:09:09+00:00",
+      "title": "Fixed: the \u201cfeeds read directly\u201d number on this page was hardcoded, not live",
+      "text": "The page reads that count from the live data file, but the field was never actually being written to it, so it silently fell back to a number typed into the page. It happened to be correct until the count changed today. Now published properly, with a test that every number this page claims to read is really there."
+    },
+    {
+      "ts": "2026-09-05T11:07:02+00:00",
+      "title": "Officials saying \u201cwe are coping\u201d no longer arrive as alerts",
+      "text": "A defence minister interview saying the country can respond to hybrid threats was sent as an alert, because the phrase \u201chybrid\u201d was being treated as a reported incident. It is not \u2014 it is how commentators describe a situation. Terms like that now count towards relevance but no longer override the filters, which in turn made it safe to catch the wider class of officials reassuring the public that things are under control. Genuine incident reports are unaffected: they match on words like sabotage or drone incursion, which still override everything."
+    },
+    {
+      "ts": "2026-09-05T11:03:15+00:00",
+      "title": "Fixed: a completed scan could be thrown away and leave this page stale",
+      "text": "A scheduled scan ran cleanly and sent its alerts, then lost its results because another workflow was writing to the same files at the same moment \u2014 and because publishing to this page was tied to that bookkeeping step, the site quietly kept showing an older scan. All five workflows that write data now take turns properly, the save step can now resolve that kind of clash instead of failing, and publishing here no longer depends on it at all."
+    },
+    {
+      "ts": "2026-09-05T09:23:14+00:00",
+      "title": "Four more newsrooms read directly (22 \u2192 26)",
+      "text": "TVNET, Postimees Estonian-language, Lrytas and The Baltic Times are now read straight from the publishers, adding about 110 more articles per scan and more redundancy if any one source goes down. Deliberately added only after local-language matching was fixed \u2014 before that, a Latvian or Lithuanian newsroom feed was mostly unreadable to the scorer. LRT, Lithuania's public broadcaster, publishes no working RSS feed and remains reachable only indirectly."
+    },
+    {
+      "ts": "2026-09-05T09:19:37+00:00",
+      "title": "The Estonian, Latvian, Lithuanian and Russian press is now readable to the monitor",
+      "text": "Testing threat headlines in the local languages found none of them detected \u2014 and the cause was worse than a missing word list. These languages decline names, and the declined form is the everyday one: Lithuanian media writes \u201cLietuvos\u201d and \u201cLietuvoje\u201d, neither of which matched \u201cLietuva\u201d. Same for city names like \u201c\u0100da\u017eos\u201d and \u201cVilniuje\u201d. Fixed, along with local terms for drones, GPS interference, sabotage, infrastructure explosions and the smuggling balloons that keep closing Vilnius airport. Since the local press reports a Baltic incident first, this was the largest blind spot in the system. No new false alarms on a live scan."
+    },
+    {
+      "ts": "2026-09-05T09:14:21+00:00",
+      "title": "Closed 17 blind spots, including one that hid the word \u201cmobilisation\u201d",
+      "text": "A deliberate hunt for things the monitor could NOT see found most real Baltic threat types missing. The worst: \u201cmobilisation\u201d in British spelling \u2014 which every Baltic English-language outlet uses \u2014 matched nothing at all. Nor did any Baltic city name, so \u201cDrone sightings shut down Vilnius airport\u201d was ignored for not saying \u201cLithuania\u201d. Now covered, along with GPS/GNSS interference, airport drone and balloon closures, railway and depot explosions, recruited saboteurs, election interference, weaponised migration, Kaliningrad transit pressure and diplomatic expulsions. Tested against a live scan: two genuine incidents newly caught, nothing lost, no new false alarms."
+    },
+    {
       "ts": "2026-09-05T09:06:41+00:00",
       "title": "Better diagnosis when something is flagged by mistake",
       "text": "Each flagged story now privately records which term caused it to match, so a false alarm can be traced and fixed instead of guessed at after the article has rolled off the feed. The terms themselves are never published \u2014 they would be a map for anyone wanting to word coverage so it slips past."
@@ -784,46 +811,18 @@
       "ts": "2026-08-21T12:26:47.491254+00:00",
       "title": "Widened raw-signal coverage to the whole Baltic Sea (GPSJam/AIS/military/FIRMS)",
       "text": "Widened raw-signal coverage (GPSJam/AIS/military/FIRMS) to the whole Baltic Sea."
-    },
-    {
-      "ts": "2026-08-21T12:14:26.088720+00:00",
-      "title": "Germany and Denmark brought up to full Baltic Sea coverage depth (151 sources)",
-      "text": "Brought Germany and Denmark up to full source depth (151 sources total)."
-    },
-    {
-      "ts": "2026-08-21T09:45:51.896543+00:00",
-      "title": "New: Composite Escalation Index -- a public trend line, not a prediction",
-      "text": "Added the Signal Deviation Index: a live escalation trend line, not a prediction."
-    },
-    {
-      "ts": "2026-08-21T06:15:51.328391+00:00",
-      "title": "Bluesky added as a fourth public alert channel",
-      "text": "Added Bluesky as a fourth public alert channel."
-    },
-    {
-      "ts": "2026-08-21T04:49:48.204408+00:00",
-      "title": "New: four more public-site charts -- GPS-jamming, AIS, military aircraft, FIRMS",
-      "text": "Added four more site charts: GPS-jamming, AIS, military aircraft, FIRMS."
-    },
-    {
-      "ts": "2026-08-21T00:49:23.728084+00:00",
-      "title": "New: a real map on the public site (AIS, military aircraft, GPS jamming, thermal hotspots)",
-      "text": "Added a live map (AIS, military aircraft, GPS jamming, thermal hotspots)."
-    },
-    {
-      "ts": "2026-08-21T00:38:13.065814+00:00",
-      "title": "New: /satellite -- raw Sentinel-2 imagery, deliberately no ML interpretation",
-      "text": "Added /satellite: raw Sentinel-2 imagery, no ML interpretation."
     }
   ],
   "entsoe_outage_count": 0,
   "entsoe_active_outages": [],
+  "direct_feed_sources": 26,
+  "direct_feed_new_outlets": 13,
   "filter_record": {
     "window_days": 30,
-    "scans": 200,
-    "alerting_scans": 50,
+    "scans": 201,
+    "alerting_scans": 51,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 199
+    "scans_before_tracking": 198
   }
 }
