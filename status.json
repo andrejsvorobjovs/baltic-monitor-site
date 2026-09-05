@@ -1,20 +1,33 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-05T11:34:16.291574+00:00",
+  "last_run_utc": "2026-09-05T14:07:51.791159+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 324,
-  "quiet_count": 258,
+  "total_scans": 325,
+  "quiet_count": 259,
   "watch_count": 65,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-05 11:34 UTC",
+  "generated_at": "2026-09-05 14:07 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-05T14:07:51.801580+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 113,
+      "stale_count": 0,
+      "items": []
+    },
     {
       "ts": "2026-09-05T11:34:16.301908+00:00",
       "level": "QUIET",
@@ -378,34 +391,6 @@
       "new_items_count": 27,
       "stale_count": 1,
       "items": []
-    },
-    {
-      "ts": "2026-09-02T22:03:45.414743+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 43,
-      "stale_count": 1,
-      "items": [
-        {
-          "title": "Is the CIA's Moscow visit a sign of a coming Russian provocation in the Baltics? - The Kyiv Independent",
-          "source": "Kyiv Independent",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRFVtdV9VOXk2RmhpWmloMUR4VS1oVEZ1b0tXa2kxWEMyV2JycWlldFloVXdvbmZURnRoNXVKVExjcllrSWJZWXlBREdwQnBmSWFhQU42Q012Vi1NaUhjVlIzMHBWMjJJS1cteHNnejMzT1hwMGY1a0k2V3ZpbTB4ZHpjWnM4bUM5UzUzZGlHVUZTeG9NaS1yMUt3YW01VTNmQ3lIU005Y3R1MGc?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -663,6 +648,21 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-09-05T11:48:17+00:00",
+      "title": "Fixed: alert maps were arriving stamped \u201cAPI KEY REQUIRED\u201d",
+      "text": "The map service started requiring a paid key and began writing \u201cAPI KEY REQUIRED\u201d across every map sent with an alert. Nothing detected it, because a defaced tile arrives as a perfectly normal image. Maps now come from a different, free provider, and before each map the system checks a tile of open ocean \u2014 which should be blank \u2014 to confirm nothing is being stamped over it. If no provider is usable, the map is still sent with a plain grid rather than a defaced one. Thanks to the subscriber who reported it."
+    },
+    {
+      "ts": "2026-09-05T11:22:19+00:00",
+      "title": "Browser alerts are retried, and failed delivery no longer goes unnoticed",
+      "text": "If a browser push service was momentarily busy, that subscriber simply missed the alert \u2014 there was no retry, and the failure was only ever recorded in a log nobody reads. Delivery is now retried once, and if anyone still misses an alert the owner is told immediately how many did not receive it. Telegram delivery was never affected by this."
+    },
+    {
+      "ts": "2026-09-05T11:19:01+00:00",
+      "title": "WARN can now actually fire when three newsrooms confirm the same thing",
+      "text": "WARN had been reached once in 323 scans, and the reason turned out to be a flaw rather than quiet news: the rule needed sources of two different trust levels, but nearly all the newsroom feeds sit at the same level. So ERR, Postimees and LSM all confirming one drone incursion scored no higher than a single passing mention. Three independent newsrooms now count as confirmation on their own \u2014 while three outlets reprinting the same agency copy word-for-word still count as one. The description of WARN on this page was also promising something the code did not do, and has been corrected."
+    },
+    {
       "ts": "2026-09-05T11:09:09+00:00",
       "title": "Fixed: the \u201cfeeds read directly\u201d number on this page was hardcoded, not live",
       "text": "The page reads that count from the live data file, but the field was never actually being written to it, so it silently fell back to a number typed into the page. It happened to be correct until the count changed today. Now published properly, with a test that every number this page claims to read is really there."
@@ -796,21 +796,6 @@
       "ts": "2026-08-21T16:04:08.048625+00:00",
       "title": "Fixed: Signal Deviation Index under-reported tracked sources",
       "text": "Showed \"0 of 4 tracked\" on days when 1 source genuinely had a baseline, just not the 2 needed for a composite reading. Now reports the true count."
-    },
-    {
-      "ts": "2026-08-21T15:19:51.511596+00:00",
-      "title": "New: shadow-fleet/tanker-seizure detection category",
-      "text": "Added a category for sanctioned-tanker seizures and shadow-fleet interdictions -- a real story class we were structurally missing."
-    },
-    {
-      "ts": "2026-08-21T14:56:27.312042+00:00",
-      "title": "The Telegraph added as a wire-tier source (152 sources)",
-      "text": "Added after a real, confirmed miss on a major story. Now alongside Reuters and AP."
-    },
-    {
-      "ts": "2026-08-21T12:26:47.491254+00:00",
-      "title": "Widened raw-signal coverage to the whole Baltic Sea (GPSJam/AIS/military/FIRMS)",
-      "text": "Widened raw-signal coverage (GPSJam/AIS/military/FIRMS) to the whole Baltic Sea."
     }
   ],
   "entsoe_outage_count": 0,
@@ -823,6 +808,6 @@
     "alerting_scans": 51,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 198
+    "scans_before_tracking": 197
   }
 }
