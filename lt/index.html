@@ -163,6 +163,13 @@
   .btn.push { border-color: var(--accent); color: var(--accent); background: transparent; cursor: pointer; font-family: inherit; }
   .btn.push:disabled { opacity: 0.6; cursor: default; }
   .btn.push[data-state="subscribed"] { border-color: var(--ok); color: var(--ok); }
+  .btn.push[data-state="pushblocked"],
+  .btn.push[data-state="ratelimited"],
+  .btn.push[data-state="denied"],
+  .btn.push[data-state="error"] { border-color: var(--warn, #c47f2a); color: var(--warn, #c47f2a); }
+  #push-help { margin: 10px 0 0; padding: 12px 14px; border: 1px solid var(--border);
+    border-left-width: 3px; border-left-color: var(--warn, #c47f2a); border-radius: 4px;
+    font-size: 13px; line-height: 1.6; color: var(--ink-dim); max-width: 62ch; }
 
   /* ---- Instrument readout panel ---- */
   .readout {
@@ -390,6 +397,7 @@
         <a class="btn ghost" href="#how">Skaityti metodą</a>
         <a class="btn ghost" href="https://ko-fi.com/balticsignalmonitor" target="_blank" rel="noopener">Paremti šį projektą</a>
       </div>
+      <p id="push-help" hidden></p>
       <p style="font-size: 13px; color: var(--ink-dim); margin: 10px 0 0;">
         Nenori naudoti Telegram paskyros? Naršyklės pranešimai naudoja
         tik tavo pačią naršyklę — jokios programėlės, paskyros ar
