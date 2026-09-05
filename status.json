@@ -1,20 +1,62 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-05T14:07:51.791159+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 1.1h ago",
+  "last_run_utc": "2026-09-05T17:34:45.177657+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 325,
+  "total_scans": 326,
   "quiet_count": 259,
-  "watch_count": 65,
+  "watch_count": 66,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-05 15:11 UTC",
+  "generated_at": "2026-09-05 17:34 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-05T17:34:45.188369+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 164,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "TS-LKD leader pledges process for universal conscription",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/ts-lkd-leader-pledges-process-for-universal-conscription--cameoplus_186239dfd81e3397",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "0342",
+          "gdelt_event_code": "0342",
+          "goldstein": 4
+        },
+        {
+          "title": "Ukrai\u0146u dronu komandieris Ma\u0123ars: Kijiva nekad netiks ie\u0146emta tr\u012bs dien\u0101s, bet par Baltiju neesmu dro\u0161s",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8540470",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null
+        }
+      ]
+    },
     {
       "ts": "2026-09-05T14:07:51.801580+00:00",
       "level": "QUIET",
@@ -378,22 +420,41 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-09-03T01:23:55.614996+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 27,
-      "stale_count": 1,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-05T17:34:45.192790+00:00",
+      "level": "WATCH",
+      "title": "Ukrai\u0146u dronu komandieris Ma\u0123ars: Kijiva nekad netiks ie\u0146emta tr\u012bs dien\u0101s, bet par Baltiju neesmu dro\u0161s",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8540470",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-05T17:34:45.192790+00:00",
+      "level": "WATCH",
+      "title": "TS-LKD leader pledges process for universal conscription",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/ts-lkd-leader-pledges-process-for-universal-conscription--cameoplus_186239dfd81e3397",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "0342",
+      "gdelt_event_code": "0342",
+      "goldstein": 4
+    },
     {
       "ts": "2026-09-05T07:53:24.761806+00:00",
       "level": "WATCH",
@@ -600,38 +661,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-01T22:02:14.091598+00:00",
-      "level": "WATCH",
-      "title": "Rusijos u\u017esienio reikal\u0173 viceministras: Maskva neplanuoja pulti Baltijos \u0161ali\u0173",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/rusijos-uzsienio-reikalu-viceministras-maskva-neplanuoja-pulti-baltijos-saliu-57-2754924?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-01T18:42:04.518932+00:00",
-      "level": "WATCH",
-      "title": "Lietuvas ekspoliti\u0137e: N\u0101kamais Krievijas p\u0101rbaud\u012bjums NATO var b\u016bt daudz b\u012bstam\u0101ks - Puaro",
-      "source": "Latvian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTXlLbjhONlR5UVpVbVY3TW50YVZOWHdMMmM0ZzZmN3BEb3BMdkhsV1F6UUljVVZVckpOdm9FR2d2ZjhtZDFXeUpXbEhnMEtYaTh2SWhqTUZRTlBXZVprd3VrVTItT1A3NmxucGdYb2VLSUYxZFRSaVNDOVgydXQxSHQ3VzlNUm1OYWZpQUI1SG43UU5sd1NvT0NEeFhxa0c3TlhZOFNLVQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -804,8 +833,8 @@
   "direct_feed_new_outlets": 13,
   "filter_record": {
     "window_days": 30,
-    "scans": 201,
-    "alerting_scans": 51,
+    "scans": 202,
+    "alerting_scans": 52,
     "held_back_total": 0,
     "held_back_by_reason": [],
     "scans_before_tracking": 197
