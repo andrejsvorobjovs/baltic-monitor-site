@@ -1,20 +1,48 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-05T01:10:58.262898+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 3.2h ago",
+  "last_run_utc": "2026-09-05T07:53:24.746619+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 320,
+  "total_scans": 321,
   "quiet_count": 256,
-  "watch_count": 63,
+  "watch_count": 64,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-05 04:23 UTC",
+  "generated_at": "2026-09-05 07:53 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-05T07:53:24.757204+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 148,
+      "stale_count": 0,
+      "items": [
+        {
+          "title": "Russian official threatens German weapon sites with attack",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/russian-official-threatens-german-weapon-sites-with-attack--cameoplus_23048112d529115a",
+          "categories": [
+            "troop_movement",
+            "nato_conflict_risk"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "1384",
+          "gdelt_event_code": "1384",
+          "goldstein": -7
+        }
+      ]
+    },
     {
       "ts": "2026-09-05T01:10:58.272991+00:00",
       "level": "QUIET",
@@ -410,22 +438,25 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-09-02T12:24:50.880528+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 2,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 219,
-      "stale_count": 1,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-05T07:53:24.761806+00:00",
+      "level": "WATCH",
+      "title": "Russian official threatens German weapon sites with attack",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/russian-official-threatens-german-weapon-sites-with-attack--cameoplus_23048112d529115a",
+      "categories": [
+        "troop_movement",
+        "nato_conflict_risk"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "1384",
+      "gdelt_event_code": "1384",
+      "goldstein": -7
+    },
     {
       "ts": "2026-09-03T12:22:01.579835+00:00",
       "level": "WATCH",
@@ -642,22 +673,6 @@
       "categories": [
         "baltic_specific",
         "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-01T12:53:22.508189+00:00",
-      "level": "WATCH",
-      "title": "Kremlin warns Baltic states of \u2018devastating\u2019 response after drone incursion - London Business News",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2doRGJQb0VxSlAzQ3VYSXViYVpWQ2VQUk5kMnEyOGUtTE5SMG12bktKRXNkT1loT1lMcGQxVHphUzZ5eFJ4S0ctWGdxSmVrUWp4U0QxY0ZGdjhtQjE3QnRVYVJLb3BrU191ZGtxUGlsQjNUUWplS1lwNzNWT1NOUGVIcUNzTldCQlJRZGQtbWR0WVRZc19JS1RzSFlZX2JGZ0FUaDYwSEI0dw?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
