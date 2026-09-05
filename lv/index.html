@@ -231,6 +231,14 @@
   .not-alert h3 { font-size: 0.95rem; margin: 0 0 10px; letter-spacing: 0.01em; }
   .not-alert ul { margin: 0; padding-left: 20px; }
   .not-alert li { margin: 6px 0; line-height: 1.55; }
+  .filter-record { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .filter-record h4 { font-size: 0.88rem; margin: 0 0 10px; font-weight: 600; }
+  .fr-window { opacity: 0.6; font-weight: 400; font-size: 0.8rem; }
+  .fr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .fr-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 0.85rem; }
+  .fr-list .fr-label { opacity: 0.85; }
+  .fr-list .fr-count { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .fr-note { margin: 10px 0 0; opacity: 0.7; font-size: 0.82rem; line-height: 1.5; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: 0.9rem; line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
@@ -506,10 +514,16 @@
     <div class="not-alert">
       <h3>Kas tiek reģistrēts, bet <em>nepaaugstina</em> līmeni</h3>
       <ul>
+        <li><strong>Izsludinātās sabiedroto mācības.</strong> NATO vai Baltijas valsts nacionālās militārās mācības tiek publiskotas aizsardzības ministrijas kalendārā nedēļas iepriekš &mdash; Namejs, Projecting Oak, Siil. Tas ir visparedzamākais notikums reģionā, tāpēc to reģistrē kā kontekstu, nevis sūta kā brīdinājumu. Krievijas un Baltkrievijas mācības, piemēram, Zapad, <em>netiek</em> tā traktētas un paaugstina līmeni.</li>
         <li><strong>Nomierinoša informācija.</strong> Ziņa, ka uzbrukums netiek gatavots (&bdquo;amatpersonas saka, ka Krievija negatavo uzbrukumu&ldquo;), ir būtisks konteksts, taču tā nav brīdinājums un nekad netiek sūtīta kā brīdinājums.</li>
         <li><strong>Scenāriji un analīze.</strong> Skaidrojošs raksts par to, kā uzbrukums varētu izskatīties, vai analītiķis, kurš saka, ka Krievija <em>varētu</em> pārbaudīt NATO, ir viedokļraksts &mdash; nevis ziņojums, ka kaut kas ir noticis.</li>
         <li><strong>Jau ziņotie stāsti.</strong> Tas pats stāsts ar jaunu saiti trīs dienas neizraisa atkārtotu brīdinājumu. Ja tas vēlāk iegūst neatkarīgu apstiprinājumu, par šo izmaiņu brīdinājums tiek nosūtīts.</li>
       </ul>
+      <div class="filter-record" id="filter-record" hidden>
+        <h4>Ko filtri patiešām apturēja <span class="fr-window mono" id="fr-window"></span></h4>
+        <ul class="fr-list mono" id="fr-list"></ul>
+        <p class="fr-note" id="fr-note"></p>
+      </div>
       <p class="na-why">Šie ieraksti paliek skenēšanas reģistrā kā konteksts. Iemesls ir vienkāršs: brīdinājumu kanāls, kas ceļ trauksmi par nomierinošām ziņām, māca cilvēkus to ignorēt &mdash; un tad tiek ignorēts arī tas viens brīdinājums, kas patiešām ir svarīgs. Konkrēts ziņotais incidents &mdash; pārgriezts kabelis, drons, kas šķērso robežu &mdash; nekad netiek šādi izfiltrēts, pat ja amatpersonas to noniecina.</p>
     </div>
   </div>
@@ -733,6 +747,42 @@
       if (typeof d.direct_feed_sources === 'number') {
         var dfEl = document.getElementById('direct-feed-count');
         if (dfEl) { dfEl.textContent = d.direct_feed_sources; }
+      }
+
+      // Rendered only when there is something real to show — see the
+      // English page for the reasoning.
+      var fr = d.filter_record;
+      if (fr && fr.held_back_total > 0 && Array.isArray(fr.held_back_by_reason)) {
+        var frEl = document.getElementById('filter-record');
+        document.getElementById('fr-window').textContent = 'pēdējās ' + fr.window_days + ' dienas';
+        var list = document.getElementById('fr-list');
+        list.innerHTML = '';
+        fr.held_back_by_reason.forEach(function (row) {
+          var li = document.createElement('li');
+          var label = document.createElement('span');
+          label.className = 'fr-label';
+          // The backend labels these in English; translate off the
+          // stable reason key and fall back to whatever it sent.
+          var FR_LABELS = {
+            'scheduled exercise': 'Izsludinātas sabiedroto mācības',
+            'reassurance': 'Noliegums / nav draudu ietvars',
+            'speculation': 'Analīzes vai scenārija raksts',
+            'already alerted': 'Par šo stāstu jau brīdināts'
+          };
+          label.textContent = FR_LABELS[row.reason] || row.label || row.reason;
+          var count = document.createElement('span');
+          count.className = 'fr-count';
+          count.textContent = row.count;
+          li.appendChild(label);
+          li.appendChild(count);
+          list.appendChild(li);
+        });
+        var note = '' + fr.held_back_total + ' būtiski ieraksti apturēti ' + fr.scans + ' skenēšanās, no kurām ' + fr.alerting_scans + ' paaugstināja līmeni.';
+        if (fr.scans_before_tracking > 0) {
+          note += ' ' + '' + fr.scans_before_tracking + ' vecākas skenēšanas šajā logā notika pirms apturējumu reģistrēšanas un šajos skaitļos neietilpst.';
+        }
+        document.getElementById('fr-note').textContent = note;
+        frEl.hidden = false;
       }
 
       document.getElementById('stat-total').textContent = d.total_scans;

@@ -231,6 +231,14 @@
   .not-alert h3 { font-size: 0.95rem; margin: 0 0 10px; letter-spacing: 0.01em; }
   .not-alert ul { margin: 0; padding-left: 20px; }
   .not-alert li { margin: 6px 0; line-height: 1.55; }
+  .filter-record { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .filter-record h4 { font-size: 0.88rem; margin: 0 0 10px; font-weight: 600; }
+  .fr-window { opacity: 0.6; font-weight: 400; font-size: 0.8rem; }
+  .fr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .fr-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 0.85rem; }
+  .fr-list .fr-label { opacity: 0.85; }
+  .fr-list .fr-count { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .fr-note { margin: 10px 0 0; opacity: 0.7; font-size: 0.82rem; line-height: 1.5; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: 0.9rem; line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
@@ -506,10 +514,16 @@
     <div class="not-alert">
       <h3>Mida logitakse, kuid mis <em>ei</em> tõsta taset</h3>
       <ul>
+        <li><strong>Väljakuulutatud liitlaste õppused.</strong> NATO või Balti riigi enda sõjaväeõppus avaldatakse kaitseministeeriumi kalendris nädalaid ette &mdash; Namejs, Projecting Oak, Siil. See on piirkonna kõige etteaimatavam sündmus, seega logitakse see taustana, mitte ei saadeta hoiatusena. Vene ja Valgevene õppusi, näiteks Zapadit, <em>ei</em> käsitleta nii ning need tõstavad taset.</li>
         <li><strong>Rahustav teave.</strong> Lugu, mis teatab, et rünnakut ei tule (&bdquo;ametnikud ütlevad, et Venemaa ei valmista rünnakut ette&ldquo;), on asjakohane taust, kuid see ei ole hoiatus ja seda ei saadeta kunagi hoiatusena.</li>
         <li><strong>Stsenaariumid ja analüüs.</strong> Selgitav lugu sellest, milline rünnak võiks välja näha, või analüütik, kes ütleb, et Venemaa <em>võib</em> NATOt proovile panna, on arvamuslugu &mdash; mitte teade, et midagi juhtus.</li>
         <li><strong>Juba teatatud lood.</strong> Sama lugu uue lingi all ei anna kolme päeva jooksul uut häiret. Kui see hiljem saab sõltumatu kinnituse, siis see edasiminek siiski teavitab.</li>
       </ul>
+      <div class="filter-record" id="filter-record" hidden>
+        <h4>Mida filtrid tegelikult kinni pidasid <span class="fr-window mono" id="fr-window"></span></h4>
+        <ul class="fr-list mono" id="fr-list"></ul>
+        <p class="fr-note" id="fr-note"></p>
+      </div>
       <p class="na-why">Need kirjed jäävad skaneerimise registrisse taustana. Põhjus on lihtne: hoiatuskanal, mis annab häire rahustavate uudiste peale, õpetab inimesi seda eirama &mdash; ja siis eiratakse ka seda üht häiret, mis tegelikult loeb. Konkreetset teatatud intsidenti &mdash; kaabli katkestamist, drooni piiriületust &mdash; ei filtreerita kunagi sel viisil välja, isegi kui ametnikud selle tähtsust vähendavad.</p>
     </div>
   </div>
@@ -733,6 +747,42 @@
       if (typeof d.direct_feed_sources === 'number') {
         var dfEl = document.getElementById('direct-feed-count');
         if (dfEl) { dfEl.textContent = d.direct_feed_sources; }
+      }
+
+      // Rendered only when there is something real to show — see the
+      // English page for the reasoning.
+      var fr = d.filter_record;
+      if (fr && fr.held_back_total > 0 && Array.isArray(fr.held_back_by_reason)) {
+        var frEl = document.getElementById('filter-record');
+        document.getElementById('fr-window').textContent = 'viimased ' + fr.window_days + ' päeva';
+        var list = document.getElementById('fr-list');
+        list.innerHTML = '';
+        fr.held_back_by_reason.forEach(function (row) {
+          var li = document.createElement('li');
+          var label = document.createElement('span');
+          label.className = 'fr-label';
+          // The backend labels these in English; translate off the
+          // stable reason key and fall back to whatever it sent.
+          var FR_LABELS = {
+            'scheduled exercise': 'Väljakuulutatud liitlaste õppus',
+            'reassurance': 'Eitus / ohu puudumise raamistus',
+            'speculation': 'Analüüsi- või stsenaariumilugu',
+            'already alerted': 'Sama lugu on juba teavitatud'
+          };
+          label.textContent = FR_LABELS[row.reason] || row.label || row.reason;
+          var count = document.createElement('span');
+          count.className = 'fr-count';
+          count.textContent = row.count;
+          li.appendChild(label);
+          li.appendChild(count);
+          list.appendChild(li);
+        });
+        var note = '' + fr.held_back_total + ' asjakohast kirjet peeti kinni ' + fr.scans + ' skaneerimise jooksul, millest ' + fr.alerting_scans + ' tõstis taset.';
+        if (fr.scans_before_tracking > 0) {
+          note += ' ' + '' + fr.scans_before_tracking + ' vanemat skaneerimist selles aknas toimus enne kinnipidamiste registreerimist ega anna nendesse arvudesse panust.';
+        }
+        document.getElementById('fr-note').textContent = note;
+        frEl.hidden = false;
       }
 
       document.getElementById('stat-total').textContent = d.total_scans;

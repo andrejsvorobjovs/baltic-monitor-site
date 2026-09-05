@@ -232,6 +232,14 @@
   .not-alert h3 { font-size: 0.95rem; margin: 0 0 10px; letter-spacing: 0.01em; }
   .not-alert ul { margin: 0; padding-left: 20px; }
   .not-alert li { margin: 6px 0; line-height: 1.55; }
+  .filter-record { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .filter-record h4 { font-size: 0.88rem; margin: 0 0 10px; font-weight: 600; }
+  .fr-window { opacity: 0.6; font-weight: 400; font-size: 0.8rem; }
+  .fr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .fr-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 0.85rem; }
+  .fr-list .fr-label { opacity: 0.85; }
+  .fr-list .fr-count { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .fr-note { margin: 10px 0 0; opacity: 0.7; font-size: 0.82rem; line-height: 1.5; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: 0.9rem; line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
@@ -504,10 +512,16 @@
     <div class="not-alert">
       <h3>What is logged but does <em>not</em> raise the level</h3>
       <ul>
+        <li><strong>Announced allied exercises.</strong> A NATO or Baltic national exercise is published on a defence-ministry calendar weeks in advance &mdash; Namejs, Projecting Oak, Hedgehog. It is the most predictable event in the region, so it is logged as context rather than sent as a warning. Russian and Belarusian exercises, such as Zapad, are <em>not</em> treated this way and do raise the level.</li>
         <li><strong>Reassurance.</strong> A story reporting that no attack is coming (&ldquo;officials say Russia is not preparing an attack&rdquo;) is relevant context, but it is not a warning and is never sent as one.</li>
         <li><strong>Scenarios and analysis.</strong> An explainer imagining what an attack could look like, or an analyst saying Russia <em>might</em> test NATO, is a comment piece &mdash; not a report that something happened.</li>
         <li><strong>Stories already reported.</strong> The same story resurfacing under a new link does not alert again for three days. If it later gains independent corroboration, that upgrade does still alert.</li>
       </ul>
+      <div class="filter-record" id="filter-record" hidden>
+        <h4>What the filters actually held back <span class="fr-window mono" id="fr-window"></span></h4>
+        <ul class="fr-list mono" id="fr-list"></ul>
+        <p class="fr-note" id="fr-note"></p>
+      </div>
       <p class="na-why">These items still appear in the scan record, marked as context. The reason is simple: an alert channel that cries wolf for reassuring news trains people to ignore it, and then the one alert that matters gets ignored too. A concrete reported incident &mdash; a cable cut, a drone crossing a border &mdash; is never filtered out this way, even if officials are quoted downplaying it.</p>
     </div>
   </div>
@@ -711,6 +725,41 @@
       if (typeof d.direct_feed_sources === 'number') {
         var dfEl = document.getElementById('direct-feed-count');
         if (dfEl) { dfEl.textContent = d.direct_feed_sources; }
+      }
+
+      // What the framing filters held back over the last 30 days.
+      // Rendered only when there is something real to show: the field is
+      // absent on older status files, and for the first weeks after it
+      // shipped every scan in the window predates the tracking, so an
+      // empty panel would read as "the filters do nothing" when the truth
+      // is "not measured yet".
+      var fr = d.filter_record;
+      if (fr && fr.held_back_total > 0 && Array.isArray(fr.held_back_by_reason)) {
+        var frEl = document.getElementById('filter-record');
+        document.getElementById('fr-window').textContent =
+          'last ' + fr.window_days + ' days';
+        var list = document.getElementById('fr-list');
+        list.innerHTML = '';
+        fr.held_back_by_reason.forEach(function (row) {
+          var li = document.createElement('li');
+          var label = document.createElement('span');
+          label.className = 'fr-label';
+          label.textContent = row.label || row.reason;
+          var count = document.createElement('span');
+          count.className = 'fr-count';
+          count.textContent = row.count;
+          li.appendChild(label);
+          li.appendChild(count);
+          list.appendChild(li);
+        });
+        var note = fr.held_back_total + ' relevant item(s) held back across ' +
+          fr.scans + ' scan(s), of which ' + fr.alerting_scans + ' raised the level.';
+        if (fr.scans_before_tracking > 0) {
+          note += ' ' + fr.scans_before_tracking + ' older scan(s) in this window ran ' +
+            'before hold-backs were recorded and contribute nothing to these counts.';
+        }
+        document.getElementById('fr-note').textContent = note;
+        frEl.hidden = false;
       }
 
       document.getElementById('stat-total').textContent = d.total_scans;

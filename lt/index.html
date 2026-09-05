@@ -231,6 +231,14 @@
   .not-alert h3 { font-size: 0.95rem; margin: 0 0 10px; letter-spacing: 0.01em; }
   .not-alert ul { margin: 0; padding-left: 20px; }
   .not-alert li { margin: 6px 0; line-height: 1.55; }
+  .filter-record { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .filter-record h4 { font-size: 0.88rem; margin: 0 0 10px; font-weight: 600; }
+  .fr-window { opacity: 0.6; font-weight: 400; font-size: 0.8rem; }
+  .fr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .fr-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 0.85rem; }
+  .fr-list .fr-label { opacity: 0.85; }
+  .fr-list .fr-count { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .fr-note { margin: 10px 0 0; opacity: 0.7; font-size: 0.82rem; line-height: 1.5; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: 0.9rem; line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
@@ -506,10 +514,16 @@
     <div class="not-alert">
       <h3>Kas registruojama, bet <em>nekelia</em> lygio</h3>
       <ul>
+        <li><strong>Paskelbtos sąjungininkų pratybos.</strong> NATO ar Baltijos valstybės nacionalinės karinės pratybos skelbiamos krašto apsaugos ministerijos kalendoriuje savaitėmis iš anksto &mdash; Namejs, Projecting Oak, Geležinis Vilkas. Tai labiausiai nuspėjamas įvykis regione, todėl jis registruojamas kaip kontekstas, o ne siunčiamas kaip įspėjimas. Rusijos ir Baltarusijos pratybos, pavyzdžiui, Zapad, <em>nėra</em> taip traktuojamos ir kelia lygį.</li>
         <li><strong>Raminanti informacija.</strong> Pranešimas, kad išpuolio nebus (&bdquo;pareigūnai teigia, kad Rusija nerengia išpuolio&ldquo;), yra svarbus kontekstas, tačiau tai nėra įspėjimas ir niekada nesiunčiamas kaip įspėjimas.</li>
         <li><strong>Scenarijai ir analizė.</strong> Aiškinamasis straipsnis apie tai, kaip išpuolis galėtų atrodyti, arba analitikas, teigiantis, kad Rusija <em>gali</em> išbandyti NATO, yra nuomonės tekstas &mdash; o ne pranešimas, kad kažkas įvyko.</li>
         <li><strong>Jau praneštos istorijos.</strong> Ta pati istorija su nauja nuoroda tris dienas nesukelia pakartotinio įspėjimo. Jei ji vėliau sulaukia nepriklausomo patvirtinimo, apie tokį pokytį įspėjama.</li>
       </ul>
+      <div class="filter-record" id="filter-record" hidden>
+        <h4>Ką filtrai iš tikrųjų sulaikė <span class="fr-window mono" id="fr-window"></span></h4>
+        <ul class="fr-list mono" id="fr-list"></ul>
+        <p class="fr-note" id="fr-note"></p>
+      </div>
       <p class="na-why">Šie įrašai lieka nuskaitymo registre kaip kontekstas. Priežastis paprasta: įspėjimų kanalas, keliantis pavojaus signalą dėl raminančių naujienų, išmoko žmones jį ignoruoti &mdash; ir tada ignoruojamas ir tas vienas įspėjimas, kuris iš tikrųjų svarbus. Konkretus praneštas incidentas &mdash; perpjautas kabelis, sieną kertantis dronas &mdash; niekada taip neišfiltruojamas, net jei pareigūnai jo reikšmę menkina.</p>
     </div>
   </div>
@@ -746,6 +760,42 @@
       if (typeof d.direct_feed_sources === 'number') {
         var dfEl = document.getElementById('direct-feed-count');
         if (dfEl) { dfEl.textContent = d.direct_feed_sources; }
+      }
+
+      // Rendered only when there is something real to show — see the
+      // English page for the reasoning.
+      var fr = d.filter_record;
+      if (fr && fr.held_back_total > 0 && Array.isArray(fr.held_back_by_reason)) {
+        var frEl = document.getElementById('filter-record');
+        document.getElementById('fr-window').textContent = 'paskutinės ' + fr.window_days + ' dienos';
+        var list = document.getElementById('fr-list');
+        list.innerHTML = '';
+        fr.held_back_by_reason.forEach(function (row) {
+          var li = document.createElement('li');
+          var label = document.createElement('span');
+          label.className = 'fr-label';
+          // The backend labels these in English; translate off the
+          // stable reason key and fall back to whatever it sent.
+          var FR_LABELS = {
+            'scheduled exercise': 'Paskelbtos sąjungininkų pratybos',
+            'reassurance': 'Paneigimas / nėra grėsmės rėmas',
+            'speculation': 'Analizės ar scenarijaus tekstas',
+            'already alerted': 'Apie šią istoriją jau įspėta'
+          };
+          label.textContent = FR_LABELS[row.reason] || row.label || row.reason;
+          var count = document.createElement('span');
+          count.className = 'fr-count';
+          count.textContent = row.count;
+          li.appendChild(label);
+          li.appendChild(count);
+          list.appendChild(li);
+        });
+        var note = '' + fr.held_back_total + ' aktualių įrašų sulaikyta per ' + fr.scans + ' nuskaitymų, iš kurių ' + fr.alerting_scans + ' pakėlė lygį.';
+        if (fr.scans_before_tracking > 0) {
+          note += ' ' + '' + fr.scans_before_tracking + ' senesni nuskaitymai šiame lange vyko prieš pradedant registruoti sulaikymus ir į šiuos skaičius neįeina.';
+        }
+        document.getElementById('fr-note').textContent = note;
+        frEl.hidden = false;
       }
 
       document.getElementById('stat-total').textContent = d.total_scans;
