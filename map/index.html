@@ -54,7 +54,11 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
         integrity="sha256-Hk4dIpcqOSb0hZjgyvFOP+cEmDXUKKNE/tT542ZbNQg=" crossorigin=""></script>
 
-<meta name="theme-color" content="#10161f">
+<meta name="theme-color" content="#0B0F14">
+<link rel="preload" href="/fonts/IBMPlexSans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SourceSerif4-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts.css">
+
 <style>
   /* Single dark theme for everyone. The page used to follow each
      visitor's OS light/dark setting, so the same alert page looked
@@ -65,17 +69,21 @@
      too, otherwise those stay light and the page looks half-done. */
   :root {
     color-scheme: dark;
-    --ink: #10161f;
-    --ink-text: #e9edec;
-    --ink-dim: #8b93a3;
-    --border: #232b38;
-    --card: #161d29;
-    --accent: #4db8b0;
-    --accent-text: #0b1a19;
-    --ok: #5cc37c;
+
+    /* Type scale — see index.html for why this exists. */
+    --fs-2xs: 11px; --fs-xs: 11.5px; --fs-sm: 12.5px; --fs-md: 13.5px;
+    --fs-base: 15px; --fs-lg: 17px; --fs-xl: 20px; --fs-2xl: 24px; --fs-3xl: 26px;
+    --ink: #0B0F14;
+    --ink-text: #E7EDF3;
+    --ink-dim: #93A1AF;
+    --border: #1E2831;
+    --card: #111820;
+    --accent: #4E9DAE;
+    --accent-text: #08121A;
+    --ok: #57B37A;
     --watch: #d9a548;
-    --warn: #e07162;
-    --mono: #0d1420;
+    --warn: #E2685C;
+    --mono: #0A1017;
   }
 
   * { box-sizing: border-box; }
@@ -84,19 +92,19 @@
     margin: 0;
     background: var(--ink);
     color: var(--ink-text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-  .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif; }
-  .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-variant-numeric: tabular-nums; }
+  .serif { font-family: "Source Serif 4", "Iowan Old Style", Georgia, serif; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-variant-numeric: tabular-nums; }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
   a { color: var(--accent); }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
   header.site { border-bottom: 1px solid var(--border); padding: 18px 0; }
   header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-  .wordmark { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+  .wordmark { font-size: var(--fs-lg); font-weight: 600; letter-spacing: -0.01em; }
   .wordmark .serif { font-style: italic; }
   /* The wordmark is the way back to the top of the homepage — the shortcut
      every site has and this one did not. Keeps the header's own colour
@@ -106,19 +114,19 @@
   a.wordmark:hover { color: var(--accent); }
   a.wordmark:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
   nav.top { display: flex; gap: 24px; align-items: baseline; flex-wrap: wrap; }
-  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: 13.5px; letter-spacing: 0.02em; }
+  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: var(--fs-md); letter-spacing: 0.02em; }
   nav.top a:hover { color: var(--ink-text); }
   nav.top a.active { color: var(--ink-text); font-weight: 700; }
 
   main { padding: 40px 0 40px; }
   .eyebrow {
-    font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    font-size: var(--fs-sm); letter-spacing: 0.14em; text-transform: uppercase;
     color: var(--accent); font-weight: 600; margin: 0 0 12px;
   }
   h1 { font-size: clamp(26px, 4vw, 36px); margin: 0 0 14px; letter-spacing: -0.01em; }
-  h2 { font-size: 18px; margin: 40px 0 10px; }
-  p { color: var(--ink-dim); font-size: 15px; margin: 0 0 14px; max-width: 68ch; }
-  p.lede { color: var(--ink-text); font-size: 16.5px; max-width: 66ch; }
+  h2 { font-size: var(--fs-xl); margin: 40px 0 10px; }
+  p { color: var(--ink-dim); font-size: var(--fs-base); margin: 0 0 14px; max-width: 68ch; }
+  p.lede { color: var(--ink-text); font-size: var(--fs-lg); max-width: 66ch; }
 
   /* ---- Prominent honest caveat, same voice as every /ais /military
      /gpsjam /firms Telegram caveat this project already sends ---- */
@@ -126,7 +134,7 @@
     background: var(--mono); border: 1px solid var(--border); border-left: 3px solid var(--watch);
     border-radius: 4px; padding: 18px 22px; margin: 0 0 28px;
   }
-  .caveat-card p { margin: 0 0 8px; color: var(--ink-text); font-size: 14.5px; max-width: none; }
+  .caveat-card p { margin: 0 0 8px; color: var(--ink-text); font-size: var(--fs-base); max-width: none; }
   .caveat-card p:last-child { margin-bottom: 0; }
   .caveat-card strong { color: var(--warn); }
 
@@ -137,12 +145,12 @@
   }
   #map { height: min(70vh, 640px); min-height: 380px; width: 100%; background: var(--mono); }
   #map-note {
-    display: none; padding: 14px 18px; font-size: 13.5px; color: var(--ink-dim);
+    display: none; padding: 14px 18px; font-size: var(--fs-md); color: var(--ink-dim);
     border-top: 1px solid var(--border);
   }
   .map-meta {
     display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
-    padding: 10px 4px 0; font-size: 12.5px; color: var(--ink-dim);
+    padding: 10px 4px 0; font-size: var(--fs-sm); color: var(--ink-dim);
   }
 
   /* ---- Time scrubber ---- */
@@ -151,11 +159,11 @@
   .ts-row input[type="range"] { flex: 1; accent-color: var(--accent); min-width: 0; }
   .ts-row button {
     flex: none; border: 1px solid var(--border); background: var(--card); color: var(--ink-text);
-    border-radius: 4px; padding: 5px 10px; font-size: 13px; line-height: 1.2; cursor: pointer;
+    border-radius: 4px; padding: 5px 10px; font-size: var(--fs-md); line-height: 1.2; cursor: pointer;
   }
   .ts-row button:hover:not(:disabled) { background: var(--mono); }
   .ts-row button:disabled { opacity: 0.4; cursor: default; }
-  .ts-label { margin-top: 8px; font-size: 12.5px; color: var(--ink-dim); text-align: center; }
+  .ts-label { margin-top: 8px; font-size: var(--fs-sm); color: var(--ink-dim); text-align: center; }
 
   /* Leaflet control theming — the default light-only chrome would clash
      with dark mode otherwise. */
@@ -168,7 +176,7 @@
   .leaflet-control-layers-toggle { filter: invert(0.85); }
   .leaflet-bar a { background: var(--card) !important; color: var(--ink-text) !important; border-bottom: 1px solid var(--border) !important; }
   .leaflet-bar a:hover { background: var(--mono) !important; }
-  .leaflet-popup-content { color: var(--ink-text); font-size: 13px; margin: 10px 14px; }
+  .leaflet-popup-content { color: var(--ink-text); font-size: var(--fs-md); margin: 10px 14px; }
   .leaflet-popup-content b { color: var(--ink-text); }
   .leaflet-control-attribution { background: color-mix(in srgb, var(--card) 85%, transparent) !important; color: var(--ink-dim) !important; }
   .leaflet-control-attribution a { color: var(--ink-dim) !important; }
@@ -178,12 +186,12 @@
      JS somehow fails to add the Leaflet layer control) ---- */
   .legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 18px 0 0; }
   .legend-item {
-    display: flex; align-items: center; gap: 10px; font-size: 13.5px;
+    display: flex; align-items: center; gap: 10px; font-size: var(--fs-md);
     border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; background: var(--mono);
   }
   .legend-swatch {
     width: 20px; height: 20px; border-radius: 50%; flex: none;
-    display: flex; align-items: center; justify-content: center; font-size: 11px;
+    display: flex; align-items: center; justify-content: center; font-size: var(--fs-2xs);
   }
   .legend-swatch.line { border-radius: 0; width: 22px; height: 0; border-top: 2px dashed var(--legend-cable, #9a8fb0); }
 
@@ -191,14 +199,14 @@
   .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
   @media (max-width: 700px) { .panels { grid-template-columns: 1fr; } }
   .panel { border-left: 2px solid var(--accent); padding: 4px 0 4px 20px; }
-  .panel h3 { margin: 0 0 8px; font-size: 15px; letter-spacing: 0.02em; }
-  .panel p { margin: 0; color: var(--ink-dim); font-size: 14.5px; max-width: none; }
+  .panel h3 { margin: 0 0 8px; font-size: var(--fs-base); letter-spacing: 0.02em; }
+  .panel p { margin: 0; color: var(--ink-dim); font-size: var(--fs-base); max-width: none; }
 
-  .back { display: inline-block; margin-top: 8px; font-size: 14px; }
+  .back { display: inline-block; margin-top: 8px; font-size: var(--fs-base); }
 
   footer { padding: 32px 0 64px; border-top: 1px solid var(--border); margin-top: 40px; }
-  footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
-  footer .fine { margin-top: 12px; font-size: 12px; }
+  footer p { color: var(--ink-dim); font-size: var(--fs-md); max-width: 60ch; }
+  footer .fine { margin-top: 12px; font-size: var(--fs-sm); }
 </style>
 </head>
 <body>
