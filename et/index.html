@@ -52,20 +52,15 @@
 }
 </script>
 <style>
+  /* Single dark theme for everyone. The page used to follow each
+     visitor's OS light/dark setting, so the same alert page looked
+     different on different phones and screenshots of it did not
+     match. One look, no options.
+     color-scheme tells the browser to render its own furniture --
+     scrollbars, form controls, the address bar on mobile -- dark
+     too, otherwise those stay light and the page looks half-done. */
   :root {
-    --ink: #f1f3f2;
-    --ink-text: #1b2230;
-    --ink-dim: #5b6472;
-    --border: #d9dcd8;
-    --card: #ffffff;
-    --accent: #1f7570;
-    --accent-text: #ffffff;
-    --ok: #2f7d46;
-    --watch: #8b5f20;
-    --warn: #a4433a;
-    --mono: #eef1ef;
-  }
-  :root[data-theme="dark"] {
+    color-scheme: dark;
     --ink: #10161f;
     --ink-text: #e9edec;
     --ink-dim: #8b93a3;
@@ -77,21 +72,6 @@
     --watch: #d9a548;
     --warn: #e07162;
     --mono: #0d1420;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --ink: #10161f;
-      --ink-text: #e9edec;
-      --ink-dim: #8b93a3;
-      --border: #232b38;
-      --card: #161d29;
-      --accent: #4db8b0;
-      --accent-text: #0b1a19;
-      --ok: #5cc37c;
-      --watch: #d9a548;
-      --warn: #e07162;
-      --mono: #0d1420;
-    }
   }
 
   * { box-sizing: border-box; }
