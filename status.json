@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-06T11:55:38.285807+00:00",
+  "last_run_utc": "2026-09-06T14:23:40.156511+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 330,
-  "quiet_count": 262,
+  "total_scans": 331,
+  "quiet_count": 263,
   "watch_count": 67,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-06 11:55 UTC",
+  "generated_at": "2026-09-06 14:23 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-06T14:23:40.238036+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 99,
+      "stale_count": 0,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-06T11:55:38.297450+00:00",
       "level": "QUIET",
@@ -354,35 +368,6 @@
       "stale_count": 2,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-03T16:39:35.812032+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 22,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 77,
-      "stale_count": 0,
-      "alert_id": "0903-1639",
-      "items": [
-        {
-          "title": "Saksa droonijuhtumis kahtlustatav L\u00e4ti kodanik elas aastaid Venemaal",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610127757/saksa-droonijuhtumis-kahtlustatav-lati-kodanik-elas-aastaid-venemaal",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -640,6 +625,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-09-06T12:03:40+00:00",
+      "title": "This page will tell you if it ever stops being updated",
+      "text": "A monitoring page that quietly dies is more dangerous than one that misses an alert: it keeps showing a calm green status, and you read that as an all-clear when in truth nothing is being checked at all. This page now works out its own age in your browser \u2014 not on the server, because a server that has stopped cannot tell you it has stopped. If scans stop arriving you will see a warning at the top of the page, the status will read \u201cnot updating\u201d instead of \u201coperating normally\u201d, and the last result will be labelled as the last known one rather than the current one. If it says nothing, the data really is fresh. Do not ever treat the absence of alerts as an all-clear without checking that."
+    },
+    {
       "ts": "2026-09-06T11:24:28+00:00",
       "title": "Every alert now carries an id you can check it by",
       "text": "The accuracy figure published here is only worth something if you can check it. Each alert on this page now shows the short id it was judged under, so a verdict can be tied to the exact alert it graded rather than taken on trust \u2014 find the id, read the evidence published with it, and disagree if you think it was wrong. The id is derived from the alert's own timestamp and carries no new information; it exists purely so the record is auditable. Alerts sent before judging existed are covered too, so no part of the record is left ungradeable."
@@ -783,11 +773,6 @@
       "ts": "2026-08-21T18:01:22.124810+00:00",
       "title": "Fixed: a flagged story could link straight to a Russian state-media site",
       "text": "GDELT-sourced items used their raw source URL as the public link, which could point directly at a Russian state-media/government domain -- untrustworthy for anyone tapping through from a browser notification. Now routed to a neutral page instead; the story is still tracked and cited by name."
-    },
-    {
-      "ts": "2026-08-21T17:43:34.264086+00:00",
-      "title": "Fixed: syndicated duplicates still showing in Recent flagged items",
-      "text": "Same article text under different outlet names (\"...- Inbox.lv\" vs \"...- LA.LV\") wasn't caught by the earlier title dedup since the outlet suffix differed. Now strips it before comparing."
     }
   ],
   "entsoe_outage_count": 0,
@@ -800,7 +785,7 @@
     "alerting_scans": 51,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 192
+    "scans_before_tracking": 191
   },
   "alert_accuracy": {
     "window_days": 90,
