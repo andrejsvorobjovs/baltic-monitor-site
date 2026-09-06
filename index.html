@@ -985,6 +985,15 @@
           if (h.stale_count) {
             detailParts.push(h.stale_count + ' stale item(s) excluded');
           }
+          // The id this alert's verdict is recorded under. Shown so the
+          // published accuracy figure can be checked rather than taken on
+          // trust: find the id, read the evidence listed below it, and
+          // disagree if you think the verdict was wrong. Derived from the
+          // timestamp already shown, so it reveals nothing new. Absent on a
+          // QUIET scan, which is never judged.
+          if (h.alert_id) {
+            detailParts.push('alert id ' + h.alert_id);
+          }
           detail.textContent = detailParts.join(' · ');
           row.appendChild(detail);
 
