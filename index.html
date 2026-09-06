@@ -271,6 +271,13 @@
   .fr-list .fr-label { opacity: 0.85; }
   .fr-list .fr-count { font-variant-numeric: tabular-nums; font-weight: 600; }
   .fr-note { margin: 10px 0 0; opacity: 0.7; font-size: var(--fs-sm); line-height: 1.5; }
+  .accuracy { margin-top: 16px; padding: 14px 16px; border: 1px solid var(--border);
+    border-left-width: 3px; border-left-color: var(--accent); border-radius: 4px; }
+  .accuracy h4 { font-size: var(--fs-base); margin: 0 0 8px; font-weight: 600; }
+  .accuracy .acc-figure { font-size: var(--fs-3xl); font-weight: 700; line-height: 1.1;
+    font-variant-numeric: tabular-nums; }
+  .accuracy .acc-line { margin: 6px 0 0; font-size: var(--fs-md); color: var(--ink-dim); }
+  .accuracy .acc-caveat { margin: 10px 0 0; font-size: var(--fs-sm); opacity: 0.72; line-height: 1.55; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: var(--fs-base); line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
@@ -590,6 +597,12 @@
         <li><strong>Scenarios and analysis.</strong> An explainer imagining what an attack could look like, or an analyst saying Russia <em>might</em> test NATO, is a comment piece &mdash; not a report that something happened.</li>
         <li><strong>Stories already reported.</strong> The same story resurfacing under a new link does not alert again for three days. If it later gains independent corroboration, that upgrade does still alert.</li>
       </ul>
+      <div class="accuracy" id="accuracy" hidden>
+        <h4>Were the alerts right?</h4>
+        <p class="acc-figure mono" id="acc-figure"></p>
+        <p class="acc-line" id="acc-line"></p>
+        <p class="acc-caveat">Judged one by one by the project's operator — not an independent audit. The number is worth something only because every judgement is attached to an alert that was published at the time: the channel history is open, and you are free to disagree with any of them.</p>
+      </div>
       <div class="filter-record" id="filter-record" hidden>
         <h4>What the filters actually held back <span class="fr-window mono" id="fr-window"></span></h4>
         <ul class="fr-list mono" id="fr-list"></ul>
@@ -806,6 +819,31 @@
       // shipped every scan in the window predates the tracking, so an
       // empty panel would read as "the filters do nothing" when the truth
       // is "not measured yet".
+      // Were the alerts right? Deliberately renders the sample size and
+      // the unjudged count next to the figure — a precision number taken
+      // only from the alerts someone bothered to judge, with the rest
+      // dropped, is exactly the sort of number this project should not
+      // publish. Hidden entirely until at least one alert is judged.
+      var acc = d.alert_accuracy;
+      if (acc && acc.judged > 0) {
+        var accEl = document.getElementById('accuracy');
+        var fig = document.getElementById('acc-figure');
+        var line = document.getElementById('acc-line');
+        if (acc.precision_pct === null || acc.precision_pct === undefined) {
+          fig.textContent = acc.judged + ' / ' + acc.alerts;
+          line.textContent = 'Not enough judged yet to put a percentage on it. {judged} of {alerts} alerts judged so far; a figure appears at {min}.'
+            .replace('{judged}', acc.judged).replace('{alerts}', acc.alerts)
+            .replace('{min}', acc.min_sample);
+        } else {
+          fig.textContent = acc.precision_pct + '%';
+          line.textContent = '{pct}% of judged alerts were real signals — {genuine} genuine, {noise} noise, out of {alerts} alerts in the last {days} days. {unjudged} not yet judged.'
+            .replace('{pct}', acc.precision_pct).replace('{genuine}', acc.genuine)
+            .replace('{noise}', acc.noise).replace('{alerts}', acc.alerts)
+            .replace('{days}', acc.window_days).replace('{unjudged}', acc.unjudged);
+        }
+        accEl.hidden = false;
+      }
+
       var fr = d.filter_record;
       if (fr && fr.held_back_total > 0 && Array.isArray(fr.held_back_by_reason)) {
         var frEl = document.getElementById('filter-record');
