@@ -347,6 +347,47 @@
   footer { padding: 40px 0 64px; }
   footer p { color: var(--ink-dim); font-size: 13px; max-width: 60ch; }
   footer .fine { margin-top: 16px; font-size: 12px; }
+  /* ---- Desktop layout ----------------------------------------------
+     The page was a single 900px column at every width, so a 1440px
+     screen showed ~270px of dead margin on each side and the same
+     phone-shaped stack squeezed down the middle. Everything in this
+     block only applies from tablet-landscape up; the phone layout is
+     deliberately untouched, since that part already worked.
+     Prose still has its own max-width in ch further down, so widening
+     the container does not stretch reading lines past comfort. */
+  @media (min-width: 1024px) {
+    .wrap { max-width: 1140px; }
+    .hero { padding: 88px 0 64px; }
+    /* More room for the headline column; the readout stays a sidebar
+       rather than a stranded card in open space. */
+    .hero .grid { grid-template-columns: 1.3fr 0.9fr; gap: 56px; }
+    /* The status readout is short and the hero is tall, so it used to
+       leave a large empty block beneath it. Sticking it means it stays
+       with you while reading the top of the page — which is the one
+       thing a visitor actually came to check. */
+    .hero .readout { position: sticky; top: 24px; }
+    /* Nine stacked charts is a phone pattern. They are SVG with a
+       viewBox, so they scale into narrower columns cleanly. */
+    .charts-wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 26px 32px; align-items: start;
+    }
+    .charts-wrap > .range-selector { grid-column: 1 / -1; }
+    .chart-block { margin-top: 0; }
+    /* The eyebrow column was 1fr of a 1fr/2fr grid, which at this width
+       is ~400px holding two words — the "both sides empty" effect the
+       wider container was supposed to fix. Fixed narrow label column,
+       content takes the rest. */
+    .sec-head { grid-template-columns: 210px 1fr; gap: 40px; }
+    .sec-head p { max-width: 68ch; }
+    /* Same idea in the hero: the lede stopped well short of the readout
+       and left a visible hole between them. */
+    .hero p.lede { max-width: 60ch; }
+  }
+  @media (min-width: 1400px) {
+    .wrap { max-width: 1260px; }
+    .hero .grid { gap: 72px; }
+  }
 </style>
 </head>
 <body>
