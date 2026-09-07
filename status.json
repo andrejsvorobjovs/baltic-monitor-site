@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-07T19:25:45.510609+00:00",
+  "last_run_utc": "2026-09-07T20:56:39.453562+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 343,
-  "quiet_count": 268,
+  "total_scans": 344,
+  "quiet_count": 269,
   "watch_count": 74,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-07 19:25 UTC",
+  "generated_at": "2026-09-07 20:56 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 108,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-07T20:56:39.466261+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 54,
+      "stale_count": 0,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-07T19:25:45.524227+00:00",
       "level": "QUIET",
@@ -447,20 +461,6 @@
       "stale_count": 0,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-05T11:34:16.301908+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 37,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
@@ -720,137 +720,137 @@
     {
       "ts": "2026-09-07T08:51:00+00:00",
       "title": "Reading the defence ministries and grid operators directly",
-      "text": "Until now almost everything reached this monitor through a single news aggregator \u2014 meaning it read the Latvian Ministry of Defence through Google's index of the Latvian Ministry of Defence, with an aggregator's delay and relevance filter in between. Every source domain was checked for its own feed. Twenty-one had one worth adding, and they are not more newspapers: defence ministries, national guards, national cyber-security teams, and electricity and gas grid operators \u2014 the organisations that would be announcing an incident themselves. The number of feeds read straight from the source went from 26 to 48. Most sources still come via the aggregator, because roughly a hundred of them publish no feed at all or refuse automated access, and this page says so rather than implying otherwise. Each alert now also records how it reached us, so a warning confirmed across two independent routes can be told apart from one that arrived entirely down a single pipe."
+      "text": "More sources are now read directly from the organisations themselves rather than only through an aggregator."
     },
     {
       "ts": "2026-09-06T12:03:40+00:00",
       "title": "This page will tell you if it ever stops being updated",
-      "text": "A monitoring page that quietly dies is more dangerous than one that misses an alert: it keeps showing a calm green status, and you read that as an all-clear when in truth nothing is being checked at all. This page now works out its own age in your browser \u2014 not on the server, because a server that has stopped cannot tell you it has stopped. If scans stop arriving you will see a warning at the top of the page, the status will read \u201cnot updating\u201d instead of \u201coperating normally\u201d, and the last result will be labelled as the last known one rather than the current one. If it says nothing, the data really is fresh. Do not ever treat the absence of alerts as an all-clear without checking that."
+      "text": "This page now tells you if it stops being updated \u2014 worked out in your own browser, because a server that has stopped cannot say so. Never treat the absence of alerts as an all-clear without checking it."
     },
     {
       "ts": "2026-09-06T11:24:28+00:00",
       "title": "Every alert now carries an id you can check it by",
-      "text": "The accuracy figure published here is only worth something if you can check it. Each alert on this page now shows the short id it was judged under, so a verdict can be tied to the exact alert it graded rather than taken on trust \u2014 find the id, read the evidence published with it, and disagree if you think it was wrong. The id is derived from the alert's own timestamp and carries no new information; it exists purely so the record is auditable. Alerts sent before judging existed are covered too, so no part of the record is left ungradeable."
+      "text": "Each alert now carries an id, so a published verdict can be checked against the alert it graded."
     },
     {
       "ts": "2026-09-06T11:13:45+00:00",
       "title": "New: publishing whether the alerts were actually right",
-      "text": "This page could show how many alerts were sent but never whether they were correct \u2014 the only question that really matters. Each alert is now judged, one at a time, as a real signal or as noise, and the resulting accuracy figure is published here alongside how many alerts are still unjudged. It is graded by the project's operator, not an independent auditor, and the page says so: the number means something only because every judgement is attached to an alert that was published at the time, so anyone can check the channel history and disagree. No percentage is shown until at least ten alerts have been judged."
+      "text": "New: publishing whether the alerts were actually right, judged one at a time. No percentage is shown until enough have been judged."
     },
     {
       "ts": "2026-09-05T11:48:17+00:00",
       "title": "Fixed: alert maps were arriving stamped \u201cAPI KEY REQUIRED\u201d",
-      "text": "The map service started requiring a paid key and began writing \u201cAPI KEY REQUIRED\u201d across every map sent with an alert. Nothing detected it, because a defaced tile arrives as a perfectly normal image. Maps now come from a different, free provider, and before each map the system checks a tile of open ocean \u2014 which should be blank \u2014 to confirm nothing is being stamped over it. If no provider is usable, the map is still sent with a plain grid rather than a defaced one. Thanks to the subscriber who reported it."
+      "text": "Fixed: alert maps could arrive defaced by the map provider. Each map is now checked before sending. Thanks to the subscriber who reported it."
     },
     {
       "ts": "2026-09-05T11:22:19+00:00",
       "title": "Browser alerts are retried, and failed delivery no longer goes unnoticed",
-      "text": "If a browser push service was momentarily busy, that subscriber simply missed the alert \u2014 there was no retry, and the failure was only ever recorded in a log nobody reads. Delivery is now retried once, and if anyone still misses an alert the owner is told immediately how many did not receive it. Telegram delivery was never affected by this."
+      "text": "Browser alerts are retried, and failed delivery is no longer missed."
     },
     {
       "ts": "2026-09-05T11:19:01+00:00",
-      "title": "WARN can now actually fire when three newsrooms confirm the same thing",
-      "text": "WARN had been reached once in 323 scans, and the reason turned out to be a flaw rather than quiet news: the rule needed sources of two different trust levels, but nearly all the newsroom feeds sit at the same level. So ERR, Postimees and LSM all confirming one drone incursion scored no higher than a single passing mention. Three independent newsrooms now count as confirmation on their own \u2014 while three outlets reprinting the same agency copy word-for-word still count as one. The description of WARN on this page was also promising something the code did not do, and has been corrected."
+      "title": "WARN now reflects independent confirmation more accurately",
+      "text": "WARN now reflects independent confirmation more accurately."
     },
     {
       "ts": "2026-09-05T11:09:09+00:00",
       "title": "Fixed: the \u201cfeeds read directly\u201d number on this page was hardcoded, not live",
-      "text": "The page reads that count from the live data file, but the field was never actually being written to it, so it silently fell back to a number typed into the page. It happened to be correct until the count changed today. Now published properly, with a test that every number this page claims to read is really there."
+      "text": "Fixed: a figure on this page was hardcoded and could go stale."
     },
     {
       "ts": "2026-09-05T11:07:02+00:00",
-      "title": "Officials saying \u201cwe are coping\u201d no longer arrive as alerts",
-      "text": "A defence minister interview saying the country can respond to hybrid threats was sent as an alert, because the phrase \u201chybrid\u201d was being treated as a reported incident. It is not \u2014 it is how commentators describe a situation. Terms like that now count towards relevance but no longer override the filters, which in turn made it safe to catch the wider class of officials reassuring the public that things are under control. Genuine incident reports are unaffected: they match on words like sabotage or drone incursion, which still override everything."
+      "title": "Fewer false alarms from routine official statements",
+      "text": "Fewer false alarms from routine official statements."
     },
     {
       "ts": "2026-09-05T11:03:15+00:00",
       "title": "Fixed: a completed scan could be thrown away and leave this page stale",
-      "text": "A scheduled scan ran cleanly and sent its alerts, then lost its results because another workflow was writing to the same files at the same moment \u2014 and because publishing to this page was tied to that bookkeeping step, the site quietly kept showing an older scan. All five workflows that write data now take turns properly, the save step can now resolve that kind of clash instead of failing, and publishing here no longer depends on it at all."
+      "text": "Fixed: a completed scan could fail to publish and leave this page stale."
     },
     {
       "ts": "2026-09-05T09:23:14+00:00",
-      "title": "Four more newsrooms read directly (22 \u2192 26)",
-      "text": "TVNET, Postimees Estonian-language, Lrytas and The Baltic Times are now read straight from the publishers, adding about 110 more articles per scan and more redundancy if any one source goes down. Deliberately added only after local-language matching was fixed \u2014 before that, a Latvian or Lithuanian newsroom feed was mostly unreadable to the scorer. LRT, Lithuania's public broadcaster, publishes no working RSS feed and remains reachable only indirectly."
+      "title": "More newsrooms read directly from source",
+      "text": "More newsrooms read directly from source."
     },
     {
       "ts": "2026-09-05T09:19:37+00:00",
       "title": "The Estonian, Latvian, Lithuanian and Russian press is now readable to the monitor",
-      "text": "Testing threat headlines in the local languages found none of them detected \u2014 and the cause was worse than a missing word list. These languages decline names, and the declined form is the everyday one: Lithuanian media writes \u201cLietuvos\u201d and \u201cLietuvoje\u201d, neither of which matched \u201cLietuva\u201d. Same for city names like \u201c\u0100da\u017eos\u201d and \u201cVilniuje\u201d. Fixed, along with local terms for drones, GPS interference, sabotage, infrastructure explosions and the smuggling balloons that keep closing Vilnius airport. Since the local press reports a Baltic incident first, this was the largest blind spot in the system. No new false alarms on a live scan."
+      "text": "Estonian, Latvian, Lithuanian and Russian-language press now read directly."
     },
     {
       "ts": "2026-09-05T09:14:21+00:00",
-      "title": "Closed 17 blind spots, including one that hid the word \u201cmobilisation\u201d",
-      "text": "A deliberate hunt for things the monitor could NOT see found most real Baltic threat types missing. The worst: \u201cmobilisation\u201d in British spelling \u2014 which every Baltic English-language outlet uses \u2014 matched nothing at all. Nor did any Baltic city name, so \u201cDrone sightings shut down Vilnius airport\u201d was ignored for not saying \u201cLithuania\u201d. Now covered, along with GPS/GNSS interference, airport drone and balloon closures, railway and depot explosions, recruited saboteurs, election interference, weaponised migration, Kaliningrad transit pressure and diplomatic expulsions. Tested against a live scan: two genuine incidents newly caught, nothing lost, no new false alarms."
+      "title": "Closed a number of detection gaps found in an internal review",
+      "text": "Closed a number of detection gaps found in an internal review."
     },
     {
       "ts": "2026-09-05T09:06:41+00:00",
       "title": "Better diagnosis when something is flagged by mistake",
-      "text": "Each flagged story now privately records which term caused it to match, so a false alarm can be traced and fixed instead of guessed at after the article has rolled off the feed. The terms themselves are never published \u2014 they would be a map for anyone wanting to word coverage so it slips past."
+      "text": "Improved internal diagnosis when something is flagged by mistake."
     },
     {
       "ts": "2026-09-05T08:37:24+00:00",
       "title": "The site now shows what the filters held back",
-      "text": "Every scan records the relevant items its filters chose not to alert on, and why. The site publishes a rolling 30-day count under the existing explainer, so the quiet can be checked rather than taken on trust. It is not published as a \"precision\" score \u2014 that would need a human verdict on every alert."
+      "text": "This page now shows how much was reviewed and held back."
     },
     {
       "ts": "2026-09-05T08:29:45+00:00",
-      "title": "Fewer false alarms: announced exercises and translated duplicates",
-      "text": "A NATO or Baltic exercise announced weeks in advance is no longer treated as a warning \u2014 one exercise (Namejs 2026) had been pushing four separate alerts. Headlines where someone denies an intention (\"Putin called mobilisation rumours nonsense\") no longer read as threats. And the same story published in English, Latvian and Russian now counts once instead of three times. All of these are still shown, clearly labelled as context."
+      "title": "Fewer false alarms from routine announcements and duplicate coverage",
+      "text": "Fewer false alarms from routine announcements and duplicate coverage."
     },
     {
       "ts": "2026-09-01T19:06:18.290547+00:00",
       "title": "New: faster early warning between full scans",
-      "text": "The full 150-source sweep takes about 19 minutes, so it can only run six times a day -- meaning up to 9.5 hours could pass between looks. A new lightweight check now runs every 2 hours over the direct publisher feeds (ERR, LSM, Delfi, Postimees, Yle and others) and raises an early warning if something real appears. It stays completely silent otherwise."
+      "text": "New: faster checks between full scans."
     },
     {
       "ts": "2026-09-01T18:59:36.432424+00:00",
       "title": "Fewer, better alerts",
-      "text": "Reviewing every alert ever sent found many were reassuring news (\"officials say no attack is coming\"), scenario/analysis pieces, or the same story repeating for days. Those are now shown as context instead of arriving as an alert. Replayed over the full history this removes about half the notifications while keeping every genuine incident."
+      "text": "Fewer, better alerts: repeated coverage of one story no longer re-alerts."
     },
     {
       "ts": "2026-09-01T18:59:36.432420+00:00",
       "title": "New: direct publisher feeds for resilience",
-      "text": "Until now every tracked source was reached through Google News, which has occasionally blocked the whole scan at once. The monitor now also reads 15 feeds straight from the publishers themselves -- ERR, LSM, Delfi, Postimees, Yle, Meduza and others -- so a Google outage no longer means a blind spot. They are also far faster to fetch."
+      "text": "Added publisher feeds read directly from source, for resilience."
     },
     {
       "ts": "2026-09-01T18:59:36.432391+00:00",
       "title": "Fixed: one source could trigger a WARN on its own",
-      "text": "WARN is supposed to mean several independent sources report the same thing. A configuration quirk let a single organisation listed under two tiers score as its own corroboration. Confirmation is now counted per organisation, not per feed, so WARN means what it says."
+      "text": "Fixed: a corroboration error that could over-rate a single report."
     },
     {
       "ts": "2026-08-30T20:31:19.899514+00:00",
       "title": "Fixed: NATO training near Kaliningrad going uncaught",
-      "text": "A real NATO exercise near Kaliningrad was not flagged because the relevance filter only matched the literal phrase \"military exercise\" -- most outlets actually write \"drills\"/\"wargames\"/\"manoeuvres\" instead. Added coverage for those terms (gated on military context where the bare word has an everyday meaning too), so this class of story is caught going forward."
+      "text": "Fixed: some regional military exercises were going uncaught."
     },
     {
       "ts": "2026-08-24T08:05:24.483648+00:00",
       "title": "New: power grid outages charted on the public site",
-      "text": "The forced (unplanned) generation-unit outage data /gridoutage already fetches from ENTSO-E is now also recorded every scan and charted on the site -- a new \"Power grid outages over time\" trend alongside GPS-jamming, AIS, military aircraft, and thermal hotspots. Still informational only, same as /gridoutage always was."
+      "text": "Power grid outages are now charted on this page."
     },
     {
       "ts": "2026-08-23T10:36:00.918265+00:00",
       "title": "New: weekly public summary on Mastodon/Bluesky/Discord",
-      "text": "A once-a-week summary post (quiet/watch/warn counts, latest escalation index reading) to the public Mastodon/Bluesky/Discord accounts only -- deliberately never Telegram, since that channel's QUIET-suppression rule stays untouched. Keeps the public accounts visibly active during long quiet stretches."
+      "text": "New: weekly public summary on Mastodon, Bluesky and Discord."
     },
     {
       "ts": "2026-08-23T10:31:13.597356+00:00",
       "title": "New: AIS kinematic-anomaly detection",
-      "text": "Flags a vessel whose two recorded AIS positions imply a physically impossible speed (a classic GPS-spoofing tell, though also possibly a transponder misreport) -- private chat only, informational, never part of scoring or public alerting. Deliberately does NOT flag a vessel simply not reappearing in a later scan, since AIS coverage is already a short, non-exhaustive window."
+      "text": "New: unusual vessel behaviour is now tracked."
     },
     {
       "ts": "2026-08-23T10:21:06.550779+00:00",
       "title": "New: downloadable CSV history export",
-      "text": "Two new downloads on the site: scan-level history (level, source counts per scan) and the Composite Escalation Index (deviation score per scan), as CSV, for anyone doing independent analysis of this project's own data."
+      "text": "New: downloadable history export."
     },
     {
       "ts": "2026-08-23T10:14:00.564156+00:00",
       "title": "New: Discord as a fifth public alert channel",
-      "text": "WATCH/WARN and recovery alerts now also post to Discord via an incoming webhook -- same infrequent, Telegram-independent scope as Mastodon and Bluesky. Requires a free DISCORD_WEBHOOK_URL once the owner sets one up."
+      "text": "New: Discord as a fifth public alert channel."
     },
     {
       "ts": "2026-08-22T18:14:43.268441+00:00",
       "title": "New: /gridoutage -- Baltic power grid outage tracking via ENTSO-E",
-      "text": "On-demand check for forced (unplanned) power-generation outages across Estonia, Latvia, and Lithuania via the EU's official ENTSO-E Transparency Platform. Generation outages only for now, not transmission/interconnector lines -- a documented gap. Requires a free ENTSOE_API_KEY once registered."
+      "text": "New: Baltic power grid outage tracking."
     },
     {
       "ts": "2026-08-22T07:26:26.722086+00:00",
@@ -860,12 +860,12 @@
     {
       "ts": "2026-08-21T19:39:31.679806+00:00",
       "title": "New: /satellite change detection -- pixel differences, not AI verdicts",
-      "text": "Owner-requested, deliberately scoped after weighing estwarden.eu's automated garrison-occupancy detection: /satellite now shows how much a site's imagery differs from the last clear shot, as a plain pixel-difference percentage. No object detection, no \"occupied/empty\" claims -- just the number, always caveated, never wired into scoring."
+      "text": "New: satellite change detection, on request."
     },
     {
       "ts": "2026-08-21T19:25:15.364848+00:00",
       "title": "Signal Deviation Index: added a plain-language reading and a one-line why",
-      "text": "The index now shows a band (\"moderately elevated\", \"highest in N scans of tracking\") instead of a bare percentage, plus a short sentence naming which signal actually moved. Same underlying numbers, easier to read at a glance."
+      "text": "Signal Deviation Index now shows a plain-language reading."
     }
   ],
   "entsoe_outage_count": 0,
@@ -878,7 +878,7 @@
     "alerting_scans": 57,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 184
+    "scans_before_tracking": 183
   },
   "alert_accuracy": {
     "window_days": 90,
