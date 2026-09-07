@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-07T08:29:01.783500+00:00",
+  "last_run_utc": "2026-09-07T09:11:05.009047+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 337,
+  "total_scans": 338,
   "quiet_count": 266,
-  "watch_count": 70,
+  "watch_count": 71,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-07 08:29 UTC",
+  "generated_at": "2026-09-07 09:11 UTC",
   "total_sources": 152,
   "tier1_sources": 32,
   "tier2_sources": 107,
   "tier3_sources": 13,
   "recent_history": [
+    {
+      "ts": "2026-09-07T09:11:05.020378+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 354,
+      "stale_count": 7,
+      "alert_id": "0907-0911",
+      "items": [
+        {
+          "title": "\u041d\u043e\u0432\u044b\u0439 \u043c\u0435\u0442\u043e\u0434 \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u043e\u0439 \u0432\u043e\u0439\u043d\u044b? \u0418\u0437 \u0411\u0435\u043b\u0430\u0440\u0443\u0441\u0438 \u2014 \u0437\u0430\u044f\u0432\u043b\u0435\u043d\u0438\u044f, \u0432 \u041b\u0430\u0442\u0432\u0438\u0438 \u2014 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u0438 \u0441\u0443\u0434\u044b",
+          "source": "LSM Russian-language",
+          "link": "https://rus.lsm.lv/statja/novosti/obschestvo/07.09.2026-novyi-metod-gibridnoi-voiny-iz-belarusi-zayavleniya-v-latvii-proverki-i-sudy.a661954/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-07T08:29:01.795217+00:00",
       "level": "WATCH",
@@ -413,23 +443,25 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-04T18:36:00.214779+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 122,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-07T09:11:05.435773+00:00",
+      "level": "WATCH",
+      "title": "\u041d\u043e\u0432\u044b\u0439 \u043c\u0435\u0442\u043e\u0434 \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u043e\u0439 \u0432\u043e\u0439\u043d\u044b? \u0418\u0437 \u0411\u0435\u043b\u0430\u0440\u0443\u0441\u0438 \u2014 \u0437\u0430\u044f\u0432\u043b\u0435\u043d\u0438\u044f, \u0432 \u041b\u0430\u0442\u0432\u0438\u0438 \u2014 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u0438 \u0441\u0443\u0434\u044b",
+      "source": "LSM Russian-language",
+      "link": "https://rus.lsm.lv/statja/novosti/obschestvo/07.09.2026-novyi-metod-gibridnoi-voiny-iz-belarusi-zayavleniya-v-latvii-proverki-i-sudy.a661954/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-07T08:29:02.137290+00:00",
       "level": "WATCH",
@@ -652,22 +684,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-02T07:56:19.299735+00:00",
-      "level": "WATCH",
-      "title": "Russian mobilisation and sabotage \u2013 NAF commander explains what Latvia is preparing for",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/russian-mobilisation-and-sabotage-naf-commander-explains-what-latvia-is-preparing-for-283406",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -683,6 +699,11 @@
     }
   ],
   "recent_updates": [
+    {
+      "ts": "2026-09-07T08:51:00+00:00",
+      "title": "Reading the defence ministries and grid operators directly",
+      "text": "Until now almost everything reached this monitor through a single news aggregator \u2014 meaning it read the Latvian Ministry of Defence through Google's index of the Latvian Ministry of Defence, with an aggregator's delay and relevance filter in between. Every source domain was checked for its own feed. Twenty-one had one worth adding, and they are not more newspapers: defence ministries, national guards, national cyber-security teams, and electricity and gas grid operators \u2014 the organisations that would be announcing an incident themselves. The number of feeds read straight from the source went from 26 to 48. Most sources still come via the aggregator, because roughly a hundred of them publish no feed at all or refuse automated access, and this page says so rather than implying otherwise. Each alert now also records how it reached us, so a warning confirmed across two independent routes can be told apart from one that arrived entirely down a single pipe."
+    },
     {
       "ts": "2026-09-06T12:03:40+00:00",
       "title": "This page will tell you if it ever stops being updated",
@@ -827,30 +848,25 @@
       "ts": "2026-08-21T19:25:15.364848+00:00",
       "title": "Signal Deviation Index: added a plain-language reading and a one-line why",
       "text": "The index now shows a band (\"moderately elevated\", \"highest in N scans of tracking\") instead of a bare percentage, plus a short sentence naming which signal actually moved. Same underlying numbers, easier to read at a glance."
-    },
-    {
-      "ts": "2026-08-21T18:01:22.124810+00:00",
-      "title": "Fixed: a flagged story could link straight to a Russian state-media site",
-      "text": "GDELT-sourced items used their raw source URL as the public link, which could point directly at a Russian state-media/government domain -- untrustworthy for anyone tapping through from a browser notification. Now routed to a neutral page instead; the story is still tracked and cited by name."
     }
   ],
   "entsoe_outage_count": 0,
   "entsoe_active_outages": [],
-  "direct_feed_sources": 26,
+  "direct_feed_sources": 48,
   "direct_feed_new_outlets": 13,
   "filter_record": {
     "window_days": 30,
-    "scans": 202,
-    "alerting_scans": 54,
+    "scans": 203,
+    "alerting_scans": 55,
     "held_back_total": 0,
     "held_back_by_reason": [],
     "scans_before_tracking": 186
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 71,
+    "alerts": 72,
     "judged": 0,
-    "unjudged": 71,
+    "unjudged": 72,
     "genuine": 0,
     "noise": 0,
     "precision_pct": null,
