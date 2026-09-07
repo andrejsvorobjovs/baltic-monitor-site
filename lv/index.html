@@ -373,6 +373,42 @@
   #status-error { display: none; color: var(--ink-dim); font-size: var(--fs-md); margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
+  /* ---- Collapsible explanation blocks -------------------------------------
+     The page opened as a wall of prose: every method, tier and caveat fully
+     expanded before a reader had asked for any of it. These fold the
+     explanation away by default while leaving the SUMMARY line visible, so
+     the gist is still readable at a glance and the detail is one click away.
+
+     Deliberately not applied to anything a reader needs without clicking:
+     the status readout, the alert level, the deviation figure, and the
+     standing disclaimer all stay open. A caveat behind a click is a caveat
+     the reader can honestly say they were never shown.
+
+     Also deliberately not applied to any container holding a chart. An SVG
+     drawn into a display:none box measures zero and renders empty — the
+     charts stay outside every fold for that reason, not by oversight. */
+  .fold { border-top: 1px solid var(--border); }
+  .fold:last-of-type { border-bottom: 1px solid var(--border); }
+  .fold > summary {
+    font-weight: 700; font-size: var(--fs-base); margin: 0;
+    padding: 18px 32px 18px 0; cursor: pointer; list-style: none; position: relative;
+    color: var(--ink-text);
+  }
+  .fold > summary::-webkit-details-marker { display: none; }
+  .fold > summary::after {
+    content: "+"; position: absolute; right: 4px; top: 16px;
+    font-size: var(--fs-xl); line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .fold[open] > summary::after { content: "\2212"; }
+  .fold > summary:hover { color: var(--accent); }
+  .fold > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .fold > summary .fold-hint {
+    display: block; font-weight: 400; font-size: var(--fs-sm);
+    color: var(--ink-dim); margin-top: 4px; max-width: 62ch;
+  }
+  .fold .fold-body { padding: 0 0 22px; }
+  .fold .fold-body > :first-child { margin-top: 0; }
+
   .qa { border-top: 1px solid var(--border); }
   .qa:last-child { border-bottom: 1px solid var(--border); }
   .qa summary.q {
@@ -541,6 +577,11 @@
         <h2>Kas tas ir — un kas nav</h2>
       </div>
     </div>
+    <details class="fold">
+      <summary>OSINT rīks — nav pārbaudīta izlūkinformācija un nav oficiāls avots
+        <span class="fold-hint">Skenē publiskus avotus un vērtē tos pēc neatkarīga apstiprinājuma. Veidojis un uztur viens cilvēks; tas var kaut ko palaist garām un var kļūdīties.</span>
+      </summary>
+      <div class="fold-body">
     <div class="split">
       <div class="panel">
         <h3>Ko tas dara</h3>
@@ -561,6 +602,8 @@
         un dažkārt kļūdīties.</p>
       </div>
     </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -574,6 +617,11 @@
       </div>
     </div>
 
+    <details class="fold">
+      <summary>Avotu līmeņi un kā tie tiek sasniegti
+        <span class="fold-hint">Kuri avoti atrodas kurā uzticamības līmenī, cik to ir un kāpēc lielākā daļa nonāk caur vienu apkopotāju.</span>
+      </summary>
+      <div class="fold-body">
     <table class="tiers">
       <thead><tr><th>Līmenis</th><th>Kas kvalificējas</th><th style="text-align:right">Skaits</th></tr></thead>
       <tbody>
@@ -602,19 +650,36 @@
       kiberdrošības komandas un elektrības un gāzes pārvades operatori.
       Izdevums, kas sasniegts pa abiem ceļiem, joprojām skaitās viens avots, nevis pats savs apstiprinājums.</p>
 
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Ko nozīmē QUIET, WATCH un WARN
+        <span class="fold-hint">Trīs līmeņi un kam jābūt patiesam, pirms katrs no tiem tiek izmantots.</span>
+      </summary>
+      <div class="fold-body">
     <div class="levels">
       <div class="level ok"><div class="lv-name">QUIET</div><p>Šajā skenējumā netika atrasts nekas atbilstošs.</p></div>
       <div class="level watch"><div class="lv-name">WATCH</div><p>Atbilstošs, bet vēl nav apstiprināts no neatkarīga avota.</p></div>
       <div class="level warn"><div class="lv-name">WARN</div><p>Tas pats stāsts, kas apstiprināts neatkarīgi &mdash; vai nu no diviem dažādu uzticamības līmeņu avotiem, vai no trim atsevišķām redakcijām. Vārds vārdā pārpublicēts aģentūras ziņojums skaitās vienreiz.</p></div>
     </div>
+          </div>
+    </details>
+
     <div class="not-alert">
-      <h3>Kas tiek reģistrēts, bet <em>nepaaugstina</em> līmeni</h3>
+      <details class="fold">
+        <summary>Kas tiek reģistrēts, bet <em>nepaaugstina</em> līmeni
+          <span class="fold-hint">Četru veidu ziņas, kas tiek reģistrētas kā konteksts, nevis sūtītas kā brīdinājums.</span>
+        </summary>
+        <div class="fold-body">
       <ul>
         <li><strong>Izsludinātās sabiedroto mācības.</strong> NATO vai Baltijas valsts nacionālās militārās mācības tiek publiskotas aizsardzības ministrijas kalendārā nedēļas iepriekš &mdash; Namejs, Projecting Oak, Siil. Tas ir visparedzamākais notikums reģionā, tāpēc to reģistrē kā kontekstu, nevis sūta kā brīdinājumu. Krievijas un Baltkrievijas mācības, piemēram, Zapad, <em>netiek</em> tā traktētas un paaugstina līmeni.</li>
         <li><strong>Nomierinoša informācija.</strong> Ziņa, ka uzbrukums netiek gatavots (&bdquo;amatpersonas saka, ka Krievija negatavo uzbrukumu&ldquo;), ir būtisks konteksts, taču tā nav brīdinājums un nekad netiek sūtīta kā brīdinājums.</li>
         <li><strong>Scenāriji un analīze.</strong> Skaidrojošs raksts par to, kā uzbrukums varētu izskatīties, vai analītiķis, kurš saka, ka Krievija <em>varētu</em> pārbaudīt NATO, ir viedokļraksts &mdash; nevis ziņojums, ka kaut kas ir noticis.</li>
         <li><strong>Jau ziņotie stāsti.</strong> Tas pats stāsts ar jaunu saiti trīs dienas neizraisa atkārtotu brīdinājumu. Ja tas vēlāk iegūst neatkarīgu apstiprinājumu, par šo izmaiņu brīdinājums tiek nosūtīts.</li>
       </ul>
+        </div>
+      </details>
       <div class="accuracy" id="accuracy" hidden>
         <h4>Vai brīdinājumi bija pareizi?</h4>
         <p class="acc-figure mono" id="acc-figure"></p>

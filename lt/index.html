@@ -373,6 +373,42 @@
   #status-error { display: none; color: var(--ink-dim); font-size: var(--fs-md); margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
+  /* ---- Collapsible explanation blocks -------------------------------------
+     The page opened as a wall of prose: every method, tier and caveat fully
+     expanded before a reader had asked for any of it. These fold the
+     explanation away by default while leaving the SUMMARY line visible, so
+     the gist is still readable at a glance and the detail is one click away.
+
+     Deliberately not applied to anything a reader needs without clicking:
+     the status readout, the alert level, the deviation figure, and the
+     standing disclaimer all stay open. A caveat behind a click is a caveat
+     the reader can honestly say they were never shown.
+
+     Also deliberately not applied to any container holding a chart. An SVG
+     drawn into a display:none box measures zero and renders empty — the
+     charts stay outside every fold for that reason, not by oversight. */
+  .fold { border-top: 1px solid var(--border); }
+  .fold:last-of-type { border-bottom: 1px solid var(--border); }
+  .fold > summary {
+    font-weight: 700; font-size: var(--fs-base); margin: 0;
+    padding: 18px 32px 18px 0; cursor: pointer; list-style: none; position: relative;
+    color: var(--ink-text);
+  }
+  .fold > summary::-webkit-details-marker { display: none; }
+  .fold > summary::after {
+    content: "+"; position: absolute; right: 4px; top: 16px;
+    font-size: var(--fs-xl); line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .fold[open] > summary::after { content: "\2212"; }
+  .fold > summary:hover { color: var(--accent); }
+  .fold > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .fold > summary .fold-hint {
+    display: block; font-weight: 400; font-size: var(--fs-sm);
+    color: var(--ink-dim); margin-top: 4px; max-width: 62ch;
+  }
+  .fold .fold-body { padding: 0 0 22px; }
+  .fold .fold-body > :first-child { margin-top: 0; }
+
   .qa { border-top: 1px solid var(--border); }
   .qa:last-child { border-bottom: 1px solid var(--border); }
   .qa summary.q {
@@ -541,6 +577,11 @@
         <h2>Kas tai yra — ir kas nėra</h2>
       </div>
     </div>
+    <details class="fold">
+      <summary>OSINT įrankis — ne patikrinta žvalgybos informacija ir ne oficialus šaltinis
+        <span class="fold-hint">Skenuoja viešus šaltinius ir vertina juos pagal nepriklausomą patvirtinimą. Sukūrė ir prižiūri vienas žmogus; jis gali kai ko nepastebėti ir gali klysti.</span>
+      </summary>
+      <div class="fold-body">
     <div class="split">
       <div class="panel">
         <h3>Ką jis daro</h3>
@@ -561,6 +602,8 @@
         praleisti ir kartais suklysti.</p>
       </div>
     </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -574,6 +617,11 @@
       </div>
     </div>
 
+    <details class="fold">
+      <summary>Šaltinių lygiai ir kaip jie pasiekiami
+        <span class="fold-hint">Kurie šaltiniai yra kuriame patikimumo lygyje, kiek jų yra ir kodėl dauguma pasiekiama per vieną agregatorių.</span>
+      </summary>
+      <div class="fold-body">
     <table class="tiers">
       <thead><tr><th>Lygis</th><th>Kas kvalifikuojasi</th><th style="text-align:right">Skaičius</th></tr></thead>
       <tbody>
@@ -602,19 +650,36 @@
       nacionalinės kibernetinio saugumo komandos ir elektros bei dujų tinklų operatoriai.
       Leidinys, pasiektas abiem keliais, vis tiek laikomas vienu šaltiniu, o ne savo paties patvirtinimu.</p>
 
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Ką reiškia QUIET, WATCH ir WARN
+        <span class="fold-hint">Trys lygiai ir kas turi būti tiesa, kad kiekvienas iš jų būtų naudojamas.</span>
+      </summary>
+      <div class="fold-body">
     <div class="levels">
       <div class="level ok"><div class="lv-name">QUIET</div><p>Šio nuskaitymo metu nerasta nieko svarbaus.</p></div>
       <div class="level watch"><div class="lv-name">WATCH</div><p>Svarbu, bet dar nepatvirtinta nepriklausomo šaltinio.</p></div>
       <div class="level warn"><div class="lv-name">WARN</div><p>Ta pati istorija, patvirtinta nepriklausomai &mdash; arba dviejų skirtingo patikimumo lygio šaltinių, arba trijų atskirų redakcijų. Pažodžiui perspausdintas agentūros pranešimas skaičiuojamas vieną kartą.</p></div>
     </div>
+          </div>
+    </details>
+
     <div class="not-alert">
-      <h3>Kas registruojama, bet <em>nekelia</em> lygio</h3>
+      <details class="fold">
+        <summary>Kas registruojama, bet <em>nekelia</em> lygio
+          <span class="fold-hint">Keturių rūšių pranešimai, registruojami kaip kontekstas, o ne siunčiami kaip įspėjimas.</span>
+        </summary>
+        <div class="fold-body">
       <ul>
         <li><strong>Paskelbtos sąjungininkų pratybos.</strong> NATO ar Baltijos valstybės nacionalinės karinės pratybos skelbiamos krašto apsaugos ministerijos kalendoriuje savaitėmis iš anksto &mdash; Namejs, Projecting Oak, Geležinis Vilkas. Tai labiausiai nuspėjamas įvykis regione, todėl jis registruojamas kaip kontekstas, o ne siunčiamas kaip įspėjimas. Rusijos ir Baltarusijos pratybos, pavyzdžiui, Zapad, <em>nėra</em> taip traktuojamos ir kelia lygį.</li>
         <li><strong>Raminanti informacija.</strong> Pranešimas, kad išpuolio nebus (&bdquo;pareigūnai teigia, kad Rusija nerengia išpuolio&ldquo;), yra svarbus kontekstas, tačiau tai nėra įspėjimas ir niekada nesiunčiamas kaip įspėjimas.</li>
         <li><strong>Scenarijai ir analizė.</strong> Aiškinamasis straipsnis apie tai, kaip išpuolis galėtų atrodyti, arba analitikas, teigiantis, kad Rusija <em>gali</em> išbandyti NATO, yra nuomonės tekstas &mdash; o ne pranešimas, kad kažkas įvyko.</li>
         <li><strong>Jau praneštos istorijos.</strong> Ta pati istorija su nauja nuoroda tris dienas nesukelia pakartotinio įspėjimo. Jei ji vėliau sulaukia nepriklausomo patvirtinimo, apie tokį pokytį įspėjama.</li>
       </ul>
+        </div>
+      </details>
       <div class="accuracy" id="accuracy" hidden>
         <h4>Ar įspėjimai buvo teisingi?</h4>
         <p class="acc-figure mono" id="acc-figure"></p>

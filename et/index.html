@@ -373,6 +373,42 @@
   #status-error { display: none; color: var(--ink-dim); font-size: var(--fs-md); margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
+  /* ---- Collapsible explanation blocks -------------------------------------
+     The page opened as a wall of prose: every method, tier and caveat fully
+     expanded before a reader had asked for any of it. These fold the
+     explanation away by default while leaving the SUMMARY line visible, so
+     the gist is still readable at a glance and the detail is one click away.
+
+     Deliberately not applied to anything a reader needs without clicking:
+     the status readout, the alert level, the deviation figure, and the
+     standing disclaimer all stay open. A caveat behind a click is a caveat
+     the reader can honestly say they were never shown.
+
+     Also deliberately not applied to any container holding a chart. An SVG
+     drawn into a display:none box measures zero and renders empty — the
+     charts stay outside every fold for that reason, not by oversight. */
+  .fold { border-top: 1px solid var(--border); }
+  .fold:last-of-type { border-bottom: 1px solid var(--border); }
+  .fold > summary {
+    font-weight: 700; font-size: var(--fs-base); margin: 0;
+    padding: 18px 32px 18px 0; cursor: pointer; list-style: none; position: relative;
+    color: var(--ink-text);
+  }
+  .fold > summary::-webkit-details-marker { display: none; }
+  .fold > summary::after {
+    content: "+"; position: absolute; right: 4px; top: 16px;
+    font-size: var(--fs-xl); line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .fold[open] > summary::after { content: "\2212"; }
+  .fold > summary:hover { color: var(--accent); }
+  .fold > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .fold > summary .fold-hint {
+    display: block; font-weight: 400; font-size: var(--fs-sm);
+    color: var(--ink-dim); margin-top: 4px; max-width: 62ch;
+  }
+  .fold .fold-body { padding: 0 0 22px; }
+  .fold .fold-body > :first-child { margin-top: 0; }
+
   .qa { border-top: 1px solid var(--border); }
   .qa:last-child { border-bottom: 1px solid var(--border); }
   .qa summary.q {
@@ -541,6 +577,11 @@
         <h2>Mis see on — ja mis mitte</h2>
       </div>
     </div>
+    <details class="fold">
+      <summary>OSINT-tööriist — mitte kontrollitud luureandmed ega ametlik allikas
+        <span class="fold-hint">Skannib avalikke allikaid ja hindab neid sõltumatu kinnituse järgi. Ehitanud ja haldab üks inimene; see võib midagi märkamata jätta ja võib eksida.</span>
+      </summary>
+      <div class="fold-body">
     <div class="split">
       <div class="panel">
         <h3>Mida see teeb</h3>
@@ -561,6 +602,8 @@
         mõnikord eksida.</p>
       </div>
     </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -574,6 +617,11 @@
       </div>
     </div>
 
+    <details class="fold">
+      <summary>Allikate tasemed ja kuidas nendeni jõutakse
+        <span class="fold-hint">Millised allikad millisel usaldustasemel on, kui palju neid on ja miks enamik saabub ühe agregaatori kaudu.</span>
+      </summary>
+      <div class="fold-body">
     <table class="tiers">
       <thead><tr><th>Tase</th><th>Mis kvalifitseerub</th><th style="text-align:right">Arv</th></tr></thead>
       <tbody>
@@ -602,19 +650,36 @@
       k&uuml;berturbemeeskonnad ning elektri- ja gaasiv&otilde;rgu operaatorid.
       M&otilde;lemat teed kaudu j&otilde;udev v&auml;ljaanne loeb ikka &uuml;heks allikaks, mitte iseenda kinnituseks.</p>
 
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Mida tähendavad QUIET, WATCH ja WARN
+        <span class="fold-hint">Kolm taset ja mis peab olema tõsi, enne kui igaüht neist kasutatakse.</span>
+      </summary>
+      <div class="fold-body">
     <div class="levels">
       <div class="level ok"><div class="lv-name">QUIET</div><p>Selle skanni käigus ei leitud midagi asjakohast.</p></div>
       <div class="level watch"><div class="lv-name">WATCH</div><p>Asjakohane, kuid pole veel sõltumatu allika poolt kinnitatud.</p></div>
       <div class="level warn"><div class="lv-name">WARN</div><p>Sama lugu, mida kinnitatakse sõltumatult &mdash; kas kahe erineva usaldustaseme allika või kolme eraldi toimetuse poolt. Ühe uudisteagentuuri sõna-sõnalt kordused loevad ühe korra.</p></div>
     </div>
+          </div>
+    </details>
+
     <div class="not-alert">
-      <h3>Mida logitakse, kuid mis <em>ei</em> tõsta taset</h3>
+      <details class="fold">
+        <summary>Mida logitakse, kuid mis <em>ei</em> tõsta taset
+          <span class="fold-hint">Neli lugude liiki, mis salvestatakse kontekstina, mitte ei saadeta hoiatusena.</span>
+        </summary>
+        <div class="fold-body">
       <ul>
         <li><strong>Väljakuulutatud liitlaste õppused.</strong> NATO või Balti riigi enda sõjaväeõppus avaldatakse kaitseministeeriumi kalendris nädalaid ette &mdash; Namejs, Projecting Oak, Siil. See on piirkonna kõige etteaimatavam sündmus, seega logitakse see taustana, mitte ei saadeta hoiatusena. Vene ja Valgevene õppusi, näiteks Zapadit, <em>ei</em> käsitleta nii ning need tõstavad taset.</li>
         <li><strong>Rahustav teave.</strong> Lugu, mis teatab, et rünnakut ei tule (&bdquo;ametnikud ütlevad, et Venemaa ei valmista rünnakut ette&ldquo;), on asjakohane taust, kuid see ei ole hoiatus ja seda ei saadeta kunagi hoiatusena.</li>
         <li><strong>Stsenaariumid ja analüüs.</strong> Selgitav lugu sellest, milline rünnak võiks välja näha, või analüütik, kes ütleb, et Venemaa <em>võib</em> NATOt proovile panna, on arvamuslugu &mdash; mitte teade, et midagi juhtus.</li>
         <li><strong>Juba teatatud lood.</strong> Sama lugu uue lingi all ei anna kolme päeva jooksul uut häiret. Kui see hiljem saab sõltumatu kinnituse, siis see edasiminek siiski teavitab.</li>
       </ul>
+        </div>
+      </details>
       <div class="accuracy" id="accuracy" hidden>
         <h4>Kas hoiatused olid õiged?</h4>
         <p class="acc-figure mono" id="acc-figure"></p>

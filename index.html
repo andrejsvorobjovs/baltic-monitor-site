@@ -403,6 +403,43 @@
   #status-error { display: none; color: var(--ink-dim); font-size: var(--fs-md); margin-top: 12px; }
 
   /* ---- FAQ (report Q/A, not accordion cards) ---- */
+
+  /* ---- Collapsible explanation blocks -------------------------------------
+     The page opened as a wall of prose: every method, tier and caveat fully
+     expanded before a reader had asked for any of it. These fold the
+     explanation away by default while leaving the SUMMARY line visible, so
+     the gist is still readable at a glance and the detail is one click away.
+
+     Deliberately not applied to anything a reader needs without clicking:
+     the status readout, the alert level, the deviation figure, and the
+     standing disclaimer all stay open. A caveat behind a click is a caveat
+     the reader can honestly say they were never shown.
+
+     Also deliberately not applied to any container holding a chart. An SVG
+     drawn into a display:none box measures zero and renders empty — the
+     charts stay outside every fold for that reason, not by oversight. */
+  .fold { border-top: 1px solid var(--border); }
+  .fold:last-of-type { border-bottom: 1px solid var(--border); }
+  .fold > summary {
+    font-weight: 700; font-size: var(--fs-base); margin: 0;
+    padding: 18px 32px 18px 0; cursor: pointer; list-style: none; position: relative;
+    color: var(--ink-text);
+  }
+  .fold > summary::-webkit-details-marker { display: none; }
+  .fold > summary::after {
+    content: "+"; position: absolute; right: 4px; top: 16px;
+    font-size: var(--fs-xl); line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .fold[open] > summary::after { content: "\2212"; }
+  .fold > summary:hover { color: var(--accent); }
+  .fold > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .fold > summary .fold-hint {
+    display: block; font-weight: 400; font-size: var(--fs-sm);
+    color: var(--ink-dim); margin-top: 4px; max-width: 62ch;
+  }
+  .fold .fold-body { padding: 0 0 22px; }
+  .fold .fold-body > :first-child { margin-top: 0; }
+
   .qa { border-top: 1px solid var(--border); }
   .qa:last-child { border-bottom: 1px solid var(--border); }
   .qa summary.q {
@@ -569,6 +606,11 @@
         <h2>What this is — and isn't</h2>
       </div>
     </div>
+    <details class="fold">
+      <summary>An OSINT tool — not verified intelligence, and not official
+        <span class="fold-hint">Scans public sources and scores them for independent corroboration. Built and run by one person; it can miss things and it can be wrong.</span>
+      </summary>
+      <div class="fold-body">
     <div class="split">
       <div class="panel">
         <h3>What it does</h3>
@@ -587,6 +629,8 @@
         one person. It can miss things, and it can occasionally be wrong.</p>
       </div>
     </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -600,6 +644,11 @@
       </div>
     </div>
 
+    <details class="fold">
+      <summary>Source tiers, and how they are reached
+        <span class="fold-hint">Which kinds of source sit at which trust level, how many of each, and why most arrive through one aggregator.</span>
+      </summary>
+      <div class="fold-body">
     <table class="tiers">
       <thead><tr><th>Tier</th><th>What qualifies</th><th style="text-align:right">Count</th></tr></thead>
       <tbody>
@@ -627,20 +676,36 @@
       just as importantly, primary sources that would be announcing an incident themselves: defence
       ministries, national guards, national cyber-security teams and electricity and gas grid operators.
       An outlet reached by both routes still counts as one source, never as its own corroboration.</p>
+      </div>
+    </details>
 
+    <details class="fold">
+      <summary>What QUIET, WATCH and WARN mean
+        <span class="fold-hint">The three levels, and what has to be true before each one is used.</span>
+      </summary>
+      <div class="fold-body">
     <div class="levels">
       <div class="level ok"><div class="lv-name">QUIET</div><p>Nothing relevant matched this scan.</p></div>
       <div class="level watch"><div class="lv-name">WATCH</div><p>Relevant, but not yet corroborated by an independent source.</p></div>
       <div class="level warn"><div class="lv-name">WARN</div><p>The same story, independently confirmed &mdash; either by sources of two different trust levels, or by three separate newsrooms. Verbatim reprints of one wire report count once.</p></div>
     </div>
+      </div>
+    </details>
+
     <div class="not-alert">
-      <h3>What is logged but does <em>not</em> raise the level</h3>
+      <details class="fold">
+        <summary>What is logged but does <em>not</em> raise the level
+          <span class="fold-hint">Four kinds of story that are recorded as context rather than sent as a warning.</span>
+        </summary>
+        <div class="fold-body">
       <ul>
         <li><strong>Announced allied exercises.</strong> A NATO or Baltic national exercise is published on a defence-ministry calendar weeks in advance &mdash; Namejs, Projecting Oak, Hedgehog. It is the most predictable event in the region, so it is logged as context rather than sent as a warning. Russian and Belarusian exercises, such as Zapad, are <em>not</em> treated this way and do raise the level.</li>
         <li><strong>Reassurance.</strong> A story reporting that no attack is coming (&ldquo;officials say Russia is not preparing an attack&rdquo;) is relevant context, but it is not a warning and is never sent as one.</li>
         <li><strong>Scenarios and analysis.</strong> An explainer imagining what an attack could look like, or an analyst saying Russia <em>might</em> test NATO, is a comment piece &mdash; not a report that something happened.</li>
         <li><strong>Stories already reported.</strong> The same story resurfacing under a new link does not alert again for three days. If it later gains independent corroboration, that upgrade does still alert.</li>
       </ul>
+        </div>
+      </details>
       <div class="accuracy" id="accuracy" hidden>
         <h4>Were the alerts right?</h4>
         <p class="acc-figure mono" id="acc-figure"></p>
