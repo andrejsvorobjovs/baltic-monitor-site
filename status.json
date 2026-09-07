@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-07T09:11:05.009047+00:00",
+  "last_run_utc": "2026-09-07T13:46:54.039365+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 338,
+  "total_scans": 339,
   "quiet_count": 266,
-  "watch_count": 71,
+  "watch_count": 72,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-07 09:11 UTC",
-  "total_sources": 152,
-  "tier1_sources": 32,
-  "tier2_sources": 107,
-  "tier3_sources": 13,
+  "generated_at": "2026-09-07 13:46 UTC",
+  "total_sources": 151,
+  "tier1_sources": 38,
+  "tier2_sources": 103,
+  "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-07T13:46:54.051930+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 543,
+      "stale_count": 0,
+      "alert_id": "0907-1346",
+      "items": [
+        {
+          "title": "22 technologij\u0173 \u012fmon\u0117je dirb\u0119 baltarusiai paskelbti gr\u0117sme Lietuvos nacionaliniam saugumui; G. Naus\u0117da tikisi didesnio gynybos biud\u017eeto",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/verslo-aplinka/2026/09/07/siandien-k-kallas-lankysis-lietuvoje-teismas-tes-snoro-byla-589656",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-07T09:11:05.020378+00:00",
       "level": "WATCH",
@@ -429,23 +459,25 @@
       "stale_count": 0,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-04T21:40:36.253781+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 45,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-07T13:46:54.558831+00:00",
+      "level": "WATCH",
+      "title": "22 technologij\u0173 \u012fmon\u0117je dirb\u0119 baltarusiai paskelbti gr\u0117sme Lietuvos nacionaliniam saugumui; G. Naus\u0117da tikisi didesnio gynybos biud\u017eeto",
+      "source": "Verslo zinios (Lithuania)",
+      "link": "https://www.vz.lt/verslo-aplinka/2026/09/07/siandien-k-kallas-lankysis-lietuvoje-teismas-tes-snoro-byla-589656",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-07T09:11:05.435773+00:00",
       "level": "WATCH",
@@ -668,22 +700,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-02T07:56:19.299735+00:00",
-      "level": "WATCH",
-      "title": "\u041f\u0443\u0442\u0438\u043d \u043d\u0430\u0437\u0432\u0430\u043b \u00ab\u0447\u0443\u0448\u044c\u044e \u0441\u043e\u0431\u0430\u0447\u044c\u0435\u0439\u00bb \u0441\u043b\u0443\u0445\u0438 \u043e \u0433\u043e\u0442\u043e\u0432\u044f\u0449\u0435\u0439\u0441\u044f \u043c\u043e\u0431\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u0438 \u0438 \u043f\u0440\u0438\u0433\u0440\u043e\u0437\u0438\u043b \u041a\u0438\u0435\u0432\u0443 \u043e\u0442\u0432\u0435\u0442\u043e\u043c \u0432 \u0441\u043b\u0443\u0447\u0430\u0435 \u043f\u043e\u043f\u044b\u0442\u043e\u043a \u0437\u0430\u043a\u0440\u044b\u0442\u0438\u044f \u043d\u0435\u0431\u0430 \u043d\u0430\u0434 \u0420\u043e\u0441\u0441\u0438\u0435\u0439",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/09/01/putin-nazval-chushiu-sobachei-slukhi-o-gotoviashcheisia-mobilizatsii-i-prigrozil-kievu-otvetom-v-sluchae-popytok-zakrytiia-neba-nad-rossiei-news",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -852,21 +868,21 @@
   ],
   "entsoe_outage_count": 0,
   "entsoe_active_outages": [],
-  "direct_feed_sources": 48,
-  "direct_feed_new_outlets": 13,
+  "direct_feed_sources": 59,
+  "direct_feed_new_outlets": 24,
   "filter_record": {
     "window_days": 30,
     "scans": 203,
     "alerting_scans": 55,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 186
+    "scans_before_tracking": 185
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 72,
+    "alerts": 73,
     "judged": 0,
-    "unjudged": 72,
+    "unjudged": 73,
     "genuine": 0,
     "noise": 0,
     "precision_pct": null,
