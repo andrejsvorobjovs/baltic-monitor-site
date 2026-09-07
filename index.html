@@ -932,8 +932,8 @@ var LIVENESS = {
   staleHours: 240,
   hoursAgo: function (n) { return n + 'h ago'; },
   daysAgo: function (n) { return n + (n === 1 ? ' day ago' : ' days ago'); },
-  staleTitle: "This monitor has probably been abandoned",
-  staleText: "The last scan completed {age}. Nothing has been checked since. This project is run by one person, and a gap this long usually means it is no longer maintained — its operator may no longer be able to run it. <strong>Do not treat the absence of alerts as an all-clear.</strong>",
+  staleTitle: "Nobody has run this in over 10 days",
+  staleText: "The last scan completed {age}. Nothing has been checked since. This project is run by one person. A silence this long most likely means that person can no longer run it — including the possibility that they are dead. <strong>Do not treat the absence of alerts as an all-clear.</strong>",
   unknownTitle: "Freshness could not be verified",
   unknownText: "This page could not work out when it last updated. Treat the status below with caution.",
   notUpdating: "Not updating",
@@ -1664,6 +1664,50 @@ function markReadoutStale() {
   // only (chart_data.json's escalation_index_points is already
   // chronological, one entry per scan). Independent of the range
   // selector below on purpose: this is "right now," not a historical view.
+
+// The composite index used to arrive as two finished ENGLISH sentences —
+// which signal moved, and whether today is normal — and every translated
+// page printed them verbatim. A Latvian reader got a fully Latvian page
+// whose two most informative lines were in English. The backend now
+// publishes the parts (narrative_parts, band_key) and each page writes its
+// own sentence. The English strings are still sent and are still used as a
+// fallback for entries recorded before the structured fields existed.
+var EIDX_TEXT = {
+  signals: {"gpsjam": "GPS jamming", "ais": "AIS vessel activity", "military": "military aircraft", "firms": "thermal hotspots"},
+  bands: {"high_above": "highly elevated", "moderate_above": "moderately elevated", "normal": "within normal range", "moderate_below": "moderately below normal", "well_below": "well below normal"},
+  above: "{s} {p}% above baseline",
+  below: "{s} {p}% below baseline",
+  steady: "{list} steady",
+  record: "highest in {n} scans of tracking",
+  sep: "; ",
+  listSep: ", "
+};
+
+function eidxNarrative(point) {
+  var parts = point && point.narrative_parts;
+  if (!parts) return (point && point.narrative) || '';
+  var chunks = (parts.moved || []).map(function (m) {
+    var name = EIDX_TEXT.signals[m.signal] || m.signal;
+    var tpl = m.direction === 'below' ? EIDX_TEXT.below : EIDX_TEXT.above;
+    return tpl.replace('{s}', name).replace('{p}', m.pct);
+  });
+  if ((parts.steady || []).length) {
+    var names = parts.steady.map(function (k) { return EIDX_TEXT.signals[k] || k; });
+    chunks.push(EIDX_TEXT.steady.replace('{list}', names.join(EIDX_TEXT.listSep)));
+  }
+  return chunks.length ? chunks.join(EIDX_TEXT.sep) + '.' : '';
+}
+
+function eidxBand(point) {
+  var key = point && point.band_key;
+  if (!key || !EIDX_TEXT.bands[key]) return (point && point.band) || '';
+  var text = EIDX_TEXT.bands[key];
+  if (point.band_record_scans) {
+    text += ' \u2014 ' + EIDX_TEXT.record.replace('{n}', point.band_record_scans);
+  }
+  return text;
+}
+
   function renderEidxCurrent(points) {
     var valueEl = document.getElementById('eidx-value');
     var sourcesEl = document.getElementById('eidx-sources');
@@ -1677,8 +1721,8 @@ function markReadoutStale() {
       return;
     }
     var latest = points[points.length - 1];
-    bandEl.textContent = latest.band || '';
-    narrativeEl.textContent = latest.narrative || '';
+    bandEl.textContent = eidxBand(latest);
+    narrativeEl.textContent = eidxNarrative(latest);
     if (typeof latest.deviation_pct !== 'number') {
       valueEl.textContent = 'Not enough data yet';
       sourcesEl.textContent = (latest.sources_included || 0) + ' of 4 tracked';

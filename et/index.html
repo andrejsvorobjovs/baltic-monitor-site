@@ -905,8 +905,8 @@ var LIVENESS = {
   staleHours: 240,
   hoursAgo: function (n) { return n + (n === 1 ? ' tund' : ' tundi') + ' tagasi'; },
   daysAgo: function (n) { return n + (n === 1 ? ' päev' : ' päeva') + ' tagasi'; },
-  staleTitle: "See monitor on tõenäoliselt hüljatud",
-  staleText: "Viimane skannimine lõppes {age}. Sellest ajast pole midagi kontrollitud. Seda projekti haldab üks inimene ja nii pikk vaikus tähendab tavaliselt, et seda enam ei hooldata — selle haldaja ei pruugi enam saada seda käigus hoida. <strong>Ära käsitle hoiatuste puudumist ohutuse märgina.</strong>",
+  staleTitle: "Keegi pole seda üle 10 päeva käitanud",
+  staleText: "Viimane skannimine lõppes {age}. Sellest ajast pole midagi kontrollitud. Seda projekti haldab üks inimene. Nii pikk vaikus tähendab kõige tõenäolisemalt, et see inimene ei saa seda enam käigus hoida — sealhulgas võimalust, et ta on surnud. <strong>Ära käsitle hoiatuste puudumist ohutuse märgina.</strong>",
   unknownTitle: "Värskust ei õnnestunud kontrollida",
   unknownText: "Leht ei suutnud tuvastada, millal see viimati uuenes. Suhtu allolevasse olekusse ettevaatusega.",
   notUpdating: "Ei uuene",
@@ -1573,6 +1573,50 @@ function markReadoutStale() {
     container.appendChild(svg);
   }
 
+
+// The composite index used to arrive as two finished ENGLISH sentences —
+// which signal moved, and whether today is normal — and every translated
+// page printed them verbatim. A Latvian reader got a fully Latvian page
+// whose two most informative lines were in English. The backend now
+// publishes the parts (narrative_parts, band_key) and each page writes its
+// own sentence. The English strings are still sent and are still used as a
+// fallback for entries recorded before the structured fields existed.
+var EIDX_TEXT = {
+  signals: {"gpsjam": "GPS-häirimine", "ais": "AIS-laevaliiklus", "military": "sõjalennukid", "firms": "soojuskolded"},
+  bands: {"high_above": "tugevalt kõrgenenud", "moderate_above": "mõõdukalt kõrgenenud", "normal": "normi piires", "moderate_below": "mõõdukalt alla normi", "well_below": "tublisti alla normi"},
+  above: "{s} {p}% üle tavataseme",
+  below: "{s} {p}% alla tavataseme",
+  steady: "{list} muutumatud",
+  record: "kõrgeim {n} skannimise jooksul",
+  sep: "; ",
+  listSep: ", "
+};
+
+function eidxNarrative(point) {
+  var parts = point && point.narrative_parts;
+  if (!parts) return (point && point.narrative) || '';
+  var chunks = (parts.moved || []).map(function (m) {
+    var name = EIDX_TEXT.signals[m.signal] || m.signal;
+    var tpl = m.direction === 'below' ? EIDX_TEXT.below : EIDX_TEXT.above;
+    return tpl.replace('{s}', name).replace('{p}', m.pct);
+  });
+  if ((parts.steady || []).length) {
+    var names = parts.steady.map(function (k) { return EIDX_TEXT.signals[k] || k; });
+    chunks.push(EIDX_TEXT.steady.replace('{list}', names.join(EIDX_TEXT.listSep)));
+  }
+  return chunks.length ? chunks.join(EIDX_TEXT.sep) + '.' : '';
+}
+
+function eidxBand(point) {
+  var key = point && point.band_key;
+  if (!key || !EIDX_TEXT.bands[key]) return (point && point.band) || '';
+  var text = EIDX_TEXT.bands[key];
+  if (point.band_record_scans) {
+    text += ' \u2014 ' + EIDX_TEXT.record.replace('{n}', point.band_record_scans);
+  }
+  return text;
+}
+
   function renderEidxCurrent(points) {
     var valueEl = document.getElementById('eidx-value');
     var sourcesEl = document.getElementById('eidx-sources');
@@ -1586,8 +1630,8 @@ function markReadoutStale() {
       return;
     }
     var latest = points[points.length - 1];
-    bandEl.textContent = latest.band || '';
-    narrativeEl.textContent = latest.narrative || '';
+    bandEl.textContent = eidxBand(latest);
+    narrativeEl.textContent = eidxNarrative(latest);
     if (typeof latest.deviation_pct !== 'number') {
       valueEl.textContent = 'Andmeid pole veel piisavalt';
       sourcesEl.textContent = (latest.sources_included || 0) + ' / 4 jälgitud';
