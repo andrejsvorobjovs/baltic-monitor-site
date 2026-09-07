@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-07T14:35:59.958382+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-09-07T16:43:18.978691+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 340,
+  "total_scans": 341,
   "quiet_count": 267,
-  "watch_count": 72,
+  "watch_count": 73,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-07 14:36 UTC",
+  "generated_at": "2026-09-07 16:43 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 108,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-07T16:43:19.038754+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 211,
+      "stale_count": 0,
+      "alert_id": "0907-1643",
+      "items": [
+        {
+          "title": "Su K. Kallas susitik\u0119s M. Sinkevi\u010dius tikisi supratimo i\u0161 EK: norime, kad Ryt\u0173 flango valstyb\u0117s b\u016bt\u0173 girdimos",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/07/news/su-k-kallas-susitikes-m-sinkevicius-tikisi-supratimo-is-ek-norime-kad-rytu-flango-valstybes-butu-girdimos-43904250/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-07T14:35:59.986815+00:00",
       "level": "QUIET",
@@ -430,38 +460,25 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-05T07:53:24.757204+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 148,
-      "stale_count": 0,
-      "alert_id": "0905-0753",
-      "items": [
-        {
-          "title": "Russian official threatens German weapon sites with attack",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/russian-official-threatens-german-weapon-sites-with-attack--cameoplus_23048112d529115a",
-          "categories": [
-            "troop_movement",
-            "nato_conflict_risk"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "1384",
-          "gdelt_event_code": "1384",
-          "goldstein": -7
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-07T16:43:19.575215+00:00",
+      "level": "WATCH",
+      "title": "Su K. Kallas susitik\u0119s M. Sinkevi\u010dius tikisi supratimo i\u0161 EK: norime, kad Ryt\u0173 flango valstyb\u0117s b\u016bt\u0173 girdimos",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/07/news/su-k-kallas-susitikes-m-sinkevicius-tikisi-supratimo-is-ek-norime-kad-rytu-flango-valstybes-butu-girdimos-43904250/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-07T13:46:54.558831+00:00",
       "level": "WATCH",
@@ -684,22 +701,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-02T15:22:37.177885+00:00",
-      "level": "WATCH",
-      "title": "No honour guards at Freedom Monument this week in Latvia",
-      "source": "LSM (Latvia)",
-      "link": "https://eng.lsm.lv/article/society/defence/02.09.2026-no-honour-guards-at-freedom-monument-this-week-in-latvia.a661437/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -873,16 +874,16 @@
   "filter_record": {
     "window_days": 30,
     "scans": 204,
-    "alerting_scans": 55,
+    "alerting_scans": 56,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 185
+    "scans_before_tracking": 184
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 73,
+    "alerts": 74,
     "judged": 0,
-    "unjudged": 73,
+    "unjudged": 74,
     "genuine": 0,
     "noise": 0,
     "precision_pct": null,
