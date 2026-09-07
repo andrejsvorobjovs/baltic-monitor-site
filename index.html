@@ -358,6 +358,24 @@
   .history-row .detail-item-meta { color: var(--ink-dim); font-size: var(--fs-xs); }
   .history-empty { color: var(--ink-dim); font-size: var(--fs-md); padding: 12px 0; }
 
+
+  /* Each "What's new" entry folds to its own line. Opening the log used to
+     print all 30 entries in full at once — a wall of paragraphs where the
+     reader wanted a list of what changed. Date and title stay visible so
+     the log is scannable; the description opens on click. */
+  .upd-row { border-top: 1px solid var(--border); }
+  .upd-row > summary {
+    padding: 12px 26px 12px 0; cursor: pointer; list-style: none; position: relative;
+  }
+  .upd-row > summary::-webkit-details-marker { display: none; }
+  .upd-row > summary::after {
+    content: "+"; position: absolute; right: 2px; top: 11px;
+    color: var(--accent); font-size: var(--fs-lg); line-height: 1;
+  }
+  .upd-row[open] > summary::after { content: "\2212"; }
+  .upd-row > summary:hover .title { color: var(--accent); }
+  .upd-row > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .upd-row .body { padding: 0 0 14px; max-width: 68ch; color: var(--ink-dim); }
   .item-row { padding: 12px 0; border-top: 1px solid var(--border); }
   .item-row a { color: var(--ink-text); font-weight: 600; font-size: var(--fs-base);
                 text-decoration: none; }
@@ -1358,8 +1376,14 @@ function markReadoutStale() {
         updatesLog.appendChild(noUpdates);
       } else {
         updates.forEach(function (u) {
-          var row = document.createElement('div');
-          row.className = 'item-row';
+          // One <details> per entry, closed. Opening the log printed all 30
+          // descriptions at once, which is a wall of text where a reader
+          // wants a list. Date and title stay on the summary line so the
+          // log can still be scanned without opening anything.
+          var row = document.createElement('details');
+          row.className = 'upd-row';
+
+          var head = document.createElement('summary');
 
           var meta = document.createElement('div');
           meta.className = 'item-meta';
@@ -1373,8 +1397,9 @@ function markReadoutStale() {
           body.className = 'body';
           body.textContent = u.text || '';
 
-          row.appendChild(meta);
-          row.appendChild(title);
+          head.appendChild(meta);
+          head.appendChild(title);
+          row.appendChild(head);
           row.appendChild(body);
           updatesLog.appendChild(row);
         });
