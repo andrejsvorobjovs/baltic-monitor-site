@@ -886,18 +886,27 @@
 // a server that may be dead — fails in exactly the case this exists for.
 // For a warning system, a rare false alarm beats a silent false all-clear.
 var LIVENESS = {
-  // A full scan runs every 4 hours. Scheduled GitHub Actions runs are
-  // best-effort and routinely drift, so CAUTION allows two missed scans
-  // plus slack rather than firing on the first late one. Past STOPPED,
-  // a day and a half with nothing published, no schedule explains it.
-  cautionHours: 10,
-  stoppedHours: 36,
+  // A full scan runs every 4 hours, so this fires only after roughly 60
+  // consecutive missed scans. Set deliberately high by the project owner,
+  // against a recommendation for an earlier first tier: a banner that
+  // appears whenever GitHub's scheduler drifts is noise, and noise on a
+  // warning page is worse than useless — it teaches people to ignore the
+  // one banner that matters.
+  //
+  // The cost is stated rather than hidden: for up to ten days a visitor
+  // can see a green "operating normally" over data that is days old. That
+  // is the accepted trade, not an oversight.
+  //
+  // Ten days is also long enough to mean something specific. A broken
+  // workflow gets noticed and fixed in hours or days; ten days of silence
+  // from a project one person runs alone says something about the person,
+  // and the wording says so plainly rather than hiding behind "may be out
+  // of date".
+  staleHours: 240,
   hoursAgo: function (n) { return n + (n === 1 ? ' tund' : ' tundi') + ' tagasi'; },
   daysAgo: function (n) { return n + (n === 1 ? ' päev' : ' päeva') + ' tagasi'; },
-  cautionTitle: "See leht võib olla aegunud",
-  cautionText: "Viimane skannimine lõppes {age}. Tavaliselt toimub skannimine iga 4 tunni tagant, seega mõni on vahele jäänud. Käsitle allolevat olekut kui võimalikku aegunut.",
-  stoppedTitle: "See monitor on peatunud",
-  stoppedText: "Viimane skannimine lõppes {age}. Praegu ei kontrollita midagi. <strong>Ära käsitle hoiatuste puudumist ohutuse märgina.</strong>",
+  staleTitle: "See monitor on tõenäoliselt hüljatud",
+  staleText: "Viimane skannimine lõppes {age}. Sellest ajast pole midagi kontrollitud. Seda projekti haldab üks inimene ja nii pikk vaikus tähendab tavaliselt, et seda enam ei hooldata — selle haldaja ei pruugi enam saada seda käigus hoida. <strong>Ära käsitle hoiatuste puudumist ohutuse märgina.</strong>",
   unknownTitle: "Värskust ei õnnestunud kontrollida",
   unknownText: "Leht ei suutnud tuvastada, millal see viimati uuenes. Suhtu allolevasse olekusse ettevaatusega.",
   notUpdating: "Ei uuene",
@@ -946,13 +955,9 @@ function renderLiveness(d) {
   // to stop. It is a real bug that shipped, not a hypothetical one.
   if (lastRow) lastRow.textContent = livenessAgeText(age);
 
-  if (age >= LIVENESS.stoppedHours) {
-    showLiveness('stopped', '\u26D4', LIVENESS.stoppedTitle,
-      LIVENESS.stoppedText.replace('{age}', livenessAgeText(age)));
-    markReadoutStale();
-  } else if (age >= LIVENESS.cautionHours) {
-    showLiveness('caution', '\u26A0', LIVENESS.cautionTitle,
-      LIVENESS.cautionText.replace('{age}', livenessAgeText(age)));
+  if (age >= LIVENESS.staleHours) {
+    showLiveness('stopped', '\u26D4', LIVENESS.staleTitle,
+      LIVENESS.staleText.replace('{age}', livenessAgeText(age)));
     markReadoutStale();
   }
 }

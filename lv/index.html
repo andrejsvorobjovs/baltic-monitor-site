@@ -886,18 +886,27 @@
 // a server that may be dead — fails in exactly the case this exists for.
 // For a warning system, a rare false alarm beats a silent false all-clear.
 var LIVENESS = {
-  // A full scan runs every 4 hours. Scheduled GitHub Actions runs are
-  // best-effort and routinely drift, so CAUTION allows two missed scans
-  // plus slack rather than firing on the first late one. Past STOPPED,
-  // a day and a half with nothing published, no schedule explains it.
-  cautionHours: 10,
-  stoppedHours: 36,
+  // A full scan runs every 4 hours, so this fires only after roughly 60
+  // consecutive missed scans. Set deliberately high by the project owner,
+  // against a recommendation for an earlier first tier: a banner that
+  // appears whenever GitHub's scheduler drifts is noise, and noise on a
+  // warning page is worse than useless — it teaches people to ignore the
+  // one banner that matters.
+  //
+  // The cost is stated rather than hidden: for up to ten days a visitor
+  // can see a green "operating normally" over data that is days old. That
+  // is the accepted trade, not an oversight.
+  //
+  // Ten days is also long enough to mean something specific. A broken
+  // workflow gets noticed and fixed in hours or days; ten days of silence
+  // from a project one person runs alone says something about the person,
+  // and the wording says so plainly rather than hiding behind "may be out
+  // of date".
+  staleHours: 240,
   hoursAgo: function (n) { return 'pirms ' + n + ' ' + ((n % 10 === 1 && n % 100 !== 11) ? 'stundas' : 'stundām'); },
   daysAgo: function (n) { return 'pirms ' + n + ' ' + ((n % 10 === 1 && n % 100 !== 11) ? 'dienas' : 'dienām'); },
-  cautionTitle: "Šī lapa var būt novecojusi",
-  cautionText: "Pēdējā skenēšana pabeigta {age}. Skenēšana parasti notiek ik pēc 4 stundām, tāpēc dažas ir izlaistas. Uzskatiet zemāk redzamo statusu par iespējami novecojušu.",
-  stoppedTitle: "Šis monitors ir apstājies",
-  stoppedText: "Pēdējā skenēšana pabeigta {age}. Pašlaik nekas netiek pārbaudīts. <strong>Neuzskatiet brīdinājumu trūkumu par drošības apliecinājumu.</strong>",
+  staleTitle: "Šis monitors, visticamāk, ir pamests",
+  staleText: "Pēdējā skenēšana pabeigta {age}. Kopš tā laika nekas nav pārbaudīts. Šo projektu uztur viens cilvēks, un tik ilgs klusums parasti nozīmē, ka tas vairs netiek uzturēts — tā uzturētājs, iespējams, vairs nespēj to darbināt. <strong>Neuzskatiet brīdinājumu trūkumu par drošības apliecinājumu.</strong>",
   unknownTitle: "Neizdevās pārbaudīt datu svaigumu",
   unknownText: "Lapa nevarēja noteikt, kad tā pēdējoreiz atjaunināta. Izturieties pret zemāk redzamo statusu piesardzīgi.",
   notUpdating: "Netiek atjaunināts",
@@ -946,13 +955,9 @@ function renderLiveness(d) {
   // to stop. It is a real bug that shipped, not a hypothetical one.
   if (lastRow) lastRow.textContent = livenessAgeText(age);
 
-  if (age >= LIVENESS.stoppedHours) {
-    showLiveness('stopped', '\u26D4', LIVENESS.stoppedTitle,
-      LIVENESS.stoppedText.replace('{age}', livenessAgeText(age)));
-    markReadoutStale();
-  } else if (age >= LIVENESS.cautionHours) {
-    showLiveness('caution', '\u26A0', LIVENESS.cautionTitle,
-      LIVENESS.cautionText.replace('{age}', livenessAgeText(age)));
+  if (age >= LIVENESS.staleHours) {
+    showLiveness('stopped', '\u26D4', LIVENESS.staleTitle,
+      LIVENESS.staleText.replace('{age}', livenessAgeText(age)));
     markReadoutStale();
   }
 }

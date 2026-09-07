@@ -897,18 +897,27 @@ function ltForm(n, one, few, many) {
 }
 
 var LIVENESS = {
-  // A full scan runs every 4 hours. Scheduled GitHub Actions runs are
-  // best-effort and routinely drift, so CAUTION allows two missed scans
-  // plus slack rather than firing on the first late one. Past STOPPED,
-  // a day and a half with nothing published, no schedule explains it.
-  cautionHours: 10,
-  stoppedHours: 36,
+  // A full scan runs every 4 hours, so this fires only after roughly 60
+  // consecutive missed scans. Set deliberately high by the project owner,
+  // against a recommendation for an earlier first tier: a banner that
+  // appears whenever GitHub's scheduler drifts is noise, and noise on a
+  // warning page is worse than useless — it teaches people to ignore the
+  // one banner that matters.
+  //
+  // The cost is stated rather than hidden: for up to ten days a visitor
+  // can see a green "operating normally" over data that is days old. That
+  // is the accepted trade, not an oversight.
+  //
+  // Ten days is also long enough to mean something specific. A broken
+  // workflow gets noticed and fixed in hours or days; ten days of silence
+  // from a project one person runs alone says something about the person,
+  // and the wording says so plainly rather than hiding behind "may be out
+  // of date".
+  staleHours: 240,
   hoursAgo: function (n) { return 'prieš ' + n + ' ' + ltForm(n, 'valandą', 'valandas', 'valandų'); },
   daysAgo: function (n) { return 'prieš ' + n + ' ' + ltForm(n, 'dieną', 'dienas', 'dienų'); },
-  cautionTitle: "Šis puslapis gali būti pasenęs",
-  cautionText: "Paskutinis nuskaitymas baigtas {age}. Nuskaitymai paprastai vyksta kas 4 valandas, todėl kai kurie buvo praleisti. Žemiau pateiktą būseną laikykite galimai pasenusia.",
-  stoppedTitle: "Šis stebėtojas sustojo",
-  stoppedText: "Paskutinis nuskaitymas baigtas {age}. Šiuo metu niekas netikrinama. <strong>Nelaikykite įspėjimų nebuvimo saugumo ženklu.</strong>",
+  staleTitle: "Šis stebėtojas greičiausiai apleistas",
+  staleText: "Paskutinis nuskaitymas baigtas {age}. Nuo tada niekas netikrinta. Šį projektą prižiūri vienas žmogus, o tokia ilga tyla paprastai reiškia, kad jis nebeprižiūrimas — jo prižiūrėtojas galbūt nebegali jo valdyti. <strong>Nelaikykite įspėjimų nebuvimo saugumo ženklu.</strong>",
   unknownTitle: "Nepavyko patikrinti duomenų šviežumo",
   unknownText: "Puslapis negalėjo nustatyti, kada paskutinį kartą atnaujintas. Žemiau pateiktą būseną vertinkite atsargiai.",
   notUpdating: "Neatnaujinama",
@@ -957,13 +966,9 @@ function renderLiveness(d) {
   // to stop. It is a real bug that shipped, not a hypothetical one.
   if (lastRow) lastRow.textContent = livenessAgeText(age);
 
-  if (age >= LIVENESS.stoppedHours) {
-    showLiveness('stopped', '\u26D4', LIVENESS.stoppedTitle,
-      LIVENESS.stoppedText.replace('{age}', livenessAgeText(age)));
-    markReadoutStale();
-  } else if (age >= LIVENESS.cautionHours) {
-    showLiveness('caution', '\u26A0', LIVENESS.cautionTitle,
-      LIVENESS.cautionText.replace('{age}', livenessAgeText(age)));
+  if (age >= LIVENESS.staleHours) {
+    showLiveness('stopped', '\u26D4', LIVENESS.staleTitle,
+      LIVENESS.staleText.replace('{age}', livenessAgeText(age)));
     markReadoutStale();
   }
 }
