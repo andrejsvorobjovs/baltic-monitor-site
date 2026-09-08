@@ -1,20 +1,51 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-08T18:52:17.808758+00:00",
+  "last_run_utc": "2026-09-08T22:07:42.702374+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 351,
+  "total_scans": 352,
   "quiet_count": 272,
-  "watch_count": 77,
+  "watch_count": 78,
   "warn_count": 2,
   "correction_count": 2,
-  "generated_at": "2026-09-08 18:52 UTC",
+  "generated_at": "2026-09-08 22:07 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 108,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-08T22:07:42.783710+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 188,
+      "stale_count": 1,
+      "alert_id": "0908-2207",
+      "items": [
+        {
+          "title": "Lavrov warns NATO troops in Ukraine would be legitimate targets",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/lavrov-warns-nato-troops-in-ukraine-would-be-legitimate-targ--cameoplus_54ac35d265d7a552",
+          "categories": [
+            "troop_movement",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "1384",
+          "gdelt_event_code": "1384",
+          "goldstein": -7,
+          "route": "gdelt"
+        }
+      ]
+    },
     {
       "ts": "2026-09-08T18:52:17.822220+00:00",
       "level": "WATCH",
@@ -543,23 +574,26 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-09-06T17:53:26.814504+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 163,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-08T22:07:43.151279+00:00",
+      "level": "WATCH",
+      "title": "Lavrov warns NATO troops in Ukraine would be legitimate targets",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/lavrov-warns-nato-troops-in-ukraine-would-be-legitimate-targ--cameoplus_54ac35d265d7a552",
+      "categories": [
+        "troop_movement",
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "1384",
+      "gdelt_event_code": "1384",
+      "goldstein": -7
+    },
     {
       "ts": "2026-09-08T18:52:18.162516+00:00",
       "level": "WATCH",
@@ -784,22 +818,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-05T17:34:45.192790+00:00",
-      "level": "WATCH",
-      "title": "TS-LKD leader pledges process for universal conscription",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/ts-lkd-leader-pledges-process-for-universal-conscription--cameoplus_186239dfd81e3397",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "0342",
-      "gdelt_event_code": "0342",
-      "goldstein": 4
     }
   ],
   "recent_corrections": [
@@ -973,16 +991,16 @@
   "filter_record": {
     "window_days": 30,
     "scans": 206,
-    "alerting_scans": 61,
+    "alerting_scans": 62,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 176
+    "scans_before_tracking": 175
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 79,
+    "alerts": 80,
     "judged": 0,
-    "unjudged": 79,
+    "unjudged": 80,
     "genuine": 0,
     "noise": 0,
     "precision_pct": null,
