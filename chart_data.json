@@ -2421,6 +2421,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": -0.9333333333333333
+    },
+    {
+      "ts": "2026-09-08T08:18:41.679977+00:00",
+      "level": "WARN",
+      "count": 5,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -3193,6 +3200,10 @@
     {
       "ts": "2026-09-08T01:25:12.691636+00:00",
       "count": 360
+    },
+    {
+      "ts": "2026-09-08T08:16:13.517578+00:00",
+      "count": 396
     }
   ],
   "military_points": [
@@ -3839,6 +3850,10 @@
     {
       "ts": "2026-09-08T01:25:13.242952+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-09-08T08:16:13.952951+00:00",
+      "count": 10
     }
   ],
   "firms_points": [
@@ -5835,6 +5850,32 @@
       },
       "band_key": "moderate_below",
       "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-08T08:17:31.023393+00:00",
+      "deviation_pct": 139.6275121181345,
+      "sources_included": 3,
+      "narrative": "AIS vessel activity 111% above baseline; military aircraft 348% above baseline; GPS jamming steady.",
+      "band": "highly elevated \u2014 highest in 77 scans of tracking",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 111,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 348,
+            "direction": "above"
+          }
+        ],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": "high_above",
+      "band_record_scans": 77
     }
   ]
 }
