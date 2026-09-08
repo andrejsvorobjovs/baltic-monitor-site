@@ -2428,6 +2428,20 @@
       "count": 5,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-09-08T11:42:16.112676+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-08T12:24:25.252113+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": -2.348275862068965
     }
   ],
   "gpsjam_points": [
@@ -3204,6 +3218,10 @@
     {
       "ts": "2026-09-08T08:16:13.517578+00:00",
       "count": 396
+    },
+    {
+      "ts": "2026-09-08T12:23:10.250065+00:00",
+      "count": 374
     }
   ],
   "military_points": [
@@ -3854,6 +3872,10 @@
     {
       "ts": "2026-09-08T08:16:13.952951+00:00",
       "count": 10
+    },
+    {
+      "ts": "2026-09-08T12:23:10.988348+00:00",
+      "count": 10
     }
   ],
   "firms_points": [
@@ -4268,6 +4290,10 @@
     {
       "ts": "2026-09-08T01:25:15.729393+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-09-08T12:23:14.183686+00:00",
+      "count": 8
     }
   ],
   "entsoe_points": [
@@ -5876,6 +5902,37 @@
       },
       "band_key": "high_above",
       "band_record_scans": 77
+    },
+    {
+      "ts": "2026-09-08T12:23:15.787859+00:00",
+      "deviation_pct": 83.67377396301299,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 98% above baseline; military aircraft 339% above baseline; thermal hotspots 71% below baseline; GPS jamming steady.",
+      "band": "highly elevated",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 98,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 339,
+            "direction": "above"
+          },
+          {
+            "signal": "firms",
+            "pct": 71,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": "high_above",
+      "band_record_scans": null
     }
   ]
 }
