@@ -2414,6 +2414,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-09-08T01:29:05.057827+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": -0.9333333333333333
     }
   ],
   "gpsjam_points": [
@@ -2536,6 +2543,10 @@
     {
       "ts": "2026-09-06T00:00:00+00:00",
       "count": 182
+    },
+    {
+      "ts": "2026-09-07T00:00:00+00:00",
+      "count": 186
     }
   ],
   "ais_points": [
@@ -3178,6 +3189,10 @@
     {
       "ts": "2026-09-07T22:14:57.226262+00:00",
       "count": 459
+    },
+    {
+      "ts": "2026-09-08T01:25:12.691636+00:00",
+      "count": 360
     }
   ],
   "military_points": [
@@ -3820,6 +3835,10 @@
     {
       "ts": "2026-09-07T22:14:57.846959+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-09-08T01:25:13.242952+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -4230,6 +4249,10 @@
     {
       "ts": "2026-09-07T22:15:00.937629+00:00",
       "count": 29
+    },
+    {
+      "ts": "2026-09-08T01:25:15.729393+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -5780,6 +5803,37 @@
         ]
       },
       "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-08T01:28:01.888933+00:00",
+      "deviation_pct": -24.798313840547618,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 93% above baseline; military aircraft 100% below baseline; thermal hotspots 100% below baseline; GPS jamming steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 93,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": "moderate_below",
       "band_record_scans": null
     }
   ]

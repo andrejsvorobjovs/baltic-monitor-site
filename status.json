@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-07T22:17:35.957731+00:00",
+  "last_run_utc": "2026-09-08T01:29:04.946683+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 345,
-  "quiet_count": 270,
+  "total_scans": 346,
+  "quiet_count": 271,
   "watch_count": 74,
   "warn_count": 1,
   "correction_count": 2,
-  "generated_at": "2026-09-07 22:17 UTC",
+  "generated_at": "2026-09-08 01:29 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 108,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-08T01:29:05.057827+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 39,
+      "stale_count": 2,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-07T22:17:35.969953+00:00",
       "level": "QUIET",
@@ -418,49 +432,6 @@
       "stale_count": 0,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-05T17:34:45.188369+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 164,
-      "stale_count": 0,
-      "alert_id": "0905-1734",
-      "items": [
-        {
-          "title": "TS-LKD leader pledges process for universal conscription",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/ts-lkd-leader-pledges-process-for-universal-conscription--cameoplus_186239dfd81e3397",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "0342",
-          "gdelt_event_code": "0342",
-          "goldstein": 4
-        },
-        {
-          "title": "Ukrai\u0146u dronu komandieris Ma\u0123ars: Kijiva nekad netiks ie\u0146emta tr\u012bs dien\u0101s, bet par Baltiju neesmu dro\u0161s",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8540470",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -874,11 +845,11 @@
   "direct_feed_new_outlets": 24,
   "filter_record": {
     "window_days": 30,
-    "scans": 207,
+    "scans": 206,
     "alerting_scans": 57,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 183
+    "scans_before_tracking": 181
   },
   "alert_accuracy": {
     "window_days": 90,
