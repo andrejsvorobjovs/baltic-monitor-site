@@ -699,6 +699,7 @@
         <h4>Kas hoiatused olid õiged?</h4>
         <p class="acc-figure mono" id="acc-figure"></p>
         <p class="acc-line" id="acc-line"></p>
+        <p class="acc-caveat"><strong>Rakendatud reegel:</strong> hoiatus loeb tõeliseks signaaliks ainult siis, kui midagi juhtus või sellest teatati usutavalt kui peatselt juhtuvast Balti riikides või nende vastu. Kommentaar, analüüs ja ajalugu, mis piirkonda vaid mainivad, loevad müraks — olgu need kui tahes huvitavad.</p>
         <p class="acc-caveat">Hinnatud ükshaaval projekti haldaja poolt — see ei ole sõltumatu audit. Arv on väärtuslik ainult seetõttu, et iga hinnang on seotud tol ajal avaldatud hoiatusega: kanali ajalugu on avalik ja igaühega võib mitte nõustuda.</p>
       </div>
       <div class="filter-record" id="filter-record" hidden>
@@ -865,7 +866,7 @@
       ei varjata.
     </p>
     <p class="fine mono" id="generated-note">Elavad andmed laaditakse automaatselt igal külastusel.</p>
-    <p class="fine mono">Leidsid turvaprobleemi? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a> · <a href="/et/privacy/">Privaatsus</a> · <a href="/et/funding/">Rahastus</a></p>
+    <p class="fine mono">Leidsid turvaprobleemi? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a> · <a href="/et/privacy/">Privaatsus</a> · <a href="/et/funding/">Rahastus</a> · <a href="/et/continuity/">Jätkusuutlikkus</a></p>
   </div>
 </footer>
 
@@ -908,7 +909,7 @@ var LIVENESS = {
   hoursAgo: function (n) { return n + (n === 1 ? ' tund' : ' tundi') + ' tagasi'; },
   daysAgo: function (n) { return n + (n === 1 ? ' päev' : ' päeva') + ' tagasi'; },
   staleTitle: "Keegi pole seda üle 10 päeva käitanud",
-  staleText: "Viimane skannimine lõppes {age}. Sellest ajast pole midagi kontrollitud. Seda projekti haldab üks inimene. Nii pikk vaikus tähendab kõige tõenäolisemalt, et see inimene ei saa seda enam käigus hoida — sealhulgas võimalust, et ta on surnud. <strong>Ära käsitle hoiatuste puudumist ohutuse märgina.</strong>",
+  staleText: "Viimane skannimine lõppes {age}. Sellest ajast pole midagi kontrollitud. Seda projekti haldab üks inimene. Nii pikk vaikus tähendab kõige tõenäolisemalt, et see inimene ei saa seda enam käigus hoida — sealhulgas võimalust, et ta on surnud. <strong>Ära käsitle hoiatuste puudumist ohutuse märgina.</strong> <a href='/et/continuity/'>Mis juhtub, kui ma lõpetan</a>.",
   unknownTitle: "Värskust ei õnnestunud kontrollida",
   unknownText: "Leht ei suutnud tuvastada, millal see viimati uuenes. Suhtu allolevasse olekusse ettevaatusega.",
   notUpdating: "Ei uuene",

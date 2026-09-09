@@ -699,6 +699,7 @@
         <h4>Vai brīdinājumi bija pareizi?</h4>
         <p class="acc-figure mono" id="acc-figure"></p>
         <p class="acc-line" id="acc-line"></p>
+        <p class="acc-caveat"><strong>Piemērotais noteikums:</strong> brīdinājums skaitās īsts signāls tikai tad, ja kaut kas notika vai tika ticami ziņots, ka notiks, Baltijas valstīs vai pret tām. Komentāri, analīze un vēsture, kas reģionu tikai piemin, skaitās troksnis — lai cik interesanti tie būtu.</p>
         <p class="acc-caveat">Novērtējis pa vienam projekta uzturētājs — tas nav neatkarīgs audits. Skaitlis ir vērtīgs tikai tāpēc, ka katrs vērtējums ir piesaistīts brīdinājumam, kas tolaik tika publicēts: kanāla vēsture ir atklāta, un ar jebkuru var nepiekrist.</p>
       </div>
       <div class="filter-record" id="filter-record" hidden>
@@ -865,7 +866,7 @@
       un publicēti atklāti, nevis slēpti.
     </p>
     <p class="fine mono" id="generated-note">Dzīvie dati tiek ielādēti automātiski katrā apmeklējumā.</p>
-    <p class="fine mono">Atradi drošības problēmu? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a> · <a href="/lv/privacy/">Privātums</a> · <a href="/lv/funding/">Finansējums</a></p>
+    <p class="fine mono">Atradi drošības problēmu? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a> · <a href="/lv/privacy/">Privātums</a> · <a href="/lv/funding/">Finansējums</a> · <a href="/lv/continuity/">Nepārtrauktība</a></p>
   </div>
 </footer>
 
@@ -908,7 +909,7 @@ var LIVENESS = {
   hoursAgo: function (n) { return 'pirms ' + n + ' ' + ((n % 10 === 1 && n % 100 !== 11) ? 'stundas' : 'stundām'); },
   daysAgo: function (n) { return 'pirms ' + n + ' ' + ((n % 10 === 1 && n % 100 !== 11) ? 'dienas' : 'dienām'); },
   staleTitle: "Neviens to nav darbinājis vairāk nekā 10 dienas",
-  staleText: "Pēdējā skenēšana pabeigta {age}. Kopš tā laika nekas nav pārbaudīts. Šo projektu uztur viens cilvēks. Tik ilgs klusums visticamāk nozīmē, ka šī persona to vairs nevar darbināt — tostarp iespēju, ka šī persona ir mirusi. <strong>Neuzskatiet brīdinājumu trūkumu par drošības apliecinājumu.</strong>",
+  staleText: "Pēdējā skenēšana pabeigta {age}. Kopš tā laika nekas nav pārbaudīts. Šo projektu uztur viens cilvēks. Tik ilgs klusums visticamāk nozīmē, ka šī persona to vairs nevar darbināt — tostarp iespēju, ka šī persona ir mirusi. <strong>Neuzskatiet brīdinājumu trūkumu par drošības apliecinājumu.</strong> <a href='/lv/continuity/'>Kas notiek, ja es apstāšos</a>.",
   unknownTitle: "Neizdevās pārbaudīt datu svaigumu",
   unknownText: "Lapa nevarēja noteikt, kad tā pēdējoreiz atjaunināta. Izturieties pret zemāk redzamo statusu piesardzīgi.",
   notUpdating: "Netiek atjaunināts",

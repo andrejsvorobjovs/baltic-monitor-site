@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nepārtrauktība — Baltic Signal Monitor</title>
+<meta name="description" content="Kas notiek ar šo projektu, ja cilvēks, kas to uztur, apstājas — un kā to varētu turpināt.">
+<link rel="canonical" href="https://balticsignalmonitor.com/lv/continuity/">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Language versions -->
+<link rel="alternate" hreflang="en" href="https://balticsignalmonitor.com/continuity/">
+<link rel="alternate" hreflang="et" href="https://balticsignalmonitor.com/et/continuity/">
+<link rel="alternate" hreflang="lv" href="https://balticsignalmonitor.com/lv/continuity/">
+<link rel="alternate" hreflang="lt" href="https://balticsignalmonitor.com/lt/continuity/">
+<link rel="alternate" hreflang="x-default" href="https://balticsignalmonitor.com/continuity/">
+
+<meta name="theme-color" content="#0B0F14">
+<link rel="preload" href="/fonts/IBMPlexSans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SourceSerif4-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts.css">
+
+<style>
+  /* Single dark theme for everyone. The page used to follow each
+     visitor's OS light/dark setting, so the same alert page looked
+     different on different phones and screenshots of it did not
+     match. One look, no options.
+     color-scheme tells the browser to render its own furniture --
+     scrollbars, form controls, the address bar on mobile -- dark
+     too, otherwise those stay light and the page looks half-done. */
+  :root {
+    color-scheme: dark;
+
+    /* Type scale — see index.html for why this exists. */
+    --fs-2xs: 11px; --fs-xs: 11.5px; --fs-sm: 12.5px; --fs-md: 13.5px;
+    --fs-base: 15px; --fs-lg: 17px; --fs-xl: 20px; --fs-2xl: 24px; --fs-3xl: 26px;
+    --ink: #0B0F14;
+    --ink-text: #E7EDF3;
+    --ink-dim: #93A1AF;
+    --border: #1E2831;
+    --card: #111820;
+    --accent: #4E9DAE;
+    --accent-text: #08121A;
+    --mono: #0A1017;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--ink-text);
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: "Source Serif 4", "Iowan Old Style", Georgia, serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  header.site { border-bottom: 1px solid var(--border); padding: 18px 0; }
+  header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .wordmark { font-size: var(--fs-lg); font-weight: 600; letter-spacing: -0.01em; }
+  .wordmark .serif { font-style: italic; }
+  /* The wordmark is the way back to the top of the homepage — the shortcut
+     every site has and this one did not. Keeps the header's own colour
+     rather than the global link accent, so it still reads as a wordmark
+     and not as a link in a sentence. */
+  a.wordmark { color: inherit; text-decoration: none; display: inline-block; }
+  a.wordmark:hover { color: var(--accent); }
+  a.wordmark:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+  nav.top { display: flex; gap: 24px; align-items: baseline; }
+  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: var(--fs-md); letter-spacing: 0.02em; }
+  nav.top a:hover { color: var(--ink-text); }
+  .lang-switch { font-size: var(--fs-sm); color: var(--ink-dim); }
+  .lang-switch a { color: var(--ink-dim); }
+  .lang-switch a.active { color: var(--ink-text); font-weight: 700; }
+  .lang-switch a:hover { color: var(--ink-text); }
+
+  main { padding: 56px 0 40px; }
+  .eyebrow {
+    font-size: var(--fs-sm); letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 36px); margin: 0 0 16px; letter-spacing: -0.01em; }
+  h2 { font-size: var(--fs-xl); margin: 40px 0 10px; }
+  p { color: var(--ink-dim); font-size: var(--fs-base); margin: 0 0 14px; max-width: 62ch; }
+  p.lede { color: var(--ink-text); font-size: var(--fs-lg); max-width: 60ch; }
+  .card {
+    background: var(--mono); border: 1px solid var(--border); border-radius: 4px;
+    padding: 18px 22px; margin: 24px 0;
+  }
+  .card p { margin: 0; }
+  ul { color: var(--ink-dim); font-size: var(--fs-base); max-width: 62ch; padding-left: 20px; }
+  li { margin: 0 0 8px; }
+  footer { padding: 32px 0 64px; border-top: 1px solid var(--border); margin-top: 24px; }
+  footer p { color: var(--ink-dim); font-size: var(--fs-md); max-width: 60ch; }
+  footer .fine { margin-top: 12px; font-size: var(--fs-sm); }
+  .back { display: inline-block; margin-top: 8px; font-size: var(--fs-base); }
+</style>
+<style>
+  .stop {
+    border-left: 3px solid #B4544B; background: var(--mono);
+    padding: 16px 20px; margin: 24px 0; border-radius: 0 4px 4px 0;
+  }
+  .stop p { margin: 0; color: var(--ink-text); }
+  .gaps li { margin-bottom: 10px; }
+  .gaps li strong { color: var(--ink-text); }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="wordmark" href="/lv/" aria-label="Baltic Signal Monitor"><span class="serif">Baltic</span> Signal Monitor</a>
+    <nav class="top">
+      <a href="/lv/#how">Metode</a>
+      <a href="/lv/#status">Statuss</a>
+      <a href="/lv/#faq">BUJ</a>
+      <span class="lang-switch">
+        <a href="/continuity/">EN</a> · <a href="/et/continuity/">ET</a> · <a href="/lv/continuity/" class="active">LV</a> · <a href="/lt/continuity/">LT</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="eyebrow">Nepārtrauktība</p>
+  <h1>Kas notiek, ja es apstāšos</h1>
+  <p class="lede">Šo veido un uztur viens cilvēks. Tā ir lielākā vājā vieta visā sistēmā, un izlikties citādi būtu nepareizs veids, kā vadīt brīdinājumu kanālu.</p>
+
+  <div class="stop"><p><strong>Klusums šeit nenozīmē, ka viss ir kārtībā.</strong> Ja šī lapa pārstāj atjaunoties, tas nozīmē, ka nekas nav pārbaudīts — nevis to, ka nekas nenotiek. Īstā ārkārtas situācijā vienmēr izmanto savas valsts oficiālos kanālus: Igaunija — kriis.ee · Latvija — vugd.gov.lv · Lietuva — lrv.lt.</p></div>
+
+  <h2>Lapa pati tev pateiks</h2>
+  <p>Pēc desmit dienām bez pabeigtas skenēšanas katrā lapā parādās paziņojums, kas skaidri saka, ka cilvēks, kas to uztur, iespējams, vairs nevar to darīt — ieskaitot iespēju, ka viņš ir miris.</p><p>Šī pārbaude notiek tavā paša pārlūkprogrammā, salīdzinot ar pēdējās skenēšanas laiku. Tā nejautā serverim, vai serveris strādā, jo sistēma, kas ir apstājusies, nevar pati paziņot, ka tā ir apstājusies. Tā strādā arī tad, kad viss aiz tās vairs nedarbojas.</p><p>Desmit dienas ir apzināti ilgs laiks. Paziņojums, kas parādās katru reizi, kad grafiks nedaudz nobīdās, ir troksnis, un troksnis brīdinājumu lapā iemāca cilvēkiem ignorēt to vienu paziņojumu, kam ir nozīme.</p>
+  <h2>Nekas pats no sevis neatsāksies</h2>
+  <p>Ja es apstāšos, skenēšana turpinās pēc grafika, līdz beidzas kāda atslēga vai bezmaksas kvota. Tad lapa apstājas — vienlaikus izskatoties normāla ikvienam, kas nepaskatās uz datumu. Tieši šo plaisu starp “izskatās labi” un “ir labi” paziņojums aizver.</p>
+  <h2>Ja gribi to turpināt</h2>
+  <p>Ir uzrakstīta nodošanas dokumentācija — arhitektūra, kas kur darbojas, kādi piekļuves dati pastāv un kam katrs domāts — glabāta publiskajā vietnes repozitorijā, nevis privātajā, jo nodošanas piezīme, kurai neviens nevar piekļūt, nav nodošanas piezīme.</p><p><a href="https://github.com/andrejsvorobjovs/baltic-monitor-site/blob/main/CONTINUITY.md">Lasi CONTINUITY.md</a> — rakstīts svešiniekam bez nekāda priekšzināšanu konteksta.</p><p>Viss publicētais ieraksts — katrs skenēšanas rezultāts, pilna brīdinājumu vēsture, labojumi — ir publiskos failos ar pilnu versiju vēsturi. Ikviens var pārbaudīt vai kopēt šo ierakstu, neprasot atļauju.</p><p>Viens lūgums: ja to atjauno no jauna, dari to sava vārdā. Labojumu žurnāls un neatkarības apgalvojums sākumlapā ir konkrēta cilvēka doti solījumi, un brīdinājumu kanāls, kas nemanāmi maina īpašnieku, ir tieši tā kļūda, pret kuru šis projekts iestājas.</p>
+  <h2>Kas joprojām nav atrisināts</h2>
+  <p>Norādīts atklāti, nevis noklusēts — nepārtrauktības plāns, kas sevi pārspīlē, ir sliktāks par nekādu:</p><ul class="gaps"><li><strong>Neviens otrs cilvēks netur piekļuves datus.</strong> Tā ir īstā vienīgā atteices vieta, un nekas no augstāk minētā to neatrisina. Tas tikai padara sekas izturamas.</li><li><strong>Nevienai organizācijai nekas nepieder.</strong> Domēns un konti pieder vienam cilvēkam, kas padara sakārtotu nodošanu grūtāku, nekā tai vajadzētu būt.</li><li><strong>Atslēgvārdu sarakstiem nav pēctecības ceļa.</strong> Tie ir privāti, tā ir grūtāk iegūtā daļa, un nevienam citam nav kopijas.</li></ul><p>Tas ir uzskaitīts šeit, lai nevienam nebūtu jāatklāj tas vissliktākajā iespējamajā brīdī.</p>
+
+  <p>Jautājumi vai piedāvājums palīdzēt ar kaut ko no minētā: <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a>.</p>
+
+  <a class="back" href="/lv/">← Atpakaļ uz galveno lapu</a>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Baltic Signal Monitor ir neatkarīgs, personīgi veidots uzraudzības rīks — nevis oficiāls valdības, NATO vai izlūkdienestu avots, un nav ar tiem saistīts.</p>
+    <p class="fine mono">Atradi drošības problēmu? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a> · <a href="/lv/privacy/">Privātums</a> · <a href="/lv/funding/">Finansējums</a> · <a href="/lv/continuity/">Nepārtrauktība</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
