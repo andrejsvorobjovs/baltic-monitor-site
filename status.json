@@ -2,14 +2,14 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-09-09T08:24:37.477366+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 2.3h ago",
   "since": "2026-07-19",
   "total_scans": 354,
   "quiet_count": 273,
   "watch_count": 79,
   "warn_count": 2,
-  "correction_count": 2,
-  "generated_at": "2026-09-09 08:24 UTC",
+  "correction_count": 3,
+  "generated_at": "2026-09-09 10:42 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 108,
@@ -821,6 +821,11 @@
   ],
   "recent_corrections": [
     {
+      "ts": "2026-09-09T10:42:14.484039+00:00",
+      "text": "A recent WATCH-level flag was wrong: on 8 September, an arts interview about a documentary film on the 1970s Soviet Union was flagged as a Baltic security signal. Cause: a scoring bug. An ambiguous keyword \u2014 one that only counts as a military signal when military vocabulary appears alongside it \u2014 was unlocked by words almost 7,000 characters away, in an unrelated part of a very long article. Combined with a passing mention of Lithuania, that was enough to clear the relevance bar. Related words must now sit close together to count. Checked against 1,581 live items across every direct source: no genuine signal was lost.",
+      "context": "WATCH alert 0908-1224, 8 September 2026 12:24 UTC \u2014 sole item from Novaya Gazeta Europe"
+    },
+    {
       "ts": "2026-08-05T01:41:20.517203+00:00",
       "text": "A recent WATCH-level flag was wrong: a story about Latvia sending about 20 soldiers to the Strait of Hormuz was mistakenly flagged as a Baltic security signal. This one was a genuine deployment, not a keyword-matching error like the wildfire correction below \u2014 but it's Latvia's own contribution to an international coalition maritime security mission on the other side of the world, with no connection to Russia or the Baltic region. The scoring gap that let this through (a Baltic country's own unrelated foreign deployments passing as a Baltic security signal) has been fixed. As always, the false positive stays in the historical record rather than being quietly deleted.",
       "context": "Latvia plans to send about 20 soldiers to Strait of Hormuz \u2014 flagged WATCH, 2026-08-04"
@@ -832,6 +837,11 @@
     }
   ],
   "recent_updates": [
+    {
+      "ts": "2026-09-09T12:00:00+00:00",
+      "title": "Two mentions in one long article no longer count as one signal",
+      "text": "Long articles could combine unrelated passages into a false signal. Related words now have to sit near each other to count. Caught a culture piece being read as a military one."
+    },
     {
       "ts": "2026-09-07T08:51:00+00:00",
       "title": "Reading the defence ministries and grid operators directly",
@@ -976,11 +986,6 @@
       "ts": "2026-08-21T19:39:31.679806+00:00",
       "title": "New: /satellite change detection -- pixel differences, not AI verdicts",
       "text": "New: satellite change detection, on request."
-    },
-    {
-      "ts": "2026-08-21T19:25:15.364848+00:00",
-      "title": "Signal Deviation Index: added a plain-language reading and a one-line why",
-      "text": "Signal Deviation Index now shows a plain-language reading."
     }
   ],
   "entsoe_outage_count": 0,
@@ -989,19 +994,19 @@
   "direct_feed_new_outlets": 24,
   "filter_record": {
     "window_days": 30,
-    "scans": 206,
+    "scans": 205,
     "alerting_scans": 63,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 173
+    "scans_before_tracking": 172
   },
   "alert_accuracy": {
     "window_days": 90,
     "alerts": 81,
-    "judged": 0,
-    "unjudged": 81,
-    "genuine": 0,
-    "noise": 0,
+    "judged": 3,
+    "unjudged": 78,
+    "genuine": 2,
+    "noise": 1,
     "precision_pct": null,
     "min_sample": 10
   }
