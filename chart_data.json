@@ -2463,6 +2463,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": -2.8685714285714288
+    },
+    {
+      "ts": "2026-09-09T01:34:54.283980+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -2589,6 +2596,10 @@
     {
       "ts": "2026-09-07T00:00:00+00:00",
       "count": 186
+    },
+    {
+      "ts": "2026-09-08T00:00:00+00:00",
+      "count": 167
     }
   ],
   "ais_points": [
@@ -3255,6 +3266,10 @@
     {
       "ts": "2026-09-08T22:02:46.705658+00:00",
       "count": 436
+    },
+    {
+      "ts": "2026-09-09T01:29:56.418054+00:00",
+      "count": 547
     }
   ],
   "military_points": [
@@ -3921,6 +3936,10 @@
     {
       "ts": "2026-09-08T22:02:47.297085+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-09-09T01:29:57.104671+00:00",
+      "count": 1
     }
   ],
   "firms_points": [
@@ -4347,6 +4366,10 @@
     {
       "ts": "2026-09-08T22:02:49.656573+00:00",
       "count": 10
+    },
+    {
+      "ts": "2026-09-09T01:29:59.941252+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -6065,6 +6088,37 @@
           {
             "signal": "firms",
             "pct": 63,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-09T01:33:45.141582+00:00",
+      "deviation_pct": 5.245341102452003,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 182% above baseline; military aircraft 57% below baseline; thermal hotspots 100% below baseline; GPS jamming steady.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 182,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 57,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
             "direction": "below"
           }
         ],
