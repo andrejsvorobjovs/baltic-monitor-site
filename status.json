@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-09T18:51:23.091268+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-09-09T21:57:52.362290+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 359,
-  "quiet_count": 273,
+  "total_scans": 360,
+  "quiet_count": 274,
   "watch_count": 84,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-09 18:51 UTC",
+  "generated_at": "2026-09-09 21:57 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-09T21:57:52.415414+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 144,
+      "stale_count": 1,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-09T18:51:23.105911+00:00",
       "level": "WATCH",
@@ -624,20 +638,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-07T14:35:59.986815+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 503,
-      "stale_count": 27,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
@@ -907,6 +907,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-09-09T17:30:00+00:00",
+      "title": "Alerts are now read before they are sent",
+      "text": "Matching words is not the same as understanding a story. Items that pass the keyword filters are now read in full and judged on what they are actually about. It can only hold something back, never push something through, and if the reading fails the alert still goes out."
+    },
+    {
       "ts": "2026-09-09T16:30:00+00:00",
       "title": "One source was returning a list of feeds, not news",
       "text": "A major Lithuanian source had been fetching a directory of other feeds instead of articles \u2014 every fetch looked healthy and returned nothing usable. Now pointed at the real feed. A second source that never dates its articles is now read by a route that does, so old stories stop arriving as new."
@@ -1050,11 +1055,6 @@
       "ts": "2026-08-23T10:31:13.597356+00:00",
       "title": "New: AIS kinematic-anomaly detection",
       "text": "New: unusual vessel behaviour is now tracked."
-    },
-    {
-      "ts": "2026-08-23T10:21:06.550779+00:00",
-      "title": "New: downloadable CSV history export",
-      "text": "New: downloadable history export."
     }
   ],
   "entsoe_outage_count": 0,
@@ -1065,9 +1065,15 @@
     "window_days": 30,
     "scans": 208,
     "alerting_scans": 68,
-    "held_back_total": 0,
-    "held_back_by_reason": [],
-    "scans_before_tracking": 170
+    "held_back_total": 1,
+    "held_back_by_reason": [
+      {
+        "reason": "speculation",
+        "label": "Analysis or scenario piece",
+        "count": 1
+      }
+    ],
+    "scans_before_tracking": 169
   },
   "alert_accuracy": {
     "window_days": 90,
