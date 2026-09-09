@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"
+     role="img" aria-label="Baltic Signal Monitor">
+  <title>Baltic Signal Monitor</title>
+  <!--
+    Social preview card (Open Graph / Twitter), 1200x630.
+
+    Built from the same mark and the same type as the site, so the link
+    preview and the page a reader lands on look like one thing. The old
+    og-image.png was a separate raster with no source; this is generated
+    from brand/logo.svg by brand/render.py along with everything else.
+
+    Fonts come from the site's own /fonts.css, which is why render.py
+    serves the repo over HTTP rather than opening a file:// path.
+  -->
+  <defs>
+    <radialGradient id="badge" cx="50%" cy="46%" r="62%">
+      <stop offset="0%"   stop-color="#18232F"/>
+      <stop offset="62%"  stop-color="#121924"/>
+      <stop offset="100%" stop-color="#0D131C"/>
+    </radialGradient>
+
+    <!-- Sonar wash behind the target: the only "light" in the mark. -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#2C7877" stop-opacity="0.42"/>
+      <stop offset="45%"  stop-color="#2C7877" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2C7877" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Rim light, brighter at the top-left where the glow would fall. -->
+    <linearGradient id="rim" x1="18%" y1="4%" x2="82%" y2="96%">
+      <stop offset="0%"   stop-color="#31807E" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#1F5153" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1F5153" stop-opacity="0.12"/>
+    </linearGradient>
+
+    <clipPath id="disc">
+      <circle cx="96" cy="96" r="95.5"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0B0F14"/>
+
+  <!-- The mark, at 380px, left of the type. -->
+  <g transform="translate(96 125) scale(1.979)">
+<!-- Badge -->
+  <circle cx="96" cy="96" r="95.5" fill="url(#badge)"/>
+
+  <g clip-path="url(#disc)">
+    <!-- Sea silhouette, traced from the original raster. -->
+    <path fill="#24323E" fill-opacity="0.92" d="M 81.00 34.80 C 83.74 33.94 87.67 33.85 91.00 34.80 C 94.33 35.75 98.80 38.48 101.00 40.51 C 103.20 42.54 103.37 43.69 104.20 47.00 C 105.04 50.31 103.20 56.88 106.00 60.34 C 108.80 63.81 117.09 65.17 121.00 67.78 C 124.91 70.39 127.26 73.30 129.46 76.00 C 131.66 78.70 132.88 81.00 134.20 84.00 C 135.53 87.00 136.89 90.33 137.43 94.00 C 137.97 97.67 138.47 101.33 137.43 106.00 C 136.40 110.67 134.25 117.33 131.22 122.00 C 128.19 126.67 123.35 131.17 119.25 134.00 C 115.14 136.83 109.81 135.29 106.60 139.00 C 103.39 142.71 101.77 152.67 100.00 156.26 C 98.23 159.84 97.50 159.46 96.00 160.49 C 94.50 161.52 93.17 162.15 91.00 162.43 C 88.83 162.72 85.21 162.77 83.00 162.20 C 80.79 161.63 79.10 160.20 77.73 159.00 C 76.36 157.80 75.81 157.17 74.78 155.00 C 73.75 152.83 71.96 149.50 71.57 146.00 C 71.17 142.50 72.47 136.67 72.42 134.00 C 72.37 131.33 71.71 131.33 71.27 130.00 C 70.82 128.67 70.80 127.00 69.77 126.00 C 68.74 125.00 66.21 125.00 65.07 124.00 C 63.93 123.00 63.97 122.33 62.93 120.00 C 61.88 117.67 59.69 113.33 58.80 110.00 C 57.90 106.67 57.57 103.33 57.57 100.00 C 57.57 96.67 58.00 93.00 58.80 90.00 C 59.60 87.00 62.69 85.83 62.36 82.00 C 62.02 78.17 57.57 70.50 56.81 67.00 C 56.05 63.50 57.18 62.83 57.80 61.00 C 58.42 59.17 58.43 58.33 60.54 56.00 C 62.65 53.67 68.13 49.67 70.46 47.00 C 72.79 44.33 72.78 42.03 74.54 40.00 C 76.30 37.97 78.26 35.67 81.00 34.80 Z"/>
+
+    <!-- Sonar wash, centred on the target. -->
+    <circle cx="100" cy="104" r="52" fill="url(#glow)"/>
+
+    <!-- Target: two sonar rings, then the gold fix. -->
+    <g fill="none" stroke-linecap="round">
+      <circle cx="100" cy="104" r="30" stroke="#265E60" stroke-width="1.6"/>
+      <circle cx="100" cy="104" r="20" stroke="#2C7877" stroke-width="2.4"/>
+      <circle cx="100" cy="104" r="9.5" stroke="#D9B169" stroke-width="3"/>
+    </g>
+    <circle cx="100" cy="104" r="3.6" fill="#FAC873"/>
+  </g>
+
+  <!-- Outer ring, drawn last so it stays crisp over everything. -->
+  <circle cx="96" cy="96" r="90" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+  <circle cx="96" cy="96" r="95" fill="none" stroke="#1E2831" stroke-width="1.4"/>
+  </g>
+
+  <g font-family="'Source Serif 4', Georgia, serif">
+    <text x="500" y="252" font-size="66" font-style="italic" fill="#4E9DAE">Baltic</text>
+  </g>
+  <g font-family="'IBM Plex Sans', system-ui, sans-serif">
+    <text x="500" y="330" font-size="70" font-weight="600" fill="#E7EDF3" letter-spacing="-1">Signal Monitor</text>
+    <text x="500" y="404" font-size="30" fill="#93A1AF">Independent early warning for the Baltic Sea</text>
+    <text x="500" y="446" font-size="30" fill="#93A1AF">region — free, ad-free, no subscription.</text>
+    <text x="500" y="516" font-size="24" fill="#4E9DAE" letter-spacing="2">BALTICSIGNALMONITOR.COM</text>
+  </g>
+</svg>
