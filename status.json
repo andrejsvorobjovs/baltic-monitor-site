@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-09T08:24:37.477366+00:00",
+  "last_run_utc": "2026-09-09T11:56:07.744449+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 2.3h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 354,
+  "total_scans": 355,
   "quiet_count": 273,
-  "watch_count": 79,
+  "watch_count": 80,
   "warn_count": 2,
   "correction_count": 3,
-  "generated_at": "2026-09-09 10:42 UTC",
+  "generated_at": "2026-09-09 11:56 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 108,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-09T11:56:07.759834+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 444,
+      "stale_count": 4,
+      "alert_id": "0909-1156",
+      "items": [
+        {
+          "title": "Bra\u017ee: Baltkrievijas un Krievijas \u012bstenot\u0101 migrantu instrumentaliz\u0101cija ir organiz\u0113ts hibr\u012bdapdraud\u0113jums visai Eiropai",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/latvija/zinas-71/braze-baltkrievijas-un-krievijas-istenota-migrantu-instrumentalizacija-ir-organizets-hibridapdraudejums-visai-eiropai?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vai Latvij\u0101 tuv\u0101kaj\u0101 laik\u0101 var\u0113tu notikt nodok\u013cu samazin\u0101\u0161ana? Uz\u0146\u0113m\u0113js atkl\u0101j savu redz\u0113jumu",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/vai-latvija-tuvakaja-laika-varetu-notikt-nodoklu-samazinasana-uznemejs-atklaj-savu-redzejumu",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-09T08:24:37.491942+00:00",
       "level": "WATCH",
@@ -560,23 +605,41 @@
           "goldstein": null
         }
       ]
-    },
-    {
-      "ts": "2026-09-07T01:14:39.699057+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 18,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-09T11:56:08.239610+00:00",
+      "level": "WATCH",
+      "title": "Vai Latvij\u0101 tuv\u0101kaj\u0101 laik\u0101 var\u0113tu notikt nodok\u013cu samazin\u0101\u0161ana? Uz\u0146\u0113m\u0113js atkl\u0101j savu redz\u0113jumu",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/vai-latvija-tuvakaja-laika-varetu-notikt-nodoklu-samazinasana-uznemejs-atklaj-savu-redzejumu",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-09T11:56:08.239610+00:00",
+      "level": "WATCH",
+      "title": "Bra\u017ee: Baltkrievijas un Krievijas \u012bstenot\u0101 migrantu instrumentaliz\u0101cija ir organiz\u0113ts hibr\u012bdapdraud\u0113jums visai Eiropai",
+      "source": "Diena (Latvia)",
+      "link": "https://diena.lv/raksts/latvija/zinas-71/braze-baltkrievijas-un-krievijas-istenota-migrantu-instrumentalizacija-ir-organizets-hibridapdraudejums-visai-eiropai?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-09T08:24:37.973343+00:00",
       "level": "WATCH",
@@ -785,38 +848,6 @@
       "gdelt_subcategory": "0314",
       "gdelt_event_code": "0314",
       "goldstein": 4
-    },
-    {
-      "ts": "2026-09-07T08:29:02.137290+00:00",
-      "level": "WATCH",
-      "title": "Germany deploys armoured brigade to Lithuania",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/germany-deploys-armoured-brigade-to-lithuania--cameoplus_05e4a3d5d42c2aa5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "154",
-      "gdelt_event_code": "154",
-      "goldstein": -7.2
-    },
-    {
-      "ts": "2026-09-06T08:08:02.916132+00:00",
-      "level": "WATCH",
-      "title": "Martynas Katelynas atskleid\u0117, ko imamasi atsakant \u012f hibridines gr\u0117smes",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/martynas-katelynas-regiono-salys-kurs-kanala-koordinuoti-veiksmams-del-atsako-i-hibridines-gresmes-56-2757862?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -837,6 +868,11 @@
     }
   ],
   "recent_updates": [
+    {
+      "ts": "2026-09-09T13:30:00+00:00",
+      "title": "Now watching the official emergency channels themselves",
+      "text": "This page has always said to use your country's official channels in a real emergency. It now reads one of them directly, so it can see what they are saying. Two of the three publish nothing readable \u2014 that limit is written down on the method page."
+    },
     {
       "ts": "2026-09-09T12:00:00+00:00",
       "title": "Two mentions in one long article no longer count as one signal",
@@ -981,30 +1017,25 @@
       "ts": "2026-08-22T07:26:26.722086+00:00",
       "title": "Removed: /satellite (raw Sentinel-2 imagery)",
       "text": "Free Sentinel-2 imagery was too low-resolution to be genuinely useful, and higher-resolution commercial/SAR imagery is not affordable at this project's scale, so the feature was removed entirely."
-    },
-    {
-      "ts": "2026-08-21T19:39:31.679806+00:00",
-      "title": "New: /satellite change detection -- pixel differences, not AI verdicts",
-      "text": "New: satellite change detection, on request."
     }
   ],
   "entsoe_outage_count": 0,
   "entsoe_active_outages": [],
-  "direct_feed_sources": 59,
-  "direct_feed_new_outlets": 24,
+  "direct_feed_sources": 62,
+  "direct_feed_new_outlets": 27,
   "filter_record": {
     "window_days": 30,
-    "scans": 205,
-    "alerting_scans": 63,
+    "scans": 206,
+    "alerting_scans": 64,
     "held_back_total": 0,
     "held_back_by_reason": [],
     "scans_before_tracking": 172
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 81,
+    "alerts": 82,
     "judged": 3,
-    "unjudged": 78,
+    "unjudged": 79,
     "genuine": 2,
     "noise": 1,
     "precision_pct": null,
