@@ -1,32 +1,32 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-09T11:56:07.744449+00:00",
+  "last_run_utc": "2026-09-09T11:57:15.656814+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 0.4h ago",
   "since": "2026-07-19",
   "total_scans": 355,
   "quiet_count": 273,
   "watch_count": 80,
   "warn_count": 2,
-  "correction_count": 3,
-  "generated_at": "2026-09-09 11:56 UTC",
+  "correction_count": 4,
+  "generated_at": "2026-09-09 12:22 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 108,
   "tier3_sources": 10,
   "recent_history": [
     {
-      "ts": "2026-09-09T11:56:07.759834+00:00",
+      "ts": "2026-09-09T11:57:15.036601+00:00",
       "level": "WATCH",
       "count": 2,
-      "failed_count": 0,
+      "failed_count": 1,
       "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
+      "sources_scanned": 61,
+      "scan_type": "fast",
       "gdelt_ran": false,
-      "new_items_count": 444,
-      "stale_count": 4,
-      "alert_id": "0909-1156",
+      "new_items_count": 431,
+      "stale_count": 3,
+      "alert_id": "0909-1157",
       "items": [
         {
           "title": "Bra\u017ee: Baltkrievijas un Krievijas \u012bstenot\u0101 migrantu instrumentaliz\u0101cija ir organiz\u0113ts hibr\u012bdapdraud\u0113jums visai Eiropai",
@@ -852,6 +852,11 @@
   ],
   "recent_corrections": [
     {
+      "ts": "2026-09-09T12:04:21.214404+00:00",
+      "text": "Two more WATCH-level flags were wrong, both for the same reason. On 7 September a question-framed analysis piece about hybrid warfare, and on 9 September a television studio conversation about domestic tax policy, were each flagged as Baltic security signals. Neither reported that anything had happened. Cause: headlines phrased as a question are already treated as opinion rather than reporting, but that check only looked for a question mark at the very end of the headline. Both of these asked their question in the middle and then added a few words promising the answer, and went straight through. The rule now covers that shape too. Checked against every alert this project has published: three items are newly caught and all three were noise; no genuine alert is affected. Logged here without a separate notification, since the earlier correction today already went out to subscribers.",
+      "context": "WATCH alerts 0907-0911 (7 September) and 0909-1156 (9 September) \u2014 single-item alerts, both opinion pieces"
+    },
+    {
       "ts": "2026-09-09T10:42:14.484039+00:00",
       "text": "A recent WATCH-level flag was wrong: on 8 September, an arts interview about a documentary film on the 1970s Soviet Union was flagged as a Baltic security signal. Cause: a scoring bug. An ambiguous keyword \u2014 one that only counts as a military signal when military vocabulary appears alongside it \u2014 was unlocked by words almost 7,000 characters away, in an unrelated part of a very long article. Combined with a passing mention of Lithuania, that was enough to clear the relevance bar. Related words must now sit close together to count. Checked against 1,581 live items across every direct source: no genuine signal was lost.",
       "context": "WATCH alert 0908-1224, 8 September 2026 12:24 UTC \u2014 sole item from Novaya Gazeta Europe"
@@ -868,6 +873,11 @@
     }
   ],
   "recent_updates": [
+    {
+      "ts": "2026-09-09T14:15:00+00:00",
+      "title": "Headlines that ask a question no longer raise the level",
+      "text": "A headline shaped as a question, then a short teaser, was being read as a report. It is an opinion piece. Those are still shown, but they no longer raise the alert level on their own."
+    },
     {
       "ts": "2026-09-09T13:30:00+00:00",
       "title": "Now watching the official emergency channels themselves",
@@ -1012,11 +1022,6 @@
       "ts": "2026-08-22T18:14:43.268441+00:00",
       "title": "New: /gridoutage -- Baltic power grid outage tracking via ENTSO-E",
       "text": "New: Baltic power grid outage tracking."
-    },
-    {
-      "ts": "2026-08-22T07:26:26.722086+00:00",
-      "title": "Removed: /satellite (raw Sentinel-2 imagery)",
-      "text": "Free Sentinel-2 imagery was too low-resolution to be genuinely useful, and higher-resolution commercial/SAR imagery is not affordable at this project's scale, so the feature was removed entirely."
     }
   ],
   "entsoe_outage_count": 0,
@@ -1025,11 +1030,11 @@
   "direct_feed_new_outlets": 27,
   "filter_record": {
     "window_days": 30,
-    "scans": 206,
+    "scans": 205,
     "alerting_scans": 64,
     "held_back_total": 0,
     "held_back_by_reason": [],
-    "scans_before_tracking": 172
+    "scans_before_tracking": 171
   },
   "alert_accuracy": {
     "window_days": 90,
