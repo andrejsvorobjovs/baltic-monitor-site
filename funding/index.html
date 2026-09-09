@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funding — Baltic Signal Monitor</title>
+<meta name="description" content="Who pays for Baltic Signal Monitor, who does not, and who never will. Currently: nobody.">
+<link rel="canonical" href="https://balticsignalmonitor.com/funding/">
+<link rel="icon" type="image/png" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+
+<!-- Language versions -->
+<link rel="alternate" hreflang="en" href="https://balticsignalmonitor.com/funding/">
+<link rel="alternate" hreflang="et" href="https://balticsignalmonitor.com/et/funding/">
+<link rel="alternate" hreflang="lv" href="https://balticsignalmonitor.com/lv/funding/">
+<link rel="alternate" hreflang="lt" href="https://balticsignalmonitor.com/lt/funding/">
+<link rel="alternate" hreflang="x-default" href="https://balticsignalmonitor.com/funding/">
+
+<meta name="theme-color" content="#0B0F14">
+<link rel="preload" href="/fonts/IBMPlexSans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SourceSerif4-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts.css">
+
+<style>
+  /* Single dark theme for everyone. The page used to follow each
+     visitor's OS light/dark setting, so the same alert page looked
+     different on different phones and screenshots of it did not
+     match. One look, no options.
+     color-scheme tells the browser to render its own furniture --
+     scrollbars, form controls, the address bar on mobile -- dark
+     too, otherwise those stay light and the page looks half-done. */
+  :root {
+    color-scheme: dark;
+
+    /* Type scale — see index.html for why this exists. */
+    --fs-2xs: 11px; --fs-xs: 11.5px; --fs-sm: 12.5px; --fs-md: 13.5px;
+    --fs-base: 15px; --fs-lg: 17px; --fs-xl: 20px; --fs-2xl: 24px; --fs-3xl: 26px;
+    --ink: #0B0F14;
+    --ink-text: #E7EDF3;
+    --ink-dim: #93A1AF;
+    --border: #1E2831;
+    --card: #111820;
+    --accent: #4E9DAE;
+    --accent-text: #08121A;
+    --mono: #0A1017;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--ink-text);
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: "Source Serif 4", "Iowan Old Style", Georgia, serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  header.site { border-bottom: 1px solid var(--border); padding: 18px 0; }
+  header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .wordmark { font-size: var(--fs-lg); font-weight: 600; letter-spacing: -0.01em; }
+  .wordmark .serif { font-style: italic; }
+  /* The wordmark is the way back to the top of the homepage — the shortcut
+     every site has and this one did not. Keeps the header's own colour
+     rather than the global link accent, so it still reads as a wordmark
+     and not as a link in a sentence. */
+  a.wordmark { color: inherit; text-decoration: none; display: inline-block; }
+  a.wordmark:hover { color: var(--accent); }
+  a.wordmark:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+  nav.top { display: flex; gap: 24px; align-items: baseline; }
+  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: var(--fs-md); letter-spacing: 0.02em; }
+  nav.top a:hover { color: var(--ink-text); }
+  .lang-switch { font-size: var(--fs-sm); color: var(--ink-dim); }
+  .lang-switch a { color: var(--ink-dim); }
+  .lang-switch a.active { color: var(--ink-text); font-weight: 700; }
+  .lang-switch a:hover { color: var(--ink-text); }
+
+  main { padding: 56px 0 40px; }
+  .eyebrow {
+    font-size: var(--fs-sm); letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 36px); margin: 0 0 16px; letter-spacing: -0.01em; }
+  h2 { font-size: var(--fs-xl); margin: 40px 0 10px; }
+  p { color: var(--ink-dim); font-size: var(--fs-base); margin: 0 0 14px; max-width: 62ch; }
+  p.lede { color: var(--ink-text); font-size: var(--fs-lg); max-width: 60ch; }
+  .card {
+    background: var(--mono); border: 1px solid var(--border); border-radius: 4px;
+    padding: 18px 22px; margin: 24px 0;
+  }
+  .card p { margin: 0; }
+  ul { color: var(--ink-dim); font-size: var(--fs-base); max-width: 62ch; padding-left: 20px; }
+  li { margin: 0 0 8px; }
+  footer { padding: 32px 0 64px; border-top: 1px solid var(--border); margin-top: 24px; }
+  footer p { color: var(--ink-dim); font-size: var(--fs-md); max-width: 60ch; }
+  footer .fine { margin-top: 12px; font-size: var(--fs-sm); }
+  .back { display: inline-block; margin-top: 8px; font-size: var(--fs-base); }
+</style>
+<style>
+  /* Ledger table. Kept scrollable on its own so a narrow phone screen
+     never makes the whole page scroll sideways. */
+  .ledger-wrap { overflow-x: auto; margin: 20px 0 8px; }
+  table.ledger {
+    border-collapse: collapse; width: 100%; min-width: 460px;
+    font-size: var(--fs-md); color: var(--ink-dim);
+  }
+  table.ledger th, table.ledger td {
+    text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  table.ledger th {
+    color: var(--ink-text); font-weight: 600; font-size: var(--fs-sm);
+    letter-spacing: 0.08em; text-transform: uppercase;
+    border-bottom: 1px solid var(--accent);
+  }
+  table.ledger td.empty { color: var(--ink-dim); font-style: italic; }
+  table.ledger tr:last-child td { border-bottom: none; }
+  .amount { font-variant-numeric: tabular-nums; }
+  .total {
+    font-size: clamp(28px, 6vw, 40px); font-weight: 600; color: var(--ink-text);
+    letter-spacing: -0.02em; margin: 0 0 4px; font-variant-numeric: tabular-nums;
+  }
+  .total-note { font-size: var(--fs-sm); color: var(--ink-dim); margin: 0; }
+  .never li strong { color: var(--ink-text); font-weight: 600; }
+  .checked { font-size: var(--fs-sm); color: var(--ink-dim); margin: 0 0 8px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="wordmark" href="/" aria-label="Baltic Signal Monitor"><span class="serif">Baltic</span> Signal Monitor</a>
+    <nav class="top">
+      <a href="/#how">Method</a>
+      <a href="/#status">Status</a>
+      <a href="/#faq">FAQ</a>
+      <span class="lang-switch">
+        <a href="/funding/" class="active">EN</a> · <a href="/et/funding/">ET</a> · <a href="/lv/funding/">LV</a> · <a href="/lt/funding/">LT</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="eyebrow">Funding</p>
+  <h1>Who pays for this</h1>
+  <p class="lede">
+    Right now, nobody does. This page exists so that if that ever changes, you read it here first — before anyone else gets to tell you about it.
+  </p>
+
+  <div class="card">
+    <p class="total">€0</p>
+    <p class="total-note">Total funding received, all sources, since this project began.</p>
+  </div>
+  <div class="card">
+    <p><strong>No grants. No sponsors. No advertising. No government money, from any country.</strong> Running costs are paid personally by the person who runs it. Nobody has bought anything here, because there has been nothing to buy.</p>
+  </div>
+  <p class="checked">Last checked: 2026-09-09</p>
+
+  <h2>Why this page exists before there is anything on it</h2>
+  <p>A project that warns people about threats is worth exactly as much as its independence. The moment money arrives, someone will reasonably ask who paid, and what they got for it.</p><p>Publishing this page while the answer is still “nobody, and nothing” means the record starts clean. It can be read backwards and checked, instead of being written afterwards to explain something that already happened. A transparency page that appears on the same day as the first cheque is not transparency.</p>
+  <h2>What it actually costs to run</h2>
+  <p>A domain name, and the free service tiers of everything else — the website hosting, the scanning schedule, the notification backend. The total is tens of euros a year, not thousands.</p><p>The expensive input to this project has never been money. It is time.</p>
+  <h2>What money would change — and what it would not</h2>
+  <p>It would buy sources that currently cost money, faster and wider scanning, and time to keep the thing running properly.</p><p>These do not change, whatever arrives:</p><ul><li>Alerts stay free.</li><li>Everyone gets the same alert at the same time. No paid tier, no early access, no premium version, ever.</li><li>No advertising on this site, in the alerts, or in the channel.</li><li>No funder sees an alert before the public does.</li><li>No funder can add, remove, or change what is monitored, or how it is scored.</li></ul>
+  <h2>Money this project will not take</h2>
+  <p class="never-lede">Some money costs more than it pays. These are refused on sight:</p><ul class="never"><li><strong>Any government or state body</strong> — of the Baltic states, of their neighbours, or of anywhere else. Including through an agency, ministry, or state-funded intermediary.</li><li><strong>Defence ministries, armed forces, and intelligence services</strong>, or anything routed through them.</li><li><strong>Political parties, campaigns, and candidates.</strong></li><li><strong>Arms manufacturers and defence contractors.</strong></li><li><strong>Anyone asking for influence</strong> — a subject added, a story dropped, a wording changed, or sight of an alert before it is published.</li><li><strong>Anonymous money above €500</strong> from a single source. Above that it is named here or it is returned.</li></ul><p>The front page of this site says it is not affiliated with any government. This page is how that sentence stays checkable rather than just being asserted.</p>
+  <h2>What gets published if funding ever arrives</h2>
+  <p>Within seven days, in the table below: who gave it, how much, on what date, what it is for, how long it lasts, and every condition attached to it. If there is a contract, the terms that matter in plain language.</p><p>Money that is <em>refused</em> gets listed too, when the refusal is worth knowing about. An offer turned down says as much about a project as one accepted.</p>
+  <h2>The ledger</h2>
+  <div class="ledger-wrap">
+  <table class="ledger">
+    <thead><tr><th>Date</th><th>Source</th><th>Amount</th><th>Purpose</th><th>Conditions</th></tr></thead>
+    <tbody>
+      <tr><td class="empty" colspan="5">No entries. Nothing has been received, from anyone, for anything.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+  <h2>Small tips</h2>
+  <p>There is an optional tip button (Ko-fi) on the main page. Tips are counted in the total above, not listed one by one — sending a few euros should not put your name on a public page.</p><p>A tip buys nothing. Not influence, not priority, not a different alert. It is a tip. Anything over €500 from one source stops being a tip and follows the rule above: named here, or returned.</p>
+  <h2>Questions</h2>
+  <p>This is a one-person, non-commercial project. If something on this page does not add up, ask: <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a>.</p>
+
+  <a class="back" href="/">← Back to the main page</a>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Baltic Signal Monitor is an independent, personally-built monitoring tool — not an official government, NATO, or intelligence source, and not affiliated with any of them.</p>
+    <p class="fine mono">Found a security issue? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a> · <a href="/privacy/">Privacy</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

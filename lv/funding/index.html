@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finansējums — Baltic Signal Monitor</title>
+<meta name="description" content="Kas maksā par Baltic Signal Monitor, kas nemaksā un kas nekad nemaksās. Pašlaik: neviens.">
+<link rel="canonical" href="https://balticsignalmonitor.com/lv/funding/">
+<link rel="icon" type="image/png" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+
+<!-- Language versions -->
+<link rel="alternate" hreflang="en" href="https://balticsignalmonitor.com/funding/">
+<link rel="alternate" hreflang="et" href="https://balticsignalmonitor.com/et/funding/">
+<link rel="alternate" hreflang="lv" href="https://balticsignalmonitor.com/lv/funding/">
+<link rel="alternate" hreflang="lt" href="https://balticsignalmonitor.com/lt/funding/">
+<link rel="alternate" hreflang="x-default" href="https://balticsignalmonitor.com/funding/">
+
+<meta name="theme-color" content="#0B0F14">
+<link rel="preload" href="/fonts/IBMPlexSans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SourceSerif4-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts.css">
+
+<style>
+  /* Single dark theme for everyone. The page used to follow each
+     visitor's OS light/dark setting, so the same alert page looked
+     different on different phones and screenshots of it did not
+     match. One look, no options.
+     color-scheme tells the browser to render its own furniture --
+     scrollbars, form controls, the address bar on mobile -- dark
+     too, otherwise those stay light and the page looks half-done. */
+  :root {
+    color-scheme: dark;
+
+    /* Type scale — see index.html for why this exists. */
+    --fs-2xs: 11px; --fs-xs: 11.5px; --fs-sm: 12.5px; --fs-md: 13.5px;
+    --fs-base: 15px; --fs-lg: 17px; --fs-xl: 20px; --fs-2xl: 24px; --fs-3xl: 26px;
+    --ink: #0B0F14;
+    --ink-text: #E7EDF3;
+    --ink-dim: #93A1AF;
+    --border: #1E2831;
+    --card: #111820;
+    --accent: #4E9DAE;
+    --accent-text: #08121A;
+    --mono: #0A1017;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--ink-text);
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: "Source Serif 4", "Iowan Old Style", Georgia, serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  header.site { border-bottom: 1px solid var(--border); padding: 18px 0; }
+  header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .wordmark { font-size: var(--fs-lg); font-weight: 600; letter-spacing: -0.01em; }
+  .wordmark .serif { font-style: italic; }
+  /* The wordmark is the way back to the top of the homepage — the shortcut
+     every site has and this one did not. Keeps the header's own colour
+     rather than the global link accent, so it still reads as a wordmark
+     and not as a link in a sentence. */
+  a.wordmark { color: inherit; text-decoration: none; display: inline-block; }
+  a.wordmark:hover { color: var(--accent); }
+  a.wordmark:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+  nav.top { display: flex; gap: 24px; align-items: baseline; }
+  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: var(--fs-md); letter-spacing: 0.02em; }
+  nav.top a:hover { color: var(--ink-text); }
+  .lang-switch { font-size: var(--fs-sm); color: var(--ink-dim); }
+  .lang-switch a { color: var(--ink-dim); }
+  .lang-switch a.active { color: var(--ink-text); font-weight: 700; }
+  .lang-switch a:hover { color: var(--ink-text); }
+
+  main { padding: 56px 0 40px; }
+  .eyebrow {
+    font-size: var(--fs-sm); letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 36px); margin: 0 0 16px; letter-spacing: -0.01em; }
+  h2 { font-size: var(--fs-xl); margin: 40px 0 10px; }
+  p { color: var(--ink-dim); font-size: var(--fs-base); margin: 0 0 14px; max-width: 62ch; }
+  p.lede { color: var(--ink-text); font-size: var(--fs-lg); max-width: 60ch; }
+  .card {
+    background: var(--mono); border: 1px solid var(--border); border-radius: 4px;
+    padding: 18px 22px; margin: 24px 0;
+  }
+  .card p { margin: 0; }
+  ul { color: var(--ink-dim); font-size: var(--fs-base); max-width: 62ch; padding-left: 20px; }
+  li { margin: 0 0 8px; }
+  footer { padding: 32px 0 64px; border-top: 1px solid var(--border); margin-top: 24px; }
+  footer p { color: var(--ink-dim); font-size: var(--fs-md); max-width: 60ch; }
+  footer .fine { margin-top: 12px; font-size: var(--fs-sm); }
+  .back { display: inline-block; margin-top: 8px; font-size: var(--fs-base); }
+</style>
+<style>
+  /* Ledger table. Kept scrollable on its own so a narrow phone screen
+     never makes the whole page scroll sideways. */
+  .ledger-wrap { overflow-x: auto; margin: 20px 0 8px; }
+  table.ledger {
+    border-collapse: collapse; width: 100%; min-width: 460px;
+    font-size: var(--fs-md); color: var(--ink-dim);
+  }
+  table.ledger th, table.ledger td {
+    text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  table.ledger th {
+    color: var(--ink-text); font-weight: 600; font-size: var(--fs-sm);
+    letter-spacing: 0.08em; text-transform: uppercase;
+    border-bottom: 1px solid var(--accent);
+  }
+  table.ledger td.empty { color: var(--ink-dim); font-style: italic; }
+  table.ledger tr:last-child td { border-bottom: none; }
+  .amount { font-variant-numeric: tabular-nums; }
+  .total {
+    font-size: clamp(28px, 6vw, 40px); font-weight: 600; color: var(--ink-text);
+    letter-spacing: -0.02em; margin: 0 0 4px; font-variant-numeric: tabular-nums;
+  }
+  .total-note { font-size: var(--fs-sm); color: var(--ink-dim); margin: 0; }
+  .never li strong { color: var(--ink-text); font-weight: 600; }
+  .checked { font-size: var(--fs-sm); color: var(--ink-dim); margin: 0 0 8px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="wordmark" href="/lv/" aria-label="Baltic Signal Monitor"><span class="serif">Baltic</span> Signal Monitor</a>
+    <nav class="top">
+      <a href="/lv/#how">Metode</a>
+      <a href="/lv/#status">Statuss</a>
+      <a href="/lv/#faq">BUJ</a>
+      <span class="lang-switch">
+        <a href="/funding/">EN</a> · <a href="/et/funding/">ET</a> · <a href="/lv/funding/" class="active">LV</a> · <a href="/lt/funding/">LT</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="eyebrow">Finansējums</p>
+  <h1>Kas par to maksā</h1>
+  <p class="lede">
+    Pašlaik neviens. Šī lapa pastāv tāpēc, ka, ja tas jebkad mainīsies, tu to izlasīsi vispirms šeit — pirms kāds cits tev par to paspēj pastāstīt.
+  </p>
+
+  <div class="card">
+    <p class="total">€0</p>
+    <p class="total-note">Kopējais saņemtais finansējums no visiem avotiem kopš projekta sākuma.</p>
+  </div>
+  <div class="card">
+    <p><strong>Nav grantu. Nav sponsoru. Nav reklāmas. Nav valsts naudas — ne no vienas valsts.</strong> Uzturēšanas izmaksas sedz personīgi tas cilvēks, kas projektu uztur. Neviens šeit neko nav nopircis, jo nekas nav bijis pārdošanā.</p>
+  </div>
+  <p class="checked">Pēdējo reizi pārbaudīts: 2026-09-09</p>
+
+  <h2>Kāpēc šī lapa pastāv, pirms tajā kaut kas ir</h2>
+  <p>Projekts, kas brīdina cilvēkus par draudiem, ir vērts tieši tik, cik vērta ir tā neatkarība. Brīdī, kad parādās nauda, kāds pamatoti jautās, kas samaksāja un ko par to saņēma.</p><p>Publiskot šo lapu, kamēr atbilde vēl ir “neviens un neko”, nozīmē, ka ieraksts sākas tīrs. To var lasīt atpakaļejoši un pārbaudīt, nevis uzrakstīt vēlāk, lai izskaidrotu jau notikušo. Caurspīdīguma lapa, kas parādās tā pašā dienā ar pirmo maksājumu, nav caurspīdīgums.</p>
+  <h2>Cik tas patiesībā maksā</h2>
+  <p>Domēna vārds un visa pārējā bezmaksas pakalpojumu līmeņi — mājaslapas mitināšana, skenēšanas grafiks, paziņojumu aizmugursistēma. Kopā tie ir desmiti eiro gadā, nevis tūkstoši.</p><p>Dārgākais ieguldījums šajā projektā nekad nav bijusi nauda. Tas ir laiks.</p>
+  <h2>Ko nauda mainītu — un ko ne</h2>
+  <p>Tā nopirktu avotus, kas šobrīd maksā, ātrāku un plašāku skenēšanu un laiku, lai sistēma turpinātu strādāt kā nākas.</p><p>Šis nemainās neatkarīgi no tā, kas pienāk:</p><ul><li>Brīdinājumi paliek bez maksas.</li><li>Visi saņem vienu un to pašu brīdinājumu vienā un tajā pašā laikā. Nekad nebūs maksas līmeņa, agrākas piekļuves vai premium versijas.</li><li>Nekādas reklāmas šajā vietnē, brīdinājumos vai kanālā.</li><li>Neviens finansētājs neredz brīdinājumu pirms sabiedrības.</li><li>Neviens finansētājs nevar pievienot, noņemt vai mainīt to, kas tiek uzraudzīts, vai kā tas tiek novērtēts.</li></ul>
+  <h2>Naudu, ko šis projekts nepieņems</h2>
+  <p class="never-lede">Daža nauda izmaksā vairāk nekā dod. Šī tiek atteikta uzreiz:</p><ul class="never"><li><strong>Jebkura valdība vai valsts institūcija</strong> — Baltijas valstu, to kaimiņu vai jebkuras citas. Arī caur aģentūru, ministriju vai valsts finansētu starpnieku.</li><li><strong>Aizsardzības ministrijas, bruņotie spēki un izlūkdienesti</strong> vai jebkas, kas tiek novirzīts caur tiem.</li><li><strong>Politiskās partijas, kampaņas un kandidāti.</strong></li><li><strong>Ieroču ražotāji un aizsardzības uzņēmēji.</strong></li><li><strong>Jebkurus, kas lūdz ietekmi</strong> — pievienot tēmu, noņemt ziņu, mainīt formulējumu vai redzēt brīdinājumu pirms tā publiskošanas.</li><li><strong>Anonīmu naudu virs €500</strong> no viena avota. Virs tā tas tiek šeit nosaukts vārdā vai atgriezts.</li></ul><p>Šīs vietnes sākumlapā rakstīts, ka tā nav saistīta ne ar vienu valdību. Šī lapa ir veids, kā šis teikums paliek pārbaudāms, nevis vienkārši apgalvots.</p>
+  <h2>Kas tiks publiskots, ja finansējums jebkad pienāks</h2>
+  <p>Septiņu dienu laikā, zemāk esošajā tabulā: kas to deva, cik daudz, kad, kam tas paredzēts, cik ilgi tas darbojas un katrs pievienotais nosacījums. Ja ir līgums — būtiskākie noteikumi vienkāršā valodā.</p><p>Nauda, kas tiek <em>atteikta</em>, arī tiek uzskaitīta, ja par atteikumu ir vērts zināt. Noraidīts piedāvājums par projektu pasaka tikpat daudz, cik pieņemts.</p>
+  <h2>Uzskaite</h2>
+  <div class="ledger-wrap">
+  <table class="ledger">
+    <thead><tr><th>Datums</th><th>Avots</th><th>Summa</th><th>Mērķis</th><th>Nosacījumi</th></tr></thead>
+    <tbody>
+      <tr><td class="empty" colspan="5">Nav ierakstu. Nekas nav saņemts — ne no viena, ne par ko.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+  <h2>Nelieli ziedojumi</h2>
+  <p>Galvenajā lapā ir neobligāta ziedojuma poga (Ko-fi). Ziedojumi tiek ieskaitīti kopējā summā augstāk, nevis uzskaitīti pa vienam — dažu eiro nosūtīšana nedrīkst likt tavu vārdu publiskā lapā.</p><p>Ziedojums nepērk neko. Ne ietekmi, ne prioritāti, ne citādu brīdinājumu. Tas ir ziedojums. Viss, kas pārsniedz €500 no viena avota, vairs nav ziedojums un pakļaujas augstāk minētajam noteikumam: nosaukts šeit vai atgriezts.</p>
+  <h2>Jautājumi</h2>
+  <p>Šis ir viena cilvēka, nekomerciāls projekts. Ja kaut kas šajā lapā nesaskan, jautā: <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a>.</p>
+
+  <a class="back" href="/lv/">← Atpakaļ uz galveno lapu</a>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Baltic Signal Monitor ir neatkarīgs, personīgi veidots uzraudzības rīks — nevis oficiāls valdības, NATO vai izlūkdienestu avots, un nav ar tiem saistīts.</p>
+    <p class="fine mono">Atradi drošības problēmu? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a> · <a href="/lv/privacy/">Privātums</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
