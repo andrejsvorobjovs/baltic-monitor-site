@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-09T11:57:15.656814+00:00",
+  "last_run_utc": "2026-09-09T12:44:23.537440+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.4h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 355,
+  "total_scans": 356,
   "quiet_count": 273,
-  "watch_count": 80,
+  "watch_count": 81,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-09 12:22 UTC",
+  "generated_at": "2026-09-09 12:44 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 108,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-09T12:44:23.549209+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 103,
+      "stale_count": 1,
+      "alert_id": "0909-1244",
+      "items": [
+        {
+          "title": "Kiberuzbrukum\u0101 cietis viens no LMT grupas uz\u0146\u0113mumiem \u2013 izzagti klientu dati",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/kiberuzbrukuma-cietis-viens-no-lmt-grupas-uznemumiem-izzagti-klientu-dati",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-09T11:57:15.036601+00:00",
       "level": "WATCH",
@@ -576,38 +606,25 @@
           "goldstein": 4
         }
       ]
-    },
-    {
-      "ts": "2026-09-07T05:10:36.702783+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 26,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 107,
-      "stale_count": 0,
-      "alert_id": "0907-0510",
-      "items": [
-        {
-          "title": "Ministrija uzdod izv\u0113rt\u0113t LVM vad\u012bbas atbild\u012bbu par v\u0113rien\u012bgo kiberuzbrukmu",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8540872",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-09T12:44:23.955868+00:00",
+      "level": "WATCH",
+      "title": "Kiberuzbrukum\u0101 cietis viens no LMT grupas uz\u0146\u0113mumiem \u2013 izzagti klientu dati",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/kiberuzbrukuma-cietis-viens-no-lmt-grupas-uznemumiem-izzagti-klientu-dati",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-09T11:56:08.239610+00:00",
       "level": "WATCH",
@@ -832,22 +849,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-07T08:29:02.137290+00:00",
-      "level": "WATCH",
-      "title": "Katelynas proposes Baltic Sea hybrid threat response channel",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/katelynas-proposes-baltic-sea-hybrid-threat-response-channel--cameoplus_585b8648ccb23228",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "0314",
-      "gdelt_event_code": "0314",
-      "goldstein": 4
     }
   ],
   "recent_corrections": [
@@ -1030,17 +1031,17 @@
   "direct_feed_new_outlets": 27,
   "filter_record": {
     "window_days": 30,
-    "scans": 205,
-    "alerting_scans": 64,
+    "scans": 206,
+    "alerting_scans": 65,
     "held_back_total": 0,
     "held_back_by_reason": [],
     "scans_before_tracking": 171
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 82,
+    "alerts": 83,
     "judged": 3,
-    "unjudged": 79,
+    "unjudged": 80,
     "genuine": 2,
     "noise": 1,
     "precision_pct": null,
