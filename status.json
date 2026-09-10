@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-10T15:15:13.924127+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.1h ago",
+  "last_run_utc": "2026-09-10T18:37:07.150447+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 366,
-  "quiet_count": 276,
+  "total_scans": 367,
+  "quiet_count": 277,
   "watch_count": 88,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-10 16:22 UTC",
+  "generated_at": "2026-09-10 18:37 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-10T18:37:07.167072+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 292,
+      "stale_count": 1,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-10T15:15:13.941403+00:00",
       "level": "WATCH",
@@ -625,97 +639,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-08T08:18:41.679977+00:00",
-      "level": "WARN",
-      "count": 5,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 437,
-      "stale_count": 0,
-      "alert_id": "0908-0818",
-      "items": [
-        {
-          "title": "Prokrieviski teroristi pieprasa Latvijas, Polijas un Portug\u0101les uz\u0146\u0113mumiem aptur\u0113t bru\u0146ojuma pieg\u0101des Ukrainai",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/arzemes/08.09.2026-prokrieviski-teroristi-pieprasa-latvijas-polijas-un-portugales-uznemumiem-apturet-brunojuma-piegades-ukrainai.a662221/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0422\u0435\u0440\u0440\u043e\u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0433\u0440\u0443\u043f\u043f\u0438\u0440\u043e\u0432\u043a\u0430 \u0443\u0433\u0440\u043e\u0436\u0430\u0435\u0442 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f\u043c \u041b\u0430\u0442\u0432\u0438\u0438, \u041f\u043e\u043b\u044c\u0448\u0438 \u0438 \u041f\u043e\u0440\u0442\u0443\u0433\u0430\u043b\u0438\u0438, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043f\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u044e\u0442 \u043e\u0440\u0443\u0436\u0438\u0435 \u0423\u043a\u0440\u0430\u0438\u043d\u0435",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/mir/08.09.2026-terroristiceskaya-gruppirovka-ugrozaet-kompaniyam-latvii-polsi-i-portugalii-kotorye-postavlyayut-oruzie-ukraine.a662231/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Terrorist group threatens Latvian companies, demands halt to arms supplies to Ukraine",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/terrorist-group-threatens-latvian-companies-demands-halt-to-arms-supplies-to-ukraine-283532",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Prokrievisks teroristu grup\u0113jums draud vair\u0101kiem uz\u0146\u0113mumiem Latvij\u0101, Polij\u0101 un Portug\u0101l\u0113",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8541814",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Draudi Latvijai! Prokrievisks grup\u0113jums izvirza ultim\u0101tu un dod laiku l\u012bdz 7. oktobrim",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/draudi-latvijai-prokrievisks-grupejums-izvirza-ultimatu-un-dod-laiku-lidz-7-oktobrim",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1139,14 +1062,19 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 209,
+    "scans": 210,
     "alerting_scans": 72,
-    "held_back_total": 2,
+    "held_back_total": 3,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
         "count": 2
+      },
+      {
+        "reason": "already alerted",
+        "label": "Same story already alerted",
+        "count": 1
       }
     ],
     "scans_before_tracking": 164
