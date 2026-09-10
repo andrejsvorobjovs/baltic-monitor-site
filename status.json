@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-09T21:57:52.362290+00:00",
+  "last_run_utc": "2026-09-10T01:19:30.165145+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 360,
-  "quiet_count": 274,
+  "total_scans": 361,
+  "quiet_count": 275,
   "watch_count": 84,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-09 21:57 UTC",
+  "generated_at": "2026-09-10 01:19 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-10T01:19:30.180900+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 43,
+      "stale_count": 1,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-09T21:57:52.415414+00:00",
       "level": "QUIET",
@@ -608,36 +622,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-07T16:43:19.038754+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 211,
-      "stale_count": 0,
-      "alert_id": "0907-1643",
-      "items": [
-        {
-          "title": "Su K. Kallas susitik\u0119s M. Sinkevi\u010dius tikisi supratimo i\u0161 EK: norime, kad Ryt\u0173 flango valstyb\u0117s b\u016bt\u0173 girdimos",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/07/news/su-k-kallas-susitikes-m-sinkevicius-tikisi-supratimo-is-ek-norime-kad-rytu-flango-valstybes-butu-girdimos-43904250/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1073,7 +1057,7 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 169
+    "scans_before_tracking": 168
   },
   "alert_accuracy": {
     "window_days": 90,
