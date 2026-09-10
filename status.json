@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-10T12:30:14.428283+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-09-10T15:15:13.924127+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 365,
+  "total_scans": 366,
   "quiet_count": 276,
-  "watch_count": 87,
+  "watch_count": 88,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-10 12:30 UTC",
+  "generated_at": "2026-09-10 15:15 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-10T15:15:13.941403+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 295,
+      "stale_count": 0,
+      "alert_id": "0910-1515",
+      "items": [
+        {
+          "title": "I`ll be \u0411\u042d\u041a",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/10/i-ll-be-bek",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-10T12:30:14.443667+00:00",
       "level": "QUIET",
@@ -686,23 +716,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-08T01:29:05.057827+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 39,
-      "stale_count": 2,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-10T15:15:14.242069+00:00",
+      "level": "WATCH",
+      "title": "I`ll be \u0411\u042d\u041a",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/09/10/i-ll-be-bek",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-10T08:21:06.400447+00:00",
       "level": "WATCH",
@@ -925,23 +957,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-08T08:18:42.054044+00:00",
-      "level": "WARN",
-      "title": "Draudi Latvijai! Prokrievisks grup\u0113jums izvirza ultim\u0101tu un dod laiku l\u012bdz 7. oktobrim",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/draudi-latvijai-prokrievisks-grupejums-izvirza-ultimatu-un-dod-laiku-lidz-7-oktobrim",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1124,8 +1139,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 209,
-    "alerting_scans": 71,
+    "scans": 210,
+    "alerting_scans": 72,
     "held_back_total": 2,
     "held_back_by_reason": [
       {
@@ -1138,10 +1153,10 @@
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 89,
-    "judged": 5,
+    "alerts": 90,
+    "judged": 6,
     "unjudged": 84,
-    "genuine": 3,
+    "genuine": 4,
     "noise": 2,
     "precision_pct": null,
     "min_sample": 10
