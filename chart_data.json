@@ -2540,6 +2540,20 @@
       "count": 3,
       "tier3_count": 0,
       "tone": -2.0935483870967744
+    },
+    {
+      "ts": "2026-09-10T11:46:02.203553+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-10T12:30:14.443667+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -3376,6 +3390,10 @@
     {
       "ts": "2026-09-10T08:19:31.999035+00:00",
       "count": 356
+    },
+    {
+      "ts": "2026-09-10T12:29:07.871286+00:00",
+      "count": 399
     }
   ],
   "military_points": [
@@ -4078,6 +4096,10 @@
     {
       "ts": "2026-09-10T08:19:32.644111+00:00",
       "count": 10
+    },
+    {
+      "ts": "2026-09-10T12:29:08.365693+00:00",
+      "count": 9
     }
   ],
   "firms_points": [
@@ -4540,6 +4562,10 @@
     {
       "ts": "2026-09-10T08:19:35.730767+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-09-10T12:29:10.486479+00:00",
+      "count": 27
     }
   ],
   "entsoe_points": [
@@ -4901,6 +4927,10 @@
     },
     {
       "ts": "2026-09-10T08:19:55.036354+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-10T12:29:13.632514+00:00",
       "count": 0
     }
   ],
@@ -6538,6 +6568,33 @@
         ],
         "steady": [
           "gpsjam"
+        ]
+      },
+      "band_key": "high_above",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-10T12:29:13.633588+00:00",
+      "deviation_pct": 88.78165639715216,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 94% above baseline; military aircraft 259% above baseline; GPS jamming, thermal hotspots steady.",
+      "band": "highly elevated",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 94,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 259,
+            "direction": "above"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "firms"
         ]
       },
       "band_key": "high_above",

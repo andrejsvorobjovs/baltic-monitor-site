@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-10T08:21:05.921386+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-09-10T12:30:14.428283+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 363,
-  "quiet_count": 275,
-  "watch_count": 86,
+  "total_scans": 365,
+  "quiet_count": 276,
+  "watch_count": 87,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-10 08:21 UTC",
+  "generated_at": "2026-09-10 12:30 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-10T12:30:14.443667+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 126,
+      "stale_count": 0,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-09-10T11:46:02.203553+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 365,
+      "stale_count": 0,
+      "alert_id": "0910-1146",
+      "items": [
+        {
+          "title": "Kell 21.40 \"Esimeses stuudios\" riigikantselei koordinatsioonidirektor Erkki Tori",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610134195/kell-21-40-esimeses-stuudios-riigikantselei-koordinatsioonidirektor-erkki-tori",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lie\u0123is: Krievijas sabot\u0101\u017eu nevajadz\u0113tu m\u012bkstin\u0101t ar apz\u012bm\u0113jumu \"hibr\u012bda\"",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8543521",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-10T08:21:05.937299+00:00",
       "level": "WATCH",
@@ -640,34 +700,6 @@
       "stale_count": 2,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-07T22:17:35.969953+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 38,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-09-07T20:56:39.466261+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 54,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
@@ -1093,7 +1125,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 209,
-    "alerting_scans": 70,
+    "alerting_scans": 71,
     "held_back_total": 2,
     "held_back_by_reason": [
       {
@@ -1102,13 +1134,13 @@
         "count": 2
       }
     ],
-    "scans_before_tracking": 167
+    "scans_before_tracking": 165
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 88,
+    "alerts": 89,
     "judged": 5,
-    "unjudged": 83,
+    "unjudged": 84,
     "genuine": 3,
     "noise": 2,
     "precision_pct": null,
