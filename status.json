@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-10T18:37:07.150447+00:00",
+  "last_run_utc": "2026-09-10T21:53:10.163895+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 367,
-  "quiet_count": 277,
+  "total_scans": 368,
+  "quiet_count": 278,
   "watch_count": 88,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-10 18:37 UTC",
+  "generated_at": "2026-09-10 21:53 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-10T21:53:10.180303+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 166,
+      "stale_count": 1,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-10T18:37:07.167072+00:00",
       "level": "QUIET",
@@ -594,51 +608,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-08T11:42:16.112676+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 56,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 295,
-      "stale_count": 0,
-      "alert_id": "0908-1142",
-      "items": [
-        {
-          "title": "Tehisaruagendid Eesti isikukoodi siiski ei saa ja vastutus j\u00e4\u00e4b inimestele",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://novaator.err.ee/1610131744/tehisaruagendid-eesti-isikukoodi-siiski-ei-saa-ja-vastutus-jaab-inimestele",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Jur\u010denko: Ja IT sist\u0113m\u0101 kods ir sl\u0113gts, tas nepasarg\u0101 no uzbrukumiem",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/jurcenko-ja-it-sistema-kods-ir-slegts-tas-nepasarga-no-uzbrukumiem",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1077,7 +1046,7 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 164
+    "scans_before_tracking": 163
   },
   "alert_accuracy": {
     "window_days": 90,
