@@ -2575,6 +2575,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-09-11T01:19:26.555581+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -2709,6 +2716,10 @@
     {
       "ts": "2026-09-09T00:00:00+00:00",
       "count": 169
+    },
+    {
+      "ts": "2026-09-10T00:00:00+00:00",
+      "count": 188
     }
   ],
   "ais_points": [
@@ -3427,6 +3438,10 @@
     {
       "ts": "2026-09-10T21:50:46.591027+00:00",
       "count": 410
+    },
+    {
+      "ts": "2026-09-11T01:17:04.064035+00:00",
+      "count": 254
     }
   ],
   "military_points": [
@@ -4145,6 +4160,10 @@
     {
       "ts": "2026-09-10T21:50:47.419047+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-09-11T01:17:04.697189+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -4996,6 +5015,10 @@
     },
     {
       "ts": "2026-09-10T21:52:08.108561+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-11T01:18:23.533436+00:00",
       "count": 0
     }
   ],
@@ -6743,6 +6766,28 @@
         ]
       },
       "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-11T01:18:23.534475+00:00",
+      "deviation_pct": -24.088197998081455,
+      "sources_included": 3,
+      "narrative": "military aircraft 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
       "band_record_scans": null
     }
   ]
