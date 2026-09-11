@@ -2624,6 +2624,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": -3.814285714285714
+    },
+    {
+      "ts": "2026-09-11T21:58:10.946144+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -3500,6 +3507,10 @@
     {
       "ts": "2026-09-11T18:40:27.008312+00:00",
       "count": 348
+    },
+    {
+      "ts": "2026-09-11T21:56:59.021317+00:00",
+      "count": 383
     }
   ],
   "military_points": [
@@ -4238,6 +4249,10 @@
     {
       "ts": "2026-09-11T18:40:27.660486+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-09-11T21:56:59.458966+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -4720,6 +4735,10 @@
     {
       "ts": "2026-09-11T18:40:30.177223+00:00",
       "count": 52
+    },
+    {
+      "ts": "2026-09-11T21:57:02.414965+00:00",
+      "count": 52
     }
   ],
   "entsoe_points": [
@@ -5117,6 +5136,10 @@
     },
     {
       "ts": "2026-09-11T18:40:35.616609+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-11T21:57:06.165233+00:00",
       "count": 0
     }
   ],
@@ -6988,6 +7011,37 @@
           {
             "signal": "firms",
             "pct": 100,
+            "direction": "above"
+          }
+        ],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": "moderate_above",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-11T21:57:06.166322+00:00",
+      "deviation_pct": 20.313805414696606,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 76% above baseline; military aircraft 100% below baseline; thermal hotspots 99% above baseline; GPS jamming steady.",
+      "band": "moderately elevated",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 76,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 99,
             "direction": "above"
           }
         ],
