@@ -2589,6 +2589,20 @@
       "count": 3,
       "tier3_count": 0,
       "tone": -4.455882352941177
+    },
+    {
+      "ts": "2026-09-11T11:45:13.655643+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-11T12:28:44.640836+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -3453,6 +3467,10 @@
     {
       "ts": "2026-09-11T08:15:21.875568+00:00",
       "count": 339
+    },
+    {
+      "ts": "2026-09-11T12:27:26.922360+00:00",
+      "count": 401
     }
   ],
   "military_points": [
@@ -4179,6 +4197,10 @@
     {
       "ts": "2026-09-11T08:15:22.595068+00:00",
       "count": 9
+    },
+    {
+      "ts": "2026-09-11T12:27:27.576180+00:00",
+      "count": 5
     }
   ],
   "firms_points": [
@@ -4653,6 +4675,10 @@
     {
       "ts": "2026-09-10T18:35:58.487026+00:00",
       "count": 35
+    },
+    {
+      "ts": "2026-09-11T12:27:30.313883+00:00",
+      "count": 44
     }
   ],
   "entsoe_points": [
@@ -5038,6 +5064,10 @@
     },
     {
       "ts": "2026-09-11T08:16:48.175905+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-11T12:27:34.804103+00:00",
       "count": 0
     }
   ],
@@ -6825,6 +6855,37 @@
           {
             "signal": "military",
             "pct": 251,
+            "direction": "above"
+          }
+        ],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": "high_above",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-11T12:27:34.805162+00:00",
+      "deviation_pct": 64.38850979988356,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 90% above baseline; military aircraft 91% above baseline; thermal hotspots 70% above baseline; GPS jamming steady.",
+      "band": "highly elevated",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 90,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 91,
+            "direction": "above"
+          },
+          {
+            "signal": "firms",
+            "pct": 70,
             "direction": "above"
           }
         ],
