@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-11T12:28:44.625379+00:00",
+  "last_run_utc": "2026-09-11T15:16:15.202024+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 372,
+  "total_scans": 373,
   "quiet_count": 279,
-  "watch_count": 91,
+  "watch_count": 92,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-11 12:28 UTC",
+  "generated_at": "2026-09-11 15:16 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-11T15:16:15.217548+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 512,
+      "stale_count": 13,
+      "alert_id": "0911-1516",
+      "items": [
+        {
+          "title": "Budanovas i\u0161k\u0117l\u0117 ultimatum\u0105 Putinui: \u201ePajus tai savo kailiu\u201c",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/budanovas-iskele-ultimatuma-putinui-pajus-tai-savo-kailiu-57-2762092?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "TSC atjauno m\u0101jaslapas darb\u012bbu p\u0113c kiberuzbrukuma",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/latvija/zinas-71/tsc-atjauno-majaslapas-darbibu-pec-kiberuzbrukuma?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\"TSC\" p\u0113c kiberuzbrukuma atjaunojis m\u0101jaslapas darb\u012bbu",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8544373",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "R. Kaunas: Lietuva jau yra Rusijos taikinys, D. Peskovo grasinimai \u2013 eilin\u0117 provokacija",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/11/news/r-kaunas-lietuva-jau-yra-rusijos-taikinys-d-peskovo-grasinimai-eiline-provokacija-43945944/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-11T12:28:44.640836+00:00",
       "level": "WATCH",
@@ -653,23 +728,73 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-09T01:34:54.283980+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 27,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-11T15:16:15.966178+00:00",
+      "level": "WATCH",
+      "title": "R. Kaunas: Lietuva jau yra Rusijos taikinys, D. Peskovo grasinimai \u2013 eilin\u0117 provokacija",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/11/news/r-kaunas-lietuva-jau-yra-rusijos-taikinys-d-peskovo-grasinimai-eiline-provokacija-43945944/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-11T15:16:15.966178+00:00",
+      "level": "WATCH",
+      "title": "\"TSC\" p\u0113c kiberuzbrukuma atjaunojis m\u0101jaslapas darb\u012bbu",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8544373",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-11T15:16:15.966178+00:00",
+      "level": "WATCH",
+      "title": "TSC atjauno m\u0101jaslapas darb\u012bbu p\u0113c kiberuzbrukuma",
+      "source": "Diena (Latvia)",
+      "link": "https://diena.lv/raksts/latvija/zinas-71/tsc-atjauno-majaslapas-darbibu-pec-kiberuzbrukuma?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-11T15:16:15.966178+00:00",
+      "level": "WATCH",
+      "title": "Budanovas i\u0161k\u0117l\u0117 ultimatum\u0105 Putinui: \u201ePajus tai savo kailiu\u201c",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/budanovas-iskele-ultimatuma-putinui-pajus-tai-savo-kailiu-57-2762092?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-11T12:28:45.123756+00:00",
       "level": "WATCH",
@@ -835,70 +960,6 @@
       "title": "CSDD has received more than 2,500 compensation claims following August cyberattack  - The Baltic Times",
       "source": "The Baltic Times",
       "link": "http://www.baltictimes.com/csdd_has_received_more_than_2_500_compensation_claims_following_august_cyberattack/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-09T15:26:36.141754+00:00",
-      "level": "WATCH",
-      "title": "Exploitation of migrants by Belarus and Russia constitutes an organized hybrid threat to all of Europe - Braze  - The Baltic Times",
-      "source": "The Baltic Times",
-      "link": "http://www.baltictimes.com/exploitation_of_migrants_by_belarus_and_russia_constitutes_an_organized_hybrid_threat_to_all_of_europe_-_braze/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-09T12:44:23.955868+00:00",
-      "level": "WATCH",
-      "title": "Kiberuzbrukum\u0101 cietis viens no LMT grupas uz\u0146\u0113mumiem \u2013 izzagti klientu dati",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/kiberuzbrukuma-cietis-viens-no-lmt-grupas-uznemumiem-izzagti-klientu-dati",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-09T11:56:08.239610+00:00",
-      "level": "WATCH",
-      "title": "Vai Latvij\u0101 tuv\u0101kaj\u0101 laik\u0101 var\u0113tu notikt nodok\u013cu samazin\u0101\u0161ana? Uz\u0146\u0113m\u0113js atkl\u0101j savu redz\u0113jumu",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/vai-latvija-tuvakaja-laika-varetu-notikt-nodoklu-samazinasana-uznemejs-atklaj-savu-redzejumu",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-09T11:56:08.239610+00:00",
-      "level": "WATCH",
-      "title": "Bra\u017ee: Baltkrievijas un Krievijas \u012bstenot\u0101 migrantu instrumentaliz\u0101cija ir organiz\u0113ts hibr\u012bdapdraud\u0113jums visai Eiropai",
-      "source": "Diena (Latvia)",
-      "link": "https://diena.lv/raksts/latvija/zinas-71/braze-baltkrievijas-un-krievijas-istenota-migrantu-instrumentalizacija-ir-organizets-hibridapdraudejums-visai-eiropai?utm_source=rss&utm_campaign=rss&utm_medium=links",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
@@ -1090,28 +1151,28 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 210,
-    "alerting_scans": 75,
-    "held_back_total": 4,
+    "scans": 211,
+    "alerting_scans": 76,
+    "held_back_total": 6,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 3
+        "count": 4
       },
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 1
+        "count": 2
       }
     ],
     "scans_before_tracking": 159
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 93,
+    "alerts": 94,
     "judged": 6,
-    "unjudged": 87,
+    "unjudged": 88,
     "genuine": 4,
     "noise": 2,
     "precision_pct": null,
