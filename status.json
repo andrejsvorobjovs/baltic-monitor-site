@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-11T15:16:15.202024+00:00",
+  "last_run_utc": "2026-09-11T18:41:40.885627+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.2h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 373,
+  "total_scans": 375,
   "quiet_count": 279,
-  "watch_count": 92,
+  "watch_count": 94,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-11 16:26 UTC",
+  "generated_at": "2026-09-11 18:41 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-11T18:41:40.903724+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 473,
+      "stale_count": 14,
+      "alert_id": "0911-1841",
+      "items": [
+        {
+          "title": "Kiberuzbrukum\u0101 viedier\u012b\u010du remonta uz\u0146\u0113mumam \u00abTSC\u00bb ieg\u016bti ap 7 % klientu datu",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/latvija/11.09.2026-kiberuzbrukuma-viediericu-remonta-uznemumam-tsc-ieguti-ap-7-klientu-datu.a662886/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-11T16:44:27.016327+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 146,
+      "stale_count": 0,
+      "alert_id": "0911-1644",
+      "items": [
+        {
+          "title": "\u041a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a\u0430 \u043d\u0430 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044e \u043f\u043e \u0440\u0435\u043c\u043e\u043d\u0442\u0443 \u0442\u0435\u0445\u043d\u0438\u043a\u0438",
+          "source": "LSM Russian-language",
+          "link": "https://rus.lsm.lv/statja/novosti/proisshestvija/11.09.2026-kiberataka-na-kompaniyu-po-remontu-texniki.a662902/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-11T15:16:15.217548+00:00",
       "level": "WATCH",
@@ -654,83 +714,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-09T11:56:07.759834+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 444,
-      "stale_count": 4,
-      "alert_id": "0909-1156",
-      "items": [
-        {
-          "title": "Bra\u017ee: Baltkrievijas un Krievijas \u012bstenot\u0101 migrantu instrumentaliz\u0101cija ir organiz\u0113ts hibr\u012bdapdraud\u0113jums visai Eiropai",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/latvija/zinas-71/braze-baltkrievijas-un-krievijas-istenota-migrantu-instrumentalizacija-ir-organizets-hibridapdraudejums-visai-eiropai?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Vai Latvij\u0101 tuv\u0101kaj\u0101 laik\u0101 var\u0113tu notikt nodok\u013cu samazin\u0101\u0161ana? Uz\u0146\u0113m\u0113js atkl\u0101j savu redz\u0113jumu",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/vai-latvija-tuvakaja-laika-varetu-notikt-nodoklu-samazinasana-uznemejs-atklaj-savu-redzejumu",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-09T08:24:37.491942+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 440,
-      "stale_count": 0,
-      "alert_id": "0909-0824",
-      "items": [
-        {
-          "title": "Peeter Kaldre: NATO's secret war",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610132074/peeter-kaldre-nato-s-secret-war",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-11T18:41:41.293225+00:00",
+      "level": "WATCH",
+      "title": "Kiberuzbrukum\u0101 viedier\u012b\u010du remonta uz\u0146\u0113mumam \u00abTSC\u00bb ieg\u016bti ap 7 % klientu datu",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/latvija/11.09.2026-kiberuzbrukuma-viediericu-remonta-uznemumam-tsc-ieguti-ap-7-klientu-datu.a662886/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-11T15:16:15.966178+00:00",
       "level": "WATCH",
@@ -953,22 +955,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-09T15:26:36.141754+00:00",
-      "level": "WATCH",
-      "title": "CSDD has received more than 2,500 compensation claims following August cyberattack  - The Baltic Times",
-      "source": "The Baltic Times",
-      "link": "http://www.baltictimes.com/csdd_has_received_more_than_2_500_compensation_claims_following_august_cyberattack/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1151,8 +1137,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 210,
-    "alerting_scans": 75,
+    "scans": 212,
+    "alerting_scans": 77,
     "held_back_total": 6,
     "held_back_by_reason": [
       {
@@ -1170,9 +1156,9 @@
   },
   "alert_accuracy": {
     "window_days": 90,
-    "alerts": 94,
+    "alerts": 96,
     "judged": 6,
-    "unjudged": 88,
+    "unjudged": 90,
     "genuine": 4,
     "noise": 2,
     "precision_pct": null,
