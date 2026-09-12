@@ -278,6 +278,10 @@
   .accuracy h4 { font-size: var(--fs-base); margin: 0 0 8px; font-weight: 600; }
   .accuracy .acc-figure { font-size: var(--fs-3xl); font-weight: 700; line-height: 1.1;
     font-variant-numeric: tabular-nums; }
+  /* The pre-score state says words, not a number. At statistic size it
+     would still read as one, which is the whole problem. */
+  .accuracy .acc-figure.is-text { font-size: var(--fs-xl); font-weight: 600;
+    color: var(--ink-dim); letter-spacing: 0; }
   .accuracy .acc-line { margin: 6px 0 0; font-size: var(--fs-md); color: var(--ink-dim); }
   .accuracy .acc-caveat { margin: 10px 0 0; font-size: var(--fs-sm); opacity: 0.72; line-height: 1.55; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: var(--fs-base); line-height: 1.55; }
@@ -1070,12 +1074,14 @@ function markReadoutStale() {
         var fig = document.getElementById('acc-figure');
         var line = document.getElementById('acc-line');
         if (acc.precision_pct === null || acc.precision_pct === undefined) {
-          fig.textContent = acc.judged + ' / ' + acc.alerts;
-          line.textContent = 'Not enough judged yet to put a percentage on it. {judged} of {alerts} alerts judged so far; a figure appears at {min}.'
+          fig.textContent = 'Not scored yet';
+          fig.classList.add('is-text');
+          line.textContent = '{judged} of the last {alerts} alerts have been checked by hand. A score appears once {min} are checked.'
             .replace('{judged}', acc.judged).replace('{alerts}', acc.alerts)
             .replace('{min}', acc.min_sample);
         } else {
           fig.textContent = acc.precision_pct + '%';
+          fig.classList.remove('is-text');
           line.textContent = '{pct}% of judged alerts were real signals — {genuine} genuine, {noise} noise, out of {alerts} alerts in the last {days} days. {unjudged} not yet judged.'
             .replace('{pct}', acc.precision_pct).replace('{genuine}', acc.genuine)
             .replace('{noise}', acc.noise).replace('{alerts}', acc.alerts)

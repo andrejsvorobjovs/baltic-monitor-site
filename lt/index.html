@@ -248,6 +248,10 @@
   .accuracy h4 { font-size: var(--fs-base); margin: 0 0 8px; font-weight: 600; }
   .accuracy .acc-figure { font-size: var(--fs-3xl); font-weight: 700; line-height: 1.1;
     font-variant-numeric: tabular-nums; }
+  /* The pre-score state says words, not a number. At statistic size it
+     would still read as one, which is the whole problem. */
+  .accuracy .acc-figure.is-text { font-size: var(--fs-xl); font-weight: 600;
+    color: var(--ink-dim); letter-spacing: 0; }
   .accuracy .acc-line { margin: 6px 0 0; font-size: var(--fs-md); color: var(--ink-dim); }
   .accuracy .acc-caveat { margin: 10px 0 0; font-size: var(--fs-sm); opacity: 0.72; line-height: 1.55; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: var(--fs-base); line-height: 1.55; }
@@ -1072,12 +1076,14 @@ function markReadoutStale() {
         var fig = document.getElementById('acc-figure');
         var line = document.getElementById('acc-line');
         if (acc.precision_pct === null || acc.precision_pct === undefined) {
-          fig.textContent = acc.judged + ' / ' + acc.alerts;
-          line.textContent = 'Dar nepakanka įvertintų, kad būtų rodomas procentas. Įvertinta {judged} iš {alerts} įspėjimų; skaičius atsiras pasiekus {min}.'
+          fig.textContent = 'Dar neįvertinta';
+          fig.classList.add('is-text');
+          line.textContent = 'Iš paskutinių {alerts} įspėjimų ranka patikrinti {judged}. Įvertinimas atsiras, kai bus patikrinti {min}.'
             .replace('{judged}', acc.judged).replace('{alerts}', acc.alerts)
             .replace('{min}', acc.min_sample);
         } else {
           fig.textContent = acc.precision_pct + '%';
+          fig.classList.remove('is-text');
           line.textContent = '{pct}% įvertintų įspėjimų buvo tikri signalai — {genuine} tikri, {noise} triukšmas, iš {alerts} įspėjimų per pastarąsias {days} dienas. {unjudged} dar neįvertinta.'
             .replace('{pct}', acc.precision_pct).replace('{genuine}', acc.genuine)
             .replace('{noise}', acc.noise).replace('{alerts}', acc.alerts)
