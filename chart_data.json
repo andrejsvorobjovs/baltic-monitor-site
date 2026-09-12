@@ -2645,6 +2645,20 @@
       "count": 2,
       "tier3_count": 0,
       "tone": -5.88
+    },
+    {
+      "ts": "2026-09-12T11:13:30.924477+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-12T11:52:54.736263+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -3537,6 +3551,10 @@
     {
       "ts": "2026-09-12T08:07:42.326762+00:00",
       "count": 389
+    },
+    {
+      "ts": "2026-09-12T11:51:44.355917+00:00",
+      "count": 315
     }
   ],
   "military_points": [
@@ -4287,6 +4305,10 @@
     {
       "ts": "2026-09-12T08:07:42.659160+00:00",
       "count": 2
+    },
+    {
+      "ts": "2026-09-12T11:51:44.702850+00:00",
+      "count": 2
     }
   ],
   "firms_points": [
@@ -4781,6 +4803,10 @@
     {
       "ts": "2026-09-12T08:07:44.735914+00:00",
       "count": 23
+    },
+    {
+      "ts": "2026-09-12T11:51:46.595887+00:00",
+      "count": 23
     }
   ],
   "entsoe_points": [
@@ -5190,6 +5216,10 @@
     },
     {
       "ts": "2026-09-12T08:09:35.107925+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-12T11:51:49.208269+00:00",
       "count": 0
     }
   ],
@@ -7144,6 +7174,33 @@
           {
             "signal": "ais",
             "pct": 75,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 25,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "firms"
+        ]
+      },
+      "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-12T11:51:49.209156+00:00",
+      "deviation_pct": 1.6124168694627705,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 41% above baseline; military aircraft 25% below baseline; GPS jamming, thermal hotspots steady.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 41,
             "direction": "above"
           },
           {
