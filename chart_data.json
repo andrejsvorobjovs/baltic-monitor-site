@@ -2659,6 +2659,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-09-12T14:17:43.745927+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -3555,6 +3562,10 @@
     {
       "ts": "2026-09-12T11:51:44.355917+00:00",
       "count": 315
+    },
+    {
+      "ts": "2026-09-12T14:16:31.311583+00:00",
+      "count": 341
     }
   ],
   "military_points": [
@@ -4309,6 +4320,10 @@
     {
       "ts": "2026-09-12T11:51:44.702850+00:00",
       "count": 2
+    },
+    {
+      "ts": "2026-09-12T14:16:31.677643+00:00",
+      "count": 2
     }
   ],
   "firms_points": [
@@ -4807,6 +4822,10 @@
     {
       "ts": "2026-09-12T11:51:46.595887+00:00",
       "count": 23
+    },
+    {
+      "ts": "2026-09-12T14:16:33.782875+00:00",
+      "count": 34
     }
   ],
   "entsoe_points": [
@@ -5220,6 +5239,10 @@
     },
     {
       "ts": "2026-09-12T11:51:49.208269+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-12T14:16:39.818719+00:00",
       "count": 0
     }
   ],
@@ -7206,6 +7229,33 @@
           {
             "signal": "military",
             "pct": 25,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "firms"
+        ]
+      },
+      "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-12T14:16:39.819793+00:00",
+      "deviation_pct": 14.688435489086954,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 51% above baseline; military aircraft 26% below baseline; GPS jamming, thermal hotspots steady.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 51,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 26,
             "direction": "below"
           }
         ],
