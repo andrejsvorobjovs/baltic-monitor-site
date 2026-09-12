@@ -2,14 +2,14 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-09-12T14:17:43.731054+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 1.2h ago",
+  "freshness_msg": "Last scan: 2.4h ago",
   "since": "2026-07-19",
   "total_scans": 381,
   "quiet_count": 282,
   "watch_count": 97,
   "warn_count": 2,
   "correction_count": 4,
-  "generated_at": "2026-09-12 15:30 UTC",
+  "generated_at": "2026-09-12 16:43 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
@@ -953,6 +953,11 @@
   ],
   "recent_updates": [
     {
+      "ts": "2026-09-12T10:00:00+00:00",
+      "title": "The hand-grading of alerts has been removed",
+      "text": "Alerts are now read in full by the engine before being sent, so grading them by hand afterwards no longer earned its keep. Mistakes still get published as corrections \u2014 that record stays."
+    },
+    {
       "ts": "2026-09-09T17:30:00+00:00",
       "title": "Alerts are now read before they are sent",
       "text": "Matching words is not the same as understanding a story. Items that pass the keyword filters are now read in full and judged on what they are actually about. It can only hold something back, never push something through, and if the reading fails the alert still goes out."
@@ -1096,11 +1101,6 @@
       "ts": "2026-08-23T10:36:00.918265+00:00",
       "title": "New: weekly public summary on Mastodon/Bluesky/Discord",
       "text": "New: weekly public summary on Mastodon, Bluesky and Discord."
-    },
-    {
-      "ts": "2026-08-23T10:31:13.597356+00:00",
-      "title": "New: AIS kinematic-anomaly detection",
-      "text": "New: unusual vessel behaviour is now tracked."
     }
   ],
   "entsoe_outage_count": 0,
@@ -1109,7 +1109,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 213,
+    "scans": 212,
     "alerting_scans": 80,
     "held_back_total": 7,
     "held_back_by_reason": [
@@ -1124,16 +1124,6 @@
         "count": 2
       }
     ],
-    "scans_before_tracking": 153
-  },
-  "alert_accuracy": {
-    "window_days": 90,
-    "alerts": 99,
-    "judged": 6,
-    "unjudged": 93,
-    "genuine": 4,
-    "noise": 2,
-    "precision_pct": null,
-    "min_sample": 10
+    "scans_before_tracking": 152
   }
 }
