@@ -243,17 +243,6 @@
   .fr-list .fr-label { opacity: 0.85; }
   .fr-list .fr-count { font-variant-numeric: tabular-nums; font-weight: 600; }
   .fr-note { margin: 10px 0 0; opacity: 0.7; font-size: var(--fs-sm); line-height: 1.5; }
-  .accuracy { margin-top: 16px; padding: 14px 16px; border: 1px solid var(--border);
-    border-left-width: 3px; border-left-color: var(--accent); border-radius: 4px; }
-  .accuracy h4 { font-size: var(--fs-base); margin: 0 0 8px; font-weight: 600; }
-  .accuracy .acc-figure { font-size: var(--fs-3xl); font-weight: 700; line-height: 1.1;
-    font-variant-numeric: tabular-nums; }
-  /* The pre-score state says words, not a number. At statistic size it
-     would still read as one, which is the whole problem. */
-  .accuracy .acc-figure.is-text { font-size: var(--fs-xl); font-weight: 600;
-    color: var(--ink-dim); letter-spacing: 0; }
-  .accuracy .acc-line { margin: 6px 0 0; font-size: var(--fs-md); color: var(--ink-dim); }
-  .accuracy .acc-caveat { margin: 10px 0 0; font-size: var(--fs-sm); opacity: 0.72; line-height: 1.55; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: var(--fs-base); line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
@@ -699,13 +688,6 @@
       <p>Ne viss būtiskais kļūst par brīdinājumu. Ikdienišķs, iepriekš izsludināts, spekulatīvs vai jau atspoguļots materiāls tiek reģistrēts kā konteksts. Krievijas vai Baltkrievijas darbības nekad netiek uzskatītas par ikdienišķām.</p>
         </div>
       </details>
-      <div class="accuracy" id="accuracy" hidden>
-        <h4>Vai brīdinājumi bija pareizi?</h4>
-        <p class="acc-figure mono" id="acc-figure"></p>
-        <p class="acc-line" id="acc-line"></p>
-        <p class="acc-caveat"><strong>Piemērotais noteikums:</strong> brīdinājums skaitās īsts signāls tikai tad, ja kaut kas notika vai tika ticami ziņots, ka notiks, Baltijas valstīs vai pret tām. Komentāri, analīze un vēsture, kas reģionu tikai piemin, skaitās troksnis — lai cik interesanti tie būtu.</p>
-        <p class="acc-caveat">Novērtējis pa vienam projekta uzturētājs — tas nav neatkarīgs audits. Skaitlis ir vērtīgs tikai tāpēc, ka katrs vērtējums ir piesaistīts brīdinājumam, kas tolaik tika publicēts: kanāla vēsture ir atklāta, un ar jebkuru var nepiekrist.</p>
-      </div>
       <div class="filter-record" id="filter-record" hidden>
         <h4>Ko filtri patiešām apturēja <span class="fr-window mono" id="fr-window"></span></h4>
         <ul class="fr-list mono" id="fr-list"></ul>
@@ -1039,34 +1021,6 @@ function markReadoutStale() {
         if (dfEl) { dfEl.textContent = d.direct_feed_sources; }
       }
 
-      // Rendered only when there is something real to show — see the
-      // English page for the reasoning.
-      // Were the alerts right? Deliberately renders the sample size and
-      // the unjudged count next to the figure — a precision number taken
-      // only from the alerts someone bothered to judge, with the rest
-      // dropped, is exactly the sort of number this project should not
-      // publish. Hidden entirely until at least one alert is judged.
-      var acc = d.alert_accuracy;
-      if (acc && acc.judged > 0) {
-        var accEl = document.getElementById('accuracy');
-        var fig = document.getElementById('acc-figure');
-        var line = document.getElementById('acc-line');
-        if (acc.precision_pct === null || acc.precision_pct === undefined) {
-          fig.textContent = 'Vēl nav novērtēts';
-          fig.classList.add('is-text');
-          line.textContent = 'No pēdējiem {alerts} brīdinājumiem ar roku pārbaudīti {judged}. Vērtējums parādīsies, kad būs pārbaudīti {min}.'
-            .replace('{judged}', acc.judged).replace('{alerts}', acc.alerts)
-            .replace('{min}', acc.min_sample);
-        } else {
-          fig.textContent = acc.precision_pct + '%';
-          fig.classList.remove('is-text');
-          line.textContent = '{pct}% novērtēto brīdinājumu bija īsti signāli — {genuine} īsti, {noise} troksnis, no {alerts} brīdinājumiem pēdējās {days} dienās. {unjudged} vēl nav novērtēti.'
-            .replace('{pct}', acc.precision_pct).replace('{genuine}', acc.genuine)
-            .replace('{noise}', acc.noise).replace('{alerts}', acc.alerts)
-            .replace('{days}', acc.window_days).replace('{unjudged}', acc.unjudged);
-        }
-        accEl.hidden = false;
-      }
 
       var fr = d.filter_record;
       if (fr && fr.held_back_total > 0 && Array.isArray(fr.held_back_by_reason)) {
@@ -1197,12 +1151,9 @@ function markReadoutStale() {
           if (h.stale_count) {
             detailParts.push(h.stale_count + ' novecojis(-ši) vienums(-i) izslēgts(-i)');
           }
-          // The id this alert's verdict is recorded under. Shown so the
-          // published accuracy figure can be checked rather than taken on
-          // trust: find the id, read the evidence listed below it, and
-          // disagree if you think the verdict was wrong. Derived from the
-          // timestamp already shown, so it reveals nothing new. Absent on a
-          // QUIET scan, which is never judged.
+          // The id this alert is filed under. Shown so a correction can
+          // name the alert it corrects, and a reader can match the two up.
+          // Absent on a QUIET scan, which never alerted.
           if (h.alert_id) {
             detailParts.push('brīdinājuma ID ' + h.alert_id);
           }

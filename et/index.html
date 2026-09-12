@@ -243,17 +243,6 @@
   .fr-list .fr-label { opacity: 0.85; }
   .fr-list .fr-count { font-variant-numeric: tabular-nums; font-weight: 600; }
   .fr-note { margin: 10px 0 0; opacity: 0.7; font-size: var(--fs-sm); line-height: 1.5; }
-  .accuracy { margin-top: 16px; padding: 14px 16px; border: 1px solid var(--border);
-    border-left-width: 3px; border-left-color: var(--accent); border-radius: 4px; }
-  .accuracy h4 { font-size: var(--fs-base); margin: 0 0 8px; font-weight: 600; }
-  .accuracy .acc-figure { font-size: var(--fs-3xl); font-weight: 700; line-height: 1.1;
-    font-variant-numeric: tabular-nums; }
-  /* The pre-score state says words, not a number. At statistic size it
-     would still read as one, which is the whole problem. */
-  .accuracy .acc-figure.is-text { font-size: var(--fs-xl); font-weight: 600;
-    color: var(--ink-dim); letter-spacing: 0; }
-  .accuracy .acc-line { margin: 6px 0 0; font-size: var(--fs-md); color: var(--ink-dim); }
-  .accuracy .acc-caveat { margin: 10px 0 0; font-size: var(--fs-sm); opacity: 0.72; line-height: 1.55; }
   .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: var(--fs-base); line-height: 1.55; }
   @media (max-width: 700px) { .levels { flex-direction: column; } }
   .level { flex: 1; padding: 16px 18px; }
@@ -699,13 +688,6 @@
       <p>Kõik asjakohane ei muutu hoiatuseks. Rutiinne, ette teatatud, oletuslik või juba kajastatud materjal salvestatakse hoopis kontekstina. Venemaa või Valgevene tegevust ei käsitleta kunagi rutiinsena.</p>
         </div>
       </details>
-      <div class="accuracy" id="accuracy" hidden>
-        <h4>Kas hoiatused olid õiged?</h4>
-        <p class="acc-figure mono" id="acc-figure"></p>
-        <p class="acc-line" id="acc-line"></p>
-        <p class="acc-caveat"><strong>Rakendatud reegel:</strong> hoiatus loeb tõeliseks signaaliks ainult siis, kui midagi juhtus või sellest teatati usutavalt kui peatselt juhtuvast Balti riikides või nende vastu. Kommentaar, analüüs ja ajalugu, mis piirkonda vaid mainivad, loevad müraks — olgu need kui tahes huvitavad.</p>
-        <p class="acc-caveat">Hinnatud ükshaaval projekti haldaja poolt — see ei ole sõltumatu audit. Arv on väärtuslik ainult seetõttu, et iga hinnang on seotud tol ajal avaldatud hoiatusega: kanali ajalugu on avalik ja igaühega võib mitte nõustuda.</p>
-      </div>
       <div class="filter-record" id="filter-record" hidden>
         <h4>Mida filtrid tegelikult kinni pidasid <span class="fr-window mono" id="fr-window"></span></h4>
         <ul class="fr-list mono" id="fr-list"></ul>
@@ -1039,34 +1021,6 @@ function markReadoutStale() {
         if (dfEl) { dfEl.textContent = d.direct_feed_sources; }
       }
 
-      // Rendered only when there is something real to show — see the
-      // English page for the reasoning.
-      // Were the alerts right? Deliberately renders the sample size and
-      // the unjudged count next to the figure — a precision number taken
-      // only from the alerts someone bothered to judge, with the rest
-      // dropped, is exactly the sort of number this project should not
-      // publish. Hidden entirely until at least one alert is judged.
-      var acc = d.alert_accuracy;
-      if (acc && acc.judged > 0) {
-        var accEl = document.getElementById('accuracy');
-        var fig = document.getElementById('acc-figure');
-        var line = document.getElementById('acc-line');
-        if (acc.precision_pct === null || acc.precision_pct === undefined) {
-          fig.textContent = 'Veel hindamata';
-          fig.classList.add('is-text');
-          line.textContent = 'Viimasest {alerts} hoiatusest on käsitsi üle vaadatud {judged}. Hinne ilmub, kui {min} on üle vaadatud.'
-            .replace('{judged}', acc.judged).replace('{alerts}', acc.alerts)
-            .replace('{min}', acc.min_sample);
-        } else {
-          fig.textContent = acc.precision_pct + '%';
-          fig.classList.remove('is-text');
-          line.textContent = '{pct}% hinnatud hoiatustest olid tõelised signaalid — {genuine} tõelist, {noise} müra, {alerts} hoiatusest viimase {days} päeva jooksul. {unjudged} veel hindamata.'
-            .replace('{pct}', acc.precision_pct).replace('{genuine}', acc.genuine)
-            .replace('{noise}', acc.noise).replace('{alerts}', acc.alerts)
-            .replace('{days}', acc.window_days).replace('{unjudged}', acc.unjudged);
-        }
-        accEl.hidden = false;
-      }
 
       var fr = d.filter_record;
       if (fr && fr.held_back_total > 0 && Array.isArray(fr.held_back_by_reason)) {
@@ -1197,12 +1151,9 @@ function markReadoutStale() {
           if (h.stale_count) {
             detailParts.push(h.stale_count + ' aegunud objekti välja jäetud');
           }
-          // The id this alert's verdict is recorded under. Shown so the
-          // published accuracy figure can be checked rather than taken on
-          // trust: find the id, read the evidence listed below it, and
-          // disagree if you think the verdict was wrong. Derived from the
-          // timestamp already shown, so it reveals nothing new. Absent on a
-          // QUIET scan, which is never judged.
+          // The id this alert is filed under. Shown so a correction can
+          // name the alert it corrects, and a reader can match the two up.
+          // Absent on a QUIET scan, which never alerted.
           if (h.alert_id) {
             detailParts.push('hoiatuse tunnus ' + h.alert_id);
           }
