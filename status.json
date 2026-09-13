@@ -1,20 +1,185 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-13T08:32:23.549047+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-09-13T12:59:41.766139+00:00",
+  "last_level": "WARN",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 385,
+  "total_scans": 387,
   "quiet_count": 286,
-  "watch_count": 97,
-  "warn_count": 2,
+  "watch_count": 98,
+  "warn_count": 3,
   "correction_count": 4,
-  "generated_at": "2026-09-13 08:32 UTC",
+  "generated_at": "2026-09-13 12:59 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-13T12:59:41.783247+00:00",
+      "level": "WARN",
+      "count": 4,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 111,
+      "stale_count": 3,
+      "alert_id": "0913-1259",
+      "items": [
+        {
+          "title": "Lithuania says drone sighting turns out to be flock of birds, after NATO summons jets - Reuters",
+          "source": "Reuters (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaFhfNEJ3cEZwOURCeW84SEFKRXM3Y0VlWUFlTVJxbDg5NVNCNDhESXViQnkwOC1vN3Z3dEhieU15VWY5bms1ZWJ1U0pkemREcm1pTU1DbzF0eVBEUW1HYkZBUnp5QkJ5U3ktNWoybGxGUWpqNm5BdktlYkFnWlNKd2FZNUJJV2JBRGxzSzdxWUhObXAxVlpfQjFSZlhJQUNUeUdqcU01Sm4wUEQyeUN4ZXFxdlNGak8zd0RKTU5fd2t6RzdldTIweWtBcWd3WWJyamhJ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "\u2018Putin\u2019s terror\u2019 at NATO\u2019s door: Russia strikes Kyiv-Warsaw train near Polish border - TVP World",
+          "source": "TVP World (Poland)",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV0RIZVlPRFNzLUJQd0NRQU5WSUNXcm1VbHhVdnBrRTNfVnNmWk02ZFVrOGk3Zzk3cGVjVFBhelVBYUFrQ1BNLUxiY2ZvQkxzUU1IRnp3aXpLS2RCWldaOHRKbWFwa1ZjM1ZoM0N3anB0YlMzT3J1TGw1NE5INnZPOEFQSEJzMWVIeHFEWnBpLUZoNTk3ZjYzSmdkeExfcWs1RnZ3Q0VGMU1HVzBjTHhF?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "\u0410\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u0412\u0438\u043b\u044c\u043d\u044e\u0441\u0430 \u043f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b \u0440\u0430\u0431\u043e\u0442\u0443 \u0438\u0437-\u0437\u0430 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0433\u043e \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f \u0411\u041f\u041b\u0410 \u0432 \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u043e\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610137075/ajeroport-vilnjusa-priostanovil-rabotu-iz-za-vozmozhnogo-pojavlenija-bpla-v-vozdushnom-prostranstve",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0410\u0442\u0430\u043a\u0430 \u0420\u0424 \u0437\u0430\u0442\u0440\u0443\u0434\u043d\u0438\u043b\u0430 \u043a\u043e\u043c\u0430\u043d\u0434\u0435 \u041c\u0418\u0414 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043f\u0435\u0440\u0435\u0441\u0435\u0447\u0435\u043d\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0423\u043a\u0440\u0430\u0438\u043d\u044b \u2014 \u043c\u0438\u043d\u0438\u0441\u0442\u0440",
+          "source": "LSM Russian-language",
+          "link": "https://rus.lsm.lv/statja/novosti/mir/13.09.2026-ataka-rf-zatrudnila-komande-mid-estonii-peresecenie-granicy-ukrainy-ministr.a662980/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-13T12:15:18.587880+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 222,
+      "stale_count": 0,
+      "alert_id": "0913-1215",
+      "items": [
+        {
+          "title": "Vilniuse lennujaam peatas t\u00f6\u00f6 v\u00f5imaliku drooni t\u00f5ttu Leedu \u00f5huruumis",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610137066/vilniuse-lennujaam-peatas-too-voimaliku-drooni-tottu-leedu-ohuruumis",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vitkauskas: \u012f Lietuv\u0105 grei\u010diausiai buvo \u012fskrid\u0119s dronas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/vitkauskas-i-lietuva-greiciausiai-buvo-iskrides-dronas-120303592",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NKVC vadovas: sekmadien\u012f \u012f Lietuv\u0105 grei\u010diausiai \u012fskrido dronas",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/nkvc-vadovas-i-lietuva-sekmadieni-greiciausiai-iskrido-dronas-tyrimas-dar-vyksta-56-2762740?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vilniuse lennujaam peatas t\u00f6\u00f6 v\u00f5imaliku drooni t\u00f5ttu Leedu \u00f5huruumis",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8545010",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NATO must exercise more \u2013 and closer to Russia",
+          "source": "Defence24",
+          "link": "https://defence24.com/geopolitics/nato-must-exercise-more-and-closer-to-russia",
+          "categories": [
+            "troop_movement",
+            "diplomatic",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-13T08:32:23.565122+00:00",
       "level": "QUIET",
@@ -547,53 +712,72 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-10T18:37:07.167072+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 292,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-09-10T15:15:13.941403+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 295,
-      "stale_count": 0,
-      "alert_id": "0910-1515",
-      "items": [
-        {
-          "title": "I`ll be \u0411\u042d\u041a",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/10/i-ll-be-bek",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-13T12:59:41.789793+00:00",
+      "level": "WARN",
+      "title": "\u0410\u0442\u0430\u043a\u0430 \u0420\u0424 \u0437\u0430\u0442\u0440\u0443\u0434\u043d\u0438\u043b\u0430 \u043a\u043e\u043c\u0430\u043d\u0434\u0435 \u041c\u0418\u0414 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043f\u0435\u0440\u0435\u0441\u0435\u0447\u0435\u043d\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0423\u043a\u0440\u0430\u0438\u043d\u044b \u2014 \u043c\u0438\u043d\u0438\u0441\u0442\u0440",
+      "source": "LSM Russian-language",
+      "link": "https://rus.lsm.lv/statja/novosti/mir/13.09.2026-ataka-rf-zatrudnila-komande-mid-estonii-peresecenie-granicy-ukrainy-ministr.a662980/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-13T12:59:41.789793+00:00",
+      "level": "WARN",
+      "title": "\u0410\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u0412\u0438\u043b\u044c\u043d\u044e\u0441\u0430 \u043f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b \u0440\u0430\u0431\u043e\u0442\u0443 \u0438\u0437-\u0437\u0430 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0433\u043e \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f \u0411\u041f\u041b\u0410 \u0432 \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u043e\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610137075/ajeroport-vilnjusa-priostanovil-rabotu-iz-za-vozmozhnogo-pojavlenija-bpla-v-vozdushnom-prostranstve",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-13T12:59:41.789793+00:00",
+      "level": "WARN",
+      "title": "\u2018Putin\u2019s terror\u2019 at NATO\u2019s door: Russia strikes Kyiv-Warsaw train near Polish border - TVP World",
+      "source": "TVP World (Poland)",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV0RIZVlPRFNzLUJQd0NRQU5WSUNXcm1VbHhVdnBrRTNfVnNmWk02ZFVrOGk3Zzk3cGVjVFBhelVBYUFrQ1BNLUxiY2ZvQkxzUU1IRnp3aXpLS2RCWldaOHRKbWFwa1ZjM1ZoM0N3anB0YlMzT3J1TGw1NE5INnZPOEFQSEJzMWVIeHFEWnBpLUZoNTk3ZjYzSmdkeExfcWs1RnZ3Q0VGMU1HVzBjTHhF?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-13T12:59:41.789793+00:00",
+      "level": "WARN",
+      "title": "Lithuania says drone sighting turns out to be flock of birds, after NATO summons jets - Reuters",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaFhfNEJ3cEZwOURCeW84SEFKRXM3Y0VlWUFlTVJxbDg5NVNCNDhESXViQnkwOC1vN3Z3dEhieU15VWY5bms1ZWJ1U0pkemREcm1pTU1DbzF0eVBEUW1HYkZBUnp5QkJ5U3ktNWoybGxGUWpqNm5BdktlYkFnWlNKd2FZNUJJV2JBRGxzSzdxWUhObXAxVlpfQjFSZlhJQUNUeUdqcU01Sm4wUEQyeUN4ZXFxdlNGak8zd0RKTU5fd2t6RzdldTIweWtBcWd3WWJyamhJ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-12T11:52:55.065106+00:00",
       "level": "WATCH",
@@ -763,70 +947,6 @@
       "categories": [
         "baltic_specific",
         "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-11T08:17:55.349467+00:00",
-      "level": "WATCH",
-      "title": "Budanovas: Rusija laikosi savo plano d\u0117l Europos",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/uzsienyje/budanovas-rusija-laikosi-savo-plano-del-europos-120302916",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-10T15:15:14.242069+00:00",
-      "level": "WATCH",
-      "title": "I`ll be \u0411\u042d\u041a",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/09/10/i-ll-be-bek",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-10T08:21:06.400447+00:00",
-      "level": "WATCH",
-      "title": "Almost 80% of Poles support helping Baltic states if Russia attacks",
-      "source": "Notes from Poland",
-      "link": "https://notesfrompoland.com/2026/09/10/almost-80-of-poles-support-helping-baltic-states-if-russia-attacks/",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-10T08:21:06.400447+00:00",
-      "level": "WATCH",
-      "title": "\u0412 \u0412\u043e\u0440\u043e\u043d\u0435\u0436\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438 \u043f\u043e\u0433\u0438\u0431\u043b\u0430 \u0436\u0435\u043d\u0449\u0438\u043d\u0430, \u0432 \u0421\u0443\u043c\u0430\u0445 \u2014 \u0434\u0432\u043e\u0435 \u0447\u0435\u043b\u043e\u0432\u0435\u043a. \u0413\u043b\u0430\u0432\u043d\u043e\u0435 \u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0445 \u0430\u0442\u0430\u043a\u0430\u0445",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/09/10/v-voronezhskoi-oblasti-pogibla-zhenshchina-v-sumakh-dvoe-chelovek-glavnoe-o-poslednikh-atakakh-news",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1015,8 +1135,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 213,
-    "alerting_scans": 80,
+    "scans": 212,
+    "alerting_scans": 81,
     "held_back_total": 8,
     "held_back_by_reason": [
       {
@@ -1035,6 +1155,6 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 149
+    "scans_before_tracking": 146
   }
 }

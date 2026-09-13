@@ -2694,6 +2694,20 @@
       "count": 0,
       "tier3_count": 0,
       "tone": -5.419354838709677
+    },
+    {
+      "ts": "2026-09-13T12:15:18.587880+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-13T12:59:41.783247+00:00",
+      "level": "WARN",
+      "count": 4,
+      "tier3_count": 1,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -3614,6 +3628,10 @@
     {
       "ts": "2026-09-13T08:30:04.730429+00:00",
       "count": 244
+    },
+    {
+      "ts": "2026-09-13T12:58:29.746448+00:00",
+      "count": 321
     }
   ],
   "military_points": [
@@ -4388,6 +4406,10 @@
     {
       "ts": "2026-09-13T08:30:05.101569+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-09-13T12:58:30.147925+00:00",
+      "count": 2
     }
   ],
   "firms_points": [
@@ -4902,6 +4924,10 @@
     {
       "ts": "2026-09-13T01:12:06.667530+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-09-13T12:58:32.347913+00:00",
+      "count": 18
     }
   ],
   "entsoe_points": [
@@ -5335,6 +5361,10 @@
     },
     {
       "ts": "2026-09-13T08:31:24.557129+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-13T12:58:34.708489+00:00",
       "count": 0
     }
   ],
@@ -7453,6 +7483,29 @@
         "steady": [
           "gpsjam",
           "ais"
+        ]
+      },
+      "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-13T12:58:34.709631+00:00",
+      "deviation_pct": -2.5802037076356803,
+      "sources_included": 4,
+      "narrative": "military aircraft 26% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 26,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
         ]
       },
       "band_key": "normal",
