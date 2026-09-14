@@ -704,7 +704,7 @@
       <p class="eyebrow">Darbības vēsture</p>
       <div>
         <h2>Dzīvs, nevis kurēts</h2>
-        <p>Automātiski iegūts no tiem pašiem datiem, ko izmanto Telegram kanāls — nekas šeit netiek sagatavots atsevišķi šai lapai. Skenējumi ir plānoti reizi ~4 stundās (6x dienā), nevis nepārtraukti — lai gan GitHub bezmaksas plānotājs darbojas pēc labākās iespējas principa un lielas noslodzes laikā var palaist skenējumu vēlāk nekā plānots, dažkārt par vairākām stundām.</p>
+        <p>Automātiski iegūts no tiem pašiem datiem, ko izmanto Telegram kanāls — nekas šeit netiek sagatavots atsevišķi šai lapai. Pilna pārbaude ir plānota 3x dienā, un ātrāka izdevēju plūsmu pārbaude notiek ik pēc 2 stundām; augstāk redzamais laiks nāk no pilnās pārbaudes. Neviena no tām nav nepārtraukta — lai gan GitHub bezmaksas plānotājs darbojas pēc labākās iespējas principa un lielas noslodzes laikā var palaist skenējumu vēlāk nekā plānots, dažkārt par vairākām stundām.</p>
       </div>
     </div>
     <div class="stat-strip mono">
@@ -875,7 +875,7 @@
 // a server that may be dead — fails in exactly the case this exists for.
 // For a warning system, a rare false alarm beats a silent false all-clear.
 var LIVENESS = {
-  // A full scan runs every 4 hours, so this fires only after roughly 60
+  // A full scan runs every 8 hours, so this fires only after roughly 30
   // consecutive missed scans. Set deliberately high by the project owner,
   // against a recommendation for an earlier first tier: a banner that
   // appears whenever GitHub's scheduler drifts is noise, and noise on a
