@@ -2752,11 +2752,32 @@
       "tone": null
     },
     {
+      "ts": "2026-09-14T09:47:59.168205+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
       "ts": "2026-09-14T09:57:21.109075+00:00",
       "level": "WATCH",
       "count": 6,
       "tier3_count": 0,
       "tone": -3.71578947368421
+    },
+    {
+      "ts": "2026-09-14T13:17:28.664770+00:00",
+      "level": "WATCH",
+      "count": 6,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-14T16:02:19.317094+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "tier3_count": 0,
+      "tone": -3.896774193548387
     }
   ],
   "gpsjam_points": [
@@ -3705,6 +3726,10 @@
     {
       "ts": "2026-09-14T09:56:36.264434+00:00",
       "count": 290
+    },
+    {
+      "ts": "2026-09-14T16:00:38.064896+00:00",
+      "count": 275
     }
   ],
   "military_points": [
@@ -4503,6 +4528,10 @@
     {
       "ts": "2026-09-14T09:56:36.906038+00:00",
       "count": 7
+    },
+    {
+      "ts": "2026-09-14T16:00:38.748273+00:00",
+      "count": 5
     }
   ],
   "firms_points": [
@@ -5037,6 +5066,10 @@
     {
       "ts": "2026-09-14T09:56:40.107547+00:00",
       "count": 33
+    },
+    {
+      "ts": "2026-09-14T16:00:41.287019+00:00",
+      "count": 47
     }
   ],
   "entsoe_points": [
@@ -5494,6 +5527,10 @@
     },
     {
       "ts": "2026-09-14T09:56:44.290443+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-14T16:01:42.080713+00:00",
       "count": 0
     }
   ],
@@ -7751,6 +7788,33 @@
         ]
       },
       "band_key": "high_above",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-14T16:01:42.083273+00:00",
+      "deviation_pct": 43.488047484323644,
+      "sources_included": 4,
+      "narrative": "military aircraft 81% above baseline; thermal hotspots 81% above baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately elevated",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 81,
+            "direction": "above"
+          },
+          {
+            "signal": "firms",
+            "pct": 81,
+            "direction": "above"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_above",
       "band_record_scans": null
     }
   ]
