@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-14T21:04:34.176318+00:00",
+  "last_run_utc": "2026-09-14T22:44:32.702453+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 6.1h ago",
   "since": "2026-07-19",
-  "total_scans": 398,
+  "total_scans": 399,
   "quiet_count": 288,
-  "watch_count": 107,
+  "watch_count": 108,
   "warn_count": 3,
   "correction_count": 4,
-  "generated_at": "2026-09-14 21:04 UTC",
+  "generated_at": "2026-09-15 04:51 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-14T22:44:32.695212+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 60,
+      "stale_count": 0,
+      "alert_id": "0914-2244",
+      "items": [
+        {
+          "title": "Lietuvoje skrid\u0119s dronas buvo sunaikintas, oro pavojus at\u0161aukiamas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/lietuvoje-skrides-dronas-buvo-sunaikintas-oro-pavojus-atsaukiamas-120304311",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Po numu\u0161to drono \u2013 R. Kauno pad\u0117ka",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/15/news/po-numusto-drono-r-kauno-padeka-43987534/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vi\u013c\u0146as apri\u0146\u0137\u012b izsludin\u0101ts iesp\u0113jamais gaisa apdraud\u0113jums \u2013 iedz\u012bvot\u0101ji sa\u0146\u0113mu\u0161i br\u012bdin\u0101jumus",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/vilnas-aprinki-izsludinats-iespejamais-gaisa-apdraudejums-iedzivotaji-sanemusi-bridinajumus",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-14T21:04:34.212934+00:00",
       "level": "WATCH",
@@ -860,53 +920,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-12T11:13:30.924477+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 205,
-      "stale_count": 0,
-      "alert_id": "0912-1113",
-      "items": [
-        {
-          "title": "\u0425\u0443\u0441\u0438\u0442\u044b \u043f\u0440\u043e\u0442\u0438\u0432 \u0432\u0441\u0435\u0445 (\u043a\u0440\u043e\u043c\u0435 \u0418\u0440\u0430\u043d\u0430)",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/12/khusity-protiv-vsekh-krome-irana",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Medvedevs draud Lietuvai ar \"pazu\u0161anu no pasaules kartes\", bet Krievijas iesp\u0113jamo uzbrukuma Eiropai sauc par \"baum\u0101m\"",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/728378-medvedevs-draud-lietuvai-ar-pazusanu-no-pasaules-kartes-bet-krievijas-iespejamo-uzbrukuma-eiropai-sauc-par-baumam",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1329,14 +1342,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 215,
-    "alerting_scans": 89,
-    "held_back_total": 13,
+    "scans": 214,
+    "alerting_scans": 90,
+    "held_back_total": 14,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 8
+        "count": 9
       },
       {
         "reason": "already alerted",
@@ -1354,6 +1367,6 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 138
+    "scans_before_tracking": 136
   }
 }
