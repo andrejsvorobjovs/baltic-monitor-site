@@ -1,20 +1,261 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-15T14:27:03.808580+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 2.5h ago",
+  "last_run_utc": "2026-09-15T20:21:10.821842+00:00",
+  "last_level": "WARN",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 403,
+  "total_scans": 405,
   "quiet_count": 288,
   "watch_count": 111,
-  "warn_count": 4,
+  "warn_count": 6,
   "correction_count": 4,
-  "generated_at": "2026-09-15 16:56 UTC",
+  "generated_at": "2026-09-15 20:21 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-15T20:21:10.836747+00:00",
+      "level": "WARN",
+      "count": 6,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 205,
+      "stale_count": 4,
+      "alert_id": "0915-2021",
+      "items": [
+        {
+          "title": "Drone incursions sow fear and chaos along NATO's Baltic and Finnish borders - reuters.com",
+          "source": "Reuters (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYnQwUkdJdlNOaDV0cVJ0TWctcktpOWpnNVY5dlN2Y1UtX2Q2ZU5XdE9OVWFJaGp6U1FHYmJFd3lCTnZibXFad2dLVm9KSF9walVETURvd21USndsaG9vOTB6TFZoZG8zNGZXQlNYbXNIZ0RHaEpxU2Y5QmJ6Q1ZWLXVwWV9tZG51VF9IbkZmZ3ZTOF93MkExR083NllkTjRUMklwQngwNWRBOHJmSkRIY0ZJRzJuelkzRktfYWhqeGpQT3E4VjBnOQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "NATO jets shoot down drone that entered Lithuanian airspace - LRT",
+          "source": "LRT (Lithuania)",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWmhDMkFnb3JDMWFCR1BiRWZhaGRxaHk1ek9MeXdqcXdmd0J0ZGo1ck50dHM5UExFV3ZJRUVzajA0YTUyM1hXLVFZNnBnaWNiUm5QcW5lc3hlR2F4bUt3S0VDRjdXa0tLMkZnZWhiak8xNnpkXzNIdFF3dEd2Zmg1ZVYwc04xaDhPaDdmRTZieURoSmpxUWVLckN5eFAxNXJNeUVSUjVJdW1kVUd5?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Belarus holds 'defensive' military drills near borders with Poland, Lithuania - The Kyiv Independent",
+          "source": "Kyiv Independent",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcjNYVVRzdXNwZm05QzZ2Y3VZdnp5cWlnVXhiZXlKMWRFOFlRQmdkRXczdWtWQU0xS2cweVo1cThINzI2X0JtQTUyVnNJUVJvUkJYVzE2cDZRT0dwdnhsRkJDbTluZndNalQyVTdtSWlZZXVTVVpXOTVYQWxuRGctbFhkWnFXdnFVa1B3UkhrQXNjUWpRQS1QOQ?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "\u201eReuters\u201c: Ukrainos kariuomen\u0117s \u0161altinis teig\u0117, kad Lietuvoje numu\u0161tas dronas gal\u0117jo b\u016bti rusi\u0161kas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/reuters-ukrainos-kariuomenes-saltinis-teige-kad-lietuvoje-numustas-dronas-galejo-buti-rusiskas-120304958",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Ukrainos \u0161altinis:\u00a0Lietuvoje numu\u0161tas dronas gal\u0117jo b\u016bti rusi\u0161kas",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/15/news/ukrainos-saltinis-lietuvoje-numustas-dronas-galejo-buti-rusiskas--44008819/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "The Baltic states fear a\u00a0Russian invasion. They faced the same threat a\u00a0century ago and failed to\u00a0stop\u00a0it. Historian Alexey Uvarov explains why the region could not defend itself against Stalin.",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/feature/2026/09/15/the-baltic-states-fear-a-russian-invasion-they-faced-the-same-threat-a-century-ago-and-failed-to-stop-it-historian-alexey-uvarov-explains-why-the-region-could-not-defend-itself-against-stalin",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-15T17:46:14.188584+00:00",
+      "level": "WARN",
+      "count": 8,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 275,
+      "stale_count": 0,
+      "alert_id": "0915-1746",
+      "items": [
+        {
+          "title": "Wadephulas sureagavo \u012f drono numu\u0161im\u0105 Lietuvoje",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/politika/wadephulas-sureagavo-i-drono-numusima-lietuvoje-120304930",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vokietijos u\u017esienio reikal\u0173 ministras po drono incidento Lietuvoje: NATO nesileis \u012fbauginama Rusijos",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/vokietijos-uzsienio-reikalu-ministras-po-drono-incidento-lietuvoje-nato-nesileis-ibauginama-rusijos-57-2764588?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041c\u0438\u043d\u0438\u0441\u0442\u0440 \u043e\u0431\u043e\u0440\u043e\u043d\u044b \u041b\u0438\u0442\u0432\u044b \u0441\u043e\u043e\u0431\u0449\u0438\u043b, \u0447\u0442\u043e \u0441\u0431\u0438\u0442\u044b\u0439 \u0434\u0440\u043e\u043d \u043d\u0435\u0441 \u0432\u0437\u0440\u044b\u0432\u0447\u0430\u0442\u043a\u0443",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610138971/ministr-oborony-litvy-soobwil-chto-sbityj-dron-nes-vzryvchatku",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Po drono incidento Lietuvoje \u2013 Vokietijos u\u017esienio reikal\u0173 ministro \u017einia",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/pasaulis/konfliktai-ir-saugumas/2026/09/15/news/po-drono-incidento-lietuvoje-vokietijos-uzsienio-reikalu-ministro-zinia-44002278/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Po drono incidento kelia klausimus d\u0117l gyventoj\u0173 persp\u0117jimo: \u201eK\u0105 a\u0161 gal\u0117jau per 15 minu\u010di\u0173 nuveikti?\u201c",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/15/news/po-drono-incidento-kelia-klausimus-del-gyventoju-perspejimo-ka-as-galejau-per-15-minuciu-nuveikti--43995094/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u0447\u0438\u043d\u043e\u0432\u043d\u0438\u043a\u0438 \u043c\u0438\u043d\u0438\u043c\u0443\u043c 17 \u0440\u0430\u0437 \u0437\u0430\u044f\u0432\u043b\u044f\u043b\u0438, \u0447\u0442\u043e \u043d\u043e\u0432\u043e\u0439 \u0432\u043e\u043b\u043d\u044b \u043c\u043e\u0431\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u0438 \u043d\u0435 \u0431\u0443\u0434\u0435\u0442",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/15/rossiiskie-chinovniki-minimum-17-raz-zaiavliali-chto-novoi-volny-mobilizatsii-ne-budet-news",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Belarus is conducting exercises near the border with Poland and Lithuania",
+          "source": "Defence24",
+          "link": "https://defence24.com/armed-forces/belarus-is-conducting-exercises-near-the-border-with-poland-and-lithuania",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuv\u0101 notriektaj\u0101 dron\u0101 biju\u0161as spr\u0101gstvielas;  turpin\u0101s drona atl\u016bzu izp\u0113te un anal\u012bze",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/lietuva-notriektaja-drona-bijusas-spragstvielas-turpinas-drona-atluzu-izpete-un-analize",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-15T14:27:03.822727+00:00",
       "level": "WATCH",
@@ -1438,37 +1679,106 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-13T08:32:23.565122+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 365,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-09-13T01:13:16.937859+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 51,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-15T20:21:10.845351+00:00",
+      "level": "WARN",
+      "title": "The Baltic states fear a\u00a0Russian invasion. They faced the same threat a\u00a0century ago and failed to\u00a0stop\u00a0it. Historian Alexey Uvarov explains why the region could not defend itself against Stalin.",
+      "source": "Meduza",
+      "link": "https://meduza.io/en/feature/2026/09/15/the-baltic-states-fear-a-russian-invasion-they-faced-the-same-threat-a-century-ago-and-failed-to-stop-it-historian-alexey-uvarov-explains-why-the-region-could-not-defend-itself-against-stalin",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-15T20:21:10.845351+00:00",
+      "level": "WARN",
+      "title": "Ukrainos \u0161altinis:\u00a0Lietuvoje numu\u0161tas dronas gal\u0117jo b\u016bti rusi\u0161kas",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/15/news/ukrainos-saltinis-lietuvoje-numustas-dronas-galejo-buti-rusiskas--44008819/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-15T20:21:10.845351+00:00",
+      "level": "WARN",
+      "title": "\u201eReuters\u201c: Ukrainos kariuomen\u0117s \u0161altinis teig\u0117, kad Lietuvoje numu\u0161tas dronas gal\u0117jo b\u016bti rusi\u0161kas",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/lietuvoje/reuters-ukrainos-kariuomenes-saltinis-teige-kad-lietuvoje-numustas-dronas-galejo-buti-rusiskas-120304958",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-15T20:21:10.845351+00:00",
+      "level": "WARN",
+      "title": "Belarus holds 'defensive' military drills near borders with Poland, Lithuania - The Kyiv Independent",
+      "source": "Kyiv Independent",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcjNYVVRzdXNwZm05QzZ2Y3VZdnp5cWlnVXhiZXlKMWRFOFlRQmdkRXczdWtWQU0xS2cweVo1cThINzI2X0JtQTUyVnNJUVJvUkJYVzE2cDZRT0dwdnhsRkJDbTluZndNalQyVTdtSWlZZXVTVVpXOTVYQWxuRGctbFhkWnFXdnFVa1B3UkhrQXNjUWpRQS1QOQ?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-15T20:21:10.845351+00:00",
+      "level": "WARN",
+      "title": "NATO jets shoot down drone that entered Lithuanian airspace - LRT",
+      "source": "LRT (Lithuania)",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWmhDMkFnb3JDMWFCR1BiRWZhaGRxaHk1ek9MeXdqcXdmd0J0ZGo1ck50dHM5UExFV3ZJRUVzajA0YTUyM1hXLVFZNnBnaWNiUm5QcW5lc3hlR2F4bUt3S0VDRjdXa0tLMkZnZWhiak8xNnpkXzNIdFF3dEd2Zmg1ZVYwc04xaDhPaDdmRTZieURoSmpxUWVLckN5eFAxNXJNeUVSUjVJdW1kVUd5?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-15T20:21:10.845351+00:00",
+      "level": "WARN",
+      "title": "Drone incursions sow fear and chaos along NATO's Baltic and Finnish borders - reuters.com",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYnQwUkdJdlNOaDV0cVJ0TWctcktpOWpnNVY5dlN2Y1UtX2Q2ZU5XdE9OVWFJaGp6U1FHYmJFd3lCTnZibXFad2dLVm9KSF9walVETURvd21USndsaG9vOTB6TFZoZG8zNGZXQlNYbXNIZ0RHaEpxU2Y5QmJ6Q1ZWLXVwWV9tZG51VF9IbkZmZ3ZTOF93MkExR083NllkTjRUMklwQngwNWRBOHJmSkRIY0ZJRzJuelkzRktfYWhqeGpQT3E4VjBnOQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-15T14:27:03.830670+00:00",
       "level": "WATCH",
@@ -1612,102 +1922,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T06:14:13.317897+00:00",
-      "level": "WATCH",
-      "title": "Prezident\u016bra apie incident\u0105 prie Kauno me\u010det\u0117s: tai provokacija, naudinga Rusijai",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/politika/prezidentura-apie-incidenta-prie-kauno-mecetes-tai-provokacija-naudinga-rusijai-120304388",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T06:14:13.317897+00:00",
-      "level": "WATCH",
-      "title": "Sausumos paj\u0117g\u0173 vadas: dronas numu\u0161tas raketine ginkluote",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/lietuvoje/sausumos-pajegu-vadas-dronas-numustas-raketine-ginkluote-120304398",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T06:14:13.317897+00:00",
-      "level": "WATCH",
-      "title": "NATO izn\u012bcin\u0101t\u0101ji notrieku\u0161i dronu virs Lietuvas",
-      "source": "LSM Latvian-language",
-      "link": "https://www.lsm.lv/raksts/zinas/arzemes/15.09.2026-nato-iznicinataji-notriekusi-dronu-virs-lietuvas.a663212/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T06:14:13.317897+00:00",
-      "level": "WATCH",
-      "title": "NATO h\u00e4vitajad tulistasid Leedus alla sinna tunginud drooni",
-      "source": "ERR Eesti (Estonian-language)",
-      "link": "https://www.err.ee/1610138278/nato-havitajad-tulistasid-leedus-alla-sinna-tunginud-drooni",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T06:14:13.317897+00:00",
-      "level": "WATCH",
-      "title": "Russia restricts aircraft refueling at 26 airports",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/russia-restricts-aircraft-refueling-at-26-airports--cameoplus_02882bbc7a33f134",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "INFRASTRUCTURE",
-      "gdelt_subcategory": "IN03",
-      "gdelt_event_code": "IN03",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T06:14:13.317897+00:00",
-      "level": "WATCH",
-      "title": "Germany orders soldiers for permanent Lithuania brigade",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/germany-orders-soldiers-for-permanent-lithuania-brigade--cameoplus_bbf887f05cdfe5d0",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "154",
-      "gdelt_event_code": "154",
-      "goldstein": -7.2
     }
   ],
   "recent_corrections": [
@@ -1890,8 +2104,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 215,
-    "alerting_scans": 94,
+    "scans": 216,
+    "alerting_scans": 96,
     "held_back_total": 17,
     "held_back_by_reason": [
       {
@@ -1915,6 +2129,6 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 133
+    "scans_before_tracking": 132
   }
 }
