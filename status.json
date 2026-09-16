@@ -1,20 +1,289 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-16T06:04:00.385652+00:00",
+  "last_run_utc": "2026-09-16T14:19:24.578802+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 406,
+  "total_scans": 409,
   "quiet_count": 288,
-  "watch_count": 112,
-  "warn_count": 6,
+  "watch_count": 114,
+  "warn_count": 7,
   "correction_count": 4,
-  "generated_at": "2026-09-16 06:04 UTC",
+  "generated_at": "2026-09-16 14:19 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-16T14:19:24.592961+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 307,
+      "stale_count": 2,
+      "alert_id": "0916-1419",
+      "items": [
+        {
+          "title": "Aizbildinoties ar aizsardz\u012bbu, Baltkrievija s\u0101k milit\u0101r\u0101s m\u0101c\u012bbas tie\u0161i pie Baltijas valstu sliek\u0161\u0146a - LA.LV",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYzNtelNXaFppUWdxUDBSMWZxQTktTXZSY1NXekZocTRVcWRSc2JIZ0Z3ZDlkMVQwbU4tYkJwWFNXZFhQWkVSaHk3em9iRjZuTEdWN0k4Rmp4NEVSM3ZvY202LVpyTHNwY2VpM3pKNi1fNkh5YUFxWFRBR1hWU0p3aG10VU1JQTRPWEZwdGRoOEMtdFVpTUVkcDh5RktiMi1zdlBPUXAyWXFZV0J2Vmtlb1AyZ0NKRm5r?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "US uncovers alleged Russian terrorist group",
+          "source": "BNN Baltic News Network",
+          "link": "https://bnn-news.com/us-uncovers-alleged-russian-terrorist-group-283837",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Saksa-Hollandi korpuse tulek P\u00e4rnusse ootab liitlaste otsust",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8547180",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Aizbildinoties ar aizsardz\u012bbu, Baltkrievija s\u0101k milit\u0101r\u0101s m\u0101c\u012bbas tie\u0161i pie Baltijas valstu sliek\u0161\u0146a",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/aizbildinoties-ar-aizsardzibu-baltkrievija-sak-militaras-macibas-tiesi-pie-baltijas-valstu-slieksna",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-16T12:50:05.851940+00:00",
+      "level": "WARN",
+      "count": 10,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 507,
+      "stale_count": 0,
+      "alert_id": "0916-1250",
+      "items": [
+        {
+          "title": "Lietuvas prezidents: Notriektais drons, visticam\u0101k, pieder\u0113ja Krievijai",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/16.09.2026-lietuvas-prezidents-notriektais-drons-visticamak-piedereja-krievijai.a663439/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuvas aizsardz\u012bbas ministrs: Notriekt\u0101 drona incidenta izmekl\u0113\u0161ana aiz\u0146ems laiku",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/16.09.2026-lietuvas-aizsardzibas-ministrs-notriekta-drona-incidenta-izmeklesana-aiznems-laiku.a663404/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442 \u041b\u0438\u0442\u0432\u044b: \u0441\u0431\u0438\u0442\u044b\u0439 \u0434\u0440\u043e\u043d, \u0441\u043a\u043e\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043e, \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u0430\u043b \u0420\u043e\u0441\u0441\u0438\u0438",
+          "source": "LSM Russian-language",
+          "link": "https://rus.lsm.lv/statja/novosti/mir/16.09.2026-prezident-litvy-sbityi-dron-skoree-vsego-prinadlezal-rossii.a663454/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Naus\u0113da: Lietuv\u0101 notriektais bezpilota lidapar\u0101ts bija Krievijas drons \"Gerbera\"",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/pasaule/eiropa/nauseda-lietuva-notriektais-bezpilota-lidaparats-bija-krievijas-drons-gerbera?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Par drona notriek\u0161anu Latvijas gaisa telp\u0101 apbalvoti it\u0101\u013cu piloti",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8547116",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuv\u0101 notriektais bezpilota lidapar\u0101ts bija Krievijas drons \"Gerbera\", pazi\u0146o Naus\u0113da",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8547016",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Atskleid\u0117 daugiau informacijos apie Baltijos paj\u016bryje rast\u0105 dron\u0105: buvo ginkluotas",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/09/16/news/atskleide-daugiau-informacijos-apie-baltijos-pajuryje-rasta-drona-buvo-ginkluotas-44016613/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0421\u0428\u0410 \u043e\u0431\u0432\u0438\u043d\u0438\u043b\u0438 \u043e\u0444\u0438\u0446\u0435\u0440\u0430 \u0424\u0421\u0411 \u0438 \u0431\u044b\u0432\u0448\u0435\u0433\u043e \u043f\u043e\u043b\u043a\u043e\u0432\u043d\u0438\u043a\u0430 \u0441\u043f\u0435\u0446\u0441\u043b\u0443\u0436\u0431 \u0432 \u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0435 \u0443\u0431\u0438\u0439\u0441\u0442\u0432 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0445 \u0434\u0438\u0441\u0441\u0438\u0434\u0435\u043d\u0442\u043e\u0432",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/16/ssha-obvinili-ofitsera-fsb-i-byvshego-polkovnika-spetssluzhb-v-podgotovke-ubiistv-rossiiskikh-dissidentov-news",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuvas gaisa telp\u0101 notriektais drons bija Krievijas \u2013 visticam\u0101k, tas bija ce\u013c\u0101 uz citu valsti",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/lietuvas-gaisa-telpa-notriektais-drons-bija-krievijas-visticamak-tas-bija-cela-uz-citu-valsti",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuv\u0101 notriektais drons bijis Krievijas \u201cGerbera\u201d; Naus\u0113da atkl\u0101j iesp\u0113jamo t\u0101 mar\u0161rutu",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/728937-lietuva-notriektais-drons-bijis-krievijas-gerbera-nauseda-atklaj-iespejamo-ta-marsrutu",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-16T06:43:23.133749+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 98,
+      "stale_count": 0,
+      "alert_id": "0916-0643",
+      "items": [
+        {
+          "title": "ERKKI KOORT \u27e9 Taani kopteri tulistamine L\u00e4\u00e4nemerel n\u00e4itab: Venemaa testib ja NATO peab vastust karmistama",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8546657",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-16T06:04:00.400084+00:00",
       "level": "WATCH",
@@ -1561,142 +1830,57 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-13T18:23:59.352242+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 273,
-      "stale_count": 1,
-      "alert_id": "0913-1823",
-      "items": [
-        {
-          "title": "Polish foreign minister urges NATO drills near Kaliningrad",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/polish-foreign-minister-urges-nato-drills-near-kaliningrad--cameoplus_5e115df7fda21df7",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "0212",
-          "gdelt_event_code": "0212",
-          "goldstein": 3,
-          "route": "gdelt"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-13T15:11:54.894048+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 159,
-      "stale_count": 0,
-      "alert_id": "0913-1511",
-      "items": [
-        {
-          "title": "Krievija uzbrukusi Ukrainas pasa\u017eieru vilcienam net\u0101lu no robe\u017eas ar Poliju",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/arzemes/13.09.2026-krievija-uzbrukusi-ukrainas-pasazieru-vilcienam-netalu-no-robezas-ar-poliju.a662993/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-13T12:59:41.783247+00:00",
-      "level": "WARN",
-      "count": 4,
-      "failed_count": 0,
-      "tier3_count": 1,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 111,
-      "stale_count": 3,
-      "alert_id": "0913-1259",
-      "items": [
-        {
-          "title": "Lithuania says drone sighting turns out to be flock of birds, after NATO summons jets - Reuters",
-          "source": "Reuters (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaFhfNEJ3cEZwOURCeW84SEFKRXM3Y0VlWUFlTVJxbDg5NVNCNDhESXViQnkwOC1vN3Z3dEhieU15VWY5bms1ZWJ1U0pkemREcm1pTU1DbzF0eVBEUW1HYkZBUnp5QkJ5U3ktNWoybGxGUWpqNm5BdktlYkFnWlNKd2FZNUJJV2JBRGxzSzdxWUhObXAxVlpfQjFSZlhJQUNUeUdqcU01Sm4wUEQyeUN4ZXFxdlNGak8zd0RKTU5fd2t6RzdldTIweWtBcWd3WWJyamhJ?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier1",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "\u2018Putin\u2019s terror\u2019 at NATO\u2019s door: Russia strikes Kyiv-Warsaw train near Polish border - TVP World",
-          "source": "TVP World (Poland)",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV0RIZVlPRFNzLUJQd0NRQU5WSUNXcm1VbHhVdnBrRTNfVnNmWk02ZFVrOGk3Zzk3cGVjVFBhelVBYUFrQ1BNLUxiY2ZvQkxzUU1IRnp3aXpLS2RCWldaOHRKbWFwa1ZjM1ZoM0N3anB0YlMzT3J1TGw1NE5INnZPOEFQSEJzMWVIeHFEWnBpLUZoNTk3ZjYzSmdkeExfcWs1RnZ3Q0VGMU1HVzBjTHhF?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "\u0410\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u0412\u0438\u043b\u044c\u043d\u044e\u0441\u0430 \u043f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b \u0440\u0430\u0431\u043e\u0442\u0443 \u0438\u0437-\u0437\u0430 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0433\u043e \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f \u0411\u041f\u041b\u0410 \u0432 \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u043e\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610137075/ajeroport-vilnjusa-priostanovil-rabotu-iz-za-vozmozhnogo-pojavlenija-bpla-v-vozdushnom-prostranstve",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0410\u0442\u0430\u043a\u0430 \u0420\u0424 \u0437\u0430\u0442\u0440\u0443\u0434\u043d\u0438\u043b\u0430 \u043a\u043e\u043c\u0430\u043d\u0434\u0435 \u041c\u0418\u0414 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043f\u0435\u0440\u0435\u0441\u0435\u0447\u0435\u043d\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0423\u043a\u0440\u0430\u0438\u043d\u044b \u2014 \u043c\u0438\u043d\u0438\u0441\u0442\u0440",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/mir/13.09.2026-ataka-rf-zatrudnila-komande-mid-estonii-peresecenie-granicy-ukrainy-ministr.a662980/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-16T14:19:24.601581+00:00",
+      "level": "WATCH",
+      "title": "Saksa-Hollandi korpuse tulek P\u00e4rnusse ootab liitlaste otsust",
+      "source": "Postimees Estonian-language",
+      "link": "https://pmo.ee/8547180",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-16T14:19:24.601581+00:00",
+      "level": "WATCH",
+      "title": "US uncovers alleged Russian terrorist group",
+      "source": "BNN Baltic News Network",
+      "link": "https://bnn-news.com/us-uncovers-alleged-russian-terrorist-group-283837",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-16T14:19:24.601581+00:00",
+      "level": "WATCH",
+      "title": "Aizbildinoties ar aizsardz\u012bbu, Baltkrievija s\u0101k milit\u0101r\u0101s m\u0101c\u012bbas tie\u0161i pie Baltijas valstu sliek\u0161\u0146a - LA.LV",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYzNtelNXaFppUWdxUDBSMWZxQTktTXZSY1NXekZocTRVcWRSc2JIZ0Z3ZDlkMVQwbU4tYkJwWFNXZFhQWkVSaHk3em9iRjZuTEdWN0k4Rmp4NEVSM3ZvY202LVpyTHNwY2VpM3pKNi1fNkh5YUFxWFRBR1hWU0p3aG10VU1JQTRPWEZwdGRoOEMtdFVpTUVkcDh5RktiMi1zdlBPUXAyWXFZV0J2Vmtlb1AyZ0NKRm5r?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-16T06:04:00.408575+00:00",
       "level": "WATCH",
@@ -1890,54 +2074,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T14:27:03.830670+00:00",
-      "level": "WATCH",
-      "title": "NB8 Series. NB8 and the Drone Challenge: Creating Platform market as a tool for integration-driven preparedness",
-      "source": "ICDS (Estonia)",
-      "link": "https://icds.ee/en/nb8-series-nb8-and-the-drone-challenge-creating-platform-market-as-a-tool-for-integration-driven-preparedness/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T14:27:03.830670+00:00",
-      "level": "WATCH",
-      "title": "Lenkijos ir Lietuvos pa\u0161on\u0117je \u2013 naujos Baltarusijos karin\u0117s pratybos",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/baltarusija-lenkijos-ir-lietuvos-pasoneje-pradejo-karines-pratybas-57-2764426?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T14:27:03.830670+00:00",
-      "level": "WATCH",
-      "title": "Dronas Lietuvoje: kaip viskas vyko ir k\u0105 apie incident\u0105 \u017einome \u0161iuo metu",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/lietuvoje/dronas-lietuvoje-kaip-viskas-vyko-ir-ka-apie-incidenta-zinome-siuo-metu-120304817",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -2120,14 +2256,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 215,
-    "alerting_scans": 97,
-    "held_back_total": 17,
+    "scans": 216,
+    "alerting_scans": 99,
+    "held_back_total": 20,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 10
+        "count": 12
       },
       {
         "reason": "already alerted",
@@ -2135,16 +2271,16 @@
         "count": 5
       },
       {
+        "reason": "scheduled exercise",
+        "label": "Announced allied exercise",
+        "count": 2
+      },
+      {
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
         "count": 1
-      },
-      {
-        "reason": "scheduled exercise",
-        "label": "Announced allied exercise",
-        "count": 1
       }
     ],
-    "scans_before_tracking": 130
+    "scans_before_tracking": 128
   }
 }
