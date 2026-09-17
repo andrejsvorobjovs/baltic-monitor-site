@@ -1,20 +1,244 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-17T14:24:42.849079+00:00",
-  "last_level": "WARN",
-  "freshness_msg": "Last scan: 2.6h ago",
+  "last_run_utc": "2026-09-17T20:24:44.634595+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 412,
+  "total_scans": 414,
   "quiet_count": 288,
-  "watch_count": 116,
-  "warn_count": 8,
+  "watch_count": 117,
+  "warn_count": 9,
   "correction_count": 4,
-  "generated_at": "2026-09-17 16:58 UTC",
+  "generated_at": "2026-09-17 20:24 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-17T20:24:44.653885+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 335,
+      "stale_count": 6,
+      "alert_id": "0917-2024",
+      "items": [
+        {
+          "title": "Polish PM warns Russia may stage \u2018accidental\u2019 strikes on NATO\u2019s eastern flank - TVP World",
+          "source": "TVP World (Poland)",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTzRCWWE4VGtWTFJGb2pza19fWXFxeG9BQ3FSVjZERTFFZWQ1U2xxLWhkWXRZcElUMWhjb0U3OUlJU2o0R2p6OENmc1hLaWxvVVRTcTVyLWZWeUlwR2JFQUxKa1p2Vzd2OTVrVkV3UmtYaTJQNEVCV0RrYWE1YUdueWZzSVVkUTg5Z2R0U0NXNDNIVlBzbE5UMFpPbmxUT3h2c2hqc2tVMkwtSkk?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Po Lenkijos \u012fsp\u0117jimo \u2013 Budrio reakcija: Lietuva taip pat turi informacijos apie galimas Rusijos hibridines atakas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/po-lenkijos-ispejimo-budrio-reakcija-lietuva-taip-pat-turi-informacijos-apie-galimas-rusijos-hibridines-atakas-120306311",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Po D. Tusko persp\u0117jimo d\u0117l galim\u0173 Rusijos atak\u0173 \u2013 K. Budrio patvirtinimas",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/17/news/po-d-tusko-perspejimo-del-galimu-rusijos-ataku-k-budrio-patvirtinimas-44049340/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "The Nordic-Baltic Eight policy brief: NB8 and the drone challenge",
+          "source": "FIIA",
+          "link": "https://fiia.fi/ajankohtaista/the-nordic-baltic-eight-policy-brief-nb8-and-the-drone-challenge",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Somija Baltijas j\u016br\u0101 gatavojas scen\u0101rijam, kas k\u013cuvis par \u201cjauno normu\u201d",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/729216-somija-baltijas-jura-gatavojas-scenarijam-kas-kluvis-par-jauno-normu",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-17T17:45:07.284627+00:00",
+      "level": "WARN",
+      "count": 8,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 289,
+      "stale_count": 0,
+      "alert_id": "0917-1745",
+      "items": [
+        {
+          "title": "Tuskas \u012fsp\u0117ja d\u0117l galim\u0173 Rusijos plan\u0173: pasidalijo gauta \u017evalgybos informacija",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/uzsienyje/tuskas-ispeja-del-galimu-rusijos-planu-pasidalijo-gauta-zvalgybos-informacija-120306277",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Kaunas: Lietuvoje numu\u0161tas dronas buvo rusi\u0161kas, jo taikinys buvo Ukrainoje",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/kaunas-lietuvoje-numustas-dronas-buvo-rusiskas-jo-taikinys-buvo-ukrainoje-120306272",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Su Rubio susitik\u0119s Budrys: JAV ir Lietuva turi vienod\u0105 po\u017ei\u016br\u012f \u012f Rusijos hibridines gr\u0117smes",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/uzsienio-reikalu-ministras-jav-ir-lietuva-turi-vienoda-poziuri-i-rusijos-hibridines-gresmes-56-2766366?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvijai nev\u0113lamo personu sarakst\u0101 iek\u013cauj hokejistu Ove\u010dkinu un Putinam pietuvin\u0101tu oligarhu",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/latvija/zinas-71/latvijai-nevelamo-personu-saraksta-ieklauj-hokejistu-oveckinu-un-putinam-pietuvinatu-oligarhu?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvijas melnaj\u0101 sarakst\u0101 iek\u013cauj hokejistu Ove\u010dkinu un Trampa d\u0113la k\u0101zas finans\u0113ju\u0161o Krievijas oligarhu",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8548137",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "R. Kaunas: Lietuvoje numu\u0161tas dronas buvo rusi\u0161kas, jo taikinys buvo Ukrainoje",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/17/news/r-kaunas-lietuvoje-numustas-dronas-buvo-rusiskas-jo-taikinys-buvo-ukrainoje-44047919/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Bra\u017ee Latvijai nev\u0113lamo personu sarakst\u0101 iek\u013cauj divas personas \u2013 viens no vi\u0146iem saist\u012bts ar Trampa d\u0113la k\u0101z\u0101m",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/braze-latvijai-nevelamo-personu-saraksta-ieklauj-divas-personas-viens-no-viniem-saistits-ar-trampa-dela-kazam",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Putina atbalst\u012bt\u0101js, hokejists Ove\u010dkins un Trampa d\u0113la k\u0101zu finans\u0113t\u0101js iek\u013cauti Latvijas \u201cmelnaj\u0101 sarakst\u0101\"",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/729192-putina-atbalstitajs-hokejists-oveckins-un-trampa-dela-kazu-finansetajs-ieklauti-latvijas-melnaja-saraksta",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-17T14:24:42.864420+00:00",
       "level": "WARN",
@@ -2027,145 +2251,88 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-14T09:47:59.168205+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 410,
-      "stale_count": 0,
-      "alert_id": "0914-0947",
-      "items": [
-        {
-          "title": "LSA warns: unilateral grain transit restrictions will not stop Russian exports \u2013 the question is who will pay for the decision",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/lsa-warns-unilateral-grain-transit-restrictions-will-not-stop-russian-exports-the-question-is-who-will-pay-for-the-decision-283714",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0413\u0435\u043d\u043f\u0440\u043e\u043a\u0443\u0440\u043e\u0440 \u0423\u043a\u0440\u0430\u0438\u043d\u044b \u043f\u043e\u0441\u043b\u0435 \u043e\u0431\u044b\u0441\u043a\u043e\u0432 \u0432 \u0441\u0432\u043e\u0435\u043c \u0432\u0435\u0434\u043e\u043c\u0441\u0442\u0432\u0435 \u043e\u0431\u0432\u0438\u043d\u0438\u043b \u0433\u043b\u0430\u0432\u0443 \u041d\u0410\u0411\u0423 \u0432 \u043f\u043e\u0434\u0434\u0435\u043b\u043a\u0435 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u043e\u0432",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/14/genprokuror-ukrainy-posle-obyskov-obvinil-glavu-nabu-v-poddelke-dokumentov-news",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041c\u0430\u043b\u0443\u044e \u0422\u043e\u043a\u043c\u0430\u0447\u043a\u0443 \u0442\u0430\u043a \u0438 \u043d\u0435 \u0432\u0437\u044f\u043b\u0438",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/14/maluiu-tokmachku-tak-i-ne-vziali",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Eerik-Niiles Kross: rongir\u00fcnnak l\u00e4\u00e4ne tipp-poliitikute l\u00e4hedal v\u00f5ib v\u00e4hendada visiite Ukrainasse",
-          "source": "Ohtuleht (Estonia)",
-          "link": "https://www.ohtuleht.ee/1166764/eerik-niiles-kross-rongirunnak-laane-tipp-poliitikute-lahedal-voib-vahendada-visiite-ukrainasse",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-14T05:23:20.493284+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 214,
-      "stale_count": 0,
-      "alert_id": "0914-0523",
-      "items": [
-        {
-          "title": "D\u0117l Var\u0117nos rajone pasteb\u0117to skraidan\u010dio objekto \u2013 dar daugiau klausim\u0173",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/lietuvoje/del-varenos-rajone-pastebeto-skraidancio-objekto-dar-daugiau-klausimu-120303743",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Po pasteb\u0117jo objekto Var\u0117nos r. \u2013 neatsakyti klausimai: prabilo apie provokacij\u0105",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/14/news/po-pastebejo-objekto-varenos-r-neatsakyti-klausimai-prabilo-apie-provokacija-43971076/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Ven\u00e4j\u00e4 saattaa lis\u00e4t\u00e4 hybridi-iskuja mutta tuskin testaa Naton puolustusta, Viron p\u00e4\u00e4ministeri arvioi Ylelle",
-          "source": "Yle News (Finland)",
-          "link": "https://yle.fi/a/74-20246068?origin=rss",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-17T20:24:44.659812+00:00",
+      "level": "WATCH",
+      "title": "Somija Baltijas j\u016br\u0101 gatavojas scen\u0101rijam, kas k\u013cuvis par \u201cjauno normu\u201d",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/arzemes/729216-somija-baltijas-jura-gatavojas-scenarijam-kas-kluvis-par-jauno-normu",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-17T20:24:44.659812+00:00",
+      "level": "WATCH",
+      "title": "The Nordic-Baltic Eight policy brief: NB8 and the drone challenge",
+      "source": "FIIA",
+      "link": "https://fiia.fi/ajankohtaista/the-nordic-baltic-eight-policy-brief-nb8-and-the-drone-challenge",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-17T20:24:44.659812+00:00",
+      "level": "WATCH",
+      "title": "Po D. Tusko persp\u0117jimo d\u0117l galim\u0173 Rusijos atak\u0173 \u2013 K. Budrio patvirtinimas",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/17/news/po-d-tusko-perspejimo-del-galimu-rusijos-ataku-k-budrio-patvirtinimas-44049340/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-17T20:24:44.659812+00:00",
+      "level": "WATCH",
+      "title": "Po Lenkijos \u012fsp\u0117jimo \u2013 Budrio reakcija: Lietuva taip pat turi informacijos apie galimas Rusijos hibridines atakas",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/lietuvoje/po-lenkijos-ispejimo-budrio-reakcija-lietuva-taip-pat-turi-informacijos-apie-galimas-rusijos-hibridines-atakas-120306311",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-17T20:24:44.659812+00:00",
+      "level": "WATCH",
+      "title": "Polish PM warns Russia may stage \u2018accidental\u2019 strikes on NATO\u2019s eastern flank - TVP World",
+      "source": "TVP World (Poland)",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTzRCWWE4VGtWTFJGb2pza19fWXFxeG9BQ3FSVjZERTFFZWQ1U2xxLWhkWXRZcElUMWhjb0U3OUlJU2o0R2p6OENmc1hLaWxvVVRTcTVyLWZWeUlwR2JFQUxKa1p2Vzd2OTVrVkV3UmtYaTJQNEVCV0RrYWE1YUdueWZzSVVkUTg5Z2R0U0NXNDNIVlBzbE5UMFpPbmxUT3h2c2hqc2tVMkwtSkk?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-17T14:24:42.874109+00:00",
       "level": "WARN",
@@ -2319,87 +2486,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T06:04:00.408575+00:00",
-      "level": "WATCH",
-      "title": "Dr\u00f6narspaning med mobilmaster: \u201dPrecision p\u00e5 n\u00e5gra f\u00e5 meter\u201d",
-      "source": "Sveriges Radio Ekot",
-      "link": "https://www.sverigesradio.se/artikel/9293495",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T06:04:00.408575+00:00",
-      "level": "WATCH",
-      "title": "Po pirm\u0105 kart\u0105 Lietuvoje numu\u0161to drono \u2013 ekspert\u0173 \u017evilgsnis: kod\u0117l t\u0105 padaryti pavyks ne visada ir kiek \u0161\u016bvis gal\u0117jo kainuoti",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/16/news/po-pirma-karta-lietuvoje-numusto-drono-ekspertu-zvilgsnis-kodel-ta-padaryti-pavyks-ne-visada-ir-kiek-suvis-galejo-kainuoti-43994195/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T06:04:00.408575+00:00",
-      "level": "WATCH",
-      "title": "Lenkija atskleid\u0117, kokio tipo Rusijos dron\u0105 rado Baltijos j\u016bros pakrant\u0117je",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/09/16/news/lenkija-atskleide-kokio-tipo-rusijos-drona-rado-baltijos-juros-pakranteje-44011081/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T06:04:00.408575+00:00",
-      "level": "WATCH",
-      "title": "Lenkija pateik\u0117 detali\u0173 apie Baltijos j\u016bros pakrant\u0117je rast\u0105 dron\u0105",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/uzsienyje/lenkija-pateike-detaliu-apie-baltijos-juros-pakranteje-rasta-drona-120305016",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T06:04:00.408575+00:00",
-      "level": "WATCH",
-      "title": "Karav\u012bri pils\u0113tvid\u0113 un helikopters Uzvaras park\u0101 \u2013 R\u012bg\u0101 notiks milit\u0101r\u0101s m\u0101c\u012bbas \u00abNamejs\u00bb",
-      "source": "LSM Latvian-language",
-      "link": "https://www.lsm.lv/raksts/zinas/latvija/16.09.2026-karaviri-pilsetvide-un-helikopters-uzvaras-parka-riga-notiks-militaras-macibas-namejs.a663365/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "troop_movement",
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -2588,8 +2674,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 212,
-    "alerting_scans": 97,
+    "scans": 213,
+    "alerting_scans": 98,
     "held_back_total": 21,
     "held_back_by_reason": [
       {
@@ -2613,6 +2699,6 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 121
+    "scans_before_tracking": 120
   }
 }
