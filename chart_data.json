@@ -2862,6 +2862,27 @@
       "count": 4,
       "tier3_count": 0,
       "tone": -3.7481481481481485
+    },
+    {
+      "ts": "2026-09-16T17:44:45.291606+00:00",
+      "level": "WATCH",
+      "count": 8,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-17T12:46:57.711243+00:00",
+      "level": "WATCH",
+      "count": 8,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-17T14:24:42.864420+00:00",
+      "level": "WARN",
+      "count": 7,
+      "tier3_count": 0,
+      "tone": -5.337037037037037
     }
   ],
   "gpsjam_points": [
@@ -3020,6 +3041,10 @@
     {
       "ts": "2026-09-15T00:00:00+00:00",
       "count": 176
+    },
+    {
+      "ts": "2026-09-16T00:00:00+00:00",
+      "count": 200
     }
   ],
   "ais_points": [
@@ -3846,6 +3871,10 @@
     {
       "ts": "2026-09-16T14:18:34.255858+00:00",
       "count": 346
+    },
+    {
+      "ts": "2026-09-17T14:23:59.441781+00:00",
+      "count": 342
     }
   ],
   "military_points": [
@@ -4672,6 +4701,10 @@
     {
       "ts": "2026-09-16T14:18:34.907039+00:00",
       "count": 6
+    },
+    {
+      "ts": "2026-09-17T14:24:00.041718+00:00",
+      "count": 11
     }
   ],
   "firms_points": [
@@ -5234,6 +5267,10 @@
     {
       "ts": "2026-09-16T14:18:37.688304+00:00",
       "count": 8
+    },
+    {
+      "ts": "2026-09-17T14:24:02.203539+00:00",
+      "count": 17
     }
   ],
   "entsoe_points": [
@@ -5719,6 +5756,10 @@
     },
     {
       "ts": "2026-09-16T14:18:49.647635+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-17T14:24:06.837989+00:00",
       "count": 0
     }
   ],
@@ -8156,6 +8197,29 @@
         ]
       },
       "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-17T14:24:06.839271+00:00",
+      "deviation_pct": 72.33240384885806,
+      "sources_included": 4,
+      "narrative": "military aircraft 282% above baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "highly elevated",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 282,
+            "direction": "above"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
+        ]
+      },
+      "band_key": "high_above",
       "band_record_scans": null
     }
   ]

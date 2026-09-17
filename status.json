@@ -1,20 +1,410 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-16T14:19:24.578802+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 2.6h ago",
+  "last_run_utc": "2026-09-17T14:24:42.849079+00:00",
+  "last_level": "WARN",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 409,
+  "total_scans": 412,
   "quiet_count": 288,
-  "watch_count": 114,
-  "warn_count": 7,
+  "watch_count": 116,
+  "warn_count": 8,
   "correction_count": 4,
-  "generated_at": "2026-09-16 16:52 UTC",
+  "generated_at": "2026-09-17 14:24 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-17T14:24:42.864420+00:00",
+      "level": "WARN",
+      "count": 7,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 454,
+      "stale_count": 5,
+      "alert_id": "0917-1424",
+      "items": [
+        {
+          "title": "Lithuania has launched large-scale military exercises. More than 4,000 troops will take part in the maneuvers - LIGA.net",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQS00UDdHY3ZXaWczcTJ3c0NmQmc5VTJUaVBDdjJSYUFmU1ZobWFPdnVuN2M0azl1Nm0xMFVjdmk2Z0RYbFNPTHBHNTJ3bTVfa3M4dG5mYWlsM2t1YXI1dUtJdEdtNy1HbHY0MmU2MnY3bS1pOU1TMENHclAxc2FtX3JZNHdmei1LUXFRcmVsSVZIbzlXOTh3elR3N2FJckVUdVdyMmxlMm51aE5pa1d1bFFPdXBJb3JZSy1XNHdOMjEyY2pRcHdEWFNWMEYzTUx2VHdSUXJzZTRBZnpw0gHiAUFVX3lxTE9HQ0p0UUtsMk5PbWxzdmhITHNST0hnUnhBU0pFb2dPYVJOYmF3c2pHVUkxZFFCVUxkS3NHRDFYUEdmTXBhUEdoYUwzSnhseXQyWUU5Snh2d3pmczlCQUZJcjdyYm9zb0Y3Mk9VYTM1dldUUzVTYWU4SC1fMzdCUkpFRGJVOFp0RHg0NUZ0VTNQQ3VrOTRYSTFsRHZidmk3SUF1bE1XTHhZTnItd25ITlNPUnFLMG9BRkY4RDJIME44bC1iTjFqa3BKMXhwdk5uQ1VMYVpCLXduTmFNYnVqVGg1TXc?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Germany deploys Eurofighters to defend Lithuania from drones",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/germany-deploys-eurofighters-to-defend-lithuania-from-drones--cameoplus_1243e741db888699",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "154",
+          "gdelt_event_code": "154",
+          "goldstein": -7.2,
+          "route": "gdelt"
+        },
+        {
+          "title": "Lithuania begins Thunderstorm 2026 military exercises",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/lithuania-begins-thunderstorm-2026-military-exercises--cameoplus_758229da35fd9852",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "154",
+          "gdelt_event_code": "154",
+          "goldstein": -7.2,
+          "route": "gdelt"
+        },
+        {
+          "title": "Estija rengiasi scenarijams, jei Rusija paskelbt\u0173 mobilizacij\u0105: siena gal\u0117t\u0173 b\u016bti u\u017edaryta nedelsiant",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/uzsienyje/estija-rengiasi-scenarijams-jei-rusija-paskelbtu-mobilizacija-siena-galetu-buti-uzdaryta-nedelsiant-120306203",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Juodoji rinka prarado t\u016bkstant\u012f pakeli\u0173 cigare\u010di\u0173 ir juos gabenus\u012f kontrabandinink\u0173 dron\u0105",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/juodoji-rinka-prarado-tukstanti-pakeliu-cigareciu-ir-juos-gabenusi-kontrabandininku-drona-59-2766302?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Estijos premjeras persp\u0117jo Rusij\u0105: esame pasireng\u0119",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/09/17/news/estijos-premjeras-perspejo-rusija-esame-pasirenge-44046070/",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Po Rusijos atak\u0173 Europoje \u2013 grie\u017etas ISW persp\u0117jimas d\u0117l V. Putino",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/pasaulis/konfliktai-ir-saugumas/2026/09/17/news/po-rusijos-ataku-europoje-grieztas-isw-perspejimas-del-v-putino-44033468/",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-17T12:46:57.711243+00:00",
+      "level": "WATCH",
+      "count": 8,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 595,
+      "stale_count": 0,
+      "alert_id": "0917-1246",
+      "items": [
+        {
+          "title": "Michal: Venemaa mobilisatsiooni korral oleme valmis piiri kohe sulgema",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610140621/michal-venemaa-mobilisatsiooni-korral-oleme-valmis-piiri-kohe-sulgema",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvian Security Service launches case against terrorist threats",
+          "source": "LSM (Latvia)",
+          "link": "https://eng.lsm.lv/article/society/crime/17.09.2026-latvian-security-service-launches-case-against-terrorist-threats.a663547/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Robertas Kaunas \u2013 apie sunaikint\u0105 rusi\u0161k\u0105 dron\u0105: \u201eJo taikinys nebuvome mes\u201c",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/robertas-kaunas-apie-sunaikinta-rusiska-drona-jo-taikinys-nebuvome-mes-56-2766052?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Naujausia informacija apie Pasvalio r. rast\u0105 dron\u0105: susiejo su anks\u010diau prad\u0117tu ikiteisminiu tyrimu",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/naujausia-informacija-apie-pasvalio-r-rasta-drona-tirs-anksciau-pradetame-ikiteisminiame-tyrime-59-2766128?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041c\u0438\u0445\u0430\u043b: \u0432 \u0441\u043b\u0443\u0447\u0430\u0435 \u043c\u043e\u0431\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u0438 \u0432 \u0420\u043e\u0441\u0441\u0438\u0438 \u043c\u044b \u0433\u043e\u0442\u043e\u0432\u044b \u043d\u0435\u043c\u0435\u0434\u043b\u0435\u043d\u043d\u043e \u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0433\u0440\u0430\u043d\u0438\u0446\u0443",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610141002/mihal-v-sluchae-mobilizacii-v-rossii-my-gotovy-nemedlenno-zakryt-granicu",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuva izsaka protestu Baltkrievijai par drona ielido\u0161anu t\u0101s gaisa telp\u0101",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8547768",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Bloomberg: Germany is\u00a0preparing hospitals for a\u00a0possible Russian attack on\u00a0NATO. Its military says as\u00a0many as\u00a01,000 wounded troops could need care each day.",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/news/2026/09/16/bloomberg-germany-is-preparing-hospitals-for-a-possible-russian-attack-on-nato-its-military-says-as-many-as-1-000-wounded-troops-could-need-care-each-day",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u201eTelia\u201c teiks ry\u0161\u012f Lietuvos pirmininkavimo ES Tarybai renginiams",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/telia-technologijos-augimui/2026/09/17/telia-teiks-rysi-lietuvos-pirmininkavimo-es-tarybai-renginiams-590182",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-16T17:44:45.291606+00:00",
+      "level": "WATCH",
+      "count": 8,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 311,
+      "stale_count": 0,
+      "alert_id": "0916-1744",
+      "items": [
+        {
+          "title": "Italijos ministras: \u201eNeveikiame aktyviai prie\u0161 hibridin\u012f kar\u0105, tiesiog j\u012f paken\u010diame\u201c",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/italijos-ministras-neveikiame-aktyviai-pries-hibridini-kara-tiesiog-ji-pakenciame-56-2764800?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041d\u0430\u0443\u0441\u0435\u0434\u0430: \u0441\u0431\u0438\u0442\u044b\u0439 15 \u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044f \u0432 \u041b\u0438\u0442\u0432\u0435 \u0431\u0435\u0441\u043f\u0438\u043b\u043e\u0442\u043d\u0438\u043a \u0431\u044b\u043b \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u043c",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610139928/nauseda-sbityj-15-sentjabrja-v-litve-bespilotnik-byl-rossijskim",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Saeimas v\u0113l\u0113\u0161anu laik\u0101 Latvijas gaisa telpu aizsarg\u0101s Bundesv\u0113ra izn\u012bcin\u0101t\u0101ji",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8547360",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuv\u0101 atrasts drons, kas var\u0113tu b\u016bt nog\u0101zies jau  pirms vair\u0101kiem m\u0113ne\u0161iem",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8547296",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "G. Naus\u0117da apie oro erdv\u0117s pa\u017eeidimus: dronams galb\u016bt s\u0105moningai leid\u017eiama nukrypti nuo kurso",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/16/news/g-nauseda-apie-oro-erdves-pazeidimus-dronams-galbut-samoningai-leidziama-nukrypti-nuo-kurso-44021384/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "URM: Baltarusijai pareik\u0161tas protestas d\u0117l Lietuvos oro erdv\u0117s pa\u017eeidimo",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/16/news/urm-baltarusijai-pareikstas-protestas-del-lietuvos-oro-erdves-pazeidimo-44021224/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Ukrainian electronic warfare apparently knocked a\u00a0Russian attack drone off course and into Lithuanian airspace, the country\u2019s president says",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/news/2026/09/16/ukrainian-electronic-warfare-apparently-knocked-a-russian-attack-drone-off-course-and-into-lithuanian-airspace-the-country-s-president-says",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "U.S. uncovers network that plotted assassinations of\u00a0Russian \u2018dissidents\u2019 in\u00a0Washington and Vilnius. Among the suspects: an\u00a0ex-colonel with Putin ties, his FSB officer son, and a\u00a0Cuban dancer.",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/feature/2026/09/16/u-s-uncovers-network-that-plotted-assassinations-of-russian-dissidents-in-washington-and-vilnius-among-the-suspects-an-ex-colonel-with-putin-ties-his-fsb-officer-son-and-a-cuban-dancer",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-16T14:19:24.592961+00:00",
       "level": "WATCH",
@@ -1773,66 +2163,121 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-14T01:18:42.991427+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 89,
-      "stale_count": 3,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-09-13T22:35:45.364533+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 11,
-      "stale_count": 0,
-      "alert_id": "0913-2235",
-      "items": [
-        {
-          "title": "At NATO\u2019s doorstep, Russian drones struck a\u00a0gas station and passenger train near Ukraine\u2019s border with Poland",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/feature/2026/09/14/at-nato-s-doorstep-russian-drones-struck-a-gas-station-and-passenger-train-near-ukraine-s-border-with-poland",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-13T21:41:48.677005+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 167,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-17T14:24:42.874109+00:00",
+      "level": "WARN",
+      "title": "Po Rusijos atak\u0173 Europoje \u2013 grie\u017etas ISW persp\u0117jimas d\u0117l V. Putino",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/pasaulis/konfliktai-ir-saugumas/2026/09/17/news/po-rusijos-ataku-europoje-grieztas-isw-perspejimas-del-v-putino-44033468/",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-17T14:24:42.874109+00:00",
+      "level": "WARN",
+      "title": "Estijos premjeras persp\u0117jo Rusij\u0105: esame pasireng\u0119",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/09/17/news/estijos-premjeras-perspejo-rusija-esame-pasirenge-44046070/",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-17T14:24:42.874109+00:00",
+      "level": "WARN",
+      "title": "Juodoji rinka prarado t\u016bkstant\u012f pakeli\u0173 cigare\u010di\u0173 ir juos gabenus\u012f kontrabandinink\u0173 dron\u0105",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/juodoji-rinka-prarado-tukstanti-pakeliu-cigareciu-ir-juos-gabenusi-kontrabandininku-drona-59-2766302?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-17T14:24:42.874109+00:00",
+      "level": "WARN",
+      "title": "Estija rengiasi scenarijams, jei Rusija paskelbt\u0173 mobilizacij\u0105: siena gal\u0117t\u0173 b\u016bti u\u017edaryta nedelsiant",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/uzsienyje/estija-rengiasi-scenarijams-jei-rusija-paskelbtu-mobilizacija-siena-galetu-buti-uzdaryta-nedelsiant-120306203",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-17T14:24:42.874109+00:00",
+      "level": "WARN",
+      "title": "Lithuania begins Thunderstorm 2026 military exercises",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/lithuania-begins-thunderstorm-2026-military-exercises--cameoplus_758229da35fd9852",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "154",
+      "gdelt_event_code": "154",
+      "goldstein": -7.2
+    },
+    {
+      "ts": "2026-09-17T14:24:42.874109+00:00",
+      "level": "WARN",
+      "title": "Germany deploys Eurofighters to defend Lithuania from drones",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/germany-deploys-eurofighters-to-defend-lithuania-from-drones--cameoplus_1243e741db888699",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "154",
+      "gdelt_event_code": "154",
+      "goldstein": -7.2
+    },
+    {
+      "ts": "2026-09-17T14:24:42.874109+00:00",
+      "level": "WARN",
+      "title": "Lithuania has launched large-scale military exercises. More than 4,000 troops will take part in the maneuvers - LIGA.net",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQS00UDdHY3ZXaWczcTJ3c0NmQmc5VTJUaVBDdjJSYUFmU1ZobWFPdnVuN2M0azl1Nm0xMFVjdmk2Z0RYbFNPTHBHNTJ3bTVfa3M4dG5mYWlsM2t1YXI1dUtJdEdtNy1HbHY0MmU2MnY3bS1pOU1TMENHclAxc2FtX3JZNHdmei1LUXFRcmVsSVZIbzlXOTh3elR3N2FJckVUdVdyMmxlMm51aE5pa1d1bFFPdXBJb3JZSy1XNHdOMjEyY2pRcHdEWFNWMEYzTUx2VHdSUXJzZTRBZnpw0gHiAUFVX3lxTE9HQ0p0UUtsMk5PbWxzdmhITHNST0hnUnhBU0pFb2dPYVJOYmF3c2pHVUkxZFFCVUxkS3NHRDFYUEdmTXBhUEdoYUwzSnhseXQyWUU5Snh2d3pmczlCQUZJcjdyYm9zb0Y3Mk9VYTM1dldUUzVTYWU4SC1fMzdCUkpFRGJVOFp0RHg0NUZ0VTNQQ3VrOTRYSTFsRHZidmk3SUF1bE1XTHhZTnItd25ITlNPUnFLMG9BRkY4RDJIME44bC1iTjFqa3BKMXhwdk5uQ1VMYVpCLXduTmFNYnVqVGg1TXc?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-16T14:19:24.601581+00:00",
       "level": "WATCH",
@@ -1957,119 +2402,6 @@
         "hybrid_incident"
       ],
       "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T06:04:00.408575+00:00",
-      "level": "WATCH",
-      "title": "Russia launches naval patrol operation near Danish waters",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/russia-launches-naval-patrol-operation-near-danish-waters--cameoplus_67bdf826630f311e",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "15",
-      "gdelt_event_code": "15",
-      "goldstein": -7.2
-    },
-    {
-      "ts": "2026-09-15T20:21:10.845351+00:00",
-      "level": "WARN",
-      "title": "The Baltic states fear a\u00a0Russian invasion. They faced the same threat a\u00a0century ago and failed to\u00a0stop\u00a0it. Historian Alexey Uvarov explains why the region could not defend itself against Stalin.",
-      "source": "Meduza",
-      "link": "https://meduza.io/en/feature/2026/09/15/the-baltic-states-fear-a-russian-invasion-they-faced-the-same-threat-a-century-ago-and-failed-to-stop-it-historian-alexey-uvarov-explains-why-the-region-could-not-defend-itself-against-stalin",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T20:21:10.845351+00:00",
-      "level": "WARN",
-      "title": "Ukrainos \u0161altinis:\u00a0Lietuvoje numu\u0161tas dronas gal\u0117jo b\u016bti rusi\u0161kas",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/15/news/ukrainos-saltinis-lietuvoje-numustas-dronas-galejo-buti-rusiskas--44008819/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T20:21:10.845351+00:00",
-      "level": "WARN",
-      "title": "\u201eReuters\u201c: Ukrainos kariuomen\u0117s \u0161altinis teig\u0117, kad Lietuvoje numu\u0161tas dronas gal\u0117jo b\u016bti rusi\u0161kas",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/lietuvoje/reuters-ukrainos-kariuomenes-saltinis-teige-kad-lietuvoje-numustas-dronas-galejo-buti-rusiskas-120304958",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T20:21:10.845351+00:00",
-      "level": "WARN",
-      "title": "Belarus holds 'defensive' military drills near borders with Poland, Lithuania - The Kyiv Independent",
-      "source": "Kyiv Independent",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcjNYVVRzdXNwZm05QzZ2Y3VZdnp5cWlnVXhiZXlKMWRFOFlRQmdkRXczdWtWQU0xS2cweVo1cThINzI2X0JtQTUyVnNJUVJvUkJYVzE2cDZRT0dwdnhsRkJDbTluZndNalQyVTdtSWlZZXVTVVpXOTVYQWxuRGctbFhkWnFXdnFVa1B3UkhrQXNjUWpRQS1QOQ?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T20:21:10.845351+00:00",
-      "level": "WARN",
-      "title": "NATO jets shoot down drone that entered Lithuanian airspace - LRT",
-      "source": "LRT (Lithuania)",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWmhDMkFnb3JDMWFCR1BiRWZhaGRxaHk1ek9MeXdqcXdmd0J0ZGo1ck50dHM5UExFV3ZJRUVzajA0YTUyM1hXLVFZNnBnaWNiUm5QcW5lc3hlR2F4bUt3S0VDRjdXa0tLMkZnZWhiak8xNnpkXzNIdFF3dEd2Zmg1ZVYwc04xaDhPaDdmRTZieURoSmpxUWVLckN5eFAxNXJNeUVSUjVJdW1kVUd5?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-15T20:21:10.845351+00:00",
-      "level": "WARN",
-      "title": "Drone incursions sow fear and chaos along NATO's Baltic and Finnish borders - reuters.com",
-      "source": "Reuters (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYnQwUkdJdlNOaDV0cVJ0TWctcktpOWpnNVY5dlN2Y1UtX2Q2ZU5XdE9OVWFJaGp6U1FHYmJFd3lCTnZibXFad2dLVm9KSF9walVETURvd21USndsaG9vOTB6TFZoZG8zNGZXQlNYbXNIZ0RHaEpxU2Y5QmJ6Q1ZWLXVwWV9tZG51VF9IbkZmZ3ZTOF93MkExR083NllkTjRUMklwQngwNWRBOHJmSkRIY0ZJRzJuelkzRktfYWhqeGpQT3E4VjBnOQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier1",
       "gdelt_category": "",
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
@@ -2256,14 +2588,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 215,
-    "alerting_scans": 98,
-    "held_back_total": 20,
+    "scans": 213,
+    "alerting_scans": 97,
+    "held_back_total": 21,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 12
+        "count": 13
       },
       {
         "reason": "already alerted",
@@ -2281,6 +2613,6 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 127
+    "scans_before_tracking": 122
   }
 }
