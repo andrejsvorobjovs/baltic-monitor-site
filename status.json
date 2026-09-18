@@ -1,20 +1,184 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-18T05:59:58.241415+00:00",
+  "last_run_utc": "2026-09-18T13:42:54.329348+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 416,
+  "total_scans": 419,
   "quiet_count": 288,
-  "watch_count": 119,
+  "watch_count": 122,
   "warn_count": 9,
   "correction_count": 4,
-  "generated_at": "2026-09-18 05:59 UTC",
+  "generated_at": "2026-09-18 13:42 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-18T13:42:54.344434+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 520,
+      "stale_count": 22,
+      "alert_id": "0918-1342",
+      "items": [
+        {
+          "title": "Valsts prezidents: Krievija eskal\u0113s sabot\u0101\u017eas un diversijas, bet iebrukums NATO teritorij\u0101 pa\u0161laik nav iesp\u0113jams",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/latvija/18.09.2026-valsts-prezidents-krievija-eskales-sabotazas-un-diversijas-bet-iebrukums-nato-teritorija-paslaik-nav-iespejams.a663803/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Savait\u0117s kriminalai. Pirmas sunaikintas dronas ir teisiami keli\u0173 chuliganai",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/tv/laidos/savaites-kriminalai/savaites-kriminalai-pirmas-sunaikintas-dronas-ir-teisiami-keliu-chuliganai-120306723",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "ASV nodod Latvijas robe\u017esargiem 20 dronus",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8548719",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-18T12:22:36.155624+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 469,
+      "stale_count": 0,
+      "alert_id": "0918-1222",
+      "items": [
+        {
+          "title": "\u201cPossible casualties\u201d \u2013 S\u0101rts warns of escalation of Russia\u2019s hybrid war in Europe",
+          "source": "BNN Baltic News Network",
+          "link": "https://bnn-news.com/possible-casualties-sarts-warns-of-escalation-of-russias-hybrid-war-in-europe-283907",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Poland\u2019s prime minister says Russia is\u00a0preparing \u2018accidental\u2019 drone and missile strikes on\u00a0NATO countries that support Ukraine",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/news/2026/09/18/poland-s-prime-minister-says-russia-is-preparing-accidental-drone-and-missile-strikes-on-nato-countries-that-support-ukraine",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Russia planning \u201caccidental\u201d strikes on eastern NATO states, warns Poland",
+          "source": "Notes from Poland",
+          "link": "https://notesfrompoland.com/2026/09/18/russia-planning-accidental-strikes-on-eastern-nato-states-warns-poland/",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Estonia prepares for Russian mobilisation",
+          "source": "Defence24",
+          "link": "https://defence24.com/defence-policy/estonia-prepares-for-russian-mobilisation",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-18T06:38:00.189201+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 156,
+      "stale_count": 0,
+      "alert_id": "0918-0638",
+      "items": [
+        {
+          "title": "NATO Apvienoto sp\u0113ku \u0123ener\u0101lleitnants: Krievijas armija moderniz\u0113jas, karo cit\u0101d\u0101k, att\u012bsta bezpilota sist\u0113mas - m\u0113s tam sekojam l\u012bdzi",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/729159-nato-apvienoto-speku-generalleitnants-krievijas-armija-modernizejas-karo-citadak-attista-bezpilota-sistemas-mes-tam-sekojam-lidzi",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-18T05:59:58.296204+00:00",
       "level": "WATCH",
@@ -1967,187 +2131,57 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-14T22:44:32.695212+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 60,
-      "stale_count": 0,
-      "alert_id": "0914-2244",
-      "items": [
-        {
-          "title": "Lietuvoje skrid\u0119s dronas buvo sunaikintas, oro pavojus at\u0161aukiamas",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/lietuvoje/lietuvoje-skrides-dronas-buvo-sunaikintas-oro-pavojus-atsaukiamas-120304311",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Po numu\u0161to drono \u2013 R. Kauno pad\u0117ka",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/15/news/po-numusto-drono-r-kauno-padeka-43987534/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Vi\u013c\u0146as apri\u0146\u0137\u012b izsludin\u0101ts iesp\u0113jamais gaisa apdraud\u0113jums \u2013 iedz\u012bvot\u0101ji sa\u0146\u0113mu\u0161i br\u012bdin\u0101jumus",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/vilnas-aprinki-izsludinats-iespejamais-gaisa-apdraudejums-iedzivotaji-sanemusi-bridinajumus",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-14T21:04:34.212934+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 363,
-      "stale_count": 4,
-      "alert_id": "0914-2104",
-      "items": [
-        {
-          "title": "Karini\u0173 oro paj\u0117g\u0173 vadas: yra tikimyb\u0117, kad \u012f Lietuv\u0105 \u012fskrid\u0119s objektas buvo dronas",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/saugu/naujienos/kariniu-oro-pajegu-vadas-yra-tikimybe-kad-i-lietuva-iskrides-objektas-buvo-dronas-120304285",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Karini\u0173 oro paj\u0117g\u0173 vadas neatmeta, kad nakt\u012f \u012f Lietuv\u0105 buvo \u012fskrid\u0119s dronas: \u201eTikimyb\u0117 yra\u201c",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/14/news/kariniu-oro-pajegu-vadas-neatmeta-kad-nakti-i-lietuva-buvo-iskrides-dronas-tikimybe-yra--43986583/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-14T16:02:19.317094+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 480,
-      "stale_count": 11,
-      "alert_id": "0914-1602",
-      "items": [
-        {
-          "title": "NATO chief Mark Rutte warns Russia of forceful response",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/nato-chief-mark-rutte-warns-russia-of-forceful-response--cameoplus_48e2e83d8113cb05",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "138",
-          "gdelt_event_code": "138",
-          "goldstein": -7,
-          "route": "gdelt"
-        },
-        {
-          "title": "MEELIS OIDSALU \u27e9 Vene mobilisatsioonist saab Eesti luure jaoks lakmustest",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8544842",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kodumasinate remondifirma TSC langes k\u00fcberr\u00fcnnaku ohvriks, juhtum puudutab ka Eesti kliente",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8545772",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "V\u00d5IM JA JULGEOLEK \u27e9 S\u0142awomir D\u0119bski: Putini jaoks oleks Balti riigi r\u00fcndamine k\u00f5ige kindlam viis aidata Ukraina NATOsse",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8544724",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-18T13:42:54.354286+00:00",
+      "level": "WATCH",
+      "title": "ASV nodod Latvijas robe\u017esargiem 20 dronus",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8548719",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-18T13:42:54.354286+00:00",
+      "level": "WATCH",
+      "title": "Savait\u0117s kriminalai. Pirmas sunaikintas dronas ir teisiami keli\u0173 chuliganai",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/tv/laidos/savaites-kriminalai/savaites-kriminalai-pirmas-sunaikintas-dronas-ir-teisiami-keliu-chuliganai-120306723",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-18T13:42:54.354286+00:00",
+      "level": "WATCH",
+      "title": "Valsts prezidents: Krievija eskal\u0113s sabot\u0101\u017eas un diversijas, bet iebrukums NATO teritorij\u0101 pa\u0161laik nav iesp\u0113jams",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/latvija/18.09.2026-valsts-prezidents-krievija-eskales-sabotazas-un-diversijas-bet-iebrukums-nato-teritorija-paslaik-nav-iespejams.a663803/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-18T05:59:58.303283+00:00",
       "level": "WATCH",
@@ -2329,54 +2363,6 @@
       "title": "Estija rengiasi scenarijams, jei Rusija paskelbt\u0173 mobilizacij\u0105: siena gal\u0117t\u0173 b\u016bti u\u017edaryta nedelsiant",
       "source": "Delfi Lithuania",
       "link": "https://www.delfi.lt/naujienos/uzsienyje/estija-rengiasi-scenarijams-jei-rusija-paskelbtu-mobilizacija-siena-galetu-buti-uzdaryta-nedelsiant-120306203",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-17T14:24:42.874109+00:00",
-      "level": "WARN",
-      "title": "Lithuania begins Thunderstorm 2026 military exercises",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/lithuania-begins-thunderstorm-2026-military-exercises--cameoplus_758229da35fd9852",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "154",
-      "gdelt_event_code": "154",
-      "goldstein": -7.2
-    },
-    {
-      "ts": "2026-09-17T14:24:42.874109+00:00",
-      "level": "WARN",
-      "title": "Germany deploys Eurofighters to defend Lithuania from drones",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/germany-deploys-eurofighters-to-defend-lithuania-from-drones--cameoplus_1243e741db888699",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "154",
-      "gdelt_event_code": "154",
-      "goldstein": -7.2
-    },
-    {
-      "ts": "2026-09-17T14:24:42.874109+00:00",
-      "level": "WARN",
-      "title": "Lithuania has launched large-scale military exercises. More than 4,000 troops will take part in the maneuvers - LIGA.net",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQS00UDdHY3ZXaWczcTJ3c0NmQmc5VTJUaVBDdjJSYUFmU1ZobWFPdnVuN2M0azl1Nm0xMFVjdmk2Z0RYbFNPTHBHNTJ3bTVfa3M4dG5mYWlsM2t1YXI1dUtJdEdtNy1HbHY0MmU2MnY3bS1pOU1TMENHclAxc2FtX3JZNHdmei1LUXFRcmVsSVZIbzlXOTh3elR3N2FJckVUdVdyMmxlMm51aE5pa1d1bFFPdXBJb3JZSy1XNHdOMjEyY2pRcHdEWFNWMEYzTUx2VHdSUXJzZTRBZnpw0gHiAUFVX3lxTE9HQ0p0UUtsMk5PbWxzdmhITHNST0hnUnhBU0pFb2dPYVJOYmF3c2pHVUkxZFFCVUxkS3NHRDFYUEdmTXBhUEdoYUwzSnhseXQyWUU5Snh2d3pmczlCQUZJcjdyYm9zb0Y3Mk9VYTM1dldUUzVTYWU4SC1fMzdCUkpFRGJVOFp0RHg0NUZ0VTNQQ3VrOTRYSTFsRHZidmk3SUF1bE1XTHhZTnItd25ITlNPUnFLMG9BRkY4RDJIME44bC1iTjFqa3BKMXhwdk5uQ1VMYVpCLXduTmFNYnVqVGg1TXc?oc=5",
       "categories": [
         "troop_movement",
         "baltic_specific"
@@ -2568,14 +2554,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 213,
-    "alerting_scans": 99,
-    "held_back_total": 23,
+    "scans": 214,
+    "alerting_scans": 102,
+    "held_back_total": 25,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 15
+        "count": 17
       },
       {
         "reason": "already alerted",
@@ -2593,6 +2579,6 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 118
+    "scans_before_tracking": 116
   }
 }
