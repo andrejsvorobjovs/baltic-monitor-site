@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-17T20:24:44.634595+00:00",
+  "last_run_utc": "2026-09-17T22:25:55.107133+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 6.2h ago",
   "since": "2026-07-19",
-  "total_scans": 414,
+  "total_scans": 415,
   "quiet_count": 288,
-  "watch_count": 117,
+  "watch_count": 118,
   "warn_count": 9,
   "correction_count": 4,
-  "generated_at": "2026-09-17 20:24 UTC",
+  "generated_at": "2026-09-18 04:40 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-17T22:25:55.095371+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 143,
+      "stale_count": 0,
+      "alert_id": "0917-2225",
+      "items": [
+        {
+          "title": "Lietuva turi toki\u0105 pa\u010di\u0105 informacij\u0105 apie galimas Rusijos atakas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/zinios-visiems/naujienos/lietuva-turi-tokia-pacia-informacija-apie-galimas-rusijos-atakas-120306319",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuvoje numu\u0161tas rusi\u0161kas dronas skrido \u012f Ukrain\u0105",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/zinios-visiems/naujienos/lietuvoje-numustas-rusiskas-dronas-skrido-i-ukraina-120306292",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-17T20:24:44.653885+00:00",
       "level": "WATCH",
@@ -2145,112 +2190,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-14T09:57:21.109075+00:00",
-      "level": "WATCH",
-      "count": 6,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 595,
-      "stale_count": 8,
-      "alert_id": "0914-0957",
-      "items": [
-        {
-          "title": "Lithuanian Armed Forces scramble NATO fighters over unknown drone",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/lithuanian-armed-forces-scramble-nato-fighters-over-unknown--cameoplus_841fc565768125cd",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "154",
-          "gdelt_event_code": "154",
-          "goldstein": -7.2,
-          "route": "gdelt"
-        },
-        {
-          "title": "Sikorski urges NATO to strengthen exercises near Kaliningrad",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/sikorski-urges-nato-to-strengthen-exercises-near-kaliningrad--cameoplus_c15e3835a7899d65",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "0212",
-          "gdelt_event_code": "0212",
-          "goldstein": 3,
-          "route": "gdelt"
-        },
-        {
-          "title": "LSA warns: unilateral grain transit restrictions will not stop Russian exports \u2013 the question is who will pay for the decision",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/lsa-warns-unilateral-grain-transit-restrictions-will-not-stop-russian-exports-the-question-is-who-will-pay-for-the-decision-283714",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0413\u0435\u043d\u043f\u0440\u043e\u043a\u0443\u0440\u043e\u0440 \u0423\u043a\u0440\u0430\u0438\u043d\u044b \u043f\u043e\u0441\u043b\u0435 \u043e\u0431\u044b\u0441\u043a\u043e\u0432 \u0432 \u0441\u0432\u043e\u0435\u043c \u0432\u0435\u0434\u043e\u043c\u0441\u0442\u0432\u0435 \u043e\u0431\u0432\u0438\u043d\u0438\u043b \u0433\u043b\u0430\u0432\u0443 \u041d\u0410\u0411\u0423 \u0432 \u043f\u043e\u0434\u0434\u0435\u043b\u043a\u0435 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u043e\u0432",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/14/genprokuror-ukrainy-posle-obyskov-obvinil-glavu-nabu-v-poddelke-dokumentov-news",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041c\u0430\u043b\u0443\u044e \u0422\u043e\u043a\u043c\u0430\u0447\u043a\u0443 \u0442\u0430\u043a \u0438 \u043d\u0435 \u0432\u0437\u044f\u043b\u0438",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/14/maluiu-tokmachku-tak-i-ne-vziali",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Eerik-Niiles Kross: rongir\u00fcnnak l\u00e4\u00e4ne tipp-poliitikute l\u00e4hedal v\u00f5ib v\u00e4hendada visiite Ukrainasse",
-          "source": "Ohtuleht (Estonia)",
-          "link": "https://www.ohtuleht.ee/1166764/eerik-niiles-kross-rongirunnak-laane-tipp-poliitikute-lahedal-voib-vahendada-visiite-ukrainasse",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -2674,14 +2613,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 213,
+    "scans": 212,
     "alerting_scans": 98,
-    "held_back_total": 21,
+    "held_back_total": 22,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 13
+        "count": 14
       },
       {
         "reason": "already alerted",
@@ -2699,6 +2638,6 @@
         "count": 1
       }
     ],
-    "scans_before_tracking": 120
+    "scans_before_tracking": 118
   }
 }
