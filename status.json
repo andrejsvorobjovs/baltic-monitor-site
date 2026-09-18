@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-17T22:25:55.107133+00:00",
+  "last_run_utc": "2026-09-18T05:59:58.241415+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 6.2h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 415,
+  "total_scans": 416,
   "quiet_count": 288,
-  "watch_count": 118,
+  "watch_count": 119,
   "warn_count": 9,
   "correction_count": 4,
-  "generated_at": "2026-09-18 04:40 UTC",
+  "generated_at": "2026-09-18 05:59 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-18T05:59:58.296204+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 350,
+      "stale_count": 1,
+      "alert_id": "0918-0559",
+      "items": [
+        {
+          "title": "NATO reconnaissance aircraft patrols near Russia's Kaliningrad border",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/nato-reconnaissance-aircraft-patrols-near-russias-kaliningra--cameoplus_72c997029a398082",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "15",
+          "gdelt_event_code": "15",
+          "goldstein": -7.2,
+          "route": "gdelt"
+        },
+        {
+          "title": "Somija un Zviedrija apsver j\u016bras dronu ieg\u0101di Baltijas j\u016bras dro\u0161\u012bbai",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/18.09.2026-somija-un-zviedrija-apsver-juras-dronu-iegadi-baltijas-juras-drosibai.a663707/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuvos tenisinink\u0173 i\u0161vyka \u2013 su dvigubu politiniu dugnu",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/sportas/tenisas/lietuvos-tenisininku-isvyka-su-dvigubu-politiniu-dugnu-120306344",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-17T22:25:55.095371+00:00",
       "level": "WATCH",
@@ -2085,114 +2145,57 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-14T13:17:28.664770+00:00",
-      "level": "WATCH",
-      "count": 6,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 358,
-      "stale_count": 0,
-      "alert_id": "0914-1317",
-      "items": [
-        {
-          "title": "Po incidento prie Kauno me\u010det\u0117s \u2013 pirmos reakcijos Rusijoje",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/lietuvoje/po-incidento-prie-kauno-mecetes-pirmos-reakcijos-rusijoje-120304047",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Pasienyje su Baltarusija \u201eavarij\u0105\u201c patyr\u0117 kontrabandinink\u0173 dronas, gaben\u0119s cigaretes",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/pasienyje-su-baltarusija-avarija-patyre-kontrabandininku-dronas-gabenes-cigaretes-59-2763436?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NBA legenda Sh. O'Nealas atvyks \u012f Vilni\u0173",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/sportas/krepsinis/2026/09/14/news/nba-legenda-sh-o-nealas-atvyks-i-vilniu-43981666/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lenkijos Baltijos j\u016bros pakrant\u0117je rastas \u012ftariamas rusi\u0161kas dronas",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/09/14/news/lenkijos-baltijos-juros-pakranteje-rastas-itariamas-rusiskas-dronas-43981139/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "D\u0117l jautrioje vietoje prazvimbusio objekto \u2013 tyla, d\u0117l b\u016brio pauk\u0161\u010di\u0173 \u2013 aliarmas: A. Kumpis gr\u0119\u017eiasi \u012f ministr\u0105",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/14/news/del-jautrioje-vietoje-prazvimbusio-objekto-tyla-del-burio-pauksciu-aliarmas-a-kumpis-greziasi-i-ministra-43972208/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuvos vienaragis \u201eNord Security\u201c skelbia apie partneryst\u0119 su legendiniu Sh. O\u2019Nealu",
-          "source": "Verslo zinios (Lithuania)",
-          "link": "https://www.vz.lt/rinkodara/2026/09/14/lietuvos-vienaragis-nord-security-skelbia-apie-nordvpn-partneryste-su-legendiniu-sh-onealu-589983",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-18T05:59:58.303283+00:00",
+      "level": "WATCH",
+      "title": "Lietuvos tenisinink\u0173 i\u0161vyka \u2013 su dvigubu politiniu dugnu",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/sportas/tenisas/lietuvos-tenisininku-isvyka-su-dvigubu-politiniu-dugnu-120306344",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-18T05:59:58.303283+00:00",
+      "level": "WATCH",
+      "title": "Somija un Zviedrija apsver j\u016bras dronu ieg\u0101di Baltijas j\u016bras dro\u0161\u012bbai",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/arzemes/18.09.2026-somija-un-zviedrija-apsver-juras-dronu-iegadi-baltijas-juras-drosibai.a663707/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-18T05:59:58.303283+00:00",
+      "level": "WATCH",
+      "title": "NATO reconnaissance aircraft patrols near Russia's Kaliningrad border",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/nato-reconnaissance-aircraft-patrols-near-russias-kaliningra--cameoplus_72c997029a398082",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "15",
+      "gdelt_event_code": "15",
+      "goldstein": -7.2
+    },
     {
       "ts": "2026-09-17T20:24:44.659812+00:00",
       "level": "WATCH",
@@ -2374,54 +2377,6 @@
       "title": "Lithuania has launched large-scale military exercises. More than 4,000 troops will take part in the maneuvers - LIGA.net",
       "source": "General wire coverage",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQS00UDdHY3ZXaWczcTJ3c0NmQmc5VTJUaVBDdjJSYUFmU1ZobWFPdnVuN2M0azl1Nm0xMFVjdmk2Z0RYbFNPTHBHNTJ3bTVfa3M4dG5mYWlsM2t1YXI1dUtJdEdtNy1HbHY0MmU2MnY3bS1pOU1TMENHclAxc2FtX3JZNHdmei1LUXFRcmVsSVZIbzlXOTh3elR3N2FJckVUdVdyMmxlMm51aE5pa1d1bFFPdXBJb3JZSy1XNHdOMjEyY2pRcHdEWFNWMEYzTUx2VHdSUXJzZTRBZnpw0gHiAUFVX3lxTE9HQ0p0UUtsMk5PbWxzdmhITHNST0hnUnhBU0pFb2dPYVJOYmF3c2pHVUkxZFFCVUxkS3NHRDFYUEdmTXBhUEdoYUwzSnhseXQyWUU5Snh2d3pmczlCQUZJcjdyYm9zb0Y3Mk9VYTM1dldUUzVTYWU4SC1fMzdCUkpFRGJVOFp0RHg0NUZ0VTNQQ3VrOTRYSTFsRHZidmk3SUF1bE1XTHhZTnItd25ITlNPUnFLMG9BRkY4RDJIME44bC1iTjFqa3BKMXhwdk5uQ1VMYVpCLXduTmFNYnVqVGg1TXc?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T14:19:24.601581+00:00",
-      "level": "WATCH",
-      "title": "Saksa-Hollandi korpuse tulek P\u00e4rnusse ootab liitlaste otsust",
-      "source": "Postimees Estonian-language",
-      "link": "https://pmo.ee/8547180",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T14:19:24.601581+00:00",
-      "level": "WATCH",
-      "title": "US uncovers alleged Russian terrorist group",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/us-uncovers-alleged-russian-terrorist-group-283837",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-16T14:19:24.601581+00:00",
-      "level": "WATCH",
-      "title": "Aizbildinoties ar aizsardz\u012bbu, Baltkrievija s\u0101k milit\u0101r\u0101s m\u0101c\u012bbas tie\u0161i pie Baltijas valstu sliek\u0161\u0146a - LA.LV",
-      "source": "Latvian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYzNtelNXaFppUWdxUDBSMWZxQTktTXZSY1NXekZocTRVcWRSc2JIZ0Z3ZDlkMVQwbU4tYkJwWFNXZFhQWkVSaHk3em9iRjZuTEdWN0k4Rmp4NEVSM3ZvY202LVpyTHNwY2VpM3pKNi1fNkh5YUFxWFRBR1hWU0p3aG10VU1JQTRPWEZwdGRoOEMtdFVpTUVkcDh5RktiMi1zdlBPUXAyWXFZV0J2Vmtlb1AyZ0NKRm5r?oc=5",
       "categories": [
         "troop_movement",
         "baltic_specific"
@@ -2613,14 +2568,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 212,
-    "alerting_scans": 98,
-    "held_back_total": 22,
+    "scans": 213,
+    "alerting_scans": 99,
+    "held_back_total": 23,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 14
+        "count": 15
       },
       {
         "reason": "already alerted",
