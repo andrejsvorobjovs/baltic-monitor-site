@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-19T13:13:11.891073+00:00",
+  "last_run_utc": "2026-09-19T19:27:10.231940+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 2.6h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 426,
-  "quiet_count": 290,
-  "watch_count": 127,
+  "total_scans": 428,
+  "quiet_count": 291,
+  "watch_count": 128,
   "warn_count": 9,
   "correction_count": 4,
-  "generated_at": "2026-09-19 15:51 UTC",
+  "generated_at": "2026-09-19 19:27 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-19T19:27:10.246618+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 211,
+      "stale_count": 4,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-09-19T16:48:15.763021+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 193,
+      "stale_count": 0,
+      "alert_id": "0919-1648",
+      "items": [
+        {
+          "title": "Latvijas prezidents: Krievijas ra\u0137e\u0161u atvair\u012b\u0161ana Eiropas valst\u012bm b\u016btu izaicin\u0101jums",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8549102",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-19T13:13:11.906077+00:00",
       "level": "QUIET",
@@ -1239,200 +1283,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-16T12:50:05.851940+00:00",
-      "level": "WARN",
-      "count": 10,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 507,
-      "stale_count": 0,
-      "alert_id": "0916-1250",
-      "items": [
-        {
-          "title": "Lietuvas prezidents: Notriektais drons, visticam\u0101k, pieder\u0113ja Krievijai",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/arzemes/16.09.2026-lietuvas-prezidents-notriektais-drons-visticamak-piedereja-krievijai.a663439/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuvas aizsardz\u012bbas ministrs: Notriekt\u0101 drona incidenta izmekl\u0113\u0161ana aiz\u0146ems laiku",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/arzemes/16.09.2026-lietuvas-aizsardzibas-ministrs-notriekta-drona-incidenta-izmeklesana-aiznems-laiku.a663404/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442 \u041b\u0438\u0442\u0432\u044b: \u0441\u0431\u0438\u0442\u044b\u0439 \u0434\u0440\u043e\u043d, \u0441\u043a\u043e\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043e, \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u0430\u043b \u0420\u043e\u0441\u0441\u0438\u0438",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/mir/16.09.2026-prezident-litvy-sbityi-dron-skoree-vsego-prinadlezal-rossii.a663454/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Naus\u0113da: Lietuv\u0101 notriektais bezpilota lidapar\u0101ts bija Krievijas drons \"Gerbera\"",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/pasaule/eiropa/nauseda-lietuva-notriektais-bezpilota-lidaparats-bija-krievijas-drons-gerbera?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Par drona notriek\u0161anu Latvijas gaisa telp\u0101 apbalvoti it\u0101\u013cu piloti",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8547116",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuv\u0101 notriektais bezpilota lidapar\u0101ts bija Krievijas drons \"Gerbera\", pazi\u0146o Naus\u0113da",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8547016",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Atskleid\u0117 daugiau informacijos apie Baltijos paj\u016bryje rast\u0105 dron\u0105: buvo ginkluotas",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/09/16/news/atskleide-daugiau-informacijos-apie-baltijos-pajuryje-rasta-drona-buvo-ginkluotas-44016613/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0421\u0428\u0410 \u043e\u0431\u0432\u0438\u043d\u0438\u043b\u0438 \u043e\u0444\u0438\u0446\u0435\u0440\u0430 \u0424\u0421\u0411 \u0438 \u0431\u044b\u0432\u0448\u0435\u0433\u043e \u043f\u043e\u043b\u043a\u043e\u0432\u043d\u0438\u043a\u0430 \u0441\u043f\u0435\u0446\u0441\u043b\u0443\u0436\u0431 \u0432 \u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0435 \u0443\u0431\u0438\u0439\u0441\u0442\u0432 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0445 \u0434\u0438\u0441\u0441\u0438\u0434\u0435\u043d\u0442\u043e\u0432",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/16/ssha-obvinili-ofitsera-fsb-i-byvshego-polkovnika-spetssluzhb-v-podgotovke-ubiistv-rossiiskikh-dissidentov-news",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuvas gaisa telp\u0101 notriektais drons bija Krievijas \u2013 visticam\u0101k, tas bija ce\u013c\u0101 uz citu valsti",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/lietuvas-gaisa-telpa-notriektais-drons-bija-krievijas-visticamak-tas-bija-cela-uz-citu-valsti",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuv\u0101 notriektais drons bijis Krievijas \u201cGerbera\u201d; Naus\u0113da atkl\u0101j iesp\u0113jamo t\u0101 mar\u0161rutu",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/728937-lietuva-notriektais-drons-bijis-krievijas-gerbera-nauseda-atklaj-iespejamo-ta-marsrutu",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-16T06:43:23.133749+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 98,
-      "stale_count": 0,
-      "alert_id": "0916-0643",
-      "items": [
-        {
-          "title": "ERKKI KOORT \u27e9 Taani kopteri tulistamine L\u00e4\u00e4nemerel n\u00e4itab: Venemaa testib ja NATO peab vastust karmistama",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8546657",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1856,14 +1706,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 215,
-    "alerting_scans": 105,
-    "held_back_total": 27,
+    "scans": 216,
+    "alerting_scans": 106,
+    "held_back_total": 29,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 17
+        "count": 18
       },
       {
         "reason": "already alerted",
@@ -1871,16 +1721,16 @@
         "count": 6
       },
       {
+        "reason": "scheduled exercise",
+        "label": "Announced allied exercise",
+        "count": 3
+      },
+      {
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
         "count": 2
-      },
-      {
-        "reason": "scheduled exercise",
-        "label": "Announced allied exercise",
-        "count": 2
       }
     ],
-    "scans_before_tracking": 110
+    "scans_before_tracking": 109
   }
 }
