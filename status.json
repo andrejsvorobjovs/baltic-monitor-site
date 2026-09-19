@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-18T21:51:12.715351+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 6.7h ago",
+  "last_run_utc": "2026-09-19T05:53:03.576018+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 422,
-  "quiet_count": 288,
+  "total_scans": 423,
+  "quiet_count": 289,
   "watch_count": 125,
   "warn_count": 9,
   "correction_count": 4,
-  "generated_at": "2026-09-19 04:34 UTC",
+  "generated_at": "2026-09-19 05:53 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-19T05:53:03.590900+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 276,
+      "stale_count": 4,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-18T21:51:12.702154+00:00",
       "level": "WATCH",
@@ -1692,111 +1706,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-15T14:27:03.822727+00:00",
-      "level": "WATCH",
-      "count": 6,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 328,
-      "stale_count": 1,
-      "alert_id": "0915-1427",
-      "items": [
-        {
-          "title": "NATO jets down drone over Lithuania after alliance warns strikes will drive support for Ukraine - AP News",
-          "source": "AP (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTG9fSlBNMF83anJ5cU1odGllV2JVS3BENUxkaTZrSlo5MF9HLW5KaTF0UWxnM2REYWRSX21NaklvVGMxVER2aTJBZ3BuRmNzdGg4STFTOVhpQ1VCMjMycUl0elRnaHlmSEJzRXFKSTljSDE2YWxzajZEY1dxdWUxalppNktfVXNfMFc5cGRaeTJOclVobDJFS3FuMzRQOGNyN3JTQXdDeFJOQQ?oc=5",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier1",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Germany to station armored brigade permanently in Lithuania",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/germany-to-station-armored-brigade-permanently-in-lithuania--cameoplus_ccea33f9efe6fd01",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "154",
-          "gdelt_event_code": "154",
-          "goldstein": -7.2,
-          "route": "gdelt"
-        },
-        {
-          "title": "Czech soldiers train Canadian allies at Latvian firing range",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/czech-soldiers-train-canadian-allies-at-latvian-firing-range--cameoplus_5eba561f43bc2727",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "062",
-          "gdelt_event_code": "062",
-          "goldstein": 7.4,
-          "route": "gdelt"
-        },
-        {
-          "title": "Dronas Lietuvoje: kaip viskas vyko ir k\u0105 apie incident\u0105 \u017einome \u0161iuo metu",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/lietuvoje/dronas-lietuvoje-kaip-viskas-vyko-ir-ka-apie-incidenta-zinome-siuo-metu-120304817",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lenkijos ir Lietuvos pa\u0161on\u0117je \u2013 naujos Baltarusijos karin\u0117s pratybos",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/baltarusija-lenkijos-ir-lietuvos-pasoneje-pradejo-karines-pratybas-57-2764426?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NB8 Series. NB8 and the Drone Challenge: Creating Platform market as a tool for integration-driven preparedness",
-          "source": "ICDS (Estonia)",
-          "link": "https://icds.ee/en/nb8-series-nb8-and-the-drone-challenge-creating-platform-market-as-a-tool-for-integration-driven-preparedness/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -2220,9 +2129,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 213,
+    "scans": 214,
     "alerting_scans": 104,
-    "held_back_total": 25,
+    "held_back_total": 27,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -2232,17 +2141,17 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 5
+        "count": 6
+      },
+      {
+        "reason": "reassurance",
+        "label": "Denial / no-threat framing",
+        "count": 2
       },
       {
         "reason": "scheduled exercise",
         "label": "Announced allied exercise",
         "count": 2
-      },
-      {
-        "reason": "reassurance",
-        "label": "Denial / no-threat framing",
-        "count": 1
       }
     ],
     "scans_before_tracking": 112
