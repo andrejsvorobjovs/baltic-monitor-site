@@ -730,7 +730,7 @@
       <p class="eyebrow">Track record</p>
       <div>
         <h2>Live, not curated</h2>
-        <p>Pulled automatically from the same data the Telegram channel uses — nothing shown here is prepared separately for this page. A full sweep is scheduled 3x/day, with a faster pass over the publisher feeds every 3 hours; the timestamp above comes from the full sweep. Neither is continuous — though GitHub's free scheduler is best-effort and can run a scan later than scheduled during high platform load, sometimes by several hours.</p>
+        <p>Pulled automatically from the same data the Telegram channel uses — nothing shown here is prepared separately for this page. A full sweep is scheduled 4x/day, with a faster pass over the publisher feeds every 2 hours; the timestamp above comes from the full sweep. Neither is continuous — though GitHub's free scheduler is best-effort and can run a scan later than scheduled during high platform load, sometimes by several hours.</p>
       </div>
     </div>
     <div class="stat-strip mono">
@@ -902,7 +902,7 @@
 // a server that may be dead — fails in exactly the case this exists for.
 // For a warning system, a rare false alarm beats a silent false all-clear.
 var LIVENESS = {
-  // A full scan runs every 8 hours, so this fires only after roughly 30
+  // A full scan runs every 6 hours, so this fires only after roughly 40
   // consecutive missed scans. Set deliberately high by the project owner,
   // against a recommendation for an earlier first tier: a banner that
   // appears whenever GitHub's scheduler drifts is noise, and noise on a
