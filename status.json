@@ -1,15 +1,15 @@
 {
-  "status_text": "Operating normally",
+  "status_text": "Attention needed",
   "last_run_utc": "2026-09-20T06:13:17.174605+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last successful scan was 9.8h ago (expected within 8h) \u2014 the scheduled workflow may have stopped running.",
   "since": "2026-07-19",
   "total_scans": 430,
   "quiet_count": 291,
   "watch_count": 130,
   "warn_count": 9,
   "correction_count": 4,
-  "generated_at": "2026-09-20 06:13 UTC",
+  "generated_at": "2026-09-20 16:03 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
@@ -1569,8 +1569,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 214,
-    "alerting_scans": 107,
+    "scans": 207,
+    "alerting_scans": 106,
     "held_back_total": 30,
     "held_back_by_reason": [
       {
@@ -1594,6 +1594,6 @@
         "count": 2
       }
     ],
-    "scans_before_tracking": 105
+    "scans_before_tracking": 98
   }
 }
