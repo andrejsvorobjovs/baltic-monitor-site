@@ -3002,6 +3002,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-09-20T06:13:17.189548+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "tier3_count": 0,
+      "tone": -3.579487179487179
     }
   ],
   "gpsjam_points": [
@@ -3172,6 +3179,10 @@
     {
       "ts": "2026-09-18T00:00:00+00:00",
       "count": 160
+    },
+    {
+      "ts": "2026-09-19T00:00:00+00:00",
+      "count": 179
     }
   ],
   "ais_points": [
@@ -4030,6 +4041,10 @@
     {
       "ts": "2026-09-19T19:26:31.092478+00:00",
       "count": 339
+    },
+    {
+      "ts": "2026-09-20T06:12:33.668913+00:00",
+      "count": 297
     }
   ],
   "military_points": [
@@ -4888,6 +4903,10 @@
     {
       "ts": "2026-09-19T19:26:31.539127+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-09-20T06:12:34.004742+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -5474,6 +5493,10 @@
     {
       "ts": "2026-09-19T19:26:33.445978+00:00",
       "count": 10
+    },
+    {
+      "ts": "2026-09-20T06:12:36.119311+00:00",
+      "count": 6
     }
   ],
   "entsoe_points": [
@@ -5991,6 +6014,10 @@
     },
     {
       "ts": "2026-09-19T19:26:37.495198+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-20T06:12:42.178103+00:00",
       "count": 0
     }
   ],
@@ -8613,6 +8640,33 @@
           {
             "signal": "firms",
             "pct": 61,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-20T06:12:42.179465+00:00",
+      "deviation_pct": -42.58255049460657,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; thermal hotspots 76% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 76,
             "direction": "below"
           }
         ],

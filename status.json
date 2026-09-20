@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-19T21:44:01.351037+00:00",
+  "last_run_utc": "2026-09-20T06:13:17.174605+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 7.1h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 429,
+  "total_scans": 430,
   "quiet_count": 291,
-  "watch_count": 129,
+  "watch_count": 130,
   "warn_count": 9,
   "correction_count": 4,
-  "generated_at": "2026-09-20 04:51 UTC",
+  "generated_at": "2026-09-20 06:13 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-20T06:13:17.189548+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 216,
+      "stale_count": 1,
+      "alert_id": "0920-0613",
+      "items": [
+        {
+          "title": "Europe braces for war as Russia tests NATO\u2019s red lines - www.israelhayom.com",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZVR3SVZlV25aOVd6bTNwNEFzOEFLNkJScXoyRnJ3b0NvVmFjMnAtUWthYzBjMk9TWHFwcWJkWEp0eXR0d3FNcGVSWUlvb2ZFbXBDZWh1aWxOb1M5bU5FTEpDcXY1aGl6Ujh2UGo0ZGZXdkR2aDZxSXFfYnlVWjJqendFT3VMejAyVlI4czNOYVFOdEpTSmd1Ng?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "NATO outlines eastern-flank response plans in Copenhagen",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/nato-outlines-eastern-flank-response-plans-in-copenhagen--cameoplus_e04b320ebfb5860e",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "15",
+          "gdelt_event_code": "15",
+          "goldstein": -7.2,
+          "route": "gdelt"
+        }
+      ]
+    },
     {
       "ts": "2026-09-19T21:44:01.338412+00:00",
       "level": "WATCH",
@@ -1102,145 +1146,40 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-16T17:44:45.291606+00:00",
-      "level": "WATCH",
-      "count": 8,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 311,
-      "stale_count": 0,
-      "alert_id": "0916-1744",
-      "items": [
-        {
-          "title": "Italijos ministras: \u201eNeveikiame aktyviai prie\u0161 hibridin\u012f kar\u0105, tiesiog j\u012f paken\u010diame\u201c",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/italijos-ministras-neveikiame-aktyviai-pries-hibridini-kara-tiesiog-ji-pakenciame-56-2764800?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041d\u0430\u0443\u0441\u0435\u0434\u0430: \u0441\u0431\u0438\u0442\u044b\u0439 15 \u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044f \u0432 \u041b\u0438\u0442\u0432\u0435 \u0431\u0435\u0441\u043f\u0438\u043b\u043e\u0442\u043d\u0438\u043a \u0431\u044b\u043b \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u043c",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610139928/nauseda-sbityj-15-sentjabrja-v-litve-bespilotnik-byl-rossijskim",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Saeimas v\u0113l\u0113\u0161anu laik\u0101 Latvijas gaisa telpu aizsarg\u0101s Bundesv\u0113ra izn\u012bcin\u0101t\u0101ji",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8547360",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuv\u0101 atrasts drons, kas var\u0113tu b\u016bt nog\u0101zies jau  pirms vair\u0101kiem m\u0113ne\u0161iem",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8547296",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "G. Naus\u0117da apie oro erdv\u0117s pa\u017eeidimus: dronams galb\u016bt s\u0105moningai leid\u017eiama nukrypti nuo kurso",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/16/news/g-nauseda-apie-oro-erdves-pazeidimus-dronams-galbut-samoningai-leidziama-nukrypti-nuo-kurso-44021384/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "URM: Baltarusijai pareik\u0161tas protestas d\u0117l Lietuvos oro erdv\u0117s pa\u017eeidimo",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/16/news/urm-baltarusijai-pareikstas-protestas-del-lietuvos-oro-erdves-pazeidimo-44021224/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Ukrainian electronic warfare apparently knocked a\u00a0Russian attack drone off course and into Lithuanian airspace, the country\u2019s president says",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/09/16/ukrainian-electronic-warfare-apparently-knocked-a-russian-attack-drone-off-course-and-into-lithuanian-airspace-the-country-s-president-says",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "U.S. uncovers network that plotted assassinations of\u00a0Russian \u2018dissidents\u2019 in\u00a0Washington and Vilnius. Among the suspects: an\u00a0ex-colonel with Putin ties, his FSB officer son, and a\u00a0Cuban dancer.",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/feature/2026/09/16/u-s-uncovers-network-that-plotted-assassinations-of-russian-dissidents-in-washington-and-vilnius-among-the-suspects-an-ex-colonel-with-putin-ties-his-fsb-officer-son-and-a-cuban-dancer",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-20T06:13:17.199802+00:00",
+      "level": "WATCH",
+      "title": "NATO outlines eastern-flank response plans in Copenhagen",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/nato-outlines-eastern-flank-response-plans-in-copenhagen--cameoplus_e04b320ebfb5860e",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "15",
+      "gdelt_event_code": "15",
+      "goldstein": -7.2
+    },
+    {
+      "ts": "2026-09-20T06:13:17.199802+00:00",
+      "level": "WATCH",
+      "title": "Europe braces for war as Russia tests NATO\u2019s red lines - www.israelhayom.com",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZVR3SVZlV25aOVd6bTNwNEFzOEFLNkJScXoyRnJ3b0NvVmFjMnAtUWthYzBjMk9TWHFwcWJkWEp0eXR0d3FNcGVSWUlvb2ZFbXBDZWh1aWxOb1M5bU5FTEpDcXY1aGl6Ujh2UGo0ZGZXdkR2aDZxSXFfYnlVWjJqendFT3VMejAyVlI4czNOYVFOdEpTSmd1Ng?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-18T19:44:13.593342+00:00",
       "level": "WATCH",
@@ -1448,37 +1387,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-17T20:24:44.659812+00:00",
-      "level": "WATCH",
-      "title": "Po Lenkijos \u012fsp\u0117jimo \u2013 Budrio reakcija: Lietuva taip pat turi informacijos apie galimas Rusijos hibridines atakas",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/lietuvoje/po-lenkijos-ispejimo-budrio-reakcija-lietuva-taip-pat-turi-informacijos-apie-galimas-rusijos-hibridines-atakas-120306311",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-17T20:24:44.659812+00:00",
-      "level": "WATCH",
-      "title": "Polish PM warns Russia may stage \u2018accidental\u2019 strikes on NATO\u2019s eastern flank - TVP World",
-      "source": "TVP World (Poland)",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTzRCWWE4VGtWTFJGb2pza19fWXFxeG9BQ3FSVjZERTFFZWQ1U2xxLWhkWXRZcElUMWhjb0U3OUlJU2o0R2p6OENmc1hLaWxvVVRTcTVyLWZWeUlwR2JFQUxKa1p2Vzd2OTVrVkV3UmtYaTJQNEVCV0RrYWE1YUdueWZzSVVkUTg5Z2R0U0NXNDNIVlBzbE5UMFpPbmxUT3h2c2hqc2tVMkwtSkk?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1662,13 +1570,13 @@
   "filter_record": {
     "window_days": 30,
     "scans": 214,
-    "alerting_scans": 106,
-    "held_back_total": 29,
+    "alerting_scans": 107,
+    "held_back_total": 30,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 18
+        "count": 19
       },
       {
         "reason": "already alerted",
@@ -1686,6 +1594,6 @@
         "count": 2
       }
     ],
-    "scans_before_tracking": 106
+    "scans_before_tracking": 105
   }
 }
