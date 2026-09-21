@@ -1,20 +1,78 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-21T06:19:53.461787+00:00",
-  "last_level": "WARN",
+  "last_run_utc": "2026-09-21T14:09:31.034562+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 436,
-  "quiet_count": 291,
-  "watch_count": 135,
+  "total_scans": 438,
+  "quiet_count": 292,
+  "watch_count": 136,
   "warn_count": 10,
   "correction_count": 4,
-  "generated_at": "2026-09-21 06:19 UTC",
+  "generated_at": "2026-09-21 14:09 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-21T14:09:31.050065+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 176,
+      "stale_count": 4,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-09-21T13:17:21.300649+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 490,
+      "stale_count": 0,
+      "alert_id": "0921-1317",
+      "items": [
+        {
+          "title": "BNN IN FOCS| Political party review: National Alliance \u2013 from a \u201ccore electorate\u201d to a fight for its own niche",
+          "source": "BNN Baltic News Network",
+          "link": "https://bnn-news.com/bnn-in-focs-political-party-review-national-alliance-from-a-core-electorate-to-a-fight-for-its-own-niche-283968",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Krievija pavisam dr\u012bz var iebrukt k\u0101d\u0101 NATO valst\u012b, Kasparovs nosauc iesp\u0113jamo termi\u0146u",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/729682-krievija-pavisam-driz-var-iebrukt-kada-nato-valsti-kasparovs-nosauc-iespejamo-terminu",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-21T06:19:53.476951+00:00",
       "level": "WARN",
@@ -699,110 +757,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-18T12:22:36.155624+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 469,
-      "stale_count": 0,
-      "alert_id": "0918-1222",
-      "items": [
-        {
-          "title": "\u201cPossible casualties\u201d \u2013 S\u0101rts warns of escalation of Russia\u2019s hybrid war in Europe",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/possible-casualties-sarts-warns-of-escalation-of-russias-hybrid-war-in-europe-283907",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Poland\u2019s prime minister says Russia is\u00a0preparing \u2018accidental\u2019 drone and missile strikes on\u00a0NATO countries that support Ukraine",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/09/18/poland-s-prime-minister-says-russia-is-preparing-accidental-drone-and-missile-strikes-on-nato-countries-that-support-ukraine",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Russia planning \u201caccidental\u201d strikes on eastern NATO states, warns Poland",
-          "source": "Notes from Poland",
-          "link": "https://notesfrompoland.com/2026/09/18/russia-planning-accidental-strikes-on-eastern-nato-states-warns-poland/",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Estonia prepares for Russian mobilisation",
-          "source": "Defence24",
-          "link": "https://defence24.com/defence-policy/estonia-prepares-for-russian-mobilisation",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-18T06:38:00.189201+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 156,
-      "stale_count": 0,
-      "alert_id": "0918-0638",
-      "items": [
-        {
-          "title": "NATO Apvienoto sp\u0113ku \u0123ener\u0101lleitnants: Krievijas armija moderniz\u0113jas, karo cit\u0101d\u0101k, att\u012bsta bezpilota sist\u0113mas - m\u0113s tam sekojam l\u012bdzi",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/729159-nato-apvienoto-speku-generalleitnants-krievijas-armija-modernizejas-karo-citadak-attista-bezpilota-sistemas-mes-tam-sekojam-lidzi",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1228,7 +1182,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 209,
-    "alerting_scans": 111,
+    "alerting_scans": 112,
     "held_back_total": 31,
     "held_back_by_reason": [
       {
@@ -1252,6 +1206,6 @@
         "count": 2
       }
     ],
-    "scans_before_tracking": 94
+    "scans_before_tracking": 92
   }
 }
