@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-21T18:48:04.501563+00:00",
+  "last_run_utc": "2026-09-21T22:41:53.362481+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 439,
+  "total_scans": 440,
   "quiet_count": 292,
-  "watch_count": 137,
+  "watch_count": 138,
   "warn_count": 10,
   "correction_count": 4,
-  "generated_at": "2026-09-21 18:48 UTC",
+  "generated_at": "2026-09-21 22:41 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-21T22:41:53.377450+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 171,
+      "stale_count": 1,
+      "alert_id": "0921-2241",
+      "items": [
+        {
+          "title": "Europeisk spionchef: Ryskt anfall mot Nato kan vara n\u00e4ra - Omni \u2013 Alla nyheter. Alla perspektiv.",
+          "source": "Swedish-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd1BBTEVQVEI2WFZ2ZUcxMDhRbU85b0JrOXdvUWtYNVhSbHFsZFdWUWd4VVRuSUZIelY0RlZNSTRZNGlHbV9CU19IWWdDaGJmczAwTXk3WUJ2LTlBaGxBUWhJcXcwVkZlQWU1YjBEeDI2U2RMbkR6NUJ6X3RReGtSMHlKRXJiZVE?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Vilniaus oro uoste \u012fvesti oro erdv\u0117s apribojimai \u2013 fiksuotos \u017eymos, b\u016bdingos balionams",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/verslas/transportas/del-neidentifikuotu-objektu-ore-apribota-vilniaus-oro-uosto-veikla-120307913",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-21T18:48:04.516366+00:00",
       "level": "WATCH",
@@ -682,54 +726,40 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-18T17:12:17.259680+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 281,
-      "stale_count": 0,
-      "alert_id": "0918-1712",
-      "items": [
-        {
-          "title": "\u0420\u0424 \u0431\u0443\u0434\u0435\u0442 \u043e\u0431\u043e\u0441\u0442\u0440\u044f\u0442\u044c \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044e \u0437\u0430 \u0441\u0447\u0435\u0442 \u0441\u0430\u0431\u043e\u0442\u0430\u0436\u0430 \u0438 \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u0439, \u043d\u043e \u0432\u0442\u043e\u0440\u0436\u0435\u043d\u0438\u0435 \u043d\u0430 \u0442\u0435\u0440\u0440\u0438\u0442\u043e\u0440\u0438\u044e \u041d\u0410\u0422\u041e \u0441\u0435\u0439\u0447\u0430\u0441 \u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u2014 \u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/obschestvo/18.09.2026-rf-budet-obostryat-situaciyu-za-scet-sabotaza-i-diversii-no-vtorzenie-na-territoriyu-nato-seicas-nevozmozno-prezident.a663836/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuvos kaimyn\u0117 tar\u0117 \u201ene\u201c garsioms \u0161ved\u0173 haubicoms ir pasirinko \u010deki\u0161k\u0105 ugnies gali\u0105",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/it/ismanyk/2026/09/18/news/lietuvos-kaimyne-tare-ne-garsioms-svedu-haubicoms-ir-pasirinko-cekiska-ugnies-galia-44051767/",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-21T22:41:53.387907+00:00",
+      "level": "WATCH",
+      "title": "Vilniaus oro uoste \u012fvesti oro erdv\u0117s apribojimai \u2013 fiksuotos \u017eymos, b\u016bdingos balionams",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/verslas/transportas/del-neidentifikuotu-objektu-ore-apribota-vilniaus-oro-uosto-veikla-120307913",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-21T22:41:53.387907+00:00",
+      "level": "WATCH",
+      "title": "Europeisk spionchef: Ryskt anfall mot Nato kan vara n\u00e4ra - Omni \u2013 Alla nyheter. Alla perspektiv.",
+      "source": "Swedish-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd1BBTEVQVEI2WFZ2ZUcxMDhRbU85b0JrOXdvUWtYNVhSbHFsZFdWUWd4VVRuSUZIelY0RlZNSTRZNGlHbV9CU19IWWdDaGJmczAwTXk3WUJ2LTlBaGxBUWhJcXcwVkZlQWU1YjBEeDI2U2RMbkR6NUJ6X3RReGtSMHlKRXJiZVE?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-21T18:48:04.526814+00:00",
       "level": "WATCH",
@@ -937,38 +967,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-18T13:42:54.354286+00:00",
-      "level": "WATCH",
-      "title": "ASV nodod Latvijas robe\u017esargiem 20 dronus",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8548719",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-18T13:42:54.354286+00:00",
-      "level": "WATCH",
-      "title": "Savait\u0117s kriminalai. Pirmas sunaikintas dronas ir teisiami keli\u0173 chuliganai",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/tv/laidos/savaites-kriminalai/savaites-kriminalai-pirmas-sunaikintas-dronas-ir-teisiami-keliu-chuliganai-120306723",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1152,7 +1150,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 209,
-    "alerting_scans": 113,
+    "alerting_scans": 114,
     "held_back_total": 32,
     "held_back_by_reason": [
       {
@@ -1176,6 +1174,6 @@
         "count": 2
       }
     ],
-    "scans_before_tracking": 91
+    "scans_before_tracking": 90
   }
 }
