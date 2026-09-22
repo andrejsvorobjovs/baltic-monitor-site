@@ -1,20 +1,170 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-22T12:43:27.279343+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 4.2h ago",
+  "last_run_utc": "2026-09-22T17:47:01.913358+00:00",
+  "last_level": "WARN",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 444,
+  "total_scans": 446,
   "quiet_count": 292,
-  "watch_count": 142,
-  "warn_count": 10,
+  "watch_count": 143,
+  "warn_count": 11,
   "correction_count": 4,
-  "generated_at": "2026-09-22 16:55 UTC",
+  "generated_at": "2026-09-22 17:47 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-22T17:47:01.927933+00:00",
+      "level": "WARN",
+      "count": 5,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 364,
+      "stale_count": 16,
+      "alert_id": "0922-1747",
+      "items": [
+        {
+          "title": "Lithuania says Trump deploys fresh US troops to the country - Reuters",
+          "source": "Reuters (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNa2hkNDhERVk5MC02LW84MnA5QllIYWNuRzc3TjhYTEMwSHFlaHd5R3UxNzhpOVRxRTV3dTdCQnRyT1JwYzliMmxXVG5LUXFRd2F3TjI1SFQ3X0VPVk5WM0NiZTE1SzdaeG9DZDh1ZUZVQUFwVklkejgxR3ltY0FPOUd1M1lpZG5NMjVZQ3lvbENQVmFNbUIzbnJtOTF2cVNsWHFPRmh0X1k0LVc5SzMzNU9VdS11UQ?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "NATO \u2018ready\u2019 for any Russian false flag attack after Poland warnings - TVP World",
+          "source": "TVP World (Poland)",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVW1TZmpwSW9rSjVpdG1KYUxTWmZ3MEc5WEVpeFZhSU1DUFZEeTFZUEdvRF9qUHgzNHBobkFnVWxJalVOOEhIOTdleDRzTVFEQ2pSZ1lwR1BQQm1vUGtMUGF3MWozdTE0V2VxSVhUNFdzaFJhc1MxbWdXWWtwYjhRN29ScDZreThS?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "NATO fighters scramble after possible airspace threat over Latvia",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/nato-fighters-scramble-after-possible-airspace-threat-over-l--cameoplus_8a16d004043e92d4",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "154",
+          "gdelt_event_code": "154",
+          "goldstein": -7.2,
+          "route": "gdelt"
+        },
+        {
+          "title": "United States sends new troop contingent to Lithuania",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/united-states-sends-new-troop-contingent-to-lithuania--cameoplus_e6a3ac62cb42844a",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "154",
+          "gdelt_event_code": "154",
+          "goldstein": -7.2,
+          "route": "gdelt"
+        },
+        {
+          "title": "Germany reaffirms brigade deployment to Lithuania despite shortages",
+          "source": "GDELT Cloud (gdeltcloud.com)",
+          "link": "https://gdeltcloud.com/events/germany-reaffirms-brigade-deployment-to-lithuania-despite-sh--cameoplus_3d19960d7015361d",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "POLITICAL",
+          "gdelt_subcategory": "154",
+          "gdelt_event_code": "154",
+          "goldstein": -7.2,
+          "route": "gdelt"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-22T17:14:34.527302+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 399,
+      "stale_count": 0,
+      "alert_id": "0922-1714",
+      "items": [
+        {
+          "title": "Melnis un Pud\u0101ns austrumu pierobe\u017e\u0101 inform\u0113s par paveikto robe\u017eas aizsardz\u012bbas stiprin\u0101\u0161an\u0101",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8550806",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Balionams numu\u0161ti \u2013 milijonai, ta\u010diau verslas i\u0161sib\u0117giojo: ekspertas atvirai i\u0161r\u0117\u017e\u0117 \u2013 primin\u0117 cirk\u0105",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/verslas/rinkos-pulsas/2026/09/22/news/balionams-numusti-milijonai-taciau-verslas-issibegiojo-ekspertas-atvirai-isreze-primine-cirka-44105908/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0420\u043e\u0441\u0441\u0438\u044f \u0432\u0432\u0435\u043b\u0430 \u043d\u043e\u0432\u044b\u0435 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f \u043d\u0430 \u043f\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043d\u0438\u0435 \u0443 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0441 \u042d\u0441\u0442\u043e\u043d\u0438\u0435\u0439",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/22/rossiia-vvela-novye-ogranicheniia-na-peredvizhenie-u-granitsy-s-estoniei",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-22T12:43:27.294341+00:00",
       "level": "WATCH",
@@ -774,53 +924,88 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-19T13:13:11.906077+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 151,
-      "stale_count": 3,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-09-19T12:03:51.078316+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 306,
-      "stale_count": 0,
-      "alert_id": "0919-1203",
-      "items": [
-        {
-          "title": "D. Tusko a\u0161triems persp\u0117jimams d\u0117l V. Putino \u2013 dvi prie\u017eastys: \u012f ak\u012f krito keistas Lenkijos elgesys",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/pasaulis/rytai-vakarai/2026/09/19/news/d-tusko-astriems-perspejimams-del-v-putino-dvi-priezastys-i-aki-krito-keistas-lenkijos-elgesys-44059955/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-22T17:47:01.938839+00:00",
+      "level": "WARN",
+      "title": "Germany reaffirms brigade deployment to Lithuania despite shortages",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/germany-reaffirms-brigade-deployment-to-lithuania-despite-sh--cameoplus_3d19960d7015361d",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "154",
+      "gdelt_event_code": "154",
+      "goldstein": -7.2
+    },
+    {
+      "ts": "2026-09-22T17:47:01.938839+00:00",
+      "level": "WARN",
+      "title": "United States sends new troop contingent to Lithuania",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/united-states-sends-new-troop-contingent-to-lithuania--cameoplus_e6a3ac62cb42844a",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "154",
+      "gdelt_event_code": "154",
+      "goldstein": -7.2
+    },
+    {
+      "ts": "2026-09-22T17:47:01.938839+00:00",
+      "level": "WARN",
+      "title": "NATO fighters scramble after possible airspace threat over Latvia",
+      "source": "GDELT Cloud (gdeltcloud.com)",
+      "link": "https://gdeltcloud.com/events/nato-fighters-scramble-after-possible-airspace-threat-over-l--cameoplus_8a16d004043e92d4",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "POLITICAL",
+      "gdelt_subcategory": "154",
+      "gdelt_event_code": "154",
+      "goldstein": -7.2
+    },
+    {
+      "ts": "2026-09-22T17:47:01.938839+00:00",
+      "level": "WARN",
+      "title": "NATO \u2018ready\u2019 for any Russian false flag attack after Poland warnings - TVP World",
+      "source": "TVP World (Poland)",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVW1TZmpwSW9rSjVpdG1KYUxTWmZ3MEc5WEVpeFZhSU1DUFZEeTFZUEdvRF9qUHgzNHBobkFnVWxJalVOOEhIOTdleDRzTVFEQ2pSZ1lwR1BQQm1vUGtMUGF3MWozdTE0V2VxSVhUNFdzaFJhc1MxbWdXWWtwYjhRN29ScDZreThS?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-22T17:47:01.938839+00:00",
+      "level": "WARN",
+      "title": "Lithuania says Trump deploys fresh US troops to the country - Reuters",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNa2hkNDhERVk5MC02LW84MnA5QllIYWNuRzc3TjhYTEMwSHFlaHd5R3UxNzhpOVRxRTV3dTdCQnRyT1JwYzliMmxXVG5LUXFRd2F3TjI1SFQ3X0VPVk5WM0NiZTE1SzdaeG9DZDh1ZUZVQUFwVklkejgxR3ltY0FPOUd1M1lpZG5NMjVZQ3lvbENQVmFNbUIzbnJtOTF2cVNsWHFPRmh0X1k0LVc5SzMzNU9VdS11UQ?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-22T12:43:27.308108+00:00",
       "level": "WATCH",
@@ -974,85 +1159,6 @@
       "categories": [
         "baltic_specific",
         "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-20T16:55:28.394183+00:00",
-      "level": "WATCH",
-      "title": "Allied fighter jets arrive in Latvia ahead of elections",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/allied-fighter-jets-arrive-in-latvia-ahead-of-elections--cameoplus_e05de83354d8d613",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "154",
-      "gdelt_event_code": "154",
-      "goldstein": -7.2
-    },
-    {
-      "ts": "2026-09-20T16:55:28.394183+00:00",
-      "level": "WATCH",
-      "title": "Germany stages Silver Wotan drill to reinforce Baltic islands",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/germany-stages-silver-wotan-drill-to-reinforce-baltic-island--cameoplus_402096b7fd673c07",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "154",
-      "gdelt_event_code": "154",
-      "goldstein": -7.2
-    },
-    {
-      "ts": "2026-09-20T06:13:17.199802+00:00",
-      "level": "WATCH",
-      "title": "NATO outlines eastern-flank response plans in Copenhagen",
-      "source": "GDELT Cloud (gdeltcloud.com)",
-      "link": "https://gdeltcloud.com/events/nato-outlines-eastern-flank-response-plans-in-copenhagen--cameoplus_e04b320ebfb5860e",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "POLITICAL",
-      "gdelt_subcategory": "15",
-      "gdelt_event_code": "15",
-      "goldstein": -7.2
-    },
-    {
-      "ts": "2026-09-20T06:13:17.199802+00:00",
-      "level": "WATCH",
-      "title": "Europe braces for war as Russia tests NATO\u2019s red lines - www.israelhayom.com",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZVR3SVZlV25aOVd6bTNwNEFzOEFLNkJScXoyRnJ3b0NvVmFjMnAtUWthYzBjMk9TWHFwcWJkWEp0eXR0d3FNcGVSWUlvb2ZFbXBDZWh1aWxOb1M5bU5FTEpDcXY1aGl6Ujh2UGo0ZGZXdkR2aDZxSXFfYnlVWjJqendFT3VMejAyVlI4czNOYVFOdEpTSmd1Ng?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-18T19:44:13.593342+00:00",
-      "level": "WATCH",
-      "title": "German Forces Surge Onto Baltic Island In First-Of-Its-Kind NATO Drill",
-      "source": "TWZ / The War Zone (defense journalism)",
-      "link": "https://www.twz.com/news-features/german-forces-surge-onto-baltic-island-in-first-of-its-kind-nato-drill",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1241,9 +1347,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 208,
-    "alerting_scans": 118,
-    "held_back_total": 37,
+    "scans": 210,
+    "alerting_scans": 120,
+    "held_back_total": 39,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1256,14 +1362,14 @@
         "count": 7
       },
       {
+        "reason": "reassurance",
+        "label": "Denial / no-threat framing",
+        "count": 4
+      },
+      {
         "reason": "scheduled exercise",
         "label": "Announced allied exercise",
         "count": 3
-      },
-      {
-        "reason": "reassurance",
-        "label": "Denial / no-threat framing",
-        "count": 2
       }
     ],
     "scans_before_tracking": 85
