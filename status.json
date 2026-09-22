@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-22T17:47:01.913358+00:00",
-  "last_level": "WARN",
+  "last_run_utc": "2026-09-22T22:07:45.413744+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 446,
+  "total_scans": 447,
   "quiet_count": 292,
-  "watch_count": 143,
+  "watch_count": 144,
   "warn_count": 11,
   "correction_count": 4,
-  "generated_at": "2026-09-22 17:47 UTC",
+  "generated_at": "2026-09-22 22:07 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-22T22:07:45.445922+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 410,
+      "stale_count": 12,
+      "alert_id": "0922-2207",
+      "items": [
+        {
+          "title": "K\u0101dus sp\u0113kus Krievija izmantotu uzbrukumam NATO: Biju\u0161ais izl\u016bks v\u0113rt\u0113 draudus Baltijai - Dzentlmenis.lv",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbkdQWTBjNFExM2FtSHl0MG04c2NjaTZCeDg3b0VTdmRlcDVjQzBmY0pwWWR5Q1BKYnl3RDJ6M2p6eUVOZ3V1RlpLZzFFTG41R2hsWWVxRXFiN01TWTJQV2xWaUM0a1VZOUJkYXBoUmdrallSMlZwWUNBV2pVX0l6R3B2WEZzLUczN2o5YThuRnUyOGZEeEpoZjR3bkpfWVJUeTJrZl95NjZpOUhITWk5NmxuZ1VQMkhP?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
     {
       "ts": "2026-09-22T17:47:01.927933+00:00",
       "level": "WARN",
@@ -894,39 +924,25 @@
       "stale_count": 4,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-19T16:48:15.763021+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 193,
-      "stale_count": 0,
-      "alert_id": "0919-1648",
-      "items": [
-        {
-          "title": "Latvijas prezidents: Krievijas ra\u0137e\u0161u atvair\u012b\u0161ana Eiropas valst\u012bm b\u016btu izaicin\u0101jums",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8549102",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-22T22:07:45.454611+00:00",
+      "level": "WATCH",
+      "title": "K\u0101dus sp\u0113kus Krievija izmantotu uzbrukumam NATO: Biju\u0161ais izl\u016bks v\u0113rt\u0113 draudus Baltijai - Dzentlmenis.lv",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbkdQWTBjNFExM2FtSHl0MG04c2NjaTZCeDg3b0VTdmRlcDVjQzBmY0pwWWR5Q1BKYnl3RDJ6M2p6eUVOZ3V1RlpLZzFFTG41R2hsWWVxRXFiN01TWTJQV2xWaUM0a1VZOUJkYXBoUmdrallSMlZwWUNBV2pVX0l6R3B2WEZzLUczN2o5YThuRnUyOGZEeEpoZjR3bkpfWVJUeTJrZl95NjZpOUhITWk5NmxuZ1VQMkhP?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-22T17:47:01.938839+00:00",
       "level": "WARN",
@@ -1149,22 +1165,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-20T21:35:07.424559+00:00",
-      "level": "WATCH",
-      "title": "Sikorska \"lab\u0101 roka\": Br\u012bdin\u0101jumiem par uzbrukumu NATO ir divas m\u0113r\u0137auditorijas",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8547085",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1348,13 +1348,13 @@
   "filter_record": {
     "window_days": 30,
     "scans": 210,
-    "alerting_scans": 120,
-    "held_back_total": 39,
+    "alerting_scans": 121,
+    "held_back_total": 41,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 25
+        "count": 26
       },
       {
         "reason": "already alerted",
@@ -1364,7 +1364,7 @@
       {
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
-        "count": 4
+        "count": 5
       },
       {
         "reason": "scheduled exercise",
@@ -1372,6 +1372,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 85
+    "scans_before_tracking": 84
   }
 }
