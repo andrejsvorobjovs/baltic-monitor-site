@@ -3163,6 +3163,27 @@
       "count": 6,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-09-23T18:35:46.105564+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-23T21:46:16.377938+00:00",
+      "level": "WARN",
+      "count": 4,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-23T22:20:39.992210+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -4263,6 +4284,10 @@
     {
       "ts": "2026-09-23T17:58:43.295619+00:00",
       "count": 348
+    },
+    {
+      "ts": "2026-09-23T22:20:01.548538+00:00",
+      "count": 243
     }
   ],
   "military_points": [
@@ -5177,6 +5202,10 @@
     {
       "ts": "2026-09-23T17:58:43.916005+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-09-23T22:20:02.378253+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -5819,6 +5848,10 @@
     {
       "ts": "2026-09-23T17:58:46.025115+00:00",
       "count": 15
+    },
+    {
+      "ts": "2026-09-23T22:20:04.898506+00:00",
+      "count": 15
     }
   ],
   "entsoe_points": [
@@ -6392,6 +6425,10 @@
     },
     {
       "ts": "2026-09-23T17:58:47.878611+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-23T22:20:07.667664+00:00",
       "count": 0
     }
   ],
@@ -9370,6 +9407,29 @@
           {
             "signal": "military",
             "pct": 67,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-23T22:20:07.669192+00:00",
+      "deviation_pct": -41.940439907309475,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
             "direction": "below"
           }
         ],
