@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-22T22:07:45.413744+00:00",
+  "last_run_utc": "2026-09-23T06:00:11.154137+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 6.6h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 447,
+  "total_scans": 448,
   "quiet_count": 292,
-  "watch_count": 144,
+  "watch_count": 145,
   "warn_count": 11,
   "correction_count": 4,
-  "generated_at": "2026-09-23 04:42 UTC",
+  "generated_at": "2026-09-23 06:00 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-23T06:00:11.169808+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 387,
+      "stale_count": 7,
+      "alert_id": "0923-0600",
+      "items": [
+        {
+          "title": "Europe\u2019s Spy Chiefs Say Russia Is Preparing to Test NATO. The Baltics Are Saying: Don\u2019t Panic. - Vocal",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNmk0a1BENURkSWM4Q3FnU0EzVXN0dmN3dnJZb1JJVE1iSkJNZm1obi1zUmd0R1R0UTJmbzZ5SGN6emg4ZzRWWlZJNVQxNlIxYnZLeGVzUjFaNXVlai1uN3YtYWItV3FWWnpQUmNnb1pnNW96aXE5UnhDdjVzUGtwdEdXc1lnbnVUWkN3ckVtVTIzbkZiU0RNb2RNZ1hROXNkZGhWX0dPeXRWRm90MVgwdGVhS1VSb3I0M3c?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "US to send new troop contingent to Estonia, minister says",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610145598/us-to-send-new-troop-contingent-to-estonia-minister-says",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-22T22:07:45.445922+00:00",
       "level": "WATCH",
@@ -910,23 +955,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-19T19:27:10.246618+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 211,
-      "stale_count": 4,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-23T06:00:11.181356+00:00",
+      "level": "WATCH",
+      "title": "US to send new troop contingent to Estonia, minister says",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610145598/us-to-send-new-troop-contingent-to-estonia-minister-says",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-23T06:00:11.181356+00:00",
+      "level": "WATCH",
+      "title": "Europe\u2019s Spy Chiefs Say Russia Is Preparing to Test NATO. The Baltics Are Saying: Don\u2019t Panic. - Vocal",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNmk0a1BENURkSWM4Q3FnU0EzVXN0dmN3dnJZb1JJVE1iSkJNZm1obi1zUmd0R1R0UTJmbzZ5SGN6emg4ZzRWWlZJNVQxNlIxYnZLeGVzUjFaNXVlai1uN3YtYWItV3FWWnpQUmNnb1pnNW96aXE5UnhDdjVzUGtwdEdXc1lnbnVUWkN3ckVtVTIzbkZiU0RNb2RNZ1hROXNkZGhWX0dPeXRWRm90MVgwdGVhS1VSb3I0M3c?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-22T22:07:45.454611+00:00",
       "level": "WATCH",
@@ -1133,38 +1196,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-21T06:19:53.487620+00:00",
-      "level": "WARN",
-      "title": "Izl\u016bkdienestu vad\u012bt\u0101ji br\u012bdina par jaunu Krievijas sabot\u0101\u017eas vilni Eirop\u0101",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8549572",
-      "categories": [
-        "hybrid_incident",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-21T06:19:53.487620+00:00",
-      "level": "WARN",
-      "title": "Eiropas izl\u016bkdienesti br\u012bdina par Krievijas provok\u0101ciju pastiprin\u0101\u0161anos",
-      "source": "Diena (Latvia)",
-      "link": "https://diena.lv/raksts/pasaule/krievija/eiropas-izlukdienesti-bridina-par-krievijas-provokaciju-pastiprinasanos?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "hybrid_incident",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1347,14 +1378,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 208,
-    "alerting_scans": 121,
-    "held_back_total": 41,
+    "scans": 209,
+    "alerting_scans": 122,
+    "held_back_total": 42,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 26
+        "count": 27
       },
       {
         "reason": "already alerted",
