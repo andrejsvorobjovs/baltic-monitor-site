@@ -231,6 +231,17 @@
      who want it, not a headline. */
   /* Resilience note under the tier table. */
   .resil { margin-top: 14px; font-size: var(--fs-base); line-height: 1.6; opacity: 0.8; }
+  .safety { border: 1px solid var(--warn); border-left-width: 3px; border-radius: 4px;
+            padding: 16px 20px; margin: 0 0 6px; background: var(--card, transparent); }
+  .safety h2 { font-size: var(--fs-base); margin: 0 0 8px; letter-spacing: 0.01em; }
+  .safety p { margin: 0 0 8px; font-size: var(--fs-md); line-height: 1.6; color: var(--ink-text); }
+  .safety p:last-child { margin-bottom: 0; }
+  /* --ink is the page BACKGROUND (#0B0F14), not a text colour. Using it
+     here painted "In an emergency, call 112" near-black on the near-black
+     card — the single most important line in the notice, invisible.
+     --warn is the same red as the border and clears AA on this surface. */
+  .safety .em { font-weight: 600; color: var(--warn); }
+  .safety a { color: inherit; }
   .not-alert { margin-top: 20px; border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; background: var(--panel, transparent); }
   .not-alert h3 { font-size: var(--fs-base); margin: 0 0 10px; letter-spacing: 0.01em; }
   .not-alert ul { margin: 0; padding-left: 20px; }
@@ -546,6 +557,15 @@
       <div class="rt-row"><span class="k">Alates</span><span class="v" id="rt-since">—</span></div>
       <div class="rt-row"><span class="k">Parandused</span><span class="v" id="rt-corrections">—</span></div>
     </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="safety">
+    <h2>See ei ole hädaabiteenus</h2>
+    <p><span class="em">Hädaolukorras helista 112.</span> Ametlikud hoiatused tulevad sinu riigi ametiasutustelt — Eestis <a href="https://www.kriis.ee/en" target="_blank" rel="noopener">kriis.ee</a>, Lätis <a href="https://www.vugd.gov.lv" target="_blank" rel="noopener">vugd.gov.lv</a>, Leedus <a href="https://lt72.lt" target="_blank" rel="noopener">lt72.lt</a>. See sait ei ole üks neist ega räägi ühegi valitsuse nimel.</p>
+    <p>See on automaatne monitor. See võib eksida ja on eksinud — iga avaldatud viga on loetletud <a href="#corrections-log">parandustes</a>. See võib ka vaikida, kui midagi toimub, sest skaneerimine võib ebaõnnestuda või hilineda. <span class="em">Vaikus siin ei tähenda, et kõik on korras.</span></p>
+    <p>Pakutakse sellisena, nagu see on, ilma täpsuse, täielikkuse või kättesaadavuse garantiita. Kasuta seda ühe allikana mitmest, mitte kunagi ainsana.</p>
   </div>
 </div>
 

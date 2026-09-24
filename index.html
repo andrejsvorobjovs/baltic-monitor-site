@@ -261,6 +261,17 @@
      who want it, not a headline. */
   /* Resilience note under the tier table. */
   .resil { margin-top: 14px; font-size: var(--fs-base); line-height: 1.6; opacity: 0.8; }
+  .safety { border: 1px solid var(--warn); border-left-width: 3px; border-radius: 4px;
+            padding: 16px 20px; margin: 0 0 6px; background: var(--card, transparent); }
+  .safety h2 { font-size: var(--fs-base); margin: 0 0 8px; letter-spacing: 0.01em; }
+  .safety p { margin: 0 0 8px; font-size: var(--fs-md); line-height: 1.6; color: var(--ink-text); }
+  .safety p:last-child { margin-bottom: 0; }
+  /* --ink is the page BACKGROUND (#0B0F14), not a text colour. Using it
+     here painted "In an emergency, call 112" near-black on the near-black
+     card — the single most important line in the notice, invisible.
+     --warn is the same red as the border and clears AA on this surface. */
+  .safety .em { font-weight: 600; color: var(--warn); }
+  .safety a { color: inherit; }
   .not-alert { margin-top: 20px; border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; background: var(--panel, transparent); }
   .not-alert h3 { font-size: var(--fs-base); margin: 0 0 10px; letter-spacing: 0.01em; }
   .not-alert ul { margin: 0; padding-left: 20px; }
@@ -576,6 +587,15 @@
       <div class="rt-row"><span class="k">Since</span><span class="v" id="rt-since">—</span></div>
       <div class="rt-row"><span class="k">Corrections</span><span class="v" id="rt-corrections">—</span></div>
     </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="safety">
+    <h2>This is not an emergency service</h2>
+    <p><span class="em">In an emergency, call 112.</span> Official warnings come from your national authorities — Estonia <a href="https://www.kriis.ee/en" target="_blank" rel="noopener">kriis.ee</a>, Latvia <a href="https://www.vugd.gov.lv" target="_blank" rel="noopener">vugd.gov.lv</a>, Lithuania <a href="https://lt72.lt" target="_blank" rel="noopener">lt72.lt</a>. This site is not one of them and speaks for no government.</p>
+    <p>This is an automated monitor. It can be wrong, and it has been — every mistake it has published is listed in <a href="#corrections-log">corrections</a>. It can also be quiet while something is happening, because a scan can fail or be delayed. <span class="em">Silence here is not an all-clear.</span></p>
+    <p>Provided as is, with no warranty of accuracy, completeness or availability. Use it as one input among several, never as your only one.</p>
   </div>
 </div>
 

@@ -231,6 +231,17 @@
      who want it, not a headline. */
   /* Resilience note under the tier table. */
   .resil { margin-top: 14px; font-size: var(--fs-base); line-height: 1.6; opacity: 0.8; }
+  .safety { border: 1px solid var(--warn); border-left-width: 3px; border-radius: 4px;
+            padding: 16px 20px; margin: 0 0 6px; background: var(--card, transparent); }
+  .safety h2 { font-size: var(--fs-base); margin: 0 0 8px; letter-spacing: 0.01em; }
+  .safety p { margin: 0 0 8px; font-size: var(--fs-md); line-height: 1.6; color: var(--ink-text); }
+  .safety p:last-child { margin-bottom: 0; }
+  /* --ink is the page BACKGROUND (#0B0F14), not a text colour. Using it
+     here painted "In an emergency, call 112" near-black on the near-black
+     card — the single most important line in the notice, invisible.
+     --warn is the same red as the border and clears AA on this surface. */
+  .safety .em { font-weight: 600; color: var(--warn); }
+  .safety a { color: inherit; }
   .not-alert { margin-top: 20px; border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; background: var(--panel, transparent); }
   .not-alert h3 { font-size: var(--fs-base); margin: 0 0 10px; letter-spacing: 0.01em; }
   .not-alert ul { margin: 0; padding-left: 20px; }
@@ -546,6 +557,15 @@
       <div class="rt-row"><span class="k">Kopš</span><span class="v" id="rt-since">—</span></div>
       <div class="rt-row"><span class="k">Labojumi</span><span class="v" id="rt-corrections">—</span></div>
     </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="safety">
+    <h2>Šis nav ārkārtas dienests</h2>
+    <p><span class="em">Ārkārtas situācijā zvani 112.</span> Oficiālie brīdinājumi nāk no tavas valsts iestādēm — Igaunijā <a href="https://www.kriis.ee/en" target="_blank" rel="noopener">kriis.ee</a>, Latvijā <a href="https://www.vugd.gov.lv" target="_blank" rel="noopener">vugd.gov.lv</a>, Lietuvā <a href="https://lt72.lt" target="_blank" rel="noopener">lt72.lt</a>. Šī vietne nav viena no tām un nerunā nevienas valdības vārdā.</p>
+    <p>Šis ir automatizēts monitors. Tas var kļūdīties, un ir kļūdījies — katra publicētā kļūda ir uzskaitīta <a href="#corrections-log">labojumos</a>. Tas var arī klusēt, kamēr kaut kas notiek, jo skenēšana var neizdoties vai aizkavēties. <span class="em">Klusums šeit nenozīmē, ka viss ir kārtībā.</span></p>
+    <p>Sniegts tāds, kāds tas ir, bez garantijas par precizitāti, pilnīgumu vai pieejamību. Izmanto to kā vienu no vairākiem avotiem, nekad kā vienīgo.</p>
   </div>
 </div>
 
