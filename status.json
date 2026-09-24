@@ -1,20 +1,109 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-24T12:51:02.475055+00:00",
+  "last_run_utc": "2026-09-24T17:59:49.261078+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 4.3h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 458,
+  "total_scans": 459,
   "quiet_count": 292,
-  "watch_count": 153,
+  "watch_count": 154,
   "warn_count": 13,
   "correction_count": 4,
-  "generated_at": "2026-09-24 17:08 UTC",
+  "generated_at": "2026-09-24 17:59 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-24T17:59:49.290174+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 516,
+      "stale_count": 0,
+      "alert_id": "0924-1759",
+      "items": [
+        {
+          "title": "Europeans warn of rising Russian sabotage but see no imminent NATO attack - Reuters",
+          "source": "Reuters (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMmhIM0ttNVlBZkxnZUxrVmRWaGI3ZHFTVVQwM3YtLTBsMExneTBCQXlnZXFoXzFRYnpRYmdCOUVxaWtzTmNiRUFsbXBBdWRzY3ZEdl9WWldfUHdmanRyYjRNNHVGRDMwaTZ4T2FKTHdiTi00b0dIVDNVNm5yOFQ0WFVRcFZnazBfWE1faW9hN3NGNVZ2OFphUTFvcVczVVQ1UWJrdHRZRjNfMFQ0anllMVEzSlVBR1BGWGkyME01TDRxa2JTWk1yaQ?oc=5",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "NATO paj\u0117g\u0173 Europoje vyriausiasis vadas: \u0161iandien mes visi esame rytinis flangas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/uzsienyje/nato-pajegu-europoje-vyriausiasis-vadas-siandien-mes-visi-esame-rytinis-flangas-120309685",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u201eArtVilnius\u201926\u201c Projekt\u0173 zonoje \u2013 menas i\u0161 trij\u0173 sostini\u0173, provokacijos ir svajoni\u0173 miestai",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/kultura/naujienos/artvilnius-26-projektu-zonoje-menas-is-triju-sostiniu-provokacijos-ir-svajoniu-miestai-120309649",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Dronu un citu apdraud\u0113jumu gad\u012bjum\u0101 energoapg\u0101des darbiniekiem noteiks \u012bpa\u0161u darba k\u0101rt\u012bbu",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/bizness/730237-dronu-un-citu-apdraudejumu-gadijuma-energoapgades-darbiniekiem-noteiks-ipasu-darba-kartibu",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Taani luure hoiatab: Venemaa v\u00f5ib l\u00e4hikuudel NATOt testida",
+          "source": "Aripaev (Estonia)",
+          "link": "https://www.aripaev.ee/uudised/2026/09/24/taani-luure-hoiatab-venemaa-voib-lahikuudel-natot-testida",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-24T12:51:02.493434+00:00",
       "level": "WATCH",
@@ -1362,39 +1451,88 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-21T18:48:04.516366+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 441,
-      "stale_count": 0,
-      "alert_id": "0921-1848",
-      "items": [
-        {
-          "title": "Documents from Russia\u2019s state nuclear corporation show plans to\u00a0expand output of\u00a0carbon fiber used in\u00a0Geran-2 attack drones",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/feature/2026/09/21/documents-from-russia-s-state-nuclear-corporation-show-plans-to-expand-output-of-carbon-fiber-used-in-geran-2-attack-drones",
-          "categories": [
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-24T17:59:49.307497+00:00",
+      "level": "WATCH",
+      "title": "Taani luure hoiatab: Venemaa v\u00f5ib l\u00e4hikuudel NATOt testida",
+      "source": "Aripaev (Estonia)",
+      "link": "https://www.aripaev.ee/uudised/2026/09/24/taani-luure-hoiatab-venemaa-voib-lahikuudel-natot-testida",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-24T17:59:49.307497+00:00",
+      "level": "WATCH",
+      "title": "Dronu un citu apdraud\u0113jumu gad\u012bjum\u0101 energoapg\u0101des darbiniekiem noteiks \u012bpa\u0161u darba k\u0101rt\u012bbu",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/bizness/730237-dronu-un-citu-apdraudejumu-gadijuma-energoapgades-darbiniekiem-noteiks-ipasu-darba-kartibu",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-24T17:59:49.307497+00:00",
+      "level": "WATCH",
+      "title": "\u201eArtVilnius\u201926\u201c Projekt\u0173 zonoje \u2013 menas i\u0161 trij\u0173 sostini\u0173, provokacijos ir svajoni\u0173 miestai",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/kultura/naujienos/artvilnius-26-projektu-zonoje-menas-is-triju-sostiniu-provokacijos-ir-svajoniu-miestai-120309649",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-24T17:59:49.307497+00:00",
+      "level": "WATCH",
+      "title": "NATO paj\u0117g\u0173 Europoje vyriausiasis vadas: \u0161iandien mes visi esame rytinis flangas",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/uzsienyje/nato-pajegu-europoje-vyriausiasis-vadas-siandien-mes-visi-esame-rytinis-flangas-120309685",
+      "categories": [
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-24T17:59:49.307497+00:00",
+      "level": "WATCH",
+      "title": "Europeans warn of rising Russian sabotage but see no imminent NATO attack - Reuters",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMmhIM0ttNVlBZkxnZUxrVmRWaGI3ZHFTVVQwM3YtLTBsMExneTBCQXlnZXFoXzFRYnpRYmdCOUVxaWtzTmNiRUFsbXBBdWRzY3ZEdl9WWldfUHdmanRyYjRNNHVGRDMwaTZ4T2FKTHdiTi00b0dIVDNVNm5yOFQ0WFVRcFZnazBfWE1faW9hN3NGNVZ2OFphUTFvcVczVVQ1UWJrdHRZRjNfMFQ0anllMVEzSlVBR1BGWGkyME01TDRxa2JTWk1yaQ?oc=5",
+      "categories": [
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-24T12:51:02.506204+00:00",
       "level": "WATCH",
@@ -1549,85 +1687,6 @@
       "categories": [
         "baltic_specific",
         "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T17:59:22.828304+00:00",
-      "level": "WATCH",
-      "title": "Krievijas milit\u0101rais helikopters ielidojis Polij\u0101 \u2013 valsts pace\u013c izn\u012bcin\u0101t\u0101jus",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/krievijas-militarais-helikopters-ielidojis-polija-valsts-pacel-iznicinatajus",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T17:59:22.828304+00:00",
-      "level": "WATCH",
-      "title": "Latvie\u0161u zemessargs ir nopietni noba\u017e\u012bjies par valsts gatav\u012bbu izmantot dronus",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/driz-ari-to-var-nebut-latviesu-zemessargs-ir-nopietni-nobazijies-par-valsts-gatavibu-izmantot-dronus",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T17:59:22.828304+00:00",
-      "level": "WATCH",
-      "title": "Slovakia: PM Robert Fico's NATO Article 5 remarks spark criticism and raise questions about his country's NATO commitment",
-      "source": "DW Europe",
-      "link": "https://www.dw.com/en/slovakia-pm-robert-fico-s-nato-article-5-remarks-spark-criticism-and-raise-questions-about-his-country-s-nato-commitment/a-79387050?maca=en-rss-en-eu-2092-rdf",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T17:59:22.828304+00:00",
-      "level": "WATCH",
-      "title": "\u0421\u043e\u0432\u0435\u0442 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u041e\u041e\u041d \u0437\u0430\u0441\u0442\u0440\u044f\u043b \u0432 1945 \u0433\u043e\u0434\u0443 \u2014 \u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442 \u041b\u0430\u0442\u0432\u0438\u0438",
-      "source": "LSM Russian-language",
-      "link": "https://rus.lsm.lv/statja/novosti/mir/23.09.2026-sovet-bezopasnosti-oon-zastryal-v-1945-godu-prezident-latvii.a664504/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T17:59:22.828304+00:00",
-      "level": "WATCH",
-      "title": "Niujorke vie\u0161intis K\u0119stutis Budrys: Rusija sistemingai testuoja NATO budrum\u0105 ir pasirengim\u0105 reaguoti",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/niujorke-viesintis-kestutis-budrys-rusija-sistemingai-testuoja-nato-budruma-ir-pasirengima-reaguoti-56-2770248?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1816,14 +1875,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 209,
-    "alerting_scans": 131,
-    "held_back_total": 45,
+    "scans": 210,
+    "alerting_scans": 132,
+    "held_back_total": 46,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 28
+        "count": 29
       },
       {
         "reason": "already alerted",
