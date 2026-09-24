@@ -1,20 +1,185 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-24T06:14:14.796421+00:00",
+  "last_run_utc": "2026-09-24T12:51:02.475055+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 456,
+  "total_scans": 458,
   "quiet_count": 292,
-  "watch_count": 151,
+  "watch_count": 153,
   "warn_count": 13,
   "correction_count": 4,
-  "generated_at": "2026-09-24 06:14 UTC",
+  "generated_at": "2026-09-24 12:51 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-24T12:51:02.493434+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 531,
+      "stale_count": 2,
+      "alert_id": "0924-1251",
+      "items": [
+        {
+          "title": "Paklaidinti l\u0117ktuvai, automobiliai ir laivai: GPS trikd\u017eiai fiksuojami kone kasdien",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/saugu/naujienos/paklaidinti-lektuvai-automobiliai-ir-laivai-gps-trikdziai-fiksuojami-kone-kasdien-120308890",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Taani luure: Venemaa sissetung NATO riiki on \u00e4\u00e4rmiselt ebat\u00f5en\u00e4oline",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8552162",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0414\u0430\u0442\u0441\u043a\u0430\u044f \u0440\u0430\u0437\u0432\u0435\u0434\u043a\u0430 \u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0434\u0438\u043b\u0430 \u043e \u00ab\u043d\u0438\u0437\u043a\u043e\u043c, \u043d\u043e \u0440\u0430\u0441\u0442\u0443\u0449\u0435\u043c\u00bb \u0440\u0438\u0441\u043a\u0435 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u0430\u0442\u0430\u043a\u0438 \u0420\u043e\u0441\u0441\u0438\u0438 \u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0443 \u041d\u0410\u0422\u041e \u0432 \u0431\u043b\u0438\u0436\u0430\u0439\u0448\u0438\u0435 \u043c\u0435\u0441\u044f\u0446\u044b",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/24/datskaia-razvedka-predupredila-o-nizkom-no-rastushchem-riske-ogranichennoi-ataki-rossii-na-stranu-nato-v-blizhaishie-mesiatsy-news",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0417\u0435\u043b\u0435\u043d\u0441\u043a\u0438\u0439 \u043f\u0440\u0438\u0437\u0432\u0430\u043b \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u041f\u0443\u0442\u0438\u043d\u0430, \u0422\u0440\u0430\u043c\u043f \u043f\u0440\u0438\u0433\u0440\u043e\u0437\u0438\u043b \u041c\u043e\u0441\u043a\u0432\u0435 \u00ab\u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0413\u0440\u044d\u043c\u0430\u00bb, \u041b\u0430\u0432\u0440\u043e\u0432 \u0438\u0441\u043a\u043b\u044e\u0447\u0438\u043b \u043f\u0430\u0443\u0437\u0443 \u0432 \u0431\u043e\u044f\u0445",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/24/zelenskii-prizval-ostanovit-putina-tramp-prigrozil-moskve-zakonom-grema-lavrov-iskliuchil-pauzu-v-boiakh",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Gamybai \u2013 skaitmeninis skydas: \u201eMantinga\u201c pasirinko \u201eTelia\u201c SOC paslaug\u0105",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/telia-technologijos-augimui/2026/09/24/gamybai-skaitmeninis-skydas-mantinga-pasirinko-telia-soc-paslauga-590506",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-24T07:48:00.308218+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 216,
+      "stale_count": 0,
+      "alert_id": "0924-0748",
+      "items": [
+        {
+          "title": "Tarmo Miilits: Russia shows no intent to attack a NATO country right now",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610145748/tarmo-miilits-russia-shows-no-intent-to-attack-a-nato-country-right-now",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041c\u0438\u0445\u0430\u043b: \u0443 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043d\u0435\u0442 \u043f\u043b\u0430\u043d\u043e\u0432 \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u0442\u044c \u043c\u043e\u0431\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u044e \u0434\u043b\u044f \u043d\u0430\u043f\u0430\u0434\u0435\u043d\u0438\u044f \u043d\u0430 \u0420\u043e\u0441\u0441\u0438\u044e",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610146585/mihal-u-jestonii-net-planov-provodit-mobilizaciju-dlja-napadenija-na-rossiju",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0421\u0442\u0440\u0430\u043d\u044b \u0411\u0430\u043b\u0442\u0438\u0438 \u043f\u0440\u043e\u0441\u044f\u0442 \u0443 \u0415\u0421 \u043f\u043e\u043b\u043c\u0438\u043b\u043b\u0438\u0430\u0440\u0434\u0430 \u0435\u0432\u0440\u043e \u043d\u0430 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0435 \u0437\u0430\u0449\u0438\u0442\u044b \u043e\u0442 \u0434\u0440\u043e\u043d\u043e\u0432",
+          "source": "LSM Russian-language",
+          "link": "https://rus.lsm.lv/statja/novosti/obschestvo/24.09.2026-strany-baltii-prosyat-u-es-polmilliarda-evro-na-razvitie-zashhity-ot-dronov.a664562/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0426\u0420\u0423 \u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0434\u0438\u043b\u043e \u0418\u0442\u0430\u043b\u0438\u044e, \u0418\u0441\u043f\u0430\u043d\u0438\u044e \u0438 \u0424\u0440\u0430\u043d\u0446\u0438\u044e \u043e \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u044b\u0445 \u0430\u0442\u0430\u043a\u0430\u0445 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0445 \u0431\u0435\u0441\u043f\u0438\u043b\u043e\u0442\u043d\u0438\u043a\u043e\u0432 \u2014\u00a0El Mundo",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/24/tsru-predupredilo-italiiu-ispaniiu-i-frantsiiu-o-vozmozhnykh-atakakh-rossiiskikh-bespilotnikov-el-mundo-news",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-24T06:14:14.827905+00:00",
       "level": "WATCH",
@@ -1227,67 +1392,90 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-21T14:09:31.050065+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 1,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 176,
-      "stale_count": 4,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-09-21T13:17:21.300649+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 490,
-      "stale_count": 0,
-      "alert_id": "0921-1317",
-      "items": [
-        {
-          "title": "BNN IN FOCS| Political party review: National Alliance \u2013 from a \u201ccore electorate\u201d to a fight for its own niche",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/bnn-in-focs-political-party-review-national-alliance-from-a-core-electorate-to-a-fight-for-its-own-niche-283968",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Krievija pavisam dr\u012bz var iebrukt k\u0101d\u0101 NATO valst\u012b, Kasparovs nosauc iesp\u0113jamo termi\u0146u",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/729682-krievija-pavisam-driz-var-iebrukt-kada-nato-valsti-kasparovs-nosauc-iespejamo-terminu",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-24T12:51:02.506204+00:00",
+      "level": "WATCH",
+      "title": "Gamybai \u2013 skaitmeninis skydas: \u201eMantinga\u201c pasirinko \u201eTelia\u201c SOC paslaug\u0105",
+      "source": "Verslo zinios (Lithuania)",
+      "link": "https://www.vz.lt/telia-technologijos-augimui/2026/09/24/gamybai-skaitmeninis-skydas-mantinga-pasirinko-telia-soc-paslauga-590506",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-24T12:51:02.506204+00:00",
+      "level": "WATCH",
+      "title": "\u0417\u0435\u043b\u0435\u043d\u0441\u043a\u0438\u0439 \u043f\u0440\u0438\u0437\u0432\u0430\u043b \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u041f\u0443\u0442\u0438\u043d\u0430, \u0422\u0440\u0430\u043c\u043f \u043f\u0440\u0438\u0433\u0440\u043e\u0437\u0438\u043b \u041c\u043e\u0441\u043a\u0432\u0435 \u00ab\u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0413\u0440\u044d\u043c\u0430\u00bb, \u041b\u0430\u0432\u0440\u043e\u0432 \u0438\u0441\u043a\u043b\u044e\u0447\u0438\u043b \u043f\u0430\u0443\u0437\u0443 \u0432 \u0431\u043e\u044f\u0445",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/09/24/zelenskii-prizval-ostanovit-putina-tramp-prigrozil-moskve-zakonom-grema-lavrov-iskliuchil-pauzu-v-boiakh",
+      "categories": [
+        "troop_movement",
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-24T12:51:02.506204+00:00",
+      "level": "WATCH",
+      "title": "\u0414\u0430\u0442\u0441\u043a\u0430\u044f \u0440\u0430\u0437\u0432\u0435\u0434\u043a\u0430 \u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0434\u0438\u043b\u0430 \u043e \u00ab\u043d\u0438\u0437\u043a\u043e\u043c, \u043d\u043e \u0440\u0430\u0441\u0442\u0443\u0449\u0435\u043c\u00bb \u0440\u0438\u0441\u043a\u0435 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u0430\u0442\u0430\u043a\u0438 \u0420\u043e\u0441\u0441\u0438\u0438 \u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0443 \u041d\u0410\u0422\u041e \u0432 \u0431\u043b\u0438\u0436\u0430\u0439\u0448\u0438\u0435 \u043c\u0435\u0441\u044f\u0446\u044b",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/09/24/datskaia-razvedka-predupredila-o-nizkom-no-rastushchem-riske-ogranichennoi-ataki-rossii-na-stranu-nato-v-blizhaishie-mesiatsy-news",
+      "categories": [
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-24T12:51:02.506204+00:00",
+      "level": "WATCH",
+      "title": "Taani luure: Venemaa sissetung NATO riiki on \u00e4\u00e4rmiselt ebat\u00f5en\u00e4oline",
+      "source": "Postimees Estonian-language",
+      "link": "https://pmo.ee/8552162",
+      "categories": [
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-24T12:51:02.506204+00:00",
+      "level": "WATCH",
+      "title": "Paklaidinti l\u0117ktuvai, automobiliai ir laivai: GPS trikd\u017eiai fiksuojami kone kasdien",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/saugu/naujienos/paklaidinti-lektuvai-automobiliai-ir-laivai-gps-trikdziai-fiksuojami-kone-kasdien-120308890",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-24T06:14:14.834210+00:00",
       "level": "WATCH",
@@ -1440,86 +1628,6 @@
       "categories": [
         "baltic_specific",
         "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T17:59:22.828304+00:00",
-      "level": "WATCH",
-      "title": "Baltimaade kaitsev\u00e4ed suhtuvad kodumaistesse droonidesse pigem jahedalt",
-      "source": "ERR Eesti (Estonian-language)",
-      "link": "https://www.err.ee/1610146186/baltimaade-kaitsevaed-suhtuvad-kodumaistesse-droonidesse-pigem-jahedalt",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T12:52:46.721554+00:00",
-      "level": "WATCH",
-      "title": "Tartu taevasse v\u00f5ib tekkida Euroopa esimene reguleeritud drooniliiklus. \"See annab linnale v\u00e4ga suure eelise\"",
-      "source": "Aripaev (Estonia)",
-      "link": "https://www.aripaev.ee/saated/2026/09/23/tartu-taevasse-voib-tekkida-euroopa-esimene-reguleeritud-drooniliiklus-see-annab-linnale-vaga-suure-eelise",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T12:52:46.721554+00:00",
-      "level": "WATCH",
-      "title": "M. Katelynas apie Vilniuje vyksian\u010dius protestus d\u0117l migracijos: svarbu, kad jie nepavirst\u0173 riau\u0161\u0117mis",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/23/news/m-katelynas-apie-vilniuje-vyksiancius-protestus-del-migracijos-svarbu-kad-jie-nepavirstu-riausemis-44122791/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T12:52:46.721554+00:00",
-      "level": "WATCH",
-      "title": "\"Wolfram Europa\" paraksta sapra\u0161an\u0101s memorandus par autonomo sist\u0113mu kaujas galvi\u0146u ra\u017eo\u0161anu Latvij\u0101",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8551403",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-23T12:52:46.721554+00:00",
-      "level": "WATCH",
-      "title": "Estonian police detain 46 migrants in one week",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/estonian-police-detain-46-migrants-in-one-week-284047",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1709,7 +1817,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 210,
-    "alerting_scans": 129,
+    "alerting_scans": 131,
     "held_back_total": 45,
     "held_back_by_reason": [
       {
@@ -1733,6 +1841,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 75
+    "scans_before_tracking": 73
   }
 }
