@@ -3233,6 +3233,20 @@
       "count": 4,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-09-25T12:08:58.548411+00:00",
+      "level": "WATCH",
+      "count": 6,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-25T12:52:58.511440+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -4365,6 +4379,10 @@
     {
       "ts": "2026-09-25T06:13:37.662867+00:00",
       "count": 337
+    },
+    {
+      "ts": "2026-09-25T12:52:18.082409+00:00",
+      "count": 307
     }
   ],
   "military_points": [
@@ -5303,6 +5321,10 @@
     {
       "ts": "2026-09-25T06:13:38.143917+00:00",
       "count": 4
+    },
+    {
+      "ts": "2026-09-25T12:52:18.799406+00:00",
+      "count": 7
     }
   ],
   "firms_points": [
@@ -5969,6 +5991,10 @@
     {
       "ts": "2026-09-25T06:13:40.743670+00:00",
       "count": 6
+    },
+    {
+      "ts": "2026-09-25T12:52:21.999726+00:00",
+      "count": 6
     }
   ],
   "entsoe_points": [
@@ -6566,6 +6592,10 @@
     },
     {
       "ts": "2026-09-25T06:13:44.034890+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-25T12:52:26.463940+00:00",
       "count": 0
     }
   ],
@@ -9699,6 +9729,37 @@
           {
             "signal": "military",
             "pct": 31,
+            "direction": "above"
+          },
+          {
+            "signal": "firms",
+            "pct": 76,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "ais"
+        ]
+      },
+      "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-25T12:52:26.465325+00:00",
+      "deviation_pct": 9.269300048758033,
+      "sources_included": 4,
+      "narrative": "GPS jamming 18% below baseline; military aircraft 130% above baseline; thermal hotspots 76% below baseline; AIS vessel activity steady.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "gpsjam",
+            "pct": 18,
+            "direction": "below"
+          },
+          {
+            "signal": "military",
+            "pct": 130,
             "direction": "above"
           },
           {
