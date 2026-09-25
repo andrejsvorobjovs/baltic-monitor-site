@@ -1,20 +1,124 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-24T22:22:08.628024+00:00",
+  "last_run_utc": "2026-09-25T06:14:17.223496+00:00",
   "last_level": "WARN",
-  "freshness_msg": "Last scan: 6.5h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 460,
+  "total_scans": 462,
   "quiet_count": 292,
-  "watch_count": 154,
-  "warn_count": 14,
+  "watch_count": 155,
+  "warn_count": 15,
   "correction_count": 4,
-  "generated_at": "2026-09-25 04:54 UTC",
+  "generated_at": "2026-09-25 06:14 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-25T06:14:17.255826+00:00",
+      "level": "WARN",
+      "count": 4,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 285,
+      "stale_count": 8,
+      "alert_id": "0925-0614",
+      "items": [
+        {
+          "title": "Finnair adapts pilot training for daily GPS interference in Baltic - Reuters",
+          "source": "Reuters (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSmw2RkpnbVBGYUlaVnQ2OU1OSmZqczc3U0kzd0dfNnZEbVktYUwzZHBwTGJIZ2xUazFreXZscHMyQXItQXVqczQyS1ZCTGJmSmhBU2FvUENJMTB3ZmNOalQ4RnJ6bUNxQ2JDX3RSM05NZHY1OGMyMW9XSkNnbld3dV94NmQ2Zy1pTVdPWDMxLWhDUjl5ajhwSHVrRUR0c3RLWHhZaUlaVjM3TXF6ME9mZzMwZVlVZXpBMWF2alJQRQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Budrys in New York: Russia systematically tests NATO's alertness and readiness to respond - U\u017esienio reikal\u0173 ministerija",
+          "source": "Lithuanian Ministry of Foreign Affairs (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMVI0UXh2VUJQaG5pandJNGVNRy05QTlhN2VxSlg5TEU5TWVzaUpMRXZoNVVIX1JNYkJEbV93bmlueE5zSEtiaGNkTDhRd3BMeTdnWm0wVWpGQTNqTmlXdnlCWkRXdFNPSGhaZEtJOFFTRUN3VTM1VzYtcFRIaUluOWlvcEdzS3pOS2VaWW9KR0tDX0dhZzJvcmZCUVh0RG9QQzR0R2JrM3REU3B4UGc5RXkwd1YwM09hc1BsRHJjNlVtdw?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Tiesiogiai: pristatomos did\u017eiausios nacionalin\u0117s mobilizacijos pratybos \u201eVy\u010dio skliautas 2026\u201c",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/tv/aktualijos/tiesiogiai-pristatomos-didziausios-nacionalines-mobilizacijos-pratybos-vycio-skliautas-2026-120309786",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Stepa\u0146enko\u2019s father added to Latvia\u2019s list of undesirable persons",
+          "source": "BNN Baltic News Network",
+          "link": "https://bnn-news.com/stepanenkos-father-added-to-latvias-list-of-undesirable-persons-284135",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-25T05:18:49.395326+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 211,
+      "stale_count": 0,
+      "alert_id": "0925-0518",
+      "items": [
+        {
+          "title": "Prasideda did\u017eiausios mobilizacijos sistemos patikrinimo pratybos \u201eVy\u010dio skliautas\u201c",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/prasideda-didziausios-mobilizacijos-sistemos-patikrinimo-pratybos-vycio-skliautas-56-2771202?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-24T22:22:08.665335+00:00",
       "level": "WARN",
@@ -1360,99 +1464,72 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-22T06:12:36.551237+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 182,
-      "stale_count": 1,
-      "alert_id": "0922-0612",
-      "items": [
-        {
-          "title": "Denmark plans to deploy conscripts on NATO mission in Latvia",
-          "source": "GDELT Cloud (gdeltcloud.com)",
-          "link": "https://gdeltcloud.com/events/denmark-plans-to-deploy-conscripts-on-nato-mission-in-latvia--cameoplus_195a9b41a9457649",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "POLITICAL",
-          "gdelt_subcategory": "154",
-          "gdelt_event_code": "154",
-          "goldstein": -7.2,
-          "route": "gdelt"
-        },
-        {
-          "title": "Aizsardz\u012bbas ministrs Melnis: Latvij\u0101 nav tie\u0161u milit\u0101ra iebrukuma draudu",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/22.09.2026-aizsardzibas-ministrs-melnis-latvija-nav-tiesu-militara-iebrukuma-draudu.a664203/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-22T05:19:50.587827+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 233,
-      "stale_count": 0,
-      "alert_id": "0922-0519",
-      "items": [
-        {
-          "title": "Nemier\u012bga nakts Baltijas gaisa telp\u0101: Vi\u013c\u0146\u0101 aptur lidojumus, Latgal\u0113 aktiviz\u0113 NATO izn\u012bcin\u0101t\u0101jus",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/nemieriga-nakts-baltijas-gaisa-telpa-vilna-aptur-lidojumus-latgale-aktivize-nato-iznicinatajus",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Nakt\u012f vir\u0161 Vilniaus oro uosto buvo \u012fvesti oro erdv\u0117s ribojimai, paveikta 17 skryd\u017ei\u0173",
-          "source": "Verslo zinios (Lithuania)",
-          "link": "https://www.vz.lt/logistika-ir-transportas/2026/09/22/nakti-virs-vilniaus-oro-uosto-buvo-ivesti-oro-erdves-ribojimai-paveikta-apie-20-skrydziu-590360",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-25T06:14:17.264875+00:00",
+      "level": "WARN",
+      "title": "Stepa\u0146enko\u2019s father added to Latvia\u2019s list of undesirable persons",
+      "source": "BNN Baltic News Network",
+      "link": "https://bnn-news.com/stepanenkos-father-added-to-latvias-list-of-undesirable-persons-284135",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-25T06:14:17.264875+00:00",
+      "level": "WARN",
+      "title": "Tiesiogiai: pristatomos did\u017eiausios nacionalin\u0117s mobilizacijos pratybos \u201eVy\u010dio skliautas 2026\u201c",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/tv/aktualijos/tiesiogiai-pristatomos-didziausios-nacionalines-mobilizacijos-pratybos-vycio-skliautas-2026-120309786",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-25T06:14:17.264875+00:00",
+      "level": "WARN",
+      "title": "Budrys in New York: Russia systematically tests NATO's alertness and readiness to respond - U\u017esienio reikal\u0173 ministerija",
+      "source": "Lithuanian Ministry of Foreign Affairs (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMVI0UXh2VUJQaG5pandJNGVNRy05QTlhN2VxSlg5TEU5TWVzaUpMRXZoNVVIX1JNYkJEbV93bmlueE5zSEtiaGNkTDhRd3BMeTdnWm0wVWpGQTNqTmlXdnlCWkRXdFNPSGhaZEtJOFFTRUN3VTM1VzYtcFRIaUluOWlvcEdzS3pOS2VaWW9KR0tDX0dhZzJvcmZCUVh0RG9QQzR0R2JrM3REU3B4UGc5RXkwd1YwM09hc1BsRHJjNlVtdw?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-25T06:14:17.264875+00:00",
+      "level": "WARN",
+      "title": "Finnair adapts pilot training for daily GPS interference in Baltic - Reuters",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSmw2RkpnbVBGYUlaVnQ2OU1OSmZqczc3U0kzd0dfNnZEbVktYUwzZHBwTGJIZ2xUazFreXZscHMyQXItQXVqczQyS1ZCTGJmSmhBU2FvUENJMTB3ZmNOalQ4RnJ6bUNxQ2JDX3RSM05NZHY1OGMyMW9XSkNnbld3dV94NmQ2Zy1pTVdPWDMxLWhDUjl5ajhwSHVrRUR0c3RLWHhZaUlaVjM3TXF6ME9mZzMwZVlVZXpBMWF2alJQRQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-24T22:22:08.672033+00:00",
       "level": "WARN",
@@ -1620,70 +1697,6 @@
       "categories": [
         "hybrid_incident",
         "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T12:51:02.506204+00:00",
-      "level": "WATCH",
-      "title": "Paklaidinti l\u0117ktuvai, automobiliai ir laivai: GPS trikd\u017eiai fiksuojami kone kasdien",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/saugu/naujienos/paklaidinti-lektuvai-automobiliai-ir-laivai-gps-trikdziai-fiksuojami-kone-kasdien-120308890",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T06:14:14.834210+00:00",
-      "level": "WATCH",
-      "title": "Drons pie Berl\u012bnas lidostas piln\u012bb\u0101 paraliz\u0113 lidojumu kust\u012bbu",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/drons-pie-berlinas-lidostas-pilniba-paralize-lidojumu-kustibu",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T06:14:14.834210+00:00",
-      "level": "WATCH",
-      "title": "\u0421\u0442\u0440\u0430\u043d\u044b \u0411\u0430\u043b\u0442\u0438\u0438 \u0437\u0430\u043f\u0440\u043e\u0441\u0438\u043b\u0438 \u0443 \u0415\u0421 500 \u043c\u043b\u043d \u0435\u0432\u0440\u043e \u043d\u0430 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0435 \u0437\u0430\u0449\u0438\u0442\u044b \u043e\u0442 \u0434\u0440\u043e\u043d\u043e\u0432",
-      "source": "ERR Russian-language",
-      "link": "https://rus.err.ee/1610146441/strany-baltii-zaprosili-u-es-500-mln-evro-na-razvitie-zawity-ot-dronov",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T06:14:14.834210+00:00",
-      "level": "WATCH",
-      "title": "Emor: 55% \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0439 \u0432 \u0422\u0430\u043b\u043b\u0438\u043d\u043d\u0435 \u0438 \u0425\u0430\u0440\u044c\u044e\u043c\u0430\u0430 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442 \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442 \u0440\u0430\u0431\u043e\u0442\u044b",
-      "source": "ERR Russian-language",
-      "link": "https://rus.err.ee/1610146474/emor-55-kompanij-v-tallinne-i-harjumaa-ispolzujut-gibridnyj-format-raboty",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1872,8 +1885,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 208,
-    "alerting_scans": 133,
+    "scans": 210,
+    "alerting_scans": 135,
     "held_back_total": 46,
     "held_back_by_reason": [
       {
