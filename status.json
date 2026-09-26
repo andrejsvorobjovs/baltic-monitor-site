@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-26T06:14:34.659773+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-09-26T12:21:04.944565+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 468,
+  "total_scans": 469,
   "quiet_count": 294,
-  "watch_count": 159,
+  "watch_count": 160,
   "warn_count": 15,
   "correction_count": 4,
-  "generated_at": "2026-09-26 06:14 UTC",
+  "generated_at": "2026-09-26 12:21 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-26T12:21:04.978888+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 385,
+      "stale_count": 1,
+      "alert_id": "0926-1221",
+      "items": [
+        {
+          "title": "Car Carrying Migrants Who Illegally Crossed the Border From Belarus Crashes in Latvia - reform.news",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaHUtZlBtWENCVWpRbDNiYlNEcENPS1I3R3JJRnZGb3lYa2FSNzc0bU1tWURlRTV6a3pSR01JR0xZRzVlQ1pKNjBncmgtY3lfaDAwRFgtNFFSZUVOX3hRNVprSXFNSmR1bjloN1Zyb1g1R054eVFSeEd1RE5kRThPdGxNMndFSXRYVjNRODZrS09EcUI4aGkxUTA2M0VsTGY3cFFpUktwcXd0eGV6SlHSAbMBQVVfeXFMUEdEVnp3LWxrZFdPLWpQNWVqTUVsV0ZvUE41YThtVkdDVkQ0bS11Y3BwRHI4X3FJODFFbEkyM3pMTWd5NldLbWtVcjNyZlY5aXZGeXVvajh3RlNiV3NvdndzUWV0Rk1tVVhGSEJoSGU4VGJOMzNVa3lkWkloOThHMWM1VU1zZlRMNFdNam5CVVVHZi0xLWVDODBRejJ4VnhmQnhKRGNyRWNwRVpzYXNkQW5nbmc?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "\u00abLepojos ar to, ko daru.\u00bb Stepa\u0146enko t\u0113vs par pal\u012bdz\u012bbu Krievijas armijai, meitai un riskiem k\u013c\u016bt par \u00abpersona non grata\u00bb",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/latvija/26.09.2026-lepojos-ar-to-ko-daru-stepanenko-tevs-par-palidzibu-krievijas-armijai-meitai-un-riskiem-klut-par-persona-non-grata.a664888/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-26T06:14:34.674876+00:00",
       "level": "QUIET",
@@ -1132,189 +1177,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-23T07:57:13.825032+00:00",
-      "level": "WARN",
-      "count": 11,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 254,
-      "stale_count": 0,
-      "alert_id": "0923-0757",
-      "items": [
-        {
-          "title": "Estonian MFA: Rumors of impending Russian attack blown out of proportion",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610145658/estonian-mfa-rumors-of-impending-russian-attack-blown-out-of-proportion",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Hacker detained in Latvia for at least two cyberattacks",
-          "source": "LSM (Latvia)",
-          "link": "https://eng.lsm.lv/article/society/crime/23.09.2026-hacker-detained-in-latvia-for-at-least-two-cyberattacks.a664394/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Aiztur\u0113ts hakeris par kiberuzbrukumiem mantk\u0101r\u012bg\u0101 nol\u016bk\u0101 vismaz diviem Latvijas uz\u0146\u0113mumiem",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/23.09.2026-aizturets-hakeris-par-kiberuzbrukumiem-mantkariga-noluka-vismaz-diviem-latvijas-uznemumiem.a664389/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "I\u0161 Latvijos premjero \u2013 pra\u0161ymas JAV pasiuntiniui Coale'ui",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/uzsienyje/is-latvijos-premjero-prasymas-jav-pasiuntiniui-coale-ui-120308683",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuva pasira\u0161\u0117 JT konvencij\u0105 d\u0117l kovos su kibernetiniais nusikaltimais",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/lietuva-pasirase-jt-konvencija-del-kovos-su-kibernetiniais-nusikaltimais-56-2769650?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0417\u0430\u0434\u0435\u0440\u0436\u0430\u043d \u0445\u0430\u043a\u0435\u0440 \u0437\u0430 \u043a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a\u0438 \u043a\u0430\u043a \u043c\u0438\u043d\u0438\u043c\u0443\u043c \u043d\u0430 \u0434\u0432\u0435 \u043b\u0430\u0442\u0432\u0438\u0439\u0441\u043a\u0438\u0435 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/proisshestvija/23.09.2026-zaderzan-xaker-za-kiberataki-kak-minimum-na-dve-latviiskie-kompanii.a664406/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Aiztur\u0113ts kiberuzbrukumu TSC veiku\u0161ais hakeris",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/latvija/zinas-71/aizturets-kiberuzbrukumu-_tsc_-veikusais-hakeris?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Aiztur\u0113ts hakeris par veiktiem kiberuzbrukumiem vismaz diviem Latvijas uz\u0146\u0113mumiem",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8551071",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuva pasira\u0161\u0117 JT konvencij\u0105 d\u0117l kovos su kibernetiniais nusikaltimais",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/it/ismanyk/2026/09/23/news/lietuva-pasirase-jt-konvencija-del-kovos-su-kibernetiniais-nusikaltimais-44114790/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "K. Budrys pasira\u0161\u0117 JT konvencij\u0105 d\u0117l kovos su kibernetiniais nusikaltimais",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/23/news/k-budrys-pasirase-jt-konvencija-del-kovos-su-kibernetiniais-nusikaltimais-44113825/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Policija aiztur\u0113jusi hakeri, kuru tur aizdom\u0101s par uzbrukumiem Latvijas uz\u0146\u0113mumiem un izspie\u0161anu",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/729945-policija-aizturejusi-hakeri-kuru-tur-aizdomas-par-uzbrukumiem-latvijas-uznemumiem-un-izspiesanu",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-26T12:21:04.989699+00:00",
+      "level": "WATCH",
+      "title": "\u00abLepojos ar to, ko daru.\u00bb Stepa\u0146enko t\u0113vs par pal\u012bdz\u012bbu Krievijas armijai, meitai un riskiem k\u013c\u016bt par \u00abpersona non grata\u00bb",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/latvija/26.09.2026-lepojos-ar-to-ko-daru-stepanenko-tevs-par-palidzibu-krievijas-armijai-meitai-un-riskiem-klut-par-persona-non-grata.a664888/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-26T12:21:04.989699+00:00",
+      "level": "WATCH",
+      "title": "Car Carrying Migrants Who Illegally Crossed the Border From Belarus Crashes in Latvia - reform.news",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaHUtZlBtWENCVWpRbDNiYlNEcENPS1I3R3JJRnZGb3lYa2FSNzc0bU1tWURlRTV6a3pSR01JR0xZRzVlQ1pKNjBncmgtY3lfaDAwRFgtNFFSZUVOX3hRNVprSXFNSmR1bjloN1Zyb1g1R054eVFSeEd1RE5kRThPdGxNMndFSXRYVjNRODZrS09EcUI4aGkxUTA2M0VsTGY3cFFpUktwcXd0eGV6SlHSAbMBQVVfeXFMUEdEVnp3LWxrZFdPLWpQNWVqTUVsV0ZvUE41YThtVkdDVkQ0bS11Y3BwRHI4X3FJODFFbEkyM3pMTWd5NldLbWtVcjNyZlY5aXZGeXVvajh3RlNiV3NvdndzUWV0Rk1tVVhGSEJoSGU4VGJOMzNVa3lkWkloOThHMWM1VU1zZlRMNFdNam5CVVVHZi0xLWVDODBRejJ4VnhmQnhKRGNyRWNwRVpzYXNkQW5nbmc?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-25T18:05:20.012769+00:00",
       "level": "WATCH",
@@ -1518,38 +1415,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T17:59:49.307497+00:00",
-      "level": "WATCH",
-      "title": "Europeans warn of rising Russian sabotage but see no imminent NATO attack - Reuters",
-      "source": "Reuters (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMmhIM0ttNVlBZkxnZUxrVmRWaGI3ZHFTVVQwM3YtLTBsMExneTBCQXlnZXFoXzFRYnpRYmdCOUVxaWtzTmNiRUFsbXBBdWRzY3ZEdl9WWldfUHdmanRyYjRNNHVGRDMwaTZ4T2FKTHdiTi00b0dIVDNVNm5yOFQ0WFVRcFZnazBfWE1faW9hN3NGNVZ2OFphUTFvcVczVVQ1UWJrdHRZRjNfMFQ0anllMVEzSlVBR1BGWGkyME01TDRxa2JTWk1yaQ?oc=5",
-      "categories": [
-        "hybrid_incident",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T12:51:02.506204+00:00",
-      "level": "WATCH",
-      "title": "Gamybai \u2013 skaitmeninis skydas: \u201eMantinga\u201c pasirinko \u201eTelia\u201c SOC paslaug\u0105",
-      "source": "Verslo zinios (Lithuania)",
-      "link": "https://www.vz.lt/telia-technologijos-augimui/2026/09/24/gamybai-skaitmeninis-skydas-mantinga-pasirinko-telia-soc-paslauga-590506",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1732,14 +1597,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 211,
-    "alerting_scans": 137,
-    "held_back_total": 51,
+    "scans": 212,
+    "alerting_scans": 138,
+    "held_back_total": 53,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 30
+        "count": 32
       },
       {
         "reason": "already alerted",
