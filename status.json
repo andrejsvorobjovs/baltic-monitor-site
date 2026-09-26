@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-26T12:21:04.944565+00:00",
+  "last_run_utc": "2026-09-26T13:22:09.364456+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 3.0h ago",
   "since": "2026-07-19",
-  "total_scans": 469,
+  "total_scans": 470,
   "quiet_count": 294,
-  "watch_count": 160,
+  "watch_count": 161,
   "warn_count": 15,
   "correction_count": 4,
-  "generated_at": "2026-09-26 12:21 UTC",
+  "generated_at": "2026-09-26 16:21 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-26T13:22:09.352275+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 79,
+      "stale_count": 0,
+      "alert_id": "0926-1322",
+      "items": [
+        {
+          "title": "Cyberattack gains access to University of Tartu library's online store customer data",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610149198/cyberattack-gains-access-to-university-of-tartu-library-s-online-store-customer-data",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-26T12:21:04.978888+00:00",
       "level": "WATCH",
@@ -1057,126 +1087,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-23T12:52:46.709781+00:00",
-      "level": "WATCH",
-      "count": 7,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 867,
-      "stale_count": 18,
-      "alert_id": "0923-1252",
-      "items": [
-        {
-          "title": "EDITORIAL \u27e9 Russia's shadow war is sowing anxiety in Europe",
-          "source": "Postimees (Estonia)",
-          "link": "https://pmo.ee/8551347",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Pasienie\u010di\u0173 nutupdytas dronas u\u017esideg\u0117, bet baltarusi\u0161kos cigaret\u0117s i\u0161liko",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/pasienieciu-nutupdytas-dronas-uzsidege-bet-baltarusiskos-cigaretes-isliko-59-2769948?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Hacker arrested over cyberattacks on at least two Latvian companies",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/hacker-arrested-over-cyberattacks-on-at-least-two-latvian-companies-284067",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Estonian police detain 46 migrants in one week",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/estonian-police-detain-46-migrants-in-one-week-284047",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\"Wolfram Europa\" paraksta sapra\u0161an\u0101s memorandus par autonomo sist\u0113mu kaujas galvi\u0146u ra\u017eo\u0161anu Latvij\u0101",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8551403",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "M. Katelynas apie Vilniuje vyksian\u010dius protestus d\u0117l migracijos: svarbu, kad jie nepavirst\u0173 riau\u0161\u0117mis",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/23/news/m-katelynas-apie-vilniuje-vyksiancius-protestus-del-migracijos-svarbu-kad-jie-nepavirstu-riausemis-44122791/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Tartu taevasse v\u00f5ib tekkida Euroopa esimene reguleeritud drooniliiklus. \"See annab linnale v\u00e4ga suure eelise\"",
-          "source": "Aripaev (Estonia)",
-          "link": "https://www.aripaev.ee/saated/2026/09/23/tartu-taevasse-voib-tekkida-euroopa-esimene-reguleeritud-drooniliiklus-see-annab-linnale-vaga-suure-eelise",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1622,6 +1532,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 64
+    "scans_before_tracking": 63
   }
 }
