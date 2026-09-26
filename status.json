@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-25T22:21:18.466959+00:00",
+  "last_run_utc": "2026-09-26T06:14:34.659773+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.6h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 467,
-  "quiet_count": 293,
+  "total_scans": 468,
+  "quiet_count": 294,
   "watch_count": 159,
   "warn_count": 15,
   "correction_count": 4,
-  "generated_at": "2026-09-26 04:54 UTC",
+  "generated_at": "2026-09-26 06:14 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-26T06:14:34.674876+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 197,
+      "stale_count": 1,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-09-25T22:21:18.481493+00:00",
       "level": "QUIET",
@@ -1298,51 +1312,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-23T06:00:11.169808+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 387,
-      "stale_count": 7,
-      "alert_id": "0923-0600",
-      "items": [
-        {
-          "title": "Europe\u2019s Spy Chiefs Say Russia Is Preparing to Test NATO. The Baltics Are Saying: Don\u2019t Panic. - Vocal",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNmk0a1BENURkSWM4Q3FnU0EzVXN0dmN3dnJZb1JJVE1iSkJNZm1obi1zUmd0R1R0UTJmbzZ5SGN6emg4ZzRWWlZJNVQxNlIxYnZLeGVzUjFaNXVlai1uN3YtYWItV3FWWnpQUmNnb1pnNW96aXE5UnhDdjVzUGtwdEdXc1lnbnVUWkN3ckVtVTIzbkZiU0RNb2RNZ1hROXNkZGhWX0dPeXRWRm90MVgwdGVhS1VSb3I0M3c?oc=5",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "US to send new troop contingent to Estonia, minister says",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610145598/us-to-send-new-troop-contingent-to-estonia-minister-says",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1763,9 +1732,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 210,
+    "scans": 211,
     "alerting_scans": 137,
-    "held_back_total": 49,
+    "held_back_total": 51,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1775,12 +1744,12 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 9
+        "count": 10
       },
       {
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
-        "count": 7
+        "count": 8
       },
       {
         "reason": "scheduled exercise",
