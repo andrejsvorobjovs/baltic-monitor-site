@@ -1,20 +1,126 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-27T06:40:21.807531+00:00",
+  "last_run_utc": "2026-09-27T13:08:25.892845+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 474,
+  "total_scans": 476,
   "quiet_count": 295,
-  "watch_count": 164,
+  "watch_count": 166,
   "warn_count": 15,
   "correction_count": 4,
-  "generated_at": "2026-09-27 06:40 UTC",
+  "generated_at": "2026-09-27 13:08 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-27T13:08:25.919353+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 319,
+      "stale_count": 0,
+      "alert_id": "0927-1308",
+      "items": [
+        {
+          "title": "\u0410\u043a\u0430\u0434\u0435\u043c\u0438\u044f \u0421\u0438\u043b \u043e\u0431\u043e\u0440\u043e\u043d\u044b \u0431\u0443\u0434\u0435\u0442 \u043e\u0442\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0442\u044c \u0432 \u0422\u0430\u0440\u0442\u0443 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0432 \u043a\u0440\u0438\u0437\u0438\u0441\u043d\u043e\u0439 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u0438",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610149780/akademija-sil-oborony-budet-otrabatyvat-v-tartu-dejstvija-v-krizisnoj-situacii",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\"\u041c\u043e\u0441\u043a\u0432\u0430 \u043d\u0435 \u0437\u0430\u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043e\u0432\u0430\u043d\u0430 \u0432 \u043c\u0438\u0440\u0435\": \u0426\u0430\u0445\u043a\u043d\u0430 \u043f\u0440\u043e\u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043b \u0443\u0434\u0430\u0440 \u043f\u043e \u0441\u043a\u043b\u0430\u0434\u0443 McDonald's \u0432 \u0423\u043a\u0440\u0430\u0438\u043d\u0435",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610149753/moskva-ne-zainteresovana-v-mire-cahkna-prokommentiroval-udar-po-skladu-mcdonald-s-v-ukraine",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041f\u0440\u0435\u043c\u044c\u0435\u0440 \u041b\u0438\u0442\u0432\u044b \u043f\u0440\u0438\u0437\u0432\u0430\u043b \u0431\u0430\u043d\u043a\u0438 \u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u0438\u0442\u044c\u0441\u044f \u043a \u0440\u0430\u0441\u0447\u0435\u0442\u0430\u043c \u0432 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445 \u043c\u043e\u0431\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u0438",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/27/premer-litvy-prizval-banki-podgotovitsia-k-raschetam-v-usloviiakh-mobilizatsii-news",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u201cKrievija gatavo kaut ko lielu.\u201d Eirop\u0101 pieaug ba\u017eas par Putina n\u0101kamo soli pret NATO",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/730568-krievija-gatavo-kaut-ko-lielu-eiropa-pieaug-bazas-par-putina-nakamo-soli-pret-nato",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-09-27T08:32:11.907727+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 157,
+      "stale_count": 0,
+      "alert_id": "0927-0832",
+      "items": [
+        {
+          "title": "\u041b\u0438\u0442\u0432\u0430 \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u041f\u043e\u043b\u044c\u0448\u0435\u0439 \u0441\u043e\u0433\u043b\u0430\u0441\u043e\u0432\u044b\u0432\u0430\u0435\u0442 \u043f\u043b\u0430\u043d \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u043e\u0439 \u044d\u0432\u0430\u043a\u0443\u0430\u0446\u0438\u0438 \u043d\u0430\u0441\u0435\u043b\u0435\u043d\u0438\u044f \u0441\u0442\u0440\u0430\u043d \u0411\u0430\u043b\u0442\u0438\u0438",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/09/27/litva-vmeste-s-polshei-soglasovyvaet-plan-mezhdunarodnoi-evakuatsii-naseleniia-stran-baltii-news",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-27T06:40:21.829077+00:00",
       "level": "WATCH",
@@ -861,114 +967,72 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-24T06:14:14.827905+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 391,
-      "stale_count": 2,
-      "alert_id": "0924-0614",
-      "items": [
-        {
-          "title": "\u041c\u0438\u043d\u0438\u0441\u0442\u0440 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0445 \u0434\u0435\u043b \u043f\u0440\u0438\u0437\u043d\u0430\u043b \u043d\u0430\u043b\u0438\u0447\u0438\u0435 \u043f\u0440\u043e\u0431\u0435\u043b\u043e\u0432 \u0432 \u0437\u0430\u0449\u0438\u0442\u0435 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043e\u0442 \u0434\u0440\u043e\u043d\u043e\u0432",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610146483/ministr-vnutrennih-del-priznal-nalichie-probelov-v-zawite-jestonii-ot-dronov",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Emor: 55% \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0439 \u0432 \u0422\u0430\u043b\u043b\u0438\u043d\u043d\u0435 \u0438 \u0425\u0430\u0440\u044c\u044e\u043c\u0430\u0430 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442 \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442 \u0440\u0430\u0431\u043e\u0442\u044b",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610146474/emor-55-kompanij-v-tallinne-i-harjumaa-ispolzujut-gibridnyj-format-raboty",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0421\u0442\u0440\u0430\u043d\u044b \u0411\u0430\u043b\u0442\u0438\u0438 \u0437\u0430\u043f\u0440\u043e\u0441\u0438\u043b\u0438 \u0443 \u0415\u0421 500 \u043c\u043b\u043d \u0435\u0432\u0440\u043e \u043d\u0430 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0435 \u0437\u0430\u0449\u0438\u0442\u044b \u043e\u0442 \u0434\u0440\u043e\u043d\u043e\u0432",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610146441/strany-baltii-zaprosili-u-es-500-mln-evro-na-razvitie-zawity-ot-dronov",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Drons pie Berl\u012bnas lidostas piln\u012bb\u0101 paraliz\u0113 lidojumu kust\u012bbu",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/drons-pie-berlinas-lidostas-pilniba-paralize-lidojumu-kustibu",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-23T22:20:39.992210+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 359,
-      "stale_count": 7,
-      "alert_id": "0923-2220",
-      "items": [
-        {
-          "title": "Russian Mi-8 helicopter violates Polish airspace near Kaliningrad, Poland says - The Kyiv Independent",
-          "source": "Kyiv Independent",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZHVBc05zOWhiS2hFb0ItTW5Qa2dwdW9heFBvNzJCSU9ULTAyclU3WnotbkpBTkpoRXNQVVRZaGdjTm5ma0VpenVURk9ZaHpKbVB6SzI4bnBvOXJYZnA1S1czbkF1ZU1sVnhrQ052QTI4LUFENnlkcEtuUWJrUTFnVVVLTVl4X1h3LWtBcE9xRnppa1UtLWJpMzR5eFRnMjRNR1I3TlFJM2gzUQ?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-27T13:08:25.929972+00:00",
+      "level": "WATCH",
+      "title": "\u201cKrievija gatavo kaut ko lielu.\u201d Eirop\u0101 pieaug ba\u017eas par Putina n\u0101kamo soli pret NATO",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/arzemes/730568-krievija-gatavo-kaut-ko-lielu-eiropa-pieaug-bazas-par-putina-nakamo-soli-pret-nato",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-27T13:08:25.929972+00:00",
+      "level": "WATCH",
+      "title": "\u041f\u0440\u0435\u043c\u044c\u0435\u0440 \u041b\u0438\u0442\u0432\u044b \u043f\u0440\u0438\u0437\u0432\u0430\u043b \u0431\u0430\u043d\u043a\u0438 \u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u0438\u0442\u044c\u0441\u044f \u043a \u0440\u0430\u0441\u0447\u0435\u0442\u0430\u043c \u0432 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445 \u043c\u043e\u0431\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u0438",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/09/27/premer-litvy-prizval-banki-podgotovitsia-k-raschetam-v-usloviiakh-mobilizatsii-news",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-27T13:08:25.929972+00:00",
+      "level": "WATCH",
+      "title": "\"\u041c\u043e\u0441\u043a\u0432\u0430 \u043d\u0435 \u0437\u0430\u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043e\u0432\u0430\u043d\u0430 \u0432 \u043c\u0438\u0440\u0435\": \u0426\u0430\u0445\u043a\u043d\u0430 \u043f\u0440\u043e\u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043b \u0443\u0434\u0430\u0440 \u043f\u043e \u0441\u043a\u043b\u0430\u0434\u0443 McDonald's \u0432 \u0423\u043a\u0440\u0430\u0438\u043d\u0435",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610149753/moskva-ne-zainteresovana-v-mire-cahkna-prokommentiroval-udar-po-skladu-mcdonald-s-v-ukraine",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-27T13:08:25.929972+00:00",
+      "level": "WATCH",
+      "title": "\u0410\u043a\u0430\u0434\u0435\u043c\u0438\u044f \u0421\u0438\u043b \u043e\u0431\u043e\u0440\u043e\u043d\u044b \u0431\u0443\u0434\u0435\u0442 \u043e\u0442\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0442\u044c \u0432 \u0422\u0430\u0440\u0442\u0443 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0432 \u043a\u0440\u0438\u0437\u0438\u0441\u043d\u043e\u0439 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u0438",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610149780/akademija-sil-oborony-budet-otrabatyvat-v-tartu-dejstvija-v-krizisnoj-situacii",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-27T06:40:21.839387+00:00",
       "level": "WATCH",
@@ -1135,67 +1199,6 @@
       "title": "Budrys in New York: Russia systematically tests NATO's alertness and readiness to respond - U\u017esienio reikal\u0173 ministerija",
       "source": "Lithuanian Ministry of Foreign Affairs (via GNews)",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMVI0UXh2VUJQaG5pandJNGVNRy05QTlhN2VxSlg5TEU5TWVzaUpMRXZoNVVIX1JNYkJEbV93bmlueE5zSEtiaGNkTDhRd3BMeTdnWm0wVWpGQTNqTmlXdnlCWkRXdFNPSGhaZEtJOFFTRUN3VTM1VzYtcFRIaUluOWlvcEdzS3pOS2VaWW9KR0tDX0dhZzJvcmZCUVh0RG9QQzR0R2JrM3REU3B4UGc5RXkwd1YwM09hc1BsRHJjNlVtdw?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-25T06:14:17.264875+00:00",
-      "level": "WARN",
-      "title": "Finnair adapts pilot training for daily GPS interference in Baltic - Reuters",
-      "source": "Reuters (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSmw2RkpnbVBGYUlaVnQ2OU1OSmZqczc3U0kzd0dfNnZEbVktYUwzZHBwTGJIZ2xUazFreXZscHMyQXItQXVqczQyS1ZCTGJmSmhBU2FvUENJMTB3ZmNOalQ4RnJ6bUNxQ2JDX3RSM05NZHY1OGMyMW9XSkNnbld3dV94NmQ2Zy1pTVdPWDMxLWhDUjl5ajhwSHVrRUR0c3RLWHhZaUlaVjM3TXF6ME9mZzMwZVlVZXpBMWF2alJQRQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T22:22:08.672033+00:00",
-      "level": "WARN",
-      "title": "Denmark warns Russia could escalate hybrid attacks against NATO in coming months - The Kyiv Independent",
-      "source": "Kyiv Independent",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY2F5dGRqRDNpUmg4NEozcG1GVnRTY3ltS3Z1RWtYR0tZOXgwXzQ2TUpfbUJEMkNsY3dCLVNOQWI1YUZueXcwbk5Ec20ySDVkajlEa0U3MGUyN1dCYUZHbzc2X0ZGVFBSdlNuVmVVUEtZSGZDU0tjRkRFRW9BNVhWV09qX0xKckxnbl9FcTdZUVdVRlVhMXdBaEpvMUtRTHdkM2F1VzRBVTZnaUoxelE?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T22:22:08.672033+00:00",
-      "level": "WARN",
-      "title": "NATO chief calls for calm as intel agency warns Russia may ramp up hybrid attacks - apnews.com",
-      "source": "AP (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNY1JpUkQ0cURFZUN3emtoeHdJWlVFaWExWTRMWW1RNExHdkJrY2J6Z0l3c3pBbllMbjhJRlU5TFZFRElUbE5IMmROa2dWNWRmV0czOU8zRnNlRXppSlJMdXZkaERUbW9QTm9mT3VtcC12MEFqb21KTndZb2hlZ2pRYU83eGs1OVRNY0k3SW1Ha0hnVUdyamlPRUNobHJWYUs3TXdUdEU2WlJRUQ?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-24T17:59:49.307497+00:00",
-      "level": "WATCH",
-      "title": "Taani luure hoiatab: Venemaa v\u00f5ib l\u00e4hikuudel NATOt testida",
-      "source": "Aripaev (Estonia)",
-      "link": "https://www.aripaev.ee/uudised/2026/09/24/taani-luure-hoiatab-venemaa-voib-lahikuudel-natot-testida",
       "categories": [
         "nato_conflict_risk"
       ],
@@ -1386,8 +1389,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 211,
-    "alerting_scans": 138,
+    "scans": 212,
+    "alerting_scans": 139,
     "held_back_total": 55,
     "held_back_by_reason": [
       {
@@ -1411,6 +1414,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 58
+    "scans_before_tracking": 57
   }
 }
