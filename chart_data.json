@@ -3366,6 +3366,20 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-09-28T14:24:59.214818+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-09-28T15:32:03.707772+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -4558,6 +4572,10 @@
     {
       "ts": "2026-09-28T06:49:48.753090+00:00",
       "count": 379
+    },
+    {
+      "ts": "2026-09-28T15:30:04.304674+00:00",
+      "count": 297
     }
   ],
   "military_points": [
@@ -5544,6 +5562,10 @@
     {
       "ts": "2026-09-28T06:49:49.412313+00:00",
       "count": 5
+    },
+    {
+      "ts": "2026-09-28T15:30:05.085173+00:00",
+      "count": 3
     }
   ],
   "firms_points": [
@@ -6895,6 +6917,10 @@
     },
     {
       "ts": "2026-09-28T06:49:54.581449+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-09-28T15:31:31.248908+00:00",
       "count": 0
     }
   ],
@@ -10362,6 +10388,23 @@
         ]
       },
       "band_key": "moderate_above",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-09-28T15:31:31.250880+00:00",
+      "deviation_pct": -0.7529805325240183,
+      "sources_included": 3,
+      "narrative": "All tracked signals within normal range.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "military"
+        ]
+      },
+      "band_key": "normal",
       "band_record_scans": null
     }
   ]
