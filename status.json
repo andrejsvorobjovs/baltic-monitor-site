@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-29T16:37:43.511344+00:00",
+  "last_run_utc": "2026-09-29T18:44:24.615112+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.5h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 489,
+  "total_scans": 490,
   "quiet_count": 299,
-  "watch_count": 173,
+  "watch_count": 174,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-09-29 18:04 UTC",
+  "generated_at": "2026-09-29 18:44 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-29T18:44:24.643451+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 228,
+      "stale_count": 3,
+      "alert_id": "0929-1844",
+      "items": [
+        {
+          "title": "NATO smerkia neatsaking\u0105 Rusijos branduolin\u0119 retorik\u0105",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/nato-smerkia-neatsakinga-rusijos-branduoline-retorika-57-2774174?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "E. \u017di\u010dkus sunerimo d\u0117l \u0161eimos duomen\u0173: vie\u0161ai kreip\u0117si \u012f did\u017eiausi\u0105 Lietuvoje kelioni\u0173 organizatori\u0173",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/zmones/veidai-ir-vardai/2026/09/29/news/e-zickus-sunerimo-del-seimos-duomenu-viesai-kreipesi-i-didziausia-lietuvoje-kelioniu-organizatoriu-44252757/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Estonia accuses Russian intelligence services of\u00a0ordering arson at\u00a0defense-robotics company supplying Ukraine",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/news/2026/09/29/estonia-accuses-russian-intelligence-services-of-ordering-arson-at-defense-robotics-company-supplying-ukraine",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-29T16:37:43.498002+00:00",
       "level": "WATCH",
@@ -1103,39 +1163,57 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-26T13:22:09.352275+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 79,
-      "stale_count": 0,
-      "alert_id": "0926-1322",
-      "items": [
-        {
-          "title": "Cyberattack gains access to University of Tartu library's online store customer data",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610149198/cyberattack-gains-access-to-university-of-tartu-library-s-online-store-customer-data",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-29T18:44:24.650761+00:00",
+      "level": "WATCH",
+      "title": "Estonia accuses Russian intelligence services of\u00a0ordering arson at\u00a0defense-robotics company supplying Ukraine",
+      "source": "Meduza",
+      "link": "https://meduza.io/en/news/2026/09/29/estonia-accuses-russian-intelligence-services-of-ordering-arson-at-defense-robotics-company-supplying-ukraine",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-29T18:44:24.650761+00:00",
+      "level": "WATCH",
+      "title": "E. \u017di\u010dkus sunerimo d\u0117l \u0161eimos duomen\u0173: vie\u0161ai kreip\u0117si \u012f did\u017eiausi\u0105 Lietuvoje kelioni\u0173 organizatori\u0173",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/zmones/veidai-ir-vardai/2026/09/29/news/e-zickus-sunerimo-del-seimos-duomenu-viesai-kreipesi-i-didziausia-lietuvoje-kelioniu-organizatoriu-44252757/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-29T18:44:24.650761+00:00",
+      "level": "WATCH",
+      "title": "NATO smerkia neatsaking\u0105 Rusijos branduolin\u0119 retorik\u0105",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/nato-smerkia-neatsakinga-rusijos-branduoline-retorika-57-2774174?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-29T14:11:01.354154+00:00",
       "level": "WARN",
@@ -1327,54 +1405,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T06:57:13.492352+00:00",
-      "level": "WATCH",
-      "title": "Russian dictator tests NATO in the Arctic",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/russian-dictator-tests-nato-in-the-arctic-284213",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T06:57:13.492352+00:00",
-      "level": "WATCH",
-      "title": "Poland eases rules; will shoot down airspace violators more quickly",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/poland-eases-rules-will-shoot-down-airspace-violators-more-quickly-284238",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-28T23:57:11.531274+00:00",
-      "level": "WATCH",
-      "title": "\u0100rskat\u0101: Krievija test\u0113 robe\u017eas",
-      "source": "IR (Latvia)",
-      "link": "https://ir.lv/rubrika/arskats/arskata-krievija-teste-robezas.222252",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1557,9 +1587,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 209,
-    "alerting_scans": 142,
-    "held_back_total": 63,
+    "scans": 210,
+    "alerting_scans": 143,
+    "held_back_total": 64,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1569,7 +1599,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 17
+        "count": 18
       },
       {
         "reason": "reassurance",
