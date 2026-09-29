@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-29T18:44:24.615112+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-09-29T23:04:59.510672+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 490,
-  "quiet_count": 299,
-  "watch_count": 174,
+  "total_scans": 492,
+  "quiet_count": 300,
+  "watch_count": 175,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-09-29 18:44 UTC",
+  "generated_at": "2026-09-29 23:04 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-29T23:04:59.526444+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 112,
+      "stale_count": 4,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-09-29T21:02:14.704485+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 109,
+      "stale_count": 0,
+      "alert_id": "0929-2102",
+      "items": [
+        {
+          "title": "Palloson: kapo on hoidnud \u00e4ra m\u00e4rkimisv\u00e4\u00e4rse hulga Venemaa r\u00fcnnakuid",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610151850/palloson-kapo-on-hoidnud-ara-markimisvaarse-hulga-venemaa-runnakuid",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-29T18:44:24.643451+00:00",
       "level": "WATCH",
@@ -1089,80 +1133,6 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-26T17:58:33.218205+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 37,
-      "stale_count": 1,
-      "alert_id": "0926-1758",
-      "items": [
-        {
-          "title": "\u201eJi gali net kirsti NATO sienas\u201c: ekspertas \u012fsp\u0117jo apie galim\u0105 Rusijos \u017eingsn\u012f",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/uzsienyje/ji-gali-net-kirsti-nato-sienas-ekspertas-ispejo-apie-galima-rusijos-zingsni-120310381",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-26T17:15:23.109423+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 281,
-      "stale_count": 1,
-      "alert_id": "0926-1715",
-      "items": [
-        {
-          "title": "Ekspertai apie komunikacij\u0105 Rusijos provokacij\u0173 akivaizdoje: svarbu informuoti, bet be nereikalingo nerimo",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/26/news/ekspertai-apie-komunikacija-rusijos-provokaciju-akivaizdoje-svarbu-informuoti-bet-be-nereikalingo-nerimo-44173850/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Aiztur\u0113ts 23 gadus vecs hakeris \u2013 p\u0101rk\u0101pumu kopa ir iespaid\u012bga",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/730492-aizturets-23-gadus-vecs-hakeris-parkapumu-kopa-ir-iespaidiga",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1588,18 +1558,18 @@
   "filter_record": {
     "window_days": 30,
     "scans": 210,
-    "alerting_scans": 143,
-    "held_back_total": 64,
+    "alerting_scans": 144,
+    "held_back_total": 66,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 34
+        "count": 35
       },
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 18
+        "count": 19
       },
       {
         "reason": "reassurance",
@@ -1612,6 +1582,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 41
+    "scans_before_tracking": 39
   }
 }
