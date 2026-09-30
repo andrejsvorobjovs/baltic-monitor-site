@@ -1,20 +1,81 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-30T16:30:52.853444+00:00",
+  "last_run_utc": "2026-09-30T18:34:38.955229+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.5h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 496,
+  "total_scans": 497,
   "quiet_count": 300,
-  "watch_count": 179,
+  "watch_count": 180,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-09-30 17:59 UTC",
+  "generated_at": "2026-09-30 18:34 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-30T18:34:38.970979+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 282,
+      "stale_count": 5,
+      "alert_id": "0930-1834",
+      "items": [
+        {
+          "title": "Karm avaldus: Venemaa edastas NATO-le sisuliselt ultimaatumi, mille ignoreerimine viib s\u00f5jani Balti riikides - eestinen",
+          "source": "Estonian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTkEtU3A5cTM0TkhtaDE5Um1ZSkZSbkxiRXh2OFdiTDNia0h1MkV3dkxtMDMzcnJZdUJDYVRWa2tZWG5XR3pxaWo3OXh3cWh1NjFzaHFCQmRSbUp0VEVPZmVJZlBKWFYzeE1UZV9xZTBqX0w2M3diQTBfcUliNmJDVjNod3FRbWg5OEE0MkVKY0NMSjZsUi1uQTFmcW56cC1kblB1QWlTUUIzRjU0MGs3c1R0VzZxTFlTYW9oV0FYMEdjd2ZWZENfV3VhbE1jWC1I?oc=5",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Estijos \u017evalgybos vadovas \u012fsp\u0117ja: Rusija taikosi \u012f Europos ginkl\u0173 gamintojus",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/uzsienyje/estijos-zvalgybos-vadovas-ispeja-rusija-taikosi-i-europos-ginklu-gamintojus-120312404",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Russia threatens NATO with a\u00a0nuclear strike if\u00a0the alliance tries to\u00a0blockade Kaliningrad",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/news/2026/09/30/russia-threatens-nato-with-a-nuclear-strike-if-the-alliance-tries-to-blockade-kaliningrad",
+          "categories": [
+            "baltic_specific",
+            "diplomatic",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-30T16:30:52.836831+00:00",
       "level": "WATCH",
@@ -1178,70 +1239,58 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-27T14:15:49.754560+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 78,
-      "stale_count": 0,
-      "alert_id": "0927-1415",
-      "items": [
-        {
-          "title": "Naujas hibridini\u0173 gr\u0117smi\u0173 laukas: kam ruo\u0161iami \u201eAro\u201c koviniai narai",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/naujas-hibridiniu-gresmiu-laukas-kam-ruosiami-aro-koviniai-narai-56-2743850?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "BNS Sprintas: svarbiausi savait\u0117s \u012fvykiai",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/bns-sprintas/bns-sprintas-svarbiausi-savaites-ivykiai-1766-2772440?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0417\u0430\u043b\u043e\u0436\u043d\u0438\u043a\u0438 \u0421\u043e\u0432\u0431\u0435\u0437\u0430",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/27/zalozhniki-sovbeza",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-30T18:34:38.986810+00:00",
+      "level": "WATCH",
+      "title": "Russia threatens NATO with a\u00a0nuclear strike if\u00a0the alliance tries to\u00a0blockade Kaliningrad",
+      "source": "Meduza",
+      "link": "https://meduza.io/en/news/2026/09/30/russia-threatens-nato-with-a-nuclear-strike-if-the-alliance-tries-to-blockade-kaliningrad",
+      "categories": [
+        "baltic_specific",
+        "diplomatic",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-30T18:34:38.986810+00:00",
+      "level": "WATCH",
+      "title": "Estijos \u017evalgybos vadovas \u012fsp\u0117ja: Rusija taikosi \u012f Europos ginkl\u0173 gamintojus",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/uzsienyje/estijos-zvalgybos-vadovas-ispeja-rusija-taikosi-i-europos-ginklu-gamintojus-120312404",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-09-30T18:34:38.986810+00:00",
+      "level": "WATCH",
+      "title": "Karm avaldus: Venemaa edastas NATO-le sisuliselt ultimaatumi, mille ignoreerimine viib s\u00f5jani Balti riikides - eestinen",
+      "source": "Estonian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTkEtU3A5cTM0TkhtaDE5Um1ZSkZSbkxiRXh2OFdiTDNia0h1MkV3dkxtMDMzcnJZdUJDYVRWa2tZWG5XR3pxaWo3OXh3cWh1NjFzaHFCQmRSbUp0VEVPZmVJZlBKWFYzeE1UZV9xZTBqX0w2M3diQTBfcUliNmJDVjNod3FRbWg5OEE0MkVKY0NMSjZsUi1uQTFmcW56cC1kblB1QWlTUUIzRjU0MGs3c1R0VzZxTFlTYW9oV0FYMEdjd2ZWZENfV3VhbE1jWC1I?oc=5",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-30T13:47:05.664863+00:00",
       "level": "WATCH",
@@ -1432,54 +1481,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T14:11:01.354154+00:00",
-      "level": "WARN",
-      "title": "Lietuvos premjeras po susitikimo su M. Rutte: Lietuva ir toliau rodys lyderyst\u0119 NATO",
-      "source": "Lithuanian Government",
-      "link": "https://lrv.lt/lt/naujienos/lietuvos-premjeras-po-susitikimo-su-m-rutte-lietuva-ir-toliau-rodys-lyderyste-nato-4214/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T14:11:01.354154+00:00",
-      "level": "WARN",
-      "title": "Sh. O\u2019Nealo \u017evaig\u017ed\u0117 \u201eNordVPN\u201c komunikacijoje",
-      "source": "Verslo zinios (Lithuania)",
-      "link": "https://www.vz.lt/rinkodara/2026/09/29/sh-onealo-zvaigzde-nordvpn-komunikacijoje-590632",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T14:11:01.354154+00:00",
-      "level": "WARN",
-      "title": "Danger zone near the border with Poland. Russian aviation and missiles are still a threat",
-      "source": "Defence24",
-      "link": "https://defence24.com/defence-policy/danger-zone-near-the-border-with-poland-russian-aviation-and-missiles-are-still-a-threat",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1663,7 +1664,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 211,
-    "alerting_scans": 147,
+    "alerting_scans": 148,
     "held_back_total": 69,
     "held_back_by_reason": [
       {
@@ -1687,6 +1688,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 36
+    "scans_before_tracking": 35
   }
 }
