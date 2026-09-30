@@ -1,20 +1,49 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-29T23:04:59.510672+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.4h ago",
+  "last_run_utc": "2026-09-30T06:45:47.674593+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 492,
+  "total_scans": 493,
   "quiet_count": 300,
-  "watch_count": 175,
+  "watch_count": 176,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-09-30 05:29 UTC",
+  "generated_at": "2026-09-30 06:45 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-09-30T06:45:47.691346+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 457,
+      "stale_count": 4,
+      "alert_id": "0930-0645",
+      "items": [
+        {
+          "title": "Babi\u0161: T\u0161ehhi saadaks Balti riikide toetuseks kaks brigaadi",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610152030/babis-tsehhi-saadaks-balti-riikide-toetuseks-kaks-brigaadi",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-29T23:04:59.526444+00:00",
       "level": "QUIET",
@@ -1119,23 +1148,24 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-26T22:05:04.890378+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 171,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-09-30T06:45:47.707881+00:00",
+      "level": "WATCH",
+      "title": "Babi\u0161: T\u0161ehhi saadaks Balti riikide toetuseks kaks brigaadi",
+      "source": "ERR Eesti (Estonian-language)",
+      "link": "https://www.err.ee/1610152030/babis-tsehhi-saadaks-balti-riikide-toetuseks-kaks-brigaadi",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-29T18:44:24.650761+00:00",
       "level": "WATCH",
@@ -1360,21 +1390,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T06:57:13.492352+00:00",
-      "level": "WATCH",
-      "title": "Stubb om hotet fr\u00e5n Ryssland: \u00d6verreagera inte",
-      "source": "Sveriges Radio Ekot",
-      "link": "https://www.sverigesradio.se/artikel/9309047",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1557,8 +1572,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 209,
-    "alerting_scans": 143,
+    "scans": 210,
+    "alerting_scans": 144,
     "held_back_total": 66,
     "held_back_by_reason": [
       {
