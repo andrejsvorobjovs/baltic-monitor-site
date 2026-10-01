@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-09-30T23:05:36.030355+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.7h ago",
+  "last_run_utc": "2026-10-01T07:17:49.766227+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 499,
+  "total_scans": 500,
   "quiet_count": 301,
-  "watch_count": 181,
+  "watch_count": 182,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-10-01 05:48 UTC",
+  "generated_at": "2026-10-01 07:17 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-01T07:17:49.782184+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 481,
+      "stale_count": 2,
+      "alert_id": "1001-0717",
+      "items": [
+        {
+          "title": "Strong protest lodged with Russia over sabotage in Estonia and continued attacks against Ukraine - U\u017esienio reikal\u0173 ministerija",
+          "source": "Lithuanian Ministry of Foreign Affairs (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPR0FwcXVRRnZPSFU4Nk1IVWJRTUJXRW82a09MNjNvQ2lVSHpCUGFjNGxWODV0ZWZDcU9DNVRYZWNDdjRyQW1ka3ppazNmUEFMekNUZE80SHNuM3FqWlVtUFJCUjM0LWlENnExOVdJMkxMLWQ3VURXcUI4V2tENmlwdjh4ZDhEM2lKNUlqNElLY0FPRk1RcXVRb2h3dFE2cWlWYUlmR2tMSzhGN28zTzlTTWtacGE0YmQ1c3dvTDBlWUtvUmpkcXB4c0ppS1dxdw?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "\u041d\u0438 \u044f\u0445\u0442\u044b, \u043d\u0438 \u0443\u0431\u043e\u0440\u0449\u0438\u0446\u044b",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/10/01/ni-iakhty-ni-uborshchitsy",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Putins melo, paties\u012bb\u0101 krievi jau ir s\u0101ku\u0161i papildu mobiliz\u0101ciju!",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/putins-melo-patiesiba-krievi-jau-ir-sakusi-papildu-mobilizaciju",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-09-30T23:05:36.046331+00:00",
       "level": "QUIET",
@@ -1225,54 +1285,57 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-28T05:47:46.309320+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 240,
-      "stale_count": 0,
-      "alert_id": "0928-0547",
-      "items": [
-        {
-          "title": "Kibernetinio saugumo ekspertas apie \u012fsilau\u017eimus Lietuvoje: ne de\u0161imtys, ne vienetai \u2013 \u0161imtai per savait\u0119",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/projektai/technologijos-kiekvienai-dienai/kibernetinio-saugumo-ekspertas-apie-isilauzimus-lietuvoje-ne-desimtys-ne-vienetai-simtai-per-savaite-120310163",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Europos lyderiams persp\u0117jant d\u0117l Rusijos atak\u0173, Lietuvoje prabilo apie tikr\u0105j\u0105 gr\u0117sm\u0119",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/28/news/europos-lyderiams-perspejant-del-rusijos-ataku-lietuvoje-prabilo-apie-tikraja-gresme-44212920/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-01T07:17:49.797749+00:00",
+      "level": "WATCH",
+      "title": "Putins melo, paties\u012bb\u0101 krievi jau ir s\u0101ku\u0161i papildu mobiliz\u0101ciju!",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/putins-melo-patiesiba-krievi-jau-ir-sakusi-papildu-mobilizaciju",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-01T07:17:49.797749+00:00",
+      "level": "WATCH",
+      "title": "\u041d\u0438 \u044f\u0445\u0442\u044b, \u043d\u0438 \u0443\u0431\u043e\u0440\u0449\u0438\u0446\u044b",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/10/01/ni-iakhty-ni-uborshchitsy",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-01T07:17:49.797749+00:00",
+      "level": "WATCH",
+      "title": "Strong protest lodged with Russia over sabotage in Estonia and continued attacks against Ukraine - U\u017esienio reikal\u0173 ministerija",
+      "source": "Lithuanian Ministry of Foreign Affairs (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPR0FwcXVRRnZPSFU4Nk1IVWJRTUJXRW82a09MNjNvQ2lVSHpCUGFjNGxWODV0ZWZDcU9DNVRYZWNDdjRyQW1ka3ppazNmUEFMekNUZE80SHNuM3FqWlVtUFJCUjM0LWlENnExOVdJMkxMLWQ3VURXcUI4V2tENmlwdjh4ZDhEM2lKNUlqNElLY0FPRk1RcXVRb2h3dFE2cWlWYUlmR2tMSzhGN28zTzlTTWtacGE0YmQ1c3dvTDBlWUtvUmpkcXB4c0ppS1dxdw?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-09-30T18:34:38.986810+00:00",
       "level": "WATCH",
@@ -1464,54 +1527,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T18:44:24.650761+00:00",
-      "level": "WATCH",
-      "title": "Estonia accuses Russian intelligence services of\u00a0ordering arson at\u00a0defense-robotics company supplying Ukraine",
-      "source": "Meduza",
-      "link": "https://meduza.io/en/news/2026/09/29/estonia-accuses-russian-intelligence-services-of-ordering-arson-at-defense-robotics-company-supplying-ukraine",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T18:44:24.650761+00:00",
-      "level": "WATCH",
-      "title": "E. \u017di\u010dkus sunerimo d\u0117l \u0161eimos duomen\u0173: vie\u0161ai kreip\u0117si \u012f did\u017eiausi\u0105 Lietuvoje kelioni\u0173 organizatori\u0173",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/zmones/veidai-ir-vardai/2026/09/29/news/e-zickus-sunerimo-del-seimos-duomenu-viesai-kreipesi-i-didziausia-lietuvoje-kelioniu-organizatoriu-44252757/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-29T18:44:24.650761+00:00",
-      "level": "WATCH",
-      "title": "NATO smerkia neatsaking\u0105 Rusijos branduolin\u0119 retorik\u0105",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/nato-smerkia-neatsakinga-rusijos-branduoline-retorika-57-2774174?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1694,24 +1709,24 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 210,
-    "alerting_scans": 148,
-    "held_back_total": 69,
+    "scans": 211,
+    "alerting_scans": 149,
+    "held_back_total": 74,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 36
+        "count": 37
       },
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 20
+        "count": 23
       },
       {
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
-        "count": 10
+        "count": 11
       },
       {
         "reason": "scheduled exercise",
