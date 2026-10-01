@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-01T17:08:12.919591+00:00",
+  "last_run_utc": "2026-10-01T19:00:28.442182+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.3h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 503,
+  "total_scans": 504,
   "quiet_count": 301,
-  "watch_count": 185,
+  "watch_count": 186,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-10-01 18:24 UTC",
+  "generated_at": "2026-10-01 19:00 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-01T19:00:28.462388+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 185,
+      "stale_count": 1,
+      "alert_id": "1001-1900",
+      "items": [
+        {
+          "title": "\u041f\u0440\u0430\u0432\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e \u043f\u043b\u0430\u043d\u0438\u0440\u0443\u0435\u0442 \u0443\u0441\u0438\u043b\u0438\u0442\u044c \u043a\u0438\u0431\u0435\u0440\u0437\u0430\u0449\u0438\u0442\u0443 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0445 \u0432\u044b\u0431\u043e\u0440\u043e\u0432",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610153941/pravitelstvo-planiruet-usilit-kiberzawitu-jelektronnyh-vyborov",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-01T17:08:12.901798+00:00",
       "level": "WATCH",
@@ -1346,23 +1376,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-28T20:15:04.345062+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 340,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-01T19:00:28.485033+00:00",
+      "level": "WATCH",
+      "title": "\u041f\u0440\u0430\u0432\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e \u043f\u043b\u0430\u043d\u0438\u0440\u0443\u0435\u0442 \u0443\u0441\u0438\u043b\u0438\u0442\u044c \u043a\u0438\u0431\u0435\u0440\u0437\u0430\u0449\u0438\u0442\u0443 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0445 \u0432\u044b\u0431\u043e\u0440\u043e\u0432",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610153941/pravitelstvo-planiruet-usilit-kiberzawitu-jelektronnyh-vyborov",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-01T14:35:49.618564+00:00",
       "level": "WATCH",
@@ -1587,22 +1619,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-30T13:47:05.664863+00:00",
-      "level": "WATCH",
-      "title": "Russia Sends Nuclear Warning to NATO as Tensions Rise in the Baltic",
-      "source": "Moscow Times",
-      "link": "https://www.themoscowtimes.com/2026/09/30/russia-sends-nuclear-warning-to-nato-as-tensions-rise-in-the-baltic-a93828",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1810,6 +1826,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 29
+    "scans_before_tracking": 28
   }
 }
