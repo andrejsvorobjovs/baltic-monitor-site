@@ -1,20 +1,170 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-01T07:17:49.766227+00:00",
+  "last_run_utc": "2026-10-01T14:35:49.587359+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 500,
+  "total_scans": 502,
   "quiet_count": 301,
-  "watch_count": 182,
+  "watch_count": 184,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-10-01 07:17 UTC",
+  "generated_at": "2026-10-01 14:35 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-01T14:35:49.603334+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 568,
+      "stale_count": 8,
+      "alert_id": "1001-1435",
+      "items": [
+        {
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - AP News",
+          "source": "AP (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb2xSOGRNSUNHU1M5RzVHOHpYdzBya1VaOUZhcFhXa2hjUEd2T0pNZGNGRTIyVXE4U1lOc3owRGxBTFVHY3RvcTRZdDMzSElIOHlnNlJrSVVyRDdPZ255cXpIMW9xSllTQkdiOEdrRXFLT0xmWnJJRkVyQ0Q0Rjh5a0VvbFNZTnRCVzF2QWJtck1rVFlwUzVQWVZDZGwtUVU?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Russia detains cargo ship bound for Estonia's Sillam\u00e4e port",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610153470/russia-detains-cargo-ship-bound-for-estonia-s-sillamae-port",
+          "categories": [
+            "baltic_specific",
+            "shadow_fleet"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Estonia not invited to U.S.-led meeting on NATO's future",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610153467/estonia-not-invited-to-u-s-led-meeting-on-nato-s-future",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Riigil napib raha vananenud IT-s\u00fcsteemide uuendamiseks",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610153522/riigil-napib-raha-vananenud-it-susteemide-uuendamiseks",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Nigeeria h\u00e4kker r\u00fcndas suusaliitu. Tegevjuht: \u201eV\u00f5ttis ikka v\u00e4ga k\u00f5hedaks!\u201c",
+          "source": "Ohtuleht (Estonia)",
+          "link": "https://www.ohtuleht.ee/sport/1168075/nigeeria-hakker-rundas-suusaliitu-tegevjuht-vottis-ikka-vaga-kohedaks",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-01T09:24:12.644658+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 311,
+      "stale_count": 0,
+      "alert_id": "1001-0924",
+      "items": [
+        {
+          "title": "Pentagons uz NATO san\u0101ksmi Polij\u0101 neuzaicina daudzus sabiedrotos, ar\u012b Latviju",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/pasaule/eiropa/pentagons-uz-nato-sanaksmi-polija-neuzaicina-daudzus-sabiedrotos-ari-latviju?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Gamybai \u2013 skaitmeninis skydas: \u201eMantinga\u201c pasirinko \u201eTelia\u201c SOC paslaug\u0105",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/verslas/rinkos-pulsas/2026/10/01/news/gamybai-skaitmeninis-skydas-mantinga-pasirinko-telia-soc-paslauga-44258188/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Pentagons uz NATO san\u0101ksi tepat blakus, Polij\u0101, neuzaicina daudzus sabiedrotos, ar\u012b Latviju",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/pentagons-uz-nato-sanaksi-tepat-blakus-polija-neuzaicina-daudzus-sabiedrotos-ari-latviju",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-01T07:17:49.782184+00:00",
       "level": "WATCH",
@@ -1195,99 +1345,89 @@
       "stale_count": 0,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-28T14:24:59.214818+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 58,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 527,
-      "stale_count": 0,
-      "alert_id": "0928-1424",
-      "items": [
-        {
-          "title": "Eesti firma Rantelon l\u00f5i Ukraina s\u00f5ja kogemuste p\u00f5hjal uue droonit\u00f5rjerelva",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8554027",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Tyrimas: 78 proc. Baltijos \u0161ali\u0173 organizacij\u0173 nei\u0161bando savo kibernetinio saugumo plan\u0173",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/it/ismanyk/2026/09/28/news/tyrimas-78-proc-baltijos-saliu-organizaciju-neisbando-savo-kibernetinio-saugumo-planu-44223533/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Valsts aizsardz\u012bba s\u0101kas pie robe\u017eas, bet tur nebeidzas",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/730754-valsts-aizsardziba-sakas-pie-robezas-bet-tur-nebeidzas",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-28T06:50:27.375385+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 203,
-      "stale_count": 2,
-      "alert_id": "0928-0650",
-      "items": [
-        {
-          "title": "Dombrovskis: Aizsardz\u012bbas izdevumu k\u0101pin\u0101\u0161ana ir \u012bpa\u0161i aktu\u0101la Latvijai, ta\u010du tas rada spiedienu uz bud\u017eeta defic\u012btu",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8553777",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-01T14:35:49.618564+00:00",
+      "level": "WATCH",
+      "title": "Nigeeria h\u00e4kker r\u00fcndas suusaliitu. Tegevjuht: \u201eV\u00f5ttis ikka v\u00e4ga k\u00f5hedaks!\u201c",
+      "source": "Ohtuleht (Estonia)",
+      "link": "https://www.ohtuleht.ee/sport/1168075/nigeeria-hakker-rundas-suusaliitu-tegevjuht-vottis-ikka-vaga-kohedaks",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-01T14:35:49.618564+00:00",
+      "level": "WATCH",
+      "title": "Riigil napib raha vananenud IT-s\u00fcsteemide uuendamiseks",
+      "source": "ERR Eesti (Estonian-language)",
+      "link": "https://www.err.ee/1610153522/riigil-napib-raha-vananenud-it-susteemide-uuendamiseks",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-01T14:35:49.618564+00:00",
+      "level": "WATCH",
+      "title": "Estonia not invited to U.S.-led meeting on NATO's future",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610153467/estonia-not-invited-to-u-s-led-meeting-on-nato-s-future",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-01T14:35:49.618564+00:00",
+      "level": "WATCH",
+      "title": "Russia detains cargo ship bound for Estonia's Sillam\u00e4e port",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610153470/russia-detains-cargo-ship-bound-for-estonia-s-sillamae-port",
+      "categories": [
+        "baltic_specific",
+        "shadow_fleet"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-01T14:35:49.618564+00:00",
+      "level": "WATCH",
+      "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - AP News",
+      "source": "AP (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb2xSOGRNSUNHU1M5RzVHOHpYdzBya1VaOUZhcFhXa2hjUEd2T0pNZGNGRTIyVXE4U1lOc3owRGxBTFVHY3RvcTRZdDMzSElIOHlnNlJrSVVyRDdPZ255cXpIMW9xSllTQkdiOEdrRXFLT0xmWnJJRkVyQ0Q0Rjh5a0VvbFNZTnRCVzF2QWJtck1rVFlwUzVQWVZDZGwtUVU?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-01T07:17:49.797749+00:00",
       "level": "WATCH",
@@ -1442,85 +1582,6 @@
       "categories": [
         "baltic_specific",
         "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-30T13:47:05.664863+00:00",
-      "level": "WATCH",
-      "title": "\u017diniasklaida: Lenkija u\u017eleis gynybos i\u0161laid\u0173 pagal BVP lyder\u0117s pozicij\u0105 Baltijos \u0161alims",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/pasaulis/konfliktai-ir-saugumas/2026/09/30/news/ziniasklaida-lenkija-uzleis-gynybos-islaidu-pagal-bvp-lyderes-pozicija-baltijos-salims-44259619/",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-30T13:47:05.664863+00:00",
-      "level": "WATCH",
-      "title": "\u0160obr\u012bd nav paz\u012bmju, ka Krievija var\u0113tu tie\u0161i iebrukt k\u0101d\u0101 no NATO dal\u012bbvalst\u012bm, pazi\u0146o Rink\u0113vi\u010ds",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8555761",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-30T13:47:05.664863+00:00",
-      "level": "WATCH",
-      "title": "\u201cWe have no legal obstacles\u201d \u2013 Rink\u0113vi\u010ds on deploying nuclear weapons in Latvia",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/we-have-no-legal-obstacles-rinkevics-on-deploying-nuclear-weapons-in-latvia-284349",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-30T13:47:05.664863+00:00",
-      "level": "WATCH",
-      "title": "Prie slapt\u0173 valstyb\u0117s duomen\u0173 \u2013 per \u201egalines duris\u201c: naujas kibernetini\u0173 atak\u0173 taikinys",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/bustas/ateities-miestai/prie-slaptu-valstybes-duomenu-per-galines-duris-naujas-kibernetiniu-ataku-taikinys-120311167",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-30T06:45:47.707881+00:00",
-      "level": "WATCH",
-      "title": "Babi\u0161: T\u0161ehhi saadaks Balti riikide toetuseks kaks brigaadi",
-      "source": "ERR Eesti (Estonian-language)",
-      "link": "https://www.err.ee/1610152030/babis-tsehhi-saadaks-balti-riikide-toetuseks-kaks-brigaadi",
-      "categories": [
-        "nato_conflict_risk"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1711,12 +1772,12 @@
     "window_days": 30,
     "scans": 211,
     "alerting_scans": 149,
-    "held_back_total": 74,
+    "held_back_total": 75,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 37
+        "count": 38
       },
       {
         "reason": "already alerted",
@@ -1734,6 +1795,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 32
+    "scans_before_tracking": 30
   }
 }
