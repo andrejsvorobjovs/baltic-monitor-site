@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-01T23:13:48.165453+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.3h ago",
+  "last_run_utc": "2026-10-02T07:06:17.927362+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 506,
+  "total_scans": 507,
   "quiet_count": 302,
-  "watch_count": 187,
+  "watch_count": 188,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-10-02 05:33 UTC",
+  "generated_at": "2026-10-02 07:06 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-02T07:06:17.944495+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 412,
+      "stale_count": 0,
+      "alert_id": "1002-0706",
+      "items": [
+        {
+          "title": "Putin vows Russia will respond with 'all weapons at our disposal' if attacked by NATO - The Kyiv Independent",
+          "source": "Kyiv Independent",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTzJjWHlURHh6Ym5SSWpSbVpzUjFObG9ZVENMT190VHBPLWJLVFRyVkRxNjNzRmlzX0ZmNWthQW9zV1BpTEZjUVBVenBhcjNzemxsOFZUWW9ONDBBbmFhUl9EVkk3cWZMaW15RG10ZEJqd1M0RWxaZnRCNU9CMjRXa3h4VmxMREZCMnJzMlRNRE9FSHVILXF0QXpzUnZoOF9hUG5pM3B0TjJ0WU8wcDlSMVdn?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "US Marines deploy to Baltic Sea region for NATO's Baltic Sentry mission",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610154247/us-marines-deploy-to-baltic-sea-region-for-nato-s-baltic-sentry-mission",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-01T23:13:48.181330+00:00",
       "level": "QUIET",
@@ -1121,204 +1165,40 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-29T08:59:43.473276+00:00",
-      "level": "WARN",
-      "count": 12,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 276,
-      "stale_count": 0,
-      "alert_id": "0929-0859",
-      "items": [
-        {
-          "title": "Estonia: Russia responsible for arson attack on defense contractor Milrem",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610151220/estonia-russia-responsible-for-arson-attack-on-defense-contractor-milrem",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kapo: Milremi s\u00fc\u00fctamise eest vastutab Venemaa",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610151208/kapo-milremi-suutamise-eest-vastutab-venemaa",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Igaunijas Dro\u0161\u012bbas dienests: Dedzin\u0101\u0161anu aizsardz\u012bbas uz\u0146\u0113mum\u0101 \u00abMilrem\u00bb pas\u016bt\u012bjusi Krievija",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/arzemes/29.09.2026-igaunijas-drosibas-dienests-dedzinasanu-aizsardzibas-uznemuma-milrem-pasutijusi-krievija.a665240/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Prad\u0117tas ikiteisminis tyrimas d\u0117l kibernetin\u0117s atakos prie\u0161 VRM sistem\u0105",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/pradetas-ikiteisminis-tyrimas-del-kibernetines-atakos-pries-vrm-sistema-56-2773628?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041c\u0438\u0445\u0430\u043b: \u0437\u0430 \u043f\u043e\u0434\u0436\u043e\u0433\u043e\u043c \u043b\u0430\u0441\u043d\u0430\u043c\u044f\u044d\u0441\u043a\u043e\u0433\u043e \u0437\u0434\u0430\u043d\u0438\u044f Milrem \u0441\u0442\u043e\u0438\u0442 \u0420\u043e\u0441\u0441\u0438\u044f",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610151209/mihal-za-podzhogom-lasnamjajeskogo-zdanija-milrem-stoit-rossija",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0417\u0430 \u043f\u043e\u0434\u0436\u043e\u0433\u043e\u043c \u0437\u0434\u0430\u043d\u0438\u044f \u043e\u0431\u043e\u0440\u043e\u043d\u043d\u043e\u0433\u043e \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u044f \u0432 \u0422\u0430\u043b\u043b\u0438\u043d\u0435 \u0441\u0442\u043e\u0438\u0442 \u041c\u043e\u0441\u043a\u0432\u0430 \u2014 \u043f\u0440\u0435\u043c\u044c\u0435\u0440 \u042d\u0441\u0442\u043e\u043d\u0438\u0438",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/mir/29.09.2026-za-podzogom-zdaniya-oboronnogo-predpriyatiya-v-talline-stoit-moskva-premer-estonii.a665246/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Igaunijas premjers: Dedzin\u0101\u0161ana aizsardz\u012bbas uz\u0146\u0113mum\u0101 Milrem Robotics bija Krievijas sabot\u0101\u017ea",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/viedokli/pasaule-196/igaunijas-premjers-dedzinasana-aizsardzibas-uznemuma-_milrem-robotics_-bija-krievijas-sabotaza?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Dedzin\u0101\u0161ana aizsardz\u012bbas uz\u0146\u0113mum\u0101 \"Milrem Robotics\" bija Krievijas sabot\u0101\u017ea, pazi\u0146o Igaunijas premjers",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8554669",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Tsahkna: Milremi Roboticsi s\u00fc\u00fctamine oli Venemaa eriteenistuste tellitud sabotaa\u017eiakt",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8554559",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Tr\u012bs latvie\u0161i tiek tur\u0113ti aizdom\u0101s par Igaunijas aizsardz\u012bbas uz\u0146\u0113muma \u201cMilrem Robotics\u201d dedzin\u0101\u0161anu: Igaunija pazi\u0146o, ka aiz t\u0101 visa st\u0101v Krievija",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/tris-latviesi-tiek-tureti-aizdomas-par-igaunijas-aizsardzibas-uznemuma-milrem-robotics-dedzinasanu-igaunija-pazino-ka-aiz-ta-visa-stav-krievija",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kaitsepolitsei: Milremi s\u00fc\u00fctamise eest vastutab Venemaa",
-          "source": "Ohtuleht (Estonia)",
-          "link": "https://www.ohtuleht.ee/1167876/kaitsepolitsei-milremi-suutamise-eest-vastutab-venemaa",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Estijos i\u0161vada: u\u017e gynybos pramon\u0117s \u012fmon\u0117s \u201eMilrem Robotics\u201c padegimo stovi Rusija",
-          "source": "Verslo zinios (Lithuania)",
-          "link": "https://www.vz.lt/pramone/2026/09/29/estijos-isvada-uz-gynybos-pramones-imones-milrem-padegimo-stovi-rusija-590673",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-02T07:06:17.959807+00:00",
+      "level": "WATCH",
+      "title": "US Marines deploy to Baltic Sea region for NATO's Baltic Sentry mission",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610154247/us-marines-deploy-to-baltic-sea-region-for-nato-s-baltic-sentry-mission",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-02T07:06:17.959807+00:00",
+      "level": "WATCH",
+      "title": "Putin vows Russia will respond with 'all weapons at our disposal' if attacked by NATO - The Kyiv Independent",
+      "source": "Kyiv Independent",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTzJjWHlURHh6Ym5SSWpSbVpzUjFObG9ZVENMT190VHBPLWJLVFRyVkRxNjNzRmlzX0ZmNWthQW9zV1BpTEZjUVBVenBhcjNzemxsOFZUWW9ONDBBbmFhUl9EVkk3cWZMaW15RG10ZEJqd1M0RWxaZnRCNU9CMjRXa3h4VmxMREZCMnJzMlRNRE9FSHVILXF0QXpzUnZoOF9hUG5pM3B0TjJ0WU8wcDlSMVdn?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-01T19:00:28.485033+00:00",
       "level": "WATCH",
@@ -1527,38 +1407,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-09-30T13:47:05.664863+00:00",
-      "level": "WATCH",
-      "title": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u0441\u043f\u0435\u0446\u0441\u043b\u0443\u0436\u0431\u044b \u0433\u043e\u0442\u043e\u0432\u0438\u043b\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0430 \u0413\u0430\u0440\u0440\u0438 \u041a\u0430\u0441\u043f\u0430\u0440\u043e\u0432\u0430 \u0438 \u0418\u043b\u044c\u0438 \u041f\u043e\u043d\u043e\u043c\u0430\u0440\u0435\u0432\u0430 \u2014\u00a0El Mundo",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/09/30/rossiiskie-spetssluzhby-gotovili-ubiistva-garri-kasparova-i-ili-ponomareva-el-mundo-news",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-09-30T13:47:05.664863+00:00",
-      "level": "WATCH",
-      "title": "\u0420\u043e\u0441\u0441\u0438\u044f \u0432 2027 \u0433\u043e\u0434\u0443 \u043f\u043e\u0442\u0440\u0430\u0442\u0438\u0442 \u043d\u0430 \u0432\u043e\u0439\u043d\u0443 18 \u0442\u0440\u043b\u043d \u0440\u0443\u0431\u043b\u0435\u0439 \u2014 \u0431\u043e\u043b\u044c\u0448\u0435, \u0447\u0435\u043c \u043d\u0430 \u0432\u0440\u0430\u0447\u0435\u0439, \u0443\u0447\u0438\u0442\u0435\u043b\u0435\u0439, \u0416\u041a\u0425 \u0438 \u044d\u043a\u043e\u043b\u043e\u0433\u0438\u044e",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/09/30/rossiia-v-2027-godu-potratit-na-voinu-18-trln-rublei-bolshe-chem-na-vrachei-uchitelei-zhkkh-i-ekologiiu",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1741,8 +1589,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 208,
-    "alerting_scans": 148,
+    "scans": 209,
+    "alerting_scans": 149,
     "held_back_total": 76,
     "held_back_by_reason": [
       {
