@@ -1,20 +1,170 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-03T06:31:40.299173+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-10-03T12:37:25.335197+00:00",
+  "last_level": "WARN",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 513,
+  "total_scans": 515,
   "quiet_count": 303,
-  "watch_count": 193,
-  "warn_count": 17,
+  "watch_count": 194,
+  "warn_count": 18,
   "correction_count": 4,
-  "generated_at": "2026-10-03 06:31 UTC",
+  "generated_at": "2026-10-03 12:37 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-03T12:37:25.350864+00:00",
+      "level": "WARN",
+      "count": 4,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 166,
+      "stale_count": 4,
+      "alert_id": "1003-1237",
+      "items": [
+        {
+          "title": "Lithuania closed Vilnius airport, scrambled NATO jets due to suspected drone - Reuters",
+          "source": "Reuters (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRFpFODRUM1QybF8weGlSalBrRzZaRFB4aVdKWU41bmEzb2FteEFuYVk3blVFQTZsX3RuU3VQOGVwTXpSc2plMjEtbU1taU5nZFZlZjlUZU5ZeHFidEs1bi14aEl2cFlESEM2RHhtaDJBZVZSaWNZNDVjUUhHVWtVWnhscmVFbzVJMkRpTXRaczkxam5yb0c1M0N3ZEpEMTIwNHlBWmdxSmdWT0d0QmFGanFxWUQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Remains of Two Weather Balloons Found Near Belarusian Border in Lithuania - reform.news",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOGdSMDFvdnJQczFqbVBaRHQtTlhERVNZYks5MlcySzNFcUdtOU1TeEpnLVVsbDgwcHFUalRmZmcwN3I3T09aQlRrTktQUjlwenk4c2dLNE1KVlVYcFhhcFNwR3dLcC1nSV9OYm1xX1BHckYxcDVnNzlrYXJHNmF1Yjc1d0lkX01FQ2tMSThvN2ZHZHNoeTdJU2djNWFLTkNjc0440gGjAUFVX3lxTE84Z1IwMW92clBzMWptUFpEdC1OWERFU1liSzkyVzJLM0VxR205TVN4SmctVWxsODBwcVRqVGZmZzA3cjdPT1pCVGtOS1BSOXB6eThzZ0s0TUpWVVhwWGFwU3BHd0twLWdJX05ibXFfUEdyRjFwNWc3OWthckc2YXViNzV3SWRfTUVDa0xJOG83Zkdkc2h5N0lTZ2M1YUtOQ2NzTjg?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Lithuania detains 35 Afghan and Iraqi migrants crossing from Belarus - Ariana News",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2FRalRRSnAxaU9IUm1MY2QxbG9YS3VGemJfcEV1d2ZTVHVkVm5ZWXhBSGxUZGFUM2ZCRzF2QUFqLUdQZUNDLXBnUTZhM1lnMG90MjM5OUtNc3FQakpiM0NIVWxZaUEyb2p2LThmX09qMXhwdnlPMDJlZGdudEJuNm84RlRwMmZKa0ZDa0tBdXN3b1E5UEpJX255QWs3OGti0gGgAUFVX3lxTE9DYVFqVFFKcDFpT0hSbUxjZDFsb1hLdUZ6Yl9wRXV3ZlNUdWRWbllZeEFIbFRkYVQzZkJHMXZBQWotR1BlQ0MtcGdRNmEzWWcwb3QyMzk5S01zcVBqSmIzQ0hVbFlpQTJvanYtOGZfT2oxeHB2eU8wMmVkZ250Qm42bzhGVHAyZkprRkNrS0F1c3dvUTlQSklfbnlBazc4a2I?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Lithuania Detains 35 Afghan and Iraqi Migrants After Belarus Border Crossing - Khaama Press",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaHh3bW5ULW9ZdTdzQVpNbV9sam81SnpYYnlUcHFSZEV5dnJyOVlLV3d1ejIza0YtZ1hKaHItM0ZBZ05PVDdJQ2x1N21hNDJidmJFdzFCdXZVY0FTVENSOTZLTVZ5SC1qci1ZU1hBN282Tks1UDBVSkdKd25XQUFyZHdXOEl5Rk1Ya2dITDNRZ29BQ0h0WjA4dkZpR3FKaWp6N2c?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-03T11:58:52.565290+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 353,
+      "stale_count": 0,
+      "alert_id": "1003-1158",
+      "items": [
+        {
+          "title": "Leedu sulges drooniohu t\u00f5ttu Vilniuse lennujaama",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610155417/leedu-sulges-drooniohu-tottu-vilniuse-lennujaama",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Varningar om rysk eskalering f\u00e5r kritik: \u201dSkr\u00e4mselpropaganda\u201d",
+          "source": "Sveriges Radio Ekot",
+          "link": "https://www.sverigesradio.se/artikel/9311754",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Baltijas valstis gatavojas iesp\u0113jamam Krievijas uzbrukumam: izstr\u0101d\u0101ti ar\u012b scen\u0101riji triecieniem Krievijas teritorij\u0101",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/baltijas-valstis-gatavojas-iespejamam-krievijas-uzbrukumam-izstradati-ari-scenariji-triecieniem-krievijas-teritorija",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vilniuse lennujaam suleti v\u00f5imaliku drooniohu t\u00f5ttu",
+          "source": "Aripaev (Estonia)",
+          "link": "https://www.aripaev.ee/uudised/2026/10/03/vilniuse-lennujaam-suleti-voimaliku-drooniohu-tottu",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-03T06:31:40.316176+00:00",
       "level": "WATCH",
@@ -861,206 +1011,73 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-30T13:47:05.649996+00:00",
-      "level": "WATCH",
-      "count": 8,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 657,
-      "stale_count": 11,
-      "alert_id": "0930-1347",
-      "items": [
-        {
-          "title": "Prie slapt\u0173 valstyb\u0117s duomen\u0173 \u2013 per \u201egalines duris\u201c: naujas kibernetini\u0173 atak\u0173 taikinys",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/bustas/ateities-miestai/prie-slaptu-valstybes-duomenu-per-galines-duris-naujas-kibernetiniu-ataku-taikinys-120311167",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201cWe have no legal obstacles\u201d \u2013 Rink\u0113vi\u010ds on deploying nuclear weapons in Latvia",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/we-have-no-legal-obstacles-rinkevics-on-deploying-nuclear-weapons-in-latvia-284349",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0160obr\u012bd nav paz\u012bmju, ka Krievija var\u0113tu tie\u0161i iebrukt k\u0101d\u0101 no NATO dal\u012bbvalst\u012bm, pazi\u0146o Rink\u0113vi\u010ds",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8555761",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u017diniasklaida: Lenkija u\u017eleis gynybos i\u0161laid\u0173 pagal BVP lyder\u0117s pozicij\u0105 Baltijos \u0161alims",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/pasaulis/konfliktai-ir-saugumas/2026/09/30/news/ziniasklaida-lenkija-uzleis-gynybos-islaidu-pagal-bvp-lyderes-pozicija-baltijos-salims-44259619/",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Russia Sends Nuclear Warning to NATO as Tensions Rise in the Baltic",
-          "source": "Moscow Times",
-          "link": "https://www.themoscowtimes.com/2026/09/30/russia-sends-nuclear-warning-to-nato-as-tensions-rise-in-the-baltic-a93828",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0420\u043e\u0441\u0441\u0438\u044f \u0432 2027 \u0433\u043e\u0434\u0443 \u043f\u043e\u0442\u0440\u0430\u0442\u0438\u0442 \u043d\u0430 \u0432\u043e\u0439\u043d\u0443 18 \u0442\u0440\u043b\u043d \u0440\u0443\u0431\u043b\u0435\u0439 \u2014 \u0431\u043e\u043b\u044c\u0448\u0435, \u0447\u0435\u043c \u043d\u0430 \u0432\u0440\u0430\u0447\u0435\u0439, \u0443\u0447\u0438\u0442\u0435\u043b\u0435\u0439, \u0416\u041a\u0425 \u0438 \u044d\u043a\u043e\u043b\u043e\u0433\u0438\u044e",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/30/rossiia-v-2027-godu-potratit-na-voinu-18-trln-rublei-bolshe-chem-na-vrachei-uchitelei-zhkkh-i-ekologiiu",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u0441\u043f\u0435\u0446\u0441\u043b\u0443\u0436\u0431\u044b \u0433\u043e\u0442\u043e\u0432\u0438\u043b\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0430 \u0413\u0430\u0440\u0440\u0438 \u041a\u0430\u0441\u043f\u0430\u0440\u043e\u0432\u0430 \u0438 \u0418\u043b\u044c\u0438 \u041f\u043e\u043d\u043e\u043c\u0430\u0440\u0435\u0432\u0430 \u2014\u00a0El Mundo",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/30/rossiiskie-spetssluzhby-gotovili-ubiistva-garri-kasparova-i-ili-ponomareva-el-mundo-news",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "KAITSEV\u00c4GI VAJAB TERVEID INIMESI | Mihkel Lees: liiga sageli eeldame, et laps j\u00f5uab trenni niikuinii",
-          "source": "Ohtuleht (Estonia)",
-          "link": "https://www.ohtuleht.ee/1167895/kaitsevagi-vajab-terveid-inimesi-mihkel-lees-liiga-sageli-eeldame-et-laps-jouab-trenni-niikuinii",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-30T08:58:43.800138+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 319,
-      "stale_count": 0,
-      "alert_id": "0930-0858",
-      "items": [
-        {
-          "title": "Lietuva parei\u0161k\u0117 Rusijai protest\u0105 d\u0117l sabota\u017eo Estijoje ir atak\u0173 prie\u0161 Ukrain\u0105",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/lietuva-pareiske-rusijai-protesta-del-sabotazo-estijoje-ir-ataku-pries-ukraina-56-2774492?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "URM \u012fteik\u0117 Rusijai grie\u017eto protesto notas: pasmerk\u0117 sabota\u017eo akt\u0105 Estijoje ir i\u0161puolius prie\u0161 Ukrain\u0105",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/09/30/news/urm-iteike-rusijai-griezto-protesto-notas-pasmerke-sabotazo-akta-estijoje-ir-ispuolius-pries-ukraina-44257488/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041f\u0440\u0438\u0437\u0440\u0430\u043a\u0438 \u0435\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u043e\u0439 \u0432\u043e\u0439\u043d\u044b",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/09/30/prizraki-evropeiskoi-voiny",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-03T12:37:25.366638+00:00",
+      "level": "WARN",
+      "title": "Lithuania Detains 35 Afghan and Iraqi Migrants After Belarus Border Crossing - Khaama Press",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaHh3bW5ULW9ZdTdzQVpNbV9sam81SnpYYnlUcHFSZEV5dnJyOVlLV3d1ejIza0YtZ1hKaHItM0ZBZ05PVDdJQ2x1N21hNDJidmJFdzFCdXZVY0FTVENSOTZLTVZ5SC1qci1ZU1hBN282Tks1UDBVSkdKd25XQUFyZHdXOEl5Rk1Ya2dITDNRZ29BQ0h0WjA4dkZpR3FKaWp6N2c?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-03T12:37:25.366638+00:00",
+      "level": "WARN",
+      "title": "Lithuania detains 35 Afghan and Iraqi migrants crossing from Belarus - Ariana News",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2FRalRRSnAxaU9IUm1MY2QxbG9YS3VGemJfcEV1d2ZTVHVkVm5ZWXhBSGxUZGFUM2ZCRzF2QUFqLUdQZUNDLXBnUTZhM1lnMG90MjM5OUtNc3FQakpiM0NIVWxZaUEyb2p2LThmX09qMXhwdnlPMDJlZGdudEJuNm84RlRwMmZKa0ZDa0tBdXN3b1E5UEpJX255QWs3OGti0gGgAUFVX3lxTE9DYVFqVFFKcDFpT0hSbUxjZDFsb1hLdUZ6Yl9wRXV3ZlNUdWRWbllZeEFIbFRkYVQzZkJHMXZBQWotR1BlQ0MtcGdRNmEzWWcwb3QyMzk5S01zcVBqSmIzQ0hVbFlpQTJvanYtOGZfT2oxeHB2eU8wMmVkZ250Qm42bzhGVHAyZkprRkNrS0F1c3dvUTlQSklfbnlBazc4a2I?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-03T12:37:25.366638+00:00",
+      "level": "WARN",
+      "title": "Remains of Two Weather Balloons Found Near Belarusian Border in Lithuania - reform.news",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOGdSMDFvdnJQczFqbVBaRHQtTlhERVNZYks5MlcySzNFcUdtOU1TeEpnLVVsbDgwcHFUalRmZmcwN3I3T09aQlRrTktQUjlwenk4c2dLNE1KVlVYcFhhcFNwR3dLcC1nSV9OYm1xX1BHckYxcDVnNzlrYXJHNmF1Yjc1d0lkX01FQ2tMSThvN2ZHZHNoeTdJU2djNWFLTkNjc0440gGjAUFVX3lxTE84Z1IwMW92clBzMWptUFpEdC1OWERFU1liSzkyVzJLM0VxR205TVN4SmctVWxsODBwcVRqVGZmZzA3cjdPT1pCVGtOS1BSOXB6eThzZ0s0TUpWVVhwWGFwU3BHd0twLWdJX05ibXFfUEdyRjFwNWc3OWthckc2YXViNzV3SWRfTUVDa0xJOG83Zkdkc2h5N0lTZ2M1YUtOQ2NzTjg?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-03T12:37:25.366638+00:00",
+      "level": "WARN",
+      "title": "Lithuania closed Vilnius airport, scrambled NATO jets due to suspected drone - Reuters",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRFpFODRUM1QybF8weGlSalBrRzZaRFB4aVdKWU41bmEzb2FteEFuYVk3blVFQTZsX3RuU3VQOGVwTXpSc2plMjEtbU1taU5nZFZlZjlUZU5ZeHFidEs1bi14aEl2cFlESEM2RHhtaDJBZVZSaWNZNDVjUUhHVWtVWnhscmVFbzVJMkRpTXRaczkxam5yb0c1M0N3ZEpEMTIwNHlBWmdxSmdWT0d0QmFGanFxWUQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-03T06:31:40.332015+00:00",
       "level": "WATCH",
@@ -1227,69 +1244,6 @@
       "categories": [
         "baltic_specific",
         "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-02T13:57:49.640557+00:00",
-      "level": "WATCH",
-      "title": "Estonian Military Intelligence Chief: We See No Threat of a Military Attack on the Baltic States, Nor Any Sign of Russian Mobilization - The Baltic Sentinel",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNZXRjeXQ2NEIxN0tNSmQwb3QtWXFVdU9PVzVRRXNZdXNaQ0xRZkg1SWk1c3Yyc2kyM3N5UGhTVzk4RWtkUDNJRWk3M0hfbld3WFRmNUJJRW02R3ItckVwR095Nmw2YmdsTTRNOE45Wl9rblIwVnJMRlNQSnlEd1FNM0pGMmRDcU11dW5hOUtKMXJUTjV5RVN5TGY5U0tDQWlpSl9NNF82bVZ1VEZINy1aTm1qdnBZbV9WM2tGT1VraHEyWEE0c2oxeGp3TFlIdkQ1YnB2RlhFS0lGTzk3b1pXQVFHamVOSW5xNFhuME1YTEkzTnJ0TW5Ka3pB?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-02T13:57:49.640557+00:00",
-      "level": "WATCH",
-      "title": "Lithuanian border guards turn back eight irregular migrants at the Belarus border in 24 hours - AZ\u018fRTAC \u2013 Az\u0259rbaycan D\u00f6vl\u0259t \u0130nformasiya Agentliyi",
-      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNFAtQ3paTjdmSnZUOUFRenJsUWpVQlBqN0t1RjR2YVlGNmcwZ25zOC1tbEtFSW5DeExCcGxBMmNBczNBX0kteTBZOUxpMkNuSnVsQUdFQWxRbk82dFl3UjIzbkIxNS1IOVU3QVBlZEUzdzZuSDRaU3NzRi0waEdHN2gtYkQyNGVvaGVBY1lXZi1CYzZtWGVKNVhVMndtUzllRUtZR2ZaR3VyVlA3N2lDLWdOZkZyelZzeFNBSUpBaEE1dU5vY3lYOA?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-02T07:06:17.959807+00:00",
-      "level": "WATCH",
-      "title": "US Marines deploy to Baltic Sea region for NATO's Baltic Sentry mission",
-      "source": "ERR News (Estonia)",
-      "link": "https://news.err.ee/1610154247/us-marines-deploy-to-baltic-sea-region-for-nato-s-baltic-sentry-mission",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-02T07:06:17.959807+00:00",
-      "level": "WATCH",
-      "title": "Putin vows Russia will respond with 'all weapons at our disposal' if attacked by NATO - The Kyiv Independent",
-      "source": "Kyiv Independent",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTzJjWHlURHh6Ym5SSWpSbVpzUjFObG9ZVENMT190VHBPLWJLVFRyVkRxNjNzRmlzX0ZmNWthQW9zV1BpTEZjUVBVenBhcjNzemxsOFZUWW9ONDBBbmFhUl9EVkk3cWZMaW15RG10ZEJqd1M0RWxaZnRCNU9CMjRXa3h4VmxMREZCMnJzMlRNRE9FSHVILXF0QXpzUnZoOF9hUG5pM3B0TjJ0WU8wcDlSMVdn?oc=5",
-      "categories": [
-        "nato_conflict_risk"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1478,8 +1432,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 207,
-    "alerting_scans": 150,
+    "scans": 206,
+    "alerting_scans": 149,
     "held_back_total": 78,
     "held_back_by_reason": [
       {
@@ -1503,6 +1457,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 15
+    "scans_before_tracking": 12
   }
 }
