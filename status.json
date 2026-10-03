@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-03T17:22:02.962286+00:00",
+  "last_run_utc": "2026-10-03T22:16:13.219381+00:00",
   "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 517,
-  "quiet_count": 304,
+  "total_scans": 518,
+  "quiet_count": 305,
   "watch_count": 195,
   "warn_count": 18,
   "correction_count": 4,
-  "generated_at": "2026-10-03 17:22 UTC",
+  "generated_at": "2026-10-03 22:16 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-03T22:16:13.235568+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 383,
+      "stale_count": 10,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-10-03T17:22:02.977812+00:00",
       "level": "QUIET",
@@ -919,51 +933,6 @@
       "stale_count": 2,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-09-30T20:58:52.226966+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 58,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 112,
-      "stale_count": 0,
-      "alert_id": "0930-2058",
-      "items": [
-        {
-          "title": "Latvijos premjeras \u2013 apie Rusijos grasinimus Baltijos \u0161alims: ne\u012fmanoma, i\u0161skyrus vien\u0105 atvej\u012f",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/latvijos-premjeras-apie-rusijos-grasinimus-baltijos-salims-neimanoma-isskyrus-viena-atveji-57-2774664?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Latvia could host nuclear weapons if\u00a0NATO chooses to\u00a0deploy them, president says",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/09/30/latvia-could-host-nuclear-weapons-if-nato-chooses-to-deploy-them-president-says",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1385,7 +1354,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 206,
+    "scans": 205,
     "alerting_scans": 149,
     "held_back_total": 79,
     "held_back_by_reason": [
@@ -1410,6 +1379,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 10
+    "scans_before_tracking": 8
   }
 }
