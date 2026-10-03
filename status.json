@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-03T12:37:25.335197+00:00",
-  "last_level": "WARN",
-  "freshness_msg": "Last scan: 3.6h ago",
+  "last_run_utc": "2026-10-03T17:22:02.962286+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 515,
-  "quiet_count": 303,
-  "watch_count": 194,
+  "total_scans": 517,
+  "quiet_count": 304,
+  "watch_count": 195,
   "warn_count": 18,
   "correction_count": 4,
-  "generated_at": "2026-10-03 16:15 UTC",
+  "generated_at": "2026-10-03 17:22 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-03T17:22:02.977812+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 367,
+      "stale_count": 20,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-10-03T16:41:32.909001+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 5,
+      "tier3_count": 0,
+      "sources_scanned": 56,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 240,
+      "stale_count": 0,
+      "alert_id": "1003-1641",
+      "items": [
+        {
+          "title": "DANIIL MARTIKAINEN-JARLUKOVSKI \u27e9 Eesti toetab Venemaa majandust ja propagandat \u2013 paneme selle piiri kinni!",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8557524",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-03T12:37:25.350864+00:00",
       "level": "WARN",
@@ -920,97 +964,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-30T18:34:38.970979+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 282,
-      "stale_count": 5,
-      "alert_id": "0930-1834",
-      "items": [
-        {
-          "title": "Karm avaldus: Venemaa edastas NATO-le sisuliselt ultimaatumi, mille ignoreerimine viib s\u00f5jani Balti riikides - eestinen",
-          "source": "Estonian-language general (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTkEtU3A5cTM0TkhtaDE5Um1ZSkZSbkxiRXh2OFdiTDNia0h1MkV3dkxtMDMzcnJZdUJDYVRWa2tZWG5XR3pxaWo3OXh3cWh1NjFzaHFCQmRSbUp0VEVPZmVJZlBKWFYzeE1UZV9xZTBqX0w2M3diQTBfcUliNmJDVjNod3FRbWg5OEE0MkVKY0NMSjZsUi1uQTFmcW56cC1kblB1QWlTUUIzRjU0MGs3c1R0VzZxTFlTYW9oV0FYMEdjd2ZWZENfV3VhbE1jWC1I?oc=5",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Estijos \u017evalgybos vadovas \u012fsp\u0117ja: Rusija taikosi \u012f Europos ginkl\u0173 gamintojus",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/uzsienyje/estijos-zvalgybos-vadovas-ispeja-rusija-taikosi-i-europos-ginklu-gamintojus-120312404",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Russia threatens NATO with a\u00a0nuclear strike if\u00a0the alliance tries to\u00a0blockade Kaliningrad",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/09/30/russia-threatens-nato-with-a-nuclear-strike-if-the-alliance-tries-to-blockade-kaliningrad",
-          "categories": [
-            "baltic_specific",
-            "diplomatic",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-09-30T16:30:52.836831+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 259,
-      "stale_count": 0,
-      "alert_id": "0930-1630",
-      "items": [
-        {
-          "title": "Prezidents: \u0160obr\u012bd Latvijas r\u012bc\u012bb\u0101 nav faktu, ka Krievija var\u0113tu tie\u0161i iebrukt k\u0101d\u0101 no NATO dal\u012bbvalst\u012bm",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/latvija/zinas-71/prezidents-sobrid-latvijas-riciba-nav-faktu-ka-krievija-varetu-tiesi-iebrukt-kada-no-nato-dalibvalstim?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1432,14 +1385,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 205,
+    "scans": 206,
     "alerting_scans": 149,
-    "held_back_total": 78,
+    "held_back_total": 79,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 39
+        "count": 40
       },
       {
         "reason": "already alerted",
@@ -1457,6 +1410,6 @@
         "count": 3
       }
     ],
-    "scans_before_tracking": 11
+    "scans_before_tracking": 10
   }
 }
