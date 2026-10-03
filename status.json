@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-02T23:05:03.437668+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.2h ago",
+  "last_run_utc": "2026-10-03T06:31:40.299173+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 512,
+  "total_scans": 513,
   "quiet_count": 303,
-  "watch_count": 192,
+  "watch_count": 193,
   "warn_count": 17,
   "correction_count": 4,
-  "generated_at": "2026-10-03 05:15 UTC",
+  "generated_at": "2026-10-03 06:31 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-03T06:31:40.316176+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 252,
+      "stale_count": 2,
+      "alert_id": "1003-0631",
+      "items": [
+        {
+          "title": "Latvians vote in election in shadow of drone incursions and war in Ukraine - Reuters",
+          "source": "Reuters (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTVRzMW1UWVVwbWZVZy01eERac2RLY3VUdF80TGFDWFlKQjMxY1M4bXFzZEJ5TXA4d09aZU9uSWhPZ3FCVXVBNEVRNkwzaUItQm9hMnhFWnVPV0RFeDRaeE9KOGpQMU10NTd2VmtGT09FTS05cGQxWmZKalFKV082NWcycTg3VjZoTDJ0MUZOOU9mRldfM3lQVDhDYll4OVZPZnc?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier1",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
     {
       "ts": "2026-10-02T23:05:03.473127+00:00",
       "level": "QUIET",
@@ -1028,38 +1058,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-09-30T06:45:47.691346+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 457,
-      "stale_count": 4,
-      "alert_id": "0930-0645",
-      "items": [
-        {
-          "title": "Babi\u0161: T\u0161ehhi saadaks Balti riikide toetuseks kaks brigaadi",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610152030/babis-tsehhi-saadaks-balti-riikide-toetuseks-kaks-brigaadi",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-03T06:31:40.332015+00:00",
+      "level": "WATCH",
+      "title": "Latvians vote in election in shadow of drone incursions and war in Ukraine - Reuters",
+      "source": "Reuters (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTVRzMW1UWVVwbWZVZy01eERac2RLY3VUdF80TGFDWFlKQjMxY1M4bXFzZEJ5TXA4d09aZU9uSWhPZ3FCVXVBNEVRNkwzaUItQm9hMnhFWnVPV0RFeDRaeE9KOGpQMU10NTd2VmtGT09FTS05cGQxWmZKalFKV082NWcycTg3VjZoTDJ0MUZOOU9mRldfM3lQVDhDYll4OVZPZnc?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier1",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-02T18:36:04.627753+00:00",
       "level": "WATCH",
@@ -1279,22 +1296,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-01T19:00:28.485033+00:00",
-      "level": "WATCH",
-      "title": "\u041f\u0440\u0430\u0432\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e \u043f\u043b\u0430\u043d\u0438\u0440\u0443\u0435\u0442 \u0443\u0441\u0438\u043b\u0438\u0442\u044c \u043a\u0438\u0431\u0435\u0440\u0437\u0430\u0449\u0438\u0442\u0443 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0445 \u0432\u044b\u0431\u043e\u0440\u043e\u0432",
-      "source": "ERR Russian-language",
-      "link": "https://rus.err.ee/1610153941/pravitelstvo-planiruet-usilit-kiberzawitu-jelektronnyh-vyborov",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1477,8 +1478,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 206,
-    "alerting_scans": 149,
+    "scans": 207,
+    "alerting_scans": 150,
     "held_back_total": 78,
     "held_back_by_reason": [
       {

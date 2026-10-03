@@ -3583,6 +3583,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-03T06:31:40.316176+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -3805,6 +3812,10 @@
     {
       "ts": "2026-10-01T00:00:00+00:00",
       "count": 155
+    },
+    {
+      "ts": "2026-10-02T00:00:00+00:00",
+      "count": 169
     }
   ],
   "ais_points": [
@@ -4871,6 +4882,10 @@
     {
       "ts": "2026-10-02T23:04:01.774671+00:00",
       "count": 299
+    },
+    {
+      "ts": "2026-10-03T06:30:53.376768+00:00",
+      "count": 348
     }
   ],
   "military_points": [
@@ -5937,6 +5952,10 @@
     {
       "ts": "2026-10-02T23:04:02.369552+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-03T06:30:53.815688+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -6711,6 +6730,10 @@
     {
       "ts": "2026-10-02T23:04:05.408573+00:00",
       "count": 41
+    },
+    {
+      "ts": "2026-10-03T06:30:56.082593+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -7436,6 +7459,10 @@
     },
     {
       "ts": "2026-10-02T23:04:28.356835+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-03T06:31:06.563189+00:00",
       "count": 0
     }
   ],
@@ -11376,6 +11403,33 @@
         ]
       },
       "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-03T06:31:06.565193+00:00",
+      "deviation_pct": -48.22309599274413,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
       "band_record_scans": null
     }
   ]
