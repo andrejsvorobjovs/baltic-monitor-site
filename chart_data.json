@@ -3737,6 +3737,20 @@
       "count": 3,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-06T21:12:10.505820+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-10-06T23:07:10.070296+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5097,6 +5111,10 @@
     {
       "ts": "2026-10-06T19:01:53.251370+00:00",
       "count": 268
+    },
+    {
+      "ts": "2026-10-06T23:06:23.999583+00:00",
+      "count": 255
     }
   ],
   "military_points": [
@@ -6219,6 +6237,10 @@
     {
       "ts": "2026-10-06T19:01:54.925489+00:00",
       "count": 2
+    },
+    {
+      "ts": "2026-10-06T23:06:24.733039+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -7041,6 +7063,10 @@
     {
       "ts": "2026-10-06T14:16:59.048417+00:00",
       "count": 28
+    },
+    {
+      "ts": "2026-10-06T23:06:27.641235+00:00",
+      "count": 31
     }
   ],
   "entsoe_points": [
@@ -7822,6 +7848,10 @@
     },
     {
       "ts": "2026-10-06T19:03:28.748114+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-06T23:06:35.896135+00:00",
       "count": 0
     }
   ],
@@ -12125,6 +12155,29 @@
         ]
       },
       "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-06T23:06:35.898217+00:00",
+      "deviation_pct": -22.258278607472757,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
+        ]
+      },
+      "band_key": "moderate_below",
       "band_record_scans": null
     }
   ]

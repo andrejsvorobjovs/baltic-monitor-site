@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-06T19:04:00.846469+00:00",
-  "last_level": "WARN",
+  "last_run_utc": "2026-10-06T23:07:10.054288+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 534,
-  "quiet_count": 308,
-  "watch_count": 207,
+  "total_scans": 536,
+  "quiet_count": 309,
+  "watch_count": 208,
   "warn_count": 19,
   "correction_count": 4,
-  "generated_at": "2026-10-06 19:04 UTC",
+  "generated_at": "2026-10-06 23:07 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-06T23:07:10.070296+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 148,
+      "stale_count": 5,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-10-06T21:12:10.505820+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 105,
+      "stale_count": 1,
+      "alert_id": "1006-2112",
+      "items": [
+        {
+          "title": "Latvian officials say armed masked men threatened troops while trying to\u00a0push 20 migrants across from Belarus, then crossed into Latvia themselves and stole surveillance cameras",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/news/2026/10/07/latvian-officials-say-armed-masked-men-threatened-troops-while-trying-to-push-20-migrants-across-from-belarus-then-crossed-into-latvia-themselves-and-stole-surveillance-cameras",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-06T19:04:00.863407+00:00",
       "level": "WARN",
@@ -683,111 +727,6 @@
       "stale_count": 20,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-03T16:41:32.909001+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 5,
-      "tier3_count": 0,
-      "sources_scanned": 56,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 240,
-      "stale_count": 0,
-      "alert_id": "1003-1641",
-      "items": [
-        {
-          "title": "DANIIL MARTIKAINEN-JARLUKOVSKI \u27e9 Eesti toetab Venemaa majandust ja propagandat \u2013 paneme selle piiri kinni!",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8557524",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-03T12:37:25.350864+00:00",
-      "level": "WARN",
-      "count": 4,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 166,
-      "stale_count": 4,
-      "alert_id": "1003-1237",
-      "items": [
-        {
-          "title": "Lithuania closed Vilnius airport, scrambled NATO jets due to suspected drone - Reuters",
-          "source": "Reuters (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRFpFODRUM1QybF8weGlSalBrRzZaRFB4aVdKWU41bmEzb2FteEFuYVk3blVFQTZsX3RuU3VQOGVwTXpSc2plMjEtbU1taU5nZFZlZjlUZU5ZeHFidEs1bi14aEl2cFlESEM2RHhtaDJBZVZSaWNZNDVjUUhHVWtVWnhscmVFbzVJMkRpTXRaczkxam5yb0c1M0N3ZEpEMTIwNHlBWmdxSmdWT0d0QmFGanFxWUQ?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier1",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Remains of Two Weather Balloons Found Near Belarusian Border in Lithuania - reform.news",
-          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOGdSMDFvdnJQczFqbVBaRHQtTlhERVNZYks5MlcySzNFcUdtOU1TeEpnLVVsbDgwcHFUalRmZmcwN3I3T09aQlRrTktQUjlwenk4c2dLNE1KVlVYcFhhcFNwR3dLcC1nSV9OYm1xX1BHckYxcDVnNzlrYXJHNmF1Yjc1d0lkX01FQ2tMSThvN2ZHZHNoeTdJU2djNWFLTkNjc0440gGjAUFVX3lxTE84Z1IwMW92clBzMWptUFpEdC1OWERFU1liSzkyVzJLM0VxR205TVN4SmctVWxsODBwcVRqVGZmZzA3cjdPT1pCVGtOS1BSOXB6eThzZ0s0TUpWVVhwWGFwU3BHd0twLWdJX05ibXFfUEdyRjFwNWc3OWthckc2YXViNzV3SWRfTUVDa0xJOG83Zkdkc2h5N0lTZ2M1YUtOQ2NzTjg?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Lithuania detains 35 Afghan and Iraqi migrants crossing from Belarus - Ariana News",
-          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2FRalRRSnAxaU9IUm1MY2QxbG9YS3VGemJfcEV1d2ZTVHVkVm5ZWXhBSGxUZGFUM2ZCRzF2QUFqLUdQZUNDLXBnUTZhM1lnMG90MjM5OUtNc3FQakpiM0NIVWxZaUEyb2p2LThmX09qMXhwdnlPMDJlZGdudEJuNm84RlRwMmZKa0ZDa0tBdXN3b1E5UEpJX255QWs3OGti0gGgAUFVX3lxTE9DYVFqVFFKcDFpT0hSbUxjZDFsb1hLdUZ6Yl9wRXV3ZlNUdWRWbllZeEFIbFRkYVQzZkJHMXZBQWotR1BlQ0MtcGdRNmEzWWcwb3QyMzk5S01zcVBqSmIzQ0hVbFlpQTJvanYtOGZfT2oxeHB2eU8wMmVkZ250Qm42bzhGVHAyZkprRkNrS0F1c3dvUTlQSklfbnlBazc4a2I?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Lithuania Detains 35 Afghan and Iraqi Migrants After Belarus Border Crossing - Khaama Press",
-          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaHh3bW5ULW9ZdTdzQVpNbV9sam81SnpYYnlUcHFSZEV5dnJyOVlLV3d1ejIza0YtZ1hKaHItM0ZBZ05PVDdJQ2x1N21hNDJidmJFdzFCdXZVY0FTVENSOTZLTVZ5SC1qci1ZU1hBN282Tks1UDBVSkdKd25XQUFyZHdXOEl5Rk1Ya2dITDNRZ29BQ0h0WjA4dkZpR3FKaWp6N2c?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1212,8 +1151,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 201,
-    "alerting_scans": 157,
+    "scans": 202,
+    "alerting_scans": 158,
     "held_back_total": 87,
     "held_back_by_reason": [
       {
