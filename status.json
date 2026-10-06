@@ -1,20 +1,79 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-06T07:37:28.816213+00:00",
+  "last_run_utc": "2026-10-06T14:17:39.482839+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 531,
+  "total_scans": 532,
   "quiet_count": 308,
-  "watch_count": 205,
+  "watch_count": 206,
   "warn_count": 18,
   "correction_count": 4,
-  "generated_at": "2026-10-06 07:37 UTC",
+  "generated_at": "2026-10-06 14:17 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-06T14:17:39.496981+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 571,
+      "stale_count": 4,
+      "alert_id": "1006-1417",
+      "items": [
+        {
+          "title": "FT: Estonia is deploying elite troops to the border and preparing for possible strikes deep into Russia - LIGA.net",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQN2dXdy1Id1djNE1fd25PUUs2OC04MzRFNlVnXzY0NzRTVzlEenZTTWhKS1NoU3dXTkxWMldLNVRmbXhPYThpWVNUUHk1QWVvekhxSnMtamd1dmVySVNFRWJzNVBuUmgtR1dYaFQ2TXd5TW1nVEg0ZWZBcS1td3U1a0FPSTBDWWdlMVlTc09FQ3FFZ1VzaVhxYkRndlVwd050ZHZNOW1DTUZmd3k3WWVwMEFMOWVJSElzQUhJb3lIS2xsUURwZmhFbE1qYzEwNFMwclHSAdcBQVVfeXFMT1FtTG91V1RiQUhrUjBNX0h0aWp6VDE5czRPYnJrSUJwUUlXYWMtWVk2QlFLTDJ6RnNfN1B2TWhWaFRBYWRRXzFydDg2OUNpZFNtS1R2eXdySUNTSTVYM2N6S2g4dURnZi1ZN2p4UVRXdUtMMU90MjhfNlhlUzhKOFI4VWU0VmQ3ZnJsT2stYTlZOVFIRG5ianF2OXhUdllXVlUyM3BzV1ZBX3oxZ212NF9iX294SGxhM3ZYOVloaFlFYTByN2hEUnhrY0NTRzZoZjNDdkVmZlU?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Segalovi\u010dien\u0117: galimas didesnis deficitas kelia nerim\u0105",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/verslas/naujienos/segaloviciene-galimas-didesnis-deficitas-kelia-nerima-120314940",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Europeanising NATO: The Arctic",
+          "source": "ICDS (Estonia)",
+          "link": "https://icds.ee/en/europeanising-nato-the-arctic/",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-06T07:37:28.839603+00:00",
       "level": "WATCH",
@@ -744,23 +803,56 @@
           "route": "google"
         }
       ]
-    },
-    {
-      "ts": "2026-10-02T23:05:03.473127+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 184,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-06T14:17:39.508144+00:00",
+      "level": "WATCH",
+      "title": "Europeanising NATO: The Arctic",
+      "source": "ICDS (Estonia)",
+      "link": "https://icds.ee/en/europeanising-nato-the-arctic/",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-06T14:17:39.508144+00:00",
+      "level": "WATCH",
+      "title": "Segalovi\u010dien\u0117: galimas didesnis deficitas kelia nerim\u0105",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/verslas/naujienos/segaloviciene-galimas-didesnis-deficitas-kelia-nerima-120314940",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-06T14:17:39.508144+00:00",
+      "level": "WATCH",
+      "title": "FT: Estonia is deploying elite troops to the border and preparing for possible strikes deep into Russia - LIGA.net",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQN2dXdy1Id1djNE1fd25PUUs2OC04MzRFNlVnXzY0NzRTVzlEenZTTWhKS1NoU3dXTkxWMldLNVRmbXhPYThpWVNUUHk1QWVvekhxSnMtamd1dmVySVNFRWJzNVBuUmgtR1dYaFQ2TXd5TW1nVEg0ZWZBcS1td3U1a0FPSTBDWWdlMVlTc09FQ3FFZ1VzaVhxYkRndlVwd050ZHZNOW1DTUZmd3k3WWVwMEFMOWVJSElzQUhJb3lIS2xsUURwZmhFbE1qYzEwNFMwclHSAdcBQVVfeXFMT1FtTG91V1RiQUhrUjBNX0h0aWp6VDE5czRPYnJrSUJwUUlXYWMtWVk2QlFLTDJ6RnNfN1B2TWhWaFRBYWRRXzFydDg2OUNpZFNtS1R2eXdySUNTSTVYM2N6S2g4dURnZi1ZN2p4UVRXdUtMMU90MjhfNlhlUzhKOFI4VWU0VmQ3ZnJsT2stYTlZOVFIRG5ianF2OXhUdllXVlUyM3BzV1ZBX3oxZ212NF9iX294SGxhM3ZYOVloaFlFYTByN2hEUnhrY0NTRzZoZjNDdkVmZlU?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-06T07:37:28.852614+00:00",
       "level": "WATCH",
@@ -953,53 +1045,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-03T06:31:40.332015+00:00",
-      "level": "WATCH",
-      "title": "Latvians vote in election in shadow of drone incursions and war in Ukraine - Reuters",
-      "source": "Reuters (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTVRzMW1UWVVwbWZVZy01eERac2RLY3VUdF80TGFDWFlKQjMxY1M4bXFzZEJ5TXA4d09aZU9uSWhPZ3FCVXVBNEVRNkwzaUItQm9hMnhFWnVPV0RFeDRaeE9KOGpQMU10NTd2VmtGT09FTS05cGQxWmZKalFKV082NWcycTg3VjZoTDJ0MUZOOU9mRldfM3lQVDhDYll4OVZPZnc?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-02T18:36:04.627753+00:00",
-      "level": "WATCH",
-      "title": "Balion\u0105 su kontrabanda sek\u0119 jaunuoliai \u012fkliuvo pasienie\u010diams",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/kriminalai/baliona-su-kontrabanda-seke-jaunuoliai-ikliuvo-pasienieciams-120313446",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-02T18:36:04.627753+00:00",
-      "level": "WATCH",
-      "title": "Russia unable to invade NATO but 'constantly escalating,' Polish general says - TVP World",
-      "source": "TVP World (Poland)",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZFpSdnBkNy16RXZBaUFOdDVod3ZFYTF0RWZBQnQ2MTBlZE5icGx3MmZ2MURZd0ZFWlRjTTV0QU9XTkdxZklLLVpaT1dQdGlzdmhScVRrRUpzbVdBZk5iT1pWRVhkVmpjYnY2a21mdEJZbjF5MjNQVU5jY0w1MU5YemNBQ01IeWZHWXFtbm92UlhFejVnSGEyQkVpaC1CWlJQQWJvekdHSGM?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1182,14 +1227,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 203,
+    "scans": 202,
     "alerting_scans": 156,
-    "held_back_total": 85,
+    "held_back_total": 87,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 45
+        "count": 47
       },
       {
         "reason": "already alerted",
