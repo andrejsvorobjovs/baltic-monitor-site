@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-06T15:25:43.983201+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 2.9h ago",
+  "last_run_utc": "2026-10-06T19:04:00.846469+00:00",
+  "last_level": "WARN",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 533,
+  "total_scans": 534,
   "quiet_count": 308,
   "watch_count": 207,
-  "warn_count": 18,
+  "warn_count": 19,
   "correction_count": 4,
-  "generated_at": "2026-10-06 18:20 UTC",
+  "generated_at": "2026-10-06 19:04 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-06T19:04:00.863407+00:00",
+      "level": "WARN",
+      "count": 3,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 411,
+      "stale_count": 9,
+      "alert_id": "1006-1904",
+      "items": [
+        {
+          "title": "S\u0101kts process par Krievijas pilso\u0146a Ragozina iek\u013cau\u0161anu Latvijas melnaj\u0101 sarakst\u0101",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/latvija/zinas-71/sakts-process-par-krievijas-pilsona-ragozina-ieklausanu-latvijas-melnaja-saraksta?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Ragozinu var\u0113tu iek\u013caut Latvijai nev\u0113lamo personu sarakst\u0101",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8559615",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0100rlietu ministrija s\u0101k procesu par Krievijas pilso\u0146a Ragozina iek\u013cau\u0161anu Latvijas melnaj\u0101 sarakst\u0101",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/732099-arlietu-ministrija-sak-procesu-par-krievijas-pilsona-ragozina-ieklausanu-latvijas-melnaja-saraksta",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-06T15:25:43.792670+00:00",
       "level": "WATCH",
@@ -728,84 +788,57 @@
           "route": "google"
         }
       ]
-    },
-    {
-      "ts": "2026-10-03T11:58:52.565290+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 353,
-      "stale_count": 0,
-      "alert_id": "1003-1158",
-      "items": [
-        {
-          "title": "Leedu sulges drooniohu t\u00f5ttu Vilniuse lennujaama",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610155417/leedu-sulges-drooniohu-tottu-vilniuse-lennujaama",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Varningar om rysk eskalering f\u00e5r kritik: \u201dSkr\u00e4mselpropaganda\u201d",
-          "source": "Sveriges Radio Ekot",
-          "link": "https://www.sverigesradio.se/artikel/9311754",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Baltijas valstis gatavojas iesp\u0113jamam Krievijas uzbrukumam: izstr\u0101d\u0101ti ar\u012b scen\u0101riji triecieniem Krievijas teritorij\u0101",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/baltijas-valstis-gatavojas-iespejamam-krievijas-uzbrukumam-izstradati-ari-scenariji-triecieniem-krievijas-teritorija",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Vilniuse lennujaam suleti v\u00f5imaliku drooniohu t\u00f5ttu",
-          "source": "Aripaev (Estonia)",
-          "link": "https://www.aripaev.ee/uudised/2026/10/03/vilniuse-lennujaam-suleti-voimaliku-drooniohu-tottu",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-06T19:04:00.881314+00:00",
+      "level": "WARN",
+      "title": "\u0100rlietu ministrija s\u0101k procesu par Krievijas pilso\u0146a Ragozina iek\u013cau\u0161anu Latvijas melnaj\u0101 sarakst\u0101",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/zinas/732099-arlietu-ministrija-sak-procesu-par-krievijas-pilsona-ragozina-ieklausanu-latvijas-melnaja-saraksta",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-06T19:04:00.881314+00:00",
+      "level": "WARN",
+      "title": "Ragozinu var\u0113tu iek\u013caut Latvijai nev\u0113lamo personu sarakst\u0101",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8559615",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-06T19:04:00.881314+00:00",
+      "level": "WARN",
+      "title": "S\u0101kts process par Krievijas pilso\u0146a Ragozina iek\u013cau\u0161anu Latvijas melnaj\u0101 sarakst\u0101",
+      "source": "Diena (Latvia)",
+      "link": "https://diena.lv/raksts/latvija/zinas-71/sakts-process-par-krievijas-pilsona-ragozina-ieklausanu-latvijas-melnaja-saraksta?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-06T14:17:39.508144+00:00",
       "level": "WATCH",
@@ -993,54 +1026,6 @@
         "hybrid_incident"
       ],
       "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-03T12:37:25.366638+00:00",
-      "level": "WARN",
-      "title": "Lithuania detains 35 Afghan and Iraqi migrants crossing from Belarus - Ariana News",
-      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2FRalRRSnAxaU9IUm1MY2QxbG9YS3VGemJfcEV1d2ZTVHVkVm5ZWXhBSGxUZGFUM2ZCRzF2QUFqLUdQZUNDLXBnUTZhM1lnMG90MjM5OUtNc3FQakpiM0NIVWxZaUEyb2p2LThmX09qMXhwdnlPMDJlZGdudEJuNm84RlRwMmZKa0ZDa0tBdXN3b1E5UEpJX255QWs3OGti0gGgAUFVX3lxTE9DYVFqVFFKcDFpT0hSbUxjZDFsb1hLdUZ6Yl9wRXV3ZlNUdWRWbllZeEFIbFRkYVQzZkJHMXZBQWotR1BlQ0MtcGdRNmEzWWcwb3QyMzk5S01zcVBqSmIzQ0hVbFlpQTJvanYtOGZfT2oxeHB2eU8wMmVkZ250Qm42bzhGVHAyZkprRkNrS0F1c3dvUTlQSklfbnlBazc4a2I?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-03T12:37:25.366638+00:00",
-      "level": "WARN",
-      "title": "Remains of Two Weather Balloons Found Near Belarusian Border in Lithuania - reform.news",
-      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOGdSMDFvdnJQczFqbVBaRHQtTlhERVNZYks5MlcySzNFcUdtOU1TeEpnLVVsbDgwcHFUalRmZmcwN3I3T09aQlRrTktQUjlwenk4c2dLNE1KVlVYcFhhcFNwR3dLcC1nSV9OYm1xX1BHckYxcDVnNzlrYXJHNmF1Yjc1d0lkX01FQ2tMSThvN2ZHZHNoeTdJU2djNWFLTkNjc0440gGjAUFVX3lxTE84Z1IwMW92clBzMWptUFpEdC1OWERFU1liSzkyVzJLM0VxR205TVN4SmctVWxsODBwcVRqVGZmZzA3cjdPT1pCVGtOS1BSOXB6eThzZ0s0TUpWVVhwWGFwU3BHd0twLWdJX05ibXFfUEdyRjFwNWc3OWthckc2YXViNzV3SWRfTUVDa0xJOG83Zkdkc2h5N0lTZ2M1YUtOQ2NzTjg?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-03T12:37:25.366638+00:00",
-      "level": "WARN",
-      "title": "Lithuania closed Vilnius airport, scrambled NATO jets due to suspected drone - Reuters",
-      "source": "Reuters (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRFpFODRUM1QybF8weGlSalBrRzZaRFB4aVdKWU41bmEzb2FteEFuYVk3blVFQTZsX3RuU3VQOGVwTXpSc2plMjEtbU1taU5nZFZlZjlUZU5ZeHFidEs1bi14aEl2cFlESEM2RHhtaDJBZVZSaWNZNDVjUUhHVWtVWnhscmVFbzVJMkRpTXRaczkxam5yb0c1M0N3ZEpEMTIwNHlBWmdxSmdWT0d0QmFGanFxWUQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier1",
       "gdelt_category": "",
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
