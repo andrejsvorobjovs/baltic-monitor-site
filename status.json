@@ -1,20 +1,97 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-06T00:53:28.619462+00:00",
+  "last_run_utc": "2026-10-06T07:37:28.816213+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 5.4h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 529,
+  "total_scans": 531,
   "quiet_count": 308,
-  "watch_count": 203,
+  "watch_count": 205,
   "warn_count": 18,
   "correction_count": 4,
-  "generated_at": "2026-10-06 06:17 UTC",
+  "generated_at": "2026-10-06 07:37 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-06T07:37:28.839603+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 254,
+      "stale_count": 2,
+      "alert_id": "1006-0737",
+      "items": [
+        {
+          "title": "I\u0161 Sinkevi\u010diaus \u2013 raginimas NATO d\u0117l Rusijos veiksm\u0173",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/politika/is-sinkeviciaus-raginimas-nato-del-rusijos-veiksmu-120314619",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "M. Sinkevi\u010dius paragino NATO parengti konkret\u0173 reagavimo \u012f Rusijos hibridines atakas plan\u0105",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/06/news/m-sinkevicius-paragino-nato-parengti-konkretu-reagavimo-i-rusijos-hibridines-atakas-plana-44346181/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-06T06:49:13.533853+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 315,
+      "stale_count": 0,
+      "alert_id": "1006-0649",
+      "items": [
+        {
+          "title": "From drone strikes to sabotage: Russia targets the rail corridor linking Ukraine and Poland",
+          "source": "Defence24",
+          "link": "https://defence24.com/geopolitics/from-drone-strikes-to-sabotage-russia-targets-the-rail-corridor-linking-ukraine-and-poland",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-06T00:53:28.635329+00:00",
       "level": "WATCH",
@@ -681,171 +758,43 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-02T18:36:04.613769+00:00",
-      "level": "WATCH",
-      "count": 5,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 99,
-      "stale_count": 2,
-      "alert_id": "1002-1836",
-      "items": [
-        {
-          "title": "Border guards detain 35 migrants attempting to enter Lithuania from Belarus in \u010cepkeliai - Delfi",
-          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNmhHeFFQYUNLWTF4UGhTWFRFSlRmbFA4OU56RXVLU29KLV9OZVBkTmNEbng5bUxvTmVGRVozNDM5ZUtkYUpmTEFURzNOZDBrdFMzX0JJQXkyVEQ3eWJDTjhxRHBTQnRqdVRaZ1V4YmF6OGZTOTZNWW1wdk1Nb2hLdWRnS1ViSWFEYWw1MXV6d3laeURxdU5sY0UtR0ZIaFlxcEJJbFRQckJBU2k0WUo4VUZyWm94WjRmZzdVZmJsSm54NFh4UzM0WkMtaw?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Why Kaliningrad matters to Putin: The Suwa\u0142ki Gap vulnerability, Kremlin's nuclear threat and India link - The Times of India",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNdV93cGpMcGg5Z3h1c2Z5MWJDejNDWVZNNEVlNEVUeFIxOV9OX3JSTl9MeF9yOExYbTQyQ2tzaEZkOXpmb0lyUVVxQ1VuZjZuU1ZDX2dySzZWMGNtQ3NEbVB0T3ZIWUFQQVp2SE5tTjZ6OG82WUtnb0ljQ3pOV1o1WWVnN3F1VGQzbHhyNlUwdDI2N0NwRVpKVGxralhOSFZKOXp3N0w5c2tnQ1lNZThwWDIxS29yYjZzdWQ3OFRZTmF4VVdrVUtzSVdzOHEyamxhbUlSbm9wWWpMQ0xDZ3BvVUQ0M1FEYzV6LUUwZVVRemJzZ25QNTY0VmdLYldhb2JLSjR0M05RMmp2QnVLNUpV0gGUAkFVX3lxTFBmTEF6c1VwRWNGZmhmUy1SYzJBYnBLR09JV2tMU3ZQY1FBaXVMRTFLbTRuQ3BtOEY2ZFNLT29NYXd5QmtqSVc3NFhQQWJJVWt3OWxrNjVDUnEyNGx4SlIwZ2tzWjFSel8tTmMzYnE2OEI4UVRlSFFOQUZQY0tIcldYTXA4YU1jQUpQTVZsdFN6Ykw2T2NlNlZTQllqTU5fTkRMbnFvWDZWenloMFlNUlpSWTdNZGxvY2FvTE85WHM0dEl0M2VsWDBZeFhILUtZVG52R05TTHAta0lSVElsQl9Ja1k5SkUtTTVSWnNrUXpCcC0weEtMdUx5ZGhfUFlQbElzdnI0QlpjUWhFUzN6cXVTMkpkcA?oc=5",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Babi\u0161 and Pavel discuss NATO response to Russian attack threat - aroundprague.cz",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYWJLOThMR0dtU2RLRHRzWGdHWVUwaVRNMElqXzd3ejF2dS1VYkVWOW5OdmpMTnNoT3UtLTFvYkxkR0JGUU1GRUl4MzRsVC1KY3M4YWRaT3dmTjdvR3ZkcExMVjhFZVlxX3U1T3pEZVQzZ09PbGJBSXNjazZGeWtFVVplX2FqaXp5ZXYwZ25LdXJTUnBHUDBjb2otMmk0MlNTUmR2YXlLeW92aFlMdzlsaHVUWkRzV0FaTlBv?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Russia unable to invade NATO but 'constantly escalating,' Polish general says - TVP World",
-          "source": "TVP World (Poland)",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZFpSdnBkNy16RXZBaUFOdDVod3ZFYTF0RWZBQnQ2MTBlZE5icGx3MmZ2MURZd0ZFWlRjTTV0QU9XTkdxZklLLVpaT1dQdGlzdmhScVRrRUpzbVdBZk5iT1pWRVhkVmpjYnY2a21mdEJZbjF5MjNQVU5jY0w1MU5YemNBQ01IeWZHWXFtbm92UlhFejVnSGEyQkVpaC1CWlJQQWJvekdHSGM?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Balion\u0105 su kontrabanda sek\u0119 jaunuoliai \u012fkliuvo pasienie\u010diams",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/kriminalai/baliona-su-kontrabanda-seke-jaunuoliai-ikliuvo-pasienieciams-120313446",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-02T18:26:12.093107+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 153,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 320,
-      "stale_count": 0,
-      "alert_id": "1002-1826",
-      "items": [
-        {
-          "title": "Telegraph: Leipzigi lennujaama droonir\u00fcnnaku taga oli L\u00e4ti-Vene topeltkodanik",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610154856/telegraph-leipzigi-lennujaama-droonirunnaku-taga-oli-lati-vene-topeltkodanik",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u012etarim\u0173 kelia Rusijos veikla Norvegijai priklausan\u010diame salyne",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/itarimu-kelia-rusijos-veikla-norvegijai-priklausanciame-salyne-57-2773942?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0421\u041c\u0418 \u0440\u0430\u0441\u043a\u0440\u044b\u043b\u0438 \u0438\u043c\u0435\u043d\u0430 \u043f\u043e\u0434\u043e\u0437\u0440\u0435\u0432\u0430\u0435\u043c\u044b\u0445 \u0432 \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u0438 \u0432 \u041b\u0435\u0439\u043f\u0446\u0438\u0433\u0435; \u043e\u0434\u0438\u043d \u0438\u0437 \u043d\u0438\u0445 \u0440\u0430\u043d\u0435\u0435 \u0436\u0438\u043b \u0432 \u0420\u0438\u0433\u0435",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/obschestvo/02.10.2026-smi-raskryli-imena-podozrevaemyx-v-diversii-v-leipcige-odin-iz-nix-ranee-zil-v-rige.a665875/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Leht: Saksa lennujaama sabotaa\u017ei organiseeris Vene-L\u00e4ti topeltkodanik",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8557231",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-06T07:37:28.852614+00:00",
+      "level": "WATCH",
+      "title": "M. Sinkevi\u010dius paragino NATO parengti konkret\u0173 reagavimo \u012f Rusijos hibridines atakas plan\u0105",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/06/news/m-sinkevicius-paragino-nato-parengti-konkretu-reagavimo-i-rusijos-hibridines-atakas-plana-44346181/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-06T07:37:28.852614+00:00",
+      "level": "WATCH",
+      "title": "I\u0161 Sinkevi\u010diaus \u2013 raginimas NATO d\u0117l Rusijos veiksm\u0173",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/politika/is-sinkeviciaus-raginimas-nato-del-rusijos-veiksmu-120314619",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-06T00:53:28.651567+00:00",
       "level": "WATCH",
@@ -1051,37 +1000,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-02T18:36:04.627753+00:00",
-      "level": "WATCH",
-      "title": "Babi\u0161 and Pavel discuss NATO response to Russian attack threat - aroundprague.cz",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYWJLOThMR0dtU2RLRHRzWGdHWVUwaVRNMElqXzd3ejF2dS1VYkVWOW5OdmpMTnNoT3UtLTFvYkxkR0JGUU1GRUl4MzRsVC1KY3M4YWRaT3dmTjdvR3ZkcExMVjhFZVlxX3U1T3pEZVQzZ09PbGJBSXNjazZGeWtFVVplX2FqaXp5ZXYwZ25LdXJTUnBHUDBjb2otMmk0MlNTUmR2YXlLeW92aFlMdzlsaHVUWkRzV0FaTlBv?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-02T18:36:04.627753+00:00",
-      "level": "WATCH",
-      "title": "Why Kaliningrad matters to Putin: The Suwa\u0142ki Gap vulnerability, Kremlin's nuclear threat and India link - The Times of India",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNdV93cGpMcGg5Z3h1c2Z5MWJDejNDWVZNNEVlNEVUeFIxOV9OX3JSTl9MeF9yOExYbTQyQ2tzaEZkOXpmb0lyUVVxQ1VuZjZuU1ZDX2dySzZWMGNtQ3NEbVB0T3ZIWUFQQVp2SE5tTjZ6OG82WUtnb0ljQ3pOV1o1WWVnN3F1VGQzbHhyNlUwdDI2N0NwRVpKVGxralhOSFZKOXp3N0w5c2tnQ1lNZThwWDIxS29yYjZzdWQ3OFRZTmF4VVdrVUtzSVdzOHEyamxhbUlSbm9wWWpMQ0xDZ3BvVUQ0M1FEYzV6LUUwZVVRemJzZ25QNTY0VmdLYldhb2JLSjR0M05RMmp2QnVLNUpV0gGUAkFVX3lxTFBmTEF6c1VwRWNGZmhmUy1SYzJBYnBLR09JV2tMU3ZQY1FBaXVMRTFLbTRuQ3BtOEY2ZFNLT29NYXd5QmtqSVc3NFhQQWJJVWt3OWxrNjVDUnEyNGx4SlIwZ2tzWjFSel8tTmMzYnE2OEI4UVRlSFFOQUZQY0tIcldYTXA4YU1jQUpQTVZsdFN6Ykw2T2NlNlZTQllqTU5fTkRMbnFvWDZWenloMFlNUlpSWTdNZGxvY2FvTE85WHM0dEl0M2VsWDBZeFhILUtZVG52R05TTHAta0lSVElsQl9Ja1k5SkUtTTVSWnNrUXpCcC0weEtMdUx5ZGhfUFlQbElzdnI0QlpjUWhFUzN6cXVTMkpkcA?oc=5",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1264,8 +1182,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 201,
-    "alerting_scans": 154,
+    "scans": 203,
+    "alerting_scans": 156,
     "held_back_total": 85,
     "held_back_by_reason": [
       {
