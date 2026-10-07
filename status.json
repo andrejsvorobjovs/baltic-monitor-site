@@ -1,20 +1,63 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-07T19:28:08.765208+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-10-07T23:41:41.631985+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 540,
-  "quiet_count": 309,
-  "watch_count": 212,
+  "total_scans": 542,
+  "quiet_count": 310,
+  "watch_count": 213,
   "warn_count": 19,
   "correction_count": 4,
-  "generated_at": "2026-10-07 19:28 UTC",
+  "generated_at": "2026-10-07 23:41 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-07T23:41:41.660992+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 63,
+      "stale_count": 2,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-10-07T23:17:23.848866+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 103,
+      "stale_count": 0,
+      "alert_id": "1007-2317",
+      "items": [
+        {
+          "title": "Fartyg s\u00e4nkt i\u00a0Svarta havet\u00a0\u2013 oro f\u00f6r fler ryska attacker",
+          "source": "Sveriges Radio Ekot",
+          "link": "https://www.sverigesradio.se/artikel/9315021",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-07T19:28:08.778521+00:00",
       "level": "WATCH",
@@ -789,66 +832,6 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-04T19:47:25.892545+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 58,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 104,
-      "stale_count": 0,
-      "alert_id": "1004-1947",
-      "items": [
-        {
-          "title": "J\u00fcri Luik: Venemaa pommitab tsiviiltaristut, sest ei ole rindel edenenud",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610156113/juri-luik-venemaa-pommitab-tsiviiltaristut-sest-ei-ole-rindel-edenenud",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-04T17:41:29.357718+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 519,
-      "stale_count": 10,
-      "alert_id": "1004-1741",
-      "items": [
-        {
-          "title": "Kremliaus \u201evert\u0117j\u0173\u201c paslaugos: internautai v\u0117l i\u0161kraip\u0117 NATO vadovo \u017eod\u017eius",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/kremliaus-verteju-paslaugos-internautai-vel-iskraipe-nato-vadovo-zodzius-57-2777438?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1273,7 +1256,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 197,
-    "alerting_scans": 156,
+    "alerting_scans": 157,
     "held_back_total": 88,
     "held_back_by_reason": [
       {
