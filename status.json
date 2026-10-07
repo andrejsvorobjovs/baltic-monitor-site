@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-07T14:37:07.833184+00:00",
+  "last_run_utc": "2026-10-07T19:28:08.765208+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 4.3h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 539,
+  "total_scans": 540,
   "quiet_count": 309,
-  "watch_count": 211,
+  "watch_count": 212,
   "warn_count": 19,
   "correction_count": 4,
-  "generated_at": "2026-10-07 18:56 UTC",
+  "generated_at": "2026-10-07 19:28 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-07T19:28:08.778521+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 395,
+      "stale_count": 3,
+      "alert_id": "1007-1928",
+      "items": [
+        {
+          "title": "Katelynas: kariuomen\u0117 pasienyje su Kaliningradu \u2013 d\u0117l galimos Rusijos mobilizacijos - LRT",
+          "source": "LRT (Lithuanian-language, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOWM1QzJHekpfV1l2YzBibEJDX1pZVGlFRUdQRFZIWmFVV1dFUnY2WVVhT0dJUTZ5YVFMbWNRMU5JRTYyVVJWai1OMENocEVPcEdkcVNfZVRHM1JHOHVMSWNOSzdWN0VNYTRxQmcwaC1sb0lHeU9zZnl5NVJzYTRRV2JXUjlnTVp6aGp2VFRsTFRVQkx4NDlWd0JsZk9EN0wxVVVqcUFoYUQ0Uy1MUjAyaVNCX1Q0eU90Vk5NS1JHQllveDRWRGVtcg?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Agnia Grigas. Kaip NATO gali apsaugoti fronto linij\u0105 nuo Rusijos",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/komentarai/agnia-grigas-kaip-nato-gali-apsaugoti-fronto-linija-nuo-rusijos-500-2780006?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-07T14:37:07.859181+00:00",
       "level": "WATCH",
@@ -804,23 +849,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-04T13:18:20.113279+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 527,
-      "stale_count": 10,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-07T19:28:08.792000+00:00",
+      "level": "WATCH",
+      "title": "Agnia Grigas. Kaip NATO gali apsaugoti fronto linij\u0105 nuo Rusijos",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/komentarai/agnia-grigas-kaip-nato-gali-apsaugoti-fronto-linija-nuo-rusijos-500-2780006?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-07T19:28:08.792000+00:00",
+      "level": "WATCH",
+      "title": "Katelynas: kariuomen\u0117 pasienyje su Kaliningradu \u2013 d\u0117l galimos Rusijos mobilizacijos - LRT",
+      "source": "LRT (Lithuanian-language, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOWM1QzJHekpfV1l2YzBibEJDX1pZVGlFRUdQRFZIWmFVV1dFUnY2WVVhT0dJUTZ5YVFMbWNRMU5JRTYyVVJWai1OMENocEVPcEdkcVNfZVRHM1JHOHVMSWNOSzdWN0VNYTRxQmcwaC1sb0lHeU9zZnl5NVJzYTRRV2JXUjlnTVp6aGp2VFRsTFRVQkx4NDlWd0JsZk9EN0wxVVVqcUFoYUQ0Uy1MUjAyaVNCX1Q0eU90Vk5NS1JHQllveDRWRGVtcg?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-07T14:37:07.879224+00:00",
       "level": "WATCH",
@@ -1027,40 +1090,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-06T07:37:28.852614+00:00",
-      "level": "WATCH",
-      "title": "M. Sinkevi\u010dius paragino NATO parengti konkret\u0173 reagavimo \u012f Rusijos hibridines atakas plan\u0105",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/06/news/m-sinkevicius-paragino-nato-parengti-konkretu-reagavimo-i-rusijos-hibridines-atakas-plana-44346181/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-06T07:37:28.852614+00:00",
-      "level": "WATCH",
-      "title": "I\u0161 Sinkevi\u010diaus \u2013 raginimas NATO d\u0117l Rusijos veiksm\u0173",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/politika/is-sinkeviciaus-raginimas-nato-del-rusijos-veiksmu-120314619",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1244,7 +1273,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 197,
-    "alerting_scans": 155,
+    "alerting_scans": 156,
     "held_back_total": 88,
     "held_back_by_reason": [
       {
