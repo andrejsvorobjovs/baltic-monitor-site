@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-08T19:24:35.869485+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-10-08T23:53:21.785695+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 547,
-  "quiet_count": 310,
+  "total_scans": 548,
+  "quiet_count": 311,
   "watch_count": 217,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-08 19:24 UTC",
+  "generated_at": "2026-10-08 23:53 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-08T23:53:21.802745+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 186,
+      "stale_count": 1,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-10-08T19:24:35.900469+00:00",
       "level": "WATCH",
@@ -881,50 +895,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-05T22:53:55.747916+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 4,
-      "tier3_count": 0,
-      "sources_scanned": 57,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 278,
-      "stale_count": 0,
-      "alert_id": "1005-2253",
-      "items": [
-        {
-          "title": "Baltarusi\u0161kas cigaretes skraidin\u0119s l\u0117ktuv\u0117lis nutupdytas \u016bkininko laukuose",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/kriminalai/baltarusiskas-cigaretes-skraidines-lektuvelis-nutupdytas-ukininko-laukuose-120314479",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NATO komandieris dr\u012bzum\u0101 prezent\u0113s \"uzvaras teoriju\" Krievijas uzbrukuma atvair\u012b\u0161anai",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8558867",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1350,8 +1320,8 @@
   "filter_record": {
     "window_days": 30,
     "scans": 196,
-    "alerting_scans": 158,
-    "held_back_total": 90,
+    "alerting_scans": 157,
+    "held_back_total": 91,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1361,7 +1331,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 26
+        "count": 27
       },
       {
         "reason": "reassurance",
