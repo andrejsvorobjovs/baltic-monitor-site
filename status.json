@@ -1,20 +1,155 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-08T07:26:19.283588+00:00",
+  "last_run_utc": "2026-10-08T14:41:33.255815+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 544,
+  "total_scans": 546,
   "quiet_count": 310,
-  "watch_count": 215,
-  "warn_count": 19,
+  "watch_count": 216,
+  "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-08 07:26 UTC",
+  "generated_at": "2026-10-08 14:41 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-08T14:41:33.366995+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 156,
+      "stale_count": 2,
+      "alert_id": "1008-1441",
+      "items": [
+        {
+          "title": "BNS Sprintas: gynybos biud\u017eetas, rusi\u0161k\u0173 gr\u016bd\u0173 tranzitas, kariuomen\u0117 Rusijos pasienio apsaugai",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/bns-sprintas/bns-sprintas-ketvirtadienio-ivykiai-trumpai-1766-2780910?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-08T13:59:37.082707+00:00",
+      "level": "WARN",
+      "count": 6,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 529,
+      "stale_count": 0,
+      "alert_id": "1008-1359",
+      "items": [
+        {
+          "title": "Estonia's military conscription no-show rate falls to 2%",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610161207/estonia-s-military-conscription-no-show-rate-falls-to-2",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Naujos detal\u0117s apie VSAT operacij\u0105 Vilniuje \u2013 kontrabandininkas taranavo tarnybin\u012f automobil\u012f",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/kriminalai/atskleista-daugiau-detaliu-apie-vsat-operacija-vilniuje-beglys-taranavo-tarnybini-automobili-120316139",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Atskleista daugiau detali\u0173 apie kontrabandinink\u0173 sulaikym\u0105, kurio metu aid\u0117jo \u0161\u016bviai ir du\u017eo automobiliai",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/atskleista-daugiau-detaliu-apie-kontrabandininku-sulaikyma-kurio-metu-aidejo-suviai-ir-duzo-automobiliai-59-2780846?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Pasienie\u010diai papasakojo, kaip Vilniaus daugiabu\u010di\u0173 kiemuose nakt\u012f vyko kontrabandinink\u0173 sulaikymo operacija",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/kriminalai/2026/10/08/news/pasienieciai-papasakojo-kaip-vilniaus-daugiabuciu-kiemuose-nakti-vyko-kontrabandininku-sulaikymo-operacija-44386368/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lithuania Deploys Army to Kaliningrad Border After Belarus-Latvia Breach",
+          "source": "Moscow Times",
+          "link": "https://www.themoscowtimes.com/2026/10/08/lithuania-deploys-army-to-kaliningrad-border-after-belarus-latvia-breach-a93920",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Maskerade m\u00e4n eskorterade migranter fr\u00e5n Belarus till Lettland",
+          "source": "Sveriges Radio Ekot",
+          "link": "https://www.sverigesradio.se/artikel/9314658",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-08T07:26:19.334590+00:00",
       "level": "WATCH",
@@ -744,158 +879,25 @@
       "stale_count": 8,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-05T15:13:29.046336+00:00",
-      "level": "WATCH",
-      "count": 7,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 550,
-      "stale_count": 0,
-      "alert_id": "1005-1513",
-      "items": [
-        {
-          "title": "USA andis Eestile piirijulgeoleku tugevdamiseks 13 luuredrooni",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610156989/usa-andis-eestile-piirijulgeoleku-tugevdamiseks-13-luuredrooni",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lenk\u0173 ministras: nustatytos alternatyvios sienos per\u0117jos galimai masinei evakuacijai, rengiami planai",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/lenku-ministras-nustatytos-alternatyvios-sienos-perejos-galimai-masinei-evakuacijai-rengiami-planai-56-2778242?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0421\u0428\u0410 \u043f\u0435\u0440\u0435\u0434\u0430\u043b\u0438 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 13 \u0440\u0430\u0437\u0432\u0435\u0434\u044b\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u0434\u0440\u043e\u043d\u043e\u0432 \u0434\u043b\u044f \u0443\u0441\u0438\u043b\u0435\u043d\u0438\u044f \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u0433\u0440\u0430\u043d\u0438\u0446\u044b",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610157028/ssha-peredali-jestonii-13-razvedyvatelnyh-dronov-dlja-usilenija-bezopasnosti-granicy",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Estonia moves troops closer to\u00a0Russian border under \u2018active defense\u2019 program",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/10/05/estonia-moves-troops-closer-to-russian-border-under-active-defense-program",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Bloomberg: \u0432 \u041d\u0410\u0422\u041e \u0433\u043e\u0442\u043e\u0432\u044f\u0442 \u043f\u043b\u0430\u043d \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 \u043d\u0430 \u0441\u043b\u0443\u0447\u0430\u0439 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0433\u043e \u043d\u0430\u043f\u0430\u0434\u0435\u043d\u0438\u044f",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/10/05/bloomberg-v-nato-gotoviat-plan-deistvii-na-sluchai-rossiiskogo-napadeniia-news",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u042d\u0441\u0442\u043e\u043d\u0438\u044f \u043f\u0435\u0440\u0435\u0431\u0440\u0430\u0441\u044b\u0432\u0430\u0435\u0442 \u0432\u043e\u0439\u0441\u043a\u0430 \u0431\u043b\u0438\u0436\u0435 \u043a \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0433\u0440\u0430\u043d\u0438\u0446\u0435 \u043d\u0430 \u0441\u043b\u0443\u0447\u0430\u0439 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0433\u043e \u0432\u0442\u043e\u0440\u0436\u0435\u043d\u0438\u044f \u2014 FT",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/10/05/estoniia-perebrasyvaet-voiska-blizhe-k-rossiiskoi-granitse-na-sluchai-vozmozhnogo-vtorzheniia-ft-news",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NATO izstr\u0101d\u0101 \"Uzvaras teoriju\" p\u0101r Krieviju, izmantojot dronus un m\u0101ksl\u012bgo intelektu",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/731831-nato-izstrada-uzvaras-teoriju-par-krieviju-izmantojot-dronus-un-maksligo-intelektu",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-05T07:02:45.305449+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 196,
-      "stale_count": 4,
-      "alert_id": "1005-0702",
-      "items": [
-        {
-          "title": "Expert: Russia attacking civilian infrastructure as it has made no front line gains",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610156416/expert-russia-attacking-civilian-infrastructure-as-it-has-made-no-front-line-gains",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-08T14:41:33.384889+00:00",
+      "level": "WATCH",
+      "title": "BNS Sprintas: gynybos biud\u017eetas, rusi\u0161k\u0173 gr\u016bd\u0173 tranzitas, kariuomen\u0117 Rusijos pasienio apsaugai",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/bns-sprintas/bns-sprintas-ketvirtadienio-ivykiai-trumpai-1766-2780910?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-08T07:26:19.349162+00:00",
       "level": "WATCH",
@@ -1119,22 +1121,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-06T19:04:00.881314+00:00",
-      "level": "WARN",
-      "title": "S\u0101kts process par Krievijas pilso\u0146a Ragozina iek\u013cau\u0161anu Latvijas melnaj\u0101 sarakst\u0101",
-      "source": "Diena (Latvia)",
-      "link": "https://diena.lv/raksts/latvija/zinas-71/sakts-process-par-krievijas-pilsona-ragozina-ieklausanu-latvijas-melnaja-saraksta?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1317,9 +1303,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 198,
-    "alerting_scans": 159,
-    "held_back_total": 89,
+    "scans": 197,
+    "alerting_scans": 158,
+    "held_back_total": 90,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1329,7 +1315,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 25
+        "count": 26
       },
       {
         "reason": "reassurance",

@@ -3807,6 +3807,20 @@
       "count": 3,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-08T13:59:37.082707+00:00",
+      "level": "WARN",
+      "count": 6,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-10-08T14:41:33.366995+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5199,6 +5213,10 @@
     {
       "ts": "2026-10-08T07:24:21.409678+00:00",
       "count": 251
+    },
+    {
+      "ts": "2026-10-08T14:40:43.952039+00:00",
+      "count": 307
     }
   ],
   "military_points": [
@@ -6345,6 +6363,10 @@
     {
       "ts": "2026-10-08T07:24:22.133581+00:00",
       "count": 8
+    },
+    {
+      "ts": "2026-10-08T14:40:49.444156+00:00",
+      "count": 2
     }
   ],
   "firms_points": [
@@ -7187,6 +7209,10 @@
     {
       "ts": "2026-10-07T23:41:03.021716+00:00",
       "count": 53
+    },
+    {
+      "ts": "2026-10-08T14:40:51.543355+00:00",
+      "count": 11
     }
   ],
   "entsoe_points": [
@@ -7992,6 +8018,10 @@
     },
     {
       "ts": "2026-10-08T07:25:46.718264+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-08T14:41:00.512445+00:00",
       "count": 0
     }
   ],
@@ -12452,6 +12482,33 @@
         ]
       },
       "band_key": "moderate_above",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-08T14:41:00.514640+00:00",
+      "deviation_pct": -24.825887886673925,
+      "sources_included": 4,
+      "narrative": "military aircraft 33% below baseline; thermal hotspots 51% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 33,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 51,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
       "band_record_scans": null
     }
   ]
