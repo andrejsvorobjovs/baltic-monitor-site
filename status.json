@@ -1,20 +1,125 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-07T23:41:41.631985+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.3h ago",
+  "last_run_utc": "2026-10-08T07:26:19.283588+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 542,
+  "total_scans": 544,
   "quiet_count": 310,
-  "watch_count": 213,
+  "watch_count": 215,
   "warn_count": 19,
   "correction_count": 4,
-  "generated_at": "2026-10-08 05:59 UTC",
+  "generated_at": "2026-10-08 07:26 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-08T07:26:19.334590+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 215,
+      "stale_count": 2,
+      "alert_id": "1008-0726",
+      "items": [
+        {
+          "title": "Lithuania to deploy troops along border with Russia's Kaliningrad after Latvia incident - The Kyiv Independent",
+          "source": "Kyiv Independent",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmN1RDgzYkhwS2o2YUE3bWNkSEZOTjJ3TG03a3BQNUNCRnBkbHRwYjRnNmhBMFE3MWZNaEhvVHNCeTVOcGRvbGE2dHMybVdQT2VVbU55ZVVWRzFTWHRCcTZYWG1jcVB0M19SNnp0MXZUeVZZaHphUTRpNjl6SGRycnlWdGlqclJtbFkzbEVLZXQtbjRZaWpjYnYyU216bmw0Y3NfRUxKQzAwSWpRRWVXaC1tQ1ZjZw?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "\u041b\u0438\u0442\u0432\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0432\u043e\u0435\u043d\u043d\u044b\u0445 \u043d\u0430 \u0433\u0440\u0430\u043d\u0438\u0446\u0443 \u0441 \u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u044c\u044e",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/10/08/litva-otpravit-voennykh-na-granitsu-s-kaliningradskoi-oblastiu-news",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NATO gatavo pl\u0101nu iesp\u0113jamam Krievijas uzbrukumam: atkl\u0101ts, k\u0101 alianse cer pan\u0101kt \u0101tru uzvaru",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/nato-gatavo-planu-iespejamam-krievijas-uzbrukumam-atklats-ka-alianse-cer-panakt-atru-uzvaru",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-08T06:36:16.283036+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 5,
+      "tier3_count": 0,
+      "sources_scanned": 56,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 299,
+      "stale_count": 0,
+      "alert_id": "1008-0636",
+      "items": [
+        {
+          "title": "Ugniagesiams nepavyko i\u0161 auk\u0161to med\u017eio i\u0161kelti kontrabandinink\u0173 baliono",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/ugniagesiams-nepavyko-is-auksto-medzio-iskelti-kontrabandininku-baliono-59-2780294?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0414\u0435\u043f\u043e\u0440\u0442\u0438\u0440\u0443\u044e\u0442 \u2014 \u043d\u0435 \u0434\u0435\u043f\u043e\u0440\u0442\u0438\u0440\u0443\u044e\u0442",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/10/08/deportiruiut-ne-deportiruiut",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-07T23:41:41.660992+00:00",
       "level": "QUIET",
@@ -788,53 +893,57 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-05T06:09:48.014976+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 287,
-      "stale_count": 0,
-      "alert_id": "1005-0609",
-      "items": [
-        {
-          "title": "\u201eKalti mes\u201c: rinktin\u0117 grau\u017e\u0117si d\u0117l u\u017evirusio kraujo",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/sportas/futbolas/kalti-mes-rinktine-grauzesi-del-uzvirusio-kraujo-120313971",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-04T22:26:57.643281+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 282,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-08T07:26:19.349162+00:00",
+      "level": "WATCH",
+      "title": "NATO gatavo pl\u0101nu iesp\u0113jamam Krievijas uzbrukumam: atkl\u0101ts, k\u0101 alianse cer pan\u0101kt \u0101tru uzvaru",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/nato-gatavo-planu-iespejamam-krievijas-uzbrukumam-atklats-ka-alianse-cer-panakt-atru-uzvaru",
+      "categories": [
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-08T07:26:19.349162+00:00",
+      "level": "WATCH",
+      "title": "\u041b\u0438\u0442\u0432\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0432\u043e\u0435\u043d\u043d\u044b\u0445 \u043d\u0430 \u0433\u0440\u0430\u043d\u0438\u0446\u0443 \u0441 \u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u044c\u044e",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/10/08/litva-otpravit-voennykh-na-granitsu-s-kaliningradskoi-oblastiu-news",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-08T07:26:19.349162+00:00",
+      "level": "WATCH",
+      "title": "Lithuania to deploy troops along border with Russia's Kaliningrad after Latvia incident - The Kyiv Independent",
+      "source": "Kyiv Independent",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmN1RDgzYkhwS2o2YUE3bWNkSEZOTjJ3TG03a3BQNUNCRnBkbHRwYjRnNmhBMFE3MWZNaEhvVHNCeTVOcGRvbGE2dHMybVdQT2VVbU55ZVVWRzFTWHRCcTZYWG1jcVB0M19SNnp0MXZUeVZZaHphUTRpNjl6SGRycnlWdGlqclJtbFkzbEVLZXQtbjRZaWpjYnYyU216bmw0Y3NfRUxKQzAwSWpRRWVXaC1tQ1ZjZw?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-07T19:28:08.792000+00:00",
       "level": "WATCH",
@@ -1026,53 +1135,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-06T14:17:39.508144+00:00",
-      "level": "WATCH",
-      "title": "Europeanising NATO: The Arctic",
-      "source": "ICDS (Estonia)",
-      "link": "https://icds.ee/en/europeanising-nato-the-arctic/",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-06T14:17:39.508144+00:00",
-      "level": "WATCH",
-      "title": "Segalovi\u010dien\u0117: galimas didesnis deficitas kelia nerim\u0105",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/verslas/naujienos/segaloviciene-galimas-didesnis-deficitas-kelia-nerima-120314940",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-06T14:17:39.508144+00:00",
-      "level": "WATCH",
-      "title": "FT: Estonia is deploying elite troops to the border and preparing for possible strikes deep into Russia - LIGA.net",
-      "source": "General wire coverage",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQN2dXdy1Id1djNE1fd25PUUs2OC04MzRFNlVnXzY0NzRTVzlEenZTTWhKS1NoU3dXTkxWMldLNVRmbXhPYThpWVNUUHk1QWVvekhxSnMtamd1dmVySVNFRWJzNVBuUmgtR1dYaFQ2TXd5TW1nVEg0ZWZBcS1td3U1a0FPSTBDWWdlMVlTc09FQ3FFZ1VzaVhxYkRndlVwd050ZHZNOW1DTUZmd3k3WWVwMEFMOWVJSElzQUhJb3lIS2xsUURwZmhFbE1qYzEwNFMwclHSAdcBQVVfeXFMT1FtTG91V1RiQUhrUjBNX0h0aWp6VDE5czRPYnJrSUJwUUlXYWMtWVk2QlFLTDJ6RnNfN1B2TWhWaFRBYWRRXzFydDg2OUNpZFNtS1R2eXdySUNTSTVYM2N6S2g4dURnZi1ZN2p4UVRXdUtMMU90MjhfNlhlUzhKOFI4VWU0VmQ3ZnJsT2stYTlZOVFIRG5ianF2OXhUdllXVlUyM3BzV1ZBX3oxZ212NF9iX294SGxhM3ZYOVloaFlFYTByN2hEUnhrY0NTRzZoZjNDdkVmZlU?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1255,14 +1317,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 196,
-    "alerting_scans": 157,
-    "held_back_total": 88,
+    "scans": 198,
+    "alerting_scans": 159,
+    "held_back_total": 89,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 48
+        "count": 49
       },
       {
         "reason": "already alerted",
