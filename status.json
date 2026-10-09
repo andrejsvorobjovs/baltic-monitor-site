@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-08T23:53:21.785695+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.2h ago",
+  "last_run_utc": "2026-10-09T07:28:33.608530+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 548,
+  "total_scans": 550,
   "quiet_count": 311,
-  "watch_count": 217,
+  "watch_count": 219,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-09 06:05 UTC",
+  "generated_at": "2026-10-09 07:28 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-09T07:28:33.624772+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 175,
+      "stale_count": 0,
+      "alert_id": "1009-0728",
+      "items": [
+        {
+          "title": "Nato could cut Russia\u2019s Baltic lifeline \u2018within hours\u2019 of attack - The Times",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOazQ5dXpMVFhPMWxiRUZUZDJRTm42Z1g4QlVBVG9TY2xvVmMzclY4LWpGbHBiVVZSOWlGT180b0NybHBuRkExTEs5TmE3QjhvaHVFYmFSNHkzRzNqUmY5VUdiZjhWRjRORk5BTlljVnVjRmFwaVZNTVhnbGJYSVRLeXZmV2RXQ1ZrQzk5TDVvdGEzcHBaQkc1UQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "\u0423\u043a\u0440\u0430\u0438\u043d\u043a\u0443 \u041b\u044e\u0431\u043e\u0432\u044c \u0420\u043e\u0436\u0430\u043d\u0441\u043a\u0443\u044e \u043e\u0441\u0432\u043e\u0431\u043e\u0434\u0438\u043b\u0438 \u0438\u0437 \u0438\u0437\u043e\u043b\u044f\u0442\u043e\u0440\u0430 \u0432 \u0410\u0441\u0442\u0430\u043d\u0435. \u041e\u043d\u0430 \u0443\u0436\u0435 \u043f\u043e\u043a\u0438\u043d\u0443\u043b\u0430 \u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/10/09/ukrainku-liubov-rozhanskuiu-osvobodili-iz-izoliatora-v-astane-ona-uzhe-pokinula-kazakhstan-news",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-09T06:40:49.048037+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 346,
+      "stale_count": 0,
+      "alert_id": "1009-0640",
+      "items": [
+        {
+          "title": "Hakeri nozagu\u0161i miljoniem \"Asos\" klientu personas datus: atkl\u0101jas, ka nopl\u016bde ir nopietn\u0101ka, nek\u0101 s\u0101kotn\u0113ji zi\u0146ots",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/bizness/732492-hakeri-nozagusi-miljoniem-asos-klientu-personas-datus-atklajas-ka-noplude-ir-nopietnaka-neka-sakotneji-zinots",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-08T23:53:21.802745+00:00",
       "level": "QUIET",
@@ -821,83 +896,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-06T06:49:13.533853+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 4,
-      "tier3_count": 0,
-      "sources_scanned": 57,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 315,
-      "stale_count": 0,
-      "alert_id": "1006-0649",
-      "items": [
-        {
-          "title": "From drone strikes to sabotage: Russia targets the rail corridor linking Ukraine and Poland",
-          "source": "Defence24",
-          "link": "https://defence24.com/geopolitics/from-drone-strikes-to-sabotage-russia-targets-the-rail-corridor-linking-ukraine-and-poland",
-          "categories": [
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-06T00:53:28.635329+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 150,
-      "stale_count": 3,
-      "alert_id": "1006-0053",
-      "items": [
-        {
-          "title": "NATO drafts strategy on repelling Russian attack against eastern flank - The Kyiv Independent",
-          "source": "Kyiv Independent",
-          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQ0t6N25xdkhwRl9SZXNwdXZGYktkUEh3UThpRnp6SVl5V1BfcnVBcWRub3FfU1h4MTNzVUEwWlozWWFNdHh5bTJvS3RweU1yVWt0Y1J5emtSRGlmUEpxTXNoV2VIU3ZkTGRrel9GbGlRdDVfUnEzYlJZNmNDa1U3dkZNa3dOQnZKdGNBUjV0ODhZRnBhaWF6bVhvcmtDTHEy?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "\u0412\u043e\u0435\u043d\u043d\u044b\u0435 \u044d\u043a\u0441\u043f\u0435\u0440\u0442\u044b \u043f\u0440\u043e\u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043b\u0438 \u043f\u0435\u0440\u0435\u0434\u0438\u0441\u043b\u043e\u043a\u0430\u0446\u0438\u044e \u043f\u043e\u0434\u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u0439 \u0431\u043b\u0438\u0436\u0435 \u043a \u0433\u0440\u0430\u043d\u0438\u0446\u0435 \u0441 \u0420\u0424",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610157208/voennye-jeksperty-prokommentirovali-peredislokaciju-podrazdelenij-blizhe-k-granice-s-rf",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-09T07:28:33.642671+00:00",
+      "level": "WATCH",
+      "title": "\u0423\u043a\u0440\u0430\u0438\u043d\u043a\u0443 \u041b\u044e\u0431\u043e\u0432\u044c \u0420\u043e\u0436\u0430\u043d\u0441\u043a\u0443\u044e \u043e\u0441\u0432\u043e\u0431\u043e\u0434\u0438\u043b\u0438 \u0438\u0437 \u0438\u0437\u043e\u043b\u044f\u0442\u043e\u0440\u0430 \u0432 \u0410\u0441\u0442\u0430\u043d\u0435. \u041e\u043d\u0430 \u0443\u0436\u0435 \u043f\u043e\u043a\u0438\u043d\u0443\u043b\u0430 \u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/10/09/ukrainku-liubov-rozhanskuiu-osvobodili-iz-izoliatora-v-astane-ona-uzhe-pokinula-kazakhstan-news",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-09T07:28:33.642671+00:00",
+      "level": "WATCH",
+      "title": "Nato could cut Russia\u2019s Baltic lifeline \u2018within hours\u2019 of attack - The Times",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOazQ5dXpMVFhPMWxiRUZUZDJRTm42Z1g4QlVBVG9TY2xvVmMzclY4LWpGbHBiVVZSOWlGT180b0NybHBuRkExTEs5TmE3QjhvaHVFYmFSNHkzRzNqUmY5VUdiZjhWRjRORk5BTlljVnVjRmFwaVZNTVhnbGJYSVRLeXZmV2RXQ1ZrQzk5TDVvdGEzcHBaQkc1UQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-08T19:24:35.914526+00:00",
       "level": "WATCH",
@@ -1105,38 +1138,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-07T07:17:18.211922+00:00",
-      "level": "WATCH",
-      "title": "NBS: Migrant group pushed aggressively across Latvian border this week",
-      "source": "LSM (Latvia)",
-      "link": "https://eng.lsm.lv/article/society/defence/07.10.2026-nbs-migrant-group-pushed-aggressively-across-latvian-border-this-week.a666481/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-07T07:17:18.211922+00:00",
-      "level": "WATCH",
-      "title": "App for drone detection being developed in Latvia",
-      "source": "LSM (Latvia)",
-      "link": "https://eng.lsm.lv/article/society/defence/07.10.2026-app-for-drone-detection-being-developed-in-latvia.a666482/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1319,8 +1320,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 195,
-    "alerting_scans": 157,
+    "scans": 197,
+    "alerting_scans": 159,
     "held_back_total": 91,
     "held_back_by_reason": [
       {
