@@ -1,20 +1,142 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-09T07:28:33.608530+00:00",
+  "last_run_utc": "2026-10-09T14:29:31.238571+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 550,
+  "total_scans": 551,
   "quiet_count": 311,
-  "watch_count": 219,
+  "watch_count": 220,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-09 07:28 UTC",
+  "generated_at": "2026-10-09 14:29 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-09T14:29:31.256756+00:00",
+      "level": "WATCH",
+      "count": 7,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 560,
+      "stale_count": 0,
+      "alert_id": "1009-1429",
+      "items": [
+        {
+          "title": "Three People Suspected of Smuggling Cigarettes by Weather Balloons Detained in Vilnius - REFORM.news",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTG1jWEJ5eGJIZEpFbGtKcmg5djIxQzRxb1VOSG5oLW9XZV94VDBxNkFBZzd6bkpRRHhoOWQ4NkIxaFZfM1ktMHp6MFhwYVFyY3JoZnhzclVTN1FhQnB1bTZYbTItWjlIeWsxb1JBRXpSRzdSN1hTeUNfMHVvRml0MXJ3SXFKeVRkbFhhc1IyMWd4bE5NbFhhX3hJSXlrRTVOS0Vsa1dsS29jc1BidkplLU9DYzbSAbQBQVVfeXFMT0xtY1hCeXhiSGRKRWxrSnJoOXYyMUM0cW9VTkhuaC1vV2VfeFQwcTZBQWc3em5KUUR4aDlkODZCMWhWXzNZLTB6ejBYcGFRcmNyaGZ4c3JVUzdRYUJwdW02WG0yLVo5SHlrMW9SQUV6Ukc3UjdYU3lDXzB1b0ZpdDFyd0lxSnlUZGxYYXNSMjFneGxOTWxYYV94SUl5a0U1TktFbGtXbEtvY3NQYnZKZS1PQ2M2?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Possible cyberattack halts Estonian Artists' Association fundraiser auction",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610161744/possible-cyberattack-halts-estonian-artists-association-fundraiser-auction",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Remigijus Baltr\u0117nas: svarbesnis klausimas u\u017e 5 proc. gynybai yra j\u0173 panaudojamumas",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/remigijus-baltrenas-svarbesnis-klausimas-uz-5-proc-gynybai-yra-ju-panaudojamumas-56-2781728?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Briti Igaunij\u0101 disloc\u0113ju\u0161i dronu sist\u0113mas \"Nyan\"",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8561668",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0420\u0443\u0438\u043d\u044b \u0432\u043c\u0435\u0441\u0442\u043e \u043f\u0440\u0430\u0432\u0438\u043b",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/10/09/ruiny-vmesto-pravil",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "diplomatic",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "10. un 11. oktobr\u012b \u0136ekavas novad\u0101 notiks Zemessardzes m\u0101c\u012bbas",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/732596-10-un-11-oktobri-kekavas-novada-notiks-zemessardzes-macibas",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Igaunijas zieme\u013cos izvietotas Lielbrit\u0101nijas t\u0101l\u0101 r\u0101diusa dronu sist\u0113mas  \"Nyan\"",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/732567-igaunijas-ziemelos-izvietotas-lielbritanijas-tala-radiusa-dronu-sistemas-nyan",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-09T07:28:33.624772+00:00",
       "level": "WATCH",
@@ -849,56 +971,123 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-06T07:37:28.839603+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 254,
-      "stale_count": 2,
-      "alert_id": "1006-0737",
-      "items": [
-        {
-          "title": "I\u0161 Sinkevi\u010diaus \u2013 raginimas NATO d\u0117l Rusijos veiksm\u0173",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/politika/is-sinkeviciaus-raginimas-nato-del-rusijos-veiksmu-120314619",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "M. Sinkevi\u010dius paragino NATO parengti konkret\u0173 reagavimo \u012f Rusijos hibridines atakas plan\u0105",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/06/news/m-sinkevicius-paragino-nato-parengti-konkretu-reagavimo-i-rusijos-hibridines-atakas-plana-44346181/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-09T14:29:31.274538+00:00",
+      "level": "WATCH",
+      "title": "Igaunijas zieme\u013cos izvietotas Lielbrit\u0101nijas t\u0101l\u0101 r\u0101diusa dronu sist\u0113mas  \"Nyan\"",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/arzemes/732567-igaunijas-ziemelos-izvietotas-lielbritanijas-tala-radiusa-dronu-sistemas-nyan",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-09T14:29:31.274538+00:00",
+      "level": "WATCH",
+      "title": "10. un 11. oktobr\u012b \u0136ekavas novad\u0101 notiks Zemessardzes m\u0101c\u012bbas",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/zinas/732596-10-un-11-oktobri-kekavas-novada-notiks-zemessardzes-macibas",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-09T14:29:31.274538+00:00",
+      "level": "WATCH",
+      "title": "\u0420\u0443\u0438\u043d\u044b \u0432\u043c\u0435\u0441\u0442\u043e \u043f\u0440\u0430\u0432\u0438\u043b",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/10/09/ruiny-vmesto-pravil",
+      "categories": [
+        "troop_movement",
+        "baltic_specific",
+        "diplomatic",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-09T14:29:31.274538+00:00",
+      "level": "WATCH",
+      "title": "Briti Igaunij\u0101 disloc\u0113ju\u0161i dronu sist\u0113mas \"Nyan\"",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8561668",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-09T14:29:31.274538+00:00",
+      "level": "WATCH",
+      "title": "Remigijus Baltr\u0117nas: svarbesnis klausimas u\u017e 5 proc. gynybai yra j\u0173 panaudojamumas",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/remigijus-baltrenas-svarbesnis-klausimas-uz-5-proc-gynybai-yra-ju-panaudojamumas-56-2781728?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-09T14:29:31.274538+00:00",
+      "level": "WATCH",
+      "title": "Possible cyberattack halts Estonian Artists' Association fundraiser auction",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610161744/possible-cyberattack-halts-estonian-artists-association-fundraiser-auction",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-09T14:29:31.274538+00:00",
+      "level": "WATCH",
+      "title": "Three People Suspected of Smuggling Cigarettes by Weather Balloons Detained in Vilnius - REFORM.news",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTG1jWEJ5eGJIZEpFbGtKcmg5djIxQzRxb1VOSG5oLW9XZV94VDBxNkFBZzd6bkpRRHhoOWQ4NkIxaFZfM1ktMHp6MFhwYVFyY3JoZnhzclVTN1FhQnB1bTZYbTItWjlIeWsxb1JBRXpSRzdSN1hTeUNfMHVvRml0MXJ3SXFKeVRkbFhhc1IyMWd4bE5NbFhhX3hJSXlrRTVOS0Vsa1dsS29jc1BidkplLU9DYzbSAbQBQVVfeXFMT0xtY1hCeXhiSGRKRWxrSnJoOXYyMUM0cW9VTkhuaC1vV2VfeFQwcTZBQWc3em5KUUR4aDlkODZCMWhWXzNZLTB6ejBYcGFRcmNyaGZ4c3JVUzdRYUJwdW02WG0yLVo5SHlrMW9SQUV6Ukc3UjdYU3lDXzB1b0ZpdDFyd0lxSnlUZGxYYXNSMjFneGxOTWxYYV94SUl5a0U1TktFbGtXbEtvY3NQYnZKZS1PQ2M2?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-09T07:28:33.642671+00:00",
       "level": "WATCH",
@@ -1020,118 +1209,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-08T07:26:19.349162+00:00",
-      "level": "WATCH",
-      "title": "Lithuania to deploy troops along border with Russia's Kaliningrad after Latvia incident - The Kyiv Independent",
-      "source": "Kyiv Independent",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmN1RDgzYkhwS2o2YUE3bWNkSEZOTjJ3TG03a3BQNUNCRnBkbHRwYjRnNmhBMFE3MWZNaEhvVHNCeTVOcGRvbGE2dHMybVdQT2VVbU55ZVVWRzFTWHRCcTZYWG1jcVB0M19SNnp0MXZUeVZZaHphUTRpNjl6SGRycnlWdGlqclJtbFkzbEVLZXQtbjRZaWpjYnYyU216bmw0Y3NfRUxKQzAwSWpRRWVXaC1tQ1ZjZw?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-07T19:28:08.792000+00:00",
-      "level": "WATCH",
-      "title": "Agnia Grigas. Kaip NATO gali apsaugoti fronto linij\u0105 nuo Rusijos",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/komentarai/agnia-grigas-kaip-nato-gali-apsaugoti-fronto-linija-nuo-rusijos-500-2780006?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-07T19:28:08.792000+00:00",
-      "level": "WATCH",
-      "title": "Katelynas: kariuomen\u0117 pasienyje su Kaliningradu \u2013 d\u0117l galimos Rusijos mobilizacijos - LRT",
-      "source": "LRT (Lithuanian-language, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOWM1QzJHekpfV1l2YzBibEJDX1pZVGlFRUdQRFZIWmFVV1dFUnY2WVVhT0dJUTZ5YVFMbWNRMU5JRTYyVVJWai1OMENocEVPcEdkcVNfZVRHM1JHOHVMSWNOSzdWN0VNYTRxQmcwaC1sb0lHeU9zZnl5NVJzYTRRV2JXUjlnTVp6aGp2VFRsTFRVQkx4NDlWd0JsZk9EN0wxVVVqcUFoYUQ0Uy1MUjAyaVNCX1Q0eU90Vk5NS1JHQllveDRWRGVtcg?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-07T14:37:07.879224+00:00",
-      "level": "WATCH",
-      "title": "Latvia\u2019s Foreign Ministry reportedly moves to\u00a0declare Russian journalist Leonid Ragozin persona non grata",
-      "source": "Meduza",
-      "link": "https://meduza.io/en/news/2026/10/07/latvia-s-foreign-ministry-reportedly-moves-to-declare-russian-journalist-leonid-ragozin-persona-non-grata",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-07T07:17:18.211922+00:00",
-      "level": "WATCH",
-      "title": "Incidentas Latvijos pasienyje: i\u0161 Baltarusijos \u012fsiver\u017e\u0119 kauk\u0117ti vyrai \u012fvykd\u0117 sabota\u017e\u0105",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/10/07/news/incidentas-latvijos-pasienyje-is-baltarusijos-isiverze-kauketi-vyrai-ivykde-sabotaza-44366928/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-07T07:17:18.211922+00:00",
-      "level": "WATCH",
-      "title": "Latvia adds journalist Ragozin to list of persona non gratae",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/baltics/latvia-adds-journalist-ragozin-to-list-of-persona-non-gratae-wn5kd9b",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-07T07:17:18.211922+00:00",
-      "level": "WATCH",
-      "title": "Aggressive armed escorts from Belarus tried to push illegal migrants into Latvia",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/social/aggressive-armed-escorts-from-belarus-tried-to-push-illegal-migrants-into-latvia-zkgbwbq",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1320,14 +1397,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 197,
-    "alerting_scans": 159,
-    "held_back_total": 91,
+    "scans": 194,
+    "alerting_scans": 156,
+    "held_back_total": 92,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 49
+        "count": 50
       },
       {
         "reason": "already alerted",
