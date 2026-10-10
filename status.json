@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-09T23:18:23.716175+00:00",
+  "last_run_utc": "2026-10-10T07:06:46.446155+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.5h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 554,
-  "quiet_count": 312,
+  "total_scans": 555,
+  "quiet_count": 313,
   "watch_count": 222,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-10 05:48 UTC",
+  "generated_at": "2026-10-10 07:06 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-10T07:06:46.465773+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 256,
+      "stale_count": 1,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-10-09T23:18:23.765672+00:00",
       "level": "QUIET",
@@ -866,36 +880,6 @@
       "stale_count": 5,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-06T21:12:10.505820+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 58,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 105,
-      "stale_count": 1,
-      "alert_id": "1006-2112",
-      "items": [
-        {
-          "title": "Latvian officials say armed masked men threatened troops while trying to\u00a0push 20 migrants across from Belarus, then crossed into Latvia themselves and stole surveillance cameras",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/10/07/latvian-officials-say-armed-masked-men-threatened-troops-while-trying-to-push-20-migrants-across-from-belarus-then-crossed-into-latvia-themselves-and-stole-surveillance-cameras",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1322,7 +1306,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 192,
+    "scans": 193,
     "alerting_scans": 155,
     "held_back_total": 91,
     "held_back_by_reason": [
