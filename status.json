@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-10T15:57:19.250819+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.4h ago",
+  "last_run_utc": "2026-10-10T17:57:26.880804+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 558,
-  "quiet_count": 313,
+  "total_scans": 559,
+  "quiet_count": 314,
   "watch_count": 225,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-10 17:20 UTC",
+  "generated_at": "2026-10-10 17:57 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-10T17:57:26.899789+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 165,
+      "stale_count": 0,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-10-10T15:57:19.239607+00:00",
       "level": "WATCH",
@@ -806,36 +820,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-07T14:37:07.859181+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 554,
-      "stale_count": 3,
-      "alert_id": "1007-1437",
-      "items": [
-        {
-          "title": "Latvia\u2019s Foreign Ministry reportedly moves to\u00a0declare Russian journalist Leonid Ragozin persona non grata",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/10/07/latvia-s-foreign-ministry-reportedly-moves-to-declare-russian-journalist-leonid-ragozin-persona-non-grata",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1262,7 +1246,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 192,
+    "scans": 193,
     "alerting_scans": 155,
     "held_back_total": 91,
     "held_back_by_reason": [
