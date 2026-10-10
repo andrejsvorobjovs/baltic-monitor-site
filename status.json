@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-10T13:44:06.719640+00:00",
+  "last_run_utc": "2026-10-10T15:57:19.250819+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 1.4h ago",
   "since": "2026-07-19",
-  "total_scans": 557,
+  "total_scans": 558,
   "quiet_count": 313,
-  "watch_count": 224,
+  "watch_count": 225,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-10 13:44 UTC",
+  "generated_at": "2026-10-10 17:20 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-10T15:57:19.239607+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 176,
+      "stale_count": 1,
+      "alert_id": "1010-1557",
+      "items": [
+        {
+          "title": "Netikslumas automobilio skelbime kainavo brangiai: BMW pardav\u0117jui teks gr\u0105\u017einti 61 t\u016bkst. eur\u0173",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/auto/rinka/2026/10/10/news/netikslumas-automobilio-skelbime-kainavo-brangiai-bmw-pardavejui-teks-grazinti-61-tukst-euru-44261198/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-10T13:44:06.737785+00:00",
       "level": "WATCH",
@@ -797,36 +827,6 @@
           "categories": [
             "baltic_specific",
             "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-07T09:11:53.829911+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 4,
-      "tier3_count": 0,
-      "sources_scanned": 57,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 244,
-      "stale_count": 0,
-      "alert_id": "1007-0911",
-      "items": [
-        {
-          "title": "Kaitsev\u00e4gi: k\u00f5rged meretuulepargid v\u00f5ivad ohustada droonit\u00f5rjet",
-          "source": "Ohtuleht (Estonia)",
-          "link": "https://www.ohtuleht.ee/1168450/kaitsevagi-korged-meretuulepargid-voivad-ohustada-droonitorjet",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
           ],
           "tier": "tier2",
           "gdelt_category": "",
