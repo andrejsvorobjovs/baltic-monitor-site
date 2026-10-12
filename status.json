@@ -1,20 +1,139 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-12T07:25:14.055740+00:00",
+  "last_run_utc": "2026-10-12T16:51:10.363226+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 566,
+  "total_scans": 568,
   "quiet_count": 317,
-  "watch_count": 229,
+  "watch_count": 231,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-12 07:25 UTC",
+  "generated_at": "2026-10-12 16:51 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-12T16:51:10.384354+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 220,
+      "stale_count": 12,
+      "alert_id": "1012-1651",
+      "items": [
+        {
+          "title": "How would NATO defeat a\u00a0Russian invasion? Its top commander envisions a\u00a0wall of\u00a0drones, a\u00a0counteroffensive, and missile strikes deep behind Russian lines.",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/feature/2026/10/12/how-would-nato-defeat-a-russian-invasion-its-top-commander-envisions-a-wall-of-drones-a-counteroffensive-and-missile-strikes-deep-behind-russian-lines",
+          "categories": [
+            "diplomatic",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-12T16:01:29.009042+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 569,
+      "stale_count": 0,
+      "alert_id": "1012-1601",
+      "items": [
+        {
+          "title": "NATO komandieris br\u012bdina Krieviju: Uzbrukums aliansei b\u016btu piln\u012bgi bezj\u0113dz\u012bgs",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/12.10.2026-nato-komandieris-bridina-krieviju-uzbrukums-aliansei-butu-pilnigi-bezjedzigs.a667222/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Europai \u2013 grie\u017etas NATO vado \u012fsp\u0117jimas d\u0117l Rusijos hibridini\u0173 atak\u0173",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/10/12/news/europai-grieztas-nato-vado-ispejimas-del-rusijos-hibridiniu-ataku-44429770/",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Four go on trial in Warsaw over arson attacks carried out on Russian orders",
+          "source": "Notes from Poland",
+          "link": "https://notesfrompoland.com/2026/10/12/four-go-on-trial-in-warsaw-over-arson-attacks-carried-out-on-russian-orders/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Pavojingiausia DI klaida \u2013 ta, kurios niekas nepastebi",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/verslo-aplinka/2026/10/12/pavojingiausia-di-klaida-ta-kurios-niekas-nepastebi-591235",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "LAT Defence, Perkons Energy un Starling vienojas par sadarb\u012bbu bezpilota sist\u0113mu att\u012bst\u012bb\u0101 Latvij\u0101",
+          "source": "Dienas Bizness (Latvia)",
+          "link": "https://db.lv/zinas/lat-defence-perkons-energy-un-starling-vienojas-par-sadarbibu-bezpilota-sistemu-attistiba-latvija",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-12T07:25:14.081372+00:00",
       "level": "WATCH",
@@ -593,83 +712,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-08T23:53:21.802745+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 186,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-10-08T19:24:35.900469+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 385,
-      "stale_count": 0,
-      "alert_id": "1008-1924",
-      "items": [
-        {
-          "title": "Kunstnike liidu toetusoksjon peatati v\u00f5imaliku k\u00fcberr\u00fcnnaku t\u00f5ttu",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://kultuur.err.ee/1610161396/kunstnike-liidu-toetusoksjon-peatati-voimaliku-kuberrunnaku-tottu",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0410\u0443\u043a\u0446\u0438\u043e\u043d \u0432 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0443 \u0421\u043e\u044e\u0437\u0430 \u0445\u0443\u0434\u043e\u0436\u043d\u0438\u043a\u043e\u0432 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b\u0438 \u0438\u0437-\u0437\u0430 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0439 \u043a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a\u0438",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610161420/aukcion-v-podderzhku-sojuza-hudozhnikov-jestonii-priostanovili-iz-za-vozmozhnoj-kiberataki",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Eesti Kunsti Oksjonite oksjon peatati v\u00f5imaliku k\u00fcberr\u00fcnnaku t\u00f5ttu: m\u00fc\u00fck j\u00e4tkub reedel",
-          "source": "Ohtuleht (Estonia)",
-          "link": "https://www.ohtuleht.ee/1168590/eesti-kunsti-oksjonite-oksjon-peatati-voimaliku-kuberrunnaku-tottu-muuk-jatkub-reedel",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-12T16:51:10.394014+00:00",
+      "level": "WATCH",
+      "title": "How would NATO defeat a\u00a0Russian invasion? Its top commander envisions a\u00a0wall of\u00a0drones, a\u00a0counteroffensive, and missile strikes deep behind Russian lines.",
+      "source": "Meduza",
+      "link": "https://meduza.io/en/feature/2026/10/12/how-would-nato-defeat-a-russian-invasion-its-top-commander-envisions-a-wall-of-drones-a-counteroffensive-and-missile-strikes-deep-behind-russian-lines",
+      "categories": [
+        "diplomatic",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-12T07:25:14.095022+00:00",
       "level": "WATCH",
@@ -893,22 +954,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-09T07:28:33.642671+00:00",
-      "level": "WATCH",
-      "title": "\u0423\u043a\u0440\u0430\u0438\u043d\u043a\u0443 \u041b\u044e\u0431\u043e\u0432\u044c \u0420\u043e\u0436\u0430\u043d\u0441\u043a\u0443\u044e \u043e\u0441\u0432\u043e\u0431\u043e\u0434\u0438\u043b\u0438 \u0438\u0437 \u0438\u0437\u043e\u043b\u044f\u0442\u043e\u0440\u0430 \u0432 \u0410\u0441\u0442\u0430\u043d\u0435. \u041e\u043d\u0430 \u0443\u0436\u0435 \u043f\u043e\u043a\u0438\u043d\u0443\u043b\u0430 \u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/10/09/ukrainku-liubov-rozhanskuiu-osvobodili-iz-izoliatora-v-astane-ona-uzhe-pokinula-kazakhstan-news",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1091,14 +1136,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 189,
-    "alerting_scans": 153,
-    "held_back_total": 88,
+    "scans": 187,
+    "alerting_scans": 152,
+    "held_back_total": 87,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 46
+        "count": 45
       },
       {
         "reason": "already alerted",
