@@ -3954,6 +3954,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-12T07:25:14.081372+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -4212,6 +4219,10 @@
     {
       "ts": "2026-10-10T00:00:00+00:00",
       "count": 156
+    },
+    {
+      "ts": "2026-10-11T00:00:00+00:00",
+      "count": 161
     }
   ],
   "ais_points": [
@@ -5418,6 +5429,10 @@
     {
       "ts": "2026-10-11T22:55:35.244997+00:00",
       "count": 192
+    },
+    {
+      "ts": "2026-10-12T07:24:22.055911+00:00",
+      "count": 203
     }
   ],
   "military_points": [
@@ -6624,6 +6639,10 @@
     {
       "ts": "2026-10-11T22:55:35.771059+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-12T07:24:22.985985+00:00",
+      "count": 8
     }
   ],
   "firms_points": [
@@ -7522,6 +7541,10 @@
     {
       "ts": "2026-10-11T22:55:38.774302+00:00",
       "count": 21
+    },
+    {
+      "ts": "2026-10-12T07:24:26.407345+00:00",
+      "count": 27
     }
   ],
   "entsoe_points": [
@@ -8387,6 +8410,10 @@
     },
     {
       "ts": "2026-10-11T22:55:41.524453+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-12T07:24:42.017546+00:00",
       "count": 0
     }
   ],
@@ -13213,6 +13240,29 @@
         ]
       },
       "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-12T07:24:42.019434+00:00",
+      "deviation_pct": 42.6107335682899,
+      "sources_included": 4,
+      "narrative": "military aircraft 184% above baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "moderately elevated",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 184,
+            "direction": "above"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
+        ]
+      },
+      "band_key": "moderate_above",
       "band_record_scans": null
     }
   ]
