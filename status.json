@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-14T13:59:49.755406+00:00",
+  "last_run_utc": "2026-10-14T18:08:09.816569+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.1h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 579,
+  "total_scans": 580,
   "quiet_count": 319,
-  "watch_count": 240,
+  "watch_count": 241,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-14 17:07 UTC",
+  "generated_at": "2026-10-14 18:08 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-14T18:08:09.842953+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 424,
+      "stale_count": 6,
+      "alert_id": "1014-1808",
+      "items": [
+        {
+          "title": "\u201eJei rusai b\u016bt\u0173 tokie kvaili, kad pult\u0173\u201c: NATO vadovas \u012fvertino, kokia yra greitos Rusijos atakos gr\u0117sm\u0117",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/jei-rusai-butu-tokie-kvaili-kad-pultu-nato-vadovas-ivertino-kokia-yra-greitos-rusijos-atakos-gresme-57-2785024?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NATO peasekret\u00e4r Venemaa r\u00fcnnakutest: meie vastus pole alati n\u00e4htav",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8564415",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Nord Stream-sabotaget: Advokaten om den misst\u00e4nktes tystnad",
+          "source": "Sveriges Radio Ekot",
+          "link": "https://www.sverigesradio.se/artikel/9319572",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Belarus reacts sharply to the prospect of preemptive strikes on its territory",
+          "source": "Defence24",
+          "link": "https://defence24.com/geopolitics/belarus-reacts-sharply-to-the-prospect-of-preemptive-strikes-on-its-territory",
+          "categories": [
+            "diplomatic",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-14T13:59:49.735370+00:00",
       "level": "WATCH",
@@ -785,23 +860,73 @@
       "stale_count": 6,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-10T22:33:53.561966+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 171,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-14T18:08:09.863988+00:00",
+      "level": "WATCH",
+      "title": "Belarus reacts sharply to the prospect of preemptive strikes on its territory",
+      "source": "Defence24",
+      "link": "https://defence24.com/geopolitics/belarus-reacts-sharply-to-the-prospect-of-preemptive-strikes-on-its-territory",
+      "categories": [
+        "diplomatic",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-14T18:08:09.863988+00:00",
+      "level": "WATCH",
+      "title": "Nord Stream-sabotaget: Advokaten om den misst\u00e4nktes tystnad",
+      "source": "Sveriges Radio Ekot",
+      "link": "https://www.sverigesradio.se/artikel/9319572",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-14T18:08:09.863988+00:00",
+      "level": "WATCH",
+      "title": "NATO peasekret\u00e4r Venemaa r\u00fcnnakutest: meie vastus pole alati n\u00e4htav",
+      "source": "Postimees Estonian-language",
+      "link": "https://pmo.ee/8564415",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-14T18:08:09.863988+00:00",
+      "level": "WATCH",
+      "title": "\u201eJei rusai b\u016bt\u0173 tokie kvaili, kad pult\u0173\u201c: NATO vadovas \u012fvertino, kokia yra greitos Rusijos atakos gr\u0117sm\u0117",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/jei-rusai-butu-tokie-kvaili-kad-pultu-nato-vadovas-ivertino-kokia-yra-greitos-rusijos-atakos-gresme-57-2785024?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-14T13:00:20.969916+00:00",
       "level": "WATCH",
@@ -970,68 +1095,6 @@
       "source": "Poland Government Centre for Security RCB (coverage, via GNews)",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWU4ycUJMYTJoTjNtTHNiWlVUTXJaRC1hVzQ3SXlPWktYZk5ZUV9nOHNrbTdUWDNFbk8zbU9aMmN0N1ZjU2c4RTUwcXNqX0VKQno5Nlc1ZkdEaXFPVTdBYlFuV2tZeXFGbWV6RWMzMF9ib0Yxc29MZWdxXzJKeC1oelVqYWNSWnpKSjFYSjdwWjFlRUE?oc=5",
       "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-13T07:47:35.129834+00:00",
-      "level": "WATCH",
-      "title": "NATO scrambles fighter jets as Russia launches massive air attack - WW3 fears explode - Daily Express",
-      "source": "Poland Government Centre for Security RCB (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMnB0Z1ZRMGRFNmhwSDFodXJUdVJLQWM1MzR3bUp2NmVMTEdjRW5Ka1dqWURReTNsWWtEX215RHc2LXBkMFRSOXAxOU5RZUJSSWtvOEhsckFtNDBXTmVzNVd1QUJjU09xanVJLVVTV0Y3elM5bVRHTVd6MGIySWhCSEVLNER6RllmTDhjZ3ZPb211bXc20gGaAUFVX3lxTE9TcFF4UVg4T2ZlbUtQUVZQZHV2UURMUkljZlVNaGdSdW9rYUE3YWVxcHNuTTUxUXY3a2RRQ0NMaV8tV0pycmZWTTVvNWcyMjEwZkZUc1FWYmFJeEIzblJ1UTRlVzRndk10NlAyVl9pU0paQmNBTUZkcWFGOTdLQlFHT2M2N0xDLVAtTWpfVldCUXpVQ09hTDhPU1E?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-13T07:47:35.129834+00:00",
-      "level": "WATCH",
-      "title": "WW3 fears explode as Russia attacks and sinks ships inside NATO territory - AOL.com",
-      "source": "Poland Government Centre for Security RCB (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONnpST18ybllEUm5yNmtOd1ZFa0l3eTRCM2tWOVF5OFUzN0FvV3VJMnczODExRzU2LXlmZ3RuVjdUcTlNd3BWYk5IbTM1X2hOWlRsUm1yTEQyR0FZR19wMkJ0SUlQbm5NUFlydHpwc29YVGdfREFoU3Q3T1JtX0ZkUXNNU3g?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-12T21:53:05.178210+00:00",
-      "level": "WATCH",
-      "title": "'Black Russian' sabotage group is probably a front, experts suggest",
-      "source": "LSM (Latvia)",
-      "link": "https://eng.lsm.lv/article/society/defence/12.10.2026-black-russian-sabotage-group-is-probably-a-front-experts-suggest.a667255/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-12T16:51:10.394014+00:00",
-      "level": "WATCH",
-      "title": "How would NATO defeat a\u00a0Russian invasion? Its top commander envisions a\u00a0wall of\u00a0drones, a\u00a0counteroffensive, and missile strikes deep behind Russian lines.",
-      "source": "Meduza",
-      "link": "https://meduza.io/en/feature/2026/10/12/how-would-nato-defeat-a-russian-invasion-its-top-commander-envisions-a-wall-of-drones-a-counteroffensive-and-missile-strikes-deep-behind-russian-lines",
-      "categories": [
-        "diplomatic",
         "nato_conflict_risk"
       ],
       "tier": "tier2",
@@ -1221,9 +1284,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 182,
-    "alerting_scans": 151,
-    "held_back_total": 86,
+    "scans": 183,
+    "alerting_scans": 152,
+    "held_back_total": 88,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1233,7 +1296,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 26
+        "count": 28
       },
       {
         "reason": "reassurance",
