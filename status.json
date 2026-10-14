@@ -1,20 +1,79 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-14T18:08:09.816569+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-10-14T22:20:58.109794+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 580,
-  "quiet_count": 319,
-  "watch_count": 241,
+  "total_scans": 582,
+  "quiet_count": 320,
+  "watch_count": 242,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-14 18:08 UTC",
+  "generated_at": "2026-10-14 22:20 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-14T22:20:58.126835+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 188,
+      "stale_count": 3,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-10-14T18:51:29.295371+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 75,
+      "stale_count": 0,
+      "alert_id": "1014-1851",
+      "items": [
+        {
+          "title": "Eksperdid: Prantsuse toidupoode tabanud k\u00fcberr\u00fcnnak on ohum\u00e4rk ka Eestile",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610166394/eksperdid-prantsuse-toidupoode-tabanud-kuberrunnak-on-ohumark-ka-eestile",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a\u0430 \u043d\u0430 \u0444\u0440\u0430\u043d\u0446\u0443\u0437\u0441\u043a\u0438\u0435 \u0441\u0443\u043f\u0435\u0440\u043c\u0430\u0440\u043a\u0435\u0442\u044b \u0437\u0430\u0441\u0442\u0430\u0432\u0438\u043b\u0430 \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e Selver \u043f\u0435\u0440\u0435\u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610166367/kiberataka-na-francuzskie-supermarkety-zastavila-rukovodstvo-selver-pereproverit-sistemy",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-14T18:08:09.842953+00:00",
       "level": "WATCH",
@@ -816,50 +875,6 @@
       "stale_count": 3,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-11T13:26:50.755889+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 58,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 330,
-      "stale_count": 0,
-      "alert_id": "1011-1326",
-      "items": [
-        {
-          "title": "Politico: \u0415\u0421 \u0433\u043e\u0442\u043e\u0432\u0438\u0442 \u043d\u043e\u0432\u044b\u0435 \u0432\u0438\u0437\u043e\u0432\u044b\u0435 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f \u0434\u043b\u044f \u0440\u043e\u0441\u0441\u0438\u044f\u043d \u0438\u0437-\u0437\u0430 \u0443\u0433\u0440\u043e\u0437\u044b \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u044b\u0445 \u0430\u0442\u0430\u043a",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/10/11/politico-es-gotovit-novye-vizovye-ogranicheniia-dlia-rossiian-iz-za-ugrozy-gibridnykh-atak-news",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-11T07:12:20.405692+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 326,
-      "stale_count": 6,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
@@ -1284,7 +1299,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 183,
+    "scans": 184,
     "alerting_scans": 152,
     "held_back_total": 88,
     "held_back_by_reason": [
