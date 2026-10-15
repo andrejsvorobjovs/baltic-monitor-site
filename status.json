@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-14T22:20:58.109794+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.2h ago",
+  "last_run_utc": "2026-10-15T05:57:50.315237+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 582,
+  "total_scans": 583,
   "quiet_count": 320,
-  "watch_count": 242,
+  "watch_count": 243,
   "warn_count": 20,
   "correction_count": 4,
-  "generated_at": "2026-10-15 04:34 UTC",
+  "generated_at": "2026-10-15 05:57 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-15T05:57:50.336279+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 335,
+      "stale_count": 0,
+      "alert_id": "1015-0557",
+      "items": [
+        {
+          "title": "Ekspertai apie da\u017en\u0117jan\u010dias Rusijos provokacijas: pagrindinis taikinys \u2013 ne Baltijos \u0161alys - LRT",
+          "source": "Lithuanian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOM2p2LVk0V3oyUzhEbFVvS2RnTGVLaFJ0VTlkRWZEM3BDcU1ZU2huNjN5eVo2UnM0ZFgzQUszYW54Z0Y3VkpSRldTaUhqdGdmTTU4ckRTNG95eXdqRUdyVk5wOExaSEgwTk1BVkxNOWtRejFESlhKVWJFQi1CTnpIekltaFp4WkdoYnhwUHBuZFVsS0RGY19YVmVvRDJISVVwTHZUcjdCYS01VzdwTHNmekJSY0VSbEhWbTJKVTJzTnlMN2F3OHlpWC04UkludTh3eGc?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Persp\u0117ja: Rusija palei Baltijos \u0161ali\u0173 sienas kuri\u0105 karinio ry\u0161io tinkl\u0105",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/it/ismanyk/2026/10/15/news/perspeja-rusija-palei-baltijos-saliu-sienas-kuria-karinio-rysio-tinkla-44474510/",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-14T22:20:58.126835+00:00",
       "level": "QUIET",
@@ -861,23 +906,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-11T14:07:55.186525+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 143,
-      "stale_count": 3,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-15T05:57:50.350741+00:00",
+      "level": "WATCH",
+      "title": "Persp\u0117ja: Rusija palei Baltijos \u0161ali\u0173 sienas kuri\u0105 karinio ry\u0161io tinkl\u0105",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/it/ismanyk/2026/10/15/news/perspeja-rusija-palei-baltijos-saliu-sienas-kuria-karinio-rysio-tinkla-44474510/",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-15T05:57:50.350741+00:00",
+      "level": "WATCH",
+      "title": "Ekspertai apie da\u017en\u0117jan\u010dias Rusijos provokacijas: pagrindinis taikinys \u2013 ne Baltijos \u0161alys - LRT",
+      "source": "Lithuanian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOM2p2LVk0V3oyUzhEbFVvS2RnTGVLaFJ0VTlkRWZEM3BDcU1ZU2huNjN5eVo2UnM0ZFgzQUszYW54Z0Y3VkpSRldTaUhqdGdmTTU4ckRTNG95eXdqRUdyVk5wOExaSEgwTk1BVkxNOWtRejFESlhKVWJFQi1CTnpIekltaFp4WkdoYnhwUHBuZFVsS0RGY19YVmVvRDJISVVwTHZUcjdCYS01VzdwTHNmekJSY0VSbEhWbTJKVTJzTnlMN2F3OHlpWC04UkludTh3eGc?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-14T18:08:09.863988+00:00",
       "level": "WATCH",
@@ -1086,37 +1149,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-13T15:07:51.218965+00:00",
-      "level": "WATCH",
-      "title": "A. Luka\u0161enka pratr\u016bko d\u0117l provokacijos prie Latvijos sienos: pateik\u0117 savo versij\u0105",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/10/13/news/a-lukasenka-pratruko-del-provokacijos-prie-latvijos-sienos-pateike-savo-versija-44452466/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-13T15:07:51.218965+00:00",
-      "level": "WATCH",
-      "title": "Russia launches devastating strikes on Ukraine - WW3 fears soar over NATO territory attack - AOL.com",
-      "source": "Poland Government Centre for Security RCB (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWU4ycUJMYTJoTjNtTHNiWlVUTXJaRC1hVzQ3SXlPWktYZk5ZUV9nOHNrbTdUWDNFbk8zbU9aMmN0N1ZjU2c4RTUwcXNqX0VKQno5Nlc1ZkdEaXFPVTdBYlFuV2tZeXFGbWV6RWMzMF9ib0Yxc29MZWdxXzJKeC1oelVqYWNSWnpKSjFYSjdwWjFlRUE?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1299,9 +1331,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 183,
-    "alerting_scans": 151,
-    "held_back_total": 87,
+    "scans": 184,
+    "alerting_scans": 152,
+    "held_back_total": 88,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1311,7 +1343,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 28
+        "count": 29
       },
       {
         "reason": "reassurance",
