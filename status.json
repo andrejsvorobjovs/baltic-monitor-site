@@ -1,20 +1,139 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-16T05:54:16.488697+00:00",
-  "last_level": "WARN",
+  "last_run_utc": "2026-10-16T12:29:17.738346+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 590,
+  "total_scans": 592,
   "quiet_count": 322,
-  "watch_count": 247,
+  "watch_count": 249,
   "warn_count": 21,
   "correction_count": 4,
-  "generated_at": "2026-10-16 05:54 UTC",
+  "generated_at": "2026-10-16 12:29 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-16T12:29:17.844384+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 683,
+      "stale_count": 2,
+      "alert_id": "1016-1229",
+      "items": [
+        {
+          "title": "Experts: French grocery store cyberattack a warning sign for Estonia",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610167132/experts-french-grocery-store-cyberattack-a-warning-sign-for-estonia",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvia's National Guards drilling this weekend",
+          "source": "LSM (Latvia)",
+          "link": "https://eng.lsm.lv/article/society/defence/16.10.2026-latvias-national-guards-drilling-this-weekend.a667904/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Eksperti: Dronu uzbrukumi ku\u0123iem Melnaj\u0101 j\u016br\u0101 ir Krievijas m\u0113\u0123in\u0101jums p\u0101rbaud\u012bt NATO modr\u012bbu",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/16.10.2026-eksperti-dronu-uzbrukumi-kugiem-melnaja-jura-ir-krievijas-meginajums-parbaudit-nato-modribu.a667885/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0412 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u0432\u043f\u0435\u0440\u0432\u044b\u0435 \u043f\u0440\u043e\u0439\u0434\u0443\u0442 \u043d\u0435\u043c\u0435\u0446\u043a\u043e-\u044d\u0441\u0442\u043e\u043d\u0441\u043a\u0438\u0435 \u0443\u0447\u0435\u043d\u0438\u044f Brave Blue 26",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610168677/v-jestonii-vpervye-projdut-nemecko-jestonskie-uchenija-brave-blue-26",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-16T07:29:54.234400+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 228,
+      "stale_count": 1,
+      "alert_id": "1016-0729",
+      "items": [
+        {
+          "title": "Rusija \u012f\u017e\u016bliai tikrina NATO ribas: metas galvoti apie atgrasym\u0105 baud\u017eiant",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/saugu/naujienos/rusija-izuliai-tikrina-nato-ribas-metas-galvoti-apie-atgrasyma-baudziant-120318972",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Br\u012bdina, ka Spilves apk\u0101rtn\u0113 \u0161odien debes\u012bs b\u016bs redzams dronam l\u012bdz\u012bgs lidapar\u0101ts",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/733547-bridina-ka-spilves-apkartne-sodien-debesis-bus-redzams-dronam-lidzigs-lidaparats",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-16T05:54:16.506634+00:00",
       "level": "WARN",
@@ -799,142 +918,72 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-13T07:47:35.111735+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 182,
-      "stale_count": 1,
-      "alert_id": "1013-0747",
-      "items": [
-        {
-          "title": "Three People Suspected of Smuggling Cigarettes by Weather Balloons Detained in Vilnius - REFORM.news",
-          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaHlncGxxQVRnZDJtRXM5UndWSlo5bENBTnB4ekd4MkZxWWctNFVXTkNySW5lRUExdnlQNVhRVEh0ZDJXdFM0MXVHUVNmYnEyNW5vby0zcUUzYzF2ZUs0amNzUkJmeEYtSEdKZEFyc1VyTUFBRlBOcm1rM016UUwyU1J1OTJUTkhqdk5UX3JBMGhRZkd6VWZXMVc2YmdiYUFVZ2NlRDV6VmNpNElGdnpB0gG0AUFVX3lxTE9MbWNYQnl4YkhkSkVsa0pyaDl2MjFDNHFvVU5Ibmgtb1dlX3hUMHE2QUFnN3puSlFEeGg5ZDg2QjFoVl8zWS0wenowWHBhUXJjcmhmeHNyVVM3UWFCcHVtNlhtMi1aOUh5azFvUkFFelJHN1I3WFN5Q18wdW9GaXQxcndJcUp5VGRsWGFzUjIxZ3hsTk1sWGFfeElJeWtFNU5LRWxrV2xLb2NzUGJ2SmUtT0NjNg?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "WW3 fears explode as Russia attacks and sinks ships inside NATO territory - AOL.com",
-          "source": "Poland Government Centre for Security RCB (coverage, via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONnpST18ybllEUm5yNmtOd1ZFa0l3eTRCM2tWOVF5OFUzN0FvV3VJMnczODExRzU2LXlmZ3RuVjdUcTlNd3BWYk5IbTM1X2hOWlRsUm1yTEQyR0FZR19wMkJ0SUlQbm5NUFlydHpwc29YVGdfREFoU3Q3T1JtX0ZkUXNNU3g?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "NATO scrambles fighter jets as Russia launches massive air attack - WW3 fears explode - Daily Express",
-          "source": "Poland Government Centre for Security RCB (coverage, via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMnB0Z1ZRMGRFNmhwSDFodXJUdVJLQWM1MzR3bUp2NmVMTEdjRW5Ka1dqWURReTNsWWtEX215RHc2LXBkMFRSOXAxOU5RZUJSSWtvOEhsckFtNDBXTmVzNVd1QUJjU09xanVJLVVTV0Y3elM5bVRHTVd6MGIySWhCSEVLNER6RllmTDhjZ3ZPb211bXc20gGaAUFVX3lxTE9TcFF4UVg4T2ZlbUtQUVZQZHV2UURMUkljZlVNaGdSdW9rYUE3YWVxcHNuTTUxUXY3a2RRQ0NMaV8tV0pycmZWTTVvNWcyMjEwZkZUc1FWYmFJeEIzblJ1UTRlVzRndk10NlAyVl9pU0paQmNBTUZkcWFGOTdLQlFHT2M2N0xDLVAtTWpfVldCUXpVQ09hTDhPU1E?oc=5",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-13T07:03:08.534345+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 365,
-      "stale_count": 0,
-      "alert_id": "1013-0703",
-      "items": [
-        {
-          "title": "Latvij\u0101 rad\u012bta m\u0101ksl\u012bg\u0101 intelekta simul\u0113ta sabiedr\u012bba m\u0101ca NATO valst\u012bm c\u012bn\u012bties ar hibr\u012bdapdraud\u0113jumiem",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/13.10.2026-latvija-radita-maksliga-intelekta-simuleta-sabiedriba-maca-nato-valstim-cinities-ar-hibridapdraudejumiem.a667278/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0421\u043e\u0437\u0434\u0430\u043d\u043d\u0430\u044f \u0432 \u041b\u0430\u0442\u0432\u0438\u0438 \u0441\u0438\u043c\u0443\u043b\u044f\u0446\u0438\u044f \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u0418\u0418 \u0443\u0447\u0438\u0442 \u0441\u0442\u0440\u0430\u043d\u044b \u041d\u0410\u0422\u041e \u0431\u043e\u0440\u043e\u0442\u044c\u0441\u044f \u0441 \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u044b\u043c\u0438 \u0443\u0433\u0440\u043e\u0437\u0430\u043c\u0438",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/krugozor/nauka-i-tehnologii/13.10.2026-sozdannaya-v-latvii-simulyaciya-obshhestva-na-osnove-ii-ucit-strany-nato-borotsya-s-gibridnymi-ugrozami.a667284/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "G. Naus\u0117dos patar\u0117ja: kinetin\u0117 gr\u0117sm\u0117 Lietuvoje yra labai reali",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/13/news/g-nausedos-patareja-kinetine-gresme-lietuvoje-yra-labai-reali-44444613/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "A. Skaisgiryt\u0117: NATO atsakas \u012f galimus hibridinius veiksmus b\u016bt\u0173 labai, labai juntamas Rusijai",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/13/news/a-skaisgiryte-nato-atsakas-i-galimus-hibridinius-veiksmus-butu-labai-labai-juntamas-rusijai-44444541/",
-          "categories": [
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-16T12:29:17.860944+00:00",
+      "level": "WATCH",
+      "title": "\u0412 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u0432\u043f\u0435\u0440\u0432\u044b\u0435 \u043f\u0440\u043e\u0439\u0434\u0443\u0442 \u043d\u0435\u043c\u0435\u0446\u043a\u043e-\u044d\u0441\u0442\u043e\u043d\u0441\u043a\u0438\u0435 \u0443\u0447\u0435\u043d\u0438\u044f Brave Blue 26",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610168677/v-jestonii-vpervye-projdut-nemecko-jestonskie-uchenija-brave-blue-26",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-16T12:29:17.860944+00:00",
+      "level": "WATCH",
+      "title": "Eksperti: Dronu uzbrukumi ku\u0123iem Melnaj\u0101 j\u016br\u0101 ir Krievijas m\u0113\u0123in\u0101jums p\u0101rbaud\u012bt NATO modr\u012bbu",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/arzemes/16.10.2026-eksperti-dronu-uzbrukumi-kugiem-melnaja-jura-ir-krievijas-meginajums-parbaudit-nato-modribu.a667885/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-16T12:29:17.860944+00:00",
+      "level": "WATCH",
+      "title": "Latvia's National Guards drilling this weekend",
+      "source": "LSM (Latvia)",
+      "link": "https://eng.lsm.lv/article/society/defence/16.10.2026-latvias-national-guards-drilling-this-weekend.a667904/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-16T12:29:17.860944+00:00",
+      "level": "WATCH",
+      "title": "Experts: French grocery store cyberattack a warning sign for Estonia",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610167132/experts-french-grocery-store-cyberattack-a-warning-sign-for-estonia",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-16T05:54:16.525865+00:00",
       "level": "WARN",
@@ -1099,71 +1148,6 @@
       "title": "\u201eJei rusai b\u016bt\u0173 tokie kvaili, kad pult\u0173\u201c: NATO vadovas \u012fvertino, kokia yra greitos Rusijos atakos gr\u0117sm\u0117",
       "source": "15min (Lithuania)",
       "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/jei-rusai-butu-tokie-kvaili-kad-pultu-nato-vadovas-ivertino-kokia-yra-greitos-rusijos-atakos-gresme-57-2785024?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-14T13:00:20.969916+00:00",
-      "level": "WATCH",
-      "title": "Michal kohtumisel Ruttega: Eesti toetab Ukrainat NATO algatuse PURL kaudu 10 miljoni euroga",
-      "source": "Estonian Government",
-      "link": "https://valitsus.ee/uudised/michal-kohtumisel-ruttega-eesti-toetab-ukrainat-nato-algatuse-purl-kaudu-10-miljoni-euroga",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-14T13:00:20.969916+00:00",
-      "level": "WATCH",
-      "title": "\u041a\u043e\u043d\u0442\u0440\u0433\u0435\u0440\u0438\u043b\u044c\u044f",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/10/14/kontrgerilia",
-      "categories": [
-        "troop_movement",
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-14T13:00:20.969916+00:00",
-      "level": "WATCH",
-      "title": "NATO vad\u012bt\u0101js: Alianses atbildes uz Krievijas kaitniec\u012bbas oper\u0101cij\u0101m ne vienm\u0113r ir redzamas",
-      "source": "LSM Latvian-language",
-      "link": "https://www.lsm.lv/raksts/zinas/arzemes/14.10.2026-nato-vaditajs-alianses-atbildes-uz-krievijas-kaitniecibas-operacijam-ne-vienmer-ir-redzamas.a667382/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-14T06:11:26.667442+00:00",
-      "level": "WATCH",
-      "title": "NKSC \u012fvardijo da\u017eniausias kibernetines gr\u0117smes Lietuvoje",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/it/ismanyk/2026/10/14/news/nksc-ivardijo-dazniausias-kibernetines-gresmes-lietuvoje-44458832/",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
