@@ -2,14 +2,14 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-10-16T12:29:17.738346+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 4.1h ago",
   "since": "2026-07-19",
   "total_scans": 592,
   "quiet_count": 322,
   "watch_count": 249,
   "warn_count": 21,
   "correction_count": 4,
-  "generated_at": "2026-10-16 12:29 UTC",
+  "generated_at": "2026-10-16 16:36 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
@@ -1339,14 +1339,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 185,
-    "alerting_scans": 151,
-    "held_back_total": 85,
+    "scans": 183,
+    "alerting_scans": 149,
+    "held_back_total": 82,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 42
+        "count": 40
       },
       {
         "reason": "already alerted",
@@ -1361,7 +1361,7 @@
       {
         "reason": "scheduled exercise",
         "label": "Announced allied exercise",
-        "count": 2
+        "count": 1
       }
     ],
     "scans_before_tracking": 0
