@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-17T11:42:58.844475+00:00",
+  "last_run_utc": "2026-10-17T12:22:47.138865+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 3.1h ago",
   "since": "2026-07-19",
-  "total_scans": 598,
+  "total_scans": 599,
   "quiet_count": 323,
-  "watch_count": 254,
+  "watch_count": 255,
   "warn_count": 21,
   "correction_count": 4,
-  "generated_at": "2026-10-17 11:42 UTC",
+  "generated_at": "2026-10-17 15:30 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-17T12:22:47.121347+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 38,
+      "stale_count": 0,
+      "alert_id": "1017-1222",
+      "items": [
+        {
+          "title": "Estonia\u2019s conscription no-show rate falls to 2%. This is how a threatened society prepares for war",
+          "source": "Defence24",
+          "link": "https://defence24.com/armed-forces/estonias-conscription-no-show-rate-falls-to-2-this-is-how-a-threatened-society-prepares-for-war",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-17T11:42:58.861347+00:00",
       "level": "WATCH",
@@ -887,51 +917,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-14T13:59:49.735370+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 58,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 141,
-      "stale_count": 0,
-      "alert_id": "1014-1359",
-      "items": [
-        {
-          "title": "Po diversijos Latvijos pasienyje \u2013 netik\u0117ti parei\u0161kimai: ne\u017einoma organizacija \u0117m\u0117 grasinti Baltarusijos kaimyn\u0117ms",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/10/14/news/po-diversijos-latvijos-pasienyje-netiketi-pareiskimai-nezinoma-organizacija-eme-grasinti-baltarusijos-kaimynems-44467769/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "J\u0113kabpils novad\u0101 notiks pl\u0101nveida milit\u0101r\u0101s m\u0101c\u012bbas. NBS pav\u0113sta, kas iedz\u012bvot\u0101jiem j\u0101\u0146em v\u0113r\u0101",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/733306-jekabpils-novada-notiks-planveida-militaras-macibas-nbs-pavesta-kas-iedzivotajiem-janem-vera",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1354,14 +1339,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 188,
-    "alerting_scans": 153,
-    "held_back_total": 84,
+    "scans": 187,
+    "alerting_scans": 152,
+    "held_back_total": 83,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 41
+        "count": 40
       },
       {
         "reason": "already alerted",
