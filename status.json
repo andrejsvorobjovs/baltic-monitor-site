@@ -1,20 +1,139 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-17T05:40:44.296234+00:00",
+  "last_run_utc": "2026-10-17T11:42:58.844475+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 597,
+  "total_scans": 598,
   "quiet_count": 323,
-  "watch_count": 253,
+  "watch_count": 254,
   "warn_count": 21,
   "correction_count": 4,
-  "generated_at": "2026-10-17 05:40 UTC",
+  "generated_at": "2026-10-17 11:42 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-17T11:42:58.861347+00:00",
+      "level": "WATCH",
+      "count": 7,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 421,
+      "stale_count": 2,
+      "alert_id": "1017-1142",
+      "items": [
+        {
+          "title": "Rusija gali pasirinkti netik\u0117t\u0105 keli\u0105: ekspertui kyla esminis klausimas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/rusija-gali-pasirinkti-netiketa-kelia-ekspertui-kyla-esminis-klausimas-120319665",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Tuskas \u012fsp\u0117jo ir Baltijos \u0161alis: Maskva gali imtis veiksm\u0173 dar iki K\u016b\u010di\u0173",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/tuskas-ispejo-ir-baltijos-salis-maskva-gali-imtis-veiksmu-dar-iki-kuciu-57-2786968?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041d\u043e\u0432\u044b\u0439 \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u044b\u0439 \u0432\u0435\u0442\u0440\u043e\u043f\u0430\u0440\u043a \u0432 \u041b\u0430\u0442\u0432\u0438\u0438 \u0432\u044b\u0437\u0432\u0430\u043b \u043d\u0435\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u043e \u0432 \u042d\u0441\u0442\u043e\u043d\u0438\u0438",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610169121/novyj-gibridnyj-vetropark-v-latvii-vyzval-nedovolstvo-v-jestonii",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "I\u0161 D. Tusko \u2013 \u012fsp\u0117jimas Baltijos \u0161alims d\u0117l V. Putino",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/10/17/news/is-d-tusko-ispejimas-baltijos-salims-del-v-putino-44505040/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u201eSaugumo kodo\u201c konferencijoje pristatytas ir lietuvi\u0161kas \u0161arvuotis TAURUS",
+          "source": "Lrytas (Lithuania)",
+          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/17/news/-saugumo-kodo-konferencijoje-pristatytas-ir-lietuviskas-sarvuotis-taurus-44495800/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NATO's stability in the age of micro-alliances and internal turbulence",
+          "source": "Defence24",
+          "link": "https://defence24.com/geopolitics/natos-stability-in-the-age-of-micro-alliances-and-internal-turbulence",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Elisa juht: sabotaa\u017eioht kasvab, aga seda ei tohi karta",
+          "source": "Aripaev (Estonia)",
+          "link": "https://www.aripaev.ee/uudised/2026/10/15/elisa-juht-sabotaazioht-kasvab-aga-seda-ei-tohi-karta",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-17T05:40:44.314205+00:00",
       "level": "WATCH",
@@ -813,70 +932,120 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-14T13:00:20.888034+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 630,
-      "stale_count": 1,
-      "alert_id": "1014-1300",
-      "items": [
-        {
-          "title": "NATO vad\u012bt\u0101js: Alianses atbildes uz Krievijas kaitniec\u012bbas oper\u0101cij\u0101m ne vienm\u0113r ir redzamas",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/arzemes/14.10.2026-nato-vaditajs-alianses-atbildes-uz-krievijas-kaitniecibas-operacijam-ne-vienmer-ir-redzamas.a667382/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041a\u043e\u043d\u0442\u0440\u0433\u0435\u0440\u0438\u043b\u044c\u044f",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/10/14/kontrgerilia",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Michal kohtumisel Ruttega: Eesti toetab Ukrainat NATO algatuse PURL kaudu 10 miljoni euroga",
-          "source": "Estonian Government",
-          "link": "https://valitsus.ee/uudised/michal-kohtumisel-ruttega-eesti-toetab-ukrainat-nato-algatuse-purl-kaudu-10-miljoni-euroga",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-17T11:42:58.880655+00:00",
+      "level": "WATCH",
+      "title": "Elisa juht: sabotaa\u017eioht kasvab, aga seda ei tohi karta",
+      "source": "Aripaev (Estonia)",
+      "link": "https://www.aripaev.ee/uudised/2026/10/15/elisa-juht-sabotaazioht-kasvab-aga-seda-ei-tohi-karta",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-17T11:42:58.880655+00:00",
+      "level": "WATCH",
+      "title": "NATO's stability in the age of micro-alliances and internal turbulence",
+      "source": "Defence24",
+      "link": "https://defence24.com/geopolitics/natos-stability-in-the-age-of-micro-alliances-and-internal-turbulence",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-17T11:42:58.880655+00:00",
+      "level": "WATCH",
+      "title": "\u201eSaugumo kodo\u201c konferencijoje pristatytas ir lietuvi\u0161kas \u0161arvuotis TAURUS",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/17/news/-saugumo-kodo-konferencijoje-pristatytas-ir-lietuviskas-sarvuotis-taurus-44495800/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-17T11:42:58.880655+00:00",
+      "level": "WATCH",
+      "title": "I\u0161 D. Tusko \u2013 \u012fsp\u0117jimas Baltijos \u0161alims d\u0117l V. Putino",
+      "source": "Lrytas (Lithuania)",
+      "link": "http://www.lrytas.lt/pasaulis/ivykiai/2026/10/17/news/is-d-tusko-ispejimas-baltijos-salims-del-v-putino-44505040/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-17T11:42:58.880655+00:00",
+      "level": "WATCH",
+      "title": "\u041d\u043e\u0432\u044b\u0439 \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u044b\u0439 \u0432\u0435\u0442\u0440\u043e\u043f\u0430\u0440\u043a \u0432 \u041b\u0430\u0442\u0432\u0438\u0438 \u0432\u044b\u0437\u0432\u0430\u043b \u043d\u0435\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u043e \u0432 \u042d\u0441\u0442\u043e\u043d\u0438\u0438",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610169121/novyj-gibridnyj-vetropark-v-latvii-vyzval-nedovolstvo-v-jestonii",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-17T11:42:58.880655+00:00",
+      "level": "WATCH",
+      "title": "Tuskas \u012fsp\u0117jo ir Baltijos \u0161alis: Maskva gali imtis veiksm\u0173 dar iki K\u016b\u010di\u0173",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/tuskas-ispejo-ir-baltijos-salis-maskva-gali-imtis-veiksmu-dar-iki-kuciu-57-2786968?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-17T11:42:58.880655+00:00",
+      "level": "WATCH",
+      "title": "Rusija gali pasirinkti netik\u0117t\u0105 keli\u0105: ekspertui kyla esminis klausimas",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/lietuvoje/rusija-gali-pasirinkti-netiketa-kelia-ekspertui-kyla-esminis-klausimas-120319665",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-17T05:40:44.334595+00:00",
       "level": "WATCH",
@@ -994,116 +1163,6 @@
       "title": "Piektdien no Spilves lidlauka lidojumu veiks dronam l\u012bdz\u012bgs pilot\u0113jams lidapar\u0101ts",
       "source": "TVNET (Latvia)",
       "link": "https://pmo.ee/8565633",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-16T05:54:16.525865+00:00",
-      "level": "WARN",
-      "title": "How Belarus is \u2018preparing for Russian attack\u2019 on NATO by 2027 - TVP World",
-      "source": "TVP World (Poland)",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQX19hNjE0VGRQSjRRQjd4UG5ldzllU004V2JSX1ZzY3ZOanZRZzl3Mll3ald1Z0Q4empqMXhEemY4REl6VWdkb0I2QXNWcXl5V19taHRFbGFrTFdheHJyQm5oaHU2TUVvSTlnNmNNUjA5QnBJUFcwLWpCLWlyeFlweHptZGNlWGpNSUt0eXp4M294TTg?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-16T05:54:16.525865+00:00",
-      "level": "WARN",
-      "title": "Drone strikes in the Black Sea raise fears of Russian escalation to test NATO\u2019s response - AP News",
-      "source": "AP (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTzFrRE5pMHU0QUV5V2ZHeTBuUHR3cnJDY09QMnEyMndIVVA5TG5aUE5zSkhIdWNhZVVLcEJPSGMweVFtVGFma3RXcWlZa2xaeVpMWjg3UnFsUXQ0SXQ1ZFdwdXY0cG4zc3U3NlJBRm81eEkyanlKcG1ENGJWS21CWHN5M3RmZkcxY1dnWTBDNFNna0o1WDgyNnZvTlJOSDlwN1VyeDY1VHktNnVyU0E?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-15T17:54:40.065038+00:00",
-      "level": "WATCH",
-      "title": "Projektas: gynybos biud\u017eetas kit\u0105met \u2013 5 proc. BVP arba daugiau nei 4,8 mlrd. eur\u0173",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/projektas-gynybos-biudzetas-kitamet-5-proc-bvp-arba-daugiau-nei-48-mlrd-euru-56-2786008?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-15T05:57:50.350741+00:00",
-      "level": "WATCH",
-      "title": "Persp\u0117ja: Rusija palei Baltijos \u0161ali\u0173 sienas kuri\u0105 karinio ry\u0161io tinkl\u0105",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/it/ismanyk/2026/10/15/news/perspeja-rusija-palei-baltijos-saliu-sienas-kuria-karinio-rysio-tinkla-44474510/",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-15T05:57:50.350741+00:00",
-      "level": "WATCH",
-      "title": "Ekspertai apie da\u017en\u0117jan\u010dias Rusijos provokacijas: pagrindinis taikinys \u2013 ne Baltijos \u0161alys - LRT",
-      "source": "Lithuanian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOM2p2LVk0V3oyUzhEbFVvS2RnTGVLaFJ0VTlkRWZEM3BDcU1ZU2huNjN5eVo2UnM0ZFgzQUszYW54Z0Y3VkpSRldTaUhqdGdmTTU4ckRTNG95eXdqRUdyVk5wOExaSEgwTk1BVkxNOWtRejFESlhKVWJFQi1CTnpIekltaFp4WkdoYnhwUHBuZFVsS0RGY19YVmVvRDJISVVwTHZUcjdCYS01VzdwTHNmekJSY0VSbEhWbTJKVTJzTnlMN2F3OHlpWC04UkludTh3eGc?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-14T18:08:09.863988+00:00",
-      "level": "WATCH",
-      "title": "Belarus reacts sharply to the prospect of preemptive strikes on its territory",
-      "source": "Defence24",
-      "link": "https://defence24.com/geopolitics/belarus-reacts-sharply-to-the-prospect-of-preemptive-strikes-on-its-territory",
-      "categories": [
-        "diplomatic",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-14T18:08:09.863988+00:00",
-      "level": "WATCH",
-      "title": "Nord Stream-sabotaget: Advokaten om den misst\u00e4nktes tystnad",
-      "source": "Sveriges Radio Ekot",
-      "link": "https://www.sverigesradio.se/artikel/9319572",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
@@ -1295,8 +1354,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 187,
-    "alerting_scans": 152,
+    "scans": 188,
+    "alerting_scans": 153,
     "held_back_total": 84,
     "held_back_by_reason": [
       {

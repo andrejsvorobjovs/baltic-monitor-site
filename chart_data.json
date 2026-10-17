@@ -4178,6 +4178,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-17T11:42:58.861347+00:00",
+      "level": "WATCH",
+      "count": 7,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5750,6 +5757,10 @@
     {
       "ts": "2026-10-17T05:38:44.355967+00:00",
       "count": 240
+    },
+    {
+      "ts": "2026-10-17T11:42:07.471814+00:00",
+      "count": 203
     }
   ],
   "military_points": [
@@ -7040,6 +7051,10 @@
     {
       "ts": "2026-10-17T05:38:44.688756+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-17T11:42:08.022659+00:00",
+      "count": 1
     }
   ],
   "firms_points": [
@@ -8014,6 +8029,10 @@
     {
       "ts": "2026-10-16T22:08:23.196395+00:00",
       "count": 12
+    },
+    {
+      "ts": "2026-10-17T11:42:10.911803+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -8963,6 +8982,10 @@
     },
     {
       "ts": "2026-10-17T05:40:09.983866+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-17T11:42:25.985178+00:00",
       "count": 0
     }
   ],
@@ -14299,6 +14322,33 @@
         "moved": [
           {
             "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-17T11:42:25.987651+00:00",
+      "deviation_pct": -47.46269107600655,
+      "sources_included": 4,
+      "narrative": "military aircraft 62% below baseline; thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 62,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
             "pct": 100,
             "direction": "below"
           }
