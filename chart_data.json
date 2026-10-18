@@ -4234,6 +4234,20 @@
       "count": 0,
       "tier3_count": 1,
       "tone": null
+    },
+    {
+      "ts": "2026-10-18T16:06:43.025604+00:00",
+      "level": "WARN",
+      "count": 6,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-10-18T16:38:10.535296+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5830,6 +5844,10 @@
     {
       "ts": "2026-10-18T12:10:01.709419+00:00",
       "count": 217
+    },
+    {
+      "ts": "2026-10-18T16:37:18.395349+00:00",
+      "count": 202
     }
   ],
   "military_points": [
@@ -7136,6 +7154,10 @@
     {
       "ts": "2026-10-18T05:53:58.366868+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-18T16:37:19.080557+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -8126,6 +8148,10 @@
     {
       "ts": "2026-10-18T05:54:01.085011+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-18T16:37:22.303615+00:00",
+      "count": 39
     }
   ],
   "entsoe_points": [
@@ -9095,6 +9121,10 @@
     },
     {
       "ts": "2026-10-18T12:11:46.240872+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-18T16:37:38.283806+00:00",
       "count": 0
     }
   ],
@@ -14559,6 +14589,33 @@
       "band": "within normal range",
       "narrative_parts": {
         "moved": [],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-18T16:37:38.285650+00:00",
+      "deviation_pct": -9.503631481069984,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; thermal hotspots 90% above baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 90,
+            "direction": "above"
+          }
+        ],
         "steady": [
           "gpsjam",
           "ais"
