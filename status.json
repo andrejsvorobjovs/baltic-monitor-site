@@ -1,20 +1,215 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-19T06:10:53.091398+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-10-19T14:46:46.724058+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 611,
+  "total_scans": 613,
   "quiet_count": 329,
-  "watch_count": 259,
+  "watch_count": 261,
   "warn_count": 23,
   "correction_count": 4,
-  "generated_at": "2026-10-19 06:10 UTC",
+  "generated_at": "2026-10-19 14:46 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-19T14:46:46.742029+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 201,
+      "stale_count": 6,
+      "alert_id": "1019-1446",
+      "items": [
+        {
+          "title": "Starlink hub arson attack in Lithuania is Russian sabotage, officials say - TVP World",
+          "source": "TVP World (Poland)",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRF9tTWRucVZxQUxvTkRqSFJhWU5rblE3X09zSnROOWpFMlIwQzJ6WkFOU0tKalQ4bU5jTnVUd1ZfWG96R293ZEFyNElGMTdJVFg1NGItdUd0ZWlLOTcxU1ZOTFJXZ3djVVdZQmVVOVVVSFV1d3hQcE1WSzlSdHJUTEJuSVhDbS0tSXo0UjFBeVNFSTQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "I\u0161skirtiniai kadrai: drono sprogimo vietoje Pasvalio rajone \u2013 nuolau\u017e\u0173 paie\u0161kos",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/isskirtiniai-kadrai-drono-sprogimo-vietoje-pasvalio-rajone-nuolauzu-paieskos-59-2788142?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-19T13:52:37.064776+00:00",
+      "level": "WATCH",
+      "count": 9,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 538,
+      "stale_count": 0,
+      "alert_id": "1019-1352",
+      "items": [
+        {
+          "title": "Lietuvas aizsardz\u012bbas ministrs: Sv\u0113tdien valsts zieme\u013cos nog\u0101zies Ukrain\u0101 ra\u017eots drons",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/19.10.2026-lietuvas-aizsardzibas-ministrs-svetdien-valsts-ziemelos-nogazies-ukraina-razots-drons.a668167/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u201ePo velni\u0173, neleiskite rus\u0173 \u012f Europ\u0105\u201c: Latvijos premjerui \u2013 jau gana",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/po-velniu-neleiskite-rusu-i-europa-latvijos-premjerui-jau-gana-57-2787966?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lenkija pasisak\u0117 apie dron\u0105, kuris \u012fskrido \u012f Lietuv\u0105",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/lenkija-pasisake-apie-drona-kuris-iskrido-i-lietuva-56-2787866?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041f\u0440\u0435\u043c\u044c\u0435\u0440 \u041b\u0438\u0442\u0432\u044b \u0443\u0432\u0435\u0440\u0435\u043d, \u0447\u0442\u043e \u0434\u0440\u043e\u043d, \u0440\u0430\u0437\u0431\u0438\u0432\u0448\u0438\u0439\u0441\u044f \u043d\u0430 \u0442\u0435\u0440\u0440\u0438\u0442\u043e\u0440\u0438\u0438 \u0441\u0442\u0440\u0430\u043d\u044b, \u043f\u0435\u0440\u0435\u043d\u043e\u0441\u0438\u043b \u0432\u0437\u0440\u044b\u0432\u0447\u0430\u0442\u043a\u0443",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610170357/premer-litvy-uveren-chto-dron-razbivshijsja-na-territorii-strany-perenosil-vzryvchatku",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0412\u043e\u0439\u043d\u0430 \u0431\u0435\u0437 \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f: \u043a\u0430\u043a \u0440\u0430\u0441\u043f\u043e\u0437\u043d\u0430\u0442\u044c \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u044b\u0435 \u0443\u0433\u0440\u043e\u0437\u044b \u0438 \u0447\u0442\u043e \u0441 \u043d\u0438\u043c\u0438 \u0434\u0435\u043b\u0430\u0442\u044c",
+          "source": "LSM Russian-language",
+          "link": "https://rus.lsm.lv/statja/novosti/analitika/19.10.2026-voina-bez-obyavleniya-kak-raspoznat-gibridnye-ugrozy-i-cto-s-nimi-delat.a668162/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Sinkevi\u010ds: Lietuv\u0101 eksplod\u0113ju\u0161ais drons bija no Ukrainas un valst\u012b ielidoja no Polijas puses",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/pasaule/baltijas-valstis/sinkevics-lietuva-eksplodejusais-drons-bija-no-ukrainas-un-valsti-ielidoja-no-polijas-puses?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Sinkevi\u010dius: Leedus plahvatanud droon oli Ukraina oma",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8567316",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lithuania says Ukrainian drone that struck car entered its airspace from Poland",
+          "source": "Notes from Poland",
+          "link": "https://notesfrompoland.com/2026/10/19/lithuania-says-ukrainian-drone-that-struck-car-entered-its-airspace-from-poland/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Ukrainian drone in Lithuania. It 'flew in from Poland'",
+          "source": "Defence24",
+          "link": "https://defence24.com/defence-policy/ukrainian-drone-in-lithuania-it-flew-in-from-poland",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-19T06:10:53.120892+00:00",
       "level": "QUIET",
@@ -939,113 +1134,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-16T17:31:06.176980+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 436,
-      "stale_count": 4,
-      "alert_id": "1016-1731",
-      "items": [
-        {
-          "title": "Eksperdid k\u00fcberr\u00fcnnakust Prantsusmaa supermarketite k\u00fclmikutele: polnud just eriline tehniline v\u00e4gitegu",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8564357",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-16T12:29:17.844384+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 683,
-      "stale_count": 2,
-      "alert_id": "1016-1229",
-      "items": [
-        {
-          "title": "Experts: French grocery store cyberattack a warning sign for Estonia",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610167132/experts-french-grocery-store-cyberattack-a-warning-sign-for-estonia",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Latvia's National Guards drilling this weekend",
-          "source": "LSM (Latvia)",
-          "link": "https://eng.lsm.lv/article/society/defence/16.10.2026-latvias-national-guards-drilling-this-weekend.a667904/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Eksperti: Dronu uzbrukumi ku\u0123iem Melnaj\u0101 j\u016br\u0101 ir Krievijas m\u0113\u0123in\u0101jums p\u0101rbaud\u012bt NATO modr\u012bbu",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/arzemes/16.10.2026-eksperti-dronu-uzbrukumi-kugiem-melnaja-jura-ir-krievijas-meginajums-parbaudit-nato-modribu.a667885/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0412 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u0432\u043f\u0435\u0440\u0432\u044b\u0435 \u043f\u0440\u043e\u0439\u0434\u0443\u0442 \u043d\u0435\u043c\u0435\u0446\u043a\u043e-\u044d\u0441\u0442\u043e\u043d\u0441\u043a\u0438\u0435 \u0443\u0447\u0435\u043d\u0438\u044f Brave Blue 26",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610168677/v-jestonii-vpervye-projdut-nemecko-jestonskie-uchenija-brave-blue-26",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-19T14:46:46.762849+00:00",
+      "level": "WATCH",
+      "title": "I\u0161skirtiniai kadrai: drono sprogimo vietoje Pasvalio rajone \u2013 nuolau\u017e\u0173 paie\u0161kos",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/isskirtiniai-kadrai-drono-sprogimo-vietoje-pasvalio-rajone-nuolauzu-paieskos-59-2788142?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-19T14:46:46.762849+00:00",
+      "level": "WATCH",
+      "title": "Starlink hub arson attack in Lithuania is Russian sabotage, officials say - TVP World",
+      "source": "TVP World (Poland)",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRF9tTWRucVZxQUxvTkRqSFJhWU5rblE3X09zSnROOWpFMlIwQzJ6WkFOU0tKalQ4bU5jTnVUd1ZfWG96R293ZEFyNElGMTdJVFg1NGItdUd0ZWlLOTcxU1ZOTFJXZ3djVVdZQmVVOVVVSFV1d3hQcE1WSzlSdHJUTEJuSVhDbS0tSXo0UjFBeVNFSTQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-18T21:32:38.271377+00:00",
       "level": "WATCH",
@@ -1251,38 +1374,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-16T12:29:17.860944+00:00",
-      "level": "WATCH",
-      "title": "Experts: French grocery store cyberattack a warning sign for Estonia",
-      "source": "ERR News (Estonia)",
-      "link": "https://news.err.ee/1610167132/experts-french-grocery-store-cyberattack-a-warning-sign-for-estonia",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-16T05:54:16.525865+00:00",
-      "level": "WARN",
-      "title": "Finland restricts air and maritime traffic near the Russian border",
-      "source": "Defence24",
-      "link": "https://defence24.com/geopolitics/finland-restricts-air-and-maritime-traffic-near-the-russian-border",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1465,19 +1556,19 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 188,
+    "scans": 187,
     "alerting_scans": 148,
-    "held_back_total": 79,
+    "held_back_total": 84,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 37
+        "count": 39
       },
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 28
+        "count": 31
       },
       {
         "reason": "reassurance",
