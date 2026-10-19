@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-19T19:25:07.577939+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-10-19T23:01:59.975123+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 614,
-  "quiet_count": 329,
-  "watch_count": 262,
+  "total_scans": 616,
+  "quiet_count": 330,
+  "watch_count": 263,
   "warn_count": 23,
   "correction_count": 4,
-  "generated_at": "2026-10-19 19:25 UTC",
+  "generated_at": "2026-10-19 23:02 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-19T23:01:59.992911+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 127,
+      "stale_count": 3,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-10-19T20:09:12.957343+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 36,
+      "stale_count": 0,
+      "alert_id": "1019-2009",
+      "items": [
+        {
+          "title": "Russian Strikes Rise Across NATO\u2019s Eastern Flank",
+          "source": "CEPA",
+          "link": "https://cepa.org/article/russian-strikes-rise-across-natos-eastern-flank/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-19T19:25:07.595935+00:00",
       "level": "WATCH",
@@ -1164,80 +1209,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-16T22:09:00.497175+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 317,
-      "stale_count": 8,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-10-16T21:38:52.245753+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 155,
-      "stale_count": 0,
-      "alert_id": "1016-2138",
-      "items": [
-        {
-          "title": "Valys: Lietuva siekia europiniu lygiu padidinti biud\u017eeto deficito i\u0161lyg\u0105 gynybos i\u0161laidoms",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/verslas/naujienos/valys-lietuva-siekia-europiniu-lygiu-padidinti-biudzeto-deficito-islyga-gynybos-islaidoms-120320425",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "L\u016aSIS KOMENT\u0112 \u27e9 Ragozins \u012bsti nesaprata, kur atrodas. Bet laiks doties m\u0101j\u0101s",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8565214",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "T. Valys: Lietuva siekia europiniu lygiu padidinti biud\u017eeto deficito i\u0161lyg\u0105 gynybos i\u0161laidoms",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/verslas/rinkos-pulsas/2026/10/16/news/t-valys-lietuva-siekia-europiniu-lygiu-padidinti-biudzeto-deficito-islyga-gynybos-islaidoms-44501554/",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1663,7 +1634,7 @@
     "window_days": 30,
     "scans": 187,
     "alerting_scans": 148,
-    "held_back_total": 85,
+    "held_back_total": 84,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1679,11 +1650,6 @@
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
         "count": 13
-      },
-      {
-        "reason": "scheduled exercise",
-        "label": "Announced allied exercise",
-        "count": 1
       }
     ],
     "scans_before_tracking": 0
