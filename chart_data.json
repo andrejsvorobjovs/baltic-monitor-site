@@ -4311,6 +4311,20 @@
       "count": 0,
       "tier3_count": 1,
       "tone": null
+    },
+    {
+      "ts": "2026-10-20T05:12:27.997752+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-10-20T06:04:21.476241+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -4601,6 +4615,10 @@
     {
       "ts": "2026-10-18T00:00:00+00:00",
       "count": 164
+    },
+    {
+      "ts": "2026-10-19T00:00:00+00:00",
+      "count": 170
     }
   ],
   "ais_points": [
@@ -5935,6 +5953,10 @@
     {
       "ts": "2026-10-19T23:00:52.724907+00:00",
       "count": 200
+    },
+    {
+      "ts": "2026-10-20T06:03:40.495667+00:00",
+      "count": 200
     }
   ],
   "military_points": [
@@ -7265,6 +7287,10 @@
     {
       "ts": "2026-10-19T23:00:53.264785+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-20T06:03:40.825638+00:00",
+      "count": 2
     }
   ],
   "firms_points": [
@@ -8279,6 +8305,10 @@
     {
       "ts": "2026-10-19T23:00:55.723436+00:00",
       "count": 34
+    },
+    {
+      "ts": "2026-10-20T06:03:42.610027+00:00",
+      "count": 28
     }
   ],
   "entsoe_points": [
@@ -9272,6 +9302,10 @@
     },
     {
       "ts": "2026-10-19T23:01:27.591575+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-20T06:03:50.792129+00:00",
       "count": 0
     }
   ],
@@ -14888,6 +14922,24 @@
         "steady": [
           "gpsjam",
           "ais"
+        ]
+      },
+      "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-20T06:03:50.794751+00:00",
+      "deviation_pct": -5.146576542938037,
+      "sources_included": 4,
+      "narrative": "All tracked signals within normal range.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "military",
+          "firms"
         ]
       },
       "band_key": "normal",
