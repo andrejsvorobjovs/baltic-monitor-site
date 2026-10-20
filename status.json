@@ -1,20 +1,110 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-20T18:07:19.130063+00:00",
+  "last_run_utc": "2026-10-20T22:23:04.180166+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 622,
+  "total_scans": 624,
   "quiet_count": 331,
-  "watch_count": 268,
+  "watch_count": 270,
   "warn_count": 23,
   "correction_count": 4,
-  "generated_at": "2026-10-20 18:07 UTC",
+  "generated_at": "2026-10-20 22:23 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-20T22:23:04.196548+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 72,
+      "stale_count": 3,
+      "alert_id": "1020-2223",
+      "items": [
+        {
+          "title": "Illegal migrants tried to enter Lithuania from Belarus via a drainage pipe - \u041d\u0430\u0448\u0430 \u041d\u0456\u0432\u0430",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0zeWhjaUh4dEtXUGt1Y2lsdDdXal8za3NCQXloM1pkbFpjUVJ1dUY3UVlCMnRGQ0RoREZERkdkUGF2czFQQ3lreHBTSdIBS0FVX3lxTE0zeWhjaUh4dEtXUGt1Y2lsdDdXal8za3NCQXloM1pkbFpjUVJ1dUY3UVlCMnRGQ0RoREZERkdkUGF2czFQQ3lreHBTSQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-20T21:50:05.528158+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 178,
+      "stale_count": 0,
+      "alert_id": "1020-2150",
+      "items": [
+        {
+          "title": "Darius Jauni\u0161kis: NATO yra karinis aljansas, bet nesikrato atsakomyb\u0117s reaguoti \u012f hibridines gr\u0117smes",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/darius-jauniskis-nato-yra-karinis-aljansas-bet-nesikrato-atsakomybes-reaguoti-i-hibridines-gresmes-56-2789150?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Nato skickar f\u00f6rst\u00e4rkningar till Svarta havet",
+          "source": "Sveriges Radio Ekot",
+          "link": "https://www.sverigesradio.se/artikel/9325223",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Putin Makes Nuclear Threats Over Kaliningrad",
+          "source": "Jamestown Foundation",
+          "link": "https://jamestown.org/putin-makes-nuclear-threats-over-kaliningrad/",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-20T18:07:19.147387+00:00",
       "level": "WATCH",
@@ -910,280 +1000,25 @@
       "stale_count": 9,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-18T11:39:12.364919+00:00",
-      "level": "WATCH",
-      "count": 16,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 319,
-      "stale_count": 0,
-      "alert_id": "1018-1139",
-      "items": [
-        {
-          "title": "L\u00e4ti ja Leedu andsid \u00f6\u00f6sel \u00f5huohu hoiatuse",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610169574/lati-ja-leedu-andsid-oosel-ohuohu-hoiatuse",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Interneta joki var b\u016bt ar\u012b kara priek\u0161v\u0113stne\u0161i. Saruna ar Ukrainas p\u0113tnieci par humora noz\u012bmi kara laik\u0101",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/dzive-stils/sarunas/18.10.2026-interneta-joki-var-but-ari-kara-prieksvestnesi-saruna-ar-ukrainas-petnieci-par-humora-nozimi-kara-laika.a667773/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NKVC: nukrit\u0119s dronas apgadino automobil\u012f, \u017emon\u0117s nebuvo su\u017eeisti",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/nkvc-nukrites-dronas-apgadino-automobili-zmones-nebuvo-suzeisti-56-2787290?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Premjeras: d\u0117l sekmadien\u012f \u012fskridusio drono reikia i\u0161tirti sabota\u017eo versij\u0105",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/premjeras-del-sekmadieni-iskridusio-drono-reikia-istirti-sabotazo-versija-56-2787254?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Rusijos hibridinio karo dalis: premjeras \u012fvertino bandym\u0105 padegti Lietuvos \u012fmon\u0119, kurioje saugoma \u201eStarlink\u201c ry\u0161io \u012franga",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/bandyta-padegti-lietuvos-imone-kurioje-saugoma-starlink-rysio-iranga-56-2787250?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Sv\u0113tdien drons Latvijas teritorij\u0101 nav ielidojis",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8566604",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuv\u0101, net\u0101lu no Latvijas robe\u017eas, iesp\u0113jams, deton\u0113jis drons",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8566584",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u012e Lietuv\u0105 galimai \u012fskrido dronas, Pasvalio rajone rastos nuolau\u017eos",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/18/news/i-lietuva-galimai-iskrido-dronas-pasvalio-rajone-rastos-nuolauzos-44513918/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "M. Sinkevi\u010dius prane\u0161\u0117 apie dar vien\u0105 incident\u0105",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/18/news/m-sinkevicius-bandyta-padegti-lietuvos-imone-kurioje-saugoma-starlink-rysio-iranga-44511500/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0412 \u041b\u0438\u0442\u0432\u0435 \u043f\u044b\u0442\u0430\u043b\u0438\u0441\u044c \u043f\u043e\u0434\u0436\u0435\u0447\u044c \u0441\u043a\u043b\u0430\u0434 \u0441 \u043e\u0431\u043e\u0440\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u0435\u043c Starlink",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/10/18/v-litve-pytalis-podzhech-sklad-s-oborudovaniem-starlink-news",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0420\u043e\u0441\u0441\u0438\u044f \u0432\u043d\u043e\u0432\u044c \u043d\u0430\u043f\u043e\u043b\u043d\u044f\u0435\u0442 \u0431\u0430\u0437\u044b \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f \u0432\u043e\u0435\u043d\u043d\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u043e\u0439, \u0432 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435 \u0443 \u0433\u0440\u0430\u043d\u0438\u0446 \u041d\u0410\u0422\u041e",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/10/18/rossiia-vnov-napolniaet-bazy-khraneniia-voennoi-tekhnikoi-v-tom-chisle-u-granits-nato-news",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Sweden to keep Patriot systems in Poland in 2027. New NATO defence plans",
-          "source": "Defence24",
-          "link": "https://defence24.com/defence-policy/sweden-to-keep-patriot-systems-in-poland-in-2027-new-nato-defence-plans",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Krievija pret Eiropu v\u0113r\u0161 ne tikai iero\u010dus\u2026 Slaidi\u0146\u0161 atkl\u0101j, kam v\u0113l krievi t\u0113r\u0113 simtiem miljonu dol\u0101ru",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/krievija-pret-eiropu-vers-ne-tikai-ierocus-slaidins-atklaj-kam-vel-krievi-tere-simtiem-miljonu-dolaru",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201cTrauksme bija provizoriska un san\u0101ca k\u0101 m\u0101c\u012bbas.\u201d Ogres novada m\u0113rs koment\u0113 \u0161\u012b r\u012bta trauksmi \u2013 izr\u0101d\u0101s, drons Latvij\u0101 nemaz nav bijis",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/trauksme-bija-provizoriska-un-sanaca-ka-macibas-ogres-novada-mers-komente-si-rita-trauksmi-izradas-drons-latvija-nemaz-nav-bijis",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Gaisa trauksme trijos Latvijas novados: NBS atkl\u0101j jaunas deta\u013cas par drona incidentu",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/733821-gaisa-trauksme-trijos-latvijas-novados-nbs-atklaj-jaunas-detalas-par-drona-incidentu",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuv\u0101, net\u0101lu no Latvijas robe\u017eas, iesp\u0113jams, deton\u0113jis drons",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/733813-lietuva-netalu-no-latvijas-robezas-iespejams-detonejis-drons",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-18T05:54:36.682758+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 168,
-      "stale_count": 4,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-20T22:23:04.213699+00:00",
+      "level": "WATCH",
+      "title": "Illegal migrants tried to enter Lithuania from Belarus via a drainage pipe - \u041d\u0430\u0448\u0430 \u041d\u0456\u0432\u0430",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0zeWhjaUh4dEtXUGt1Y2lsdDdXal8za3NCQXloM1pkbFpjUVJ1dUY3UVlCMnRGQ0RoREZERkdkUGF2czFQQ3lreHBTSdIBS0FVX3lxTE0zeWhjaUh4dEtXUGt1Y2lsdDdXal8za3NCQXloM1pkbFpjUVJ1dUY3UVlCMnRGQ0RoREZERkdkUGF2czFQQ3lreHBTSQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-20T18:07:19.167922+00:00",
       "level": "WATCH",
@@ -1397,22 +1232,6 @@
       "title": "Starlink hub arson attack in Lithuania is Russian sabotage, officials say - TVP World",
       "source": "TVP World (Poland)",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRF9tTWRucVZxQUxvTkRqSFJhWU5rblE3X09zSnROOWpFMlIwQzJ6WkFOU0tKalQ4bU5jTnVUd1ZfWG96R293ZEFyNElGMTdJVFg1NGItdUd0ZWlLOTcxU1ZOTFJXZ3djVVdZQmVVOVVVSFV1d3hQcE1WSzlSdHJUTEJuSVhDbS0tSXo0UjFBeVNFSTQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-18T21:32:38.271377+00:00",
-      "level": "WATCH",
-      "title": "Attempted arson at Lithuanian firm storing Starlink equipment, PM blames Russia - LRT",
-      "source": "LRT (Lithuania)",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRWdFWThsTS1iTzB0ZlhUTDJEVzcyMkhaUzBzLXhtclBUWTE3Qm04QTBrVGtySXVycGlERF9uSUxWNHktMnFyYWkxejBhZzZCTVNuMzh0eWR0OXlmYlZmNHZhbUJqTDE3MVZBd24wTFpQNjZ2UkwybUlobXRCNWFLaXhNT3ljSGNGT3poazktNktXamNSNzgxaGZ5VFAwLUdrajZMZmVsa1hWM2lFN19XQ0FjbHpBY1VMUkVSNlZVOEduMnNNREE?oc=5",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
