@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-20T12:50:33.053740+00:00",
+  "last_run_utc": "2026-10-20T18:07:19.130063+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 4.2h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 620,
+  "total_scans": 622,
   "quiet_count": 331,
-  "watch_count": 266,
+  "watch_count": 268,
   "warn_count": 23,
   "correction_count": 4,
-  "generated_at": "2026-10-20 17:00 UTC",
+  "generated_at": "2026-10-20 18:07 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-20T18:07:19.147387+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 134,
+      "stale_count": 0,
+      "alert_id": "1020-1807",
+      "items": [
+        {
+          "title": "Jekaterina Anohina. DI, kibernetin\u0117s atakos ir duomen\u0173 apsauga: naujoji Baltijos \u0161ali\u0173 fintech \u012fmoni\u0173 saugumo realyb\u0117",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/verslo-poziuris/nuomones/jekaterina-anohina-di-kibernetines-atakos-ir-duomenu-apsauga-naujoji-baltijos-saliu-fintech-imoniu-saugumo-realybe-120321416",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-20T17:29:27.248496+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 5,
+      "tier3_count": 0,
+      "sources_scanned": 56,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 341,
+      "stale_count": 0,
+      "alert_id": "1020-1729",
+      "items": [
+        {
+          "title": "Tariamai nufilmavo drono sprogim\u0105: kas ver\u010dia abejoti, kad tikrai matomas jis",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/tariamai-nufilmavo-drono-sprogima-kas-vercia-abejoti-kad-tikrai-matomas-jis-56-2788358?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-20T12:50:33.078882+00:00",
       "level": "WATCH",
@@ -1121,37 +1181,25 @@
       "stale_count": 4,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-17T21:33:28.262716+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 265,
-      "stale_count": 2,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-10-17T16:29:36.752039+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 138,
-      "stale_count": 4,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-20T18:07:19.167922+00:00",
+      "level": "WATCH",
+      "title": "Jekaterina Anohina. DI, kibernetin\u0117s atakos ir duomen\u0173 apsauga: naujoji Baltijos \u0161ali\u0173 fintech \u012fmoni\u0173 saugumo realyb\u0117",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/verslo-poziuris/nuomones/jekaterina-anohina-di-kibernetines-atakos-ir-duomenu-apsauga-naujoji-baltijos-saliu-fintech-imoniu-saugumo-realybe-120321416",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-20T12:50:33.095795+00:00",
       "level": "WATCH",
@@ -1374,22 +1422,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-17T11:42:58.880655+00:00",
-      "level": "WATCH",
-      "title": "Elisa juht: sabotaa\u017eioht kasvab, aga seda ei tohi karta",
-      "source": "Aripaev (Estonia)",
-      "link": "https://www.aripaev.ee/uudised/2026/10/15/elisa-juht-sabotaazioht-kasvab-aga-seda-ei-tohi-karta",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1572,8 +1604,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 188,
-    "alerting_scans": 148,
+    "scans": 190,
+    "alerting_scans": 150,
     "held_back_total": 83,
     "held_back_by_reason": [
       {
