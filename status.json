@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-21T13:05:11.269880+00:00",
+  "last_run_utc": "2026-10-21T14:05:41.682302+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 3.1h ago",
   "since": "2026-07-19",
-  "total_scans": 627,
+  "total_scans": 628,
   "quiet_count": 331,
-  "watch_count": 273,
+  "watch_count": 274,
   "warn_count": 23,
   "correction_count": 4,
-  "generated_at": "2026-10-21 13:05 UTC",
+  "generated_at": "2026-10-21 17:09 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-21T14:05:41.664093+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 159,
+      "stale_count": 0,
+      "alert_id": "1021-1405",
+      "items": [
+        {
+          "title": "Prezidentas: Lietuva pasirengusi galimam sabota\u017eui",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/zinios-visiems/naujienos/prezidentas-lietuva-pasirengusi-galimam-sabotazui-120322615",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-21T13:05:11.302955+00:00",
       "level": "WATCH",
@@ -988,96 +1018,6 @@
           "route": "google"
         }
       ]
-    },
-    {
-      "ts": "2026-10-18T18:53:02.485207+00:00",
-      "level": "WARN",
-      "count": 5,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 115,
-      "stale_count": 0,
-      "alert_id": "1018-1853",
-      "items": [
-        {
-          "title": "Surinktos beveik visos Pasvalio rajone sprogusio drono dalys, at\u0161auktas planas \u201eSkydas\u201c",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/lietuvoje/kaunas-lietuvoje-nukrites-dronas-atakos-pries-sankt-peterburga-pasekme-120320872",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Robertas Kaunas: Lietuvoje nukrit\u0119s dronas \u2013 Ukrainos atakos prie\u0161 Sankt Peterburg\u0105 pasekm\u0117",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/robertas-kaunas-lietuvoje-nukrites-dronas-ukrainos-atakos-pries-sankt-peterburga-pasekme-56-2787420?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0412\u0418\u0414\u0415\u041e: \u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u00ab\u041a\u0435\u0439\u0441\u00bb. \u0421\u0430\u0431\u043e\u0442\u0430\u0436, \u043a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a\u0438, \u0434\u0435\u0437\u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f: \u043a\u0430\u043a \u0432\u0435\u0434\u0435\u0442\u0441\u044f \u0433\u0438\u0431\u0440\u0438\u0434\u043d\u0430\u044f \u0432\u043e\u0439\u043d\u0430",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/analitika/18.10.2026-video-programma-keis-sabotaz-kiberataki-dezinformaciya-kak-vedetsya-gibridnaya-voina.a668078/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "R. Kaunas: sekmadien\u012f \u012fskrid\u0119s dronas \u2013 atakos prie\u0161 Sankt Peterburg\u0105 pasekm\u0117",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/18/news/r-kaunas-sekmadieni-iskrides-dronas-atakos-pries-sankt-peterburga-pasekme-44516066/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Ac\u012bmredzams Krievijas pirksts: \u012bsi p\u0113c pusnakts Lietuv\u0101 noticis v\u0113l viens incidents",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/lietuva-sodien-noticis-vel-viens-incidents-isi-pec-pusnakts-me",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1500,9 +1440,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 191,
+    "scans": 190,
     "alerting_scans": 151,
-    "held_back_total": 84,
+    "held_back_total": 85,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1512,7 +1452,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 34
+        "count": 35
       },
       {
         "reason": "reassurance",
