@@ -4402,6 +4402,20 @@
       "count": 6,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-21T18:52:16.256605+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-10-21T22:24:15.370007+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6062,6 +6076,10 @@
     {
       "ts": "2026-10-21T18:08:31.102809+00:00",
       "count": 257
+    },
+    {
+      "ts": "2026-10-21T22:23:22.842088+00:00",
+      "count": 222
     }
   ],
   "military_points": [
@@ -7420,6 +7438,10 @@
     {
       "ts": "2026-10-21T18:08:32.102250+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-10-21T22:23:23.371838+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -8454,6 +8476,10 @@
     {
       "ts": "2026-10-21T18:08:35.133398+00:00",
       "count": 13
+    },
+    {
+      "ts": "2026-10-21T22:23:25.949174+00:00",
+      "count": 13
     }
   ],
   "entsoe_points": [
@@ -9475,6 +9501,10 @@
     },
     {
       "ts": "2026-10-21T18:09:12.117504+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-21T22:23:38.147500+00:00",
       "count": 0
     }
   ],
@@ -15236,6 +15266,29 @@
           {
             "signal": "military",
             "pct": 61,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-21T22:23:38.151045+00:00",
+      "deviation_pct": -38.03821926171711,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
             "direction": "below"
           }
         ],
