@@ -1,20 +1,185 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-22T06:09:45.627416+00:00",
+  "last_run_utc": "2026-10-22T13:06:35.452803+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 633,
+  "total_scans": 635,
   "quiet_count": 331,
-  "watch_count": 279,
-  "warn_count": 23,
+  "watch_count": 280,
+  "warn_count": 24,
   "correction_count": 4,
-  "generated_at": "2026-10-22 06:09 UTC",
+  "generated_at": "2026-10-22 13:06 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-22T13:06:35.470874+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 310,
+      "stale_count": 6,
+      "alert_id": "1022-1306",
+      "items": [
+        {
+          "title": "Po \u012fsp\u0117jimo Latvijoje d\u0117l galimo oro pavojaus \u2013 kariuomen\u0117s \u017einia",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/uzsienyje/po-ispejimo-latvijoje-del-galimo-oro-pavojaus-kariuomenes-zinia-120323197",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041d\u0435\u043e\u043f\u043e\u0437\u043d\u0430\u043d\u043d\u044b\u0439 \u043e\u0431\u044a\u0435\u043a\u0442 \u0432 \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u043e\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435 \u041b\u0430\u0442\u0432\u0438\u0438 \u043d\u0435 \u0431\u044b\u043b \u0434\u0440\u043e\u043d\u043e\u043c \u2014 \u041d\u0412\u0421",
+          "source": "LSM Russian-language",
+          "link": "https://rus.lsm.lv/statja/novosti/proisshestvija/22.10.2026-neopoznannyi-obieekt-v-vozdusnom-prostranstve-latvii-ne-byl-dronom-nvs.a668704/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-22T12:19:28.368022+00:00",
+      "level": "WARN",
+      "count": 7,
+      "failed_count": 5,
+      "tier3_count": 0,
+      "sources_scanned": 56,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 537,
+      "stale_count": 1,
+      "alert_id": "1022-1219",
+      "items": [
+        {
+          "title": "\u20ac100 million investment turns Estonian startup Blackwell into a unicorn",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610172967/100-million-investment-turns-estonian-startup-blackwell-into-a-unicorn",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Po \u201eDelfi\u201c tyrimo Seimo narys kreip\u0117si \u012f teis\u0117saug\u0105: incidentas per\u017eengia \u012fprasto pa\u017eeidimo ribas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/verslas/naujienos/po-delfi-tyrimo-seimo-narys-kreipesi-i-teisesauga-incidentas-perzengia-iprasto-pazeidimo-ribas-120323155",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041c\u0438\u043d\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u043d\u0438\u044f \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e \u0437\u0430\u043a\u0440\u043e\u0435\u0442 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0443 Moodle \u0438\u0437-\u0437\u0430 \u0443\u0433\u0440\u043e\u0437 \u043a\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610173618/minobrazovanija-jestonii-vremenno-zakroet-platformu-moodle-iz-za-ugroz-kiberbezopasnosti",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NBS: Neidentific\u0113tais objekts Latvijas gaisa telp\u0101 nebija drons",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/latvija/zinas-71/nbs-neidentificetais-objekts-latvijas-gaisa-telpa-nebija-drons?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Neidentific\u0113tais objekts Latvijas gaisa telp\u0101 ceturtdien nebija bezpilota lidapar\u0101ts",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8569591",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Drons tas nebija\u2026 NBS atkl\u0101j, kas l\u012bdz \u0161im zin\u0101ms par gaisa telp\u0101 izsludin\u0101to trauksmi",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/drons-tas-nebija-nbs-atklaj-kas-lidz-sim-zinams-par-gaisa-telpa-izsludinato-trauksmi",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Br\u012bdin\u0101jums par apdraud\u0113jumu Latvijas gaisa telp\u0101: NBS atkl\u0101j b\u016btisku deta\u013cu",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/734588-bridinajums-par-apdraudejumu-latvijas-gaisa-telpa-nbs-atklaj-butisku-detalu",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-22T06:09:45.645669+00:00",
       "level": "WATCH",
@@ -838,174 +1003,41 @@
       "stale_count": 3,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-19T20:09:12.957343+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 36,
-      "stale_count": 0,
-      "alert_id": "1019-2009",
-      "items": [
-        {
-          "title": "Russian Strikes Rise Across NATO\u2019s Eastern Flank",
-          "source": "CEPA",
-          "link": "https://cepa.org/article/russian-strikes-rise-across-natos-eastern-flank/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-19T19:25:07.595935+00:00",
-      "level": "WATCH",
-      "count": 8,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 393,
-      "stale_count": 2,
-      "alert_id": "1019-1925",
-      "items": [
-        {
-          "title": "Pasa\u017eieru p\u0101rvad\u0101t\u0101jiem izstr\u0101d\u0101ts r\u012bc\u012bbas pl\u0101ns iesp\u0113jama gaisa apdraud\u0113juma gad\u012bjum\u0101",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/19.10.2026-pasazieru-parvadatajiem-izstradats-ricibas-plans-iespejama-gaisa-apdraudejuma-gadijuma.a668238/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuva paaugstina trauksmes l\u012bmeni strat\u0113\u0123isk\u0101s infrastrukt\u016bras objektos",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/arzemes/19.10.2026-lietuva-paaugstina-trauksmes-limeni-strategiskas-infrastrukturas-objektos.a668236/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Melagienas apie dron\u0105 neigia net Lenkijos ministerija: jis nebuvo paleistas i\u0161 Lietuvos",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/melagienas-apie-drona-neigia-net-lenkijos-ministerija-jis-nebuvo-paleistas-is-lietuvos-56-2787782?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041b\u0438\u0442\u0432\u0430 \u0443\u0441\u0438\u043b\u0438\u0432\u0430\u0435\u0442 \u043e\u0445\u0440\u0430\u043d\u0443 \u043a\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610170579/litva-usilivaet-ohranu-kriticheskoj-infrastruktury",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041b\u0438\u0442\u0432\u0430 \u043d\u0430\u043c\u0435\u0440\u0435\u043d\u0430 \u0443\u0441\u0438\u043b\u0438\u0442\u044c \u0437\u0430\u0449\u0438\u0442\u0443 \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432 \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/mir/19.10.2026-litva-namerena-usilit-zashhitu-obektov-strategiceskoi-infrastruktury.a668249/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u00ab\u0423\u0436\u0435 \u043d\u0435\u043f\u043e\u043d\u044f\u0442\u043d\u043e, \u043a\u0442\u043e \u0442\u0430\u043c \u0433\u043b\u0430\u0432\u043d\u044b\u0439\u00bb",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/10/19/uzhe-neponiatno-kto-tam-glavnyi",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Deepening Black Sea Crisis Demands US Involvement",
-          "source": "CEPA",
-          "link": "https://cepa.org/article/deepening-black-sea-crisis-demands-us-involvement/",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201eNordVPN\u201c oficialiai tapo NBA krep\u0161inio klubo \u201eLakers\u201c partneriu",
-          "source": "Verslo zinios (Lithuania)",
-          "link": "https://www.vz.lt/rinkodara/2026/10/19/nordvpn-oficialiai-tapo-nba-krepsinio-klubo-lakers-partneriu-591599",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-22T13:06:35.492659+00:00",
+      "level": "WATCH",
+      "title": "\u041d\u0435\u043e\u043f\u043e\u0437\u043d\u0430\u043d\u043d\u044b\u0439 \u043e\u0431\u044a\u0435\u043a\u0442 \u0432 \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u043e\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435 \u041b\u0430\u0442\u0432\u0438\u0438 \u043d\u0435 \u0431\u044b\u043b \u0434\u0440\u043e\u043d\u043e\u043c \u2014 \u041d\u0412\u0421",
+      "source": "LSM Russian-language",
+      "link": "https://rus.lsm.lv/statja/novosti/proisshestvija/22.10.2026-neopoznannyi-obieekt-v-vozdusnom-prostranstve-latvii-ne-byl-dronom-nvs.a668704/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-22T13:06:35.492659+00:00",
+      "level": "WATCH",
+      "title": "Po \u012fsp\u0117jimo Latvijoje d\u0117l galimo oro pavojaus \u2013 kariuomen\u0117s \u017einia",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/uzsienyje/po-ispejimo-latvijoje-del-galimo-oro-pavojaus-kariuomenes-zinia-120323197",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-22T06:09:45.667571+00:00",
       "level": "WATCH",
@@ -1213,38 +1245,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-21T06:07:01.903813+00:00",
-      "level": "WATCH",
-      "title": "Lrytas i\u0161 pasienio su Rusija: gatv\u0117se \u2013 ginkluoti kariai, o pasienie\u010di\u0173 l\u016bpose \u2013 ne\u012ftik\u0117tinos istorijos",
-      "source": "Lrytas (Lithuania)",
-      "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/21/news/lrytas-is-pasienio-su-rusija-gatvese-ginkluoti-kariai-o-pasienieciu-lupose-neitiketinos-istorijos-44541970/",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-21T06:07:01.903813+00:00",
-      "level": "WATCH",
-      "title": "Conscription to be expanded to include Latvian State Border Guard",
-      "source": "LSM (Latvia)",
-      "link": "https://eng.lsm.lv/article/society/defence/21.10.2026-conscription-to-be-expanded-to-include-latvian-state-border-guard.a668438/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1427,19 +1427,19 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 192,
-    "alerting_scans": 153,
-    "held_back_total": 85,
+    "scans": 191,
+    "alerting_scans": 152,
+    "held_back_total": 84,
     "held_back_by_reason": [
-      {
-        "reason": "already alerted",
-        "label": "Same story already alerted",
-        "count": 36
-      },
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
         "count": 36
+      },
+      {
+        "reason": "already alerted",
+        "label": "Same story already alerted",
+        "count": 35
       },
       {
         "reason": "reassurance",
