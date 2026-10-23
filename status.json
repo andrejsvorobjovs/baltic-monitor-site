@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-23T18:01:25.523706+00:00",
-  "last_level": "WARN",
+  "last_run_utc": "2026-10-23T22:08:39.731004+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 641,
+  "total_scans": 642,
   "quiet_count": 332,
-  "watch_count": 283,
+  "watch_count": 284,
   "warn_count": 26,
   "correction_count": 4,
-  "generated_at": "2026-10-23 18:01 UTC",
+  "generated_at": "2026-10-23 22:08 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-23T22:08:39.748502+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 264,
+      "stale_count": 6,
+      "alert_id": "1023-2208",
+      "items": [
+        {
+          "title": "NKSC vadovas: negauta prane\u0161im\u0173 apie galimus \u012fsilau\u017eimus d\u0117l paveiktos programin\u0117s kalbos",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/nksc-vadovas-negauta-pranesimu-apie-galimus-isilauzimus-del-paveiktos-programines-kalbos-56-2791582?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-23T18:01:25.542693+00:00",
       "level": "WARN",
@@ -1155,39 +1185,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-20T18:07:19.147387+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 1,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 134,
-      "stale_count": 0,
-      "alert_id": "1020-1807",
-      "items": [
-        {
-          "title": "Jekaterina Anohina. DI, kibernetin\u0117s atakos ir duomen\u0173 apsauga: naujoji Baltijos \u0161ali\u0173 fintech \u012fmoni\u0173 saugumo realyb\u0117",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/verslo-poziuris/nuomones/jekaterina-anohina-di-kibernetines-atakos-ir-duomenu-apsauga-naujoji-baltijos-saliu-fintech-imoniu-saugumo-realybe-120321416",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-23T22:08:39.770269+00:00",
+      "level": "WATCH",
+      "title": "NKSC vadovas: negauta prane\u0161im\u0173 apie galimus \u012fsilau\u017eimus d\u0117l paveiktos programin\u0117s kalbos",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/nksc-vadovas-negauta-pranesimu-apie-galimus-isilauzimus-del-paveiktos-programines-kalbos-56-2791582?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-23T18:01:25.566355+00:00",
       "level": "WARN",
@@ -1412,22 +1428,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-23T06:06:27.218485+00:00",
-      "level": "WATCH",
-      "title": "Kaune pavogtas apie 20 t\u016bkst. eur\u0173 vert\u0117s krautuvas",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/kaune-pavogtas-apie-20-tukst-euru-vertes-krautuvas-59-2790908?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1610,8 +1610,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 189,
-    "alerting_scans": 149,
+    "scans": 188,
+    "alerting_scans": 148,
     "held_back_total": 77,
     "held_back_by_reason": [
       {

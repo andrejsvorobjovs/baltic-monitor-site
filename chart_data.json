@@ -4486,6 +4486,13 @@
       "count": 5,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-23T22:08:39.748502+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6186,6 +6193,10 @@
     {
       "ts": "2026-10-23T18:00:12.171939+00:00",
       "count": 186
+    },
+    {
+      "ts": "2026-10-23T22:07:45.441568+00:00",
+      "count": 222
     }
   ],
   "military_points": [
@@ -7576,6 +7587,10 @@
     {
       "ts": "2026-10-23T18:00:12.651071+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-10-23T22:07:46.041600+00:00",
+      "count": 1
     }
   ],
   "firms_points": [
@@ -8638,6 +8653,10 @@
     {
       "ts": "2026-10-23T18:00:14.864517+00:00",
       "count": 23
+    },
+    {
+      "ts": "2026-10-23T22:07:48.884420+00:00",
+      "count": 23
     }
   ],
   "entsoe_points": [
@@ -9687,6 +9706,10 @@
     },
     {
       "ts": "2026-10-23T18:00:52.021720+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-23T22:08:04.102029+00:00",
       "count": 0
     }
   ],
@@ -15631,6 +15654,29 @@
     {
       "ts": "2026-10-23T18:00:52.026457+00:00",
       "deviation_pct": -17.324789424111724,
+      "sources_included": 4,
+      "narrative": "military aircraft 60% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "within normal range",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 60,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
+        ]
+      },
+      "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-23T22:08:04.105215+00:00",
+      "deviation_pct": -14.321356815546523,
       "sources_included": 4,
       "narrative": "military aircraft 60% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
       "band": "within normal range",
