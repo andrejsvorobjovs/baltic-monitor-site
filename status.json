@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-22T22:25:06.198805+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.3h ago",
+  "last_run_utc": "2026-10-23T06:06:27.177496+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 638,
+  "total_scans": 639,
   "quiet_count": 332,
-  "watch_count": 282,
+  "watch_count": 283,
   "warn_count": 24,
   "correction_count": 4,
-  "generated_at": "2026-10-23 04:45 UTC",
+  "generated_at": "2026-10-23 06:06 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-23T06:06:27.196071+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 396,
+      "stale_count": 2,
+      "alert_id": "1023-0606",
+      "items": [
+        {
+          "title": "Kaune pavogtas apie 20 t\u016bkst. eur\u0173 vert\u0117s krautuvas",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/kaune-pavogtas-apie-20-tukst-euru-vertes-krautuvas-59-2790908?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-22T22:25:06.218214+00:00",
       "level": "QUIET",
@@ -1004,39 +1034,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-20T12:03:09.201354+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 4,
-      "tier3_count": 0,
-      "sources_scanned": 57,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 483,
-      "stale_count": 0,
-      "alert_id": "1020-1203",
-      "items": [
-        {
-          "title": "S\u0101rts mudina saukt lietas \u012bstajos v\u0101rdos: aiz \u201chibr\u012bdapdraud\u0113juma\u201d var sl\u0113pties kas daudz b\u012bstam\u0101ks",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/sarts-mudina-saukt-lietas-istajos-vardos-aiz-hibridapdraudejuma-var-slepties-kas-daudz-bistamaks",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-23T06:06:27.218485+00:00",
+      "level": "WATCH",
+      "title": "Kaune pavogtas apie 20 t\u016bkst. eur\u0173 vert\u0117s krautuvas",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/kaune-pavogtas-apie-20-tukst-euru-vertes-krautuvas-59-2790908?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-22T18:06:18.419063+00:00",
       "level": "WATCH",
@@ -1254,22 +1270,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-21T13:05:11.319593+00:00",
-      "level": "WATCH",
-      "title": "\u201cLeipciga neb\u016bs p\u0113d\u0113j\u0101!\u201d Kremlis esot izteicis draud\u012bgu br\u012bdin\u0101jumu V\u0101cijai \u2013 aiz sabot\u0101\u017eu vi\u013c\u0146a st\u0101vot pats Putins",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/leipciga-nebus-pedeja-kremlis-esot-izteicis-draudigu-bridinajumu-vacijai-aiz-sabotazu-vilna-stavot-pats-putins",
-      "categories": [
-        "hybrid_incident",
-        "nato_conflict_risk"
       ],
       "tier": "tier2",
       "gdelt_category": "",
