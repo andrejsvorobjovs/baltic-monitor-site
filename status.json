@@ -1,20 +1,111 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-23T12:45:16.072542+00:00",
+  "last_run_utc": "2026-10-23T18:01:25.523706+00:00",
   "last_level": "WARN",
-  "freshness_msg": "Last scan: 4.3h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 640,
+  "total_scans": 641,
   "quiet_count": 332,
   "watch_count": 283,
-  "warn_count": 25,
+  "warn_count": 26,
   "correction_count": 4,
-  "generated_at": "2026-10-23 17:03 UTC",
+  "generated_at": "2026-10-23 18:01 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-23T18:01:25.542693+00:00",
+      "level": "WARN",
+      "count": 5,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 462,
+      "stale_count": 5,
+      "alert_id": "1023-1801",
+      "items": [
+        {
+          "title": "\"Cert.lv\": Neviens no PHP ievainojam\u012bbu d\u0113\u013c veiktajiem kiberuzbrukumiem Latvij\u0101 l\u012bdz \u0161im nav bijis veiksm\u012bgs",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8570533",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Da\u017en\u0117jan\u010di\u0173 gr\u0117smi\u0173 akivaizdoje \u2013 A. Kubiliaus raginimas Lietuvai",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/23/news/daznejanciu-gresmiu-akivaizdoje-a-kubiliaus-raginimas-lietuvai-44586909",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0420\u0430\u0437\u0434\u0435\u043b \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043f\u043e-\u0431\u043e\u0436\u0435\u0441\u043a\u0438",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/10/23/razdel-imushchestva-po-bozheski",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Valsts iest\u0101\u017eu m\u0101jaslapas bija j\u0101ierobe\u017eo kiberapdraud\u0113juma d\u0113\u013c \u2013 \u201cCert.lv\u201d atkl\u0101j, vai hakeriem izdev\u0101s ielauzties",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/valsts-iestazu-majaslapas-bija-jaierobezo-kiberapdraudejuma-del-cert-lv-atklaj-vai-hakeriem-izdevas-ielauzties",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "CERT.LV pav\u0113sta, vai Latvija cietusi no kiberuzbrukumiem PHP ievainojam\u012bbu d\u0113\u013c",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/734819-certlv-pavesta-vai-latvija-cietusi-no-kiberuzbrukumiem-php-ievainojamibu-del",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-23T12:45:16.090434+00:00",
       "level": "WARN",
@@ -1094,39 +1185,90 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-20T17:29:27.248496+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 5,
-      "tier3_count": 0,
-      "sources_scanned": 56,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 341,
-      "stale_count": 0,
-      "alert_id": "1020-1729",
-      "items": [
-        {
-          "title": "Tariamai nufilmavo drono sprogim\u0105: kas ver\u010dia abejoti, kad tikrai matomas jis",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/tariamai-nufilmavo-drono-sprogima-kas-vercia-abejoti-kad-tikrai-matomas-jis-56-2788358?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-23T18:01:25.566355+00:00",
+      "level": "WARN",
+      "title": "CERT.LV pav\u0113sta, vai Latvija cietusi no kiberuzbrukumiem PHP ievainojam\u012bbu d\u0113\u013c",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/zinas/734819-certlv-pavesta-vai-latvija-cietusi-no-kiberuzbrukumiem-php-ievainojamibu-del",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-23T18:01:25.566355+00:00",
+      "level": "WARN",
+      "title": "Valsts iest\u0101\u017eu m\u0101jaslapas bija j\u0101ierobe\u017eo kiberapdraud\u0113juma d\u0113\u013c \u2013 \u201cCert.lv\u201d atkl\u0101j, vai hakeriem izdev\u0101s ielauzties",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/valsts-iestazu-majaslapas-bija-jaierobezo-kiberapdraudejuma-del-cert-lv-atklaj-vai-hakeriem-izdevas-ielauzties",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-23T18:01:25.566355+00:00",
+      "level": "WARN",
+      "title": "\u0420\u0430\u0437\u0434\u0435\u043b \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043f\u043e-\u0431\u043e\u0436\u0435\u0441\u043a\u0438",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/10/23/razdel-imushchestva-po-bozheski",
+      "categories": [
+        "troop_movement",
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-23T18:01:25.566355+00:00",
+      "level": "WARN",
+      "title": "Da\u017en\u0117jan\u010di\u0173 gr\u0117smi\u0173 akivaizdoje \u2013 A. Kubiliaus raginimas Lietuvai",
+      "source": "Lrytas (Lithuania)",
+      "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/23/news/daznejanciu-gresmiu-akivaizdoje-a-kubiliaus-raginimas-lietuvai-44586909",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-23T18:01:25.566355+00:00",
+      "level": "WARN",
+      "title": "\"Cert.lv\": Neviens no PHP ievainojam\u012bbu d\u0113\u013c veiktajiem kiberuzbrukumiem Latvij\u0101 l\u012bdz \u0161im nav bijis veiksm\u012bgs",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8570533",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-23T12:45:16.112739+00:00",
       "level": "WARN",
@@ -1277,86 +1419,6 @@
       "title": "Kaune pavogtas apie 20 t\u016bkst. eur\u0173 vert\u0117s krautuvas",
       "source": "15min (Lithuania)",
       "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/kaune-pavogtas-apie-20-tukst-euru-vertes-krautuvas-59-2790908?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-22T18:06:18.419063+00:00",
-      "level": "WATCH",
-      "title": "Kyiv apologises again as Russia diverts Ukrainian drones into Baltic states; what is GPS spoofing - The Times of India",
-      "source": "Baltic MoDs (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOTm5STjlKTVhwaFR4WnE0S01oNVBQMThLbkF1MDJhN0VXdnVTaExsTVc0MkQ3SFpXUFBoSkNzVFVFR3B0azFEM1RpbDcwSjdpdWtCai1ZeERoaUYyQWxmLVhlSmN4aVdYZ1B6NkNvTV9uakR2ZjZTQ2NNa3kxeFZEb1JLem1SdkZneHRjZ25KSUdCemJvZVV4eEFMbVNmOW85NTVyMUVudzlBa1pVdmNMWnJKZWI0dFoxa2xVbzN0Z0xqSzNjSGdjamkzSjRvanI3Vm1pM2lFekZRNTZNelVLZTh5MGpyVVB5aTVFWEs1MEJrYmhaRzdCaU8wREFPMktQVnNUdWNFZnVhQzFl0gGSAkFVX3lxTE1OU09sWldwYU5jOVh4ZWFFNEFtY3V3YjhNVWtHWGpEMm5BOXpESVQ1WTF1MmV1dDlHT1RxX0JmSWo5MHlxQ3czaDRfNHV1M3A5azIyUlJLekU3dEJkTUstQ2hSQ3VMY3FWYVBJS1kzdUoxVjZaUFhEelNxbFBZTmNOUl9ZX2E3T2hGOFJqM1plbDE4anc1TDUxWWUyRFdvU3lwaURvQV9WaWxZZm1xcUdULUVHT281Y05HN1YwcDZtLUt2aGtQSDlPaVV6c3dZcTJnUnZ3bi1xZGFqcHFCRWw4bUNFZ3lsbnpJODBZOVloYURJWFR4cXVualVBMnJURUpmcC1TcDN6TlE0RDVkNjRQQUE?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-22T18:06:18.419063+00:00",
-      "level": "WATCH",
-      "title": "31 migrants tried to cross from Belarus into Lithuania on Wednesday - Delfi",
-      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcDU4cklkdkNOYmhFVkFhMWlFeldJS2ZHaEJoV0ZpSWxNV2x0X292OWQ1eXdiOVRCdV9ITXI5RnRDNUxNR2tzTU9oc29lLVJWQUZTR1VpbXFKemJzX3hONnJBSUF6ME1KaXdQYzd6QTEwaVhfdjRxam5QQWhCMjdQdV9HNzlTY2FDNU1DdHV5NUhDMHR1czl0VFlfSDNwOTE3UHVaTVV1QXhGaUdObmdz?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-22T18:06:18.419063+00:00",
-      "level": "WATCH",
-      "title": "Migrants use ladders in bid to cross border barrier from Belarus into Lithuania - Delfi",
-      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSGJLMlI0cXVzS00xcG5ETzhMbFZSOVgtbTJId1RCSHdOdDZ2eVJydnpsRkF3MFZvcTJLclZTSDFwcy0xbEJPVXhjZkxnczVJWl90dkpoZHBvVlRqalpNZ2NpVWJJVjhwOEVqTlc1cm50bGtwNzdhMXA1SzdRMWlfdlZJOTJUVW9KVEVQSEVKaFpRUVR0eWstNUF3MklMNHhXOWVoNDNLVGlxa2JmaDFEVFg0dXF3MlF0UVpXaU5nYw?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-22T13:06:35.492659+00:00",
-      "level": "WATCH",
-      "title": "\u041d\u0435\u043e\u043f\u043e\u0437\u043d\u0430\u043d\u043d\u044b\u0439 \u043e\u0431\u044a\u0435\u043a\u0442 \u0432 \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u043e\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435 \u041b\u0430\u0442\u0432\u0438\u0438 \u043d\u0435 \u0431\u044b\u043b \u0434\u0440\u043e\u043d\u043e\u043c \u2014 \u041d\u0412\u0421",
-      "source": "LSM Russian-language",
-      "link": "https://rus.lsm.lv/statja/novosti/proisshestvija/22.10.2026-neopoznannyi-obieekt-v-vozdusnom-prostranstve-latvii-ne-byl-dronom-nvs.a668704/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-22T13:06:35.492659+00:00",
-      "level": "WATCH",
-      "title": "Po \u012fsp\u0117jimo Latvijoje d\u0117l galimo oro pavojaus \u2013 kariuomen\u0117s \u017einia",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/uzsienyje/po-ispejimo-latvijoje-del-galimo-oro-pavojaus-kariuomenes-zinia-120323197",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
