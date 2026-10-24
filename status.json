@@ -1,20 +1,94 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-24T16:42:32.495660+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-10-24T21:39:12.545396+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 647,
+  "total_scans": 648,
   "quiet_count": 334,
-  "watch_count": 287,
+  "watch_count": 288,
   "warn_count": 26,
   "correction_count": 4,
-  "generated_at": "2026-10-24 16:42 UTC",
+  "generated_at": "2026-10-24 21:39 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-24T21:39:12.563389+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 226,
+      "stale_count": 3,
+      "alert_id": "1024-2139",
+      "items": [
+        {
+          "title": "Kauno oro uoste d\u0117l kontrabandini\u0173 balion\u0173 sustabdyti skryd\u017eiai",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/kauno-oro-uoste-del-kontrabandiniu-balionu-sustabdyti-skrydziai-120324167",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u201eThe Independent\u201c: taikos susitarimas Ukrainoje Vakarams gali b\u016bti labai pavojingas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/uzsienyje/the-independent-taikos-susitarimas-ukrainoje-vakarams-gali-buti-labai-pavojingas-120324160",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vir\u0161 Kauno oro uosto \u012fvesti oro erdv\u0117s ribojimai \u2013 sustabdyti skryd\u017eiai",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/virs-kauno-oro-uosto-ivesti-oro-erdves-ribojimai-sustabdyti-skrydziai-55-2791930?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vir\u0161 Kauno oro uosto \u012fvesti oro erdv\u0117s ribojimai \u2013 prat\u0119sti",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/verslas/rinkos-pulsas/2026/10/25/news/del-kontrabandiniu-balionu-oro-erdves-ribojimai-virs-kauno-oro-uosto-44615278",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-24T16:42:32.519382+00:00",
       "level": "QUIET",
@@ -1047,39 +1121,72 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-21T14:05:41.664093+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 4,
-      "tier3_count": 0,
-      "sources_scanned": 57,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 159,
-      "stale_count": 0,
-      "alert_id": "1021-1405",
-      "items": [
-        {
-          "title": "Prezidentas: Lietuva pasirengusi galimam sabota\u017eui",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/zinios-visiems/naujienos/prezidentas-lietuva-pasirengusi-galimam-sabotazui-120322615",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-24T21:39:12.585635+00:00",
+      "level": "WATCH",
+      "title": "Vir\u0161 Kauno oro uosto \u012fvesti oro erdv\u0117s ribojimai \u2013 prat\u0119sti",
+      "source": "Lrytas (Lithuania)",
+      "link": "https://www.lrytas.lt/verslas/rinkos-pulsas/2026/10/25/news/del-kontrabandiniu-balionu-oro-erdves-ribojimai-virs-kauno-oro-uosto-44615278",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-24T21:39:12.585635+00:00",
+      "level": "WATCH",
+      "title": "Vir\u0161 Kauno oro uosto \u012fvesti oro erdv\u0117s ribojimai \u2013 sustabdyti skryd\u017eiai",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/virs-kauno-oro-uosto-ivesti-oro-erdves-ribojimai-sustabdyti-skrydziai-55-2791930?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-24T21:39:12.585635+00:00",
+      "level": "WATCH",
+      "title": "\u201eThe Independent\u201c: taikos susitarimas Ukrainoje Vakarams gali b\u016bti labai pavojingas",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/uzsienyje/the-independent-taikos-susitarimas-ukrainoje-vakarams-gali-buti-labai-pavojingas-120324160",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-24T21:39:12.585635+00:00",
+      "level": "WATCH",
+      "title": "Kauno oro uoste d\u0117l kontrabandini\u0173 balion\u0173 sustabdyti skryd\u017eiai",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/lietuvoje/kauno-oro-uoste-del-kontrabandiniu-balionu-sustabdyti-skrydziai-120324167",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-24T12:07:25.658241+00:00",
       "level": "WATCH",
@@ -1247,70 +1354,6 @@
       "title": "VSAT pareig\u016bnai smog\u0117 kontrabandininkams K\u0117dainiuose \u2013 sulaikyti 6 \u012ftariamieji",
       "source": "Lrytas (Lithuania)",
       "link": "https://www.lrytas.lt/lietuvosdiena/kriminalai/2026/10/23/news/vsat-pareigunai-smoge-kontrabandininkams-kedainiuose-sulaikyti-6-itariamieji-44589098",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-23T12:45:16.112739+00:00",
-      "level": "WARN",
-      "title": "\u0425\u0435\u0440\u0435\u043c: \u0432 \u0441\u043b\u0443\u0447\u0430\u0435 \u0432\u043e\u0439\u043d\u044b \u0431\u0435\u0441\u043f\u0438\u043b\u043e\u0442\u043d\u0438\u043a\u043e\u0432 \u043c\u044b \u043d\u0435 \u0431\u044b\u043b\u0438 \u0431\u044b \u0441\u043e\u0432\u0441\u0435\u043c \u0431\u0435\u0437\u043e\u0440\u0443\u0436\u043d\u044b",
-      "source": "ERR Russian-language",
-      "link": "https://rus.err.ee/1610174524/herem-v-sluchae-vojny-bespilotnikov-my-ne-byli-by-sovsem-bezoruzhny",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-23T12:45:16.112739+00:00",
-      "level": "WARN",
-      "title": "\u041f\u0440\u043e\u043a\u0443\u0440\u0430\u0442\u0443\u0440\u0430 \u043d\u0435 \u043d\u0430\u0448\u043b\u0430 \u0434\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u044c\u0441\u0442\u0432 \u0446\u0435\u043b\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043d\u043e\u0439 \u0430\u0442\u0430\u043a\u0438 \u0434\u0440\u043e\u043d\u0430 \u043d\u0430 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0442\u0430\u043d\u0446\u0438\u044e \u0410\u0443\u0432\u0435\u0440\u0435",
-      "source": "ERR Russian-language",
-      "link": "https://rus.err.ee/1610174632/prokuratura-ne-nashla-dokazatelstv-celenapravlennoj-ataki-drona-na-jelektrostanciju-auvere",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-23T12:45:16.112739+00:00",
-      "level": "WARN",
-      "title": "Per operacij\u0105 sulaikyti \u0161e\u0161i su kontrabanda oro balionais susij\u0119 \u012ftariamieji",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/per-vsat-operacija-sulaikyti-sesi-su-kontrabanda-oro-balionais-susije-asmenys-59-2791396?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-23T12:45:16.112739+00:00",
-      "level": "WARN",
-      "title": "VSAT operacija K\u0117dainiuose \u2013 sulaikyti 6 \u012ftariamieji, susij\u0119 su kontrabandos gabenimu oro balionais",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/kriminalai/vsat-operacija-kedainiuose-sulaikyti-6-itariamieji-susije-su-kontrabandos-gabenimu-oro-balionais-120323761",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
@@ -1504,7 +1547,7 @@
     "window_days": 30,
     "scans": 189,
     "alerting_scans": 147,
-    "held_back_total": 77,
+    "held_back_total": 76,
     "held_back_by_reason": [
       {
         "reason": "already alerted",
@@ -1514,7 +1557,7 @@
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 34
+        "count": 33
       },
       {
         "reason": "reassurance",
