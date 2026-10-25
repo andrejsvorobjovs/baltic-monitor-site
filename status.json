@@ -1,20 +1,79 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-25T12:41:04.785855+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.5h ago",
+  "last_run_utc": "2026-10-25T17:12:15.872390+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 651,
-  "quiet_count": 335,
-  "watch_count": 290,
+  "total_scans": 653,
+  "quiet_count": 336,
+  "watch_count": 291,
   "warn_count": 26,
   "correction_count": 4,
-  "generated_at": "2026-10-25 16:13 UTC",
+  "generated_at": "2026-10-25 17:12 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-25T17:12:15.890501+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 110,
+      "stale_count": 2,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-10-25T16:46:43.530728+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 7,
+      "tier3_count": 0,
+      "sources_scanned": 54,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 224,
+      "stale_count": 0,
+      "alert_id": "1025-1646",
+      "items": [
+        {
+          "title": "Nakt\u012f Gerd\u0105 \u017demait\u0119 pri\u017eadino ne\u012fprastas garsas danguje: \u201eNepana\u0161u \u012f l\u0117ktuv\u0105\u201c",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/zmones/veidai-ir-vardai/2026/10/25/news/nakti-gerda-zemaite-prizadino-neiprastas-garsas-danguje-nepanasu-i-lektuva--44633054",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Infografika: kibernetini\u0173 incident\u0173 mastas",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/technologijos/2026/10/23/infografika-kibernetiniu-incidentu-mastas-591802",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-25T12:41:04.804086+00:00",
       "level": "WATCH",
@@ -941,111 +1000,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-22T06:09:45.645669+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 256,
-      "stale_count": 10,
-      "alert_id": "1022-0609",
-      "items": [
-        {
-          "title": "German military practices deploying troops to Estonia",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610172724/german-military-practices-deploying-troops-to-estonia",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-22T05:18:26.657977+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 5,
-      "tier3_count": 0,
-      "sources_scanned": 56,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 228,
-      "stale_count": 0,
-      "alert_id": "1022-0518",
-      "items": [
-        {
-          "title": "VIDEO: Zi\u0146u speci\u0101lizlaidums par glob\u0101la m\u0113roga kiberdro\u0161\u012bbas apdraud\u0113jumu",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/21.10.2026-video-zinu-specializlaidums-par-globala-meroga-kiberdrosibas-apdraudejumu.a668569/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Du kontrabandiniai balionai r\u0117\u017e\u0117si \u012f elektros laidus: vienas sprogo, kitas u\u017esideg\u0117",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/du-kontrabandiniai-balionai-rezesi-i-elektros-laidus-vienas-sprogo-kitas-uzsidege-59-2790106?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Politikai vertino M. Sinkevi\u010diaus premjeravimo \u0161imtadien\u012f: nuo lyginim\u0173 su I. Ruginiene \u2013 iki a\u0161tri\u0173 \u012fkandim\u0173",
-          "source": "Lrytas (Lithuania)",
-          "link": "http://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/22/news/politikai-vertino-m-sinkeviciaus-premjeravimo-simtadieni-nuo-lyginimu-su-i-ruginiene-iki-astriu-ikandimu-44566715/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kiberuzbrukumu draudi Latvij\u0101 nav mazin\u0101ju\u0161ies \u2013 da\u013ca m\u0101jaslapu joproj\u0101m nav pieejamas",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/734484-kiberuzbrukumu-draudi-latvija-nav-mazinajusies-dala-majaslapu-joprojam-nav-pieejamas",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1470,8 +1424,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 187,
-    "alerting_scans": 144,
+    "scans": 189,
+    "alerting_scans": 145,
     "held_back_total": 76,
     "held_back_by_reason": [
       {
