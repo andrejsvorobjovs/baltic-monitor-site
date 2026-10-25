@@ -1,20 +1,96 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-25T06:06:32.303230+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-10-25T12:41:04.785855+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 649,
+  "total_scans": 651,
   "quiet_count": 335,
-  "watch_count": 288,
+  "watch_count": 290,
   "warn_count": 26,
   "correction_count": 4,
-  "generated_at": "2026-10-25 06:06 UTC",
+  "generated_at": "2026-10-25 12:41 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-25T12:41:04.804086+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 105,
+      "stale_count": 1,
+      "alert_id": "1025-1241",
+      "items": [
+        {
+          "title": "\"The Telegraph\": Krievija Baltij\u0101 izmanto br\u012bvdienu m\u0101jas k\u0101 \"Trojas zirgus\" hibr\u012bdkaram - DELFI",
+          "source": "Latvian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTEZvUjd1cnl5aGdzMG53TVNFbHd2MDY3MXJjZEFUOHJpcE9vUm43ZWRSTXA2SUgwTTBzRWRiQ1BQU1VBZzV3eWUwSFFsYjlCVG4xN2p4R09rRTBBOWh1RkRuOHEyU1g1QnJHTkVwU3lCdVV5Rlo0dF9GOWxiSXgyT0l1SWdCSUJDU25USnp2cFhYbTcxZkFhcnAzX1Z6SVZMb1M4ZmV5d3lPdU4yUDhKVF83ZGhOV2RqdlYzMjZKQ3dXdVN1dDZDN3pYUQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-25T11:57:30.630530+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 5,
+      "tier3_count": 0,
+      "sources_scanned": 56,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 350,
+      "stale_count": 3,
+      "alert_id": "1025-1157",
+      "items": [
+        {
+          "title": "Ba\u017eas par Krievijas spiego\u0161anu un sabot\u0101\u017eu: t\u0101s pilso\u0146iem piedero\u0161i \u012bpa\u0161umi atrodas pie NATO milit\u0101raj\u0101m b\u0101z\u0113m",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/734954-bazas-par-krievijas-spiegosanu-un-sabotazu-tas-pilsoniem-piederosi-ipasumi-atrodas-pie-nato-militarajam-bazem",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "D\u0117l kontrabandini\u0173 balion\u0173 buvo sustabdyta Kauno oro uosto veikla",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/verslo-aplinka/2026/10/25/del-kontrabandiniu-balionu-gresmes-apie-valanda-stabdyta-kauno-oro-uostu-veikla-591836",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-25T06:06:32.330318+00:00",
       "level": "QUIET",
@@ -970,69 +1046,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-21T22:24:15.370007+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 214,
-      "stale_count": 1,
-      "alert_id": "1021-2224",
-      "items": [
-        {
-          "title": "Nutek\u0117jus lietuvi\u0173 keliautoj\u0173 duomenims \u2013 advokat\u0117s kirtis: gali kilti mil\u017eini\u0161ki ie\u0161kiniai",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/verslas/naujienos/nutekejus-lietuviu-keliautoju-duomenims-advokates-kirtis-gali-kilti-milziniski-ieskiniai-120322638",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-21T18:52:16.256605+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 8,
-      "tier3_count": 0,
-      "sources_scanned": 53,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 62,
-      "stale_count": 1,
-      "alert_id": "1021-1852",
-      "items": [
-        {
-          "title": "Latvij\u0101 fiks\u0113ti kiberuzbrukumu m\u0113\u0123in\u0101jumi! CERT.LV vad\u012bt\u0101jas vietnieks br\u012bdina par turpm\u0101kaj\u0101m dien\u0101m",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/latvija-fikseti-kiberuzbrukumu-meginajumi-cert-lv-vaditajas-vietnieks-bridina-par-turpmakajam-dienam",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-25T12:41:04.827479+00:00",
+      "level": "WATCH",
+      "title": "\"The Telegraph\": Krievija Baltij\u0101 izmanto br\u012bvdienu m\u0101jas k\u0101 \"Trojas zirgus\" hibr\u012bdkaram - DELFI",
+      "source": "Latvian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTEZvUjd1cnl5aGdzMG53TVNFbHd2MDY3MXJjZEFUOHJpcE9vUm43ZWRSTXA2SUgwTTBzRWRiQ1BQU1VBZzV3eWUwSFFsYjlCVG4xN2p4R09rRTBBOWh1RkRuOHEyU1g1QnJHTkVwU3lCdVV5Rlo0dF9GOWxiSXgyT0l1SWdCSUJDU25USnp2cFhYbTcxZkFhcnAzX1Z6SVZMb1M4ZmV5d3lPdU4yUDhKVF83ZGhOV2RqdlYzMjZKQ3dXdVN1dDZDN3pYUQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-24T21:39:12.585635+00:00",
       "level": "WATCH",
@@ -1256,22 +1288,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-23T12:45:16.112739+00:00",
-      "level": "WARN",
-      "title": "VSAT pareig\u016bnai smog\u0117 kontrabandininkams K\u0117dainiuose \u2013 sulaikyti 6 \u012ftariamieji",
-      "source": "Lrytas (Lithuania)",
-      "link": "https://www.lrytas.lt/lietuvosdiena/kriminalai/2026/10/23/news/vsat-pareigunai-smoge-kontrabandininkams-kedainiuose-sulaikyti-6-itariamieji-44589098",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1459,13 +1475,13 @@
     "held_back_total": 76,
     "held_back_by_reason": [
       {
-        "reason": "already alerted",
-        "label": "Same story already alerted",
+        "reason": "speculation",
+        "label": "Analysis or scenario piece",
         "count": 34
       },
       {
-        "reason": "speculation",
-        "label": "Analysis or scenario piece",
+        "reason": "already alerted",
+        "label": "Same story already alerted",
         "count": 33
       },
       {
