@@ -11,7 +11,7 @@
   var btn = document.getElementById("push-btn");
   if (!btn) return;
 
-  // Shared across all four language pages — button text must match
+  // Shared across all five language pages — button text must match
   // whichever page it's running on, not just the initial server-rendered
   // "Loading…" text, or every non-English visitor sees English labels
   // the moment this script takes over.
@@ -45,6 +45,16 @@
       pushblocked: "Pārlūks bloķēja paziņojumus — skati zemāk",
       ratelimited: "Pārāk daudz mēģinājumu — pagaidi stundu",
       error: "Kaut kas nogāja greizi — pieskaries, lai mēģinātu vēlreiz",
+    },
+    ru: {
+      unsupported: "Этот браузер не поддерживается",
+      default: "Включить уведомления браузера",
+      subscribing: "Включаем…",
+      subscribed: "Уведомления включены ✓",
+      denied: "Уведомления заблокированы в настройках браузера",
+      pushblocked: "Браузер заблокировал push — см. ниже",
+      ratelimited: "Слишком много попыток — подожди час",
+      error: "Что-то пошло не так — нажми, чтобы повторить",
     },
     lt: {
       unsupported: "Šioje naršyklėje nepalaikoma",
@@ -99,6 +109,18 @@
         "Pazi\u0146ojumi \u0161ai vietnei ir blo\u0137\u0113ti. Noklik\u0161\u0137ini uz ikonas pa kreisi no adreses joslas \u2192 Vietnes iestat\u012bjumi \u2192 Pazi\u0146ojumi \u2192 At\u013caut un p\u0101rl\u0101d\u0113.",
       error:
         "Serviss neatbild\u0113ja. Tas ir m\u016bsu, ne tav\u0101 pus\u0113 \u2014 m\u0113\u0123ini v\u0113lreiz p\u0113c da\u017e\u0101m min\u016bt\u0113m.",
+    },
+    ru: {
+      pushblocked:
+        "Если ты пользуешься Brave: открой brave://settings/privacy, включи “Use Google services for push messaging”, перезапусти Brave и попробуй снова. " +
+        "На iPhone сначала добавь эту страницу на главный экран и открой её оттуда — Apple иначе уведомления не разрешает. " +
+        "В приватных окнах уведомления не работают никогда.",
+      ratelimited:
+        "За последний час с твоего соединения было слишком много попыток. Подожди час и нажми кнопку один раз — повторные нажатия только продлевают блокировку.",
+      denied:
+        "Уведомления для этого сайта заблокированы. Нажми на значок слева от адресной строки → Настройки сайта → Уведомления → Разрешить, и перезагрузи страницу.",
+      error:
+        "Сервис предупреждений не ответил. Это на нашей стороне, не на твоей — попробуй ещё раз через несколько минут.",
     },
     lt: {
       pushblocked:

@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baltic Signal Monitor — Независимые сигналы безопасности Балтии</title>
+<meta name="description" content="Бесплатный независимый канал раннего предупреждения на основе OSINT (разведка по открытым источникам), который отслеживает сигналы безопасности в регионе Балтийского моря и в России по десяткам надёжных источников — официальным службам, новостным агентствам и трекерам дезинформации. Не связан ни с одним правительством.">
+<link rel="canonical" href="https://balticsignalmonitor.com/ru/">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- PWA install prompt paused, see index.html for why -- re-enable with:
+     <link rel="manifest" href="/manifest.json"> -->
+<meta name="theme-color" content="#0B0F14">
+<link rel="alternate" type="application/rss+xml" title="Baltic Signal Monitor" href="/feed.xml">
+
+<!-- Language versions -->
+<link rel="alternate" hreflang="en" href="https://balticsignalmonitor.com/">
+<link rel="alternate" hreflang="et" href="https://balticsignalmonitor.com/et/">
+<link rel="alternate" hreflang="lv" href="https://balticsignalmonitor.com/lv/">
+<link rel="alternate" hreflang="lt" href="https://balticsignalmonitor.com/lt/">
+<link rel="alternate" hreflang="ru" href="https://balticsignalmonitor.com/ru/">
+<link rel="alternate" hreflang="x-default" href="https://balticsignalmonitor.com/">
+
+<!-- Open Graph / social share preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Baltic Signal Monitor">
+<meta property="og:url" content="https://balticsignalmonitor.com/ru/">
+<meta property="og:title" content="Baltic Signal Monitor — Независимые сигналы безопасности Балтии">
+<meta property="og:description" content="Бесплатный независимый канал раннего предупреждения на основе OSINT (разведка по открытым источникам), который отслеживает сигналы безопасности в регионе Балтийского моря и в России по десяткам надёжных источников — официальным службам, новостным агентствам и трекерам дезинформации. Не связан ни с одним правительством.">
+<meta property="og:image" content="https://balticsignalmonitor.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baltic Signal Monitor — Независимые сигналы безопасности Балтии">
+<meta name="twitter:description" content="Бесплатный независимый канал раннего предупреждения на основе OSINT, который отслеживает сигналы безопасности в регионе Балтийского моря и в России по десяткам надёжных источников.">
+<meta name="twitter:image" content="https://balticsignalmonitor.com/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Baltic Signal Monitor",
+  "alternateName": "Baltic Security Monitor",
+  "url": "https://balticsignalmonitor.com/ru/",
+  "inLanguage": "ru",
+  "description": "Бесплатный независимый канал раннего предупреждения на основе OSINT (разведка по открытым источникам), который отслеживает сигналы безопасности в регионе Балтийского моря и в России по десяткам надёжных источников — официальным службам, новостным агентствам и трекерам дезинформации. Не связан ни с одним правительством.",
+  "sameAs": [
+    "https://t.me/baltic_signal_monitor",
+    "https://mastodon.social/@BalticSignalMonitor"
+  ]
+}
+</script>
+<link rel="preload" href="/fonts/IBMPlexSans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SourceSerif4-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts.css">
+
+<style>
+  /* Single dark theme for everyone. The page used to follow each
+     visitor's OS light/dark setting, so the same alert page looked
+     different on different phones and screenshots of it did not
+     match. One look, no options.
+     color-scheme tells the browser to render its own furniture --
+     scrollbars, form controls, the address bar on mobile -- dark
+     too, otherwise those stay light and the page looks half-done. */
+  :root {
+    color-scheme: dark;
+
+    /* Type scale — see index.html for why this exists. */
+    --fs-2xs: 11px; --fs-xs: 11.5px; --fs-sm: 12.5px; --fs-md: 13.5px;
+    --fs-base: 15px; --fs-lg: 17px; --fs-xl: 20px; --fs-2xl: 24px; --fs-3xl: 26px;
+    --ink: #0B0F14;
+    --ink-text: #E7EDF3;
+    --ink-dim: #93A1AF;
+    --border: #1E2831;
+    --card: #111820;
+    --accent: #4E9DAE;
+    --accent-text: #08121A;
+    --ok: #57B37A;
+    --watch: #d9a548;
+    --warn: #E2685C;
+    --mono: #0A1017;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--ink-text);
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: "Source Serif 4", "Iowan Old Style", Georgia, serif; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-variant-numeric: tabular-nums; }
+
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  header.site {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+  header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .wordmark { font-size: var(--fs-lg); font-weight: 600; letter-spacing: -0.01em; }
+  .wordmark .serif { font-style: italic; }
+  /* The wordmark is the way back to the top of the homepage — the shortcut
+     every site has and this one did not. Keeps the header's own colour
+     rather than the global link accent, so it still reads as a wordmark
+     and not as a link in a sentence. */
+  a.wordmark { color: inherit; text-decoration: none; display: inline-block; }
+  a.wordmark:hover { color: var(--accent); }
+  a.wordmark:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+  nav.top { display: flex; gap: 24px; align-items: baseline; flex-wrap: wrap; }
+  nav.top a { color: var(--ink-dim); text-decoration: none; font-size: var(--fs-md); letter-spacing: 0.02em; }
+  nav.top a:hover { color: var(--ink-text); }
+  .lang-switch { font-size: var(--fs-sm); color: var(--ink-dim); white-space: nowrap; }
+  .lang-switch a { color: var(--ink-dim); }
+  .lang-switch a.active { color: var(--ink-text); font-weight: 700; }
+  .lang-switch a:hover { color: var(--ink-text); }
+
+  /* ---- Hero: editorial, left-aligned, instrument readout beside it ---- */
+  .hero { padding: 72px 0 56px; }
+  .hero .grid {
+    display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start;
+  }
+  @media (max-width: 760px) {
+    .hero .grid { grid-template-columns: 1fr; }
+    /* On a phone, the live status readout would otherwise land BELOW
+       the full headline/lede/CTA-button block in source order --
+       exactly what someone opening this site actually wants to see
+       first ("is something happening right now") ends up scrolled
+       past. Reordered to appear first at this width only; desktop's
+       side-by-side two-column layout is untouched. */
+    .hero .readout { order: -1; margin-bottom: 28px; }
+  }
+  .eyebrow {
+    font-size: var(--fs-sm); letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 16px;
+  }
+  .hero h1 {
+    font-size: clamp(30px, 4.4vw, 46px);
+    line-height: 1.12; margin: 0 0 20px; letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .hero p.lede { font-size: var(--fs-lg); color: var(--ink-dim); max-width: 52ch; margin: 0 0 28px; }
+
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 22px; border-radius: 3px; font-weight: 600; font-size: var(--fs-base);
+    text-decoration: none; border: 1px solid transparent;
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-text); }
+  .btn.ghost { border-color: var(--border); color: var(--ink-text); }
+  .btn.push { border-color: var(--accent); color: var(--accent); background: transparent; cursor: pointer; font-family: inherit; }
+  .btn.push:disabled { opacity: 0.6; cursor: default; }
+  .btn.push[data-state="subscribed"] { border-color: var(--ok); color: var(--ok); }
+  .btn.push[data-state="pushblocked"],
+  .btn.push[data-state="ratelimited"],
+  .btn.push[data-state="denied"],
+  .btn.push[data-state="error"] { border-color: var(--warn, #c47f2a); color: var(--warn, #c47f2a); }
+  #push-help { margin: 10px 0 0; padding: 12px 14px; border: 1px solid var(--border);
+    border-left-width: 3px; border-left-color: var(--warn, #c47f2a); border-radius: 4px;
+    font-size: var(--fs-md); line-height: 1.6; color: var(--ink-dim); max-width: 62ch; }
+
+  /* ---- Instrument readout panel ---- */
+  .readout {
+    background: var(--mono); border: 1px solid var(--border); border-radius: 4px;
+    padding: 20px 22px;
+  }
+  .readout .rt-head {
+    display: flex; align-items: center; gap: 8px;
+    font-size: var(--fs-xs); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-dim);
+    padding-bottom: 12px; margin-bottom: 14px; border-bottom: 1px dashed var(--border);
+  }
+  .blip {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--ok); flex: none;
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 60%, transparent);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  .blip.watch { background: var(--watch); }
+  .blip.warn { background: var(--warn); }
+  @media (prefers-reduced-motion: reduce) { .blip { animation: none; } }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 45%, transparent); }
+    70%  { box-shadow: 0 0 0 7px color-mix(in srgb, currentColor 0%, transparent); }
+    100% { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 0%, transparent); }
+  }
+  .rt-row { display: flex; justify-content: space-between; padding: 7px 0; font-size: var(--fs-md); }
+  .rt-row + .rt-row { border-top: 1px solid var(--border); }
+  .rt-row .k { color: var(--ink-dim); }
+  .rt-row .v { font-weight: 600; }
+
+  /* ---- Sections ---- */
+  section { padding: 52px 0; border-top: 1px solid var(--border); }
+  .sec-head { display: grid; grid-template-columns: 1fr 2fr; gap: 24px; margin-bottom: 28px; }
+  @media (max-width: 700px) { .sec-head { grid-template-columns: 1fr; gap: 8px; } }
+  .sec-head .eyebrow { margin: 0; }
+  .sec-head h2 { font-size: var(--fs-2xl); margin: 0 0 6px; letter-spacing: -0.01em; }
+  .sec-head p { color: var(--ink-dim); margin: 0; max-width: 46ch; font-size: var(--fs-base); }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 700px) { .split { grid-template-columns: 1fr; } }
+  .panel { border-left: 2px solid var(--accent); padding: 4px 0 4px 20px; }
+  .panel.dim { border-left-color: var(--border); }
+  .panel h3 { margin: 0 0 8px; font-size: var(--fs-base); letter-spacing: 0.02em; }
+  .panel p { margin: 0; color: var(--ink-dim); font-size: var(--fs-base); }
+
+  /* ---- Tier table (report style, not cards) ---- */
+  table.tiers { width: 100%; border-collapse: collapse; }
+  table.tiers th {
+    text-align: left; font-size: var(--fs-xs); letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-dim); font-weight: 600; padding: 0 0 10px; border-bottom: 1px solid var(--border);
+  }
+  table.tiers td {
+    padding: 16px 0; border-bottom: 1px solid var(--border); vertical-align: top; font-size: var(--fs-base);
+  }
+  table.tiers tr:last-child td { border-bottom: none; }
+  table.tiers td.tier-name { font-weight: 700; white-space: nowrap; padding-right: 20px; }
+  table.tiers td.tier-desc { color: var(--ink-dim); }
+  table.tiers td.tier-n { text-align: right; white-space: nowrap; color: var(--ink-dim); }
+
+  .levels { display: flex; gap: 0; margin-top: 32px; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  /* "What does NOT raise the level" disclosure under the level table.
+     Deliberately quiet styling: this is methodology detail for readers
+     who want it, not a headline. */
+  /* Resilience note under the tier table. */
+  .resil { margin-top: 14px; font-size: var(--fs-base); line-height: 1.6; opacity: 0.8; }
+  .safety { border: 1px solid var(--warn); border-left-width: 3px; border-radius: 4px;
+            padding: 16px 20px; margin: 0 0 6px; background: var(--card, transparent); }
+  .safety h2 { font-size: var(--fs-base); margin: 0 0 8px; letter-spacing: 0.01em; }
+  .safety p { margin: 0 0 8px; font-size: var(--fs-md); line-height: 1.6; color: var(--ink-text); }
+  .safety p:last-child { margin-bottom: 0; }
+  /* --ink is the page BACKGROUND (#0B0F14), not a text colour. Using it
+     here painted "In an emergency, call 112" near-black on the near-black
+     card — the single most important line in the notice, invisible.
+     --warn is the same red as the border and clears AA on this surface. */
+  .safety .em { font-weight: 600; color: var(--warn); }
+  .safety a { color: inherit; }
+  .not-alert { margin-top: 20px; border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; background: var(--panel, transparent); }
+  .not-alert h3 { font-size: var(--fs-base); margin: 0 0 10px; letter-spacing: 0.01em; }
+  .not-alert ul { margin: 0; padding-left: 20px; }
+  .not-alert li { margin: 6px 0; line-height: 1.55; }
+  .filter-record { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .filter-record h4 { font-size: var(--fs-base); margin: 0 0 10px; font-weight: 600; }
+  .fr-window { opacity: 0.6; font-weight: 400; font-size: var(--fs-sm); }
+  .fr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .fr-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: var(--fs-sm); }
+  .fr-list .fr-label { opacity: 0.85; }
+  .fr-list .fr-count { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .fr-note { margin: 10px 0 0; opacity: 0.7; font-size: var(--fs-sm); line-height: 1.5; }
+  .not-alert p.na-why { margin: 12px 0 0; opacity: 0.78; font-size: var(--fs-base); line-height: 1.55; }
+  @media (max-width: 700px) { .levels { flex-direction: column; } }
+  .level { flex: 1; padding: 16px 18px; }
+  .level + .level { border-left: 1px solid var(--border); }
+  @media (max-width: 700px) { .level + .level { border-left: none; border-top: 1px solid var(--border); } }
+  .level .lv-name { font-weight: 700; font-size: var(--fs-md); letter-spacing: 0.03em; }
+  .level p { margin: 6px 0 0; color: var(--ink-dim); font-size: var(--fs-md); }
+  .level.ok .lv-name { color: var(--ok); }
+  .level.watch .lv-name { color: var(--watch); }
+  .level.warn .lv-name { color: var(--warn); }
+
+  /* ---- Live stat strip (instrument style) ---- */
+  .stat-strip {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    border: 1px solid var(--border); border-radius: 4px; overflow: hidden; background: var(--mono);
+  }
+  @media (max-width: 560px) { .stat-strip { grid-template-columns: repeat(2, 1fr); } }
+  .stat-cell { padding: 20px; text-align: center; }
+  .stat-cell + .stat-cell { border-left: 1px solid var(--border); }
+  @media (max-width: 560px) { .stat-cell:nth-child(3) { border-left: none; } }
+  .stat-cell .n { font-size: var(--fs-3xl); font-weight: 700; }
+  .stat-cell .l { font-size: var(--fs-xs); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
+  .stat-strip.n2 { grid-template-columns: repeat(2, 1fr); }
+
+  .charts-wrap { margin-top: 24px; }
+  .range-selector { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
+  .range-btn {
+    font: inherit; font-size: var(--fs-sm); padding: 5px 11px; border-radius: 3px;
+    border: 1px solid var(--border); background: transparent; color: var(--ink-dim);
+    cursor: pointer;
+  }
+  .range-btn:hover { color: var(--ink-text); border-color: var(--ink-dim); }
+  .range-btn.active { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .chart-block { margin-top: 20px; }
+  .chart-block h3 { font-size: var(--fs-base); margin: 0 0 4px; }
+  .chart-caption { font-size: var(--fs-sm); color: var(--ink-dim); margin: 0 0 10px; max-width: 62ch; }
+  .chart-svg-wrap {
+    border: 1px solid var(--border); border-radius: 4px; background: var(--mono);
+    padding: 12px 8px; overflow-x: auto;
+  }
+  .chart-svg-wrap svg { display: block; min-width: 100%; }
+  .chart-empty { padding: 20px; text-align: center; color: var(--ink-dim); font-size: var(--fs-md); }
+
+  .log-details { margin-top: 20px; border-top: 1px solid var(--border); }
+  .log-details summary {
+    cursor: pointer; padding: 14px 0; font-size: var(--fs-xs); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-dim); font-weight: 600;
+    list-style: none;
+  }
+  .log-details summary::-webkit-details-marker { display: none; }
+  .log-details summary::before {
+    content: '▸'; display: inline-block; margin-right: 8px; font-size: var(--fs-2xs);
+    transition: transform 0.15s ease;
+  }
+  .log-details[open] summary::before { transform: rotate(90deg); }
+  .log-details summary .count { color: var(--ink-text); font-weight: 700; }
+  .log-details summary:hover { color: var(--ink-text); }
+
+  .history-row { padding: 9px 0; font-size: var(--fs-md); }
+  .history-row + .history-row { border-top: 1px solid var(--border); }
+  .history-row summary { display: flex; align-items: center; cursor: pointer; list-style: none; }
+  .history-row summary::-webkit-details-marker { display: none; }
+  .history-row summary .row-text { display: flex; justify-content: space-between; flex: 1; }
+  .history-row summary::after {
+    content: '▸'; display: inline-block; color: var(--ink-dim); font-size: var(--fs-2xs);
+    margin-left: 8px; flex-shrink: 0; transition: transform 0.15s ease;
+  }
+  .history-row[open] summary::after { transform: rotate(90deg); }
+  .history-row .ts { color: var(--ink-dim); }
+  .history-row .lvl { font-weight: 700; }
+  .history-row .lvl.quiet { color: var(--ok); }
+  .history-row .lvl.watch { color: var(--watch); }
+  .history-row .lvl.warn { color: var(--warn); }
+  .history-row .detail { color: var(--ink-dim); font-size: var(--fs-sm); padding: 6px 0 0; }
+  .history-row .detail-item { padding: 5px 0 0; }
+  .history-row .detail-item a { color: var(--ink-text); font-weight: 600; font-size: var(--fs-sm); text-decoration: none; }
+  .history-row .detail-item a:hover { text-decoration: underline; }
+  .history-row .detail-item-meta { color: var(--ink-dim); font-size: var(--fs-xs); }
+  .history-empty { color: var(--ink-dim); font-size: var(--fs-md); padding: 12px 0; }
+
+
+  /* Each "What's new" entry folds to its own line. Opening the log used to
+     print all 30 entries in full at once — a wall of paragraphs where the
+     reader wanted a list of what changed. Date and title stay visible so
+     the log is scannable; the description opens on click. */
+  .upd-row { border-top: 1px solid var(--border); }
+  .upd-row > summary {
+    padding: 12px 26px 12px 0; cursor: pointer; list-style: none; position: relative;
+  }
+  .upd-row > summary::-webkit-details-marker { display: none; }
+  .upd-row > summary::after {
+    content: "+"; position: absolute; right: 2px; top: 11px;
+    color: var(--accent); font-size: var(--fs-lg); line-height: 1;
+  }
+  .upd-row[open] > summary::after { content: "\2212"; }
+  .upd-row > summary:hover .title { color: var(--accent); }
+  .upd-row > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .upd-row .body { padding: 0 0 14px; max-width: 68ch; color: var(--ink-dim); }
+  .item-row { padding: 12px 0; border-top: 1px solid var(--border); }
+  .item-row a { color: var(--ink-text); font-weight: 600; font-size: var(--fs-base);
+                text-decoration: none; }
+  .item-row a:hover { text-decoration: underline; }
+  .item-meta { font-size: var(--fs-sm); color: var(--ink-dim); margin-top: 4px; }
+  .item-meta .lvl { font-weight: 700; }
+  .item-meta .lvl.watch { color: var(--watch); }
+  .item-meta .lvl.warn { color: var(--warn); }
+  .item-row .body { font-size: var(--fs-base); color: var(--ink-text); margin-top: 2px; }
+  .item-row .title { font-weight: 600; font-size: var(--fs-base); color: var(--ink-text); margin-top: 4px; }
+  .history-row .unreachable { color: var(--watch); margin-left: 6px; text-decoration: underline dotted; text-underline-offset: 2px; }
+
+  /* ---- Liveness banner -------------------------------------------------
+     The single most dangerous failure this project can have is looking
+     alive while being dead: a visitor sees "Operating normally / QUIET"
+     and reads it as an all-clear, when in fact nothing has been checked
+     for weeks. A stopped backend cannot publish "I have stopped", so this
+     is computed in the browser from the timestamp in status.json — the
+     one check that still works when everything server-side is gone.
+     Deliberately at the very top of the document, above the masthead, and
+     deliberately loud: it is more important than anything below it. */
+  #liveness {
+    display: none; padding: 14px 0; border-bottom: 1px solid var(--border);
+    background: var(--mono);
+  }
+  #liveness.show { display: block; }
+  #liveness .wrap { display: flex; gap: 12px; align-items: flex-start; }
+  #liveness .lv-mark { flex-shrink: 0; font-size: var(--fs-lg); line-height: 1.3; }
+  #liveness .lv-body { flex: 1; }
+  #liveness .lv-title {
+    font-weight: 700; font-size: var(--fs-md); margin: 0 0 4px;
+    letter-spacing: 0.01em;
+  }
+  #liveness .lv-text {
+    margin: 0; font-size: var(--fs-sm); color: var(--ink-dim); line-height: 1.55;
+  }
+  #liveness .lv-text strong { color: var(--ink-text); font-weight: 600; }
+  #liveness.caution { border-bottom-color: var(--watch); }
+  #liveness.caution .lv-title { color: var(--watch); }
+  #liveness.stopped { border-bottom-color: var(--warn); }
+  #liveness.stopped .lv-title { color: var(--warn); }
+
+  #status-error { display: none; color: var(--ink-dim); font-size: var(--fs-md); margin-top: 12px; }
+
+  /* ---- FAQ (report Q/A, not accordion cards) ---- */
+  /* ---- Collapsible explanation blocks -------------------------------------
+     The page opened as a wall of prose: every method, tier and caveat fully
+     expanded before a reader had asked for any of it. These fold the
+     explanation away by default while leaving the SUMMARY line visible, so
+     the gist is still readable at a glance and the detail is one click away.
+
+     Deliberately not applied to anything a reader needs without clicking:
+     the status readout, the alert level, the deviation figure, and the
+     standing disclaimer all stay open. A caveat behind a click is a caveat
+     the reader can honestly say they were never shown.
+
+     Also deliberately not applied to any container holding a chart. An SVG
+     drawn into a display:none box measures zero and renders empty — the
+     charts stay outside every fold for that reason, not by oversight. */
+  .fold { border-top: 1px solid var(--border); }
+  .fold:last-of-type { border-bottom: 1px solid var(--border); }
+  .fold > summary {
+    font-weight: 700; font-size: var(--fs-base); margin: 0;
+    padding: 18px 32px 18px 0; cursor: pointer; list-style: none; position: relative;
+    color: var(--ink-text);
+  }
+  .fold > summary::-webkit-details-marker { display: none; }
+  .fold > summary::after {
+    content: "+"; position: absolute; right: 4px; top: 16px;
+    font-size: var(--fs-xl); line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .fold[open] > summary::after { content: "\2212"; }
+  .fold > summary:hover { color: var(--accent); }
+  .fold > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .fold > summary .fold-hint {
+    display: block; font-weight: 400; font-size: var(--fs-sm);
+    color: var(--ink-dim); margin-top: 4px; max-width: 62ch;
+  }
+  .fold .fold-body { padding: 0 0 22px; }
+  .fold .fold-body > :first-child { margin-top: 0; }
+
+  .qa { border-top: 1px solid var(--border); }
+  .qa:last-child { border-bottom: 1px solid var(--border); }
+  .qa summary.q {
+    font-weight: 700; font-size: var(--fs-base); margin: 0;
+    padding: 20px 32px 20px 0; cursor: pointer; list-style: none; position: relative;
+  }
+  .qa summary.q::-webkit-details-marker { display: none; }
+  .qa summary.q::after {
+    content: "+"; position: absolute; right: 4px; top: 18px;
+    font-size: var(--fs-xl); line-height: 1; color: var(--accent); font-weight: 400;
+  }
+  .qa[open] summary.q::after { content: "\2212"; }
+  .qa summary.q:hover { color: var(--accent); }
+  .qa summary.q:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .qa .a { margin: 0 0 20px; color: var(--ink-dim); font-size: var(--fs-base); max-width: 60ch; }
+
+  footer { padding: 40px 0 64px; }
+  footer p { color: var(--ink-dim); font-size: var(--fs-md); max-width: 60ch; }
+  footer .fine { margin-top: 16px; font-size: var(--fs-sm); }
+  /* ---- Desktop layout ----------------------------------------------
+     The page was a single 900px column at every width, so a 1440px
+     screen showed ~270px of dead margin on each side and the same
+     phone-shaped stack squeezed down the middle. Everything in this
+     block only applies from tablet-landscape up; the phone layout is
+     deliberately untouched, since that part already worked.
+     Prose still has its own max-width in ch further down, so widening
+     the container does not stretch reading lines past comfort. */
+  @media (min-width: 1024px) {
+    .wrap { max-width: 1140px; }
+    .hero { padding: 88px 0 64px; }
+    /* More room for the headline column; the readout stays a sidebar
+       rather than a stranded card in open space. */
+    .hero .grid { grid-template-columns: 1.3fr 0.9fr; gap: 56px; }
+    /* The status readout is short and the hero is tall, so it used to
+       leave a large empty block beneath it. Sticking it means it stays
+       with you while reading the top of the page — which is the one
+       thing a visitor actually came to check. */
+    .hero .readout { position: sticky; top: 24px; }
+    /* Nine stacked charts is a phone pattern. They are SVG with a
+       viewBox, so they scale into narrower columns cleanly. */
+    .charts-wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 26px 32px; align-items: start;
+    }
+    .charts-wrap > .range-selector { grid-column: 1 / -1; }
+    .chart-block { margin-top: 0; }
+    /* The eyebrow column was 1fr of a 1fr/2fr grid, which at this width
+       is ~400px holding two words — the "both sides empty" effect the
+       wider container was supposed to fix. Fixed narrow label column,
+       content takes the rest. */
+    .sec-head { grid-template-columns: 210px 1fr; gap: 40px; }
+    .sec-head p { max-width: 68ch; }
+    /* Same idea in the hero: the lede stopped well short of the readout
+       and left a visible hole between them. */
+    .hero p.lede { max-width: 60ch; }
+  }
+  @media (min-width: 1400px) {
+    .wrap { max-width: 1260px; }
+    .hero .grid { gap: 72px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hidden unless the data in status.json is old. See the #liveness CSS
+     block and the liveness script at the foot of this page. -->
+<div id="liveness" role="alert" aria-live="polite">
+  <div class="wrap">
+    <span class="lv-mark" id="lv-mark" aria-hidden="true"></span>
+    <div class="lv-body">
+      <p class="lv-title" id="lv-title"></p>
+      <p class="lv-text" id="lv-text"></p>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="wordmark" href="/ru/" aria-label="Baltic Signal Monitor — главная"><span class="serif">Baltic</span> Signal Monitor</a>
+    <nav class="top">
+      <a href="#how">Метод</a>
+      <a href="#status">Статус</a>
+      <a href="/map/">Карта</a>
+      <a href="#faq">Вопросы</a>
+      <span class="lang-switch">
+        <a href="/">EN</a> · <a href="/et/">ET</a> · <a href="/lv/">LV</a> · <a href="/lt/">LT</a> · <a href="/ru/" class="active">RU</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <div class="grid">
+    <div>
+      <p class="eyebrow">Независимый · Бесплатный · Не связан ни с одним правительством</p>
+      <h1 class="serif">Сигнал, а не тревога, на балтийском рубеже</h1>
+      <p class="lede">
+        Автоматизированная разведка по открытым источникам (OSINT), отслеживающая сигналы безопасности по линии Россия — Балтия по <span id="source-count">152</span> источникам — государственным службам безопасности, информационным агентствам и трекерам дезинформации — и оценивающая результаты по независимому подтверждению, прежде чем что-либо будет отмечено.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://t.me/baltic_signal_monitor">Присоединиться в Telegram</a>
+        <a class="btn ghost" href="https://mastodon.social/@BalticSignalMonitor" target="_blank" rel="me noopener">Читать в Mastodon</a>
+        <button class="btn push" id="push-btn" type="button" disabled>Загрузка…</button>
+        <a class="btn ghost" href="#how">Читать о методе</a>
+        <a class="btn ghost" href="https://ko-fi.com/balticsignalmonitor" target="_blank" rel="noopener">Поддержать проект</a>
+      </div>
+      <p id="push-help" hidden></p>
+      <p style="font-size: var(--fs-md); color: var(--ink-dim); margin: 10px 0 0;">
+        Не хочешь заводить Telegram? Уведомления в браузере используют только твой собственный браузер — без приложения, без аккаунта, без участия третьих сторон.
+      </p>
+    </div>
+    <div class="readout mono">
+      <div class="rt-head"><span class="blip" id="status-dot"></span><span id="status-text">Чтение статуса…</span></div>
+      <div class="rt-row"><span class="k">Последнее сканирование</span><span class="v" id="rt-last">—</span></div>
+      <div class="rt-row"><span class="k">Результат</span><span class="v" id="rt-level">—</span></div>
+      <div class="rt-row"><span class="k">С</span><span class="v" id="rt-since">—</span></div>
+      <div class="rt-row"><span class="k">Исправления</span><span class="v" id="rt-corrections">—</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="safety">
+    <h2>Это не служба экстренной помощи</h2>
+    <p><span class="em">В экстренной ситуации звони 112.</span> Официальные предупреждения поступают от государственных органов твоей страны — в Эстонии <a href="https://www.kriis.ee/en" target="_blank" rel="noopener">kriis.ee</a>, в Латвии <a href="https://www.vugd.gov.lv" target="_blank" rel="noopener">vugd.gov.lv</a>, в Литве <a href="https://lt72.lt" target="_blank" rel="noopener">lt72.lt</a>. Этот сайт не является одним из них и не говорит от имени какого-либо правительства.</p>
+    <p>Это автоматический монитор. Он может ошибаться и ошибался — каждая опубликованная ошибка перечислена в <a href="#corrections-log">исправлениях</a>. Он также может молчать, пока что-то происходит, потому что сканирование может не сработать или задержаться. <span class="em">Молчание здесь не означает, что всё в порядке.</span></p>
+    <p>Предоставляется как есть, без гарантий точности, полноты или доступности. Используй его как один из нескольких источников, никогда как единственный.</p>
+  </div>
+</div>
+
+<section id="escalation-index">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Индекс отклонения сигнала</p>
+      <div>
+        <h2>Насколько сегодняшний день далёк от обычного</h2>
+        <p>Вычисляет среднее из четырёх независимо отслеживаемых исходных сигналов — помех GPS, судовой активности AIS, военных воздушных судов и термических очагов — по сравнению с собственным недавним базовым уровнем каждого сигнала. Это измерение текущего отклонения, а не прогноз: оно никогда не влияет на результат WARN/WATCH/QUIET выше и может показывать повышенный уровень даже в день, когда этот результат остаётся QUIET. <a href="#status">Полный обзор ↓</a></p>
+      </div>
+    </div>
+    <div class="stat-strip n2">
+      <div class="stat-cell">
+        <div class="n mono" id="eidx-value">—</div>
+        <div class="l" id="eidx-band"></div>
+        <div class="l">против 30-дневного базового уровня</div>
+      </div>
+      <div class="stat-cell">
+        <div class="n mono" id="eidx-sources">—</div>
+        <div class="l">сигналов предоставили данные</div>
+      </div>
+    </div>
+    <p class="chart-caption" id="eidx-narrative"></p>
+    <div class="charts-wrap">
+      <div id="chart-eidx-top" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="what">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Прочти сначала</p>
+      <div>
+        <h2>Что это — и чем оно не является</h2>
+      </div>
+    </div>
+    <details class="fold">
+      <summary>Инструмент OSINT — не проверенные разведданные и не официальный источник
+        <span class="fold-hint">Сканирует публичные источники и оценивает их по независимому подтверждению. Создан и поддерживается одним человеком; он может что-то пропустить и может ошибиться.</span>
+      </summary>
+      <div class="fold-body">
+    <div class="split">
+      <div class="panel">
+        <h3>Что он делает</h3>
+        <p>Инструмент OSINT (разведки по открытым источникам): сканирует публичные новости, официальные государственные источники и структурированные данные о событиях в поисках сигналов безопасности по линии Балтия/Россия и оценивает результаты по тому, сколько независимых источников подтверждают одну и ту же историю, прежде чем что-либо будет отмечено как реальное предупреждение. Всё здесь берётся из общедоступных источников — ничего секретного, ничего скрытого.</p>
+      </div>
+      <div class="panel dim">
+        <h3>Чем он не является</h3>
+        <p>Не является официальным источником правительства, НАТО или разведки и не связан с ними. Это не проверенные разведданные и не прогноз будущего — это инструмент оценки по ключевым словам и подтверждению, созданный и поддерживаемый одним человеком. Он может что-то пропустить и иногда ошибаться.</p>
+      </div>
+    </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Метод</p>
+      <div>
+        <h2>Как оценивается сигнал</h2>
+        <p>Каждый источник принадлежит к уровню доверия. Ни один отдельный источник не может сам вызвать реальное предупреждение — это делает только независимое подтверждение между уровнями.</p>
+      </div>
+    </div>
+
+    <details class="fold">
+      <summary>Уровни источников и как они достигаются
+        <span class="fold-hint">Какие источники на каком уровне доверия, сколько их и почему большинство приходит через один агрегатор.</span>
+      </summary>
+      <div class="fold-body">
+    <table class="tiers">
+      <thead><tr><th>Уровень</th><th>Что подходит</th><th style="text-align:right">Количество</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="tier-name">Уровень 1</td>
+          <td class="tier-desc">Государственные службы безопасности/разведки (Эстония, Латвия, Литва, Финляндия, Швеция, Польша), НАТО, ISW, информационные агентства.</td>
+          <td class="tier-n"><span id="tier1-count">33</span> источников</td>
+        </tr>
+        <tr>
+          <td class="tier-name">Уровень 2</td>
+          <td class="tier-desc">Общественные вещатели, аналитические центры по безопасности, издания расследовательской журналистики.</td>
+          <td class="tier-n"><span id="tier2-count">109</span> источников</td>
+        </tr>
+        <tr>
+          <td class="tier-name">Уровень 3</td>
+          <td class="tier-desc">Фактчекеры дезинформации, а также сами российские государственные СМИ/официальные лица — отслеживаются, чтобы видеть нарратив, никогда не считаются доказательством, никогда не могут вызвать предупреждение.</td>
+          <td class="tier-n"><span id="tier3-count">10</span> источников</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="resil">Большинство источников достигается через один новостной агрегатор, который иногда блокировал всё сканирование сразу. Чтобы один сбой не оставил монитор слепым, дополнительно
+      <strong><span id="direct-feed-count">48</span> потоков</strong> читаются напрямую у самих изданий &mdash; среди них балтийские общественные СМИ на английском и на местных языках и, что не менее важно, первичные источники, которые сами сообщили бы об инциденте: министерства обороны, силы территориальной обороны, национальные команды кибербезопасности и операторы передачи электроэнергии и газа. Издание, достигнутое обоими путями, по-прежнему считается одним источником, а не собственным подтверждением.</p>
+
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Что означают QUIET, WATCH и WARN
+        <span class="fold-hint">Три уровня и что должно быть верным, прежде чем будет использован каждый из них.</span>
+      </summary>
+      <div class="fold-body">
+    <div class="levels">
+      <div class="level ok"><div class="lv-name">QUIET</div><p>В этом сканировании не найдено ничего релевантного.</p></div>
+      <div class="level watch"><div class="lv-name">WATCH</div><p>Релевантно, но ещё не подтверждено независимым источником.</p></div>
+      <div class="level warn"><div class="lv-name">WARN</div><p>Та же история, подтверждённая независимо &mdash; либо двумя источниками разных уровней доверия, либо тремя отдельными редакциями. Дословно перепечатанное сообщение агентства считается один раз.</p></div>
+    </div>
+          </div>
+    </details>
+
+    <div class="not-alert">
+      <details class="fold">
+        <summary>Что регистрируется, но <em>не повышает</em> уровень
+          <span class="fold-hint">Почему часть существенного материала регистрируется как контекст, а не отправляется как предупреждение.</span>
+        </summary>
+        <div class="fold-body">
+      <p>Не всё существенное становится предупреждением. Рутинный, заранее объявленный, спекулятивный или уже освещённый материал регистрируется как контекст. Действия России или Беларуси никогда не считаются рутинными.</p>
+        </div>
+      </details>
+      <div class="filter-record" id="filter-record" hidden>
+        <h4>Что фильтры действительно остановили <span class="fr-window mono" id="fr-window"></span></h4>
+        <ul class="fr-list mono" id="fr-list"></ul>
+        <p class="fr-note" id="fr-note"></p>
+      </div>
+      <p class="na-why">Эти записи остаются в журнале сканирования как контекст. Причина проста: канал, который поднимает тревогу по любому поводу, учит людей его игнорировать &mdash; и тогда игнорируется и то единственное предупреждение, которое действительно важно. Конкретный сообщённый инцидент &mdash; перебитый кабель, пересёкший границу дрон &mdash; никогда не отфильтровывается таким образом, даже если цитируются попытки официальных лиц его преуменьшить.</p>
+    </div>
+  </div>
+</section>
+
+<section id="status">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">История работы</p>
+      <div>
+        <h2>Живое, а не отобранное вручную</h2>
+        <p>Автоматически получено из тех же данных, что использует Telegram-канал — ничто здесь не готовится отдельно для этой страницы. Полная проверка запланирована 4 раза в день, а более быстрая проверка потоков изданий — каждые 2 часа; время выше берётся из полной проверки. Ни одна из них не является непрерывной — бесплатный планировщик GitHub работает по принципу максимальных усилий и при высокой нагрузке может запустить сканирование позже запланированного, иногда на несколько часов.</p>
+      </div>
+    </div>
+    <div class="stat-strip mono">
+      <div class="stat-cell"><div class="n" id="stat-total">—</div><div class="l">Зарегистрированные сканирования</div></div>
+      <div class="stat-cell"><div class="n" id="stat-quiet">—</div><div class="l">Тишина</div></div>
+      <div class="stat-cell"><div class="n" id="stat-watch">—</div><div class="l">Наблюдение</div></div>
+      <div class="stat-cell"><div class="n" id="stat-warn">—</div><div class="l">Предупреждение</div></div>
+      <div class="stat-cell"><div class="n" id="stat-rate">—</div><div class="l">Доля исправлений</div></div>
+    </div>
+    <div class="charts-wrap">
+      <div class="range-selector mono" id="chart-range-selector"></div>
+      <div class="chart-block">
+        <h3>Индекс отклонения сигнала во времени</h3>
+        <p class="chart-caption">Среднее отклонение от базового уровня по помехам GPS, AIS, военным воздушным судам и термическим очагам (по тем, у кого уже достаточно истории). Измерение того, насколько каждое сканирование далеко от обычного — никогда не прогноз и отделено от результата WARN/WATCH/QUIET.</p>
+        <div id="chart-escalation-index" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Предупреждения WATCH/WARN во времени</h3>
+        <p class="chart-caption">Каждый столбец — одно сканирование, достигшее уровня WATCH (жёлтый) или WARN (красный); сканирования QUIET столбца не показывают. Высота столбца показывает, сколько релевантных единиц вызвали это сканирование, а не степень серьёзности.</p>
+        <div id="chart-watchwarn" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Интенсивность эскалации во времени</h3>
+        <p class="chart-caption">Каждая точка — одно сканирование, окрашенное по результату (зелёный = тишина, жёлтый = наблюдение, красный = предупреждение). Линия показывает средний новостной тон GDELT, где он доступен — чем выше линия, тем тревожнее/враждебнее освещение в СМИ; это не прогноз. Пунктирная линия — это 0 (нейтральный тон), а не низ графика: сканирования, у которых в тот раз нет данных GDELT, по умолчанию оказываются на ней, а не потому, что освещение действительно было нейтральным.</p>
+        <div id="chart-intensity" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Отслеживание слухов/дезинформации во времени</h3>
+        <p class="chart-caption">Сколько единиц слухов/дезинформации (уровень 3 — никогда не может сам вызвать реальное предупреждение) было отслежено в каждом сканировании.</p>
+        <div id="chart-rumors" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Интенсивность помех GPS во времени</h3>
+        <p class="chart-caption">Ячейки GPSJam с высоким уровнем помех, обнаруженные за день в Балтийском регионе. Собраны по точности GPS, сообщаемой самолётами — коррелируют с преднамеренными помехами, но не подтверждают их.</p>
+        <div id="chart-gpsjam" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Количество судов AIS во времени</h3>
+        <p class="chart-caption">Суда, замеченные во время сканирования в коротком окне прямого прослушивания AIS. Это не исчерпывающий охват — только те суда, которые случайно передали сигнал в этом окне.</p>
+        <div id="chart-ais" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Количество военных воздушных судов во времени</h3>
+        <p class="chart-caption">Воздушные суда, передающие ADS-B в Балтийском регионе во время сканирования. Многие военные рейсы летают с выключенным или подменённым сигналом, поэтому картина неполная.</p>
+        <div id="chart-military" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Термические очаги во времени</h3>
+        <p class="chart-caption">Спутниковые термические аномалии, обнаруженные во время сканирования в Балтийском регионе. Необработанные данные теплового следа — лесные пожары и сельскохозяйственные палы вызывают их так же легко, как что угодно другое.</p>
+        <div id="chart-firms" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+      <div class="chart-block">
+        <h3>Отключения электросети во времени</h3>
+        <p class="chart-caption">Вынужденные (незапланированные) отключения генерирующих мощностей в каждом сканировании в Эстонии, Латвии и Литве по данным ENTSO-E, официальной платформы ЕС для сообщений об отключениях. Почти всегда обычная неисправность оборудования, а не саботаж — подводные кабели и перебои передачи пока не охвачены.</p>
+        <div id="chart-entsoe" class="chart-svg-wrap"><div class="history-empty">Загрузка…</div></div>
+      </div>
+    </div>
+    <details class="log-details" id="history-log-wrap">
+      <summary>Недавняя история сканирований <span class="count" id="history-count"></span></summary>
+      <div class="history-log mono" id="history-log">
+        <div class="history-empty">Загрузка недавних сканирований…</div>
+      </div>
+    </details>
+    <details class="log-details" id="item-log-wrap" style="display:none;">
+      <summary>Недавно отмеченные события — с источниками <span class="count" id="item-count"></span></summary>
+      <div id="item-log"></div>
+    </details>
+    <details class="log-details" id="corrections-log-wrap">
+      <summary>История исправлений <span class="count" id="corrections-count"></span></summary>
+      <p style="font-size:13px;color:var(--ink-dim);margin:10px 0;">Сообщается самостоятельно, когда ошибка замечена — это не автоматический аудит. Чистая история означает, что пока ничего не замечено и не сообщено.</p>
+      <div id="corrections-log"><div class="history-empty">Загрузка…</div></div>
+    </details>
+    <details class="log-details" id="updates-log-wrap">
+      <summary>Что нового <span class="count" id="updates-count"></span></summary>
+      <p style="font-size:13px;color:var(--ink-dim);margin:10px 0;">Журнал внедрённых со временем функций и исправлений простым языком.</p>
+      <div id="updates-log"><div class="history-empty">Загрузка…</div></div>
+    </details>
+    <p id="status-error">Живой статус временно недоступен — проверь текущий статус прямо в Telegram-канале.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Прежде чем спросить</p>
+      <div><h2>Часто задаваемые вопросы</h2></div>
+    </div>
+    <details class="qa">
+      <summary class="q">Что происходит, если вы ошибаетесь?</summary>
+      <p class="a">Ошибка регистрируется и публикуется как исправление, а не исправляется молча — список выше является полным обзором того, о чём сообщено. Иногда ошибиться и открыто это признать надёжнее, чем подозрительно безупречная история. Одно честное ограничение: это не автоматический аудит — исправление появляется только тогда, когда ошибка действительно замечена и сообщена вручную. Чистая история означает, что пока ничего не замечено и не сообщено, а не формальную гарантию нулевых ошибок. Показанная выше «доля исправлений» — это количество исправлений, делённое на количество сканирований, для понимания масштаба, а не независимо проверённый показатель точности.</p>
+    </details>
+    <details class="qa" id="faq-gdelt">
+      <summary class="q">Что означают коды классификации GDELT и показатель «Гольдштейна», который я иногда вижу?</summary>
+      <p class="a">GDELT — это публичная база данных, которая автоматически кодирует мировые политические и конфликтные новости в структурированные категории, со стандартной оценкой серьёзности, называемой шкалой Гольдштейна (от -10 до +10 — чем отрицательнее, тем враждебнее/конфликтнее). Когда отмеченная единица приходит из GDELT, её категория и показатель Гольдштейна отображаются рядом как дополнительный контекст. Это лишь дополнительная информация о единице, которая уже прошла отбор: любая видимая здесь единица GDELT уже прошла точно такие же проверки релевантности и подтверждения, как и любая другая отмеченная единица на этой странице — это не сырые и не нефильтрованные данные. (Когда публикуется WATCH или WARN, Telegram-канал автоматически добавляет карту — но она показывает только конкретные события, вызвавшие это предупреждение, а не общий снимок региона.)</p>
+    </details>
+    <details class="qa" id="faq-unreachable">
+      <summary class="q">Что означает «N источник(ов) недоступны»?</summary>
+      <p class="a">Поток источника не ответил во время этого сканирования — обычно это рядовой единичный сбой. Иногда сразу отказывает большая группа источников: этот проект работает на бесплатном, совместно используемом хостинге (GitHub Actions), и этому общему кластеру иногда выделяется сервер, IP-адрес которого Google уже ограничил по другой, не связанной причине — это одновременно блокирует все источники Google News в одном сканировании. Когда это обнаруживается, сканирование теперь распознаёт это примерно за минуту и автоматически повторяет попытку на другом сервере, а не ждёт следующего запланированного сканирования. В любом случае это означает, что данный результат может быть менее полным, чем обычно — а не что что-то было скрыто. Мы лучше это покажем, чем позволим результату тишины при сломанном сканировании выглядеть идентично настоящему состоянию «всё в порядке».</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Почему вы не перечисляете точные источники?</summary>
+      <p class="a">Чтобы систему оценки нельзя было обыграть — точное называние изданий, способных вызвать предупреждение, позволило бы кому-то целенаправленно использовать именно те источники, которые имеют значение. Уровень и количество публичны; в момент, когда источник действительно создаёт реальный WATCH/WARN, показываются и его название, и ссылка (см. «Недавно отмеченные события» выше).</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Видите ли вы, кто подписан на этот канал?</summary>
+      <p class="a">Telegram — да, как администратор канала; это нормально для любого владельца Telegram-канала, а не что-то созданное специально для этого проекта. С push-подписчиками браузера иначе: к ним не привязаны имя или личность, только анонимный маркер устройства, поэтому я не могу видеть, кто они. Другие подписчики Telegram не видят друг друга, и ничто не экспортируется, не хранится где-то ещё, не продаётся и не передаётся за пределы самого Telegram.</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Что делать, если после включения я не получаю уведомления браузера?</summary>
+      <p class="a">Мобильные браузеры здесь могут вести себя непоследовательно — оптимизация батареи телефона или собственная настройка уведомлений сайта в браузере могут молча заглушить уведомления, не показав никакой ошибки. Самая частая причина: проверь, не отключены ли уведомления этого сайта именно в настройках твоего браузера (а не только в системных настройках телефона) — обычно дело в этом.</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Останется ли это бесплатным?</summary>
+      <p class="a">Да. Есть добровольная кнопка поддержки (Ko-fi) для тех, кто хочет поддержать проект — она никому не даёт более быстрых или более качественных предупреждений; все получают ровно то же самое, в то же время, независимо от неё. Кто финансирует проект — на данный момент никто — полностью перечислено <a href="/ru/funding/">на странице финансирования</a>.</p>
+    </details>
+    <details class="qa">
+      <summary class="q">Это официальная система оповещения?</summary>
+      <p class="a">Нет. Если вы обеспокоены реальной чрезвычайной ситуацией, всегда сначала проверяйте официальные каналы своей страны: Эстония — kriis.ee · Латвия — vugd.gov.lv · Литва — lrv.lt.</p>
+    </details>
+  </div>
+</section>
+
+<section id="more">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Другие способы следить</p>
+      <div><h2>RSS-лента</h2></div>
+    </div>
+    <div class="panel">
+      <p>Предпочитаешь свою читалку Telegram или уведомлениям браузера? <a href="/feed.xml">Подпишись на RSS-ленту</a> — те же отмеченные события, аккаунт не нужен.</p>
+    </div>
+    <div class="panel">
+      <p>Проводишь собственный анализ? Скачай собственную историю этого проекта в формате CSV: <a href="/history_export.csv">история уровней сканирования</a> (уровень, количество источников в каждом сканировании) и <a href="/escalation_export.csv">индекс отклонения сигнала</a> (показатель отклонения в каждом сканировании). Те же данные, что стоят за графиками выше, свободны для использования.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Baltic Signal Monitor — независимый, созданный частным лицом инструмент мониторинга, созданный и поддерживаемый гражданином Латвии ради спокойствия всего региона Балтийского моря. Он не является официальным источником правительства, НАТО или разведки и не связан с ними. Исправления регистрируются и публикуются открыто, а не скрываются.
+    </p>
+    <p class="fine mono" id="generated-note">Живые данные загружаются автоматически при каждом посещении.</p>
+    <p class="fine mono">Нашёл проблему безопасности? <a href="mailto:security@balticsignalmonitor.com">security@balticsignalmonitor.com</a> · <a href="/ru/privacy/">Приватность</a> · <a href="/ru/funding/">Финансирование</a></p>
+  </div>
+</footer>
+
+<script>
+// ---- Liveness ------------------------------------------------------------
+// The worst thing this project can do is look alive while being dead. A
+// visitor who sees "Operating normally / QUIET" on a page whose backend
+// died three weeks ago reads it as an all-clear, and that is a more
+// dangerous failure than any missed alert: it is an active false
+// reassurance, published under this project's name.
+//
+// A stopped backend cannot publish "I have stopped" — whatever killed it
+// (expired token, unpaid billing, an operator who is no longer around)
+// also stopped it writing status.json. So freshness is worked out HERE,
+// in the visitor's browser, from the timestamp already inside the data.
+// It is the one check that still runs when everything server-side is gone.
+//
+// Trade-off accepted deliberately: this trusts the visitor's device clock,
+// so a badly-wrong clock can raise a false alarm. The alternative — trusting
+// a server that may be dead — fails in exactly the case this exists for.
+// For a warning system, a rare false alarm beats a silent false all-clear.
+var LIVENESS = {
+  // A full scan runs every 6 hours, so this fires only after roughly 40
+  // consecutive missed scans. Set deliberately high by the project owner,
+  // against a recommendation for an earlier first tier: a banner that
+  // appears whenever GitHub's scheduler drifts is noise, and noise on a
+  // warning page is worse than useless — it teaches people to ignore the
+  // one banner that matters.
+  //
+  // The cost is stated rather than hidden: for up to ten days a visitor
+  // can see a green "operating normally" over data that is days old. That
+  // is the accepted trade, not an oversight.
+  //
+  // Ten days is also long enough to mean something specific. A broken
+  // workflow gets noticed and fixed in hours or days; ten days of silence
+  // from a project one person runs alone says something about the person,
+  // and the wording says so plainly rather than hiding behind "may be out
+  // of date".
+  staleHours: 240,
+  // Russian needs three plural forms, not two: 1 час / 2-4 часа /
+  // 5+ часов, with the teens (11-14) taking the many-form regardless of
+  // their last digit. Getting this wrong is the first thing a native
+  // reader notices, so it is spelled out rather than approximated.
+  hoursAgo: function (n) {
+    var last = n % 10, teen = n % 100;
+    var unit = (last === 1 && teen !== 11) ? 'час'
+             : (last >= 2 && last <= 4 && (teen < 12 || teen > 14)) ? 'часа'
+             : 'часов';
+    return n + ' ' + unit + ' назад';
+  },
+  daysAgo: function (n) {
+    var last = n % 10, teen = n % 100;
+    var unit = (last === 1 && teen !== 11) ? 'день'
+             : (last >= 2 && last <= 4 && (teen < 12 || teen > 14)) ? 'дня'
+             : 'дней';
+    return n + ' ' + unit + ' назад';
+  },
+  staleTitle: "Никто не запускал это более 10 дней",
+  staleText: "Последнее сканирование завершено {age}. С тех пор ничего не проверялось. Этот проект ведёт один человек. Такое долгое молчание скорее всего означает, что этот человек больше не может его запускать — включая возможность, что этого человека нет в живых. <strong>Не принимай отсутствие предупреждений за подтверждение безопасности.</strong>",
+  unknownTitle: "Не удалось проверить свежесть данных",
+  unknownText: "Страница не смогла определить, когда она обновлялась в последний раз. Относись к статусу ниже с осторожностью.",
+  notUpdating: "Не обновляется",
+  lastKnown: "(последнее известное)",
+  // Set by markReadoutStale(); read where the Result row is filled in.
+  stale: false
+};
+
+function livenessAgeHours(iso) {
+  var t = Date.parse(iso);
+  if (isNaN(t)) return null;
+  // Clamp a future timestamp to "just now" rather than reporting a
+  // negative age: a slightly-fast device clock is not a staleness event.
+  return Math.max(0, (Date.now() - t) / 3600000);
+}
+
+function livenessAgeText(h) {
+  if (h < 48) return LIVENESS.hoursAgo(Math.round(h));
+  return LIVENESS.daysAgo(Math.round(h / 24));
+}
+
+// Renders the banner and, when stale, strips the reassuring language out
+// of the readout. Showing "This monitor has stopped" at the top while the
+// panel below still reads "Operating normally" would leave the visitor to
+// decide which one to believe, and they would pick the comforting one.
+function renderLiveness(d) {
+  var age = livenessAgeHours(d && d.last_run_utc);
+  var banner = document.getElementById('liveness');
+  var lastRow = document.getElementById('rt-last');
+
+  if (age === null) {
+    // Cannot verify. Err towards warning, never towards reassurance.
+    if (lastRow) lastRow.textContent = '—';
+    showLiveness('caution', '!', LIVENESS.unknownTitle, LIVENESS.unknownText);
+    // Strip the reassurance here too. Caught in testing: the banner said
+    // freshness could not be verified while the panel below still read
+    // "Operating normally" with a green dot, and a visitor resolves that
+    // contradiction in favour of the comforting half every time.
+    markReadoutStale();
+    return;
+  }
+
+  // Computed here, not taken from the server's freshness_msg: that string
+  // is baked at publish time and says "Last scan: 0.0h ago" for as long as
+  // the file sits there, which is precisely the lie this function exists
+  // to stop. It is a real bug that shipped, not a hypothetical one.
+  if (lastRow) lastRow.textContent = livenessAgeText(age);
+
+  if (age >= LIVENESS.staleHours) {
+    showLiveness('stopped', '\u26D4', LIVENESS.staleTitle,
+      LIVENESS.staleText.replace('{age}', livenessAgeText(age)));
+    markReadoutStale();
+  }
+}
+
+function showLiveness(kind, mark, title, html) {
+  var banner = document.getElementById('liveness');
+  if (!banner) return;
+  banner.classList.add('show', kind);
+  document.getElementById('lv-mark').textContent = mark;
+  document.getElementById('lv-title').textContent = title;
+  // innerHTML is safe here: every string is a literal defined just above,
+  // none of it comes from status.json or any other fetched data.
+  document.getElementById('lv-text').innerHTML = html;
+}
+
+function markReadoutStale() {
+  LIVENESS.stale = true;
+  var text = document.getElementById('status-text');
+  if (text) text.textContent = LIVENESS.notUpdating;
+  var dot = document.getElementById('status-dot');
+  if (dot) { dot.classList.remove('watch'); dot.classList.add('warn'); }
+}
+
+(function () {
+  fetch('/status.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function (d) {
+      var dot = document.getElementById('status-dot');
+      if (d.last_level === 'WARN') dot.classList.add('warn');
+      else if (d.last_level === 'WATCH') dot.classList.add('watch');
+
+      var STATUS_TEXT_MAP = { 'Operating normally': 'Работает нормально', 'Attention needed': 'Требуется внимание' };
+      var statusTextLocalized = STATUS_TEXT_MAP[d.status_text] || d.status_text;
+      document.getElementById('status-text').textContent = statusTextLocalized;
+      // The server's freshness_msg is no longer read at all. It is baked
+      // at publish time, so on a dead backend it sits there saying the
+      // last scan was moments ago, forever — and this page used to parse
+      // that string and faithfully translate the lie into three languages.
+      // renderLiveness() works the age out from last_run_utc in the
+      // visitor's own browser instead, which still works when nothing
+      // server-side does.
+      renderLiveness(d);
+      document.getElementById('rt-level').textContent =
+        LIVENESS.stale ? d.last_level + ' ' + LIVENESS.lastKnown : d.last_level;
+      document.getElementById('rt-since').textContent = d.since;
+      document.getElementById('rt-corrections').textContent = d.correction_count;
+
+      // Computed live server-side from the actual source roster — see
+      // main.py's total_sources field. Only overwrites the static fallback
+      // number in the HTML if the field is actually present, so an old
+      // cached status.json (missing the field) never blanks this out.
+      if (typeof d.total_sources === 'number') {
+        document.getElementById('source-count').textContent = d.total_sources;
+      }
+      // Same live-not-hardcoded fix, applied to the per-tier breakdown in
+      // the "How the signal is scored" table — it drifted just as stale
+      // as the headline source count did (was hardcoded 16/35/11 = 62).
+      if (typeof d.tier1_sources === 'number') {
+        document.getElementById('tier1-count').textContent = d.tier1_sources;
+      }
+      if (typeof d.tier2_sources === 'number') {
+        document.getElementById('tier2-count').textContent = d.tier2_sources;
+      }
+      if (typeof d.tier3_sources === 'number') {
+        document.getElementById('tier3-count').textContent = d.tier3_sources;
+      }
+      // Direct publisher feeds — the resilience layer. Same live-not-
+      // hardcoded rule as every count above: the static number in the
+      // markup is only a fallback for when status.json can't be read.
+      if (typeof d.direct_feed_sources === 'number') {
+        var dfEl = document.getElementById('direct-feed-count');
+        if (dfEl) { dfEl.textContent = d.direct_feed_sources; }
+      }
+
+
+      var fr = d.filter_record;
+      if (fr && fr.held_back_total > 0 && Array.isArray(fr.held_back_by_reason)) {
+        var frEl = document.getElementById('filter-record');
+        document.getElementById('fr-window').textContent = 'последние ' + fr.window_days + ' ' + (function (n) {
+          var last = n % 10, teen = n % 100;
+          return (last === 1 && teen !== 11) ? 'день'
+               : (last >= 2 && last <= 4 && (teen < 12 || teen > 14)) ? 'дня'
+               : 'дней';
+        })(fr.window_days);
+        var list = document.getElementById('fr-list');
+        list.innerHTML = '';
+        fr.held_back_by_reason.forEach(function (row) {
+          var li = document.createElement('li');
+          var label = document.createElement('span');
+          label.className = 'fr-label';
+          // The backend labels these in English; translate off the
+          // stable reason key and fall back to whatever it sent.
+          var FR_LABELS = {
+            'scheduled exercise': 'Объявленные учения союзников',
+            'reassurance': 'Опровержение / рамка «угрозы нет»',
+            'speculation': 'Аналитическая или сценарная статья',
+            'already alerted': 'Об этой истории уже предупреждали'
+          };
+          label.textContent = FR_LABELS[row.reason] || row.label || row.reason;
+          var count = document.createElement('span');
+          count.className = 'fr-count';
+          count.textContent = row.count;
+          li.appendChild(label);
+          li.appendChild(count);
+          list.appendChild(li);
+        });
+        var note = '' + fr.held_back_total + ' значимых записей задержано в ' + fr.scans + ' сканированиях, из которых ' + fr.alerting_scans + ' повысили уровень.';
+        if (fr.scans_before_tracking > 0) {
+          note += ' ' + '' + fr.scans_before_tracking + ' более ранних сканирований в этом окне прошли до того, как задержки стали регистрироваться, и в эти числа не входят.';
+        }
+        document.getElementById('fr-note').textContent = note;
+        frEl.hidden = false;
+      }
+
+      document.getElementById('stat-total').textContent = d.total_scans;
+      document.getElementById('stat-quiet').textContent = d.quiet_count;
+      document.getElementById('stat-watch').textContent = d.watch_count;
+      document.getElementById('stat-warn').textContent = d.warn_count;
+      if (typeof d.total_scans === 'number' && d.total_scans > 0 &&
+          typeof d.correction_count === 'number') {
+        var rate = (d.correction_count / d.total_scans) * 100;
+        document.getElementById('stat-rate').textContent =
+          rate === 0 ? '0%' : (rate < 0.1 ? '<0.1%' : rate.toFixed(1) + '%');
+      }
+      document.getElementById('generated-note').textContent =
+        'Живые данные сгенерированы ' + d.generated_at + ', отслеживание с ' + d.since + '.';
+
+      // Same GDELT classification + Goldstein-scale intensity detail the
+      // Telegram digest already shows per GDELT item — empty for every
+      // other tier, which never has these fields set in the first place.
+      function gdeltDetailText(it) {
+        var parts = [it.gdelt_category, it.gdelt_subcategory, it.gdelt_event_code].filter(Boolean);
+        var text = parts.length ? ' \u00b7 GDELT: ' + parts.join(' / ') : '';
+        if (typeof it.goldstein === 'number') {
+          text += ' \u00b7 Goldstein: ' + it.goldstein;
+        }
+        return text;
+      }
+
+      var log = document.getElementById('history-log');
+      log.textContent = '';
+      var hist = d.recent_history || [];
+      document.getElementById('history-count').textContent = '(' + hist.length + ')';
+      if (hist.length === 0) {
+        var empty = document.createElement('div');
+        empty.className = 'history-empty';
+        empty.textContent = 'Пока не зарегистрировано ни одного сканирования.';
+        log.appendChild(empty);
+      } else {
+        hist.forEach(function (h) {
+          // A <details> element, not a plain row — clickable/expandable so
+          // even a QUIET result shows real evidence of work done (sources
+          // scanned, rumor items tracked) instead of a bare level with
+          // nothing to check behind it.
+          var row = document.createElement('details');
+          row.className = 'history-row';
+
+          var summary = document.createElement('summary');
+          var rowText = document.createElement('span');
+          rowText.className = 'row-text';
+
+          var ts = document.createElement('span');
+          ts.className = 'ts';
+          ts.textContent = (h.ts || '').slice(0, 16).replace('T', ' ') + ' UTC';
+
+          var lvl = document.createElement('span');
+          lvl.className = 'lvl ' + String(h.level || '').toLowerCase();
+          lvl.textContent = h.level + ' (' + h.count + ' отмечено)';
+          // A QUIET result during a scan where sources didn't respond
+          // isn't a real all-clear — flag it rather than let it look
+          // identical to a scan where everything actually checked out.
+          if (h.failed_count) {
+            var unreachable = document.createElement('a');
+            unreachable.className = 'unreachable';
+            unreachable.href = '#faq-unreachable';
+            unreachable.title = 'Почему источники иногда отказывают все сразу — смотри вопросы ниже';
+            unreachable.textContent = '— ' + h.failed_count + ' avots(i) nesasniedzami';
+            lvl.appendChild(unreachable);
+          }
+
+          rowText.appendChild(ts);
+          rowText.appendChild(lvl);
+          summary.appendChild(rowText);
+          row.appendChild(summary);
+
+          var detail = document.createElement('div');
+          detail.className = 'detail';
+          var scannedText;
+          if (typeof h.sources_scanned !== 'number') {
+            scannedText = 'для этого более старого сканирования количество источников не записано';
+          } else if (h.scan_type === 'fast') {
+            // A fast early-warning pass reads only the direct publisher
+            // feeds, so its source count is ~15 rather than the full
+            // roster's 150+. Labelling it identically to a full scan
+            // would read as "most sources failed" — the opposite of what
+            // happened. See run_fast_scan() in main.py.
+            scannedText = h.sources_scanned + ' прямых потоков изданий — быстрая проверка раннего предупреждения между полными сканированиями';
+          } else if (h.gdelt_ran) {
+            scannedText = h.sources_scanned + ' источников проверено (уровень 1/2/3 + GDELT)';
+          } else {
+            scannedText = h.sources_scanned + ' источников проверено (уровень 1/2/3)';
+          }
+          var detailParts = [scannedText, (h.tier3_count || 0) + ' единиц слухов/дезинформации отслежено'];
+          if (typeof h.new_items_count === 'number') {
+            detailParts.push(h.new_items_count + ' новых материалов рассмотрено');
+          }
+          if (h.stale_count) {
+            detailParts.push(h.stale_count + ' устаревших материалов исключено');
+          }
+          // The id this alert is filed under. Shown so a correction can
+          // name the alert it corrects, and a reader can match the two up.
+          // Absent on a QUIET scan, which never alerted.
+          if (h.alert_id) {
+            detailParts.push('ID предупреждения ' + h.alert_id);
+          }
+          detail.textContent = detailParts.join(' · ');
+          row.appendChild(detail);
+
+          var markerCounts = {};
+          (h.items || []).forEach(function (it) {
+            (it.categories || []).forEach(function (c) {
+              markerCounts[c] = (markerCounts[c] || 0) + 1;
+            });
+          });
+          var markerKeys = Object.keys(markerCounts);
+          if (markerKeys.length) {
+            markerKeys.sort(function (a, b) { return markerCounts[b] - markerCounts[a]; });
+            var markers = document.createElement('div');
+            markers.style.marginTop = '4px';
+            markers.textContent = 'Маркеры: ' + markerKeys.map(function (c) {
+              return c.replace(/_/g, ' ') + ': ' + markerCounts[c];
+            }).join(', ');
+            row.appendChild(markers);
+          }
+
+          // Links each flagged item directly on the scan that produced it —
+          // otherwise "WATCH (1 flagged)" gave no way to see WHAT was
+          // flagged without hunting the separate Recent Flagged Items list.
+          (h.items || []).forEach(function (it) {
+            var itemRow = document.createElement('div');
+            itemRow.className = 'detail-item';
+
+            var itemLink = document.createElement('a');
+            if (/^https?:\/\//i.test(it.link || '')) {
+              itemLink.href = it.link;
+              itemLink.target = '_blank';
+              itemLink.rel = 'noopener';
+            }
+            itemLink.textContent = it.title || '(без названия)';
+            itemRow.appendChild(itemLink);
+
+            var metaParts = [];
+            if (it.source) metaParts.push(it.source);
+            if (it.categories && it.categories.length) {
+              metaParts.push(it.categories.map(function (c) {
+                return String(c).replace(/_/g, ' ');
+              }).join(', '));
+            }
+            if (metaParts.length) {
+              var itemMeta = document.createElement('span');
+              itemMeta.className = 'detail-item-meta';
+              var tierPrefix = it.tier ? '[' + String(it.tier).toUpperCase() + '] ' : '';
+              itemMeta.textContent = ' — ' + tierPrefix + metaParts.join(' · ') + gdeltDetailText(it);
+              itemRow.appendChild(itemMeta);
+            }
+
+            row.appendChild(itemRow);
+          });
+
+          log.appendChild(row);
+        });
+      }
+
+      var itemLog = document.getElementById('item-log');
+      var itemLogWrap = document.getElementById('item-log-wrap');
+      itemLog.textContent = '';
+      var items = d.recent_items || [];
+      document.getElementById('item-count').textContent = '(' + items.length + ')';
+      if (items.length > 0) {
+        itemLogWrap.style.display = '';
+        items.forEach(function (it) {
+          var row = document.createElement('div');
+          row.className = 'item-row';
+
+          var link = document.createElement('a');
+          // Only ever link http(s) — defense in depth even though this
+          // comes from our own backend, not user input.
+          if (/^https?:\/\//i.test(it.link || '')) {
+            link.href = it.link;
+            link.target = '_blank';
+            link.rel = 'noopener';
+          }
+          link.textContent = it.title || '(без названия)';
+
+          var meta = document.createElement('div');
+          meta.className = 'item-meta';
+          var lvlSpan = document.createElement('span');
+          lvlSpan.className = 'lvl ' + String(it.level || '').toLowerCase();
+          lvlSpan.textContent = it.level || '';
+          meta.appendChild(lvlSpan);
+          var tierPrefix = it.tier ? ' [' + String(it.tier).toUpperCase() + ']' : '';
+          meta.appendChild(document.createTextNode(
+            tierPrefix + ' · ' + (it.source || '') + ' · ' + (it.ts || '').slice(0, 10)));
+          if (it.categories && it.categories.length) {
+            meta.appendChild(document.createTextNode(
+              ' · ' + it.categories.map(function (c) {
+                return String(c).replace(/_/g, ' ');
+              }).join(', ')));
+          }
+          var gdeltText = gdeltDetailText(it);
+          if (gdeltText) {
+            meta.appendChild(document.createTextNode(gdeltText));
+          }
+
+          row.appendChild(link);
+          row.appendChild(meta);
+          itemLog.appendChild(row);
+        });
+      } else {
+        itemLogWrap.style.display = 'none';
+      }
+
+      var correctionsLog = document.getElementById('corrections-log');
+      correctionsLog.textContent = '';
+      var corrections = d.recent_corrections || [];
+      document.getElementById('corrections-count').textContent = '(' + corrections.length + ')';
+      if (corrections.length === 0) {
+        var noCorrections = document.createElement('div');
+        noCorrections.className = 'history-empty';
+        noCorrections.textContent = 'До сих пор ни одного не выпущено — пока чистая история.';
+        correctionsLog.appendChild(noCorrections);
+      } else {
+        corrections.forEach(function (c) {
+          var row = document.createElement('div');
+          row.className = 'item-row';
+
+          var meta = document.createElement('div');
+          meta.className = 'item-meta';
+          meta.textContent = (c.ts || '').slice(0, 10) + (c.context ? ' · ' + c.context : '');
+
+          var body = document.createElement('div');
+          body.className = 'body';
+          body.textContent = c.text || '';
+
+          row.appendChild(meta);
+          row.appendChild(body);
+          correctionsLog.appendChild(row);
+        });
+      }
+
+      var updatesLog = document.getElementById('updates-log');
+      updatesLog.textContent = '';
+      var updates = d.recent_updates || [];
+      document.getElementById('updates-count').textContent = '(' + updates.length + ')';
+      if (updates.length === 0) {
+        var noUpdates = document.createElement('div');
+        noUpdates.className = 'history-empty';
+        noUpdates.textContent = 'Пока ничего не зарегистрировано.';
+        updatesLog.appendChild(noUpdates);
+      } else {
+        updates.forEach(function (u) {
+          // One <details> per entry, closed. Opening the log printed all 30
+          // descriptions at once, which is a wall of text where a reader
+          // wants a list. Date and title stay on the summary line so the
+          // log can still be scanned without opening anything.
+          var row = document.createElement('details');
+          row.className = 'upd-row';
+
+          var head = document.createElement('summary');
+
+          var meta = document.createElement('div');
+          meta.className = 'item-meta';
+          meta.textContent = (u.ts || '').slice(0, 10);
+
+          var title = document.createElement('div');
+          title.className = 'title';
+          title.textContent = u.title || '';
+
+          var body = document.createElement('div');
+          body.className = 'body';
+          body.textContent = u.text || '';
+
+          head.appendChild(meta);
+          head.appendChild(title);
+          row.appendChild(head);
+          row.appendChild(body);
+          updatesLog.appendChild(row);
+        });
+      }
+    })
+    .catch(function () {
+      document.getElementById('status-text').textContent = 'Статус недоступен';
+      document.getElementById('status-error').style.display = 'block';
+    });
+})();
+
+(function () {
+  var LEVEL_COLOR = { QUIET: 'var(--accent)', WATCH: 'var(--watch)', WARN: 'var(--warn)' };
+
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+    for (var k in attrs) { el.setAttribute(k, attrs[k]); }
+    return el;
+  }
+
+  function shortDate(ts) {
+    return (ts || '').slice(0, 10);
+  }
+
+  function emptyChart(container, message) {
+    container.textContent = '';
+    var div = document.createElement('div');
+    div.className = 'chart-empty';
+    div.textContent = message;
+    container.appendChild(div);
+  }
+
+  // Shared coordinate setup: x position is real elapsed time within
+  // [rangeStart, rangeEnd] — a FIXED-width window matching the selected
+  // range (1 day/week/month/6 months/year), not "however many points
+  // happen to exist stretched to fill the chart". A real bug this fixes:
+  // with only ~1 month of real history collected so far, clicking 1Y
+  // used to look identical to clicking 1M (the same handful of points
+  // just re-stretched across the same width) -- now 1 month of real data
+  // inside a 1-year window correctly occupies ~1/12 of the width, with
+  // the rest left honestly blank rather than misleadingly stretched.
+  var W = 800, H = 220, PAD_L = 34, PAD_R = 12, PAD_T = 16, PAD_B = 26;
+  function xForTs(ts, rangeStart, rangeEnd) {
+    var t = Date.parse(ts);
+    if (isNaN(t)) return null;
+    var frac = (t - rangeStart) / (rangeEnd - rangeStart);
+    frac = Math.max(0, Math.min(1, frac));
+    return PAD_L + frac * (W - PAD_L - PAD_R);
+  }
+
+  function renderIntensityChart(container, points, rangeStart, rangeEnd) {
+    if (!points.length) { emptyChart(container, 'Пока недостаточно истории — она накапливается со временем.'); return; }
+    container.textContent = '';
+
+    var toneVals = points.map(function (p) { return p.tone; }).filter(function (t) { return typeof t === 'number'; });
+    var hasTone = toneVals.length > 0;
+    var maxAbs = hasTone ? Math.max(1, Math.max.apply(null, toneVals.map(Math.abs))) : 1;
+    var yTop = PAD_T, yBottom = H - PAD_B, yMid = (yTop + yBottom) / 2;
+    function yFor(tone) { return yMid + (tone / maxAbs) * (yMid - yTop); }
+
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
+      'aria-label': 'Интенсивность эскалации во времени' });
+
+    if (hasTone) {
+      svg.appendChild(svgEl('line', {
+        x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
+        stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
+      }));
+      svg.appendChild(svgEl('text', { x: PAD_L, y: yMid - 3, 'font-size': 9, fill: 'var(--ink-dim)' }))
+        .textContent = '0 (нейтральный тон)';
+      svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+        .textContent = '±' + maxAbs.toFixed(1) + ' диапазон тона';
+      var path = '', started = false;
+      points.forEach(function (p) {
+        if (typeof p.tone !== 'number') { started = false; return; }
+        var x = xForTs(p.ts, rangeStart, rangeEnd), y = yFor(p.tone);
+        if (x === null) { started = false; return; }
+        path += (started ? 'L' : 'M') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+        started = true;
+      });
+      svg.appendChild(svgEl('path', { d: path.trim(), fill: 'none', stroke: 'var(--ink-dim)', 'stroke-width': 1.5 }));
+    }
+
+    points.forEach(function (p) {
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) return;
+      var y = (hasTone && typeof p.tone === 'number') ? yFor(p.tone) : yMid;
+      var r = p.level === 'WARN' ? 4 : (p.level === 'WATCH' ? 3.5 : 2);
+      svg.appendChild(svgEl('circle', {
+        cx: x.toFixed(1), cy: y.toFixed(1), r: r,
+        fill: LEVEL_COLOR[p.level] || 'var(--ink-dim)',
+      })).appendChild(svgEl('title', {})).textContent =
+        shortDate(p.ts) + ' — ' + (p.level || 'unknown') +
+        (typeof p.tone === 'number' ? ' — tonis ' + p.tone.toFixed(2) : '');
+    });
+
+    svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = shortDate(new Date(rangeStart).toISOString());
+    svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
+      .textContent = shortDate(new Date(rangeEnd).toISOString());
+
+    container.appendChild(svg);
+  }
+
+  function renderCountChart(container, points, rangeStart, rangeEnd, rangeDays, opts) {
+    if (!points.length) { emptyChart(container, 'Пока недостаточно истории — она накапливается со временем.'); return; }
+    container.textContent = '';
+
+    var counts = points.map(opts.countField);
+    var maxCount = Math.max(1, Math.max.apply(null, counts));
+    var yTop = PAD_T, yBottom = H - PAD_B;
+    var expectedSlots = Math.max(rangeDays * (opts.slotsPerDay || 6), 1);
+    var barW = Math.max(0.6, ((W - PAD_L - PAD_R) / expectedSlots) * 0.7);
+
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
+      'aria-label': opts.ariaLabel });
+
+    points.forEach(function (p) {
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) return;
+      var count = opts.countField(p);
+      var barH = (count / maxCount) * (yBottom - yTop);
+      var barColor = opts.colorField ? opts.colorField(p) : 'var(--accent)';
+      var bar = svgEl('rect', {
+        x: (x - barW / 2).toFixed(1), y: (yBottom - barH).toFixed(1),
+        width: barW.toFixed(1), height: Math.max(0.5, barH).toFixed(1),
+        fill: barColor, opacity: 0.85,
+      });
+      bar.appendChild(svgEl('title', {})).textContent = opts.tooltipField
+        ? shortDate(p.ts) + ' — ' + opts.tooltipField(p)
+        : shortDate(p.ts) + ' — ' + count + ' ' + opts.tooltipSuffix;
+      svg.appendChild(bar);
+      svg.appendChild(svgEl('circle', {
+        cx: x.toFixed(1), cy: (yBottom - barH).toFixed(1), r: 1.8,
+        fill: barColor, opacity: 0.9,
+      }));
+    });
+
+    if (!opts.hideMaxLabel) {
+      var yMidAxis = (yTop + yBottom) / 2;
+      [[yBottom, 0], [yMidAxis, Math.round(maxCount / 2)], [yTop, maxCount]].forEach(function (ref) {
+        var y = ref[0], val = ref[1];
+        svg.appendChild(svgEl('line', {
+          x1: PAD_L, x2: W - PAD_R, y1: y.toFixed(1), y2: y.toFixed(1),
+          stroke: 'var(--ink-dim)', 'stroke-width': 1, opacity: 0.25,
+        }));
+        svg.appendChild(svgEl('text', {
+          x: PAD_L, y: (y - 3).toFixed(1), 'font-size': 9, fill: 'var(--ink-dim)',
+        })).textContent = val;
+      });
+    }
+    svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = shortDate(new Date(rangeStart).toISOString());
+    svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
+      .textContent = shortDate(new Date(rangeEnd).toISOString());
+
+    container.appendChild(svg);
+  }
+
+  function renderEidxChart(container, points, rangeStart, rangeEnd) {
+    var withValue = points.filter(function (p) { return typeof p.deviation_pct === 'number'; });
+    if (!withValue.length) { emptyChart(container, 'Пока недостаточно истории — она накапливается со временем.'); return; }
+    container.textContent = '';
+
+    var maxAbs = Math.max(1, Math.max.apply(null, withValue.map(function (p) { return Math.abs(p.deviation_pct); })));
+    var yTop = PAD_T, yBottom = H - PAD_B, yMid = (yTop + yBottom) / 2;
+    function yFor(v) { return yMid - (v / maxAbs) * (yMid - yTop); }
+
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img',
+      'aria-label': 'Индекс отклонения сигнала во времени' });
+
+    svg.appendChild(svgEl('line', {
+      x1: PAD_L, x2: W - PAD_R, y1: yMid, y2: yMid,
+      stroke: 'var(--ink-dim)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0.5,
+    }));
+
+    var path = '', started = false;
+    points.forEach(function (p) {
+      if (typeof p.deviation_pct !== 'number') { started = false; return; }
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) { started = false; return; }
+      path += (started ? 'L' : 'M') + x.toFixed(1) + ',' + yFor(p.deviation_pct).toFixed(1) + ' ';
+      started = true;
+    });
+    svg.appendChild(svgEl('path', { d: path.trim(), fill: 'none', stroke: 'var(--accent)', 'stroke-width': 1.5 }));
+
+    withValue.forEach(function (p) {
+      var x = xForTs(p.ts, rangeStart, rangeEnd);
+      if (x === null) return;
+      var y = yFor(p.deviation_pct);
+      svg.appendChild(svgEl('circle', { cx: x.toFixed(1), cy: y.toFixed(1), r: 2, fill: 'var(--accent)' }))
+        .appendChild(svgEl('title', {})).textContent =
+        shortDate(p.ts) + ' — ' + (p.deviation_pct >= 0 ? '+' : '') + p.deviation_pct.toFixed(0) +
+        '% к базовому уровню (' + (p.sources_included || 0) + '/4 сигнала)';
+    });
+
+    svg.appendChild(svgEl('text', { x: PAD_L, y: PAD_T - 4, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = '±' + Math.round(maxAbs) + '%';
+    svg.appendChild(svgEl('text', { x: PAD_L, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)' }))
+      .textContent = shortDate(new Date(rangeStart).toISOString());
+    svg.appendChild(svgEl('text', { x: W - PAD_R, y: H - 6, 'font-size': 10, fill: 'var(--ink-dim)', 'text-anchor': 'end' }))
+      .textContent = shortDate(new Date(rangeEnd).toISOString());
+
+    container.appendChild(svg);
+  }
+
+
+// The composite index used to arrive as two finished ENGLISH sentences —
+// which signal moved, and whether today is normal — and every translated
+// page printed them verbatim. A Latvian reader got a fully Latvian page
+// whose two most informative lines were in English. The backend now
+// publishes the parts (narrative_parts, band_key) and each page writes its
+// own sentence. The English strings are still sent and are still used as a
+// fallback for entries recorded before the structured fields existed.
+var EIDX_TEXT = {
+  signals: {"gpsjam": "Глушение GPS", "ais": "Судовой трафик AIS", "military": "военные воздушные суда", "firms": "тепловые точки"},
+  bands: {"high_above": "сильно повышен", "moderate_above": "умеренно повышен", "normal": "в пределах нормы", "moderate_below": "умеренно ниже нормы", "well_below": "значительно ниже нормы"},
+  above: "{s} {p}% выше базового уровня",
+  below: "{s} {p}% ниже базового уровня",
+  steady: "{list} без изменений",
+  record: "максимум за {n} сканирований",
+  sep: "; ",
+  listSep: ", "
+};
+
+function eidxNarrative(point) {
+  var parts = point && point.narrative_parts;
+  if (!parts) return (point && point.narrative) || '';
+  var chunks = (parts.moved || []).map(function (m) {
+    var name = EIDX_TEXT.signals[m.signal] || m.signal;
+    var tpl = m.direction === 'below' ? EIDX_TEXT.below : EIDX_TEXT.above;
+    return tpl.replace('{s}', name).replace('{p}', m.pct);
+  });
+  if ((parts.steady || []).length) {
+    var names = parts.steady.map(function (k) { return EIDX_TEXT.signals[k] || k; });
+    chunks.push(EIDX_TEXT.steady.replace('{list}', names.join(EIDX_TEXT.listSep)));
+  }
+  return chunks.length ? chunks.join(EIDX_TEXT.sep) + '.' : '';
+}
+
+function eidxBand(point) {
+  var key = point && point.band_key;
+  if (!key || !EIDX_TEXT.bands[key]) return (point && point.band) || '';
+  var text = EIDX_TEXT.bands[key];
+  if (point.band_record_scans) {
+    text += ' \u2014 ' + EIDX_TEXT.record.replace('{n}', point.band_record_scans);
+  }
+  return text;
+}
+
+  function renderEidxCurrent(points) {
+    var valueEl = document.getElementById('eidx-value');
+    var sourcesEl = document.getElementById('eidx-sources');
+    var bandEl = document.getElementById('eidx-band');
+    var narrativeEl = document.getElementById('eidx-narrative');
+    if (!points.length) {
+      valueEl.textContent = '—';
+      sourcesEl.textContent = 'Данных пока нет';
+      bandEl.textContent = '';
+      narrativeEl.textContent = '';
+      return;
+    }
+    var latest = points[points.length - 1];
+    bandEl.textContent = eidxBand(latest);
+    narrativeEl.textContent = eidxNarrative(latest);
+    if (typeof latest.deviation_pct !== 'number') {
+      valueEl.textContent = 'Пока недостаточно данных';
+      sourcesEl.textContent = (latest.sources_included || 0) + ' / 4 отслеживается';
+      return;
+    }
+    valueEl.textContent = (latest.deviation_pct >= 0 ? '+' : '') + latest.deviation_pct.toFixed(0) + '%';
+    sourcesEl.textContent = (latest.sources_included || 0) + ' / 4';
+  }
+
+  var RANGE_OPTIONS = [
+    { key: '1d', label: '1D', days: 1 },
+    { key: '1w', label: '1W', days: 7 },
+    { key: '1m', label: '1M', days: 30 },
+    { key: '6m', label: '6M', days: 182 },
+    { key: '1y', label: '1Y', days: 365 },
+  ];
+  var DEFAULT_RANGE_KEY = '1m';
+  var allChartPoints = [];
+  var allGpsjamPoints = [];
+  var allAisPoints = [];
+  var allMilitaryPoints = [];
+  var allFirmsPoints = [];
+  var allEntsoePoints = [];
+  var allEidxPoints = [];
+  var EIDX_TOP_WIDGET_DAYS = 30;
+  var currentRangeKey = DEFAULT_RANGE_KEY;
+
+  function filterPointsByRange(points, days) {
+    var cutoff = Date.now() - days * 86400000;
+    return points.filter(function (p) {
+      var t = Date.parse(p.ts);
+      return !isNaN(t) && t >= cutoff;
+    });
+  }
+
+  function renderCharts() {
+    var opt = RANGE_OPTIONS.filter(function (r) { return r.key === currentRangeKey; })[0] || RANGE_OPTIONS[2];
+    var rangeEnd = Date.now();
+    var rangeStart = rangeEnd - opt.days * 86400000;
+    var filtered = filterPointsByRange(allChartPoints, opt.days);
+    renderIntensityChart(document.getElementById('chart-intensity'), filtered, rangeStart, rangeEnd);
+    renderCountChart(document.getElementById('chart-watchwarn'), filtered, rangeStart, rangeEnd, opt.days, {
+      countField: function (p) { return (p.level === 'WATCH' || p.level === 'WARN') ? Math.max(1, p.count || 0) : 0; },
+      colorField: function (p) { return p.level === 'WARN' ? 'var(--warn)' : 'var(--watch)'; },
+      tooltipField: function (p) { return (p.level || 'unknown') + ' — ' + (p.count || 0) + ' единиц'; },
+      ariaLabel: 'Предупреждения WATCH и WARN во времени',
+      tooltipSuffix: 'единиц',
+    });
+    renderCountChart(document.getElementById('chart-rumors'), filtered, rangeStart, rangeEnd, opt.days, {
+      countField: function (p) { return p.tier3_count || 0; },
+      ariaLabel: 'Отслеживание слухов/дезинформации во времени',
+      tooltipSuffix: 'единиц слухов/дезинформации',
+    });
+    renderCountChart(document.getElementById('chart-gpsjam'),
+      filterPointsByRange(allGpsjamPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Интенсивность глушения GPS во времени',
+        tooltipSuffix: 'ячеек сильного глушения',
+        maxSuffix: '/day',
+        slotsPerDay: 1,
+      });
+    renderCountChart(document.getElementById('chart-ais'),
+      filterPointsByRange(allAisPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Количество судов AIS во времени',
+        tooltipSuffix: 'судов наблюдалось',
+      });
+    renderCountChart(document.getElementById('chart-military'),
+      filterPointsByRange(allMilitaryPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Количество военных воздушных судов во времени',
+        tooltipSuffix: 'воздушных судов с ADS-B',
+      });
+    renderCountChart(document.getElementById('chart-firms'),
+      filterPointsByRange(allFirmsPoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Тепловые точки во времени',
+        tooltipSuffix: 'тепловые точки',
+      });
+    renderCountChart(document.getElementById('chart-entsoe'),
+      filterPointsByRange(allEntsoePoints, opt.days), rangeStart, rangeEnd, opt.days, {
+        countField: function (p) { return p.count || 0; },
+        ariaLabel: 'Перерывы в электросети во времени',
+        tooltipSuffix: 'принудительных отключений',
+      });
+    renderEidxChart(document.getElementById('chart-escalation-index'),
+      filterPointsByRange(allEidxPoints, opt.days), rangeStart, rangeEnd);
+  }
+
+  function buildRangeSelector() {
+    var container = document.getElementById('chart-range-selector');
+    container.textContent = '';
+    RANGE_OPTIONS.forEach(function (opt) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'range-btn' + (opt.key === currentRangeKey ? ' active' : '');
+      btn.textContent = opt.label;
+      btn.addEventListener('click', function () {
+        if (currentRangeKey === opt.key) return;
+        currentRangeKey = opt.key;
+        Array.prototype.forEach.call(container.children, function (c) { c.classList.remove('active'); });
+        btn.classList.add('active');
+        renderCharts();
+      });
+      container.appendChild(btn);
+    });
+  }
+
+  fetch('/chart_data.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function (d) {
+      allChartPoints = d.points || [];
+      allGpsjamPoints = d.gpsjam_points || [];
+      allAisPoints = d.ais_points || [];
+      allMilitaryPoints = d.military_points || [];
+      allFirmsPoints = d.firms_points || [];
+      allEntsoePoints = d.entsoe_points || [];
+      allEidxPoints = d.escalation_index_points || [];
+      renderEidxCurrent(allEidxPoints);
+      renderEidxChart(document.getElementById('chart-eidx-top'),
+        filterPointsByRange(allEidxPoints, EIDX_TOP_WIDGET_DAYS),
+        Date.now() - EIDX_TOP_WIDGET_DAYS * 86400000, Date.now());
+      buildRangeSelector();
+      renderCharts();
+    })
+    .catch(function () {
+      ['chart-eidx-top', 'chart-intensity', 'chart-watchwarn', 'chart-rumors', 'chart-gpsjam', 'chart-ais', 'chart-military', 'chart-firms', 'chart-entsoe', 'chart-escalation-index'].forEach(function (id) {
+        emptyChart(document.getElementById(id), 'Данные диаграммы временно недоступны.');
+      });
+      document.getElementById('eidx-value').textContent = '—';
+      document.getElementById('eidx-sources').textContent = 'Nav pieejams';
+    });
+})();
+</script>
+
+<script>
+(function () {
+  function openFaqTarget() {
+    var hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    var el = document.getElementById(hash.slice(1));
+    if (el && el.tagName === 'DETAILS') {
+      el.open = true;
+      el.scrollIntoView({ block: 'start' });
+    }
+  }
+  window.addEventListener('hashchange', openFaqTarget);
+  openFaqTarget();
+})();
+</script>
+
+<script src="/push.js" defer></script>
+
+</body>
+</html>
