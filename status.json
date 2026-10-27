@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-27T14:53:51.751691+00:00",
+  "last_run_utc": "2026-10-27T18:48:58.982765+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.1h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 664,
+  "total_scans": 665,
   "quiet_count": 338,
-  "watch_count": 299,
+  "watch_count": 300,
   "warn_count": 27,
   "correction_count": 4,
-  "generated_at": "2026-10-27 17:58 UTC",
+  "generated_at": "2026-10-27 18:48 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-27T18:48:59.002801+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 798,
+      "stale_count": 24,
+      "alert_id": "1027-1848",
+      "items": [
+        {
+          "title": "Lithuanian Border Guards Intercept a Shipment of Smuggled Goods Transported by Air. Three People Detained - REFORM.news",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcDMtZl90bHhSdllvUS1FOFlmR1EwX0dsOFRJZDVOcFZxcnF5bjRaUGN0SVdTYUV3UnplSDdwZE1JRVRyaUNTVVVQTUNPa3A5S1JvNjg4a1BsS0dYUXlkelV2QVlJbW9GT1huekRFejhlRG9VdHZsM203THJCQUl6REl4cC0wLXdDaGVnRFZ5bDBsVFZWcjhmd3FOT08zN25tWWxEd1hVVWtTTmVIc2JEanNhWFA0NU1LMVc1djRFd2s2LS1IR0RN0gHMAUFVX3lxTE82U1lmTUp4bnN5VmlZMHRISTNTbUhyZ2Y4djU2anA2M2IyV1NycVg4N2xxOF8wcjl3RG12MEVMQWg3NFFNV2VDdWR5aTQ3UC1FTFJyUnRCRjY4MUJiR0o4QnE5TVFLSUEyR1d5OGNCWmpuNkpGVDVlM05YSEduUmVwa1U4TXdiT2tIVzdaVmFFQmtCUFN5dEIzM2pMbndnMGVwbWNkM09LZ1EwRHY3MFdtaFFCYVFWNGlreTE4Z1NnWFE1VUhiRE5vb1NwNw?oc=5",
+          "categories": [
+            "baltic_specific",
+            "shadow_fleet"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
     {
       "ts": "2026-10-27T14:53:51.726188+00:00",
       "level": "WATCH",
@@ -894,39 +924,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-24T12:07:25.634473+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 121,
-      "stale_count": 1,
-      "alert_id": "1024-1207",
-      "items": [
-        {
-          "title": "Me\u017e\u0101 Al\u016bksnes novad\u0101 atrastas \u0101rvalstu drona atl\u016bzas",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/24.10.2026-meza-aluksnes-novada-atrastas-arvalstu-drona-atluzas.a668930/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-27T18:48:59.026281+00:00",
+      "level": "WATCH",
+      "title": "Lithuanian Border Guards Intercept a Shipment of Smuggled Goods Transported by Air. Three People Detained - REFORM.news",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcDMtZl90bHhSdllvUS1FOFlmR1EwX0dsOFRJZDVOcFZxcnF5bjRaUGN0SVdTYUV3UnplSDdwZE1JRVRyaUNTVVVQTUNPa3A5S1JvNjg4a1BsS0dYUXlkelV2QVlJbW9GT1huekRFejhlRG9VdHZsM203THJCQUl6REl4cC0wLXdDaGVnRFZ5bDBsVFZWcjhmd3FOT08zN25tWWxEd1hVVWtTTmVIc2JEanNhWFA0NU1LMVc1djRFd2s2LS1IR0RN0gHMAUFVX3lxTE82U1lmTUp4bnN5VmlZMHRISTNTbUhyZ2Y4djU2anA2M2IyV1NycVg4N2xxOF8wcjl3RG12MEVMQWg3NFFNV2VDdWR5aTQ3UC1FTFJyUnRCRjY4MUJiR0o4QnE5TVFLSUEyR1d5OGNCWmpuNkpGVDVlM05YSEduUmVwa1U4TXdiT2tIVzdaVmFFQmtCUFN5dEIzM2pMbndnMGVwbWNkM09LZ1EwRHY3MFdtaFFCYVFWNGlreTE4Z1NnWFE1VUhiRE5vb1NwNw?oc=5",
+      "categories": [
+        "baltic_specific",
+        "shadow_fleet"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-27T13:19:00.373292+00:00",
       "level": "WATCH",
@@ -1150,22 +1166,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-26T06:09:42.270394+00:00",
-      "level": "WARN",
-      "title": "Latvijas austrumos ierad\u012bsies t\u016bksto\u0161iem NATO karav\u012bru: gaid\u0101mas l\u012bdz \u0161im pla\u0161\u0101k\u0101s brig\u0101des m\u0101c\u012bbas",
-      "source": "Jauns.lv (Latvia)",
-      "link": "https://jauns.lv/raksts/zinas/735008-latvijas-austrumos-ieradisies-tukstosiem-nato-karaviru-gaidamas-lidz-sim-plasakas-brigades-macibas",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1348,14 +1348,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 186,
-    "alerting_scans": 144,
-    "held_back_total": 69,
+    "scans": 187,
+    "alerting_scans": 145,
+    "held_back_total": 70,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 32
+        "count": 33
       },
       {
         "reason": "already alerted",
