@@ -1,20 +1,125 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-27T06:20:33.070651+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-10-27T13:19:00.331875+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 661,
+  "total_scans": 663,
   "quiet_count": 338,
-  "watch_count": 296,
+  "watch_count": 298,
   "warn_count": 27,
   "correction_count": 4,
-  "generated_at": "2026-10-27 06:20 UTC",
+  "generated_at": "2026-10-27 13:19 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-27T13:19:00.349724+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 640,
+      "stale_count": 14,
+      "alert_id": "1027-1319",
+      "items": [
+        {
+          "title": "NATO Brigade in Latvia launches 'most extensive' deployment exercises, Latvian army says - The Kyiv Independent",
+          "source": "Kyiv Independent",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaDdoekdRNHJWMnl0cDNWaXpYYmlFak9JSjBRcXBqY3pWaGJ2ekpSbTlUeWFqQjUwamRqOWlUNnFaVVBYVmk2LWp3b0NyMDV1NFVUZ041dUdpeFA5VFJXXzdhNzBkNVdZRlEtaDRkNHBkZ0xrdWtjT294ejRudTIyVmJsSHhaeU9DckZHSTk2eTh0bVBUT3g0QmFEWHhpVkZHa3FSZUVGajg1UXF2Mkd5bEtqUnQ?oc=5",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Ministras L. Savickas: naujame energetikos etape vien nepriklausomyb\u0117s nebepakanka",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/27/news/ministras-l-savickas-naujame-energetikos-etape-vien-nepriklausomybes-nebepakanka-44656609",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0439 \u0444\u0440\u0435\u0433\u0430\u0442 \u00ab\u041d\u0435\u0443\u0441\u0442\u0440\u0430\u0448\u0438\u043c\u044b\u0439\u00bb, \u0441\u043e\u043f\u0440\u043e\u0432\u043e\u0436\u0434\u0430\u0432\u0448\u0438\u0439 \u00ab\u0442\u0435\u043d\u0435\u0432\u043e\u0439 \u0444\u043b\u043e\u0442\u00bb \u0432 \u041b\u0430-\u041c\u0430\u043d\u0448\u0435, \u0437\u0430\u043c\u0435\u0442\u0438\u043b\u0438 \u0432 \u0411\u0430\u043b\u0442\u0438\u0439\u0441\u043a\u043e\u043c \u043c\u043e\u0440\u0435",
+          "source": "The Insider",
+          "link": "https://theins.ru/news/298796",
+          "categories": [
+            "baltic_specific",
+            "shadow_fleet"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuva gatavojas stingr\u0101k aizsarg\u0101t objektus, kas var k\u013c\u016bt par sabot\u0101\u017eas m\u0113r\u0137iem",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/735294-lietuva-gatavojas-stingrak-aizsargat-objektus-kas-var-klut-par-sabotazas-merkiem",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-27T08:20:37.170071+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 5,
+      "tier3_count": 0,
+      "sources_scanned": 56,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 260,
+      "stale_count": 0,
+      "alert_id": "1027-0820",
+      "items": [
+        {
+          "title": "Pabriks nosauc valstis, uz kuru pal\u012bdz\u012bbu Latvija var\u0113tu pa\u013cauties apdraud\u0113juma gad\u012bjum\u0101",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/pabriks-nosauc-valstis-uz-kuru-palidzibu-latvija-varetu-palauties-apdraudejuma-gadijuma",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-27T06:20:33.171618+00:00",
       "level": "QUIET",
@@ -819,53 +924,73 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-24T05:50:21.477193+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 213,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-10-23T22:08:39.748502+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 264,
-      "stale_count": 6,
-      "alert_id": "1023-2208",
-      "items": [
-        {
-          "title": "NKSC vadovas: negauta prane\u0161im\u0173 apie galimus \u012fsilau\u017eimus d\u0117l paveiktos programin\u0117s kalbos",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/nksc-vadovas-negauta-pranesimu-apie-galimus-isilauzimus-del-paveiktos-programines-kalbos-56-2791582?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-27T13:19:00.373292+00:00",
+      "level": "WATCH",
+      "title": "Lietuva gatavojas stingr\u0101k aizsarg\u0101t objektus, kas var k\u013c\u016bt par sabot\u0101\u017eas m\u0113r\u0137iem",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/arzemes/735294-lietuva-gatavojas-stingrak-aizsargat-objektus-kas-var-klut-par-sabotazas-merkiem",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-27T13:19:00.373292+00:00",
+      "level": "WATCH",
+      "title": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0439 \u0444\u0440\u0435\u0433\u0430\u0442 \u00ab\u041d\u0435\u0443\u0441\u0442\u0440\u0430\u0448\u0438\u043c\u044b\u0439\u00bb, \u0441\u043e\u043f\u0440\u043e\u0432\u043e\u0436\u0434\u0430\u0432\u0448\u0438\u0439 \u00ab\u0442\u0435\u043d\u0435\u0432\u043e\u0439 \u0444\u043b\u043e\u0442\u00bb \u0432 \u041b\u0430-\u041c\u0430\u043d\u0448\u0435, \u0437\u0430\u043c\u0435\u0442\u0438\u043b\u0438 \u0432 \u0411\u0430\u043b\u0442\u0438\u0439\u0441\u043a\u043e\u043c \u043c\u043e\u0440\u0435",
+      "source": "The Insider",
+      "link": "https://theins.ru/news/298796",
+      "categories": [
+        "baltic_specific",
+        "shadow_fleet"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-27T13:19:00.373292+00:00",
+      "level": "WATCH",
+      "title": "Ministras L. Savickas: naujame energetikos etape vien nepriklausomyb\u0117s nebepakanka",
+      "source": "Lrytas (Lithuania)",
+      "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/27/news/ministras-l-savickas-naujame-energetikos-etape-vien-nepriklausomybes-nebepakanka-44656609",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-27T13:19:00.373292+00:00",
+      "level": "WATCH",
+      "title": "NATO Brigade in Latvia launches 'most extensive' deployment exercises, Latvian army says - The Kyiv Independent",
+      "source": "Kyiv Independent",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaDdoekdRNHJWMnl0cDNWaXpYYmlFak9JSjBRcXBqY3pWaGJ2ekpSbTlUeWFqQjUwamRqOWlUNnFaVVBYVmk2LWp3b0NyMDV1NFVUZ041dUdpeFA5VFJXXzdhNzBkNVdZRlEtaDRkNHBkZ0xrdWtjT294ejRudTIyVmJsSHhaeU9DckZHSTk2eTh0bVBUT3g0QmFEWHhpVkZHa3FSZUVGajg1UXF2Mkd5bEtqUnQ?oc=5",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-26T23:15:04.726028+00:00",
       "level": "WATCH",
@@ -1035,70 +1160,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-26T06:09:42.270394+00:00",
-      "level": "WARN",
-      "title": "Latgal\u0113 s\u0101ksies v\u0113rien\u012bgas NATO brig\u0101des r\u012bkotas milit\u0101r\u0101s m\u0101c\u012bbas",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8571247",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-26T06:09:42.270394+00:00",
-      "level": "WARN",
-      "title": "Latvijas austrumu da\u013c\u0101 s\u0101kas v\u0113rien\u012bgas NATO brig\u0101des r\u012bkotas milit\u0101r\u0101s m\u0101c\u012bbas",
-      "source": "Diena (Latvia)",
-      "link": "https://diena.lv/raksts/latvija/zinas-71/latvijas-austrumu-dala-sakas-verienigas-nato-brigades-rikotas-militaras-macibas?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-25T12:41:04.827479+00:00",
-      "level": "WATCH",
-      "title": "\"The Telegraph\": Krievija Baltij\u0101 izmanto br\u012bvdienu m\u0101jas k\u0101 \"Trojas zirgus\" hibr\u012bdkaram - DELFI",
-      "source": "Latvian-language general (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTEZvUjd1cnl5aGdzMG53TVNFbHd2MDY3MXJjZEFUOHJpcE9vUm43ZWRSTXA2SUgwTTBzRWRiQ1BQU1VBZzV3eWUwSFFsYjlCVG4xN2p4R09rRTBBOWh1RkRuOHEyU1g1QnJHTkVwU3lCdVV5Rlo0dF9GOWxiSXgyT0l1SWdCSUJDU25USnp2cFhYbTcxZkFhcnAzX1Z6SVZMb1M4ZmV5d3lPdU4yUDhKVF83ZGhOV2RqdlYzMjZKQ3dXdVN1dDZDN3pYUQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-24T21:39:12.585635+00:00",
-      "level": "WATCH",
-      "title": "Vir\u0161 Kauno oro uosto \u012fvesti oro erdv\u0117s ribojimai \u2013 prat\u0119sti",
-      "source": "Lrytas (Lithuania)",
-      "link": "https://www.lrytas.lt/verslas/rinkos-pulsas/2026/10/25/news/del-kontrabandiniu-balionu-oro-erdves-ribojimai-virs-kauno-oro-uosto-44615278",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1287,8 +1348,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 188,
-    "alerting_scans": 145,
+    "scans": 187,
+    "alerting_scans": 144,
     "held_back_total": 70,
     "held_back_by_reason": [
       {
