@@ -4696,6 +4696,20 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-28T22:48:40.459866+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-10-28T23:15:08.792499+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6484,6 +6498,10 @@
     {
       "ts": "2026-10-28T18:57:08.523040+00:00",
       "count": 178
+    },
+    {
+      "ts": "2026-10-28T23:14:21.847274+00:00",
+      "count": 178
     }
   ],
   "military_points": [
@@ -7954,6 +7972,10 @@
     {
       "ts": "2026-10-28T18:57:09.379791+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-10-28T23:14:22.552894+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -9096,6 +9118,10 @@
     {
       "ts": "2026-10-28T18:57:14.733601+00:00",
       "count": 22
+    },
+    {
+      "ts": "2026-10-28T23:14:26.513875+00:00",
+      "count": 22
     }
   ],
   "entsoe_points": [
@@ -10225,6 +10251,10 @@
     },
     {
       "ts": "2026-10-28T18:57:28.391869+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-28T23:14:37.315124+00:00",
       "count": 0
     }
   ],
@@ -16676,6 +16706,29 @@
           {
             "signal": "military",
             "pct": 54,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-28T23:14:37.318591+00:00",
+      "deviation_pct": -31.608564056603303,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
             "direction": "below"
           }
         ],
