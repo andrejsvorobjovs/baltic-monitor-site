@@ -4710,6 +4710,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-29T07:05:56.698474+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5024,6 +5031,10 @@
     {
       "ts": "2026-10-24T00:00:00+00:00",
       "count": 157
+    },
+    {
+      "ts": "2026-10-28T00:00:00+00:00",
+      "count": 203
     }
   ],
   "ais_points": [
@@ -6502,6 +6513,10 @@
     {
       "ts": "2026-10-28T23:14:21.847274+00:00",
       "count": 178
+    },
+    {
+      "ts": "2026-10-29T07:05:16.898786+00:00",
+      "count": 198
     }
   ],
   "military_points": [
@@ -7976,6 +7991,10 @@
     {
       "ts": "2026-10-28T23:14:22.552894+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-29T07:05:17.352400+00:00",
+      "count": 1
     }
   ],
   "firms_points": [
@@ -9122,6 +9141,10 @@
     {
       "ts": "2026-10-28T23:14:26.513875+00:00",
       "count": 22
+    },
+    {
+      "ts": "2026-10-29T07:05:21.350257+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -10255,6 +10278,10 @@
     },
     {
       "ts": "2026-10-28T23:14:37.315124+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-29T07:05:28.516567+00:00",
       "count": 0
     }
   ],
@@ -16736,6 +16763,37 @@
           "gpsjam",
           "ais",
           "firms"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-29T07:05:28.518448+00:00",
+      "deviation_pct": -40.173329962764754,
+      "sources_included": 4,
+      "narrative": "GPS jamming 20% above baseline; military aircraft 54% below baseline; thermal hotspots 100% below baseline; AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "gpsjam",
+            "pct": 20,
+            "direction": "above"
+          },
+          {
+            "signal": "military",
+            "pct": 54,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "ais"
         ]
       },
       "band_key": "moderate_below",
