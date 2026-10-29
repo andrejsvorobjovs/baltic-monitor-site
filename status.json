@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-29T07:05:56.687143+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-10-29T14:21:03.976739+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 674,
+  "total_scans": 676,
   "quiet_count": 343,
-  "watch_count": 304,
+  "watch_count": 306,
   "warn_count": 27,
   "correction_count": 4,
-  "generated_at": "2026-10-29 07:05 UTC",
+  "generated_at": "2026-10-29 14:21 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-29T14:21:03.997065+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 320,
+      "stale_count": 14,
+      "alert_id": "1029-1421",
+      "items": [
+        {
+          "title": "\u201eTai absoliu\u010diai nepriimtina\u201c: d\u0117l gynybos biud\u017eeto \u2013 \u012ftampos tarp valdan\u010di\u0173j\u0173 ir Prezident\u016bros",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/tai-absoliuciai-nepriimtina-del-gynybos-biudzeto-itampos-tarp-valdanciuju-ir-prezidenturos-56-2795076?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-29T13:39:21.506575+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 526,
+      "stale_count": 0,
+      "alert_id": "1029-1339",
+      "items": [
+        {
+          "title": "Atbildot uz Baltijas valstu l\u016bgumu pie\u0161\u0137irt 500 miljonus eiro pretdronu aizsardz\u012bbai, EK mudina izmantot SAFE aizdevumus",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/pasaule/baltijas-valstis/atbildot-uz-baltijas-valstu-lugumu-pieskirt-500-miljonus-eiro-pretdronu-aizsardzibai-ek-mudina-izmantot-safe-aizdevumus?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lithuania has decided. Universal conscription will return",
+          "source": "Defence24",
+          "link": "https://defence24.com/defence-policy/lithuania-has-decided-universal-conscription-will-return",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-29T07:05:56.698474+00:00",
       "level": "QUIET",
@@ -668,159 +743,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-26T08:05:25.583134+00:00",
-      "level": "WATCH",
-      "count": 5,
-      "failed_count": 5,
-      "tier3_count": 0,
-      "sources_scanned": 56,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 249,
-      "stale_count": 1,
-      "alert_id": "1026-0805",
-      "items": [
-        {
-          "title": "De Facto reveals brutality of Belarusian border guard people smugglers",
-          "source": "LSM (Latvia)",
-          "link": "https://eng.lsm.lv/article/society/crime/26.10.2026-de-facto-reveals-brutality-of-belarusian-border-guard-people-smugglers.a669043/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u200b\u200b\u200b\u200b\u200b\u200b\u200bLatvijas austrumos pla\u0161\u0101s daudznacion\u0101l\u0101s milit\u0101r\u0101s m\u0101c\u012bb\u0101s piedal\u012bsies 3000 karav\u012bru",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/26.10.2026-latvijas-austrumos-plasas-daudznacionalas-militaras-macibas-piedalisies-3000-karaviru.a669031/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Donatas \u0160karnulis: ma\u017e\u0117jant cigare\u010di\u0173 kontrabandai i\u0161 Baltarusijos, daug\u0117ja klasto\u010di\u0173 i\u0161 Latvijos",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/donatas-skarnulis-mazejant-cigareciu-kontrabandai-is-baltarusijos-daugeja-klastociu-is-latvijos-59-2792356?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0412\u043e\u0435\u043d\u043d\u044b\u0435 \u0443\u0447\u0435\u043d\u0438\u044f \u0432 \u041d\u0430\u0440\u0432\u0435: \u0434\u043e\u0441\u0442\u0443\u043f \u043a \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u043c \u0442\u0435\u0440\u0440\u0438\u0442\u043e\u0440\u0438\u044f\u043c \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0430\u0442",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610176948/voennye-uchenija-v-narve-dostup-k-neskolkim-territorijam-ogranichat",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0412 \u041b\u0430\u0442\u0432\u0438\u0438 \u043f\u0440\u043e\u0439\u0434\u0443\u0442 \u043a\u0440\u0443\u043f\u043d\u0435\u0439\u0448\u0438\u0435 \u0443\u0447\u0435\u043d\u0438\u044f \u043c\u043d\u043e\u0433\u043e\u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0439 \u0431\u0440\u0438\u0433\u0430\u0434\u044b \u041d\u0410\u0422\u041e \u0437\u0430 \u0432\u0441\u044e \u0435\u0435 \u0438\u0441\u0442\u043e\u0440\u0438\u044e",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610176903/v-latvii-projdut-krupnejshie-uchenija-mnogonacionalnoj-brigady-nato-za-vsju-ee-istoriju",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-26T06:09:42.247448+00:00",
-      "level": "WARN",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 297,
-      "stale_count": 4,
-      "alert_id": "1026-0609",
-      "items": [
-        {
-          "title": "Latvijas austrumu da\u013c\u0101 s\u0101kas v\u0113rien\u012bgas NATO brig\u0101des r\u012bkotas milit\u0101r\u0101s m\u0101c\u012bbas",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/latvija/zinas-71/latvijas-austrumu-dala-sakas-verienigas-nato-brigades-rikotas-militaras-macibas?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Latgal\u0113 s\u0101ksies v\u0113rien\u012bgas NATO brig\u0101des r\u012bkotas milit\u0101r\u0101s m\u0101c\u012bbas",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8571247",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Latvijas austrumos ierad\u012bsies t\u016bksto\u0161iem NATO karav\u012bru: gaid\u0101mas l\u012bdz \u0161im pla\u0161\u0101k\u0101s brig\u0101des m\u0101c\u012bbas",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/735008-latvijas-austrumos-ieradisies-tukstosiem-nato-karaviru-gaidamas-lidz-sim-plasakas-brigades-macibas",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-29T14:21:04.022422+00:00",
+      "level": "WATCH",
+      "title": "\u201eTai absoliu\u010diai nepriimtina\u201c: d\u0117l gynybos biud\u017eeto \u2013 \u012ftampos tarp valdan\u010di\u0173j\u0173 ir Prezident\u016bros",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/tai-absoliuciai-nepriimtina-del-gynybos-biudzeto-itampos-tarp-valdanciuju-ir-prezidenturos-56-2795076?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "economic_military"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-28T14:07:37.052923+00:00",
       "level": "WATCH",
@@ -1044,22 +985,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-26T14:19:46.072706+00:00",
-      "level": "WATCH",
-      "title": "CERT.lv: P\u0113d\u0113jo dienu laik\u0101 biju\u0161i simtiem nesekm\u012bgu m\u0113\u0123in\u0101jumu uzlauzt Latvijas interneta vietnes",
-      "source": "LSM Latvian-language",
-      "link": "https://www.lsm.lv/raksts/zinas/latvija/26.10.2026-certlv-pedejo-dienu-laika-bijusi-simtiem-nesekmigu-meginajumu-uzlauzt-latvijas-interneta-vietnes.a669094/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1244,17 +1169,17 @@
     "window_days": 30,
     "scans": 188,
     "alerting_scans": 144,
-    "held_back_total": 70,
+    "held_back_total": 67,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 33
+        "count": 34
       },
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 31
+        "count": 27
       },
       {
         "reason": "reassurance",
