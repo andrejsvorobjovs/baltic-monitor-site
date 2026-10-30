@@ -1,20 +1,110 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-29T23:23:25.632844+00:00",
+  "last_run_utc": "2026-10-30T07:09:16.305599+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 6.3h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 678,
+  "total_scans": 680,
   "quiet_count": 343,
-  "watch_count": 308,
+  "watch_count": 310,
   "warn_count": 27,
   "correction_count": 4,
-  "generated_at": "2026-10-30 05:43 UTC",
+  "generated_at": "2026-10-30 07:09 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-30T07:09:16.323643+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 218,
+      "stale_count": 6,
+      "alert_id": "1030-0709",
+      "items": [
+        {
+          "title": "\u00ab\u041b\u044e\u0434\u0438 \u043f\u043e\u0431\u0430\u0438\u0432\u0430\u044e\u0442\u0441\u044f, \u043d\u0435 \u043f\u0440\u0438\u0437\u043d\u0430\u044e\u0442\u0441\u044f, \u0447\u0442\u043e \u0443 \u043d\u0438\u0445 \u0442\u0443\u0442 \u043a\u0442\u043e-\u0442\u043e \u0431\u043b\u0438\u0437\u043a\u0438\u0439 \u043b\u0435\u0436\u0438\u0442\u00bb",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/10/30/liudi-pobaivaiutsia-ne-priznaiutsia-chto-u-nikh-tut-kto-to-blizkii-lezhit",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-30T06:22:05.634523+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 234,
+      "stale_count": 0,
+      "alert_id": "1030-0622",
+      "items": [
+        {
+          "title": "Leedu kehtestab 2032. aastast \u00fcldise ajateenistuse",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8574067",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u201eNATO's theory of conventional victory is not enough\u201d [INTERVIEW Defence24]",
+          "source": "Defence24",
+          "link": "https://defence24.com/geopolitics/natos-theory-of-conventional-victory-is-not-enough-interview-defence24",
+          "categories": [
+            "diplomatic",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Bru\u0146oti cilv\u0113ki draud Latvijas karav\u012briem, p\u0113c tam paz\u016bd kameras: \u0101rvalstu mediji ce\u013c trauksmi par notieko\u0161o uz Latvijas robe\u017eas",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/brunoti-cilveki-draud-latvijas-karaviriem-pec-tam-pazud-kameras-arvalstu-mediji-cel-trauksmi-par-notiekoso-uz-latvijas-robezas",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-29T23:23:25.644813+00:00",
       "level": "WATCH",
@@ -593,69 +683,25 @@
       "stale_count": 8,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-26T23:15:04.708989+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 201,
-      "stale_count": 5,
-      "alert_id": "1026-2315",
-      "items": [
-        {
-          "title": "NBS: Latvijas gaisa telp\u0101 neidentific\u0113tais objekts nebija drons - Lasi.lv",
-          "source": "LSM (Latvian-language, via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNX3N0YmlVTkswWmxWek1oTW1XNGRHUzExT0NTX2lfaDIyMmFVczlaWkVYVTNtWUNnSnptb3o2Ukk4R0RydzJGZzQ2TW5xT0xyamRWZHlfS0l6ZVZwOC1QUUt6bkQxOWRNeVNENVBheXdCSmIxcG1TZjFkLTdKcVpBd3EzQ05fS244SkNSNncxTkdPdHA2YnJJZkItOXd1eFZ4U2RGWjZZVQ?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-26T19:22:58.159571+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 334,
-      "stale_count": 4,
-      "alert_id": "1026-1922",
-      "items": [
-        {
-          "title": "\u201cMums \u012bsti nav ne viens, ne otrs!\u201d Endzi\u0146\u0161 br\u012bdina par politiz\u0113tu ier\u0113dniec\u012bbu un \u201cieb\u016bv\u0113tu sabot\u0101\u017eu\u201d valsts p\u0101rvald\u0113",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/mums-isti-nav-ne-viens-ne-otrs-endzins-bridina-par-politizetu-ieredniecibu-un-iebuvetu-sabotazu-valsts-parvalde",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-30T07:09:16.347327+00:00",
+      "level": "WATCH",
+      "title": "\u00ab\u041b\u044e\u0434\u0438 \u043f\u043e\u0431\u0430\u0438\u0432\u0430\u044e\u0442\u0441\u044f, \u043d\u0435 \u043f\u0440\u0438\u0437\u043d\u0430\u044e\u0442\u0441\u044f, \u0447\u0442\u043e \u0443 \u043d\u0438\u0445 \u0442\u0443\u0442 \u043a\u0442\u043e-\u0442\u043e \u0431\u043b\u0438\u0437\u043a\u0438\u0439 \u043b\u0435\u0436\u0438\u0442\u00bb",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/10/30/liudi-pobaivaiutsia-ne-priznaiutsia-chto-u-nikh-tut-kto-to-blizkii-lezhit",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-29T23:23:25.662314+00:00",
       "level": "WATCH",
@@ -879,22 +925,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-10-26T14:19:46.072706+00:00",
-      "level": "WATCH",
-      "title": "Lithuania raises alarm over counterfeit cigarettes from Latvia as smuggling routes shift",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/lithuania/lithuania-raises-alarm-over-counterfeit-cigarettes-from-latvia-as-smuggling-routes-shift-sc3b4d9",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1077,14 +1107,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 186,
-    "alerting_scans": 143,
-    "held_back_total": 64,
+    "scans": 187,
+    "alerting_scans": 144,
+    "held_back_total": 65,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 33
+        "count": 34
       },
       {
         "reason": "already alerted",
