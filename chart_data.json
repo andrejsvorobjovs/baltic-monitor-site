@@ -4759,6 +4759,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-30T14:12:42.460705+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "tier3_count": 1,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6579,6 +6586,10 @@
     {
       "ts": "2026-10-30T07:07:55.370146+00:00",
       "count": 196
+    },
+    {
+      "ts": "2026-10-30T14:11:38.557853+00:00",
+      "count": 175
     }
   ],
   "military_points": [
@@ -8073,6 +8084,10 @@
     {
       "ts": "2026-10-30T07:07:55.806802+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-10-30T14:11:38.987475+00:00",
+      "count": 1
     }
   ],
   "firms_points": [
@@ -9239,6 +9254,10 @@
     {
       "ts": "2026-10-30T07:08:00.110415+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-30T14:11:41.994186+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -10392,6 +10411,10 @@
     },
     {
       "ts": "2026-10-30T07:08:44.268120+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-30T14:12:09.350190+00:00",
       "count": 0
     }
   ],
@@ -16997,6 +17020,33 @@
     {
       "ts": "2026-10-30T07:08:44.271120+00:00",
       "deviation_pct": -44.76710363760984,
+      "sources_included": 4,
+      "narrative": "military aircraft 55% below baseline; thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 55,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-30T14:12:09.353258+00:00",
+      "deviation_pct": -46.67892065783769,
       "sources_included": 4,
       "narrative": "military aircraft 55% below baseline; thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
       "band": "moderately below normal",
