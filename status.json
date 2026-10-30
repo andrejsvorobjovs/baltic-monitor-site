@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-30T14:12:42.443016+00:00",
+  "last_run_utc": "2026-10-30T18:42:50.023288+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.8h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 681,
+  "total_scans": 682,
   "quiet_count": 343,
-  "watch_count": 311,
+  "watch_count": 312,
   "warn_count": 27,
   "correction_count": 4,
-  "generated_at": "2026-10-30 17:59 UTC",
+  "generated_at": "2026-10-30 18:42 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-30T18:42:50.042005+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 444,
+      "stale_count": 4,
+      "alert_id": "1030-1842",
+      "items": [
+        {
+          "title": "D\u0117l oro balionais skraidinam\u0173 siunt\u0173 \u2013 pareig\u016bn\u0173 ir \u012ftariam\u0173j\u0173 kova \u017eem\u0117je",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/del-oro-balionais-skraidinamu-siuntu-pareigunu-ir-itariamuju-kova-zemeje-59-2796420?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvijas austrumu pierobe\u017e\u0101 norisin\u0101sies NBS milit\u0101r\u0101s m\u0101c\u012bbas",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8574526",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvijas austrumu pierobe\u017e\u0101 tren\u0113sies karav\u012bri, robe\u017esargi un policisti",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/735881-latvijas-austrumu-pierobeza-trenesies-karaviri-robezsargi-un-policisti",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Dienos akcentai: JAV ir Lietuvos interes\u0173 skirtis ir \u201eBinance\u201c kaip kibernetin\u0117 auka",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/verslo-aplinka/2026/10/30/dienos-akcentai-jav-ir-lietuvos-interesu-skirtis-ir-binance-kaip-kibernetine-auka-592137",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-10-30T14:12:42.460705+00:00",
       "level": "WATCH",
@@ -683,39 +758,73 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-27T08:20:37.170071+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 5,
-      "tier3_count": 0,
-      "sources_scanned": 56,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 260,
-      "stale_count": 0,
-      "alert_id": "1027-0820",
-      "items": [
-        {
-          "title": "Pabriks nosauc valstis, uz kuru pal\u012bdz\u012bbu Latvija var\u0113tu pa\u013cauties apdraud\u0113juma gad\u012bjum\u0101",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/pabriks-nosauc-valstis-uz-kuru-palidzibu-latvija-varetu-palauties-apdraudejuma-gadijuma",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-10-30T18:42:50.056697+00:00",
+      "level": "WATCH",
+      "title": "Dienos akcentai: JAV ir Lietuvos interes\u0173 skirtis ir \u201eBinance\u201c kaip kibernetin\u0117 auka",
+      "source": "Verslo zinios (Lithuania)",
+      "link": "https://www.vz.lt/verslo-aplinka/2026/10/30/dienos-akcentai-jav-ir-lietuvos-interesu-skirtis-ir-binance-kaip-kibernetine-auka-592137",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-30T18:42:50.056697+00:00",
+      "level": "WATCH",
+      "title": "Latvijas austrumu pierobe\u017e\u0101 tren\u0113sies karav\u012bri, robe\u017esargi un policisti",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/zinas/735881-latvijas-austrumu-pierobeza-trenesies-karaviri-robezsargi-un-policisti",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-30T18:42:50.056697+00:00",
+      "level": "WATCH",
+      "title": "Latvijas austrumu pierobe\u017e\u0101 norisin\u0101sies NBS milit\u0101r\u0101s m\u0101c\u012bbas",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8574526",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-10-30T18:42:50.056697+00:00",
+      "level": "WATCH",
+      "title": "D\u0117l oro balionais skraidinam\u0173 siunt\u0173 \u2013 pareig\u016bn\u0173 ir \u012ftariam\u0173j\u0173 kova \u017eem\u0117je",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/del-oro-balionais-skraidinamu-siuntu-pareigunu-ir-itariamuju-kova-zemeje-59-2796420?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-10-30T14:12:42.484158+00:00",
       "level": "WATCH",
@@ -884,70 +993,6 @@
       "categories": [
         "baltic_specific",
         "shadow_fleet"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-27T13:19:00.373292+00:00",
-      "level": "WATCH",
-      "title": "Ministras L. Savickas: naujame energetikos etape vien nepriklausomyb\u0117s nebepakanka",
-      "source": "Lrytas (Lithuania)",
-      "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/10/27/news/ministras-l-savickas-naujame-energetikos-etape-vien-nepriklausomybes-nebepakanka-44656609",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-27T13:19:00.373292+00:00",
-      "level": "WATCH",
-      "title": "NATO Brigade in Latvia launches 'most extensive' deployment exercises, Latvian army says - The Kyiv Independent",
-      "source": "Kyiv Independent",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaDdoekdRNHJWMnl0cDNWaXpYYmlFak9JSjBRcXBqY3pWaGJ2ekpSbTlUeWFqQjUwamRqOWlUNnFaVVBYVmk2LWp3b0NyMDV1NFVUZ041dUdpeFA5VFJXXzdhNzBkNVdZRlEtaDRkNHBkZ0xrdWtjT294ejRudTIyVmJsSHhaeU9DckZHSTk2eTh0bVBUT3g0QmFEWHhpVkZHa3FSZUVGajg1UXF2Mkd5bEtqUnQ?oc=5",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-26T23:15:04.726028+00:00",
-      "level": "WATCH",
-      "title": "NBS: Latvijas gaisa telp\u0101 neidentific\u0113tais objekts nebija drons - Lasi.lv",
-      "source": "LSM (Latvian-language, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNX3N0YmlVTkswWmxWek1oTW1XNGRHUzExT0NTX2lfaDIyMmFVczlaWkVYVTNtWUNnSnptb3o2Ukk4R0RydzJGZzQ2TW5xT0xyamRWZHlfS0l6ZVZwOC1QUUt6bkQxOWRNeVNENVBheXdCSmIxcG1TZjFkLTdKcVpBd3EzQ05fS244SkNSNncxTkdPdHA2YnJJZkItOXd1eFZ4U2RGWjZZVQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-26T19:22:58.177512+00:00",
-      "level": "WATCH",
-      "title": "\u201cMums \u012bsti nav ne viens, ne otrs!\u201d Endzi\u0146\u0161 br\u012bdina par politiz\u0113tu ier\u0113dniec\u012bbu un \u201cieb\u016bv\u0113tu sabot\u0101\u017eu\u201d valsts p\u0101rvald\u0113",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/mums-isti-nav-ne-viens-ne-otrs-endzins-bridina-par-politizetu-ieredniecibu-un-iebuvetu-sabotazu-valsts-parvalde",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
