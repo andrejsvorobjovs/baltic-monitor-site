@@ -4801,6 +4801,13 @@
       "count": 0,
       "tier3_count": 1,
       "tone": null
+    },
+    {
+      "ts": "2026-10-31T22:34:35.687182+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6649,6 +6656,10 @@
     {
       "ts": "2026-10-31T17:48:59.898333+00:00",
       "count": 188
+    },
+    {
+      "ts": "2026-10-31T22:32:50.814205+00:00",
+      "count": 182
     }
   ],
   "military_points": [
@@ -8167,6 +8178,10 @@
     {
       "ts": "2026-10-31T17:49:00.607032+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-10-31T22:32:51.326173+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -9357,6 +9372,10 @@
     {
       "ts": "2026-10-31T17:49:04.263361+00:00",
       "count": 19
+    },
+    {
+      "ts": "2026-10-31T22:32:55.765284+00:00",
+      "count": 19
     }
   ],
   "entsoe_points": [
@@ -10534,6 +10553,10 @@
     },
     {
       "ts": "2026-10-31T17:49:41.084709+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-31T22:34:08.175988+00:00",
       "count": 0
     }
   ],
@@ -17293,6 +17316,29 @@
     {
       "ts": "2026-10-31T17:49:41.087796+00:00",
       "deviation_pct": -33.474490506803576,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-31T22:34:08.181137+00:00",
+      "deviation_pct": -33.89658416652701,
       "sources_included": 4,
       "narrative": "military aircraft 100% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
       "band": "moderately below normal",
