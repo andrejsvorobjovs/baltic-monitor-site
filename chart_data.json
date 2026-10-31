@@ -4780,6 +4780,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-10-31T07:03:54.933343+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5102,6 +5109,10 @@
     {
       "ts": "2026-10-29T00:00:00+00:00",
       "count": 176
+    },
+    {
+      "ts": "2026-10-30T00:00:00+00:00",
+      "count": 165
     }
   ],
   "ais_points": [
@@ -6612,6 +6623,10 @@
     {
       "ts": "2026-10-30T23:03:08.293511+00:00",
       "count": 178
+    },
+    {
+      "ts": "2026-10-31T07:02:43.630616+00:00",
+      "count": 178
     }
   ],
   "military_points": [
@@ -8118,6 +8133,10 @@
     {
       "ts": "2026-10-30T23:03:08.629514+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-10-31T07:02:44.193888+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -9296,6 +9315,10 @@
     {
       "ts": "2026-10-30T23:03:11.452779+00:00",
       "count": 6
+    },
+    {
+      "ts": "2026-10-31T07:02:48.403101+00:00",
+      "count": 17
     }
   ],
   "entsoe_points": [
@@ -10461,6 +10484,10 @@
     },
     {
       "ts": "2026-10-30T23:04:02.612052+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-10-31T07:03:25.956356+00:00",
       "count": 0
     }
   ],
@@ -17166,6 +17193,29 @@
         "steady": [
           "gpsjam",
           "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-10-31T07:03:25.959414+00:00",
+      "deviation_pct": -37.044766541457584,
+      "sources_included": 4,
+      "narrative": "military aircraft 100% below baseline; GPS jamming, AIS vessel activity, thermal hotspots steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais",
+          "firms"
         ]
       },
       "band_key": "moderate_below",

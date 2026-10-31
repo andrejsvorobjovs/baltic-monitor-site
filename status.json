@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-10-30T23:04:36.696601+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 6.5h ago",
+  "last_run_utc": "2026-10-31T07:03:54.915975+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 683,
-  "quiet_count": 343,
+  "total_scans": 684,
+  "quiet_count": 344,
   "watch_count": 313,
   "warn_count": 27,
   "correction_count": 4,
-  "generated_at": "2026-10-31 05:36 UTC",
+  "generated_at": "2026-10-31 07:03 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-10-31T07:03:54.933343+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 187,
+      "stale_count": 2,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-10-30T23:04:36.715582+00:00",
       "level": "WATCH",
@@ -683,36 +697,6 @@
           "route": "google"
         }
       ]
-    },
-    {
-      "ts": "2026-10-27T14:53:51.726188+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 4,
-      "tier3_count": 0,
-      "sources_scanned": 57,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 232,
-      "stale_count": 0,
-      "alert_id": "1027-1453",
-      "items": [
-        {
-          "title": "Almost 400 migrants detained in Estonia since July",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610178397/almost-400-migrants-detained-in-estonia-since-july",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1136,7 +1120,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 184,
+    "scans": 185,
     "alerting_scans": 142,
     "held_back_total": 62,
     "held_back_by_reason": [
