@@ -2,14 +2,14 @@
   "status_text": "Operating normally",
   "last_run_utc": "2026-10-31T13:45:04.113486+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 3.5h ago",
   "since": "2026-07-19",
   "total_scans": 685,
   "quiet_count": 344,
   "watch_count": 314,
   "warn_count": 27,
   "correction_count": 4,
-  "generated_at": "2026-10-31 13:45 UTC",
+  "generated_at": "2026-10-31 17:14 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
@@ -1120,9 +1120,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 184,
-    "alerting_scans": 141,
-    "held_back_total": 56,
+    "scans": 182,
+    "alerting_scans": 139,
+    "held_back_total": 55,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1137,7 +1137,7 @@
       {
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
-        "count": 4
+        "count": 3
       }
     ],
     "scans_before_tracking": 0
