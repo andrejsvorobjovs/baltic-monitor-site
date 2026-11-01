@@ -4836,6 +4836,20 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-01T20:48:00.304571+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-11-01T22:51:11.016883+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 1,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6704,6 +6718,10 @@
     {
       "ts": "2026-11-01T18:33:27.865533+00:00",
       "count": 147
+    },
+    {
+      "ts": "2026-11-01T22:50:30.275804+00:00",
+      "count": 144
     }
   ],
   "military_points": [
@@ -8238,6 +8256,10 @@
     {
       "ts": "2026-11-01T18:33:28.450127+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-01T22:50:30.616458+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -9444,6 +9466,10 @@
     {
       "ts": "2026-11-01T18:33:32.844516+00:00",
       "count": 3
+    },
+    {
+      "ts": "2026-11-01T22:50:33.833507+00:00",
+      "count": 3
     }
   ],
   "entsoe_points": [
@@ -10637,6 +10663,10 @@
     },
     {
       "ts": "2026-11-01T18:33:56.477927+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-01T22:50:37.455507+00:00",
       "count": 0
     }
   ],
@@ -17504,6 +17534,37 @@
           {
             "signal": "ais",
             "pct": 44,
+            "direction": "below"
+          },
+          {
+            "signal": "military",
+            "pct": 100,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 84,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": "well_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-01T22:50:37.458518+00:00",
+      "deviation_pct": -58.03535590134943,
+      "sources_included": 4,
+      "narrative": "AIS vessel activity 45% below baseline; military aircraft 100% below baseline; thermal hotspots 84% below baseline; GPS jamming steady.",
+      "band": "well below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "ais",
+            "pct": 45,
             "direction": "below"
           },
           {
