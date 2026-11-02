@@ -1,20 +1,260 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-02T07:44:19.616041+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-11-02T17:09:05.890176+00:00",
+  "last_level": "WARN",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 694,
+  "total_scans": 696,
   "quiet_count": 350,
-  "watch_count": 317,
-  "warn_count": 27,
+  "watch_count": 318,
+  "warn_count": 28,
   "correction_count": 4,
-  "generated_at": "2026-11-02 07:44 UTC",
+  "generated_at": "2026-11-02 17:09 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-02T17:09:05.907412+00:00",
+      "level": "WARN",
+      "count": 11,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 610,
+      "stale_count": 3,
+      "alert_id": "1102-1709",
+      "items": [
+        {
+          "title": "Poland launches counter-terror op over Kaliningrad 'sabotage' threats - TVP World",
+          "source": "TVP World (Poland)",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSEY4U1A4STlIbTRVQng4bDZHQ29aUDBVbTI4bk5KRjlsRGk1WFR1QzZFQ2ZQR3NBdnVsLWhOaHg3QTRLNzE4SGtXbVl4dEd0SU55NHE1c0RlLWhVMG9nZ19MOUsyd2RQUm83dVhHbG1FbVZjQ2MtbnVRMU9KVUVqUWxpOWN4TmxrSkZNTWRNUQ?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Defense Forces broke law on Ukrainian soldier training background checks",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610183362/defense-forces-broke-law-on-ukrainian-soldier-training-background-checks",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvia sends 'mobile surveillance device' to eastern border",
+          "source": "LSM (Latvia)",
+          "link": "https://eng.lsm.lv/article/society/defence/02.11.2026-latvia-sends-mobile-surveillance-device-to-eastern-border.a670167/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Aicina ziedot dronu ieg\u0101dei Latvijas zemessargiem un Ukrainas armijai",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/latvija/02.11.2026-aicina-ziedot-dronu-iegadei-latvijas-zemessargiem-un-ukrainas-armijai.a670204/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Hakeri ielauzu\u0161ies vair\u0101ku Eiropas valstu veikalu sald\u0113\u0161anas sist\u0113m\u0101s; m\u0113\u0123in\u0101jumi biju\u0161i ar\u012b Latvij\u0101",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/02.11.2026-hakeri-ielauzusies-vairaku-eiropas-valstu-veikalu-saldesanas-sistemas-meginajumi-bijusi-ari-latvija.a670200/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Selverit ja muu Euroopa poode tabanud k\u00fclmaseadmete k\u00fcberr\u00fcnnak on alles algus",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8575891",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Hakeri s\u0101k uzbrukumus Eiropas p\u0101rtikas veikaliem, tostarp Igaunij\u0101: apdraud\u0113ta p\u0101rtikas dro\u0161\u012bba",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/hakeri-sak-uzbrukumus-eiropas-partikas-veikaliem-tostarp-igaunija-apdraudeta-partikas-drosiba",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvija pievienojas Eiropas Aizsardz\u012bbas aliansei uz\u0146\u0113mumu izaugsmei un invest\u012bciju piesaistei",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/bizness/736249-latvija-pievienojas-eiropas-aizsardzibas-aliansei-uznemumu-izaugsmei-un-investiciju-piesaistei",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Jelgavas policija turpm\u0101k noziedzniekus mekl\u0113s ar\u012b no gaisa",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/736222-jelgavas-policija-turpmak-noziedzniekus-mekles-ari-no-gaisa",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Eiropas lielveikalus satricina kiberuzbrukumi sald\u0113\u0161anas iek\u0101rt\u0101m",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/736209-eiropas-lielveikalus-satricina-kiberuzbrukumi-saldesanas-iekartam",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "K\u00fcberr\u00fcnnak keeras Eesti toidupoe k\u00fclmikud 50 kraadi peale",
+          "source": "Aripaev (Estonia)",
+          "link": "https://www.aripaev.ee/uudised/2026/11/02/kuberrunnak-keeras-eesti-toidupoe-kulmikud-50-kraadi-peale",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-02T09:54:24.180042+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 262,
+      "stale_count": 0,
+      "alert_id": "1102-0954",
+      "items": [
+        {
+          "title": "K\u00fcberr\u00fcndaja t\u00f5stis Eesti suurpoe k\u00fclmleti temperatuuri 50 soojakraadini",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610183272/kuberrundaja-tostis-eesti-suurpoe-kulmleti-temperatuuri-50-soojakraadini",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0425\u0430\u043a\u0435\u0440\u044b \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043b\u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u0443 \u043e\u0445\u043b\u0430\u0436\u0434\u0435\u043d\u0438\u044f \u043a\u0440\u0443\u043f\u043d\u043e\u0439 \u0442\u043e\u0440\u0433\u043e\u0432\u043e\u0439 \u0441\u0435\u0442\u0438 \u0432 \u042d\u0441\u0442\u043e\u043d\u0438\u0438",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610183302/hakery-atakovali-sistemu-ohlazhdenija-krupnoj-torgovoj-seti-v-jestonii",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "T\u00e4na hommikul toimus Eestis k\u00fcberr\u00fcnnak toidukaupluse k\u00fclmas\u00fcsteemi vastu",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8575560",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-02T07:44:19.630136+00:00",
       "level": "WATCH",
@@ -607,84 +847,185 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-29T14:21:03.997065+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 320,
-      "stale_count": 14,
-      "alert_id": "1029-1421",
-      "items": [
-        {
-          "title": "\u201eTai absoliu\u010diai nepriimtina\u201c: d\u0117l gynybos biud\u017eeto \u2013 \u012ftampos tarp valdan\u010di\u0173j\u0173 ir Prezident\u016bros",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/tai-absoliuciai-nepriimtina-del-gynybos-biudzeto-itampos-tarp-valdanciuju-ir-prezidenturos-56-2795076?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-10-29T13:39:21.506575+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 526,
-      "stale_count": 0,
-      "alert_id": "1029-1339",
-      "items": [
-        {
-          "title": "Atbildot uz Baltijas valstu l\u016bgumu pie\u0161\u0137irt 500 miljonus eiro pretdronu aizsardz\u012bbai, EK mudina izmantot SAFE aizdevumus",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/pasaule/baltijas-valstis/atbildot-uz-baltijas-valstu-lugumu-pieskirt-500-miljonus-eiro-pretdronu-aizsardzibai-ek-mudina-izmantot-safe-aizdevumus?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lithuania has decided. Universal conscription will return",
-          "source": "Defence24",
-          "link": "https://defence24.com/defence-policy/lithuania-has-decided-universal-conscription-will-return",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "K\u00fcberr\u00fcnnak keeras Eesti toidupoe k\u00fclmikud 50 kraadi peale",
+      "source": "Aripaev (Estonia)",
+      "link": "https://www.aripaev.ee/uudised/2026/11/02/kuberrunnak-keeras-eesti-toidupoe-kulmikud-50-kraadi-peale",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Eiropas lielveikalus satricina kiberuzbrukumi sald\u0113\u0161anas iek\u0101rt\u0101m",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/arzemes/736209-eiropas-lielveikalus-satricina-kiberuzbrukumi-saldesanas-iekartam",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Jelgavas policija turpm\u0101k noziedzniekus mekl\u0113s ar\u012b no gaisa",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/zinas/736222-jelgavas-policija-turpmak-noziedzniekus-mekles-ari-no-gaisa",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Latvija pievienojas Eiropas Aizsardz\u012bbas aliansei uz\u0146\u0113mumu izaugsmei un invest\u012bciju piesaistei",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/bizness/736249-latvija-pievienojas-eiropas-aizsardzibas-aliansei-uznemumu-izaugsmei-un-investiciju-piesaistei",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Hakeri s\u0101k uzbrukumus Eiropas p\u0101rtikas veikaliem, tostarp Igaunij\u0101: apdraud\u0113ta p\u0101rtikas dro\u0161\u012bba",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/hakeri-sak-uzbrukumus-eiropas-partikas-veikaliem-tostarp-igaunija-apdraudeta-partikas-drosiba",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Selverit ja muu Euroopa poode tabanud k\u00fclmaseadmete k\u00fcberr\u00fcnnak on alles algus",
+      "source": "Postimees Estonian-language",
+      "link": "https://pmo.ee/8575891",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Hakeri ielauzu\u0161ies vair\u0101ku Eiropas valstu veikalu sald\u0113\u0161anas sist\u0113m\u0101s; m\u0113\u0123in\u0101jumi biju\u0161i ar\u012b Latvij\u0101",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/arzemes/02.11.2026-hakeri-ielauzusies-vairaku-eiropas-valstu-veikalu-saldesanas-sistemas-meginajumi-bijusi-ari-latvija.a670200/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Aicina ziedot dronu ieg\u0101dei Latvijas zemessargiem un Ukrainas armijai",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/latvija/02.11.2026-aicina-ziedot-dronu-iegadei-latvijas-zemessargiem-un-ukrainas-armijai.a670204/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Latvia sends 'mobile surveillance device' to eastern border",
+      "source": "LSM (Latvia)",
+      "link": "https://eng.lsm.lv/article/society/defence/02.11.2026-latvia-sends-mobile-surveillance-device-to-eastern-border.a670167/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Defense Forces broke law on Ukrainian soldier training background checks",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610183362/defense-forces-broke-law-on-ukrainian-soldier-training-background-checks",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-02T17:09:05.931685+00:00",
+      "level": "WARN",
+      "title": "Poland launches counter-terror op over Kaliningrad 'sabotage' threats - TVP World",
+      "source": "TVP World (Poland)",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSEY4U1A4STlIbTRVQng4bDZHQ29aUDBVbTI4bk5KRjlsRGk1WFR1QzZFQ2ZQR3NBdnVsLWhOaHg3QTRLNzE4SGtXbVl4dEd0SU55NHE1c0RlLWhVMG9nZ19MOUsyd2RQUm83dVhHbG1FbVZjQ2MtbnVRMU9KVUVqUWxpOWN4TmxrSkZNTWRNUQ?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-02T07:44:19.648127+00:00",
       "level": "WATCH",
@@ -740,181 +1081,6 @@
       "title": "Aicina ziedot dronu ieg\u0101dei gan Ukrainas armijai, gan Latvijas Zemessardzei",
       "source": "TVNET (Latvia)",
       "link": "https://pmo.ee/8575329",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-31T13:45:04.154483+00:00",
-      "level": "WATCH",
-      "title": "Dangerous NATO plan for Suwalki and Kaliningrad: Russia warns of first strike - Bankingnews",
-      "source": "Baltic MoDs (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeDRJTjlXRXJtdlh3QWhpOWZzLU5tSkxhYmpIcEt3SmgzZ0t4aTBlX3dGWVZUZHptWmsybjdNSzZHZG5uZmF5LXV6U1JxQjdHTndhaVBHRlM0Q2NaN2tpU3dOTE5sUmRRU05aVkhCelFPaG90TEVZZ1VoSWJMYkRHUFBVZU81TmU5OFdjOHBnZmdpNVptRXhjS2hmUEFyUXlhMVoxa2dmcl9xZW4zUUVUNWRfMEtxSjhLNVE5dlZ2Ym10OWtHemc?oc=5",
-      "categories": [
-        "baltic_specific",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-30T23:04:36.740892+00:00",
-      "level": "WATCH",
-      "title": "Baltarusijos pasienyje VSAT pareig\u016bnai per\u0117m\u0117 oro balionu atskraidintas cigaretes",
-      "source": "Delfi Lithuania",
-      "link": "https://www.delfi.lt/naujienos/kriminalai/baltarusijos-pasienyje-vsat-pareigunai-pereme-oro-balionu-atskraidintas-cigaretes-120327439",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-30T18:42:50.056697+00:00",
-      "level": "WATCH",
-      "title": "Dienos akcentai: JAV ir Lietuvos interes\u0173 skirtis ir \u201eBinance\u201c kaip kibernetin\u0117 auka",
-      "source": "Verslo zinios (Lithuania)",
-      "link": "https://www.vz.lt/verslo-aplinka/2026/10/30/dienos-akcentai-jav-ir-lietuvos-interesu-skirtis-ir-binance-kaip-kibernetine-auka-592137",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-30T18:42:50.056697+00:00",
-      "level": "WATCH",
-      "title": "Latvijas austrumu pierobe\u017e\u0101 tren\u0113sies karav\u012bri, robe\u017esargi un policisti",
-      "source": "Jauns.lv (Latvia)",
-      "link": "https://jauns.lv/raksts/zinas/735881-latvijas-austrumu-pierobeza-trenesies-karaviri-robezsargi-un-policisti",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-30T18:42:50.056697+00:00",
-      "level": "WATCH",
-      "title": "Latvijas austrumu pierobe\u017e\u0101 norisin\u0101sies NBS milit\u0101r\u0101s m\u0101c\u012bbas",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8574526",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-30T18:42:50.056697+00:00",
-      "level": "WATCH",
-      "title": "D\u0117l oro balionais skraidinam\u0173 siunt\u0173 \u2013 pareig\u016bn\u0173 ir \u012ftariam\u0173j\u0173 kova \u017eem\u0117je",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/del-oro-balionais-skraidinamu-siuntu-pareigunu-ir-itariamuju-kova-zemeje-59-2796420?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-30T14:12:42.484158+00:00",
-      "level": "WATCH",
-      "title": "Baltarusijos pasienyje pasienie\u010diai per\u0117m\u0117 oro balionu atskraidintas cigaretes ir sulaik\u0117 du j\u0173 atva\u017eiavusius vyrus",
-      "source": "Lrytas (Lithuania)",
-      "link": "https://www.lrytas.lt/lietuvosdiena/kriminalai/2026/10/30/news/baltarusijos-pasienyje-pasienieciai-pereme-oro-balionu-atskraidintas-cigaretes-ir-sulaike-du-ju-atvaziavusius-vyrus-44714951",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-30T14:12:42.484158+00:00",
-      "level": "WATCH",
-      "title": "Putin Test Fires Nuclear-Capable Missile Amid Dispute Over NATO Phone Call - Newsweek",
-      "source": "Baltic MoDs (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOOWRDMlI3ZmpldzdqWUZtanppUEplcllDYVdTYXBaczJmUWxUcFFvM0NpT0NSbXYxTXFSTEp0SzRKN3d1MTZQNjVNaHgyNW1XcjdISExKT0RiWkFSaUYwcFgxWVpKVDBWMldzbXFCeGR5OEV6WmthR2NFNTQySEEtZFBTdC0xYjhLVXVQUUM0WUgwUVI5SXpR?oc=5",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-30T07:09:16.347327+00:00",
-      "level": "WATCH",
-      "title": "\u00ab\u041b\u044e\u0434\u0438 \u043f\u043e\u0431\u0430\u0438\u0432\u0430\u044e\u0442\u0441\u044f, \u043d\u0435 \u043f\u0440\u0438\u0437\u043d\u0430\u044e\u0442\u0441\u044f, \u0447\u0442\u043e \u0443 \u043d\u0438\u0445 \u0442\u0443\u0442 \u043a\u0442\u043e-\u0442\u043e \u0431\u043b\u0438\u0437\u043a\u0438\u0439 \u043b\u0435\u0436\u0438\u0442\u00bb",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/10/30/liudi-pobaivaiutsia-ne-priznaiutsia-chto-u-nikh-tut-kto-to-blizkii-lezhit",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-29T23:23:25.662314+00:00",
-      "level": "WATCH",
-      "title": "Lithuania to introduce universal military conscription in 2032, president says - LRT",
-      "source": "LRT (Lithuania)",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUnhsaEtadkhkbkNMN0puNWJCVjJfaU5CYmlzWVFiU0dLVlZpWXBsQmh0ZUVLcDgxY3JScWlySDZhcGQ3azBIX3lwYTdtdXZxZVNIbUtvUXRoZjIwYVI0MDdWWHQ2eWtfLS1YVE53QUc3SHpwRkNaX09jOTFWN3RKeGxUZVJOX1hsSmdMNGdPWlhHdVB2YTVjMnhYSmhMUTM2QnFzUzIyMmVvN28xaUszRWZxWHN6OEsxcHE4Z2ozMUU5ekhf?oc=5",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-10-29T19:05:44.306334+00:00",
-      "level": "WATCH",
-      "title": "Eesti vahet s\u00f5itev laevafirma teatas andmelekkest broneerimiss\u00fcsteemis",
-      "source": "Aripaev (Estonia)",
-      "link": "https://www.aripaev.ee/uudised/2026/10/29/eesti-vahet-soitev-laevafirma-teatas-andmelekkest-broneerimissusteemis",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
@@ -1106,8 +1272,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 181,
-    "alerting_scans": 134,
+    "scans": 180,
+    "alerting_scans": 133,
     "held_back_total": 55,
     "held_back_by_reason": [
       {
