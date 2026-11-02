@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-02T17:09:05.890176+00:00",
-  "last_level": "WARN",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "last_run_utc": "2026-11-02T20:30:31.304016+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 1.2h ago",
   "since": "2026-07-19",
-  "total_scans": 696,
+  "total_scans": 697,
   "quiet_count": 350,
-  "watch_count": 318,
+  "watch_count": 319,
   "warn_count": 28,
   "correction_count": 4,
-  "generated_at": "2026-11-02 17:09 UTC",
+  "generated_at": "2026-11-02 21:41 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-02T20:30:31.287983+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 242,
+      "stale_count": 2,
+      "alert_id": "1102-2030",
+      "items": [
+        {
+          "title": "\u0425\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0438 \u0432 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445 \u0441\u0442\u0440\u0430\u043d \u0415\u0421 \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043d\u044b \u0445\u0430\u043a\u0435\u0440\u0430\u043c\u0438, \u043f\u043e\u043f\u044b\u0442\u043a\u0438 \u0431\u044b\u043b\u0438 \u0438 \u0432 \u041b\u0430\u0442\u0432\u0438\u0438",
+          "source": "LSM Russian-language",
+          "link": "https://rus.lsm.lv/statja/novosti/mir/02.11.2026-xolodilniki-v-magazinax-neskolkix-stran-es-atakovany-xakerami-popytki-byli-i-v-latvii.a670262/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-02T17:09:05.907412+00:00",
       "level": "WARN",
@@ -802,51 +832,6 @@
           "route": "google"
         }
       ]
-    },
-    {
-      "ts": "2026-10-29T19:05:44.285807+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 454,
-      "stale_count": 3,
-      "alert_id": "1029-1905",
-      "items": [
-        {
-          "title": "Lithuania plans to\u00a0introduce universal military conscription for men ages 18\u201322 starting in\u00a02032",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/10/29/lithuania-plans-to-introduce-universal-military-conscription-for-men-ages-18-22-starting-in-2032",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Eesti vahet s\u00f5itev laevafirma teatas andmelekkest broneerimiss\u00fcsteemis",
-          "source": "Aripaev (Estonia)",
-          "link": "https://www.aripaev.ee/uudised/2026/10/29/eesti-vahet-soitev-laevafirma-teatas-andmelekkest-broneerimissusteemis",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1273,8 +1258,8 @@
   "filter_record": {
     "window_days": 30,
     "scans": 180,
-    "alerting_scans": 133,
-    "held_back_total": 55,
+    "alerting_scans": 134,
+    "held_back_total": 56,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1284,7 +1269,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 20
+        "count": 21
       },
       {
         "reason": "reassurance",
