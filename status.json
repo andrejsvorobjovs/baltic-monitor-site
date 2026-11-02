@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-02T20:30:31.304016+00:00",
+  "last_run_utc": "2026-11-02T22:27:01.234438+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.2h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 697,
+  "total_scans": 698,
   "quiet_count": 350,
-  "watch_count": 319,
+  "watch_count": 320,
   "warn_count": 28,
   "correction_count": 4,
-  "generated_at": "2026-11-02 21:41 UTC",
+  "generated_at": "2026-11-02 22:27 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-02T22:27:01.252847+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 189,
+      "stale_count": 3,
+      "alert_id": "1102-2227",
+      "items": [
+        {
+          "title": "\"Tot\u0101li neesam gatavi.\" Ko kr\u012bzes m\u0101ca Latvijai",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8575863",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-02T20:30:31.287983+00:00",
       "level": "WATCH",
@@ -802,39 +832,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-29T23:23:25.644813+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 247,
-      "stale_count": 1,
-      "alert_id": "1029-2323",
-      "items": [
-        {
-          "title": "Lithuania to introduce universal military conscription in 2032, president says - LRT",
-          "source": "LRT (Lithuania)",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUnhsaEtadkhkbkNMN0puNWJCVjJfaU5CYmlzWVFiU0dLVlZpWXBsQmh0ZUVLcDgxY3JScWlySDZhcGQ3azBIX3lwYTdtdXZxZVNIbUtvUXRoZjIwYVI0MDdWWHQ2eWtfLS1YVE53QUc3SHpwRkNaX09jOTFWN3RKeGxUZVJOX1hsSmdMNGdPWlhHdVB2YTVjMnhYSmhMUTM2QnFzUzIyMmVvN28xaUszRWZxWHN6OEsxcHE4Z2ozMUU5ekhf?oc=5",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-02T22:27:01.278037+00:00",
+      "level": "WATCH",
+      "title": "\"Tot\u0101li neesam gatavi.\" Ko kr\u012bzes m\u0101ca Latvijai",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8575863",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-02T17:09:05.931685+00:00",
       "level": "WARN",
@@ -1059,22 +1075,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T07:44:19.648127+00:00",
-      "level": "WATCH",
-      "title": "Aicina ziedot dronu ieg\u0101dei gan Ukrainas armijai, gan Latvijas Zemessardzei",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8575329",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1258,7 +1258,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 180,
-    "alerting_scans": 134,
+    "alerting_scans": 135,
     "held_back_total": 56,
     "held_back_by_reason": [
       {
