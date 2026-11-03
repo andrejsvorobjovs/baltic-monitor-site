@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-02T22:27:01.234438+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-11-03T01:42:31.786597+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 698,
-  "quiet_count": 350,
+  "total_scans": 699,
+  "quiet_count": 351,
   "watch_count": 320,
   "warn_count": 28,
   "correction_count": 4,
-  "generated_at": "2026-11-02 22:27 UTC",
+  "generated_at": "2026-11-03 01:42 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-03T01:42:31.804911+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 92,
+      "stale_count": 7,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-11-02T22:27:01.252847+00:00",
       "level": "WATCH",
@@ -772,66 +786,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-30T06:22:05.634523+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 58,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 234,
-      "stale_count": 0,
-      "alert_id": "1030-0622",
-      "items": [
-        {
-          "title": "Leedu kehtestab 2032. aastast \u00fcldise ajateenistuse",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8574067",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201eNATO's theory of conventional victory is not enough\u201d [INTERVIEW Defence24]",
-          "source": "Defence24",
-          "link": "https://defence24.com/geopolitics/natos-theory-of-conventional-victory-is-not-enough-interview-defence24",
-          "categories": [
-            "diplomatic",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Bru\u0146oti cilv\u0113ki draud Latvijas karav\u012briem, p\u0113c tam paz\u016bd kameras: \u0101rvalstu mediji ce\u013c trauksmi par notieko\u0161o uz Latvijas robe\u017eas",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/brunoti-cilveki-draud-latvijas-karaviriem-pec-tam-pazud-kameras-arvalstu-mediji-cel-trauksmi-par-notiekoso-uz-latvijas-robezas",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1257,7 +1211,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 180,
+    "scans": 181,
     "alerting_scans": 135,
     "held_back_total": 56,
     "held_back_by_reason": [
