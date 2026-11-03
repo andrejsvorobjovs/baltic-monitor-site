@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-03T18:00:50.400863+00:00",
-  "last_level": "WARN",
-  "freshness_msg": "Last scan: 1.5h ago",
+  "last_run_utc": "2026-11-03T20:13:13.233972+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 703,
+  "total_scans": 704,
   "quiet_count": 351,
-  "watch_count": 323,
+  "watch_count": 324,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-03 19:28 UTC",
+  "generated_at": "2026-11-03 20:13 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-03T20:13:13.251089+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 299,
+      "stale_count": 9,
+      "alert_id": "1103-2013",
+      "items": [
+        {
+          "title": "Lithuania stopped 26 migrants at border with Belarus in recent days - Delfi",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcDc0N000THhrdDNYNlRFX2lFQW5oZUxRcnZPamNEQlR4bUJBdU9vOGc0QlR2Uld6UEU4YzZSTEZlSHFwOFkxbGVYV1NOYm9LVGhGLVM5ZFdOOWtUR3BmZWJsWWpvZHBMWGpzbzdqcTN0Y3p1QlNFOW5Jc1Y4Qk5hNFN2bVZaU3FpZnY2TzVQclhxZ2RMc3lxa2hzTkNWSEFYenhzaWdSdkRHRDVwMHJr?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Europos prekybininkams nukent\u0117jus nuo kibernetini\u0173 atak\u0173, sureagavo tinklai Lietuvoje",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/verslas/naujienos/europos-prekybininkams-nukentejus-nuo-kibernetiniu-ataku-sureagavo-tinklai-lietuvoje-120328553",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Prime Minister Donald Tusk says Poland prevented a\u00a0possible provocation on\u00a0the border with Russia\u2019s Kaliningrad exclave after spotting \u2018people with flashlights\u2019",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/news/2026/11/03/prime-minister-donald-tusk-says-poland-prevented-a-possible-provocation-on-the-border-with-russia-s-kaliningrad-exclave-after-spotting-people-with-flashlights",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-03T18:00:50.378156+00:00",
       "level": "WARN",
@@ -1013,23 +1073,57 @@
           "route": "google"
         }
       ]
-    },
-    {
-      "ts": "2026-10-31T07:03:54.933343+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 187,
-      "stale_count": 2,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-03T20:13:13.281994+00:00",
+      "level": "WATCH",
+      "title": "Prime Minister Donald Tusk says Poland prevented a\u00a0possible provocation on\u00a0the border with Russia\u2019s Kaliningrad exclave after spotting \u2018people with flashlights\u2019",
+      "source": "Meduza",
+      "link": "https://meduza.io/en/news/2026/11/03/prime-minister-donald-tusk-says-poland-prevented-a-possible-provocation-on-the-border-with-russia-s-kaliningrad-exclave-after-spotting-people-with-flashlights",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-03T20:13:13.281994+00:00",
+      "level": "WATCH",
+      "title": "Europos prekybininkams nukent\u0117jus nuo kibernetini\u0173 atak\u0173, sureagavo tinklai Lietuvoje",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/verslas/naujienos/europos-prekybininkams-nukentejus-nuo-kibernetiniu-ataku-sureagavo-tinklai-lietuvoje-120328553",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-03T20:13:13.281994+00:00",
+      "level": "WATCH",
+      "title": "Lithuania stopped 26 migrants at border with Belarus in recent days - Delfi",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcDc0N000THhrdDNYNlRFX2lFQW5oZUxRcnZPamNEQlR4bUJBdU9vOGc0QlR2Uld6UEU4YzZSTEZlSHFwOFkxbGVYV1NOYm9LVGhGLVM5ZFdOOWtUR3BmZWJsWWpvZHBMWGpzbzdqcTN0Y3p1QlNFOW5Jc1Y4Qk5hNFN2bVZaU3FpZnY2TzVQclhxZ2RMc3lxa2hzTkNWSEFYenhzaWdSdkRHRDVwMHJr?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-03T15:11:34.549020+00:00",
       "level": "WATCH",
@@ -1221,54 +1315,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T17:09:05.931685+00:00",
-      "level": "WARN",
-      "title": "Eiropas lielveikalus satricina kiberuzbrukumi sald\u0113\u0161anas iek\u0101rt\u0101m",
-      "source": "Jauns.lv (Latvia)",
-      "link": "https://jauns.lv/raksts/arzemes/736209-eiropas-lielveikalus-satricina-kiberuzbrukumi-saldesanas-iekartam",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T17:09:05.931685+00:00",
-      "level": "WARN",
-      "title": "Jelgavas policija turpm\u0101k noziedzniekus mekl\u0113s ar\u012b no gaisa",
-      "source": "Jauns.lv (Latvia)",
-      "link": "https://jauns.lv/raksts/zinas/736222-jelgavas-policija-turpmak-noziedzniekus-mekles-ari-no-gaisa",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T17:09:05.931685+00:00",
-      "level": "WARN",
-      "title": "Latvija pievienojas Eiropas Aizsardz\u012bbas aliansei uz\u0146\u0113mumu izaugsmei un invest\u012bciju piesaistei",
-      "source": "Jauns.lv (Latvia)",
-      "link": "https://jauns.lv/raksts/bizness/736249-latvija-pievienojas-eiropas-aizsardzibas-aliansei-uznemumu-izaugsmei-un-investiciju-piesaistei",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1453,7 +1499,7 @@
     "window_days": 30,
     "scans": 182,
     "alerting_scans": 137,
-    "held_back_total": 58,
+    "held_back_total": 60,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1463,7 +1509,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 23
+        "count": 25
       },
       {
         "reason": "reassurance",
