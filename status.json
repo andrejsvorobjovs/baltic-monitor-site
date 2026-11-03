@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-03T01:42:31.786597+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 5.0h ago",
+  "last_run_utc": "2026-11-03T07:57:53.261841+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 699,
+  "total_scans": 700,
   "quiet_count": 351,
-  "watch_count": 320,
+  "watch_count": 321,
   "warn_count": 28,
   "correction_count": 4,
-  "generated_at": "2026-11-03 06:43 UTC",
+  "generated_at": "2026-11-03 07:57 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-03T07:57:53.280679+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 474,
+      "stale_count": 4,
+      "alert_id": "1103-0757",
+      "items": [
+        {
+          "title": "PPA: Illegal immigration to Estonia has fallen, but may rise next spring",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610184128/ppa-illegal-immigration-to-estonia-has-fallen-but-may-rise-next-spring",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lenkija pasienyje su Kaliningradu prad\u0117jo speciali\u0105j\u0105 saugumo operacij\u0105",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/uzsienyje/lenkija-pasienyje-su-kaliningradu-pradejo-specialiaja-saugumo-operacija-120328065",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041f\u043e\u043b\u044c\u0448\u0430 \u043d\u0430\u0447\u0430\u043b\u0430 \u0441\u043f\u0435\u0446\u043e\u043f\u0435\u0440\u0430\u0446\u0438\u044e \u0443 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0441 \u0420\u043e\u0441\u0441\u0438\u0435\u0439 \u0438\u0437-\u0437\u0430 \u0440\u0438\u0441\u043a\u0430 \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u0439",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610184208/polsha-nachala-specoperaciju-u-granicy-s-rossiej-iz-za-riska-diversij",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Kaliningrad in NATO\u2019s sights. Russia\u2019s fortress could fall in the opening minutes of war",
+          "source": "Defence24",
+          "link": "https://defence24.com/geopolitics/kaliningrad-in-natos-sights-russias-fortress-could-fall-in-the-opening-minutes-of-war",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-03T01:42:31.804911+00:00",
       "level": "QUIET",
@@ -756,39 +831,73 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-10-30T07:09:16.323643+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 218,
-      "stale_count": 6,
-      "alert_id": "1030-0709",
-      "items": [
-        {
-          "title": "\u00ab\u041b\u044e\u0434\u0438 \u043f\u043e\u0431\u0430\u0438\u0432\u0430\u044e\u0442\u0441\u044f, \u043d\u0435 \u043f\u0440\u0438\u0437\u043d\u0430\u044e\u0442\u0441\u044f, \u0447\u0442\u043e \u0443 \u043d\u0438\u0445 \u0442\u0443\u0442 \u043a\u0442\u043e-\u0442\u043e \u0431\u043b\u0438\u0437\u043a\u0438\u0439 \u043b\u0435\u0436\u0438\u0442\u00bb",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/10/30/liudi-pobaivaiutsia-ne-priznaiutsia-chto-u-nikh-tut-kto-to-blizkii-lezhit",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-03T07:57:53.306055+00:00",
+      "level": "WATCH",
+      "title": "Kaliningrad in NATO\u2019s sights. Russia\u2019s fortress could fall in the opening minutes of war",
+      "source": "Defence24",
+      "link": "https://defence24.com/geopolitics/kaliningrad-in-natos-sights-russias-fortress-could-fall-in-the-opening-minutes-of-war",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-03T07:57:53.306055+00:00",
+      "level": "WATCH",
+      "title": "\u041f\u043e\u043b\u044c\u0448\u0430 \u043d\u0430\u0447\u0430\u043b\u0430 \u0441\u043f\u0435\u0446\u043e\u043f\u0435\u0440\u0430\u0446\u0438\u044e \u0443 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0441 \u0420\u043e\u0441\u0441\u0438\u0435\u0439 \u0438\u0437-\u0437\u0430 \u0440\u0438\u0441\u043a\u0430 \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u0439",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610184208/polsha-nachala-specoperaciju-u-granicy-s-rossiej-iz-za-riska-diversij",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-03T07:57:53.306055+00:00",
+      "level": "WATCH",
+      "title": "Lenkija pasienyje su Kaliningradu prad\u0117jo speciali\u0105j\u0105 saugumo operacij\u0105",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/uzsienyje/lenkija-pasienyje-su-kaliningradu-pradejo-specialiaja-saugumo-operacija-120328065",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-03T07:57:53.306055+00:00",
+      "level": "WATCH",
+      "title": "PPA: Illegal immigration to Estonia has fallen, but may rise next spring",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610184128/ppa-illegal-immigration-to-estonia-has-fallen-but-may-rise-next-spring",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-02T22:27:01.278037+00:00",
       "level": "WATCH",
@@ -958,71 +1067,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T17:09:05.931685+00:00",
-      "level": "WARN",
-      "title": "Poland launches counter-terror op over Kaliningrad 'sabotage' threats - TVP World",
-      "source": "TVP World (Poland)",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSEY4U1A4STlIbTRVQng4bDZHQ29aUDBVbTI4bk5KRjlsRGk1WFR1QzZFQ2ZQR3NBdnVsLWhOaHg3QTRLNzE4SGtXbVl4dEd0SU55NHE1c0RlLWhVMG9nZ19MOUsyd2RQUm83dVhHbG1FbVZjQ2MtbnVRMU9KVUVqUWxpOWN4TmxrSkZNTWRNUQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T07:44:19.648127+00:00",
-      "level": "WATCH",
-      "title": "\u0412 \u043e\u043a\u043e\u043f\u044b \u043d\u0430 \u043f\u0435\u0440\u0435\u0441\u0434\u0430\u0447\u0443",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/11/02/v-okopy-na-peresdachu",
-      "categories": [
-        "troop_movement",
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T07:44:19.648127+00:00",
-      "level": "WATCH",
-      "title": "Latvija prane\u0161\u0117 apie trumpalaik\u012f oro erdv\u0117s pa\u017eeidim\u0105",
-      "source": "Lrytas (Lithuania)",
-      "link": "https://www.lrytas.lt/pasaulis/konfliktai-ir-saugumas/2026/11/02/news/latvija-pranese-apie-trumpalaiki-oro-erdves-pazeidima-44735468",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T07:44:19.648127+00:00",
-      "level": "WATCH",
-      "title": "Eesti kaitsev\u00e4e leitnant Medvedev ei armasta suuri s\u00f5nu patriotismist, kuid usub kohusetundesse",
-      "source": "Postimees Estonian-language",
-      "link": "https://pmo.ee/8574654",
-      "categories": [
-        "baltic_specific",
-        "economic_military"
       ],
       "tier": "tier2",
       "gdelt_category": "",
@@ -1213,12 +1257,12 @@
     "window_days": 30,
     "scans": 181,
     "alerting_scans": 135,
-    "held_back_total": 56,
+    "held_back_total": 57,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 32
+        "count": 33
       },
       {
         "reason": "already alerted",

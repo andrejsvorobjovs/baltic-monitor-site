@@ -4892,6 +4892,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-03T07:57:53.280679+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6788,6 +6795,10 @@
     {
       "ts": "2026-11-03T01:38:47.460919+00:00",
       "count": 171
+    },
+    {
+      "ts": "2026-11-03T07:57:04.040964+00:00",
+      "count": 193
     }
   ],
   "military_points": [
@@ -8342,6 +8353,10 @@
     {
       "ts": "2026-11-03T01:38:47.875612+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-03T07:57:04.397706+00:00",
+      "count": 6
     }
   ],
   "firms_points": [
@@ -9568,6 +9583,10 @@
     {
       "ts": "2026-11-03T01:38:50.812647+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-03T07:57:07.342878+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -10781,6 +10800,10 @@
     },
     {
       "ts": "2026-11-03T01:39:00.414636+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-03T07:57:21.697618+00:00",
       "count": 0
     }
   ],
@@ -17779,6 +17802,28 @@
     {
       "ts": "2026-11-03T01:39:00.419511+00:00",
       "deviation_pct": -45.00745845243164,
+      "sources_included": 3,
+      "narrative": "thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-03T07:57:21.700779+00:00",
+      "deviation_pct": -42.06075772893546,
       "sources_included": 3,
       "narrative": "thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
       "band": "moderately below normal",
