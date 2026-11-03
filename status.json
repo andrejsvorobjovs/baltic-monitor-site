@@ -1,20 +1,185 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-03T15:11:34.505196+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "last_run_utc": "2026-11-03T18:00:50.400863+00:00",
+  "last_level": "WARN",
+  "freshness_msg": "Last scan: 1.5h ago",
   "since": "2026-07-19",
-  "total_scans": 702,
+  "total_scans": 703,
   "quiet_count": 351,
   "watch_count": 323,
-  "warn_count": 28,
+  "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-03 15:11 UTC",
+  "generated_at": "2026-11-03 19:28 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-03T18:00:50.378156+00:00",
+      "level": "WARN",
+      "count": 10,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 255,
+      "stale_count": 0,
+      "alert_id": "1103-1800",
+      "items": [
+        {
+          "title": "More details released about recent drone incidents in Latvia",
+          "source": "LSM (Latvia)",
+          "link": "https://eng.lsm.lv/article/society/defence/03.11.2026-more-details-released-about-recent-drone-incidents-in-latvia.a670418/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NBS: Sv\u0113tdien Latvij\u0101, visticam\u0101k, ielidojis Krievijas drons, nakt\u012b uz otrdienu \u2013 Ukrainas dronam l\u012bdz\u012bgs lidapar\u0101ts",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/latvija/03.11.2026-nbs-svetdien-latvija-visticamak-ielidojis-krievijas-drons-nakti-uz-otrdienu-ukrainas-dronam-lidzigs-lidaparats.a670419/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvijos kariuomen\u0117: sekmadien\u012f \u012fskrid\u0119s dronas grei\u010diausiai buvo rusi\u0161kas",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/uzsienyje/latvijos-kariuomene-sekmadieni-iskrides-dronas-greiciausiai-buvo-rusiskas-120328602",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u201eSituacija reikalavo visi\u0161kos parengties\u201c: Tuskas prakalbo, kas nutiko prie sienos su Kaliningradu",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/situacija-reikalavo-visiskos-parengties-tuskas-prakalbo-kas-nutiko-prie-sienos-su-kaliningradu-57-2798176?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NBS: Sv\u0113tdien Latvij\u0101, visticam\u0101k, ielidoja Krievijas drons, pirmdien - Ukrainas lidapar\u0101ts",
+          "source": "Diena (Latvia)",
+          "link": "https://diena.lv/raksts/latvija/zinas-71/nbs-svetdien-latvija-visticamak-ielidoja-krievijas-drons-pirmdien-ukrainas-lidaparats?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NBS atkl\u0101j jaunas deta\u013cas par diviem dronu incidentiem Latvijas gaisa telp\u0101",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8576673",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Poland Accuses Russia of \u2018Flashlight\u2019 Provocation Along Kaliningrad Border",
+          "source": "Moscow Times",
+          "link": "https://www.themoscowtimes.com/2026/11/03/poland-accuses-russia-of-flashlight-provocation-along-kaliningrad-border-a94167",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Ar\u012b Latvij\u0101 m\u0113\u0123in\u0101ts uzlauzt veikalu sald\u0113tavas. Ministrija br\u012bdina, kuras iek\u0101rtas v\u0113l var b\u016bt apdraud\u0113tas",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/ari-latvija-meginats-uzlauzt-veikalu-saldetavas-ministrija-bridina-kuras-iekartas-vel-var-but-apdraudetas",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Divas dronu trauksmes tr\u012bs dienu laik\u0101 un viens spr\u0101dziens. NBS atkl\u0101j, kas bija ielidojis Latvijas gaisa telp\u0101",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/divas-dronu-trauksmes-cetru-dienu-laika-nbs-atklaj-kas-bija-ielidojis-latvijas-gaisa-telpa",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NBS pav\u0113sta, kam pieder\u0113ja sv\u0113tdien un pirmdien Latvij\u0101 ielidoju\u0161ie droni",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/zinas/736424-nbs-pavesta-kam-piedereja-svetdien-un-pirmdien-latvija-ielidojusie-droni",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-03T15:11:34.522920+00:00",
       "level": "WATCH",
@@ -862,36 +1027,6 @@
       "stale_count": 2,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-10-30T23:04:36.715582+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 248,
-      "stale_count": 1,
-      "alert_id": "1030-2304",
-      "items": [
-        {
-          "title": "Baltarusijos pasienyje VSAT pareig\u016bnai per\u0117m\u0117 oro balionu atskraidintas cigaretes",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/kriminalai/baltarusijos-pasienyje-vsat-pareigunai-pereme-oro-balionu-atskraidintas-cigaretes-120327439",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1318,7 +1453,7 @@
     "window_days": 30,
     "scans": 182,
     "alerting_scans": 137,
-    "held_back_total": 57,
+    "held_back_total": 58,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1328,7 +1463,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 22
+        "count": 23
       },
       {
         "reason": "reassurance",
