@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-04T15:31:48.897977+00:00",
+  "last_run_utc": "2026-11-04T20:32:51.010747+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 4.2h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 710,
+  "total_scans": 711,
   "quiet_count": 353,
-  "watch_count": 328,
+  "watch_count": 329,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-04 19:43 UTC",
+  "generated_at": "2026-11-04 20:32 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-04T20:32:51.028452+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 374,
+      "stale_count": 1,
+      "alert_id": "1104-2032",
+      "items": [
+        {
+          "title": "Lenkija skelbia naujausias \u017einias apie Lietuvoje sprogusio drono skryd\u012f: \u201eTebetiriama\u201c",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/lenkija-skelbia-naujausias-zinias-apie-lietuvoje-sprogusio-drono-skrydi-tebetiriama-57-2799112?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-04T15:31:48.929718+00:00",
       "level": "WATCH",
@@ -1150,23 +1180,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-01T18:34:30.130542+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 233,
-      "stale_count": 2,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-04T20:32:51.053443+00:00",
+      "level": "WATCH",
+      "title": "Lenkija skelbia naujausias \u017einias apie Lietuvoje sprogusio drono skryd\u012f: \u201eTebetiriama\u201c",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/lenkija-skelbia-naujausias-zinias-apie-lietuvoje-sprogusio-drono-skrydi-tebetiriama-57-2799112?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-04T15:31:48.949014+00:00",
       "level": "WATCH",
@@ -1389,22 +1421,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-03T15:11:34.549020+00:00",
-      "level": "WATCH",
-      "title": "\u0411\u043b\u0430\u0433\u043e\u043f\u0440\u0438\u044f\u0442\u043d\u044b\u0435 \u0434\u043b\u044f \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0433\u043e \u0441\u043f\u043e\u0440\u0442\u0430 \u0440\u0435\u0448\u0435\u043d\u0438\u044f \u043c\u043e\u0433\u0443\u0442 \u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043e\u043b\u0438\u043c\u043f\u0438\u0439\u0446\u0435\u0432 \u0438 \u0445\u043e\u043a\u043a\u0435\u0438\u0441\u0442\u043e\u0432 \u041b\u0430\u0442\u0432\u0438\u0438 \u0431\u0435\u0437 \u0433\u043e\u0441\u0444\u0438\u043d\u0430\u043d\u0441\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f",
-      "source": "LSM Russian-language",
-      "link": "https://rus.lsm.lv/statja/sport/sport/03.11.2026-blagopriiatnye-dlia-rossiiskogo-sporta-reseniia-mogut-ostavit-olimpiicev-i-xokkeistov-latvii-bez-gosfinansirovaniia.a670227/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1587,8 +1603,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 183,
-    "alerting_scans": 138,
+    "scans": 184,
+    "alerting_scans": 139,
     "held_back_total": 63,
     "held_back_by_reason": [
       {
