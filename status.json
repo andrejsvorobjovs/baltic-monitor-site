@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-04T07:30:30.457152+00:00",
+  "last_run_utc": "2026-11-04T07:35:03.783101+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 707,
+  "total_scans": 708,
   "quiet_count": 352,
-  "watch_count": 326,
+  "watch_count": 327,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-04 07:30 UTC",
+  "generated_at": "2026-11-04 07:35 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-04T07:35:03.799347+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 152,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 17,
+      "stale_count": 0,
+      "alert_id": "1104-0735",
+      "items": [
+        {
+          "title": "Insurance won't cover cyberattack damage to stores, experts warn",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610185591/insurance-won-t-cover-cyberattack-damage-to-stores-experts-warn",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-04T07:30:30.474190+00:00",
       "level": "WATCH",
@@ -1090,23 +1120,25 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-11-01T07:33:15.520379+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 245,
-      "stale_count": 2,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-04T07:35:03.837135+00:00",
+      "level": "WATCH",
+      "title": "Insurance won't cover cyberattack damage to stores, experts warn",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610185591/insurance-won-t-cover-cyberattack-damage-to-stores-experts-warn",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-04T07:30:30.497958+00:00",
       "level": "WATCH",
@@ -1330,22 +1362,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-02T22:27:01.278037+00:00",
-      "level": "WATCH",
-      "title": "\"Tot\u0101li neesam gatavi.\" Ko kr\u012bzes m\u0101ca Latvijai",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8575863",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1528,8 +1544,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 182,
-    "alerting_scans": 137,
+    "scans": 183,
+    "alerting_scans": 138,
     "held_back_total": 63,
     "held_back_by_reason": [
       {
