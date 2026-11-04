@@ -4955,6 +4955,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-04T07:44:09.354388+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6879,6 +6886,10 @@
     {
       "ts": "2026-11-04T07:33:50.247719+00:00",
       "count": 194
+    },
+    {
+      "ts": "2026-11-04T07:43:25.349093+00:00",
+      "count": 188
     }
   ],
   "military_points": [
@@ -8457,6 +8468,10 @@
     {
       "ts": "2026-11-04T07:33:50.763999+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-11-04T07:43:25.854656+00:00",
+      "count": 3
     }
   ],
   "firms_points": [
@@ -9707,6 +9722,10 @@
     {
       "ts": "2026-11-04T07:33:55.714658+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-04T07:43:29.112451+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -10944,6 +10963,10 @@
     },
     {
       "ts": "2026-11-04T07:34:05.998768+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-04T07:43:37.870748+00:00",
       "count": 0
     }
   ],
@@ -18103,6 +18126,33 @@
             "signal": "military",
             "pct": 51,
             "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-04T07:43:37.875143+00:00",
+      "deviation_pct": -21.1806611590433,
+      "sources_included": 4,
+      "narrative": "military aircraft 48% above baseline; thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "military",
+            "pct": 48,
+            "direction": "above"
           },
           {
             "signal": "firms",
