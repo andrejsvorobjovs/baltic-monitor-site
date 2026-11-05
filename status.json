@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-04T20:32:51.010747+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-11-05T00:27:27.752628+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 711,
-  "quiet_count": 353,
-  "watch_count": 329,
+  "total_scans": 713,
+  "quiet_count": 354,
+  "watch_count": 330,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-04 20:32 UTC",
+  "generated_at": "2026-11-05 00:27 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-05T00:27:27.767398+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 100,
+      "stale_count": 2,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-11-04T22:08:32.651400+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 60,
+      "stale_count": 0,
+      "alert_id": "1104-2208",
+      "items": [
+        {
+          "title": "Nuo dron\u0173 iki GPS trikd\u017ei\u0173: kaip saugomas Klaip\u0117dos uostas",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/nuo-dronu-iki-gps-trikdziu-kaip-saugomas-klaipedos-uostas-56-2761664?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-04T20:32:51.028452+00:00",
       "level": "WATCH",
@@ -1136,50 +1180,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-01T22:51:11.016883+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 1,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 77,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-11-01T20:48:00.304571+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 117,
-      "stale_count": 0,
-      "alert_id": "1101-2048",
-      "items": [
-        {
-          "title": "\"\u0410\u041a+\": \u043d\u0430 \u0447\u0435\u043c \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043f\u0440\u0438\u0434\u0435\u0442\u0441\u044f \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0442\u044c \u0440\u0430\u0434\u0438 \u043d\u043e\u0432\u044b\u0445 \u0441\u0430\u043c\u043e\u043b\u0435\u0442\u043e\u0432 \u0438 \u043d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043e\u043d\u0438 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610182765/ak-na-chem-jestonii-pridetsja-jekonomit-radi-novyh-samoletov-i-naskolko-oni-neobhodimy",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1603,14 +1603,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 184,
+    "scans": 185,
     "alerting_scans": 139,
-    "held_back_total": 63,
+    "held_back_total": 59,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 34
+        "count": 30
       },
       {
         "reason": "already alerted",
