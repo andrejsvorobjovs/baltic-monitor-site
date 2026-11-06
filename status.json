@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-06T00:13:31.193392+00:00",
+  "last_run_utc": "2026-11-06T08:01:42.528890+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 6.4h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 718,
+  "total_scans": 719,
   "quiet_count": 354,
-  "watch_count": 335,
+  "watch_count": 336,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-06 06:37 UTC",
+  "generated_at": "2026-11-06 08:01 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-06T08:01:42.546036+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 442,
+      "stale_count": 4,
+      "alert_id": "1106-0801",
+      "items": [
+        {
+          "title": "Pat lab\u0101kais IT speci\u0101lists neizgl\u0101bs uz\u0146\u0113mumu \u2013 CERT.LV nor\u0101da uz nopietn\u0101m pavir\u0161\u012bb\u0101m kiberdro\u0161\u012bb\u0101",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/bizness/736836-pat-labakais-it-specialists-neizglabs-uznemumu-certlv-norada-uz-nopietnam-pavirsibam-kiberdrosiba",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-06T00:13:31.206228+00:00",
       "level": "WATCH",
@@ -1145,23 +1175,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-03T01:42:31.804911+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 92,
-      "stale_count": 7,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-06T08:01:42.570970+00:00",
+      "level": "WATCH",
+      "title": "Pat lab\u0101kais IT speci\u0101lists neizgl\u0101bs uz\u0146\u0113mumu \u2013 CERT.LV nor\u0101da uz nopietn\u0101m pavir\u0161\u012bb\u0101m kiberdro\u0161\u012bb\u0101",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/bizness/736836-pat-labakais-it-specialists-neizglabs-uznemumu-certlv-norada-uz-nopietnam-pavirsibam-kiberdrosiba",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-06T00:13:31.224528+00:00",
       "level": "WATCH",
@@ -1373,22 +1405,6 @@
       "title": "Kibernetinio saugumo \u012fmon\u0117 \u201eCensus\u201c \u012fk\u016br\u0117 padalin\u012f Lietuvoje",
       "source": "Verslo zinios (Lithuania)",
       "link": "https://www.vz.lt/inovacijos/2026/11/04/kibernetinio-saugumo-imone-census-ikure-padalini-lietuvoje-592271",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-04T15:31:48.949014+00:00",
-      "level": "WATCH",
-      "title": "Elektrilevi valmistub kriisiks. Mihkel H\u00e4rm: r\u00e4\u00e4gime sabotaa\u017eiaktidest",
-      "source": "Aripaev (Estonia)",
-      "link": "https://www.aripaev.ee/saated/2026/11/04/041126-energiatund",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
