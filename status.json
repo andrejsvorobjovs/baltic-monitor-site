@@ -1,20 +1,171 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-06T08:01:42.528890+00:00",
+  "last_run_utc": "2026-11-06T15:07:43.752222+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 719,
+  "total_scans": 721,
   "quiet_count": 354,
-  "watch_count": 336,
+  "watch_count": 338,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-06 08:01 UTC",
+  "generated_at": "2026-11-06 15:07 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-06T15:07:43.769893+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 383,
+      "stale_count": 4,
+      "alert_id": "1106-1507",
+      "items": [
+        {
+          "title": "Lithuanian President warns: Russian provocations will continue",
+          "source": "BNN Baltic News Network",
+          "link": "https://bnn-news.com/world/lithuanian-president-warns-russian-provocations-will-continue-y5ataue",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Poola koondas Kaliningradi piiri \u00e4\u00e4rde eri\u00fcksused, luureekspert Venemaa poolel ohum\u00e4rke ei n\u00e4e",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8578657",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "US troops return to Estonia. NATO's eastern flank is getting stronger",
+          "source": "Defence24",
+          "link": "https://defence24.com/defence-policy/us-troops-return-to-estonia-natos-eastern-flank-is-getting-stronger",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-06T12:24:45.016326+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 424,
+      "stale_count": 0,
+      "alert_id": "1106-1224",
+      "items": [
+        {
+          "title": "Ministras: situacija Lietuvos pasienyje su Kaliningradu \u0161iuo metu yra ramesn\u0117, nei buvo Lenkijoje",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/ministras-situacija-lietuvos-pasienyje-su-kaliningradu-siuo-metu-yra-ramesne-nei-buvo-lenkijoje-56-2800576?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Naus\u0117da interviu Vokietijos \u017einiasklaidai \u012fvertino Putino plan\u0105: \u201eA\u0161 jais nepasitikiu\u201c",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/nauseda-interviu-vokietijos-ziniasklaidai-ivertino-apie-putino-plana-as-jais-nepasitikiu-57-2800422?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "CERT.LV: Lack of management commitment and cybersecurity specialists hampers improvements in Latvia",
+          "source": "BNN Baltic News Network",
+          "link": "https://bnn-news.com/social/cert-lv-lack-of-management-commitment-and-cybersecurity-specialists-hampers-improvements-in-latvia-ttjb76v",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vokietijos leidinyje \u2013 G. Naus\u0117dos \u012fsp\u0117jimas: \u201eRusai tik apsimes besiderantys\u201c",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/11/06/news/vokietijos-leidinyje-g-nausedos-ispejimas-rusai-tik-apsimes-besiderantys--44809609",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "FOTO, VIDEO: cik gatavi esam kr\u012bzes situ\u0101cij\u0101m? R\u012bg\u0101 norisin\u0101s dronu sacens\u012bbas \"Taktiskais p\u0101rsp\u0113ks\"",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/bizness/736902-foto-video-cik-gatavi-esam-krizes-situacijam-riga-norisinas-dronu-sacensibas-taktiskais-parspeks",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-06T08:01:42.546036+00:00",
       "level": "WATCH",
@@ -1025,159 +1176,58 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-03T10:02:29.528614+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 308,
-      "stale_count": 0,
-      "alert_id": "1103-1002",
-      "items": [
-        {
-          "title": "Latvia signs up to European Defence Alliance in Paris",
-          "source": "LSM (Latvia)",
-          "link": "https://eng.lsm.lv/article/society/defence/03.11.2026-latvia-signs-up-to-european-defence-alliance-in-paris.a670326/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0418\u0437-\u0437\u0430 \u0443\u0433\u0440\u043e\u0437\u044b \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u0439 \u041f\u043e\u043b\u044c\u0448\u0430 \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442 \u0441\u043f\u0435\u0446\u043e\u043f\u0435\u0440\u0430\u0446\u0438\u044e \u0443 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0441 \u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u044c\u044e",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/mir/03.11.2026-iz-za-ugrozy-diversii-polsa-nacinaet-specoperaciiu-u-granicy-s-kaliningradskoi-oblastiu.a670331/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Po PHP sprag\u0173 pavie\u0161inimo \u2013 Lietuvos svetain\u0117se vis dar aptinkama de\u0161imtme\u010dio senumo technologij\u0173",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/it/ismanyk/2026/11/03/news/po-php-spragu-paviesinimo-lietuvos-svetainese-vis-dar-aptinkama-desimtmecio-senumo-technologiju-44765739",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "K\u00dcLMIK MUUTUS PRAEAHJUKS: Eesti poes saadi h\u00e4kkeritele j\u00e4lile k\u00fcmne minutiga",
-          "source": "Ohtuleht (Estonia)",
-          "link": "https://www.ohtuleht.ee/1170407/kulmik-muutus-praeahjuks-eesti-poes-saadi-hakkeritele-jalile-kumne-minutiga",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-03T07:57:53.280679+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 474,
-      "stale_count": 4,
-      "alert_id": "1103-0757",
-      "items": [
-        {
-          "title": "PPA: Illegal immigration to Estonia has fallen, but may rise next spring",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610184128/ppa-illegal-immigration-to-estonia-has-fallen-but-may-rise-next-spring",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lenkija pasienyje su Kaliningradu prad\u0117jo speciali\u0105j\u0105 saugumo operacij\u0105",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/uzsienyje/lenkija-pasienyje-su-kaliningradu-pradejo-specialiaja-saugumo-operacija-120328065",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u041f\u043e\u043b\u044c\u0448\u0430 \u043d\u0430\u0447\u0430\u043b\u0430 \u0441\u043f\u0435\u0446\u043e\u043f\u0435\u0440\u0430\u0446\u0438\u044e \u0443 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0441 \u0420\u043e\u0441\u0441\u0438\u0435\u0439 \u0438\u0437-\u0437\u0430 \u0440\u0438\u0441\u043a\u0430 \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u0439",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610184208/polsha-nachala-specoperaciju-u-granicy-s-rossiej-iz-za-riska-diversij",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kaliningrad in NATO\u2019s sights. Russia\u2019s fortress could fall in the opening minutes of war",
-          "source": "Defence24",
-          "link": "https://defence24.com/geopolitics/kaliningrad-in-natos-sights-russias-fortress-could-fall-in-the-opening-minutes-of-war",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-06T15:07:43.794502+00:00",
+      "level": "WATCH",
+      "title": "US troops return to Estonia. NATO's eastern flank is getting stronger",
+      "source": "Defence24",
+      "link": "https://defence24.com/defence-policy/us-troops-return-to-estonia-natos-eastern-flank-is-getting-stronger",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-06T15:07:43.794502+00:00",
+      "level": "WATCH",
+      "title": "Poola koondas Kaliningradi piiri \u00e4\u00e4rde eri\u00fcksused, luureekspert Venemaa poolel ohum\u00e4rke ei n\u00e4e",
+      "source": "Postimees Estonian-language",
+      "link": "https://pmo.ee/8578657",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-06T15:07:43.794502+00:00",
+      "level": "WATCH",
+      "title": "Lithuanian President warns: Russian provocations will continue",
+      "source": "BNN Baltic News Network",
+      "link": "https://bnn-news.com/world/lithuanian-president-warns-russian-provocations-will-continue-y5ataue",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-06T08:01:42.570970+00:00",
       "level": "WATCH",
@@ -1357,54 +1407,6 @@
       "title": "Bus teisiamas oro balionais atskraidintas cigaretes rink\u0119s Var\u0117nos rajono gyventojas",
       "source": "Lrytas (Lithuania)",
       "link": "https://www.lrytas.lt/lietuvosdiena/kriminalai/2026/11/05/news/bus-teisiamas-oro-balionais-atskraidintas-cigaretes-rinkes-varenos-rajono-gyventojas-44793356",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-05T08:01:12.284132+00:00",
-      "level": "WATCH",
-      "title": "Estonian youths offer arson and property damage services online",
-      "source": "ERR News (Estonia)",
-      "link": "https://news.err.ee/1610186890/estonian-youths-offer-arson-and-property-damage-services-online",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-04T20:32:51.053443+00:00",
-      "level": "WATCH",
-      "title": "Lenkija skelbia naujausias \u017einias apie Lietuvoje sprogusio drono skryd\u012f: \u201eTebetiriama\u201c",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/lenkija-skelbia-naujausias-zinias-apie-lietuvoje-sprogusio-drono-skrydi-tebetiriama-57-2799112?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-04T15:31:48.949014+00:00",
-      "level": "WATCH",
-      "title": "Kibernetinio saugumo \u012fmon\u0117 \u201eCensus\u201c \u012fk\u016br\u0117 padalin\u012f Lietuvoje",
-      "source": "Verslo zinios (Lithuania)",
-      "link": "https://www.vz.lt/inovacijos/2026/11/04/kibernetinio-saugumo-imone-census-ikure-padalini-lietuvoje-592271",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
@@ -1598,12 +1600,12 @@
     "window_days": 30,
     "scans": 182,
     "alerting_scans": 137,
-    "held_back_total": 58,
+    "held_back_total": 59,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 29
+        "count": 30
       },
       {
         "reason": "already alerted",
