@@ -5046,6 +5046,20 @@
       "count": 3,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-06T19:39:52.437526+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "tier3_count": 0,
+      "tone": null
+    },
+    {
+      "ts": "2026-11-06T20:05:10.397087+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -7018,6 +7032,10 @@
     {
       "ts": "2026-11-06T15:05:59.599139+00:00",
       "count": 161
+    },
+    {
+      "ts": "2026-11-06T20:04:04.463323+00:00",
+      "count": 160
     }
   ],
   "military_points": [
@@ -8636,6 +8654,10 @@
     {
       "ts": "2026-11-06T15:06:00.062247+00:00",
       "count": 5
+    },
+    {
+      "ts": "2026-11-06T20:04:06.487439+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -9926,6 +9948,10 @@
     {
       "ts": "2026-11-06T15:06:03.353503+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-06T20:04:09.889346+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -11203,6 +11229,10 @@
     },
     {
       "ts": "2026-11-06T15:07:08.638863+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-06T20:04:40.768470+00:00",
       "count": 0
     }
   ],
@@ -18618,6 +18648,28 @@
     {
       "ts": "2026-11-06T15:07:08.642088+00:00",
       "deviation_pct": -49.13303096707619,
+      "sources_included": 3,
+      "narrative": "thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-06T20:04:40.773769+00:00",
+      "deviation_pct": -49.21088309459469,
       "sources_included": 3,
       "narrative": "thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
       "band": "moderately below normal",

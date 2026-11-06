@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-06T15:07:43.752222+00:00",
+  "last_run_utc": "2026-11-06T20:05:10.378611+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 4.2h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 721,
+  "total_scans": 723,
   "quiet_count": 354,
-  "watch_count": 338,
+  "watch_count": 340,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-06 19:21 UTC",
+  "generated_at": "2026-11-06 20:05 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-06T20:05:10.397087+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 199,
+      "stale_count": 9,
+      "alert_id": "1106-2005",
+      "items": [
+        {
+          "title": "38 migrants tried to cross from Belarus to Lithuania on Thursday - Delfi",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVDlab18xRlZtbFg2X0ZJbjE1a05VQ3RkWXhDNnFmZENtZWtzY09DemFIMUVGQWU1MkQ1bzRJRnNyM1huTEF4TWF5N3R3Zi10dHhzRUl3MVd4SzJ4dVdmQ1RyWldXRVlJS2ZxQ3pDY2FXc0JmUkpYQy1vMkNlMXFoQVhzalF0T2QyamotQ2JaTEhmMFROT0Q4VEd2UkdScDVtZkxqc2pRTDktR2M?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "Finnish court jails captain and crew member for 'aggravated criminal damage' over Baltic cable sabotage - DW.com",
+          "source": "Deutsche Welle (Germany)",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMHlqclVCUzhHamlCQkV1NjU4dFFTNVRpeUpuQjJjZVJYY0VzemF4ek53VzBKWmg0MFFFVXNxRW1uYldRb0R5V2kzd0pmdFhUcWNoeGpmRGNySnhmNW8zWXZXS2lPQkZNQjd4eHo1OVlJVkhGOGRnOWptMjF3ZDFveVVqOVRGRlVVTGN1dEhqYjV4SUxfTVhMcmFPcFpHR0s1SkdBRlJn0gGmAUFVX3lxTE5KZklCWC1GNk1UZEEzNFZWRnJKU3lwVlVkTURuXzVnWThLc0kybDNnd1RJdWZwOXRlWExUZzJBSy1NejNuMTBnVmxmN1lUUDg0MVNGNkJUcngwRGdxYzE3UU1FVTNpUldTZjhYS0wwQmJqZUxLeW1NR0wwV0VxNnJldHZJZmlxR0gxQ1l3LXVycWNFTGZGRnpzUk1VS205QVhmZzI3M1E?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-06T19:39:52.437526+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 291,
+      "stale_count": 0,
+      "alert_id": "1106-1939",
+      "items": [
+        {
+          "title": "M\u0101c\u012bb\u0101s pierobe\u017e\u0101 dro\u0161\u012bbas dienesti aptur un p\u0101rbauda automa\u0161\u012bnas",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/latvija/06.11.2026-macibas-pierobeza-drosibas-dienesti-aptur-un-parbauda-automasinas.a670873/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-06T15:07:43.769893+00:00",
       "level": "WATCH",
@@ -906,279 +981,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-03T18:00:50.378156+00:00",
-      "level": "WARN",
-      "count": 10,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 255,
-      "stale_count": 0,
-      "alert_id": "1103-1800",
-      "items": [
-        {
-          "title": "More details released about recent drone incidents in Latvia",
-          "source": "LSM (Latvia)",
-          "link": "https://eng.lsm.lv/article/society/defence/03.11.2026-more-details-released-about-recent-drone-incidents-in-latvia.a670418/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NBS: Sv\u0113tdien Latvij\u0101, visticam\u0101k, ielidojis Krievijas drons, nakt\u012b uz otrdienu \u2013 Ukrainas dronam l\u012bdz\u012bgs lidapar\u0101ts",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/03.11.2026-nbs-svetdien-latvija-visticamak-ielidojis-krievijas-drons-nakti-uz-otrdienu-ukrainas-dronam-lidzigs-lidaparats.a670419/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Latvijos kariuomen\u0117: sekmadien\u012f \u012fskrid\u0119s dronas grei\u010diausiai buvo rusi\u0161kas",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/uzsienyje/latvijos-kariuomene-sekmadieni-iskrides-dronas-greiciausiai-buvo-rusiskas-120328602",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201eSituacija reikalavo visi\u0161kos parengties\u201c: Tuskas prakalbo, kas nutiko prie sienos su Kaliningradu",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/situacija-reikalavo-visiskos-parengties-tuskas-prakalbo-kas-nutiko-prie-sienos-su-kaliningradu-57-2798176?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NBS: Sv\u0113tdien Latvij\u0101, visticam\u0101k, ielidoja Krievijas drons, pirmdien - Ukrainas lidapar\u0101ts",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/latvija/zinas-71/nbs-svetdien-latvija-visticamak-ielidoja-krievijas-drons-pirmdien-ukrainas-lidaparats?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NBS atkl\u0101j jaunas deta\u013cas par diviem dronu incidentiem Latvijas gaisa telp\u0101",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8576673",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Poland Accuses Russia of \u2018Flashlight\u2019 Provocation Along Kaliningrad Border",
-          "source": "Moscow Times",
-          "link": "https://www.themoscowtimes.com/2026/11/03/poland-accuses-russia-of-flashlight-provocation-along-kaliningrad-border-a94167",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Ar\u012b Latvij\u0101 m\u0113\u0123in\u0101ts uzlauzt veikalu sald\u0113tavas. Ministrija br\u012bdina, kuras iek\u0101rtas v\u0113l var b\u016bt apdraud\u0113tas",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/ari-latvija-meginats-uzlauzt-veikalu-saldetavas-ministrija-bridina-kuras-iekartas-vel-var-but-apdraudetas",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Divas dronu trauksmes tr\u012bs dienu laik\u0101 un viens spr\u0101dziens. NBS atkl\u0101j, kas bija ielidojis Latvijas gaisa telp\u0101",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/divas-dronu-trauksmes-cetru-dienu-laika-nbs-atklaj-kas-bija-ielidojis-latvijas-gaisa-telpa",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NBS pav\u0113sta, kam pieder\u0113ja sv\u0113tdien un pirmdien Latvij\u0101 ielidoju\u0161ie droni",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/736424-nbs-pavesta-kam-piedereja-svetdien-un-pirmdien-latvija-ielidojusie-droni",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-03T15:11:34.522920+00:00",
-      "level": "WATCH",
-      "count": 6,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 666,
-      "stale_count": 5,
-      "alert_id": "1103-1511",
-      "items": [
-        {
-          "title": "Amid rising sabotage threats, Poland deploys counter-terrorism units near Russian border - Baltic News Network",
-          "source": "General wire coverage",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeDNFMDZRQlVPc0l3THB3M2tuazBoX19wenlob19wdUdFVkQzNi1UajBQbW8yN0FCS05NS21YUTBESzNlZW5maU4yTzV1bWY3SkZ2R1ZubVJmcFBKU3dVaVBNYU92dWhuSHV4VGUtbHFDMU5PVjVwSGVYTGdGWnk0NlU4WmpTVDVuOHpQMml0b2pFZzdWUXYyRWFlbFJVUXdMamFkVGRtUXdfTmxaMC02T1d4OW1hVmRwRXZ4R19ENA?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "\u0411\u043b\u0430\u0433\u043e\u043f\u0440\u0438\u044f\u0442\u043d\u044b\u0435 \u0434\u043b\u044f \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0433\u043e \u0441\u043f\u043e\u0440\u0442\u0430 \u0440\u0435\u0448\u0435\u043d\u0438\u044f \u043c\u043e\u0433\u0443\u0442 \u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043e\u043b\u0438\u043c\u043f\u0438\u0439\u0446\u0435\u0432 \u0438 \u0445\u043e\u043a\u043a\u0435\u0438\u0441\u0442\u043e\u0432 \u041b\u0430\u0442\u0432\u0438\u0438 \u0431\u0435\u0437 \u0433\u043e\u0441\u0444\u0438\u043d\u0430\u043d\u0441\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/sport/sport/03.11.2026-blagopriiatnye-dlia-rossiiskogo-sporta-reseniia-mogut-ostavit-olimpiicev-i-xokkeistov-latvii-bez-gosfinansirovaniia.a670227/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "I\u0161 D. Tusko \u2013 \u017einia apie \u012ftartin\u0105 aktyvum\u0105 prie sienos su Rusija",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/pasaulis/konfliktai-ir-saugumas/2026/11/03/news/is-d-tusko-zinia-apie-itartina-aktyvuma-prie-sienos-su-rusija-44768954",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0425\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0438, \u043c\u043e\u043b\u043e\u043a\u043e\u0437\u0430\u0432\u043e\u0434\u044b \u0438 \u044f\u0434\u0435\u0440\u043d\u0430\u044f \u0442\u0440\u0435\u0432\u043e\u0433\u0430",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/11/03/kholodilniki-molokozavody-i-iadernaia-trevoga",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Poola valmistub Vene piiril v\u00f5imalikuks sabotaa\u017eiks. Eesti ametnikud: paanikaks p\u00f5hjust pole",
-          "source": "Ohtuleht (Estonia)",
-          "link": "https://www.ohtuleht.ee/1170442/poola-valmistub-vene-piiril-voimalikuks-sabotaaziks-eesti-ametnikud-paanikaks-pohjust-pole",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "D. Tuskas: Lenkijos pasienyje su Rusija u\u017ekirstas kelias galimai provokacijai, jos gali t\u0119stis",
-          "source": "Verslo zinios (Lithuania)",
-          "link": "https://www.vz.lt/verslo-aplinka/2026/11/03/d-tuskas-lenkijos-pasienyje-su-rusija-uzkirstas-kelias-galimai-provokacijai-jos-gali-testis-592244",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-06T20:05:10.422489+00:00",
+      "level": "WATCH",
+      "title": "Finnish court jails captain and crew member for 'aggravated criminal damage' over Baltic cable sabotage - DW.com",
+      "source": "Deutsche Welle (Germany)",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMHlqclVCUzhHamlCQkV1NjU4dFFTNVRpeUpuQjJjZVJYY0VzemF4ek53VzBKWmg0MFFFVXNxRW1uYldRb0R5V2kzd0pmdFhUcWNoeGpmRGNySnhmNW8zWXZXS2lPQkZNQjd4eHo1OVlJVkhGOGRnOWptMjF3ZDFveVVqOVRGRlVVTGN1dEhqYjV4SUxfTVhMcmFPcFpHR0s1SkdBRlJn0gGmAUFVX3lxTE5KZklCWC1GNk1UZEEzNFZWRnJKU3lwVlVkTURuXzVnWThLc0kybDNnd1RJdWZwOXRlWExUZzJBSy1NejNuMTBnVmxmN1lUUDg0MVNGNkJUcngwRGdxYzE3UU1FVTNpUldTZjhYS0wwQmJqZUxLeW1NR0wwV0VxNnJldHZJZmlxR0gxQ1l3LXVycWNFTGZGRnpzUk1VS205QVhmZzI3M1E?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-06T20:05:10.422489+00:00",
+      "level": "WATCH",
+      "title": "38 migrants tried to cross from Belarus to Lithuania on Thursday - Delfi",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVDlab18xRlZtbFg2X0ZJbjE1a05VQ3RkWXhDNnFmZENtZWtzY09DemFIMUVGQWU1MkQ1bzRJRnNyM1huTEF4TWF5N3R3Zi10dHhzRUl3MVd4SzJ4dVdmQ1RyWldXRVlJS2ZxQ3pDY2FXc0JmUkpYQy1vMkNlMXFoQVhzalF0T2QyamotQ2JaTEhmMFROT0Q4VEd2UkdScDVtZkxqc2pRTDktR2M?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-06T15:07:43.794502+00:00",
       "level": "WATCH",
@@ -1384,38 +1221,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-05T08:01:12.284132+00:00",
-      "level": "WATCH",
-      "title": "\u00ab\u041c\u0435\u0434\u0438\u0430\u0430\u0440\u043c\u0438\u044f \u0431\u0435\u0437 \u043f\u043e\u0433\u043e\u043d\u00bb",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/11/05/mediaarmiia-bez-pogon",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-05T08:01:12.284132+00:00",
-      "level": "WATCH",
-      "title": "Bus teisiamas oro balionais atskraidintas cigaretes rink\u0119s Var\u0117nos rajono gyventojas",
-      "source": "Lrytas (Lithuania)",
-      "link": "https://www.lrytas.lt/lietuvosdiena/kriminalai/2026/11/05/news/bus-teisiamas-oro-balionais-atskraidintas-cigaretes-rinkes-varenos-rajono-gyventojas-44793356",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1598,9 +1403,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 182,
-    "alerting_scans": 137,
-    "held_back_total": 59,
+    "scans": 183,
+    "alerting_scans": 138,
+    "held_back_total": 60,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1610,7 +1415,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 26
+        "count": 27
       },
       {
         "reason": "reassurance",
