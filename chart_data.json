@@ -5067,6 +5067,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-07T07:09:16.213330+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5417,6 +5424,10 @@
     {
       "ts": "2026-11-05T00:00:00+00:00",
       "count": 146
+    },
+    {
+      "ts": "2026-11-06T00:00:00+00:00",
+      "count": 148
     }
   ],
   "ais_points": [
@@ -7047,6 +7058,10 @@
     {
       "ts": "2026-11-06T23:50:36.726392+00:00",
       "count": 152
+    },
+    {
+      "ts": "2026-11-07T07:08:23.610853+00:00",
+      "count": 181
     }
   ],
   "military_points": [
@@ -8673,6 +8688,10 @@
     {
       "ts": "2026-11-06T23:50:37.227589+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-07T07:08:24.029915+00:00",
+      "count": 1
     }
   ],
   "firms_points": [
@@ -9971,6 +9990,10 @@
     {
       "ts": "2026-11-06T23:50:41.632729+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-07T07:08:28.595037+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -11256,6 +11279,10 @@
     },
     {
       "ts": "2026-11-06T23:51:01.689837+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-07T07:08:49.048426+00:00",
       "count": 0
     }
   ],
@@ -18732,6 +18759,28 @@
         ]
       },
       "band_key": "well_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-07T07:08:49.051074+00:00",
+      "deviation_pct": -45.328277555145974,
+      "sources_included": 3,
+      "narrative": "thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
       "band_record_scans": null
     }
   ]
