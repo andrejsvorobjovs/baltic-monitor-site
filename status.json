@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-08T07:20:21.171867+00:00",
-  "last_level": "QUIET",
+  "last_run_utc": "2026-11-08T14:24:23.545354+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 730,
+  "total_scans": 731,
   "quiet_count": 359,
-  "watch_count": 342,
+  "watch_count": 343,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-08 07:20 UTC",
+  "generated_at": "2026-11-08 14:24 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-08T14:24:23.563106+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 434,
+      "stale_count": 3,
+      "alert_id": "1108-1424",
+      "items": [
+        {
+          "title": "Eksperts: Somija \u0101tri piel\u0101gojas jaunajai realit\u0101tei un turpina stiprin\u0101t gatav\u012bbu apdraud\u0113jumiem",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/08.11.2026-eksperts-somija-atri-pielagojas-jaunajai-realitatei-un-turpina-stiprinat-gatavibu-apdraudejumiem.a670507/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-08T07:20:21.186504+00:00",
       "level": "QUIET",
@@ -814,39 +844,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-04T20:32:51.028452+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 374,
-      "stale_count": 1,
-      "alert_id": "1104-2032",
-      "items": [
-        {
-          "title": "Lenkija skelbia naujausias \u017einias apie Lietuvoje sprogusio drono skryd\u012f: \u201eTebetiriama\u201c",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/lenkija-skelbia-naujausias-zinias-apie-lietuvoje-sprogusio-drono-skrydi-tebetiriama-57-2799112?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-08T14:24:23.589456+00:00",
+      "level": "WATCH",
+      "title": "Eksperts: Somija \u0101tri piel\u0101gojas jaunajai realit\u0101tei un turpina stiprin\u0101t gatav\u012bbu apdraud\u0113jumiem",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/arzemes/08.11.2026-eksperts-somija-atri-pielagojas-jaunajai-realitatei-un-turpina-stiprinat-gatavibu-apdraudejumiem.a670507/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-07T14:05:20.705209+00:00",
       "level": "WATCH",
@@ -1059,22 +1075,6 @@
       "title": "\u00ab\u0410\u0442\u0430\u043a\u0438 \u043d\u0430 \u043c\u043e\u0440\u043e\u0437\u0438\u043b\u044c\u043d\u0438\u043a\u0438\u00bb \u0443\u0433\u0440\u043e\u0436\u0430\u044e\u0442 \u043d\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0442\u043e\u0440\u0433\u043e\u0432\u0446\u0430\u043c, \u043d\u043e \u0438 \u043c\u0435\u0434\u0443\u0447\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u044f\u043c \u2014 Cert.lv",
       "source": "LSM Russian-language",
       "link": "https://rus.lsm.lv/statja/novosti/obschestvo/05.11.2026-ataki-na-morozilniki-ugrozaiut-ne-tolko-torgovcam-no-i-meducrezdeniiam-certlv.a670726/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-05T15:34:43.198150+00:00",
-      "level": "WATCH",
-      "title": "Lietuvos ir Vengrijos ministrai neskuba prane\u0161im\u0173 apie bombas l\u0117ktuvuose vadinti koordinuota ataka",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/lietuvos-ir-vengrijos-ministrai-neskuba-pranesimu-apie-bombas-lektuvuose-vadinti-koordinuota-ataka-56-2799922?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
