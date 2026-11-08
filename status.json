@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-07T22:48:15.434927+00:00",
+  "last_run_utc": "2026-11-08T07:20:21.171867+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 7.1h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 729,
-  "quiet_count": 358,
+  "total_scans": 730,
+  "quiet_count": 359,
   "watch_count": 342,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-08 05:57 UTC",
+  "generated_at": "2026-11-08 07:20 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-08T07:20:21.186504+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 372,
+      "stale_count": 12,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-11-07T22:48:15.453125+00:00",
       "level": "QUIET",
@@ -830,95 +844,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-04T15:31:48.929718+00:00",
-      "level": "WATCH",
-      "count": 5,
-      "failed_count": 1,
-      "tier3_count": 1,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 610,
-      "stale_count": 2,
-      "alert_id": "1104-1531",
-      "items": [
-        {
-          "title": "Latvia believes one of two drones that violated its airspace was Russian, the other Ukrainian - Reuters",
-          "source": "Reuters (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVXFtTVVLYmRVMGZlZ1VkRElUZWk2QWg4NlF4S3hkLS1PY3ZjcEliNlUyTUVRR2pVeEtfYnZadXZTY3YtWDE2R1F6TXRDVUV4c2VpR3d5RjJ0ZlB5blVhaUJLUktiQUFGdm1oTDRBaVZjODg5UTllTW9kUlZBTEkyWWt0VXBWV243cFRuYXZvZEU2V2xhSUVodF9zR3BqZkkzSGhja1hWejg2M0Zjamt5SWhKYUhKbDJS?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier1",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Katelynas: Lenkijai u\u017ekirtus keli\u0105 galimai provokacijai, Lietuvos pasienis ramus",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/zinios-visiems/naujienos/katelynas-lenkijai-uzkirtus-kelia-galimai-provokacijai-lietuvos-pasienis-ramus-120329160",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Atskleid\u0117, kur NATO smogt\u0173 Rusijai, jei V. Putinas ry\u017et\u0173si pulti",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/pasaulis/konfliktai-ir-saugumas/2026/11/04/news/atskleide-kur-nato-smogtu-rusijai-jei-v-putinas-ryztusi-pulti-44784558",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Elektrilevi valmistub kriisiks. Mihkel H\u00e4rm: r\u00e4\u00e4gime sabotaa\u017eiaktidest",
-          "source": "Aripaev (Estonia)",
-          "link": "https://www.aripaev.ee/saated/2026/11/04/041126-energiatund",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kibernetinio saugumo \u012fmon\u0117 \u201eCensus\u201c \u012fk\u016br\u0117 padalin\u012f Lietuvoje",
-          "source": "Verslo zinios (Lithuania)",
-          "link": "https://www.vz.lt/inovacijos/2026/11/04/kibernetinio-saugumo-imone-census-ikure-padalini-lietuvoje-592271",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1342,7 +1267,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 181,
-    "alerting_scans": 134,
+    "alerting_scans": 133,
     "held_back_total": 58,
     "held_back_by_reason": [
       {
