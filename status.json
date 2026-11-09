@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-09T08:01:21.616838+00:00",
+  "last_run_utc": "2026-11-09T17:35:35.526714+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 735,
+  "total_scans": 737,
   "quiet_count": 361,
-  "watch_count": 345,
+  "watch_count": 347,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-09 08:01 UTC",
+  "generated_at": "2026-11-09 17:35 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-09T17:35:35.546714+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 616,
+      "stale_count": 5,
+      "alert_id": "1109-1735",
+      "items": [
+        {
+          "title": "Canada deploys entire NATO brigade towards Russia's border. The end of symbolic deterrence",
+          "source": "Defence24",
+          "link": "https://defence24.com/defence-policy/canada-deploys-entire-nato-brigade-towards-russias-border-the-end-of-symbolic-deterrence",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-09T10:14:21.690033+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 59,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 282,
+      "stale_count": 0,
+      "alert_id": "1109-1014",
+      "items": [
+        {
+          "title": "Latvijoje nepavykus numu\u0161ti drono, sutrumpintas sprendim\u0173 pri\u0117mimo procesas",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/latvijoje-nepavykus-numusti-drono-sutrumpintas-sprendimu-priemimo-procesas-57-2801826?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-09T08:01:21.634655+00:00",
       "level": "WATCH",
@@ -622,170 +682,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-05T20:46:43.921794+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 416,
-      "stale_count": 3,
-      "alert_id": "1105-2046",
-      "items": [
-        {
-          "title": "NATO k\u00e4ivitas platvormi liikmesriikide droonit\u00f5rje tugevdamiseks",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610187946/nato-kaivitas-platvormi-liikmesriikide-droonitorje-tugevdamiseks",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NATO pristato platform\u0105, skirt\u0105 pad\u0117ti nar\u0117ms sustiprinti antidronin\u0119 gynyb\u0105",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/uzsienyje/nato-pristato-platforma-skirta-padeti-narems-sustiprinti-antidronine-gynyba-120329774",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NATO k\u00e4ivitas platvormi liikmesriikide droonit\u00f5rje tugevdamiseks",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8578283",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NATO pristato platform\u0105, skirt\u0105 pad\u0117ti nar\u0117ms sustiprinti antidronin\u0119 gynyb\u0105",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/pasaulis/ivykiai/2026/11/05/news/nato-pristato-platforma-skirta-padeti-narems-sustiprinti-antidronine-gynyba-44804992",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-05T15:34:43.176855+00:00",
-      "level": "WATCH",
-      "count": 5,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 394,
-      "stale_count": 4,
-      "alert_id": "1105-1534",
-      "items": [
-        {
-          "title": "BNS Sprintas: nesutarimai koalicijoje, JAV kariai, d\u0117l kabeli\u0173 sabota\u017eo Baltijos j\u016broje nuteistas kapitonas",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/bns-sprintas/bns-sprintas-ketvirtadienio-ivykiai-trumpai-1766-2799960?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuvos ir Vengrijos ministrai neskuba prane\u0161im\u0173 apie bombas l\u0117ktuvuose vadinti koordinuota ataka",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/lietuvos-ir-vengrijos-ministrai-neskuba-pranesimu-apie-bombas-lektuvuose-vadinti-koordinuota-ataka-56-2799922?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u00ab\u0410\u0442\u0430\u043a\u0438 \u043d\u0430 \u043c\u043e\u0440\u043e\u0437\u0438\u043b\u044c\u043d\u0438\u043a\u0438\u00bb \u0443\u0433\u0440\u043e\u0436\u0430\u044e\u0442 \u043d\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0442\u043e\u0440\u0433\u043e\u0432\u0446\u0430\u043c, \u043d\u043e \u0438 \u043c\u0435\u0434\u0443\u0447\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u044f\u043c \u2014 Cert.lv",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/obschestvo/05.11.2026-ataki-na-morozilniki-ugrozaiut-ne-tolko-torgovcam-no-i-meducrezdeniiam-certlv.a670726/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "P\u0113c kiberuzbrukumiem Francijas asins bank\u0101m Valsts asinsdonoru centrs stiprina kiberdro\u0161\u012bbu",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8578125",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kiberuzbrukumu vilnis sasniedzis ar\u012b medic\u012bnas nozari \u2013 Latvij\u0101 stiprina asinsdonoru centra aizsardz\u012bbu",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/kiberuzbrukumu-vilnis-sasniedzis-ari-medicinas-nozari-latvija-stiprina-asinsdonoru-centra-aizsardzibu",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-09T17:35:35.573333+00:00",
+      "level": "WATCH",
+      "title": "Canada deploys entire NATO brigade towards Russia's border. The end of symbolic deterrence",
+      "source": "Defence24",
+      "link": "https://defence24.com/defence-policy/canada-deploys-entire-nato-brigade-towards-russias-border-the-end-of-symbolic-deterrence",
+      "categories": [
+        "troop_movement",
+        "baltic_specific"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-09T08:01:21.660408+00:00",
       "level": "WATCH",
@@ -1008,21 +923,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-05T20:46:43.941357+00:00",
-      "level": "WATCH",
-      "title": "NATO k\u00e4ivitas platvormi liikmesriikide droonit\u00f5rje tugevdamiseks",
-      "source": "ERR Eesti (Estonian-language)",
-      "link": "https://www.err.ee/1610187946/nato-kaivitas-platvormi-liikmesriikide-droonitorje-tugevdamiseks",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1205,14 +1105,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 180,
-    "alerting_scans": 132,
+    "scans": 179,
+    "alerting_scans": 131,
     "held_back_total": 57,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 28
+        "count": 29
       },
       {
         "reason": "already alerted",
@@ -1222,7 +1122,7 @@
       {
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
-        "count": 3
+        "count": 2
       }
     ],
     "scans_before_tracking": 0
