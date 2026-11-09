@@ -1,1357 +1,7 @@
 {
-  "generated_at": "2026-11-08T22:54:28.888268+00:00",
+  "generated_at": "2026-11-09T08:01:21.733475+00:00",
   "window_hours": 72,
   "ais": [
-    {
-      "lat": 59.40267,
-      "lon": 18.36873,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265520390,
-      "sog": 0.1,
-      "name": "VARMDO",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.95266,
-      "lon": 19.08233,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265628300,
-      "sog": 0,
-      "name": "FANNY",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.70325,
-      "lon": 11.68492,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265522220,
-      "sog": 8.6,
-      "name": "BEDA",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 54.83111,
-      "lon": 11.12366,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 246924000,
-      "sog": 0,
-      "name": "LAURIERBORG",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 55.67567,
-      "lon": 13.05879,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265714460,
-      "sog": 0,
-      "name": "RESCUE FAMOUS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.89701,
-      "lon": 9.15609,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 211508590,
-      "sog": 0,
-      "name": "BRESLAU",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.52961,
-      "lon": 10.05253,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 211517780,
-      "sog": 0,
-      "name": "CIVITAS",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.26806,
-      "lon": 11.07861,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 259143000,
-      "sog": 0,
-      "name": "NORJARL",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.36072,
-      "lon": 12.13355,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 219551000,
-      "sog": 16.6,
-      "name": "ARK GERMANIA",
-      "ship_type": 79,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.3701,
-      "lon": 18.60518,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265522480,
-      "sog": 0,
-      "name": "SKARGARDEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.42917,
-      "lon": 10.48869,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 257030690,
-      "sog": 0,
-      "name": "ODIN",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 59.90704,
-      "lon": 10.74751,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 257852500,
-      "sog": 0,
-      "name": "VISION OF THE FJORDS",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.68947,
-      "lon": 11.83222,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 219435000,
-      "sog": 0,
-      "name": "FREESIA SEAWAYS",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.72183,
-      "lon": 11.98088,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265821600,
-      "sog": 0,
-      "name": "RUNNER",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.61079,
-      "lon": 12.50166,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 219461000,
-      "sog": 0,
-      "name": "ARGONAUT",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.40271,
-      "lon": 18.36749,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265076000,
-      "sog": 0,
-      "name": "OCEAN FOCUS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.38937,
-      "lon": 18.32592,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265547840,
-      "sog": 0,
-      "name": "DALARO",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.27144,
-      "lon": 16.48154,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265514860,
-      "sog": 0,
-      "name": "PILOT 748 SE",
-      "ship_type": null,
-      "nav_status": 11
-    },
-    {
-      "lat": 53.54466,
-      "lon": 9.95619,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 211437190,
-      "sog": 0,
-      "name": "NEUENFELDE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.71438,
-      "lon": 18.8806,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 257203000,
-      "sog": 10.7,
-      "name": "RIGER",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.52946,
-      "lon": 9.96311,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 371861000,
-      "sog": 0,
-      "name": "MSC PREZIOSA",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.94157,
-      "lon": 10.25915,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 219023531,
-      "sog": 0,
-      "name": "ELLEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.39747,
-      "lon": 18.69433,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 219003122,
-      "sog": 0,
-      "name": "AARSLEFF 102",
-      "ship_type": null,
-      "nav_status": 3
-    },
-    {
-      "lat": 55.24237,
-      "lon": 11.08957,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 636024736,
-      "sog": 15.4,
-      "name": "MSC ROUEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.46958,
-      "lon": 9.03627,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 211291160,
-      "sog": 0,
-      "name": "(unnamed)",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.69279,
-      "lon": 11.91159,
-      "ts": "2026-11-08T18:28:10.075270+00:00",
-      "mmsi": 265083460,
-      "sog": 0,
-      "name": "ELSNABBEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.32862,
-      "lon": 18.08039,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265548410,
-      "sog": 0,
-      "name": "DJURGARDEN 9",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.94648,
-      "lon": 10.95033,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 245097000,
-      "sog": 16.8,
-      "name": "PULPCA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.87982,
-      "lon": 9.10594,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 255915986,
-      "sog": 11.6,
-      "name": "STENBERG",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.89752,
-      "lon": 9.14928,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211508590,
-      "sog": 3.8,
-      "name": "BRESLAU",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.91064,
-      "lon": 10.73022,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 259187000,
-      "sog": 0,
-      "name": "BARONESSEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 64.92229,
-      "lon": 11.88558,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 257000970,
-      "sog": 0,
-      "name": "TROLLTIND",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.89727,
-      "lon": 11.45998,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211495320,
-      "sog": 0,
-      "name": "HANSEAT",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 64.94685,
-      "lon": 11.46157,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 259049640,
-      "sog": 0,
-      "name": "FAS ATLAS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.54533,
-      "lon": 9.9623,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211783710,
-      "sog": 0,
-      "name": "VB RASANT",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.63684,
-      "lon": 23.92038,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 273316400,
-      "sog": 7.5,
-      "name": "SORMOVSKIY 3058",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.59862,
-      "lon": 11.79278,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265607090,
-      "sog": 0,
-      "name": "SVEA",
-      "ship_type": null,
-      "nav_status": 8
-    },
-    {
-      "lat": 54.47259,
-      "lon": 9.8672,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211212130,
-      "sog": 0,
-      "name": "NORDSTRAND",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.32189,
-      "lon": 18.03873,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265590730,
-      "sog": 0,
-      "name": "EMELIE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.69916,
-      "lon": 11.66732,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265522220,
-      "sog": 0,
-      "name": "BEDA",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 53.89923,
-      "lon": 11.46312,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 257782000,
-      "sog": 0,
-      "name": "NORHEIM",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.16241,
-      "lon": 15.57968,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265820810,
-      "sog": 0,
-      "name": "(unnamed)",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.28616,
-      "lon": 18.70431,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265519620,
-      "sog": 0.1,
-      "name": "PILOT 116 SE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.36378,
-      "lon": 21.07111,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 230992670,
-      "sog": 0,
-      "name": "ALFAGELN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.19922,
-      "lon": 12.54634,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265828500,
-      "sog": 0,
-      "name": "RESCUE KULLEN",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 56.89323,
-      "lon": 12.48931,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 231025000,
-      "sog": 0,
-      "name": "LISTERVIK",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.37063,
-      "lon": 18.70423,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265669230,
-      "sog": 0,
-      "name": "RALPH",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 57.7065,
-      "lon": 11.65682,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 266148000,
-      "sog": 0,
-      "name": "CEYLON",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.64583,
-      "lon": 11.85883,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265422000,
-      "sog": 0,
-      "name": "DAGNY",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.73354,
-      "lon": 10.22202,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 257663600,
-      "sog": 0,
-      "name": "CELSUS",
-      "ship_type": null,
-      "nav_status": 12
-    },
-    {
-      "lat": 59.32798,
-      "lon": 18.07727,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265522430,
-      "sog": 0,
-      "name": "NORRSKAR",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 57.70474,
-      "lon": 11.93925,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265547220,
-      "sog": 0,
-      "name": "ALVSNABBEN 3",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.52146,
-      "lon": 9.95479,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211835550,
-      "sog": 0,
-      "name": "HT8",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.31375,
-      "lon": 10.13379,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211260120,
-      "sog": 0,
-      "name": "SCHILKSEE",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.78533,
-      "lon": 9.41317,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211186950,
-      "sog": 0.1,
-      "name": "WEDEL",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.54307,
-      "lon": 9.92116,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211667590,
-      "sog": 0,
-      "name": "MICHEL",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.04181,
-      "lon": 12.61307,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219005904,
-      "sog": 0,
-      "name": "AURELIA",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 54.36795,
-      "lon": 18.64778,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 261186564,
-      "sog": 0,
-      "name": "POMPEI",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.31841,
-      "lon": 18.16155,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265565600,
-      "sog": 0,
-      "name": "POLIS 139-9950",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.60317,
-      "lon": 16.54902,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265642130,
-      "sog": 0,
-      "name": "HAVSORNEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.20607,
-      "lon": 10.95187,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 257073310,
-      "sog": 0,
-      "name": "GO VAKKER ELEN",
-      "ship_type": null,
-      "nav_status": 8
-    },
-    {
-      "lat": 59.35161,
-      "lon": 18.26467,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265607730,
-      "sog": 0,
-      "name": "KOSTERFARJAN 2",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.08921,
-      "lon": 18.4139,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265549230,
-      "sog": 0,
-      "name": "ORNO KURIR",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 59.78557,
-      "lon": 24.48942,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 273355410,
-      "sog": 11.9,
-      "name": "AMBAL",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.23355,
-      "lon": 14.29271,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 305714000,
-      "sog": 11.4,
-      "name": "FROLAND",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.32127,
-      "lon": 11.12697,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219000855,
-      "sog": 0,
-      "name": "FN 304 JEGENS",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 53.55275,
-      "lon": 9.99452,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211375630,
-      "sog": 0,
-      "name": "FLEETENKIEKER",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.45548,
-      "lon": 11.91468,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 266152000,
-      "sog": 0,
-      "name": "OTSECO",
-      "ship_type": null,
-      "nav_status": 7
-    },
-    {
-      "lat": 53.5456,
-      "lon": 9.96501,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211413680,
-      "sog": 0,
-      "name": "ELLI GLITSCHER",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.25166,
-      "lon": 10.73511,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 259150000,
-      "sog": 0,
-      "name": "LEGEND",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.5175,
-      "lon": 9.9663,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211519720,
-      "sog": 0,
-      "name": "KRISTIN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.11103,
-      "lon": 12.09108,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211125170,
-      "sog": 0,
-      "name": "BALTIC TAUCHER I",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.78224,
-      "lon": 21.37056,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 230045250,
-      "sog": 0,
-      "name": "PILOT L148",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.12709,
-      "lon": 12.3096,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219005941,
-      "sog": 0,
-      "name": "R223 BUSTER",
-      "ship_type": null,
-      "nav_status": 7
-    },
-    {
-      "lat": 60.23483,
-      "lon": 22.11209,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 230668000,
-      "sog": 0,
-      "name": "ELEKTRA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.54212,
-      "lon": 9.9794,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 218025480,
-      "sog": 0,
-      "name": "QUEEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.70066,
-      "lon": 11.91669,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265511830,
-      "sog": 0,
-      "name": "MALMO",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.65716,
-      "lon": 11.34933,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219018788,
-      "sog": 0,
-      "name": "CARRIER",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 58.66155,
-      "lon": 17.12514,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265507660,
-      "sog": 0.1,
-      "name": "PILOT 111 SE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.6771,
-      "lon": 12.64714,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 246855000,
-      "sog": 0,
-      "name": "LADY ANNEKE",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.50335,
-      "lon": 11.22765,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211188000,
-      "sog": 0.4,
-      "name": "DEUTSCHLAND",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.10496,
-      "lon": 24.9738,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 230125910,
-      "sog": 0,
-      "name": "PILOT L-139",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.39524,
-      "lon": 18.44136,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265558290,
-      "sog": 0,
-      "name": "FRAGANCIA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.22243,
-      "lon": 11.97184,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 304108000,
-      "sog": 0,
-      "name": "KAREN",
-      "ship_type": null,
-      "nav_status": 1
-    },
-    {
-      "lat": 58.89033,
-      "lon": 11.00619,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265516670,
-      "sog": 0,
-      "name": "KOSTERVAAG",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.38655,
-      "lon": 11.46934,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 246521000,
-      "sog": 17.7,
-      "name": "TIMCA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.16001,
-      "lon": 12.1409,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 220018000,
-      "sog": 0,
-      "name": "ORANESS",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.28745,
-      "lon": 18.70621,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265502100,
-      "sog": 0,
-      "name": "MADAM",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 55.33698,
-      "lon": 13.04459,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 613606102,
-      "sog": 0.1,
-      "name": "JIN HUI",
-      "ship_type": null,
-      "nav_status": 1
-    },
-    {
-      "lat": 55.78541,
-      "lon": 10.80487,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 636022047,
-      "sog": 14.8,
-      "name": "MSC SUEDEROOG F",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.60342,
-      "lon": 18.80056,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 261013840,
-      "sog": 0,
-      "name": "LEB 62",
-      "ship_type": null,
-      "nav_status": 7
-    },
-    {
-      "lat": 57.05135,
-      "lon": 9.92221,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219000962,
-      "sog": 0,
-      "name": "BERTHA K",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.52532,
-      "lon": 10.0639,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211473590,
-      "sog": 0,
-      "name": "NIEDERSACHSEN 8",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.05889,
-      "lon": 12.27435,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265044960,
-      "sog": 0.1,
-      "name": "POLSTJARNA VG-71",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 58.8009,
-      "lon": 17.83576,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265566420,
-      "sog": 0,
-      "name": "BAMSE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.56057,
-      "lon": 11.28584,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 235077287,
-      "sog": 8.1,
-      "name": "AILEEN M",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.20581,
-      "lon": 25.62374,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 230193670,
-      "sog": 0,
-      "name": "L252",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 58.79774,
-      "lon": 10.67308,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 209535000,
-      "sog": 7.6,
-      "name": "NORDEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.1254,
-      "lon": 10.91637,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 257069900,
-      "sog": 0,
-      "name": "HUGIN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.70451,
-      "lon": 11.93955,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265810550,
-      "sog": 0,
-      "name": "ELVY",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.7067,
-      "lon": 11.66029,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 266352000,
-      "sog": 0,
-      "name": "VASTFJORD II",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.64549,
-      "lon": 11.85881,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 266068000,
-      "sog": 0,
-      "name": "GRACE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.52669,
-      "lon": 10.30449,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 305313000,
-      "sog": 0,
-      "name": "ANNALISA P",
-      "ship_type": null,
-      "nav_status": 1
-    },
-    {
-      "lat": 56.04168,
-      "lon": 12.61324,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219001214,
-      "sog": 0,
-      "name": "OPHELIA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.40777,
-      "lon": 18.32804,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265675240,
-      "sog": 0,
-      "name": "SWE COAST GUARD 315",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.86221,
-      "lon": 10.83749,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 636024113,
-      "sog": 9.6,
-      "name": "ATLANTIC GEM",
-      "ship_type": null,
-      "nav_status": 4
-    },
-    {
-      "lat": 53.52652,
-      "lon": 9.96302,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 245709000,
-      "sog": 0,
-      "name": "IJSSELDELTA",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.40268,
-      "lon": 18.3675,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265076000,
-      "sog": 0,
-      "name": "OCEAN FOCUS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.94141,
-      "lon": 9.22357,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 255916312,
-      "sog": 5,
-      "name": "DP WORLD ANTWERP",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.04479,
-      "lon": 12.68789,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265514850,
-      "sog": 0,
-      "name": "PILOT  747 SE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.32766,
-      "lon": 18.07892,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265518280,
-      "sog": 0,
-      "name": "M/S GOTSKA SANDON",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.60614,
-      "lon": 11.31988,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 205597000,
-      "sog": 0,
-      "name": "MEUSE RIVER",
-      "ship_type": null,
-      "nav_status": 3
-    },
-    {
-      "lat": 53.53682,
-      "lon": 9.87057,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211590720,
-      "sog": 0,
-      "name": "HAFENPERLE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.94321,
-      "lon": 10.25575,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265054000,
-      "sog": 0,
-      "name": "(unnamed)",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.21693,
-      "lon": 21.6694,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 230722000,
-      "sog": 11.4,
-      "name": "FJARDVAGEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.65915,
-      "lon": 16.37743,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265507640,
-      "sog": 0,
-      "name": "PILOT 777",
-      "ship_type": null,
-      "nav_status": 13
-    },
-    {
-      "lat": 54.43497,
-      "lon": 10.17506,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211533370,
-      "sog": 8.7,
-      "name": "PILOT TRAVEMUENDE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.91074,
-      "lon": 11.44667,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211106650,
-      "sog": 0,
-      "name": "STURMMOEWE",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.43332,
-      "lon": 18.70287,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265630250,
-      "sog": 0,
-      "name": "BOTTEN UPP",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.54365,
-      "lon": 9.98031,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 211539790,
-      "sog": 0,
-      "name": "LAILA EHLERS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.86537,
-      "lon": 19.05892,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265604500,
-      "sog": 0,
-      "name": "KAJSA STINA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 58.35804,
-      "lon": 11.3389,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265615260,
-      "sog": 0,
-      "name": "MARIA",
-      "ship_type": null,
-      "nav_status": 8
-    },
-    {
-      "lat": 57.68214,
-      "lon": 11.87188,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265511430,
-      "sog": 0,
-      "name": "PILOT 744 SE",
-      "ship_type": null,
-      "nav_status": 10
-    },
-    {
-      "lat": 55.33224,
-      "lon": 10.96491,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 3638,
-      "sog": 0,
-      "name": "3638",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 55.17178,
-      "lon": 13.85668,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 212868000,
-      "sog": 16.1,
-      "name": "JANTAR UNITY",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.6824,
-      "lon": 11.64868,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 266414000,
-      "sog": 0,
-      "name": "EROS AV HONO",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.63829,
-      "lon": 11.38392,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219000949,
-      "sog": 0,
-      "name": "HEBO-LIFT 9",
-      "ship_type": null,
-      "nav_status": 3
-    },
-    {
-      "lat": 54.39862,
-      "lon": 18.70099,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 261482000,
-      "sog": 5.9,
-      "name": "VIRTUS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.19901,
-      "lon": 9.55362,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 255806229,
-      "sog": 2.2,
-      "name": "ORAMALIA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.40235,
-      "lon": 18.3689,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265522530,
-      "sog": 0,
-      "name": "SOLOGA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.81775,
-      "lon": 10.80605,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 314607000,
-      "sog": 9,
-      "name": "WILSON SAIMAA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.09427,
-      "lon": 12.4971,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219036195,
-      "sog": 0.7,
-      "name": "NEPTUN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.32773,
-      "lon": 18.05878,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265630020,
-      "sog": 0,
-      "name": "PRINS CARL PHILIP",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.15428,
-      "lon": 10.26156,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 219022903,
-      "sog": 13.6,
-      "name": "EXPRESS 3",
-      "ship_type": null,
-      "nav_status": 9
-    },
-    {
-      "lat": 58.27721,
-      "lon": 11.45726,
-      "ts": "2026-11-08T22:53:56.577635+00:00",
-      "mmsi": 265549760,
-      "sog": 0,
-      "name": "LINDA",
-      "ship_type": null,
-      "nav_status": 4
-    },
     {
       "lat": 59.31161,
       "lon": 18.13062,
@@ -1501,6 +151,1356 @@
       "name": "ELOISE",
       "ship_type": null,
       "nav_status": 15
+    },
+    {
+      "lat": 57.68263,
+      "lon": 11.64933,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 266064000,
+      "sog": 0,
+      "name": "TIMOR",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.5189,
+      "lon": 9.93657,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211835550,
+      "sog": 0,
+      "name": "HT8",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54307,
+      "lon": 9.92116,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211667590,
+      "sog": 0,
+      "name": "MICHEL",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.42844,
+      "lon": 11.93712,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 422031700,
+      "sog": 17.5,
+      "name": "ZARDIS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.33115,
+      "lon": 18.08535,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265614020,
+      "sog": 0,
+      "name": "RODLOGA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.15252,
+      "lon": 10.25125,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219005477,
+      "sog": 0,
+      "name": "AARHUS PILOT",
+      "ship_type": null,
+      "nav_status": 10
+    },
+    {
+      "lat": 54.51768,
+      "lon": 18.55437,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219026071,
+      "sog": 0,
+      "name": "FONIKS-SPIRIT",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.40663,
+      "lon": 18.66468,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 261028820,
+      "sog": 0,
+      "name": "VEGA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.60315,
+      "lon": 16.54903,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265642130,
+      "sog": 0.1,
+      "name": "HAVSORNEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.32167,
+      "lon": 18.09897,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265576690,
+      "sog": 0,
+      "name": "FENIX FIRE/SAR",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.6722,
+      "lon": 11.04648,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219033808,
+      "sog": 14.4,
+      "name": "TYRFING",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.53378,
+      "lon": 9.97399,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211498060,
+      "sog": 0,
+      "name": "WALTER",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 57.60172,
+      "lon": 11.79167,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265547240,
+      "sog": 8.5,
+      "name": "VIPAN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.39945,
+      "lon": 18.69724,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 261482000,
+      "sog": 0,
+      "name": "VIRTUS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.56928,
+      "lon": 11.20928,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 255806303,
+      "sog": 9.3,
+      "name": "ANNETTE ESSBERGER",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.35435,
+      "lon": 17.96484,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265615040,
+      "sog": 0,
+      "name": "FROG TAURUS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.85855,
+      "lon": 10.85401,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 210704000,
+      "sog": 9.4,
+      "name": "JORVIK",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.58332,
+      "lon": 11.68302,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 538004181,
+      "sog": 0,
+      "name": "AGHIA DYNAMI",
+      "ship_type": 70,
+      "nav_status": 1
+    },
+    {
+      "lat": 54.17031,
+      "lon": 12.09613,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211772470,
+      "sog": 0,
+      "name": "GERHARD",
+      "ship_type": 33,
+      "nav_status": 3
+    },
+    {
+      "lat": 58.94693,
+      "lon": 10.68997,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 257068540,
+      "sog": 1.2,
+      "name": "RINGVAAG",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 54.58186,
+      "lon": 10.70266,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 210695000,
+      "sog": 10.2,
+      "name": "TERRAMAR",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 60.14929,
+      "lon": 24.98388,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 230985490,
+      "sog": 0,
+      "name": "SUOMENLINNA II",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.85898,
+      "lon": 12.85082,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265701610,
+      "sog": 0.1,
+      "name": "FLYER",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 53.8854,
+      "lon": 9.17469,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211235020,
+      "sog": 6.7,
+      "name": "FAIRPLAY XV",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.20034,
+      "lon": 12.05077,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211215700,
+      "sog": 9.1,
+      "name": "HIDDENSEE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.32882,
+      "lon": 18.08037,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265609560,
+      "sog": 0,
+      "name": "DELFIN XI",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.33208,
+      "lon": 18.07678,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265582580,
+      "sog": 0,
+      "name": "KANHOLMEN",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 60.44301,
+      "lon": 22.25197,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 230938610,
+      "sog": 0,
+      "name": "RUDOLFINA",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 54.53157,
+      "lon": 18.52325,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 261000460,
+      "sog": 0,
+      "name": "FAIRPLAY-71",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.65567,
+      "lon": 9.51003,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 261182577,
+      "sog": 0,
+      "name": "AGT-06",
+      "ship_type": null,
+      "nav_status": 8
+    },
+    {
+      "lat": 53.54495,
+      "lon": 9.97156,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211184630,
+      "sog": 0,
+      "name": "PAUL ABICHT",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 53.87895,
+      "lon": 9.10681,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 563051800,
+      "sog": 12.3,
+      "name": "MAERSK MONTE VERDE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.52555,
+      "lon": 18.54855,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 231336000,
+      "sog": 0,
+      "name": "TINGANES",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54307,
+      "lon": 9.92027,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211676580,
+      "sog": 0,
+      "name": "VB RESOLUT",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.55431,
+      "lon": 11.27994,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 355671000,
+      "sog": 11.5,
+      "name": "BOZBURUN-M",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.34411,
+      "lon": 18.13232,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265002050,
+      "sog": 0.5,
+      "name": "POLIS 139 9970",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 53.53955,
+      "lon": 9.9483,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211464620,
+      "sog": 4.6,
+      "name": "DEEPENSCHRIEWER 4",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 56.07418,
+      "lon": 12.61135,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265514850,
+      "sog": 17.3,
+      "name": "PILOT  747 SE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.81864,
+      "lon": 10.6996,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 636024611,
+      "sog": 9.1,
+      "name": "BOZKURT",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.23328,
+      "lon": 13.08768,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 244810209,
+      "sog": 13.3,
+      "name": "TRINITYBORG",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.73917,
+      "lon": 10.80601,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 538004145,
+      "sog": 2.5,
+      "name": "ORANGE STARS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.33495,
+      "lon": 10.16765,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 218054210,
+      "sog": 0,
+      "name": "SCHARHOERN",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 55.09982,
+      "lon": 14.69399,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219000896,
+      "sog": 0,
+      "name": "URSUS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.52476,
+      "lon": 9.94082,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211374560,
+      "sog": 0,
+      "name": "BOXER",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.37729,
+      "lon": 12.11913,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 305238000,
+      "sog": 10.9,
+      "name": "KIMBERLY",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 58.62882,
+      "lon": 16.59397,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265604520,
+      "sog": 0.1,
+      "name": "SVEA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.21306,
+      "lon": 12.00912,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 305166000,
+      "sog": 0,
+      "name": "FINN III",
+      "ship_type": null,
+      "nav_status": 1
+    },
+    {
+      "lat": 59.84301,
+      "lon": 25.58526,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 538006052,
+      "sog": 12,
+      "name": "PANAFRICAN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.64672,
+      "lon": 11.85666,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265671520,
+      "sog": 0,
+      "name": "GG1206 DANO",
+      "ship_type": null,
+      "nav_status": 2
+    },
+    {
+      "lat": 54.51737,
+      "lon": 11.48621,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 255806025,
+      "sog": 13.3,
+      "name": "MONTE ULIA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.27145,
+      "lon": 16.48147,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265585610,
+      "sog": 0,
+      "name": "PILOT 790 SE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.67915,
+      "lon": 12.59356,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219002857,
+      "sog": 0,
+      "name": "LANGOE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.54088,
+      "lon": 11.50259,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 266384000,
+      "sog": 2.7,
+      "name": "GG580 SAGA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.09314,
+      "lon": 12.12137,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211225810,
+      "sog": 0,
+      "name": "PETERSDORF",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 56.1246,
+      "lon": 15.55072,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265546920,
+      "sog": 0,
+      "name": "YXLAN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.04169,
+      "lon": 12.61328,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219001214,
+      "sog": 0,
+      "name": "OPHELIA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.97203,
+      "lon": 11.02575,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219023911,
+      "sog": 2.4,
+      "name": "EMILIE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.32177,
+      "lon": 11.12725,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219021235,
+      "sog": 0,
+      "name": "HAVFISKEN",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 53.86815,
+      "lon": 9.28824,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 246910000,
+      "sog": 10.7,
+      "name": "MAX",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.71999,
+      "lon": 23.94408,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 230688000,
+      "sog": 14.1,
+      "name": "JATULI",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.28683,
+      "lon": 18.70522,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265687160,
+      "sog": 0,
+      "name": "DOC",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.35546,
+      "lon": 18.67576,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 261000320,
+      "sog": 0,
+      "name": "RUBIN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.57681,
+      "lon": 11.51672,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219028973,
+      "sog": 9.7,
+      "name": "PRODUCER",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.5671,
+      "lon": 11.9283,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211727510,
+      "sog": 2.4,
+      "name": "BERLIN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.9103,
+      "lon": 10.7298,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 258306500,
+      "sog": 4.6,
+      "name": "BARONEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.67707,
+      "lon": 10.97209,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 212857000,
+      "sog": 12.1,
+      "name": "BELBEK",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.52535,
+      "lon": 10.03699,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211518790,
+      "sog": 0,
+      "name": "SCH 2414",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54305,
+      "lon": 9.91819,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 218029040,
+      "sog": 0,
+      "name": "VB BEAR",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.74947,
+      "lon": 10.80824,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 244678000,
+      "sog": 10,
+      "name": "THUN GARLAND",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54507,
+      "lon": 9.9713,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211512400,
+      "sog": 0,
+      "name": "JESSICA ABICHT",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 53.51969,
+      "lon": 9.9698,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211126880,
+      "sog": 0,
+      "name": "ALEX",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.61139,
+      "lon": 12.50084,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219001819,
+      "sog": 0,
+      "name": "LAPIS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.10809,
+      "lon": 15.5906,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265616910,
+      "sog": 2.6,
+      "name": "KUNGSHOLM",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.87206,
+      "lon": 10.54384,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219026197,
+      "sog": 10.2,
+      "name": "AEROEXPRESSEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.50568,
+      "lon": 11.24162,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219299000,
+      "sog": 1.6,
+      "name": "ACHIEVER",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.69393,
+      "lon": 11.82039,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 212115000,
+      "sog": 0,
+      "name": "SHOALWAY",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 54.63918,
+      "lon": 11.37958,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 235116828,
+      "sog": 2.3,
+      "name": "SC AMBER",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.86537,
+      "lon": 19.05892,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265604500,
+      "sog": 0,
+      "name": "KAJSA STINA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.94445,
+      "lon": 11.56281,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265043000,
+      "sog": 0,
+      "name": "CARMONA",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 57.64425,
+      "lon": 11.66873,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 232033527,
+      "sog": 5.5,
+      "name": "NORTHERN STORM",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.69403,
+      "lon": 11.82254,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 230025060,
+      "sog": 0,
+      "name": "ROCKMATE",
+      "ship_type": 33,
+      "nav_status": 5
+    },
+    {
+      "lat": 57.98982,
+      "lon": 11.69654,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265872000,
+      "sog": 0,
+      "name": "VIKSTEN",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 60.44327,
+      "lon": 22.15299,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 230155950,
+      "sog": 0,
+      "name": "KOKKOMAA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.45578,
+      "lon": 18.69911,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 261092010,
+      "sog": 6.2,
+      "name": "KONSTELACJA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.63778,
+      "lon": 11.03049,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 314607000,
+      "sog": 8.7,
+      "name": "WILSON SAIMAA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.76273,
+      "lon": 10.55661,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 255915983,
+      "sog": 13.8,
+      "name": "STEN ARNOLD",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.24443,
+      "lon": 9.61437,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211187510,
+      "sog": 0,
+      "name": "RUESTERBERGEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.16301,
+      "lon": 15.56878,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265632020,
+      "sog": 0,
+      "name": "WITTUS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.7121,
+      "lon": 11.96557,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265625300,
+      "sog": 0,
+      "name": "ST ERIK",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 55.68743,
+      "lon": 15.32994,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 212673000,
+      "sog": 8,
+      "name": "RIX VENTURE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.0559,
+      "lon": 10.04771,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 246051000,
+      "sog": 0,
+      "name": "ROTRA MARE",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 53.65293,
+      "lon": 9.51095,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211279690,
+      "sog": 0,
+      "name": "ELBCLEARING 3",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.32293,
+      "lon": 18.07636,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265586620,
+      "sog": 0,
+      "name": "DJURGARDEN 8",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.40215,
+      "lon": 18.35665,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265522480,
+      "sog": 1.8,
+      "name": "SKARGARDEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 60.16799,
+      "lon": 24.99966,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 230994870,
+      "sog": 8.9,
+      "name": "KOKAR",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.49838,
+      "lon": 24.81502,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 230035000,
+      "sog": 0,
+      "name": "BALTIK",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.52049,
+      "lon": 11.22293,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219016665,
+      "sog": 1.1,
+      "name": "GUARD VESSEL BOOSTER",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.52947,
+      "lon": 10.0402,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211555980,
+      "sog": 0,
+      "name": "TMS-4",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.67566,
+      "lon": 13.0585,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265011730,
+      "sog": 0,
+      "name": "RESCUE CASQUE",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 54.36502,
+      "lon": 18.64633,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 356731000,
+      "sog": 0,
+      "name": "GRAND NORD",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 59.322,
+      "lon": 18.10432,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265615050,
+      "sog": 0,
+      "name": "SUNNAN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.08201,
+      "lon": 10.45217,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 257714700,
+      "sog": 0,
+      "name": "STRUTEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.36896,
+      "lon": 10.1529,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211265610,
+      "sog": 0,
+      "name": "BREIHOLZ",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 60.10496,
+      "lon": 24.9738,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 230125910,
+      "sog": 0,
+      "name": "PILOT L-139",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 58.93809,
+      "lon": 17.98063,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219029947,
+      "sog": 0,
+      "name": "STENA BALTICA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.2706,
+      "lon": 11.0988,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 258227000,
+      "sog": 0,
+      "name": "HAGLAND POLARIS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.05897,
+      "lon": 12.27236,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265504660,
+      "sog": 0,
+      "name": "PILOT 741 SE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.41972,
+      "lon": 11.19158,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211227550,
+      "sog": 0,
+      "name": "KAROLINE",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 54.37204,
+      "lon": 18.66044,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 466501330,
+      "sog": 0,
+      "name": "NASEEM",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 59.89255,
+      "lon": 10.72,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 257047800,
+      "sog": 0,
+      "name": "FYRGLIMT",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.73833,
+      "lon": 19.17108,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265587000,
+      "sog": 0.1,
+      "name": "RESCUE MATHILDA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.52688,
+      "lon": 9.97209,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211184660,
+      "sog": 0,
+      "name": "RAINER ABICHT",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.04409,
+      "lon": 12.6906,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219000368,
+      "sog": 0,
+      "name": "MERCANDIA IV",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.4436,
+      "lon": 18.65608,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 209014000,
+      "sog": 0,
+      "name": "RIX EMERALD",
+      "ship_type": null,
+      "nav_status": 1
+    },
+    {
+      "lat": 54.33365,
+      "lon": 10.15359,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211240870,
+      "sog": 0,
+      "name": "MS STADT KIEL",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 53.58249,
+      "lon": 9.60157,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211560830,
+      "sog": 0,
+      "name": "DAT OLE LAND 2",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.61339,
+      "lon": 11.31187,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219034332,
+      "sog": 14.7,
+      "name": "THE BALTIC WHALE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.91091,
+      "lon": 11.43953,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211224710,
+      "sog": 5.8,
+      "name": "RALLE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.52536,
+      "lon": 10.06395,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211473590,
+      "sog": 0,
+      "name": "NIEDERSACHSEN 8",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.17297,
+      "lon": 12.10823,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211517420,
+      "sog": 0,
+      "name": "KURT",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 54.63933,
+      "lon": 11.37835,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 245693000,
+      "sog": 0,
+      "name": "KILSTROOM",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.43339,
+      "lon": 18.70288,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265630250,
+      "sog": 0,
+      "name": "BOTTEN UPP",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.32045,
+      "lon": 18.10154,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265522420,
+      "sog": 0,
+      "name": "STORSKAR",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 57.32057,
+      "lon": 11.12371,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219000543,
+      "sog": 0,
+      "name": "RESCUE MORTEN STAGE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.65915,
+      "lon": 16.37743,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265507640,
+      "sog": 0,
+      "name": "PILOT 777",
+      "ship_type": null,
+      "nav_status": 13
+    },
+    {
+      "lat": 55.04735,
+      "lon": 13.98929,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 248457000,
+      "sog": 11.3,
+      "name": "VENEZIA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 58.04367,
+      "lon": 11.09101,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 259143000,
+      "sog": 8.5,
+      "name": "NORJARL",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.37012,
+      "lon": 18.60511,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265575480,
+      "sog": 0,
+      "name": "OSTAN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 58.26804,
+      "lon": 12.2672,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265552060,
+      "sog": 0,
+      "name": "CAPELLA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.17147,
+      "lon": 11.16023,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 219005068,
+      "sog": 0,
+      "name": "M.F. OMOE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.37599,
+      "lon": 18.05069,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 265516070,
+      "sog": 0,
+      "name": "ARIEL",
+      "ship_type": null,
+      "nav_status": 8
+    },
+    {
+      "lat": 53.53191,
+      "lon": 9.98428,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211290760,
+      "sog": 0,
+      "name": "MPOSS",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 53.5272,
+      "lon": 9.95413,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211339980,
+      "sog": 0,
+      "name": "HHLA  I I I",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.8898,
+      "lon": 9.14531,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211784720,
+      "sog": 0,
+      "name": "PILOT DITHMARSCHEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54269,
+      "lon": 9.97942,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "mmsi": 211512520,
+      "sog": 0,
+      "name": "HAMBURG",
+      "ship_type": null,
+      "nav_status": 0
     }
   ],
   "military_aircraft": [
@@ -1599,1208 +1599,1216 @@
       "flight": "BRIO66",
       "type": "CL60",
       "alt_baro": 35000
+    },
+    {
+      "lat": 61.423536,
+      "lon": 23.645528,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "flight": "T24",
+      "type": "PC12",
+      "alt_baro": 475
     }
   ],
   "gpsjam_cells": [
     {
-      "lat": 55.954,
-      "lon": 28.015,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 50.0,
-      "hex": "841f685ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.478,
-      "lon": 20.788,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 50.0,
-      "hex": "841f703ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.239,
-      "lon": 22.096,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 50.0,
-      "hex": "841f717ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.811,
-      "lon": 22.529,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 50.0,
-      "hex": "841f71bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.781,
-      "lon": 21.024,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 50.0,
-      "hex": "841f731ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 61.802,
-      "lon": 26.365,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 40.0,
-      "hex": "841120bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 57.993,
-      "lon": 26.213,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 40.0,
-      "hex": "8411369ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.542,
-      "lon": 28.321,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 40.0,
-      "hex": "841f4c1ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.451,
-      "lon": 27.286,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 40.0,
-      "hex": "841f6ebffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.788,
-      "lon": 30.309,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 39.3,
-      "hex": "8411061ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.632,
-      "lon": 23.498,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 38.9,
-      "hex": "841f463ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.902,
-      "lon": 29.652,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 38.1,
-      "hex": "8411069ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.409,
-      "lon": 22.96,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
+      "lat": 54.383,
+      "lon": 28.947,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
       "severity": 37.5,
-      "hex": "841f467ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.824,
-      "lon": 20.668,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 37.5,
-      "hex": "841f70bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.131,
-      "lon": 20.906,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 37.5,
-      "hex": "841f739ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.277,
-      "lon": 23.6,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 36.6,
-      "hex": "841f429ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.052,
-      "lon": 23.065,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 35.9,
-      "hex": "841f42dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.183,
-      "lon": 28.395,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 34.5,
-      "hex": "841f4c7ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 63.265,
-      "lon": 25.651,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8408d29ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 62.901,
-      "lon": 25.835,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8408d2dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 62.98,
-      "lon": 25.129,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8408d67ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 61.712,
-      "lon": 27.05,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8411203ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 61.52,
-      "lon": 25.858,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8411209ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 60.22,
-      "lon": 27.679,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8411225ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 60.783,
-      "lon": 26.2,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8411263ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.815,
-      "lon": 27.628,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8411301ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.631,
-      "lon": 29.131,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8411317ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.868,
-      "lon": 29.395,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8411331ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.165,
-      "lon": 27.294,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "8411363ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.849,
-      "lon": 27.058,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f41bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 53.56,
-      "lon": 23.801,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f427ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.142,
-      "lon": 24.238,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f42bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 53.957,
-      "lon": 20.088,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f541ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.739,
-      "lon": 25.976,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f617ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 57.28,
-      "lon": 26.456,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f61bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.156,
-      "lon": 22.419,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f625ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 57.756,
-      "lon": 25.696,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f653ffffffff",
-      "date": "2026-11-07"
+      "hex": "841f4c3ffffffff",
+      "date": "2026-11-08"
     },
     {
       "lat": 58.091,
       "lon": 25.6,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 37.5,
       "hex": "841f65bffffffff",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
-      "lat": 56.531,
-      "lon": 28.453,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f689ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.301,
-      "lon": 27.936,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f68dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.702,
-      "lon": 19.47,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f70dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.361,
-      "lon": 21.443,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f715ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.011,
-      "lon": 19.722,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f72bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.465,
-      "lon": 18.939,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 33.3,
-      "hex": "841f763ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.166,
-      "lon": 20.546,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 30.8,
-      "hex": "841f755ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.114,
-      "lon": 22.747,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 30.0,
-      "hex": "841f469ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.225,
-      "lon": 18.412,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 30.0,
-      "hex": "841f767ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.286,
-      "lon": 18.155,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 29.4,
-      "hex": "841f099ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.936,
-      "lon": 20.006,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 29.4,
-      "hex": "841f709ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.985,
-      "lon": 23.395,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 29.3,
-      "hex": "841f46bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.463,
-      "lon": 25.439,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 29.0,
-      "hex": "841134dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.361,
-      "lon": 24.778,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 28.8,
-      "hex": "841f407ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 62.17,
-      "lon": 26.192,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 28.6,
-      "hex": "8411257ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.918,
-      "lon": 26.996,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 28.6,
-      "hex": "8411309ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.268,
-      "lon": 26.675,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 28.6,
-      "hex": "841136bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.597,
-      "lon": 26.633,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 28.6,
-      "hex": "841f6e9ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.898,
-      "lon": 20.374,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 28.6,
-      "hex": "841f73dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.808,
-      "lon": 18.809,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 28.6,
-      "hex": "841f76bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 53.825,
-      "lon": 22.533,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 28.1,
-      "hex": "841f553ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 62.617,
-      "lon": 25.317,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 27.8,
-      "hex": "841125bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.763,
-      "lon": 22.854,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 27.8,
-      "hex": "841f461ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.031,
-      "lon": 23.079,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 27.3,
-      "hex": "841f627ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.685,
-      "lon": 23.185,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 26.7,
-      "hex": "841f44dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 62.318,
-      "lon": 21.603,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "840888bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 65.061,
-      "lon": 24.664,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "8408d53ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 62.362,
-      "lon": 27.415,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "8411211ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 60.318,
-      "lon": 27.022,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "841122dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.98,
-      "lon": 28.757,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "8411339ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.944,
-      "lon": 27.178,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "8411353ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.433,
-      "lon": 25.959,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "841f415ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 57.08,
-      "lon": 25.884,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "841f611ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.395,
-      "lon": 26.067,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "841f6edffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.246,
-      "lon": 20.252,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "841f707ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.662,
-      "lon": 19.845,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 25.0,
-      "hex": "841f723ffffffff",
-      "date": "2026-11-07"
+      "lat": 55.587,
+      "lon": 21.984,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 37.5,
+      "hex": "841f711ffffffff",
+      "date": "2026-11-08"
     },
     {
       "lat": 53.694,
       "lon": 23.168,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 24.1,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 37.1,
       "hex": "841f425ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 65.636,
-      "lon": 25.783,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 23.1,
-      "hex": "8408c27ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 65.279,
-      "lon": 25.982,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 23.1,
-      "hex": "8408d1bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.18,
-      "lon": 18.801,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 23.0,
-      "hex": "841f09bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 61.32,
-      "lon": 24.693,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 22.2,
-      "hex": "8411241ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 53.919,
-      "lon": 23.701,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 22.2,
-      "hex": "841f421ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.07,
-      "lon": 19.446,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 22.2,
-      "hex": "841f54dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.464,
-      "lon": 22.639,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 22.2,
-      "hex": "841f713ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.052,
-      "lon": 21.21,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 22.2,
-      "hex": "841f757ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.902,
-      "lon": 23.736,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.8,
-      "hex": "841f449ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 65.349,
-      "lon": 25.217,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "8408c25ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 61.152,
-      "lon": 26.03,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841120dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 62.082,
-      "lon": 26.884,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841121dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.542,
-      "lon": 27.147,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841130dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.466,
-      "lon": 27.975,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841131dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.498,
-      "lon": 24.14,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841f405ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.383,
-      "lon": 28.947,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841f4c3ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 53.593,
-      "lon": 22.005,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841f557ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 57.419,
-      "lon": 25.79,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841f619ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.772,
-      "lon": 19.195,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841f721ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.669,
-      "lon": 17.619,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 20.0,
-      "hex": "841f76dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.924,
-      "lon": 24.651,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 18.8,
-      "hex": "84089a3ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.479,
-      "lon": 23.557,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 18.8,
-      "hex": "84089adffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 61.604,
-      "lon": 25.181,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 18.8,
-      "hex": "8411243ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.336,
-      "lon": 23.291,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 18.8,
-      "hex": "841f445ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 60.055,
-      "lon": 30.848,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 18.2,
-      "hex": "8411063ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 57.891,
-      "lon": 25.022,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 18.2,
-      "hex": "841f651ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.422,
-      "lon": 19.321,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 18.2,
-      "hex": "841f727ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 62.253,
-      "lon": 25.501,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 17.6,
-      "hex": "8411251ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.224,
-      "lon": 24.923,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 17.1,
-      "hex": "841f659ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.853,
-      "lon": 25.401,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 16.7,
-      "hex": "84089b3ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 65.705,
-      "lon": 25.01,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 16.7,
-      "hex": "8408c21ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 64.919,
-      "lon": 26.175,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 16.7,
-      "hex": "8408d11ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.375,
-      "lon": 22.971,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 16.7,
-      "hex": "841f621ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.044,
-      "lon": 19.342,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 16.7,
-      "hex": "841f747ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.247,
-      "lon": 23.632,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 16.3,
-      "hex": "841f623ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 60.898,
-      "lon": 22.445,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 15.4,
-      "hex": "84088adffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.931,
-      "lon": 23.42,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.9,
-      "hex": "841f605ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.853,
-      "lon": 24.041,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.8,
-      "hex": "841f40dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.292,
-      "lon": 24.477,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.3,
-      "hex": "84089bdffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.505,
-      "lon": 21.606,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.3,
-      "hex": "84089edffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 65.639,
-      "lon": 21.418,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.3,
-      "hex": "8408f13ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.67,
-      "lon": 30.966,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.3,
-      "hex": "8411067ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 60.955,
-      "lon": 24.875,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.3,
-      "hex": "8411245ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 60.04,
-      "lon": 26.528,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.3,
-      "hex": "841135bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.182,
-      "lon": 22.425,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.3,
-      "hex": "841f55bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.075,
-      "lon": 21.254,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 14.3,
-      "hex": "841f55dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.354,
-      "lon": 24.241,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 13.3,
-      "hex": "84089a5ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 63.341,
-      "lon": 24.937,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 13.3,
-      "hex": "8408d63ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.643,
-      "lon": 26.522,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 13.3,
-      "hex": "8411347ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.59,
-      "lon": 23.527,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 13.1,
-      "hex": "841f62bffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 60.307,
-      "lon": 24.582,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 13.0,
-      "hex": "8408997ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.635,
-      "lon": 18.023,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 13.0,
-      "hex": "841f0d3ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 58.555,
-      "lon": 24.822,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 12.9,
-      "hex": "84089a7ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.25,
-      "lon": 18.01,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 12.9,
-      "hex": "841f293ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 61.544,
-      "lon": 22.695,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 12.5,
-      "hex": "84088abffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 65.922,
-      "lon": 26.364,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 12.5,
-      "hex": "8408dc9ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 61.238,
-      "lon": 25.361,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 12.5,
-      "hex": "8411247ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.205,
-      "lon": 23.94,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 12.5,
-      "hex": "841f447ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.707,
-      "lon": 21.327,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 12.5,
-      "hex": "841f71dffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 59.94,
-      "lon": 24.76,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 12.0,
-      "hex": "84089bbffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 56.009,
-      "lon": 17.481,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 11.8,
-      "hex": "841f297ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 55.327,
-      "lon": 17.755,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 11.5,
-      "hex": "841f765ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 54.716,
-      "lon": 24.683,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 11.4,
-      "hex": "841f401ffffffff",
-      "date": "2026-11-07"
-    },
-    {
-      "lat": 53.934,
-      "lon": 18.286,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 11.2,
-      "hex": "841f091ffffffff",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.183,
+      "lon": 28.395,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 37.0,
+      "hex": "841f4c7ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.631,
+      "lon": 29.131,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 36.4,
+      "hex": "8411317ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.463,
+      "lon": 25.439,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 35.7,
+      "hex": "841134dffffffff",
+      "date": "2026-11-08"
     },
     {
       "lat": 61.186,
       "lon": 22.897,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 11.1,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
       "hex": "84088a1ffffffff",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
-      "lat": 60.253,
-      "lon": 22.205,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 11.1,
-      "hex": "84089d1ffffffff",
-      "date": "2026-11-07"
+      "lat": 61.712,
+      "lon": 27.05,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "8411203ffffffff",
+      "date": "2026-11-08"
     },
     {
-      "lat": 57.351,
-      "lon": 24.55,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 11.1,
-      "hex": "841f60bffffffff",
-      "date": "2026-11-07"
+      "lat": 62.362,
+      "lon": 27.415,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "8411211ffffffff",
+      "date": "2026-11-08"
     },
     {
-      "lat": 57.27,
-      "lon": 23.313,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 11.1,
-      "hex": "841f60dffffffff",
-      "date": "2026-11-07"
+      "lat": 62.082,
+      "lon": 26.884,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841121dffffffff",
+      "date": "2026-11-08"
     },
     {
-      "lat": 59.011,
-      "lon": 24.029,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 10.5,
-      "hex": "84089abffffffff",
-      "date": "2026-11-07"
+      "lat": 60.691,
+      "lon": 26.863,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "8411229ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 62.17,
+      "lon": 26.192,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "8411257ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 62.918,
+      "lon": 28.512,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "84112c5ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.118,
+      "lon": 28.337,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841131bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.643,
+      "lon": 26.522,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "8411347ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.39,
+      "lon": 26.206,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841135dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.165,
+      "lon": 27.294,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "8411363ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.619,
+      "lon": 27.923,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841f4e3ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 57.136,
+      "lon": 27.118,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841f6cdffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.246,
+      "lon": 20.252,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841f707ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.824,
+      "lon": 20.668,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841f70bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.707,
+      "lon": 21.327,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841f71dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.772,
+      "lon": 19.195,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 33.3,
+      "hex": "841f721ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.277,
+      "lon": 23.6,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 32.3,
+      "hex": "841f429ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.632,
+      "lon": 23.498,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 31.8,
+      "hex": "841f463ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.919,
+      "lon": 23.701,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 31.2,
+      "hex": "841f421ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.898,
+      "lon": 20.374,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 30.2,
+      "hex": "841f73dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 57.756,
+      "lon": 25.696,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 30.0,
+      "hex": "841f653ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.422,
+      "lon": 19.321,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 30.0,
+      "hex": "841f727ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.286,
+      "lon": 18.155,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 29.7,
+      "hex": "841f099ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.902,
+      "lon": 29.652,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 29.4,
+      "hex": "8411069ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.825,
+      "lon": 22.533,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 28.6,
+      "hex": "841f553ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.811,
+      "lon": 22.529,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 28.6,
+      "hex": "841f71bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.465,
+      "lon": 18.939,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 28.6,
+      "hex": "841f763ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.498,
+      "lon": 24.14,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 27.5,
+      "hex": "841f405ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.361,
+      "lon": 24.778,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 27.1,
+      "hex": "841f407ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.685,
+      "lon": 23.185,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 26.4,
+      "hex": "841f44dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.224,
+      "lon": 24.923,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 26.0,
+      "hex": "841f659ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 63.265,
+      "lon": 25.651,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.9,
+      "hex": "8408d29ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.782,
+      "lon": 12.484,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "8408a09ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 65.636,
+      "lon": 25.783,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "8408c27ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 64.674,
+      "lon": 28.448,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "8408de5ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 57.98,
+      "lon": 30.274,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "8411141ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.22,
+      "lon": 27.679,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "8411225ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.412,
+      "lon": 26.365,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "8411267ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 63.289,
+      "lon": 28.355,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "84112c1ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.74,
+      "lon": 28.48,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "8411311ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.135,
+      "lon": 27.221,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f4e9ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.31,
+      "lon": 19.967,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f549ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.951,
+      "lon": 21.895,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f551ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.375,
+      "lon": 22.971,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f621ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.592,
+      "lon": 20.13,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f701ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.702,
+      "lon": 19.47,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f70dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.239,
+      "lon": 22.096,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f717ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.011,
+      "lon": 19.722,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f72bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.131,
+      "lon": 20.906,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 25.0,
+      "hex": "841f739ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 61.887,
+      "lon": 25.681,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 23.8,
+      "hex": "8411255ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.07,
+      "lon": 19.446,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 23.5,
+      "hex": "841f54dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.853,
+      "lon": 25.401,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 22.6,
+      "hex": "84089b3ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 62.98,
+      "lon": 25.129,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 22.2,
+      "hex": "8408d67ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.466,
+      "lon": 27.975,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 22.2,
+      "hex": "841131dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.166,
+      "lon": 20.546,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 22.2,
+      "hex": "841f755ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.225,
+      "lon": 18.412,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 22.2,
+      "hex": "841f767ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.479,
+      "lon": 23.557,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 21.7,
+      "hex": "84089adffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.307,
+      "lon": 24.582,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 21.5,
+      "hex": "8408997ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.336,
+      "lon": 23.291,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 21.4,
+      "hex": "841f445ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.031,
+      "lon": 23.079,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 21.2,
+      "hex": "841f627ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.593,
+      "lon": 22.005,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 21.1,
+      "hex": "841f557ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.658,
+      "lon": 24.3,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.5,
+      "hex": "84089b9ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.955,
+      "lon": 24.875,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "8411245ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 62.536,
+      "lon": 26.016,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "8411253ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.783,
+      "lon": 26.2,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "8411263ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.133,
+      "lon": 25.878,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "8411265ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.36,
+      "lon": 28.62,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "8411315ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.367,
+      "lon": 26.056,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "8411345ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.156,
+      "lon": 22.419,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "841f625ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.049,
+      "lon": 26.157,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "841f6e5ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.597,
+      "lon": 26.633,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "841f6e9ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.395,
+      "lon": 26.067,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "841f6edffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.361,
+      "lon": 21.443,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "841f715ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.052,
+      "lon": 21.21,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 20.0,
+      "hex": "841f757ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.853,
+      "lon": 24.041,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 19.0,
+      "hex": "841f40dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 61.52,
+      "lon": 25.858,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 18.2,
+      "hex": "8411209ffffffff",
+      "date": "2026-11-08"
     },
     {
       "lat": 54.531,
       "lon": 18.673,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 10.5,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 18.2,
       "hex": "841f725ffffffff",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
-      "lat": 55.082,
-      "lon": 17.235,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 10.4,
-      "hex": "841f0d9ffffffff",
-      "date": "2026-11-07"
+      "lat": 59.292,
+      "lon": 24.477,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 17.9,
+      "hex": "84089bdffffffff",
+      "date": "2026-11-08"
     },
     {
-      "lat": 58.289,
-      "lon": 21.039,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
+      "lat": 62.617,
+      "lon": 25.317,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 17.4,
+      "hex": "841125bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 62.836,
+      "lon": 23.229,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "8408897ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 64.919,
+      "lon": 26.175,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "8408d11ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 65.279,
+      "lon": 25.982,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "8408d1bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 63.467,
+      "lon": 26.907,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "8408d23ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 62.818,
+      "lon": 26.542,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "8408d25ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 61.604,
+      "lon": 25.181,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "8411243ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.985,
+      "lon": 23.395,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f46bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.774,
+      "lon": 27.301,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f4e1ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.957,
+      "lon": 20.088,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f541ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.307,
+      "lon": 21.784,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f559ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.075,
+      "lon": 21.254,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f55dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 57.419,
+      "lon": 25.79,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f619ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 57.606,
+      "lon": 23.204,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f647ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.936,
+      "lon": 20.006,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f709ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.808,
+      "lon": 18.809,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.7,
+      "hex": "841f76bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.924,
+      "lon": 24.651,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.2,
+      "hex": "84089a3ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.555,
+      "lon": 24.822,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 16.0,
+      "hex": "84089a7ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.18,
+      "lon": 18.801,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 15.6,
+      "hex": "841f09bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 61.036,
+      "lon": 24.215,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 15.4,
+      "hex": "841124dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.421,
+      "lon": 24.489,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 15.4,
+      "hex": "841f443ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.741,
+      "lon": 23.666,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 15.3,
+      "hex": "8408983ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.327,
+      "lon": 17.755,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 15.2,
+      "hex": "841f765ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.011,
+      "lon": 24.029,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.8,
+      "hex": "84089abffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.982,
+      "lon": 17.89,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.5,
+      "hex": "841f0dbffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.894,
+      "lon": 14.487,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "8408a39ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 65.993,
+      "lon": 25.58,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "8408c23ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 63.748,
+      "lon": 27.462,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "8408d35ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.055,
+      "lon": 30.848,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "8411063ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 61.32,
+      "lon": 24.693,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "8411241ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.017,
+      "lon": 26.366,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "8411343ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.112,
+      "lon": 25.735,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "841134bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.268,
+      "lon": 26.675,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "841136bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.839,
+      "lon": 20.729,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.3,
+      "hex": "841f543ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.25,
+      "lon": 18.01,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 14.0,
+      "hex": "841f293ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.94,
+      "lon": 24.76,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.6,
+      "hex": "84089bbffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 64.634,
+      "lon": 25.617,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.6,
+      "hex": "8408d1dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.635,
+      "lon": 18.023,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.6,
+      "hex": "841f0d3ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.388,
+      "lon": 23.935,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.5,
+      "hex": "8408991ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.827,
+      "lon": 18.928,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.5,
+      "hex": "841f093ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.59,
+      "lon": 23.527,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.4,
+      "hex": "841f62bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 59.483,
+      "lon": 25.57,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.3,
+      "hex": "84089b7ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.77,
+      "lon": 24.39,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.3,
+      "hex": "841f44bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 53.6,
+      "lon": 20.208,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.3,
+      "hex": "841f547ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 57.891,
+      "lon": 25.022,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 13.3,
+      "hex": "841f651ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.601,
+      "lon": 18.962,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 12.9,
+      "hex": "8408957ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 61.238,
+      "lon": 25.361,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 12.5,
+      "hex": "8411247ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.662,
+      "lon": 19.845,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 12.5,
+      "hex": "841f723ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.384,
+      "lon": 19.213,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 12.5,
+      "hex": "841f741ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 58.354,
+      "lon": 24.241,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 11.8,
+      "hex": "84089a5ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.507,
+      "lon": 20.423,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 11.7,
+      "hex": "841f75dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.54,
+      "lon": 22.645,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 11.5,
+      "hex": "84089d3ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.902,
+      "lon": 23.736,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 11.5,
+      "hex": "841f449ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.931,
+      "lon": 25.23,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 11.4,
+      "hex": "841f40bffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 65.349,
+      "lon": 25.217,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 11.1,
+      "hex": "8408c25ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.009,
+      "lon": 17.481,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 10.9,
+      "hex": "841f297ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.669,
+      "lon": 17.619,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 10.9,
+      "hex": "841f76dffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 54.716,
+      "lon": 24.683,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 10.6,
+      "hex": "841f401ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 60.253,
+      "lon": 22.205,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 10.5,
+      "hex": "84089d1ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 55.205,
+      "lon": 23.94,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 10.5,
+      "hex": "841f447ffffffff",
+      "date": "2026-11-08"
+    },
+    {
+      "lat": 56.931,
+      "lon": 23.42,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
       "severity": 10.2,
-      "hex": "840893bffffffff",
-      "date": "2026-11-07"
+      "hex": "841f605ffffffff",
+      "date": "2026-11-08"
     },
     {
-      "lat": 54.736,
-      "lon": 17.372,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
-      "severity": 10.2,
-      "hex": "841f0d1ffffffff",
-      "date": "2026-11-07"
+      "lat": 59.574,
+      "lon": 22.522,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
+      "severity": 10.1,
+      "hex": "8408989ffffffff",
+      "date": "2026-11-08"
     },
     {
-      "lat": 58.927,
-      "lon": 22.755,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
+      "lat": 60.751,
+      "lon": 23.747,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
       "severity": 10.0,
-      "hex": "84089e3ffffffff",
-      "date": "2026-11-07"
+      "hex": "840899bffffffff",
+      "date": "2026-11-08"
     },
     {
-      "lat": 58.834,
-      "lon": 25.274,
-      "ts": "2026-11-08T07:19:52.490125+00:00",
+      "lat": 54.879,
+      "lon": 18.543,
+      "ts": "2026-11-09T08:00:50.265103+00:00",
       "severity": 10.0,
-      "hex": "8411349ffffffff",
-      "date": "2026-11-07"
+      "hex": "841f72dffffffff",
+      "date": "2026-11-08"
     }
   ],
   "firms": []
