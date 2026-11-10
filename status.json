@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-10T02:07:33.058175+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "last_run_utc": "2026-11-10T04:18:40.663143+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 2.9h ago",
   "since": "2026-07-19",
-  "total_scans": 740,
+  "total_scans": 741,
   "quiet_count": 362,
-  "watch_count": 349,
+  "watch_count": 350,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-10 02:07 UTC",
+  "generated_at": "2026-11-10 07:13 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-10T04:18:40.639382+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 47,
+      "stale_count": 0,
+      "alert_id": "1110-0418",
+      "items": [
+        {
+          "title": "Estnisk minister: Ryssland kan anfalla Nato efter fred i Ukraina",
+          "source": "Sveriges Radio Ekot",
+          "link": "https://www.sverigesradio.se/artikel/9336606",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-10T02:07:33.073387+00:00",
       "level": "QUIET",
@@ -531,67 +561,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-06T15:07:43.769893+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 383,
-      "stale_count": 4,
-      "alert_id": "1106-1507",
-      "items": [
-        {
-          "title": "Lithuanian President warns: Russian provocations will continue",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/world/lithuanian-president-warns-russian-provocations-will-continue-y5ataue",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Poola koondas Kaliningradi piiri \u00e4\u00e4rde eri\u00fcksused, luureekspert Venemaa poolel ohum\u00e4rke ei n\u00e4e",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8578657",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "US troops return to Estonia. NATO's eastern flank is getting stronger",
-          "source": "Defence24",
-          "link": "https://defence24.com/defence-policy/us-troops-return-to-estonia-natos-eastern-flank-is-getting-stronger",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1017,7 +986,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 180,
-    "alerting_scans": 133,
+    "alerting_scans": 134,
     "held_back_total": 57,
     "held_back_by_reason": [
       {
