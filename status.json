@@ -1,20 +1,140 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-10T15:41:44.970561+00:00",
+  "last_run_utc": "2026-11-10T20:35:54.270530+00:00",
   "last_level": "WARN",
-  "freshness_msg": "Last scan: 4.0h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 743,
+  "total_scans": 744,
   "quiet_count": 362,
   "watch_count": 351,
-  "warn_count": 30,
+  "warn_count": 31,
   "correction_count": 4,
-  "generated_at": "2026-11-10 19:41 UTC",
+  "generated_at": "2026-11-10 20:35 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-10T20:35:54.287652+00:00",
+      "level": "WARN",
+      "count": 7,
+      "failed_count": 0,
+      "tier3_count": 1,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 493,
+      "stale_count": 10,
+      "alert_id": "1110-2035",
+      "items": [
+        {
+          "title": "Lietuvos muitin\u0117je \u2013 kibernetinis incidentas, laikinai stabdoma vieno i\u0161 portal\u0173 veikla",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/verslas/naujienos/lietuvos-muitineje-kibernetinis-incidentas-laikinai-stabdoma-vieno-is-portalu-veikla-120332124",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vir\u0161 Kauno oro uosto \u012fvesti oro erdv\u0117s ribojimai, Vilniuje oro uostas atnaujino veikl\u0105",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/verslas/transportas/virs-vilniaus-oro-uosto-ivesti-oro-erdves-ribojimai-pastebetos-atzymos-budingos-balionams-120332115",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuvos muitin\u0117 patyr\u0117 rimt\u0105 kibernetin\u0119 atak\u0105",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/lietuvos-muitine-patyre-kibernetini-incidenta-jis-tiriamas-59-2803192?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lietuvos muitin\u0117 patyr\u0117 kibernetin\u012f incident\u0105: laikinai stabdoma vieno i\u0161 portal\u0173 veikla",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/it/ismanyk/2026/11/10/news/lietuvos-muitine-patyre-kibernetini-incidenta-laikinai-stabdoma-vieno-is-portalu-veikla-44876783",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Vir\u0161 Vilniaus ir Kauno oro uost\u0173 \u2013 ribojimai: pasteb\u0117tos at\u017eymos, b\u016bdingos balionams",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/verslas/rinkos-pulsas/2026/11/10/news/virs-vilniaus-oro-uosto-ribojimai-pastebetos-atzymos-budingos-balionams-44874484",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Mirtinos ligos diagnoz\u0119 i\u0161girdusi R\u016bta bemat numet\u0117 14 kg: \u201eI\u0161 tos baim\u0117s \u2013 ko nepadarysi\u201c",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/sveikata/ligos-ir-gydymas/2026/11/10/news/mirtinos-ligos-diagnoze-isgirdusi-ruta-bemat-numete-14-kg-is-tos-baimes-ko-nepadarysi--44869043",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Muitinei patyrus kibernetin\u012f incident\u0105, laikinai sustabdyta vartotoj\u0173 valdymo portalo prieiga",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/verslo-aplinka/2026/11/10/muitinei-patyrus-kibernetini-incidenta-laikinai-sustabdyta-vartotoju-valdymo-portalo-prieiga-592578",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-10T15:41:44.983022+00:00",
       "level": "WARN",
@@ -562,23 +682,121 @@
       "stale_count": 1,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-11-06T23:51:34.650868+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 172,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-10T20:35:54.312861+00:00",
+      "level": "WARN",
+      "title": "Muitinei patyrus kibernetin\u012f incident\u0105, laikinai sustabdyta vartotoj\u0173 valdymo portalo prieiga",
+      "source": "Verslo zinios (Lithuania)",
+      "link": "https://www.vz.lt/verslo-aplinka/2026/11/10/muitinei-patyrus-kibernetini-incidenta-laikinai-sustabdyta-vartotoju-valdymo-portalo-prieiga-592578",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-10T20:35:54.312861+00:00",
+      "level": "WARN",
+      "title": "Mirtinos ligos diagnoz\u0119 i\u0161girdusi R\u016bta bemat numet\u0117 14 kg: \u201eI\u0161 tos baim\u0117s \u2013 ko nepadarysi\u201c",
+      "source": "Lrytas (Lithuania)",
+      "link": "https://www.lrytas.lt/sveikata/ligos-ir-gydymas/2026/11/10/news/mirtinos-ligos-diagnoze-isgirdusi-ruta-bemat-numete-14-kg-is-tos-baimes-ko-nepadarysi--44869043",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-10T20:35:54.312861+00:00",
+      "level": "WARN",
+      "title": "Vir\u0161 Vilniaus ir Kauno oro uost\u0173 \u2013 ribojimai: pasteb\u0117tos at\u017eymos, b\u016bdingos balionams",
+      "source": "Lrytas (Lithuania)",
+      "link": "https://www.lrytas.lt/verslas/rinkos-pulsas/2026/11/10/news/virs-vilniaus-oro-uosto-ribojimai-pastebetos-atzymos-budingos-balionams-44874484",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-10T20:35:54.312861+00:00",
+      "level": "WARN",
+      "title": "Lietuvos muitin\u0117 patyr\u0117 kibernetin\u012f incident\u0105: laikinai stabdoma vieno i\u0161 portal\u0173 veikla",
+      "source": "Lrytas (Lithuania)",
+      "link": "https://www.lrytas.lt/it/ismanyk/2026/11/10/news/lietuvos-muitine-patyre-kibernetini-incidenta-laikinai-stabdoma-vieno-is-portalu-veikla-44876783",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-10T20:35:54.312861+00:00",
+      "level": "WARN",
+      "title": "Lietuvos muitin\u0117 patyr\u0117 rimt\u0105 kibernetin\u0119 atak\u0105",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/lietuvos-muitine-patyre-kibernetini-incidenta-jis-tiriamas-59-2803192?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-10T20:35:54.312861+00:00",
+      "level": "WARN",
+      "title": "Vir\u0161 Kauno oro uosto \u012fvesti oro erdv\u0117s ribojimai, Vilniuje oro uostas atnaujino veikl\u0105",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/verslas/transportas/virs-vilniaus-oro-uosto-ivesti-oro-erdves-ribojimai-pastebetos-atzymos-budingos-balionams-120332115",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-10T20:35:54.312861+00:00",
+      "level": "WARN",
+      "title": "Lietuvos muitin\u0117je \u2013 kibernetinis incidentas, laikinai stabdoma vieno i\u0161 portal\u0173 veikla",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/verslas/naujienos/lietuvos-muitineje-kibernetinis-incidentas-laikinai-stabdoma-vieno-is-portalu-veikla-120332124",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-10T15:41:44.999126+00:00",
       "level": "WARN",
@@ -697,118 +915,6 @@
       "title": "\u00ab\u0417\u0430\u0442\u043e \u043f\u043e\u043c\u043e\u0436\u0435\u043c \u0444\u0435\u0440\u043c\u0435\u0440\u0430\u043c \u0410\u043c\u0435\u0440\u0438\u043a\u0438\u00bb",
       "source": "Novaya Gazeta Europe",
       "link": "https://novayagazeta.eu/articles/2026/11/09/zato-pomozhem-fermeram-ameriki",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-09T08:01:21.660408+00:00",
-      "level": "WATCH",
-      "title": "Latvia chairs emergency UN meeting on Ukraine",
-      "source": "LSM (Latvia)",
-      "link": "https://eng.lsm.lv/article/politics/diplomacy/09.11.2026-latvia-chairs-emergency-un-meeting-on-ukraine.a671081/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-08T14:24:23.589456+00:00",
-      "level": "WATCH",
-      "title": "Eksperts: Somija \u0101tri piel\u0101gojas jaunajai realit\u0101tei un turpina stiprin\u0101t gatav\u012bbu apdraud\u0113jumiem",
-      "source": "LSM Latvian-language",
-      "link": "https://www.lsm.lv/raksts/zinas/arzemes/08.11.2026-eksperts-somija-atri-pielagojas-jaunajai-realitatei-un-turpina-stiprinat-gatavibu-apdraudejumiem.a670507/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-07T14:05:20.705209+00:00",
-      "level": "WATCH",
-      "title": "Finnish court jails Russian captain over Baltic cable sabotage - Courthouse News",
-      "source": "BNS (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbU1weUhsLTJncHdxZ2NPN3dFb29DTU0zZ0NoaE04Y3E4N254bUJfN3dGdWV4MXBadjlhTGt0TUFjQzNfMGU3VE9VM25rR1pJZmFzdW9nV3ZMcFdUeDdsaS1XN3hVenFOOWhtWVhxMGxRYW82dGxRcnpudUYzN0dac2dwRGY2Tl9rTTV5VHd1eXZSTzBuLWxPaQ?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-06T20:05:10.422489+00:00",
-      "level": "WATCH",
-      "title": "Finnish court jails captain and crew member for 'aggravated criminal damage' over Baltic cable sabotage - DW.com",
-      "source": "Deutsche Welle (Germany)",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMHlqclVCUzhHamlCQkV1NjU4dFFTNVRpeUpuQjJjZVJYY0VzemF4ek53VzBKWmg0MFFFVXNxRW1uYldRb0R5V2kzd0pmdFhUcWNoeGpmRGNySnhmNW8zWXZXS2lPQkZNQjd4eHo1OVlJVkhGOGRnOWptMjF3ZDFveVVqOVRGRlVVTGN1dEhqYjV4SUxfTVhMcmFPcFpHR0s1SkdBRlJn0gGmAUFVX3lxTE5KZklCWC1GNk1UZEEzNFZWRnJKU3lwVlVkTURuXzVnWThLc0kybDNnd1RJdWZwOXRlWExUZzJBSy1NejNuMTBnVmxmN1lUUDg0MVNGNkJUcngwRGdxYzE3UU1FVTNpUldTZjhYS0wwQmJqZUxLeW1NR0wwV0VxNnJldHZJZmlxR0gxQ1l3LXVycWNFTGZGRnpzUk1VS205QVhmZzI3M1E?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-06T20:05:10.422489+00:00",
-      "level": "WATCH",
-      "title": "38 migrants tried to cross from Belarus to Lithuania on Thursday - Delfi",
-      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVDlab18xRlZtbFg2X0ZJbjE1a05VQ3RkWXhDNnFmZENtZWtzY09DemFIMUVGQWU1MkQ1bzRJRnNyM1huTEF4TWF5N3R3Zi10dHhzRUl3MVd4SzJ4dVdmQ1RyWldXRVlJS2ZxQ3pDY2FXc0JmUkpYQy1vMkNlMXFoQVhzalF0T2QyamotQ2JaTEhmMFROT0Q4VEd2UkdScDVtZkxqc2pRTDktR2M?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-06T15:07:43.794502+00:00",
-      "level": "WATCH",
-      "title": "US troops return to Estonia. NATO's eastern flank is getting stronger",
-      "source": "Defence24",
-      "link": "https://defence24.com/defence-policy/us-troops-return-to-estonia-natos-eastern-flank-is-getting-stronger",
-      "categories": [
-        "troop_movement",
-        "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-06T15:07:43.794502+00:00",
-      "level": "WATCH",
-      "title": "Poola koondas Kaliningradi piiri \u00e4\u00e4rde eri\u00fcksused, luureekspert Venemaa poolel ohum\u00e4rke ei n\u00e4e",
-      "source": "Postimees Estonian-language",
-      "link": "https://pmo.ee/8578657",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
@@ -1000,8 +1106,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 179,
-    "alerting_scans": 134,
+    "scans": 180,
+    "alerting_scans": 135,
     "held_back_total": 56,
     "held_back_by_reason": [
       {
