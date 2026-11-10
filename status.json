@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-09T23:07:01.221033+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-11-10T02:07:33.058175+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 739,
-  "quiet_count": 361,
+  "total_scans": 740,
+  "quiet_count": 362,
   "watch_count": 349,
   "warn_count": 29,
   "correction_count": 4,
-  "generated_at": "2026-11-09 23:07 UTC",
+  "generated_at": "2026-11-10 02:07 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-10T02:07:33.073387+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 152,
+      "stale_count": 3,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-11-09T23:07:01.234819+00:00",
       "level": "WATCH",
@@ -578,96 +592,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-06T12:24:45.016326+00:00",
-      "level": "WATCH",
-      "count": 5,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 424,
-      "stale_count": 0,
-      "alert_id": "1106-1224",
-      "items": [
-        {
-          "title": "Ministras: situacija Lietuvos pasienyje su Kaliningradu \u0161iuo metu yra ramesn\u0117, nei buvo Lenkijoje",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/ministras-situacija-lietuvos-pasienyje-su-kaliningradu-siuo-metu-yra-ramesne-nei-buvo-lenkijoje-56-2800576?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Naus\u0117da interviu Vokietijos \u017einiasklaidai \u012fvertino Putino plan\u0105: \u201eA\u0161 jais nepasitikiu\u201c",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/nauseda-interviu-vokietijos-ziniasklaidai-ivertino-apie-putino-plana-as-jais-nepasitikiu-57-2800422?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "CERT.LV: Lack of management commitment and cybersecurity specialists hampers improvements in Latvia",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/social/cert-lv-lack-of-management-commitment-and-cybersecurity-specialists-hampers-improvements-in-latvia-ttjb76v",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Vokietijos leidinyje \u2013 G. Naus\u0117dos \u012fsp\u0117jimas: \u201eRusai tik apsimes besiderantys\u201c",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/11/06/news/vokietijos-leidinyje-g-nausedos-ispejimas-rusai-tik-apsimes-besiderantys--44809609",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "FOTO, VIDEO: cik gatavi esam kr\u012bzes situ\u0101cij\u0101m? R\u012bg\u0101 norisin\u0101s dronu sacens\u012bbas \"Taktiskais p\u0101rsp\u0113ks\"",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/bizness/736902-foto-video-cik-gatavi-esam-krizes-situacijam-riga-norisinas-dronu-sacensibas-taktiskais-parspeks",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1092,7 +1016,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 179,
+    "scans": 180,
     "alerting_scans": 133,
     "held_back_total": 57,
     "held_back_by_reason": [
