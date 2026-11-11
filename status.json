@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-10T20:35:54.270530+00:00",
-  "last_level": "WARN",
+  "last_run_utc": "2026-11-11T00:07:56.998155+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 744,
+  "total_scans": 745,
   "quiet_count": 362,
-  "watch_count": 351,
+  "watch_count": 352,
   "warn_count": 31,
   "correction_count": 4,
-  "generated_at": "2026-11-10 20:35 UTC",
+  "generated_at": "2026-11-11 00:07 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-11T00:07:57.027827+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 1,
+      "tier3_count": 2,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 180,
+      "stale_count": 3,
+      "alert_id": "1111-0007",
+      "items": [
+        {
+          "title": "Oro erdv\u0117s ribojimai vir\u0161 Kauno ir Vilniaus oro uost\u0173 d\u0117l tik\u0117tin\u0173 balion\u0173 yra at\u0161aukti",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/verslas/transportas/oro-erdves-ribojimai-del-tiketinu-balionu-virs-kauno-ir-vilniaus-oro-uostu-atsaukti-120332115",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Robertas Kaunas: \u012f galim\u0105 oro pavoj\u0173 Lietuvoje sureaguota laiku, pa\u017eeista Latvijos oro erdv\u0117",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/robertas-kaunas-i-galima-oro-pavoju-lietuvoje-sureaguota-laiku-pazeista-latvijos-oro-erdve-56-2803220?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-10T20:35:54.287652+00:00",
       "level": "WARN",
@@ -668,23 +713,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-07T07:09:16.213330+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 189,
-      "stale_count": 1,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-11T00:07:57.047826+00:00",
+      "level": "WATCH",
+      "title": "Robertas Kaunas: \u012f galim\u0105 oro pavoj\u0173 Lietuvoje sureaguota laiku, pa\u017eeista Latvijos oro erdv\u0117",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/robertas-kaunas-i-galima-oro-pavoju-lietuvoje-sureaguota-laiku-pazeista-latvijos-oro-erdve-56-2803220?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-11T00:07:57.047826+00:00",
+      "level": "WATCH",
+      "title": "Oro erdv\u0117s ribojimai vir\u0161 Kauno ir Vilniaus oro uost\u0173 d\u0117l tik\u0117tin\u0173 balion\u0173 yra at\u0161aukti",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/verslas/transportas/oro-erdves-ribojimai-del-tiketinu-balionu-virs-kauno-ir-vilniaus-oro-uostu-atsaukti-120332115",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-10T20:35:54.312861+00:00",
       "level": "WARN",
@@ -886,38 +949,6 @@
       "categories": [
         "troop_movement",
         "baltic_specific"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-09T08:01:21.660408+00:00",
-      "level": "WATCH",
-      "title": "\u201cIr j\u0101v\u0113r\u0161as pret s\u0101pju c\u0113loni\u201d \u2013 NATO izstr\u0101d\u0101 pl\u0101nus gad\u012bjumam, ja Eirop\u0101 izceltos kar\u0161",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/ir-javersas-pret-sapju-celoni-nato-izstrada-planus-gadijumam-ja-eiropa-izceltos-kars",
-      "categories": [
-        "hybrid_incident",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-09T08:01:21.660408+00:00",
-      "level": "WATCH",
-      "title": "\u00ab\u0417\u0430\u0442\u043e \u043f\u043e\u043c\u043e\u0436\u0435\u043c \u0444\u0435\u0440\u043c\u0435\u0440\u0430\u043c \u0410\u043c\u0435\u0440\u0438\u043a\u0438\u00bb",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/11/09/zato-pomozhem-fermeram-ameriki",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
