@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-12T18:34:15.019391+00:00",
+  "last_run_utc": "2026-11-12T20:56:24.830567+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.3h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 756,
+  "total_scans": 757,
   "quiet_count": 363,
-  "watch_count": 358,
+  "watch_count": 359,
   "warn_count": 35,
   "correction_count": 4,
-  "generated_at": "2026-11-12 19:52 UTC",
+  "generated_at": "2026-11-12 20:56 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-12T20:56:24.858177+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 248,
+      "stale_count": 5,
+      "alert_id": "1112-2056",
+      "items": [
+        {
+          "title": "Baltic nations issue drone alerts and NATO scrambles jets as Russia, Ukraine trade strikes - The Globe and Mail",
+          "source": "Baltic MoDs (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNR2pyWE52Uzg5US1XM1FJMXhiemdDc2p3dThQT2pRWEItRVZYMXdPRUNjWVVPSVFhSVBHQnJEeEFwVWRlM0I5Wm91cjZXdUtqNVVycUNzS1pwRk9JNGc2cGpxZkVSTHVkVnpoVHFLV1pLMTE2UmJORDdzU1lkTmJpYl9UY3BKMEFYSGNkT3BoQm1KdFAwT2taOGxkMktQTG9ManFTZy1oVVc?oc=5",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
     {
       "ts": "2026-11-12T18:34:14.995753+00:00",
       "level": "WATCH",
@@ -1345,39 +1375,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-09T17:35:35.546714+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 616,
-      "stale_count": 5,
-      "alert_id": "1109-1735",
-      "items": [
-        {
-          "title": "Canada deploys entire NATO brigade towards Russia's border. The end of symbolic deterrence",
-          "source": "Defence24",
-          "link": "https://defence24.com/defence-policy/canada-deploys-entire-nato-brigade-towards-russias-border-the-end-of-symbolic-deterrence",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-12T20:56:24.901012+00:00",
+      "level": "WATCH",
+      "title": "Baltic nations issue drone alerts and NATO scrambles jets as Russia, Ukraine trade strikes - The Globe and Mail",
+      "source": "Baltic MoDs (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNR2pyWE52Uzg5US1XM1FJMXhiemdDc2p3dThQT2pRWEItRVZYMXdPRUNjWVVPSVFhSVBHQnJEeEFwVWRlM0I5Wm91cjZXdUtqNVVycUNzS1pwRk9JNGc2cGpxZkVSTHVkVnpoVHFLV1pLMTE2UmJORDdzU1lkTmJpYl9UY3BKMEFYSGNkT3BoQm1KdFAwT2taOGxkMktQTG9ManFTZy1oVVc?oc=5",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-12T16:06:57.740229+00:00",
       "level": "WATCH",
@@ -1592,22 +1608,6 @@
       "title": "NBS atkl\u0101j, k\u0101p\u0113c NATO izn\u012bcin\u0101t\u0101ji nakt\u012b virs Latvijas nesp\u0113ja notriekt dronu",
       "source": "LA.LV (Latvijas Avize)",
       "link": "https://www.la.lv/nbs-atklaj-kapec-nato-iznicinataji-nakti-virs-latvijas-nespeja-notriekt-dronu",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-11T15:15:17.060821+00:00",
-      "level": "WATCH",
-      "title": "P\u0113c v\u0113rien\u012bg\u0101 kiberuzbrukuma no CSDD aizg\u0101ju\u0161ais Aksenoks ticis pie jauna amata",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/pec-verieniga-kiberuzbrukuma-no-csdd-aizgajusais-aksenoks-ticis-pie-jauna-amata",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
