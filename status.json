@@ -1,20 +1,169 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-12T08:20:17.752349+00:00",
+  "last_run_utc": "2026-11-12T16:06:57.703998+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 753,
+  "total_scans": 755,
   "quiet_count": 363,
-  "watch_count": 356,
-  "warn_count": 34,
+  "watch_count": 357,
+  "warn_count": 35,
   "correction_count": 4,
-  "generated_at": "2026-11-12 08:20 UTC",
+  "generated_at": "2026-11-12 16:06 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-12T16:06:57.718716+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 611,
+      "stale_count": 1,
+      "alert_id": "1112-1606",
+      "items": [
+        {
+          "title": "Linkevi\u010dius apie derybas su Rusija: tai tik dau\u017eymas \u012f sien\u0105, kol Maskva kartoja ultimatumus",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/tv/laidos/delfi-savaite/linkevicius-apie-derybas-su-rusija-tai-tik-dauzymas-i-siena-kol-maskva-kartoja-ultimatumus-120333304",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u041f\u043e\u0441\u043b\u0430\u043d\u0438\u0435 \u0413\u0435\u0440\u043c\u0430\u043d\u0438\u0438 \u0420\u043e\u0441\u0441\u0438\u0438: \"\u041f\u0440\u0438 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0441\u0442\u0438 \u043e\u0442\u0432\u0435\u0442\u0438\u043c \u0432\u043e\u0435\u043d\u043d\u043e\u0439 \u0441\u0438\u043b\u043e\u0439\"",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/ru-tv/ru-tv/delfi-ru-novosti/poslanie-germanii-rossii-pri-neobhodimosti-otvetim-voennoy-siloy-120333280",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Atskleid\u0117 nauj\u0105 suk\u010di\u0173 schem\u0105 Lietuvoje: taikosi \u012f dingusi\u0173 augintini\u0173 \u0161eimininkus \u2013 gresia prarasti t\u016bkstan\u010dius",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/augintinis/pamatyk/2026/11/12/news/atskleide-nauja-sukciu-schema-lietuvoje-taikosi-i-dingusiu-augintiniu-seimininkus-gresia-prarasti-tukstancius-44863280",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-12T10:13:03.424830+00:00",
+      "level": "WARN",
+      "count": 5,
+      "failed_count": 4,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 259,
+      "stale_count": 0,
+      "alert_id": "1112-1013",
+      "items": [
+        {
+          "title": "Kriminalin\u0117 policija prane\u0161a apie operacij\u0105 prie\u0161 cigare\u010di\u0173 kontraband\u0105 oro balionais",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/kriminalai/kriminaline-policija-pranesa-apie-operacija-pries-cigareciu-kontrabanda-oro-balionais-120333035",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Kriminalin\u0117 policija v\u0117l smog\u0117 balion\u0173 kontrabandininkams: \u012ftariamuosius sieja nusikalstamas susivienijimas",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/kriminaline-policija-vel-smoge-balionu-kontrabandininkams-itariamuosius-sieja-nusikalstamas-susivienijimas-59-2804550?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Kibernetinio saugumo mokymus baig\u0117 rekordi\u0161kai daug \u017emoni\u0173",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/kibernetinio-saugumo-mokymus-baige-rekordiskai-daug-zmoniu-56-2804424?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Policija v\u0117l smog\u0117 balionais kontraband\u0105 gabenantiems nusikalt\u0117liams \u2013 po krat\u0173 sulaikyti ir vadeivos",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/lietuvosdiena/kriminalai/2026/11/12/news/policija-vel-smoge-balionais-kontrabanda-gabenantiems-nusikalteliams-po-kratu-sulaikyti-ir-vadeivos-44901101",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Biju\u0161ais Lielbrit\u0101nijas nacion\u0101l\u0101s dro\u0161\u012bbas padomnieks: NATO b\u016btu j\u0101p\u0101riet uzbrukum\u0101 pret Krieviju",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/737749-bijusais-lielbritanijas-nacionalas-drosibas-padomnieks-nato-butu-japariet-uzbrukuma-pret-krieviju",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-12T08:20:17.769881+00:00",
       "level": "WATCH",
@@ -1181,83 +1330,57 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-09T08:01:21.634655+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 392,
-      "stale_count": 1,
-      "alert_id": "1109-0801",
-      "items": [
-        {
-          "title": "Latvia chairs emergency UN meeting on Ukraine",
-          "source": "LSM (Latvia)",
-          "link": "https://eng.lsm.lv/article/politics/diplomacy/09.11.2026-latvia-chairs-emergency-un-meeting-on-ukraine.a671081/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u00ab\u0417\u0430\u0442\u043e \u043f\u043e\u043c\u043e\u0436\u0435\u043c \u0444\u0435\u0440\u043c\u0435\u0440\u0430\u043c \u0410\u043c\u0435\u0440\u0438\u043a\u0438\u00bb",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/11/09/zato-pomozhem-fermeram-ameriki",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201cIr j\u0101v\u0113r\u0161as pret s\u0101pju c\u0113loni\u201d \u2013 NATO izstr\u0101d\u0101 pl\u0101nus gad\u012bjumam, ja Eirop\u0101 izceltos kar\u0161",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/ir-javersas-pret-sapju-celoni-nato-izstrada-planus-gadijumam-ja-eiropa-izceltos-kars",
-          "categories": [
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-08T22:54:28.771361+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 96,
-      "stale_count": 2,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-12T16:06:57.740229+00:00",
+      "level": "WATCH",
+      "title": "Atskleid\u0117 nauj\u0105 suk\u010di\u0173 schem\u0105 Lietuvoje: taikosi \u012f dingusi\u0173 augintini\u0173 \u0161eimininkus \u2013 gresia prarasti t\u016bkstan\u010dius",
+      "source": "Lrytas (Lithuania)",
+      "link": "https://www.lrytas.lt/augintinis/pamatyk/2026/11/12/news/atskleide-nauja-sukciu-schema-lietuvoje-taikosi-i-dingusiu-augintiniu-seimininkus-gresia-prarasti-tukstancius-44863280",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-12T16:06:57.740229+00:00",
+      "level": "WATCH",
+      "title": "\u041f\u043e\u0441\u043b\u0430\u043d\u0438\u0435 \u0413\u0435\u0440\u043c\u0430\u043d\u0438\u0438 \u0420\u043e\u0441\u0441\u0438\u0438: \"\u041f\u0440\u0438 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0441\u0442\u0438 \u043e\u0442\u0432\u0435\u0442\u0438\u043c \u0432\u043e\u0435\u043d\u043d\u043e\u0439 \u0441\u0438\u043b\u043e\u0439\"",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/ru-tv/ru-tv/delfi-ru-novosti/poslanie-germanii-rossii-pri-neobhodimosti-otvetim-voennoy-siloy-120333280",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-12T16:06:57.740229+00:00",
+      "level": "WATCH",
+      "title": "Linkevi\u010dius apie derybas su Rusija: tai tik dau\u017eymas \u012f sien\u0105, kol Maskva kartoja ultimatumus",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/tv/laidos/delfi-savaite/linkevicius-apie-derybas-su-rusija-tai-tik-dauzymas-i-siena-kol-maskva-kartoja-ultimatumus-120333304",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-12T08:20:17.798239+00:00",
       "level": "WATCH",
@@ -1449,53 +1572,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-11T15:15:17.060821+00:00",
-      "level": "WATCH",
-      "title": "\u041c\u0418\u0414 \u0420\u043e\u0441\u0441\u0438\u0438 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0438\u043b \u0437\u0430\u043a\u043b\u044e\u0447\u0430\u0442\u044c \u00ab\u043f\u0430\u043a\u0442\u044b \u043e \u043d\u0435\u043d\u0430\u043f\u0430\u0434\u0435\u043d\u0438\u0438\u00bb \u0441 \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0441\u0442\u0440\u0430\u043d\u0430\u043c\u0438 \u041d\u0410\u0422\u041e",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/11/11/mid-rossii-predlozhil-zakliuchat-pakty-o-nenapadenii-s-otdelnymi-stranami-nato-news",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-11T15:15:17.060821+00:00",
-      "level": "WATCH",
-      "title": "Tiriant kibernetin\u012f incident\u0105 muitin\u0117je nustatytas galimas asmens duomen\u0173 saugumo pa\u017eeidimas",
-      "source": "Lrytas (Lithuania)",
-      "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/11/11/news/tiriant-kibernetini-incidenta-muitineje-nustatytas-galimas-asmens-duomenu-saugumo-pazeidimas-44894501",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-11T15:15:17.060821+00:00",
-      "level": "WATCH",
-      "title": "\"Appropriate operational conditions were not met\" \u2013 Latvian Armed Forces explain why drone was not shot down",
-      "source": "BNN Baltic News Network",
-      "link": "https://bnn-news.com/social/appropriate-operational-conditions-were-not-met-latvian-armed-forces-explain-why-drone-was-not-shot-down-gddgxcc",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1678,19 +1754,19 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 181,
-    "alerting_scans": 136,
-    "held_back_total": 56,
+    "scans": 182,
+    "alerting_scans": 137,
+    "held_back_total": 57,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 28
+        "count": 30
       },
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 25
+        "count": 24
       },
       {
         "reason": "reassurance",
