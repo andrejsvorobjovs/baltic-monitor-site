@@ -1,20 +1,125 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-13T00:16:18.869757+00:00",
+  "last_run_utc": "2026-11-13T07:57:40.124567+00:00",
   "last_level": "QUIET",
-  "freshness_msg": "Last scan: 6.4h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 758,
-  "quiet_count": 364,
-  "watch_count": 359,
+  "total_scans": 760,
+  "quiet_count": 365,
+  "watch_count": 360,
   "warn_count": 35,
   "correction_count": 4,
-  "generated_at": "2026-11-13 06:39 UTC",
+  "generated_at": "2026-11-13 07:57 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-13T07:57:40.136678+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 205,
+      "stale_count": 2,
+      "alert_id": null,
+      "items": []
+    },
+    {
+      "ts": "2026-11-13T07:11:01.770289+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 308,
+      "stale_count": 0,
+      "alert_id": "1113-0711",
+      "items": [
+        {
+          "title": "Aizsardz\u012bbas nozare Latvij\u0101 turpina augt \u2013 taj\u0101 darbojas ap 240 uz\u0146\u0113mumu",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/ekonomika/13.11.2026-aizsardzibas-nozare-latvija-turpina-augt-taja-darbojas-ap-240-uznemumu.a671734/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0423\u0431\u0438\u0439\u0441\u0442\u0432\u0430 \u0432 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u043c \u0440\u0435\u0436\u0438\u043c\u0435",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/13/ubiistva-v-avtomaticheskom-rezhime",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Spridzekli Krievij\u0101 esot nog\u0101d\u0101ju\u0161i ar balonu no Baltijas valst\u012bm: p\u0113c spr\u0101dziena Sanktp\u0113terburg\u0101 izskan neparasta versija",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/spridzekli-krievija-esot-nogadajusi-ar-balonu-no-baltijas-valstim-pec-spradziena-sanktpeterburga-izskan-neparasta-versija",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Ukrainas drons tr\u0101pa Krievijas karaku\u0123im Baltijas j\u016br\u0101; Igaunija skaidro, k\u0101p\u0113c NATO to nenotrieca",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/ukrainas-drons-trapa-krievijas-karakugim-baltijas-jura-igaunija-skaidro-kapec-nato-to-nenotrieca",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "V. Paigozinas: d\u0117l kibernetinio incidento gal\u0117jo b\u016bti paveikti keli\u0173 \u0161imt\u0173 asmen\u0173 duomenys",
+          "source": "Verslo zinios (Lithuania)",
+          "link": "https://www.vz.lt/verslo-aplinka/2026/11/13/v-paigozinas-del-kibernetinio-incidento-galejo-buti-paveikti-keliu-simtu-asmenu-duomenys-592698",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-13T00:16:18.888988+00:00",
       "level": "QUIET",
@@ -1315,50 +1420,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-10T02:07:33.073387+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 152,
-      "stale_count": 3,
-      "alert_id": null,
-      "items": []
-    },
-    {
-      "ts": "2026-11-09T23:07:01.234819+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 357,
-      "stale_count": 1,
-      "alert_id": "1109-2307",
-      "items": [
-        {
-          "title": "Landsbergis atsak\u0117 \u012f Naus\u0117dos kritik\u0105",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/politika/landsbergis-atsake-i-nausedos-kritika-turejome-sutarima-kad-lietuva-kinijai-batu-nebuciuos-120331478",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1783,14 +1844,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 181,
-    "alerting_scans": 136,
-    "held_back_total": 59,
+    "scans": 183,
+    "alerting_scans": 137,
+    "held_back_total": 60,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 31
+        "count": 32
       },
       {
         "reason": "already alerted",
