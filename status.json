@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-13T20:37:29.081750+00:00",
+  "last_run_utc": "2026-11-14T00:26:17.134167+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 763,
+  "total_scans": 764,
   "quiet_count": 365,
-  "watch_count": 363,
+  "watch_count": 364,
   "warn_count": 35,
   "correction_count": 4,
-  "generated_at": "2026-11-13 20:37 UTC",
+  "generated_at": "2026-11-14 00:26 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-14T00:26:17.148928+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 190,
+      "stale_count": 4,
+      "alert_id": "1114-0026",
+      "items": [
+        {
+          "title": "The Baltic states declared an air raid alert over an unidentified drone: NATO scrambled fighter jets - \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTmZLMFJaTGNtdUJQaWtXQVZQR2x3ZW5XcFJPdXFvcEZUSkhoR1d0Z0M1c2YwMWxIOG83WXc3VlBwUE9UMmtwVVU3cER1Y3N6TDZLYi1tQW1kUnd2dGdxRWV1VHpNSEhJeU1uZUVSSGUycFE0OHJsenJITEdobmxBcVljalRsY2xLWmpmZlYzWjlkZl9JOG05YTBOeGx6RlhYdmE3VkF2Zk9jVThJTmlsUXNVbXFTblN5R2RSMm9vYkIwV2kwSEHSAcQBQVVfeXFMTVozeURrT2FfMHJONkxZUXZydzBSWVVUaWpRY0lmX3Y5MEE0TVhoYmdzc0NoaDM0ZVZ4SlBXeFJyT2UxMUFRRG91VVY2emxQVTlVNzRKdi04NEFCWDVnRkZTYm5INERqMzh5QUo3d2tRWTJpWUlWVkVPZUk1UW1GYWd3ZDZjWlUwV2Z6bHBYUmYyOWZjVGtYTUhjSy1SeTZYZkRwaV9hcFFoZ0ZXRkVfMWZsdkIzbkk0RnBDdTVsNFhyTFNFTg?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
     {
       "ts": "2026-11-13T20:37:29.102126+00:00",
       "level": "WATCH",
@@ -1388,129 +1418,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-10T20:35:54.287652+00:00",
-      "level": "WARN",
-      "count": 7,
-      "failed_count": 0,
-      "tier3_count": 1,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 493,
-      "stale_count": 10,
-      "alert_id": "1110-2035",
-      "items": [
-        {
-          "title": "Lietuvos muitin\u0117je \u2013 kibernetinis incidentas, laikinai stabdoma vieno i\u0161 portal\u0173 veikla",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/verslas/naujienos/lietuvos-muitineje-kibernetinis-incidentas-laikinai-stabdoma-vieno-is-portalu-veikla-120332124",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Vir\u0161 Kauno oro uosto \u012fvesti oro erdv\u0117s ribojimai, Vilniuje oro uostas atnaujino veikl\u0105",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/verslas/transportas/virs-vilniaus-oro-uosto-ivesti-oro-erdves-ribojimai-pastebetos-atzymos-budingos-balionams-120332115",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuvos muitin\u0117 patyr\u0117 rimt\u0105 kibernetin\u0119 atak\u0105",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/lietuvos-muitine-patyre-kibernetini-incidenta-jis-tiriamas-59-2803192?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuvos muitin\u0117 patyr\u0117 kibernetin\u012f incident\u0105: laikinai stabdoma vieno i\u0161 portal\u0173 veikla",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/it/ismanyk/2026/11/10/news/lietuvos-muitine-patyre-kibernetini-incidenta-laikinai-stabdoma-vieno-is-portalu-veikla-44876783",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Vir\u0161 Vilniaus ir Kauno oro uost\u0173 \u2013 ribojimai: pasteb\u0117tos at\u017eymos, b\u016bdingos balionams",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/verslas/rinkos-pulsas/2026/11/10/news/virs-vilniaus-oro-uosto-ribojimai-pastebetos-atzymos-budingos-balionams-44874484",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Mirtinos ligos diagnoz\u0119 i\u0161girdusi R\u016bta bemat numet\u0117 14 kg: \u201eI\u0161 tos baim\u0117s \u2013 ko nepadarysi\u201c",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/sveikata/ligos-ir-gydymas/2026/11/10/news/mirtinos-ligos-diagnoze-isgirdusi-ruta-bemat-numete-14-kg-is-tos-baimes-ko-nepadarysi--44869043",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Muitinei patyrus kibernetin\u012f incident\u0105, laikinai sustabdyta vartotoj\u0173 valdymo portalo prieiga",
-          "source": "Verslo zinios (Lithuania)",
-          "link": "https://www.vz.lt/verslo-aplinka/2026/11/10/muitinei-patyrus-kibernetini-incidenta-laikinai-sustabdyta-vartotoju-valdymo-portalo-prieiga-592578",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-14T00:26:17.170035+00:00",
+      "level": "WATCH",
+      "title": "The Baltic states declared an air raid alert over an unidentified drone: NATO scrambled fighter jets - \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTmZLMFJaTGNtdUJQaWtXQVZQR2x3ZW5XcFJPdXFvcEZUSkhoR1d0Z0M1c2YwMWxIOG83WXc3VlBwUE9UMmtwVVU3cER1Y3N6TDZLYi1tQW1kUnd2dGdxRWV1VHpNSEhJeU1uZUVSSGUycFE0OHJsenJITEdobmxBcVljalRsY2xLWmpmZlYzWjlkZl9JOG05YTBOeGx6RlhYdmE3VkF2Zk9jVThJTmlsUXNVbXFTblN5R2RSMm9vYkIwV2kwSEHSAcQBQVVfeXFMTVozeURrT2FfMHJONkxZUXZydzBSWVVUaWpRY0lmX3Y5MEE0TVhoYmdzc0NoaDM0ZVZ4SlBXeFJyT2UxMUFRRG91VVY2emxQVTlVNzRKdi04NEFCWDVnRkZTYm5INERqMzh5QUo3d2tRWTJpWUlWVkVPZUk1UW1GYWd3ZDZjWlUwV2Z6bHBYUmYyOWZjVGtYTUhjSy1SeTZYZkRwaV9hcFFoZ0ZXRkVfMWZsdkIzbkk0RnBDdTVsNFhyTFNFTg?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-13T20:37:29.129726+00:00",
       "level": "WATCH",
@@ -1733,22 +1659,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-12T08:20:17.798239+00:00",
-      "level": "WATCH",
-      "title": "\u0426\u0430\u0445\u043a\u043d\u0430: \u0431\u0435\u0441\u043f\u0438\u043b\u043e\u0442\u043d\u0438\u043a\u0438, \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u044f\u0432\u0448\u0438\u0435\u0441\u044f \u043a \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u043c\u0443 \u0432\u043e\u0435\u043d\u043d\u043e\u043c\u0443 \u043a\u043e\u0440\u0430\u0431\u043b\u044e, \u043f\u0440\u0438\u043b\u0435\u0442\u0435\u043b\u0438 \u0441\u043e \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u0420\u0424",
-      "source": "ERR Russian-language",
-      "link": "https://rus.err.ee/1610193124/cahkna-bespilotniki-napravljavshiesja-k-rossijskomu-voennomu-korablju-prileteli-so-storony-rf",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1932,7 +1842,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 182,
-    "alerting_scans": 136,
+    "alerting_scans": 137,
     "held_back_total": 58,
     "held_back_by_reason": [
       {
