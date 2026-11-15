@@ -1,20 +1,155 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-15T14:51:50.622391+00:00",
-  "last_level": "WARN",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "last_run_utc": "2026-11-15T17:23:03.134936+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 1.4h ago",
   "since": "2026-07-19",
-  "total_scans": 773,
+  "total_scans": 774,
   "quiet_count": 366,
-  "watch_count": 371,
+  "watch_count": 372,
   "warn_count": 36,
   "correction_count": 4,
-  "generated_at": "2026-11-15 14:51 UTC",
+  "generated_at": "2026-11-15 18:48 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-15T17:23:03.116357+00:00",
+      "level": "WATCH",
+      "count": 8,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 159,
+      "stale_count": 0,
+      "alert_id": "1115-1723",
+      "items": [
+        {
+          "title": "Sabota\u017eo i\u0161puoliui keli\u0105 u\u017ekirtusi Estija nuo gruod\u017eio u\u017edaro pasienio kontrol\u0117s punktus su Rusija",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/estija-nuo-gruodzio-uzdaro-visus-pasienio-kontroles-punktus-su-rusija-57-2806472?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "BNS Sprintas: svarbiausi savait\u0117s \u012fvykiai",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/bns-sprintas/bns-sprintas-svarbiausi-savaites-ivykiai-1766-2806452?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Jonatan Vseviov: meid p\u00fc\u00fctakse hirmutada, et me hirmust halvatuna l\u00f5petaksime Ukraina toetamise",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8583859",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Po nepavykusio rus\u0173 sabota\u017eo \u2013 a\u0161tri Estijos reakcija: u\u017edaro sien\u0105 su Rusija",
+          "source": "Lrytas (Lithuania)",
+          "link": "https://www.lrytas.lt/pasaulis/rytai-vakarai/2026/11/15/news/po-nepavykusio-rusu-sabotazo-astri-estijos-reakcija-bresta-sienos-uzdarymas-44935672",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u042d\u0441\u0442\u043e\u043d\u0438\u044f \u0437\u0430\u043a\u0440\u043e\u0435\u0442 \u0432\u0441\u0435 \u043f\u043e\u0433\u0440\u0430\u043d\u043f\u0435\u0440\u0435\u0445\u043e\u0434\u044b \u043d\u0430 \u0433\u0440\u0430\u043d\u0438\u0446\u0435 \u0441 \u0420\u043e\u0441\u0441\u0438\u0435\u0439 \u0441 1 \u0434\u0435\u043a\u0430\u0431\u0440\u044f \u043f\u043e\u0441\u043b\u0435 \u043f\u043e\u043f\u044b\u0442\u043a\u0438 \u0413\u0420\u0423 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u043e\u0432\u0430\u0442\u044c \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u044e \u043d\u0430 \u0437\u0430\u0432\u043e\u0434\u0435 \u0431\u0435\u0441\u043f\u0438\u043b\u043e\u0442\u043d\u0438\u043a\u043e\u0432",
+          "source": "The Insider",
+          "link": "https://theins.ru/news/299611",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0412 \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043f\u0440\u0435\u0434\u043e\u0442\u0432\u0440\u0430\u0442\u0438\u043b\u0438 \u043f\u043e\u043f\u044b\u0442\u043a\u0443 \u043f\u043e\u0434\u0436\u0435\u0447\u044c \u0437\u0430\u0432\u043e\u0434 \u0434\u0440\u043e\u043d\u043e\u0432, \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f \u043a\u043e\u0442\u043e\u0440\u043e\u0433\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u0432 \u0423\u043a\u0440\u0430\u0438\u043d\u0435. \u0412\u043b\u0430\u0441\u0442\u0438 \u043e\u0431\u0432\u0438\u043d\u0438\u043b\u0438 \u0432 \u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0435 \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u0438 \u0413\u0420\u0423",
+          "source": "The Insider",
+          "link": "https://theins.ru/news/299609",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u042d\u0441\u0442\u043e\u043d\u0438\u044f \u0441 1 \u0434\u0435\u043a\u0430\u0431\u0440\u044f \u0437\u0430\u043a\u0440\u043e\u0435\u0442 \u0433\u0440\u0430\u043d\u0438\u0446\u0443 \u0441 \u0420\u0424 \u043f\u043e\u0441\u043b\u0435 \u043f\u043e\u043f\u044b\u0442\u043a\u0438 \u043f\u043e\u0434\u0436\u043e\u0433\u0430 \u0437\u0430\u0432\u043e\u0434\u0430 \u0431\u0435\u0441\u043f\u0438\u043b\u043e\u0442\u043d\u0438\u043a\u043e\u0432",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/15/estoniia-mozhet-zakryt-granitsu-s-rf-posle-popytki-podzhoga-zavoda-bespilotnikov-news",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Krievijas specdienestu aktivit\u0101tes liek Igaunijai dom\u0101t par robe\u017eas sl\u0113g\u0161anu",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/krievijas-specdienestu-aktivitates-liek-igaunijai-domat-par-robezas-slegsanu",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-15T14:51:50.637302+00:00",
       "level": "WARN",
@@ -1000,95 +1135,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-12T10:13:03.424830+00:00",
-      "level": "WARN",
-      "count": 5,
-      "failed_count": 4,
-      "tier3_count": 0,
-      "sources_scanned": 57,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 259,
-      "stale_count": 0,
-      "alert_id": "1112-1013",
-      "items": [
-        {
-          "title": "Kriminalin\u0117 policija prane\u0161a apie operacij\u0105 prie\u0161 cigare\u010di\u0173 kontraband\u0105 oro balionais",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/kriminalai/kriminaline-policija-pranesa-apie-operacija-pries-cigareciu-kontrabanda-oro-balionais-120333035",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kriminalin\u0117 policija v\u0117l smog\u0117 balion\u0173 kontrabandininkams: \u012ftariamuosius sieja nusikalstamas susivienijimas",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/kriminaline-policija-vel-smoge-balionu-kontrabandininkams-itariamuosius-sieja-nusikalstamas-susivienijimas-59-2804550?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Kibernetinio saugumo mokymus baig\u0117 rekordi\u0161kai daug \u017emoni\u0173",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/kibernetinio-saugumo-mokymus-baige-rekordiskai-daug-zmoniu-56-2804424?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Policija v\u0117l smog\u0117 balionais kontraband\u0105 gabenantiems nusikalt\u0117liams \u2013 po krat\u0173 sulaikyti ir vadeivos",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/lietuvosdiena/kriminalai/2026/11/12/news/policija-vel-smoge-balionais-kontrabanda-gabenantiems-nusikalteliams-po-kratu-sulaikyti-ir-vadeivos-44901101",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Biju\u0161ais Lielbrit\u0101nijas nacion\u0101l\u0101s dro\u0161\u012bbas padomnieks: NATO b\u016btu j\u0101p\u0101riet uzbrukum\u0101 pret Krieviju",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/737749-bijusais-lielbritanijas-nacionalas-drosibas-padomnieks-nato-butu-japariet-uzbrukuma-pret-krieviju",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1513,8 +1559,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 181,
-    "alerting_scans": 137,
+    "scans": 180,
+    "alerting_scans": 136,
     "held_back_total": 59,
     "held_back_by_reason": [
       {
