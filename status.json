@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-17T17:00:23.066603+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 3.9h ago",
+  "last_run_utc": "2026-11-17T21:52:25.831018+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 785,
+  "total_scans": 786,
   "quiet_count": 368,
-  "watch_count": 379,
+  "watch_count": 380,
   "warn_count": 38,
   "correction_count": 4,
-  "generated_at": "2026-11-17 20:51 UTC",
+  "generated_at": "2026-11-17 21:52 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-17T21:52:25.843300+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 328,
+      "stale_count": 0,
+      "alert_id": "1117-2152",
+      "items": [
+        {
+          "title": "Taro piiri sulgemisest: m\u00f5istan Narva muret, kuid Eesti turvalisus on t\u00e4htsam",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610198863/taro-piiri-sulgemisest-moistan-narva-muret-kuid-eesti-turvalisus-on-tahtsam",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0421\u0442\u043e\u0439\u0447\u0435\u0441\u043a\u0443: \u0437\u0430\u043a\u0440\u044b\u0442\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u043d\u0435 \u0440\u0435\u0448\u0438\u0442 \u0432\u0441\u0435\u0445 \u043f\u0440\u043e\u0431\u043b\u0435\u043c \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438, \u043d\u043e \u0441\u0442\u0430\u043d\u0435\u0442 \u0441\u0438\u0433\u043d\u0430\u043b\u043e\u043c \u041c\u043e\u0441\u043a\u0432\u0435",
+          "source": "ERR Russian-language",
+          "link": "https://rus.err.ee/1610198767/stojchesku-zakrytie-granicy-ne-reshit-vseh-problem-bezopasnosti-no-stanet-signalom-moskve",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-17T17:00:23.079993+00:00",
       "level": "QUIET",
@@ -1408,54 +1453,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-14T07:40:31.411579+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 1,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 231,
-      "stale_count": 9,
-      "alert_id": "1114-0740",
-      "items": [
-        {
-          "title": "Po chaoti\u0161kos dron\u0173 nakties pasipyl\u0117 priekai\u0161tai: seniai reik\u0117jo tai padaryti",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/lietuvoje/po-chaotiskos-dronu-nakties-pasipyle-priekaistai-seniai-reikejo-tai-padaryti-120332944",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0420\u043e\u0441\u0441\u0438\u044f \u0432\u043d\u043e\u0432\u044c \u043f\u043e\u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043b\u0430 \u0432\u044b\u0432\u0435\u0441\u0442\u0438 \u0441\u0438\u043b\u044b \u041d\u0410\u0422\u041e \u0438\u0437 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u043e\u0439 \u0415\u0432\u0440\u043e\u043f\u044b \u0438 \u043f\u0440\u0435\u043a\u0440\u0430\u0442\u0438\u0442\u044c \u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0438 \u043e\u0440\u0443\u0436\u0438\u044f \u0423\u043a\u0440\u0430\u0438\u043d\u0435",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/11/14/rossiia-vnov-potrebovala-vyvesti-sily-nato-iz-vostochnoi-evropy-i-prekratit-postavki-oruzhiia-ukraine-news",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-17T21:52:25.860237+00:00",
+      "level": "WATCH",
+      "title": "\u0421\u0442\u043e\u0439\u0447\u0435\u0441\u043a\u0443: \u0437\u0430\u043a\u0440\u044b\u0442\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u043d\u0435 \u0440\u0435\u0448\u0438\u0442 \u0432\u0441\u0435\u0445 \u043f\u0440\u043e\u0431\u043b\u0435\u043c \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438, \u043d\u043e \u0441\u0442\u0430\u043d\u0435\u0442 \u0441\u0438\u0433\u043d\u0430\u043b\u043e\u043c \u041c\u043e\u0441\u043a\u0432\u0435",
+      "source": "ERR Russian-language",
+      "link": "https://rus.err.ee/1610198767/stojchesku-zakrytie-granicy-ne-reshit-vseh-problem-bezopasnosti-no-stanet-signalom-moskve",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-17T21:52:25.860237+00:00",
+      "level": "WATCH",
+      "title": "Taro piiri sulgemisest: m\u00f5istan Narva muret, kuid Eesti turvalisus on t\u00e4htsam",
+      "source": "ERR Eesti (Estonian-language)",
+      "link": "https://www.err.ee/1610198863/taro-piiri-sulgemisest-moistan-narva-muret-kuid-eesti-turvalisus-on-tahtsam",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-17T09:13:44.210492+00:00",
       "level": "WATCH",
@@ -1655,38 +1687,6 @@
       "title": "Eesti energiataristu kaitseks kulub sadu miljoneid: Elering valmistub ka droonir\u00fcnnakuteks",
       "source": "Postimees Estonian-language",
       "link": "https://pmo.ee/8584396",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-16T17:06:55.667372+00:00",
-      "level": "WARN",
-      "title": "ANAL\u00dc\u00dcS \u27e9 Venemaa sabotaa\u017eist sai Eesti sisepoliitiline lahing",
-      "source": "Postimees Estonian-language",
-      "link": "https://pmo.ee/8584514",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-16T17:06:55.667372+00:00",
-      "level": "WARN",
-      "title": "Latvijas un Ukrainas uz\u0146\u0113mumi sadarbosies kritisk\u0101s infrastrukt\u016bras aizsardz\u012bb\u0101 pret droniem",
-      "source": "Diena (Latvia)",
-      "link": "https://diena.lv/raksts/latvija/zinas-71/latvijas-un-ukrainas-uznemumi-sadarbosies-kritiskas-infrastrukturas-aizsardziba-pret-droniem?utm_source=rss&utm_campaign=rss&utm_medium=links",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
