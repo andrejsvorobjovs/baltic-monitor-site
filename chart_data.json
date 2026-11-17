@@ -5466,6 +5466,13 @@
       "count": 1,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-17T02:37:31.801735+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5856,6 +5863,10 @@
     {
       "ts": "2026-11-15T00:00:00+00:00",
       "count": 143
+    },
+    {
+      "ts": "2026-11-16T00:00:00+00:00",
+      "count": 135
     }
   ],
   "ais_points": [
@@ -10870,6 +10881,10 @@
     {
       "ts": "2026-11-16T23:02:16.534018+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-17T02:36:41.411096+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -12311,6 +12326,10 @@
     },
     {
       "ts": "2026-11-16T23:02:53.845249+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-17T02:36:52.779312+00:00",
       "count": 0
     }
   ],
@@ -20650,6 +20669,30 @@
         "steady": [
           "gpsjam"
         ]
+      },
+      "band_key": "well_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-17T02:36:52.781773+00:00",
+      "deviation_pct": -58.24742268041237,
+      "sources_included": 2,
+      "narrative": "GPS jamming 16% below baseline; thermal hotspots 100% below baseline.",
+      "band": "well below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "gpsjam",
+            "pct": 16,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": []
       },
       "band_key": "well_below",
       "band_record_scans": null
