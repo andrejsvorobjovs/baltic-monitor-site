@@ -1,20 +1,49 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-17T21:52:25.831018+00:00",
+  "last_run_utc": "2026-11-18T01:42:51.766793+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 786,
+  "total_scans": 787,
   "quiet_count": 368,
-  "watch_count": 380,
+  "watch_count": 381,
   "warn_count": 38,
   "correction_count": 4,
-  "generated_at": "2026-11-17 21:52 UTC",
+  "generated_at": "2026-11-18 01:42 UTC",
   "total_sources": 152,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 10,
   "recent_history": [
+    {
+      "ts": "2026-11-18T01:42:51.781378+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 152,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 117,
+      "stale_count": 1,
+      "alert_id": "1118-0142",
+      "items": [
+        {
+          "title": "NATO \u0123ener\u0101lsekret\u0101rs Rite koment\u0113 Ukrainas uzbrukumu Krimas tiltam",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8585357",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-17T21:52:25.843300+00:00",
       "level": "WATCH",
@@ -1393,69 +1422,24 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-14T14:14:16.775961+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 402,
-      "stale_count": 1,
-      "alert_id": "1114-1414",
-      "items": [
-        {
-          "title": "Retired general: Without women, Estonia may run out of conscripts, reservists",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610196370/retired-general-without-women-estonia-may-run-out-of-conscripts-reservists",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Veiko-Vello Palm: Eesti peaks m\u00f5tlema naiste kohustusliku ajateenistuse peale",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610196334/veiko-vello-palm-eesti-peaks-motlema-naiste-kohustusliku-ajateenistuse-peale",
-          "categories": [
-            "baltic_specific",
-            "economic_military"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NKVC: kibernetinio saugumo mokymus \u0161iemet baig\u0117 beveik 74 t\u016bkst. gyventoj\u0173",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/11/14/news/nkvc-kibernetinio-saugumo-mokymus-siemet-baige-beveik-74-tukst-gyventoju-44924822",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-18T01:42:51.803650+00:00",
+      "level": "WATCH",
+      "title": "NATO \u0123ener\u0101lsekret\u0101rs Rite koment\u0113 Ukrainas uzbrukumu Krimas tiltam",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8585357",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-17T21:52:25.860237+00:00",
       "level": "WATCH",
@@ -1680,22 +1664,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-16T17:06:55.667372+00:00",
-      "level": "WARN",
-      "title": "Eesti energiataristu kaitseks kulub sadu miljoneid: Elering valmistub ka droonir\u00fcnnakuteks",
-      "source": "Postimees Estonian-language",
-      "link": "https://pmo.ee/8584396",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1878,8 +1846,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 177,
-    "alerting_scans": 137,
+    "scans": 178,
+    "alerting_scans": 138,
     "held_back_total": 70,
     "held_back_by_reason": [
       {
