@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-19T16:39:17.955266+00:00",
+  "last_run_utc": "2026-11-19T21:35:28.246616+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.9h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 795,
+  "total_scans": 796,
   "quiet_count": 371,
-  "watch_count": 386,
+  "watch_count": 387,
   "warn_count": 38,
   "correction_count": 4,
-  "generated_at": "2026-11-19 20:31 UTC",
+  "generated_at": "2026-11-19 21:35 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-19T21:35:28.264490+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 675,
+      "stale_count": 17,
+      "alert_id": "1119-2135",
+      "items": [
+        {
+          "title": "Tehnisku probl\u0113mu d\u0113\u013c ceturtdien p\u0101rtraukta PMLP pakalpojumu snieg\u0161ana",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/tehnisku-problemu-del-ceturtdien-partraukta-pmlp-pakalpojumu-sniegsana",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-19T16:39:17.968904+00:00",
       "level": "WATCH",
@@ -1074,54 +1104,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-15T23:30:26.627749+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 199,
-      "stale_count": 5,
-      "alert_id": "1115-2330",
-      "items": [
-        {
-          "title": "Defense minister: Drones entered Estonian airspace from northeast and southeast - ERR",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZWl2ekNTcnZhZnhJMU0zbGhicXhBMnVFMXBId3JRUFZCTDgyclB6Z0RXVHRSSEp4b0lDbFljZ3A2MmpxZ3I1QzdyekE0cUt3ODJIWFA4WC01YWtJTDlLZ0RJZnZYYkhfcC1rUXFtYTVON3Nucng1TGNKSGtqcnN5NUNmNkJxWll1NWdVRVp3M2RUNEUyeUo3My1QMXYtVGxnMzlSWW1nbUUwRDhGNGc?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "Estonia to close Russian border crossings after 'sabotage' attempt at drone factory - France 24",
-          "source": "Baltic MoDs (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbXBDVm40NDh4UFdwcUZVS2d6azJPVzYxSkx4Y04yTWVEQU5BY0FPQVVXSFZmMVZiaDE5enpjVE5IODl1M1JIUHNKV1RyQ196VU1HTDlYcHZNRWJmdzR3QWthQWNnX095ZHdnZE4yOUR3dHREU2FYak05WHVDTVFzN0ZuZmowem11WGlwX1o2Wmo1ZndqLVB4THYtbTlrZUMzMnpkWjNib0pXcDJrUWg4V0FhOFBtWHlYdW55d0JsUGJiTTA?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-19T21:35:28.293184+00:00",
+      "level": "WATCH",
+      "title": "Tehnisku probl\u0113mu d\u0113\u013c ceturtdien p\u0101rtraukta PMLP pakalpojumu snieg\u0161ana",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/tehnisku-problemu-del-ceturtdien-partraukta-pmlp-pakalpojumu-sniegsana",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-19T16:39:17.988901+00:00",
       "level": "WATCH",
@@ -1345,22 +1346,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-16T17:06:55.667372+00:00",
-      "level": "WARN",
-      "title": "Igaunija izsauc Krievijas diplom\u0101tu un br\u012bdina par sek\u0101m: Maskavas sabot\u0101\u017eas m\u0113\u0123in\u0101jums nepaliks bez atbildes",
-      "source": "Jauns.lv (Latvia)",
-      "link": "https://jauns.lv/raksts/zinas/738353-igaunija-izsauc-krievijas-diplomatu-un-bridina-par-sekam-maskavas-sabotazas-meginajums-nepaliks-bez-atbildes",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1543,8 +1528,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 173,
-    "alerting_scans": 133,
+    "scans": 174,
+    "alerting_scans": 134,
     "held_back_total": 63,
     "held_back_by_reason": [
       {
