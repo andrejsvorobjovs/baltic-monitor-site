@@ -442,6 +442,17 @@
     'Undersea cables (reference)': cableLayer,
   }, { collapsed: false }).addTo(map);
 
+  // Leaflet renders its layers toggle as <a href="#"> with a title but no
+  // accessible name, so a screen reader announces an empty link. title is
+  // inconsistently exposed; aria-label is not. One line, and the only
+  // unlabelled control on the site.
+  (function labelLayersToggle() {
+    var toggle = document.querySelector('.leaflet-control-layers-toggle');
+    if (toggle && !toggle.getAttribute('aria-label')) {
+      toggle.setAttribute('aria-label', toggle.getAttribute('title') || 'Map layers');
+    }
+  })();
+
   // ---- Recent scan positions: AIS / military / GPSJam / FIRMS ----
   // Same fetch/error-handling shape as the homepage's status.json/
   // chart_data.json fetches -- see index.html.
