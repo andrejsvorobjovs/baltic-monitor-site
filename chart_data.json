@@ -5543,6 +5543,13 @@
       "count": 0,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-19T08:50:06.240831+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -7751,6 +7758,10 @@
     {
       "ts": "2026-11-19T01:12:12.015288+00:00",
       "count": 168
+    },
+    {
+      "ts": "2026-11-19T08:49:03.527226+00:00",
+      "count": 184
     }
   ],
   "military_points": [
@@ -9561,6 +9572,10 @@
     {
       "ts": "2026-11-19T01:12:12.616954+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-19T08:49:04.053154+00:00",
+      "count": 3
     }
   ],
   "firms_points": [
@@ -11051,6 +11066,10 @@
     {
       "ts": "2026-11-19T01:12:17.783464+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-19T08:49:07.783775+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -12528,6 +12547,10 @@
     },
     {
       "ts": "2026-11-19T01:12:33.098047+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-19T08:49:31.190222+00:00",
       "count": 0
     }
   ],
@@ -21061,6 +21084,32 @@
     {
       "ts": "2026-11-19T01:12:33.101025+00:00",
       "deviation_pct": -45.82592348517415,
+      "sources_included": 3,
+      "narrative": "GPS jamming 19% below baseline; thermal hotspots 100% below baseline; AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "gpsjam",
+            "pct": 19,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-19T08:49:31.193792+00:00",
+      "deviation_pct": -43.10301440416075,
       "sources_included": 3,
       "narrative": "GPS jamming 19% below baseline; thermal hotspots 100% below baseline; AIS vessel activity steady.",
       "band": "moderately below normal",
