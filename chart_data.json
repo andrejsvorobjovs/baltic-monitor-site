@@ -5536,6 +5536,13 @@
       "count": 0,
       "tier3_count": 1,
       "tone": null
+    },
+    {
+      "ts": "2026-11-19T01:13:01.274396+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -5934,6 +5941,10 @@
     {
       "ts": "2026-11-17T00:00:00+00:00",
       "count": 140
+    },
+    {
+      "ts": "2026-11-18T00:00:00+00:00",
+      "count": 129
     }
   ],
   "ais_points": [
@@ -7736,6 +7747,10 @@
     {
       "ts": "2026-11-18T21:30:02.275230+00:00",
       "count": 148
+    },
+    {
+      "ts": "2026-11-19T01:12:12.015288+00:00",
+      "count": 168
     }
   ],
   "military_points": [
@@ -9542,6 +9557,10 @@
     {
       "ts": "2026-11-18T21:30:03.769946+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-11-19T01:12:12.616954+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -11028,6 +11047,10 @@
     {
       "ts": "2026-11-18T21:30:07.962338+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-19T01:12:17.783464+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -12501,6 +12524,10 @@
     },
     {
       "ts": "2026-11-18T21:30:47.256805+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-19T01:12:33.098047+00:00",
       "count": 0
     }
   ],
@@ -21025,6 +21052,32 @@
         ],
         "steady": [
           "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-19T01:12:33.101025+00:00",
+      "deviation_pct": -45.82592348517415,
+      "sources_included": 3,
+      "narrative": "GPS jamming 19% below baseline; thermal hotspots 100% below baseline; AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "gpsjam",
+            "pct": 19,
+            "direction": "below"
+          },
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
           "ais"
         ]
       },
