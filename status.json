@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-20T18:47:37.471418+00:00",
+  "last_run_utc": "2026-11-20T21:14:13.622294+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.4h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 801,
+  "total_scans": 802,
   "quiet_count": 371,
-  "watch_count": 390,
+  "watch_count": 391,
   "warn_count": 40,
   "correction_count": 4,
-  "generated_at": "2026-11-20 20:10 UTC",
+  "generated_at": "2026-11-20 21:14 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-20T21:14:13.640717+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 533,
+      "stale_count": 9,
+      "alert_id": "1120-2114",
+      "items": [
+        {
+          "title": "PMLP tehnisk\u0101s probl\u0113mas aktualiz\u0113 jaut\u0101jumu par sist\u0113mu notur\u012bbu",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/latvija/20.11.2026-pmlp-tehniskas-problemas-aktualize-jautajumu-par-sistemu-noturibu.a672813/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-20T18:47:37.447696+00:00",
       "level": "WATCH",
@@ -1163,23 +1193,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-17T02:37:31.801735+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 7,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 55,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-20T21:14:13.678081+00:00",
+      "level": "WATCH",
+      "title": "PMLP tehnisk\u0101s probl\u0113mas aktualiz\u0113 jaut\u0101jumu par sist\u0113mu notur\u012bbu",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/latvija/20.11.2026-pmlp-tehniskas-problemas-aktualize-jautajumu-par-sistemu-noturibu.a672813/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-20T16:13:30.257741+00:00",
       "level": "WARN",
@@ -1402,22 +1434,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-19T16:39:17.988901+00:00",
-      "level": "WATCH",
-      "title": "Sabot\u0101\u017eas akts: K\u0101 Krievijas propaganda izmantoja da\u017eu Igaunijas politi\u0137u izteikumus",
-      "source": "Re:Baltica (Latvia)",
-      "link": "https://rebaltica.lv/2026/11/sabotazas-akts-ka-krievijas-propaganda-izmantoja-dazu-igaunijas-politiku-izteikumus/",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1600,8 +1616,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 171,
-    "alerting_scans": 131,
+    "scans": 172,
+    "alerting_scans": 132,
     "held_back_total": 60,
     "held_back_by_reason": [
       {
