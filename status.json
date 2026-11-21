@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-21T08:21:41.330930+00:00",
+  "last_run_utc": "2026-11-21T15:26:10.281240+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 805,
+  "total_scans": 807,
   "quiet_count": 371,
-  "watch_count": 394,
+  "watch_count": 396,
   "warn_count": 40,
   "correction_count": 4,
-  "generated_at": "2026-11-21 08:21 UTC",
+  "generated_at": "2026-11-21 15:26 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-21T15:26:10.303863+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 423,
+      "stale_count": 11,
+      "alert_id": "1121-1526",
+      "items": [
+        {
+          "title": "Somu l\u012bc\u012b p\u0113c dronu trieciena deg Krievijas kravas ku\u0123is",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/21.11.2026-somu-lici-pec-dronu-trieciena-deg-krievijas-kravas-kugis.a672883/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0412 \u0424\u0438\u043d\u0441\u043a\u043e\u043c \u0437\u0430\u043b\u0438\u0432\u0435 \u0434\u0440\u043e\u043d\u044b \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043b\u0438 \u0441\u0443\u0434\u043d\u043e, \u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0432\u0448\u0435\u0435 \u0432 \u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0433\u0440\u0430\u0434",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/21/v-finskom-zalive-drony-atakovali-sudno-sledovavshee-v-kaliningrad-news",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-21T12:58:59.960155+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 286,
+      "stale_count": 0,
+      "alert_id": "1121-1258",
+      "items": [
+        {
+          "title": "\u0414\u0430\u043d\u0438\u044f \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0438\u043b\u0430 \u0415\u0421 \u043f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0432\u044b\u0434\u0430\u0447\u0443 \u0442\u0443\u0440\u0432\u0438\u0437 \u0440\u043e\u0441\u0441\u0438\u044f\u043d\u0430\u043c. \u041b\u0430\u0442\u0432\u0438\u044f \u043f\u0440\u0438\u0437\u0432\u0430\u043b\u0430 \u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0434\u043b\u044f \u043d\u0438\u0445 \u0433\u0440\u0430\u043d\u0438\u0446\u044b",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/21/daniia-predlozhila-es-priostanovit-vydachu-turviz-rossiianam-latviia-prizvala-zakryt-dlia-nikh-granitsy-news",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-21T08:21:41.350940+00:00",
       "level": "WATCH",
@@ -1059,83 +1134,41 @@
       "stale_count": 0,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-11-18T01:42:51.781378+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 117,
-      "stale_count": 1,
-      "alert_id": "1118-0142",
-      "items": [
-        {
-          "title": "NATO \u0123ener\u0101lsekret\u0101rs Rite koment\u0113 Ukrainas uzbrukumu Krimas tiltam",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8585357",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-17T21:52:25.843300+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 328,
-      "stale_count": 0,
-      "alert_id": "1117-2152",
-      "items": [
-        {
-          "title": "Taro piiri sulgemisest: m\u00f5istan Narva muret, kuid Eesti turvalisus on t\u00e4htsam",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610198863/taro-piiri-sulgemisest-moistan-narva-muret-kuid-eesti-turvalisus-on-tahtsam",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0421\u0442\u043e\u0439\u0447\u0435\u0441\u043a\u0443: \u0437\u0430\u043a\u0440\u044b\u0442\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u043d\u0435 \u0440\u0435\u0448\u0438\u0442 \u0432\u0441\u0435\u0445 \u043f\u0440\u043e\u0431\u043b\u0435\u043c \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438, \u043d\u043e \u0441\u0442\u0430\u043d\u0435\u0442 \u0441\u0438\u0433\u043d\u0430\u043b\u043e\u043c \u041c\u043e\u0441\u043a\u0432\u0435",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610198767/stojchesku-zakrytie-granicy-ne-reshit-vseh-problem-bezopasnosti-no-stanet-signalom-moskve",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-21T15:26:10.337517+00:00",
+      "level": "WATCH",
+      "title": "\u0412 \u0424\u0438\u043d\u0441\u043a\u043e\u043c \u0437\u0430\u043b\u0438\u0432\u0435 \u0434\u0440\u043e\u043d\u044b \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043b\u0438 \u0441\u0443\u0434\u043d\u043e, \u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0432\u0448\u0435\u0435 \u0432 \u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0433\u0440\u0430\u0434",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/11/21/v-finskom-zalive-drony-atakovali-sudno-sledovavshee-v-kaliningrad-news",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-21T15:26:10.337517+00:00",
+      "level": "WATCH",
+      "title": "Somu l\u012bc\u012b p\u0113c dronu trieciena deg Krievijas kravas ku\u0123is",
+      "source": "LSM Latvian-language",
+      "link": "https://www.lsm.lv/raksts/zinas/arzemes/21.11.2026-somu-lici-pec-dronu-trieciena-deg-krievijas-kravas-kugis.a672883/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-21T08:21:41.380871+00:00",
       "level": "WATCH",
@@ -1343,38 +1376,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-20T08:33:20.515773+00:00",
-      "level": "WATCH",
-      "title": "Lietuva ir Ukraina nauju susitarimu tikisi gilinti ry\u0161ius kibernetinio saugumo srityje",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/lietuva-ir-ukraina-nauju-susitarimu-tikisi-gilinti-rysius-kibernetinio-saugumo-srityje-56-2810662?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-20T08:33:20.515773+00:00",
-      "level": "WATCH",
-      "title": "Martin Herem: sabotaa\u017eil p\u00f5hinev infooperatsioon",
-      "source": "ERR Eesti (Estonian-language)",
-      "link": "https://www.err.ee/1610201215/martin-herem-sabotaazil-pohinev-infooperatsioon",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1559,17 +1560,17 @@
     "window_days": 30,
     "scans": 172,
     "alerting_scans": 132,
-    "held_back_total": 59,
+    "held_back_total": 57,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 32
+        "count": 29
       },
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 24
+        "count": 25
       },
       {
         "reason": "reassurance",
