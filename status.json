@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-21T17:46:00.903181+00:00",
+  "last_run_utc": "2026-11-21T20:12:46.582362+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.4h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 808,
+  "total_scans": 809,
   "quiet_count": 371,
-  "watch_count": 397,
+  "watch_count": 398,
   "warn_count": 40,
   "correction_count": 4,
-  "generated_at": "2026-11-21 19:11 UTC",
+  "generated_at": "2026-11-21 20:12 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-21T20:12:46.602890+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 189,
+      "stale_count": 2,
+      "alert_id": "1121-2012",
+      "items": [
+        {
+          "title": "Russian helicopter suspected of violating Finnish airspace, after tanker hit by drone in Baltic Sea - DW.com",
+          "source": "Baltic MoDs (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWjhmRVhhRTZGREtGOXVMTFBSQjg3Y3V4YkdIR25TU3FUalh1Z25HT2sxU3VHNmg2OXJHd3RqdnEyNmx0VVJpNUhiaHRsTmdlb1B4cWhxMHRrOW9iNFJHNmlrUHVPckYtbngwMkRVaFh6am5GQkZ3bFNnbFQ1RDJnODNkajVoMkExLWo0SmJtVDFZbm5yNnfSAZYBQVVfeXFMTlZhMjNULTZKTFh1ZHZEWlQzN0s4Mm45bElTRVVBejU0dDdVVnl1Y090YU9IVEJyeTNKLVZ6MEdtdmpZMmFFNmFCVUh6MDJtaHpzSjJIVUx6QUNYQW96VzlHMDJOamxLekUxdS1xSUN5WjdpSUxFdWFVaUh2S1NtNkRtVjdCQzZwMUFlVS1uOTdjMDBKaXpR?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "VIDEO \u27e9 K\u0113nigsbergai pirmo reizi uzbr\u016bk droni: Ukrai\u0146i zi\u0146o par uzbrukumiem Krievijas Baltijas j\u016bras flotei",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8587707",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-21T17:46:00.876450+00:00",
       "level": "WATCH",
@@ -1122,54 +1167,41 @@
           "route": "google"
         }
       ]
-    },
-    {
-      "ts": "2026-11-18T13:22:45.903536+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 392,
-      "stale_count": 0,
-      "alert_id": "1118-1322",
-      "items": [
-        {
-          "title": "\"\u042d\u043f\u0438\u0446\u0435\u043d\u0442\u0440\": \u0443\u0447\u0430\u0441\u0442\u0438\u0435 \u0415\u0432\u0440\u043e\u043f\u044b \u0432 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0435 \u0420\u043e\u0441\u0441\u0438\u0438 \u0438 \u0423\u043a\u0440\u0430\u0438\u043d\u044b",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610199220/jepicentr-uchastie-evropy-v-peregovornom-processe-rossii-i-ukrainy",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Rzeczpospolita: \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u0441\u043f\u0435\u0446\u0441\u043b\u0443\u0436\u0431\u044b \u0433\u043e\u0442\u043e\u0432\u0438\u043b\u0438 \u0434\u0438\u0432\u0435\u0440\u0441\u0438\u044e \u043d\u0430 \u0433\u0440\u0430\u043d\u0438\u0446\u0435 \u0441 \u041f\u043e\u043b\u044c\u0448\u0435\u0439, \u0447\u0442\u043e\u0431\u044b \u043e\u0431\u0432\u0438\u043d\u0438\u0442\u044c \u0423\u043a\u0440\u0430\u0438\u043d\u0443 \u0432 \u043d\u0430\u043f\u0430\u0434\u0435\u043d\u0438\u0438",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/11/18/rzeczpospolita-rossiiskie-spetssluzhby-gotovili-diversiiu-na-granitse-s-polshei-chtoby-obvinit-ukrainu-v-napadenii-news",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-21T20:12:46.638426+00:00",
+      "level": "WATCH",
+      "title": "VIDEO \u27e9 K\u0113nigsbergai pirmo reizi uzbr\u016bk droni: Ukrai\u0146i zi\u0146o par uzbrukumiem Krievijas Baltijas j\u016bras flotei",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8587707",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-21T20:12:46.638426+00:00",
+      "level": "WATCH",
+      "title": "Russian helicopter suspected of violating Finnish airspace, after tanker hit by drone in Baltic Sea - DW.com",
+      "source": "Baltic MoDs (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWjhmRVhhRTZGREtGOXVMTFBSQjg3Y3V4YkdIR25TU3FUalh1Z25HT2sxU3VHNmg2OXJHd3RqdnEyNmx0VVJpNUhiaHRsTmdlb1B4cWhxMHRrOW9iNFJHNmlrUHVPckYtbngwMkRVaFh6am5GQkZ3bFNnbFQ1RDJnODNkajVoMkExLWo0SmJtVDFZbm5yNnfSAZYBQVVfeXFMTlZhMjNULTZKTFh1ZHZEWlQzN0s4Mm45bElTRVVBejU0dDdVVnl1Y090YU9IVEJyeTNKLVZ6MEdtdmpZMmFFNmFCVUh6MDJtaHpzSjJIVUx6QUNYQW96VzlHMDJOamxLekUxdS1xSUN5WjdpSUxFdWFVaUh2S1NtNkRtVjdCQzZwMUFlVS1uOTdjMDBKaXpR?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-21T15:26:10.337517+00:00",
       "level": "WATCH",
@@ -1377,38 +1409,6 @@
       "gdelt_subcategory": "Viimsi, Harjumaa, Estonia",
       "gdelt_event_code": "1712",
       "goldstein": -9.2
-    },
-    {
-      "ts": "2026-11-20T16:13:30.257741+00:00",
-      "level": "WARN",
-      "title": "Estonia shuts border with Russia for six months over alleged sabotage plots - The Jerusalem Post",
-      "source": "BNS (via GNews)",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUWlIdU1Mc3JxWmhka3ZOR2J6dWsyY1NuUlRBVnYtWlNpbnBuWFE4TDZnbXRJRlpmRnAxSVMyeEdOMmNxTVU0Yk8wSTFldGRsRTZwU0pwSmVEOGdCb0VJLXJ3TnhzSDNWMEdLSW1ReFN1LXNZQjlCZjNIU1gzamtHMlU1a2FFbldzUGc?oc=5",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier1",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-20T08:33:20.515773+00:00",
-      "level": "WATCH",
-      "title": "Diversijas, dedzin\u0101\u0161anas un saboj\u0101ti kabe\u013ci: k\u0101 str\u0101d\u0101 Krievijas \"\u0101rpakalpojumu hibr\u012bdkar\u0161\" Eirop\u0101 un ko tas noz\u012bm\u0113 Latvijai",
-      "source": "Jauns.lv (Latvia)",
-      "link": "https://jauns.lv/raksts/zinas/738714-diversijas-dedzinasanas-un-sabojati-kabeli-ka-strada-krievijas-arpakalpojumu-hibridkars-eiropa-un-ko-tas-nozime-latvijai",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1591,14 +1591,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 171,
-    "alerting_scans": 131,
-    "held_back_total": 58,
+    "scans": 172,
+    "alerting_scans": 132,
+    "held_back_total": 60,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 29
+        "count": 31
       },
       {
         "reason": "already alerted",
