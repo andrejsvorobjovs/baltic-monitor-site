@@ -1,20 +1,67 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-21T15:26:10.281240+00:00",
+  "last_run_utc": "2026-11-21T17:46:00.903181+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 1.4h ago",
   "since": "2026-07-19",
-  "total_scans": 807,
+  "total_scans": 808,
   "quiet_count": 371,
-  "watch_count": 396,
+  "watch_count": 397,
   "warn_count": 40,
   "correction_count": 4,
-  "generated_at": "2026-11-21 15:26 UTC",
+  "generated_at": "2026-11-21 19:11 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-21T17:46:00.876450+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 140,
+      "stale_count": 0,
+      "alert_id": "1121-1746",
+      "items": [
+        {
+          "title": "\u0414\u0435\u043c\u043e\u043d\u0441\u0442\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/21/demonstratsionnye-deistviia",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Poland yesterday, Finland and Estonia today. More aircraft will enter NATO airspace",
+          "source": "Defence24",
+          "link": "https://defence24.com/geopolitics/poland-yesterday-finland-and-estonia-today-more-aircraft-will-enter-nato-airspace",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-21T15:26:10.303863+00:00",
       "level": "WATCH",
@@ -1120,20 +1167,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-18T08:35:58.847334+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 421,
-      "stale_count": 0,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
@@ -1558,9 +1591,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 172,
-    "alerting_scans": 132,
-    "held_back_total": 57,
+    "scans": 171,
+    "alerting_scans": 131,
+    "held_back_total": 58,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1570,7 +1603,7 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 25
+        "count": 26
       },
       {
         "reason": "reassurance",
