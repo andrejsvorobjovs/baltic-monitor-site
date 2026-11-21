@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-21T03:26:18.647172+00:00",
+  "last_run_utc": "2026-11-21T08:21:41.330930+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.6h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 804,
+  "total_scans": 805,
   "quiet_count": 371,
-  "watch_count": 393,
+  "watch_count": 394,
   "warn_count": 40,
   "correction_count": 4,
-  "generated_at": "2026-11-21 07:01 UTC",
+  "generated_at": "2026-11-21 08:21 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-21T08:21:41.350940+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 294,
+      "stale_count": 3,
+      "alert_id": "1121-0821",
+      "items": [
+        {
+          "title": "Minister: Russia-backed murder plot in Denmark marks dangerous escalation",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610202631/minister-russia-backed-murder-plot-in-denmark-marks-dangerous-escalation",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "DROONIOHT VIRUMAAL! \u00c4marist t\u00f5usid \u00f5hku NATO h\u00e4vitajad",
+          "source": "Ohtuleht (Estonia)",
+          "link": "https://www.ohtuleht.ee/1171920/droonioht-virumaal-amarist-tousid-ohku-nato-havitajad",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-21T03:26:18.614613+00:00",
       "level": "WATCH",
@@ -1088,23 +1133,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-17T17:00:23.079993+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 463,
-      "stale_count": 5,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-21T08:21:41.380871+00:00",
+      "level": "WATCH",
+      "title": "DROONIOHT VIRUMAAL! \u00c4marist t\u00f5usid \u00f5hku NATO h\u00e4vitajad",
+      "source": "Ohtuleht (Estonia)",
+      "link": "https://www.ohtuleht.ee/1171920/droonioht-virumaal-amarist-tousid-ohku-nato-havitajad",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-21T08:21:41.380871+00:00",
+      "level": "WATCH",
+      "title": "Minister: Russia-backed murder plot in Denmark marks dangerous escalation",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610202631/minister-russia-backed-murder-plot-in-denmark-marks-dangerous-escalation",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-21T00:53:29.952738+00:00",
       "level": "WATCH",
@@ -1312,37 +1375,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-20T08:33:20.515773+00:00",
-      "level": "WATCH",
-      "title": "Martin Herem: An information operation built on sabotage",
-      "source": "ERR News (Estonia)",
-      "link": "https://news.err.ee/1610201365/martin-herem-an-information-operation-built-on-sabotage",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-20T01:19:40.877626+00:00",
-      "level": "WATCH",
-      "title": "us defense official rebuked by nato allies after remarks ukraines deep strikes in russia",
-      "source": "GDELT (military.com)",
-      "link": "https://www.military.com/us-defense-official-rebuked-by-nato-allies-after-remarks-ukraines-deep-strikes-in-russia",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "a threat",
-      "gdelt_subcategory": "Kerch Strait, Russia (general), Russia",
-      "gdelt_event_code": "138",
-      "goldstein": -7.0
     }
   ],
   "recent_corrections": [
@@ -1525,14 +1557,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 171,
-    "alerting_scans": 131,
-    "held_back_total": 58,
+    "scans": 172,
+    "alerting_scans": 132,
+    "held_back_total": 59,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 31
+        "count": 32
       },
       {
         "reason": "already alerted",
