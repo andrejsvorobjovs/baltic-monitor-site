@@ -1,20 +1,110 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-22T18:01:53.567898+00:00",
+  "last_run_utc": "2026-11-22T20:28:54.842887+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.5h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 814,
+  "total_scans": 815,
   "quiet_count": 371,
-  "watch_count": 403,
+  "watch_count": 404,
   "warn_count": 40,
   "correction_count": 4,
-  "generated_at": "2026-11-22 19:33 UTC",
+  "generated_at": "2026-11-22 20:28 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-22T20:28:54.877888+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 0,
+      "tier3_count": 2,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 304,
+      "stale_count": 9,
+      "alert_id": "1122-2028",
+      "items": [
+        {
+          "title": "Huge Kremlin warship destroyed explosion Libyan port suspected drone attack Russian cargo ship attacked Baltic Sea",
+          "source": "GDELT (dailymail.com)",
+          "link": "https://www.dailymail.com/news/article-16313277/Huge-Kremlin-warship-destroyed-explosion-Libyan-port-suspected-drone-attack-Russian-cargo-ship-attacked-Baltic-Sea.html",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "fighting",
+          "gdelt_subcategory": "Naro-Fominsk, Moskovskaya Oblast', Russia",
+          "gdelt_event_code": "190",
+          "goldstein": -10.0,
+          "route": "gdelt"
+        },
+        {
+          "title": "baltic uproar nato flights near kaliningrad and drone strike on russian ship spark blockade alarm",
+          "source": "GDELT (bankingnews.gr)",
+          "link": "https://www.bankingnews.gr/diethni/articles/912592/baltic-uproar-nato-flights-near-kaliningrad-and-drone-strike-on-russian-ship-spark-blockade-alarm",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "fighting",
+          "gdelt_subcategory": "Kaliningrad, Kaliningradskaya Oblast', Russia",
+          "gdelt_event_code": "190",
+          "goldstein": -10.0,
+          "route": "gdelt"
+        },
+        {
+          "title": "Art\u0117jant Estijos sienos su Rusija u\u017edarymui \u2013 sujudimas: gyventojai skuba kirsti sien\u0105",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/artejant-estijos-sienos-su-rusija-uzdarymui-sujudimas-gyventojai-skuba-kirsti-siena-57-2811854?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0423 \u0431\u0435\u0440\u0435\u0433\u043e\u0432 \u041b\u0438\u0432\u0438\u0438 \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043d\u043e \u0432\u0442\u043e\u0440\u043e\u0435 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0435 \u0441\u0443\u0434\u043d\u043e",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/22/u-beregov-livii-atakovano-vtoroe-rossiiskoe-sudno-news",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NATO apspried\u012bs k\u0101rt\u0113jo Krievijas iebrukumu Polijas gaisa telp\u0101 \u2013 Var\u0161ava run\u0101 par apzin\u0101tu provok\u0101ciju",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/arzemes/739155-nato-apspriedis-kartejo-krievijas-iebrukumu-polijas-gaisa-telpa-varsava-runa-par-apzinatu-provokaciju",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-22T18:01:53.533945+00:00",
       "level": "WATCH",
@@ -1124,39 +1214,89 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-19T16:39:17.968904+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 722,
-      "stale_count": 21,
-      "alert_id": "1119-1639",
-      "items": [
-        {
-          "title": "Sabot\u0101\u017eas akts: K\u0101 Krievijas propaganda izmantoja da\u017eu Igaunijas politi\u0137u izteikumus",
-          "source": "Re:Baltica (Latvia)",
-          "link": "https://rebaltica.lv/2026/11/sabotazas-akts-ka-krievijas-propaganda-izmantoja-dazu-igaunijas-politiku-izteikumus/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-22T20:28:54.901664+00:00",
+      "level": "WATCH",
+      "title": "NATO apspried\u012bs k\u0101rt\u0113jo Krievijas iebrukumu Polijas gaisa telp\u0101 \u2013 Var\u0161ava run\u0101 par apzin\u0101tu provok\u0101ciju",
+      "source": "Jauns.lv (Latvia)",
+      "link": "https://jauns.lv/raksts/arzemes/739155-nato-apspriedis-kartejo-krievijas-iebrukumu-polijas-gaisa-telpa-varsava-runa-par-apzinatu-provokaciju",
+      "categories": [
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-22T20:28:54.901664+00:00",
+      "level": "WATCH",
+      "title": "\u0423 \u0431\u0435\u0440\u0435\u0433\u043e\u0432 \u041b\u0438\u0432\u0438\u0438 \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043d\u043e \u0432\u0442\u043e\u0440\u043e\u0435 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0435 \u0441\u0443\u0434\u043d\u043e",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/11/22/u-beregov-livii-atakovano-vtoroe-rossiiskoe-sudno-news",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-22T20:28:54.901664+00:00",
+      "level": "WATCH",
+      "title": "Art\u0117jant Estijos sienos su Rusija u\u017edarymui \u2013 sujudimas: gyventojai skuba kirsti sien\u0105",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/artejant-estijos-sienos-su-rusija-uzdarymui-sujudimas-gyventojai-skuba-kirsti-siena-57-2811854?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-22T20:28:54.901664+00:00",
+      "level": "WATCH",
+      "title": "baltic uproar nato flights near kaliningrad and drone strike on russian ship spark blockade alarm",
+      "source": "GDELT (bankingnews.gr)",
+      "link": "https://www.bankingnews.gr/diethni/articles/912592/baltic-uproar-nato-flights-near-kaliningrad-and-drone-strike-on-russian-ship-spark-blockade-alarm",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "fighting",
+      "gdelt_subcategory": "Kaliningrad, Kaliningradskaya Oblast', Russia",
+      "gdelt_event_code": "190",
+      "goldstein": -10.0
+    },
+    {
+      "ts": "2026-11-22T20:28:54.901664+00:00",
+      "level": "WATCH",
+      "title": "Huge Kremlin warship destroyed explosion Libyan port suspected drone attack Russian cargo ship attacked Baltic Sea",
+      "source": "GDELT (dailymail.com)",
+      "link": "https://www.dailymail.com/news/article-16313277/Huge-Kremlin-warship-destroyed-explosion-Libyan-port-suspected-drone-attack-Russian-cargo-ship-attacked-Baltic-Sea.html",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "fighting",
+      "gdelt_subcategory": "Naro-Fominsk, Moskovskaya Oblast', Russia",
+      "gdelt_event_code": "190",
+      "goldstein": -10.0
+    },
     {
       "ts": "2026-11-22T15:23:12.688679+00:00",
       "level": "WATCH",
@@ -1307,86 +1447,6 @@
       "title": "\u0412 \u0424\u0438\u043d\u0441\u043a\u043e\u043c \u0437\u0430\u043b\u0438\u0432\u0435 \u0434\u0440\u043e\u043d\u044b \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043b\u0438 \u0441\u0443\u0434\u043d\u043e, \u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0432\u0448\u0435\u0435 \u0432 \u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0433\u0440\u0430\u0434",
       "source": "Novaya Gazeta Europe",
       "link": "https://novayagazeta.eu/articles/2026/11/21/v-finskom-zalive-drony-atakovali-sudno-sledovavshee-v-kaliningrad-news",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-21T15:26:10.337517+00:00",
-      "level": "WATCH",
-      "title": "Somu l\u012bc\u012b p\u0113c dronu trieciena deg Krievijas kravas ku\u0123is",
-      "source": "LSM Latvian-language",
-      "link": "https://www.lsm.lv/raksts/zinas/arzemes/21.11.2026-somu-lici-pec-dronu-trieciena-deg-krievijas-kravas-kugis.a672883/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-21T08:21:41.380871+00:00",
-      "level": "WATCH",
-      "title": "DROONIOHT VIRUMAAL! \u00c4marist t\u00f5usid \u00f5hku NATO h\u00e4vitajad",
-      "source": "Ohtuleht (Estonia)",
-      "link": "https://www.ohtuleht.ee/1171920/droonioht-virumaal-amarist-tousid-ohku-nato-havitajad",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-21T08:21:41.380871+00:00",
-      "level": "WATCH",
-      "title": "Minister: Russia-backed murder plot in Denmark marks dangerous escalation",
-      "source": "ERR News (Estonia)",
-      "link": "https://news.err.ee/1610202631/minister-russia-backed-murder-plot-in-denmark-marks-dangerous-escalation",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-21T00:53:29.952738+00:00",
-      "level": "WATCH",
-      "title": "estonia summons russian envoy",
-      "source": "GDELT (news.az)",
-      "link": "https://news.az/news/estonia-summons-russian-envoy",
-      "categories": [
-        "baltic_specific",
-        "diplomatic"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "coercion",
-      "gdelt_subcategory": "Moscow, Moskva, Russia",
-      "gdelt_event_code": "172",
-      "goldstein": -5.0
-    },
-    {
-      "ts": "2026-11-20T21:14:13.678081+00:00",
-      "level": "WATCH",
-      "title": "PMLP tehnisk\u0101s probl\u0113mas aktualiz\u0113 jaut\u0101jumu par sist\u0113mu notur\u012bbu",
-      "source": "LSM Latvian-language",
-      "link": "https://www.lsm.lv/raksts/zinas/latvija/20.11.2026-pmlp-tehniskas-problemas-aktualize-jautajumu-par-sistemu-noturibu.a672813/?utm_source=rss&utm_campaign=rss&utm_medium=links",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
@@ -1578,8 +1638,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 173,
-    "alerting_scans": 134,
+    "scans": 174,
+    "alerting_scans": 135,
     "held_back_total": 61,
     "held_back_by_reason": [
       {
