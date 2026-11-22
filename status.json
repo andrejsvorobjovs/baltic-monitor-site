@@ -1,20 +1,95 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-22T08:05:49.994359+00:00",
+  "last_run_utc": "2026-11-22T15:23:12.639893+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 811,
+  "total_scans": 813,
   "quiet_count": 371,
-  "watch_count": 400,
+  "watch_count": 402,
   "warn_count": 40,
   "correction_count": 4,
-  "generated_at": "2026-11-22 08:05 UTC",
+  "generated_at": "2026-11-22 15:23 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-22T15:23:12.658788+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 7,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 263,
+      "stale_count": 11,
+      "alert_id": "1122-1523",
+      "items": [
+        {
+          "title": "\u0412 \u041b\u0438\u0432\u0438\u0438 \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043d \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0439 \u0432\u043e\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u0440\u0432\u0435\u0442 \u00ab\u041c\u0435\u0440\u043a\u0443\u0440\u0438\u0439\u00bb",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/22/smi-soobshchili-o-veroiatnom-unichtozhenii-rossiiskogo-korveta-merkurii-v-livii-news",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Lithuania rejects accusations of involvement in a drone attack on the Kaliningrad region",
+          "source": "Defence24",
+          "link": "https://defence24.com/geopolitics/lithuania-rejects-accusations-of-involvement-in-a-drone-attack-on-the-kaliningrad-region",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-22T12:50:40.008649+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 263,
+      "stale_count": 0,
+      "alert_id": "1122-1250",
+      "items": [
+        {
+          "title": "Diplomatas Bajar\u016bnas sureagavo \u012f \u012fvykius Kaliningrade: \u201egal tai \u2013 pa\u010dios Rusijos provokacija?\u201c",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/diplomatas-bajarunas-sureagavo-i-ivykius-kaliningrade-gal-tai-pacios-rusijos-provokacija-56-2811726?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-22T08:05:50.009069+00:00",
       "level": "WATCH",
@@ -1154,83 +1229,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-19T08:50:06.240831+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 513,
-      "stale_count": 2,
-      "alert_id": "1119-0850",
-      "items": [
-        {
-          "title": "Oro balionais atskraidintas cigaretes gaben\u0119 vyrai atsipirko baudomis",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/lietuvosdiena/kriminalai/2026/11/19/news/oro-balionais-atskraidintas-cigaretes-gabene-vyrai-atsipirko-baudomis-44975529",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Brister i s\u00e4kerhetsskyddet uppt\u00e4cktes i\u00a0energi- och transportsektorn",
-          "source": "Sveriges Radio Ekot",
-          "link": "https://www.sverigesradio.se/artikel/9337168",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Prokurat\u016bra atsisak\u0117 prad\u0117ti tyrim\u0105 d\u0117l galimo \u201eTez Tour\u201c keliautoj\u0173 duomen\u0173 nutek\u0117jimo",
-          "source": "Verslo zinios (Lithuania)",
-          "link": "https://www.vz.lt/logistika-ir-transportas/2026/11/19/prokuratura-atsisake-pradeti-tyrima-del-galimo-tez-tour-keliautoju-duomenu-nutekejimo-592960",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-19T01:13:01.274396+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 152,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 155,
-      "stale_count": 6,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-22T15:23:12.688679+00:00",
+      "level": "WATCH",
+      "title": "Lithuania rejects accusations of involvement in a drone attack on the Kaliningrad region",
+      "source": "Defence24",
+      "link": "https://defence24.com/geopolitics/lithuania-rejects-accusations-of-involvement-in-a-drone-attack-on-the-kaliningrad-region",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-22T15:23:12.688679+00:00",
+      "level": "WATCH",
+      "title": "\u0412 \u041b\u0438\u0432\u0438\u0438 \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043d \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0439 \u0432\u043e\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u0440\u0432\u0435\u0442 \u00ab\u041c\u0435\u0440\u043a\u0443\u0440\u0438\u0439\u00bb",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/11/22/smi-soobshchili-o-veroiatnom-unichtozhenii-rossiiskogo-korveta-merkurii-v-livii-news",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-22T08:05:50.030893+00:00",
       "level": "WATCH",
@@ -1438,38 +1471,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-20T16:13:30.257741+00:00",
-      "level": "WARN",
-      "title": "\u201cDa\u017eas nelielas ra\u0137etes\u2026\u201d Trampa pirm\u0101 reakcija uz Polij\u0101 notieko\u0161o liek asin\u012bm v\u0101r\u012bties",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/dazas-nelielas-raketes-trampa-pirma-reakcija-uz-polija-notiekoso-liek-asinim-varities",
-      "categories": [
-        "hybrid_incident",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-20T16:13:30.257741+00:00",
-      "level": "WARN",
-      "title": "Lietuvoje \u2013 \u012fsp\u016bdingos NATO pratybos: u\u017efiksavo, kaip kariai vykdo u\u017eduot\u012f m\u016b\u0161io s\u0105lygomis",
-      "source": "Lrytas (Lithuania)",
-      "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/11/20/news/lietuvoje-ispudingos-nato-pratybos-uzfiksavo-kaip-kariai-vykdo-uzduoti-musio-salygomis-45000891",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1652,9 +1653,9 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 172,
-    "alerting_scans": 133,
-    "held_back_total": 59,
+    "scans": 173,
+    "alerting_scans": 134,
+    "held_back_total": 61,
     "held_back_by_reason": [
       {
         "reason": "speculation",
@@ -1664,12 +1665,17 @@
       {
         "reason": "already alerted",
         "label": "Same story already alerted",
-        "count": 26
+        "count": 27
       },
       {
         "reason": "reassurance",
         "label": "Denial / no-threat framing",
         "count": 3
+      },
+      {
+        "reason": "scheduled exercise",
+        "label": "Announced allied exercise",
+        "count": 1
       }
     ],
     "scans_before_tracking": 0
