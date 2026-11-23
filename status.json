@@ -1,20 +1,66 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-23T19:20:33.219880+00:00",
-  "last_level": "WARN",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "last_run_utc": "2026-11-23T22:14:27.059341+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 1.6h ago",
   "since": "2026-07-19",
-  "total_scans": 819,
+  "total_scans": 820,
   "quiet_count": 372,
-  "watch_count": 406,
+  "watch_count": 407,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-23 19:20 UTC",
+  "generated_at": "2026-11-23 23:50 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-23T22:14:27.036743+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 121,
+      "stale_count": 0,
+      "alert_id": "1123-2214",
+      "items": [
+        {
+          "title": "Laurynas Kas\u010di\u016bnas: NATO \u012f Rusijos provokacijas tur\u0117t\u0173 atsakyti stabdydama \u0161e\u0161\u0117lin\u012f laivyn\u0105",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/laurynas-kasciunas-nato-i-rusijos-provokacijas-turetu-atsakyti-stabdydama-seselini-laivyna-56-2812748?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Russia protests Estonia\u2019s planned land border closure and again accuses it\u00a0of\u00a0letting Ukrainian drones use its airspace",
+          "source": "Meduza",
+          "link": "https://meduza.io/en/news/2026/11/24/russia-protests-estonia-s-planned-land-border-closure-and-again-accuses-it-of-letting-ukrainian-drones-use-its-airspace",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-23T19:20:33.237791+00:00",
       "level": "WARN",
@@ -1073,141 +1119,6 @@
           "categories": [
             "baltic_specific",
             "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-20T16:13:30.226565+00:00",
-      "level": "WARN",
-      "count": 8,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 653,
-      "stale_count": 8,
-      "alert_id": "1120-1613",
-      "items": [
-        {
-          "title": "Estonia shuts border with Russia for six months over alleged sabotage plots - The Jerusalem Post",
-          "source": "BNS (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUWlIdU1Mc3JxWmhka3ZOR2J6dWsyY1NuUlRBVnYtWlNpbnBuWFE4TDZnbXRJRlpmRnAxSVMyeEdOMmNxTVU0Yk8wSTFldGRsRTZwU0pwSmVEOGdCb0VJLXJ3TnhzSDNWMEdLSW1ReFN1LXNZQjlCZjNIU1gzamtHMlU1a2FFbldzUGc?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier1",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "estonias border closure makes russia pay price for alleged arson as sabotage attacks spread across the eu",
-          "source": "GDELT (euobserver.com)",
-          "link": "https://euobserver.com/249994/estonias-border-closure-makes-russia-pay-a-price-for-alleged-arson-as-sabotage-attacks-spread-across-the-eu/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "coercion",
-          "gdelt_subcategory": "Viimsi, Harjumaa, Estonia",
-          "gdelt_event_code": "1712",
-          "goldstein": -9.2,
-          "route": "gdelt"
-        },
-        {
-          "title": "estonia to shut border with russia over gru linked sabotage attack",
-          "source": "GDELT (euronews.com)",
-          "link": "https://www.euronews.com/2026/11/20/estonia-to-shut-border-with-russia-over-gru-linked-sabotage-attack",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "a rejection",
-          "gdelt_subcategory": "Viimsi, Harjumaa, Estonia",
-          "gdelt_event_code": "120",
-          "goldstein": -4.0,
-          "route": "gdelt"
-        },
-        {
-          "title": "nato jets scrambled after russian missiles and drone hit poland during attacks on ukraine",
-          "source": "GDELT (irishtimes.com)",
-          "link": "https://www.irishtimes.com/world/europe/2026/11/20/nato-jets-scrambled-after-russian-missiles-and-drone-hit-poland-during-attacks-on-ukraine/",
-          "categories": [
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "fighting",
-          "gdelt_subcategory": "Bydgoszcz, Kujawsko-Pomorskie, Poland",
-          "gdelt_event_code": "194",
-          "goldstein": -10.0,
-          "route": "gdelt"
-        },
-        {
-          "title": "Raket\u0173 pavoj\u0173 Robertas Kaunas pasitiko skrisdamas \u012f Lenkij\u0105: per daug sutapim\u0173",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/raketu-pavoju-robertas-kaunas-pasitiko-skrisdamas-i-lenkija-labai-jau-daug-sutapimu-56-2811134?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "V\u00e4lisministeerium kutsus taas v\u00e4lja Venemaa ajutise asjuri, saatkonda teavitati piiri sulgemisest",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8587284",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuvoje \u2013 \u012fsp\u016bdingos NATO pratybos: u\u017efiksavo, kaip kariai vykdo u\u017eduot\u012f m\u016b\u0161io s\u0105lygomis",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/11/20/news/lietuvoje-ispudingos-nato-pratybos-uzfiksavo-kaip-kariai-vykdo-uzduoti-musio-salygomis-45000891",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201cDa\u017eas nelielas ra\u0137etes\u2026\u201d Trampa pirm\u0101 reakcija uz Polij\u0101 notieko\u0161o liek asin\u012bm v\u0101r\u012bties",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/dazas-nelielas-raketes-trampa-pirma-reakcija-uz-polija-notiekoso-liek-asinim-varities",
-          "categories": [
-            "hybrid_incident",
-            "nato_conflict_risk"
           ],
           "tier": "tier2",
           "gdelt_category": "",
