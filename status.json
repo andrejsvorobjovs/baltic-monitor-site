@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-22T20:28:54.842887+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-11-23T00:19:56.343964+00:00",
+  "last_level": "QUIET",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 815,
-  "quiet_count": 371,
+  "total_scans": 816,
+  "quiet_count": 372,
   "watch_count": 404,
   "warn_count": 40,
   "correction_count": 4,
-  "generated_at": "2026-11-22 20:28 UTC",
+  "generated_at": "2026-11-23 00:19 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-23T00:19:56.363864+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 2,
+      "tier3_count": 1,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 138,
+      "stale_count": 2,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-11-22T20:28:54.877888+00:00",
       "level": "WATCH",
@@ -1184,36 +1198,6 @@
           "route": "gdelt"
         }
       ]
-    },
-    {
-      "ts": "2026-11-19T21:35:28.264490+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 675,
-      "stale_count": 17,
-      "alert_id": "1119-2135",
-      "items": [
-        {
-          "title": "Tehnisku probl\u0113mu d\u0113\u013c ceturtdien p\u0101rtraukta PMLP pakalpojumu snieg\u0161ana",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/tehnisku-problemu-del-ceturtdien-partraukta-pmlp-pakalpojumu-sniegsana",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1639,7 +1623,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 174,
-    "alerting_scans": 135,
+    "alerting_scans": 134,
     "held_back_total": 61,
     "held_back_by_reason": [
       {
