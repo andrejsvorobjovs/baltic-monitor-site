@@ -1,20 +1,262 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-23T09:06:07.030592+00:00",
-  "last_level": "WATCH",
+  "last_run_utc": "2026-11-23T19:20:33.219880+00:00",
+  "last_level": "WARN",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 817,
+  "total_scans": 819,
   "quiet_count": 372,
-  "watch_count": 405,
-  "warn_count": 40,
+  "watch_count": 406,
+  "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-23 09:06 UTC",
+  "generated_at": "2026-11-23 19:20 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-23T19:20:33.237791+00:00",
+      "level": "WARN",
+      "count": 8,
+      "failed_count": 0,
+      "tier3_count": 4,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 605,
+      "stale_count": 3,
+      "alert_id": "1123-1920",
+      "items": [
+        {
+          "title": "latvia lodges protest russian federation regarding consequences its war aggression against ukraine and violations airspace european union and nato member states",
+          "source": "GDELT (mfa.gov.lv)",
+          "link": "https://www.mfa.gov.lv/en/article/latvia-lodges-protest-russian-federation-regarding-consequences-its-war-aggression-against-ukraine-and-violations-airspace-european-union-and-nato-member-states",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "a threat",
+          "gdelt_subcategory": "Riga, Riga, Latvia",
+          "gdelt_event_code": "130",
+          "goldstein": -4.4,
+          "route": "gdelt"
+        },
+        {
+          "title": "moscow summons estonian diplomat over border closure a94352",
+          "source": "GDELT (themoscowtimes.com)",
+          "link": "https://www.themoscowtimes.com/2026/11/23/moscow-summons-estonian-diplomat-over-border-closure-a94352",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "a rejection",
+          "gdelt_subcategory": "Tallinn, Harjumaa, Estonia",
+          "gdelt_event_code": "120",
+          "goldstein": -4.0,
+          "route": "gdelt"
+        },
+        {
+          "title": "putin ally warns nato crossed russias nuclear strike red line",
+          "source": "GDELT (newsweek.com)",
+          "link": "https://www.newsweek.com/putin-ally-warns-nato-crossed-russias-nuclear-strike-red-line-12755634",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "a threat",
+          "gdelt_subcategory": "Moscow, Moskva, Russia",
+          "gdelt_event_code": "130",
+          "goldstein": -4.4,
+          "route": "gdelt"
+        },
+        {
+          "title": "Russian diplomat summoned yet again by Latvia over ongoing aggression",
+          "source": "LSM (Latvia)",
+          "link": "https://eng.lsm.lv/article/politics/diplomacy/23.11.2026-russian-diplomat-summoned-yet-again-by-latvia-over-ongoing-aggression.a673122/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "I\u0161 ekspert\u0173 \u2013 prognoz\u0117, kas laukia Rusijos, Ukrainos ir Lietuvos",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/is-ekspertu-prognoze-kas-laukia-rusijos-ukrainos-ir-lietuvos-120335824",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Latvija izteikusi protestu Krievijai par uzbrukumiem Ukrainai un gaisa telpas p\u0101rk\u0101pumiem",
+          "source": "TVNET (Latvia)",
+          "link": "https://pmo.ee/8588668",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Moscow Summons Estonian Diplomat Over Border Closure",
+          "source": "Moscow Times",
+          "link": "https://www.themoscowtimes.com/2026/11/23/moscow-summons-estonian-diplomat-over-border-closure-a94352",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u00ab\u0422\u043e\u043f\u0438\u0442\u044c \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u043a\u043e\u0440\u0430\u0431\u043b\u0438 \u0442\u0435\u043f\u0435\u0440\u044c \u043c\u043e\u0436\u043d\u043e \u0432 \u043b\u044e\u0431\u043e\u043c \u0443\u0433\u043e\u043b\u043a\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0433\u043e \u043e\u043a\u0435\u0430\u043d\u0430\u00bb",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/23/topit-rossiiskie-korabli-teper-mozhno-v-liubom-ugolke-mirovogo-okeana",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "hybrid_incident",
+            "shadow_fleet"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-23T15:19:08.161867+00:00",
+      "level": "WATCH",
+      "count": 6,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 517,
+      "stale_count": 0,
+      "alert_id": "1123-1519",
+      "items": [
+        {
+          "title": "Var\u0161ava p\u0113c tr\u012bs Krievijas ra\u0137e\u0161u nokri\u0161anas Polij\u0101 rosin\u0101s NATO stiprin\u0101t austrumu flangu",
+          "source": "LSM Latvian-language",
+          "link": "https://www.lsm.lv/raksts/zinas/arzemes/23.11.2026-varsava-pec-tris-krievijas-rakesu-nokrisanas-polija-rosinas-nato-stiprinat-austrumu-flangu.a673038/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "categories": [
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Europolo atstovas \u012fsp\u0117ja apie nauj\u0105 apgavys\u010di\u0173 bang\u0105: vienas skambutis ir j\u016bs\u0173 asmens kodas \u2013 nusikalt\u0117li\u0173 rankose",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/projektai/technologijos-kiekvienai-dienai/europolo-atstovas-ispeja-apie-nauja-apgavysciu-banga-vienas-skambutis-ir-jusu-asmens-kodas-nusikalteliu-rankose-120337780",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "EDITORIAL \u27e9 The War Has Reached the Baltic Sea",
+          "source": "Postimees (Estonia)",
+          "link": "https://pmo.ee/8588306",
+          "categories": [
+            "baltic_specific",
+            "shadow_fleet"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NATO 3.0 is taking shape. Poland becomes a pillar of the new Alliance as more countries join",
+          "source": "Defence24",
+          "link": "https://defence24.com/defence-policy/nato-30-is-taking-shape-poland-becomes-a-pillar-of-the-new-alliance-as-more-countries-join",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Pusgads p\u0113c kiberuzbrukuma LVM: m\u0101c\u012bbas un secin\u0101jumi",
+          "source": "Jauns.lv (Latvia)",
+          "link": "https://jauns.lv/raksts/maja-un-darzs/739238-pusgads-pec-kiberuzbrukuma-lvm-macibas-un-secinajumi",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "KAITSEKULUD 3,5 + 1,5 PROTSENDILE? Erakonnad: \u201eSee on elu ja surma k\u00fcsimus!\u201c \u2013 \u201eSelle sees on ka Ukrainale s\u00f5jalise abi andmine.\u201c",
+          "source": "Ohtuleht (Estonia)",
+          "link": "https://www.ohtuleht.ee/1171833/kaitsekulud-3-5-1-5-protsendile-erakonnad-see-on-elu-ja-surma-kusimus-selle-sees-on-ka-ukrainale-sojalise-abi-andmine-",
+          "categories": [
+            "baltic_specific",
+            "economic_military"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-23T09:06:07.048874+00:00",
       "level": "WATCH",
@@ -975,278 +1217,123 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-20T13:34:04.373495+00:00",
-      "level": "WARN",
-      "count": 12,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 441,
-      "stale_count": 0,
-      "alert_id": "1120-1334",
-      "items": [
-        {
-          "title": "Izbeidz krimin\u0101lprocesu pret kiberdro\u0161\u012bbas ekspertu Strazdi\u0146u par patvar\u012bbu kiberuzbrukum\u0101 \u00abLatvijas Valsts me\u017eiem\u00bb",
-          "source": "LSM Latvian-language",
-          "link": "https://www.lsm.lv/raksts/zinas/latvija/20.11.2026-izbeidz-kriminalprocesu-pret-kiberdrosibas-ekspertu-strazdinu-par-patvaribu-kiberuzbrukuma-latvijas-valsts-meziem.a672751/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Laikinai sustabdyta \u201ePulsetto\u201c prekyba: JAV vartotojai skund\u0117si nudegimu, permu\u0161imais",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/verslas/naujienos/laikinai-sustabdyta-pulsetto-prekyba-jav-vartotojai-skundesi-nudegimu-permusimais-120336939",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0413\u043e\u0441\u043f\u043e\u043b\u0438\u0446\u0438\u044f \u043f\u0440\u0435\u043a\u0440\u0430\u0442\u0438\u043b\u0430 \u0443\u0433\u043e\u043b\u043e\u0432\u043d\u044b\u0439 \u043f\u0440\u043e\u0446\u0435\u0441\u0441 \u0432 \u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u0438 \u044d\u043a\u0441\u043f\u0435\u0440\u0442\u0430 \u043f\u043e \u043a\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u0432 \u0441\u0432\u044f\u0437\u0438 \u0441 \u0434\u0435\u043b\u043e\u043c Latvijas Valsts me\u017ei",
-          "source": "LSM Russian-language",
-          "link": "https://rus.lsm.lv/statja/novosti/obschestvo/20.11.2026-gospoliciia-prekratila-ugolovnyi-process-v-otnosenii-eksperta-po-kiberbezopasnosti-v-sviazi-s-delom-latvijas-valsts-mezi.a672763/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Estonia to close all land border crossings with Russia",
-          "source": "BNN Baltic News Network",
-          "link": "https://bnn-news.com/estonia/estonia-to-close-all-land-border-crossings-with-russia-epak7xr",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Izbeidz krimin\u0101lprocesu pret kiberdro\u0161\u012bbas ekspertu Strazdi\u0146u par patvar\u012bbu LVM kiberuzbrukum\u0101",
-          "source": "Diena (Latvia)",
-          "link": "https://diena.lv/raksts/latvija/zinas-71/izbeidz-kriminalprocesu-pret-kiberdrosibas-ekspertu-strazdinu-par-patvaribu-lvm-kiberuzbrukuma?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Valsts policija izbeigusi krimin\u0101lprocesu pret kiberdro\u0161\u012bbas ekspertu Strazdi\u0146u",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8587087",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Ukrainas on droonidest saanud riigi vastupanu elut\u00e4htis osa",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8587133",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "VIDEO. \u201cIr milz\u012bgs akmens no pleciem nov\u0113lies\u201d \u2013 Strazdi\u0146\u0161 koment\u0113 krimin\u0101lprocesa izbeig\u0161anu LVM kiberzubrukuma liet\u0101",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/video-ir-milzigs-akmens-no-pleciem-novelies-strazdins-komente-kriminalprocesa-izbeigsanu-lvm-kiberzubrukuma-lieta",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201c\u0160o patva\u013c\u012bgo r\u012bc\u012bbu policija..\u201d Zin\u0101ms, k\u0101 beidz\u0101s Strazdi\u0146a un \u201cLatvijas valsts me\u017ei\u201d krimin\u0101lprocess",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/so-patvaligo-ricibu-policija-zinams-ka-beidzas-strazdina-un-latvijas-valsts-mezi-kriminalprocess",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Polij\u0101 nog\u0101zu\u0161\u0101s divas Krievijas ra\u0137etes - ministrs aicina NATO pie\u0161\u0137irt Polijai papildsp\u0113kus",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/738898-polija-nogazusas-divas-krievijas-raketes-ministrs-aicina-nato-pieskirt-polijai-papildspekus",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Izbeigts krimin\u0101lprocess pret\u00a0kiberdro\u0161\u012bbas ekspertu Strazdi\u0146u \"Latvijas Valsts me\u017eu\" liet\u0101",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/738896-izbeigts-kriminalprocess-pret-kiberdrosibas-ekspertu-strazdinu-latvijas-valsts-mezu-lieta",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "K\u00fcberr\u00fcnnak ei puuduta ainult ITd, vaid v\u00f5ib j\u00e4tta seisma ka rasketehnika",
-          "source": "Aripaev (Estonia)",
-          "link": "https://www.aripaev.ee/sisuturundus/2026/11/20/kuberrunnak-ei-puuduta-ainult-itd-vaid-voib-jatta-seisma-ka-rasketehnika",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-20T08:33:20.484844+00:00",
-      "level": "WATCH",
-      "count": 4,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 509,
-      "stale_count": 4,
-      "alert_id": "1120-0833",
-      "items": [
-        {
-          "title": "Martin Herem: An information operation built on sabotage",
-          "source": "ERR News (Estonia)",
-          "link": "https://news.err.ee/1610201365/martin-herem-an-information-operation-built-on-sabotage",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Martin Herem: sabotaa\u017eil p\u00f5hinev infooperatsioon",
-          "source": "ERR Eesti (Estonian-language)",
-          "link": "https://www.err.ee/1610201215/martin-herem-sabotaazil-pohinev-infooperatsioon",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Lietuva ir Ukraina nauju susitarimu tikisi gilinti ry\u0161ius kibernetinio saugumo srityje",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/lietuva-ir-ukraina-nauju-susitarimu-tikisi-gilinti-rysius-kibernetinio-saugumo-srityje-56-2810662?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Diversijas, dedzin\u0101\u0161anas un saboj\u0101ti kabe\u013ci: k\u0101 str\u0101d\u0101 Krievijas \"\u0101rpakalpojumu hibr\u012bdkar\u0161\" Eirop\u0101 un ko tas noz\u012bm\u0113 Latvijai",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/zinas/738714-diversijas-dedzinasanas-un-sabojati-kabeli-ka-strada-krievijas-arpakalpojumu-hibridkars-eiropa-un-ko-tas-nozime-latvijai",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-23T19:20:33.268575+00:00",
+      "level": "WARN",
+      "title": "\u00ab\u0422\u043e\u043f\u0438\u0442\u044c \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u043a\u043e\u0440\u0430\u0431\u043b\u0438 \u0442\u0435\u043f\u0435\u0440\u044c \u043c\u043e\u0436\u043d\u043e \u0432 \u043b\u044e\u0431\u043e\u043c \u0443\u0433\u043e\u043b\u043a\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0433\u043e \u043e\u043a\u0435\u0430\u043d\u0430\u00bb",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/11/23/topit-rossiiskie-korabli-teper-mozhno-v-liubom-ugolke-mirovogo-okeana",
+      "categories": [
+        "troop_movement",
+        "baltic_specific",
+        "hybrid_incident",
+        "shadow_fleet"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-23T19:20:33.268575+00:00",
+      "level": "WARN",
+      "title": "Latvija izteikusi protestu Krievijai par uzbrukumiem Ukrainai un gaisa telpas p\u0101rk\u0101pumiem",
+      "source": "TVNET (Latvia)",
+      "link": "https://pmo.ee/8588668",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-23T19:20:33.268575+00:00",
+      "level": "WARN",
+      "title": "I\u0161 ekspert\u0173 \u2013 prognoz\u0117, kas laukia Rusijos, Ukrainos ir Lietuvos",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/lietuvoje/is-ekspertu-prognoze-kas-laukia-rusijos-ukrainos-ir-lietuvos-120335824",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-23T19:20:33.268575+00:00",
+      "level": "WARN",
+      "title": "Russian diplomat summoned yet again by Latvia over ongoing aggression",
+      "source": "LSM (Latvia)",
+      "link": "https://eng.lsm.lv/article/politics/diplomacy/23.11.2026-russian-diplomat-summoned-yet-again-by-latvia-over-ongoing-aggression.a673122/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-23T19:20:33.268575+00:00",
+      "level": "WARN",
+      "title": "putin ally warns nato crossed russias nuclear strike red line",
+      "source": "GDELT (newsweek.com)",
+      "link": "https://www.newsweek.com/putin-ally-warns-nato-crossed-russias-nuclear-strike-red-line-12755634",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "a threat",
+      "gdelt_subcategory": "Moscow, Moskva, Russia",
+      "gdelt_event_code": "130",
+      "goldstein": -4.4
+    },
+    {
+      "ts": "2026-11-23T19:20:33.268575+00:00",
+      "level": "WARN",
+      "title": "moscow summons estonian diplomat over border closure a94352",
+      "source": "GDELT (themoscowtimes.com)",
+      "link": "https://www.themoscowtimes.com/2026/11/23/moscow-summons-estonian-diplomat-over-border-closure-a94352",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "a rejection",
+      "gdelt_subcategory": "Tallinn, Harjumaa, Estonia",
+      "gdelt_event_code": "120",
+      "goldstein": -4.0
+    },
+    {
+      "ts": "2026-11-23T19:20:33.268575+00:00",
+      "level": "WARN",
+      "title": "latvia lodges protest russian federation regarding consequences its war aggression against ukraine and violations airspace european union and nato member states",
+      "source": "GDELT (mfa.gov.lv)",
+      "link": "https://www.mfa.gov.lv/en/article/latvia-lodges-protest-russian-federation-regarding-consequences-its-war-aggression-against-ukraine-and-violations-airspace-european-union-and-nato-member-states",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "a threat",
+      "gdelt_subcategory": "Riga, Riga, Latvia",
+      "gdelt_event_code": "130",
+      "goldstein": -4.4
+    },
     {
       "ts": "2026-11-23T09:06:07.079845+00:00",
       "level": "WATCH",
@@ -1374,118 +1461,6 @@
       "gdelt_subcategory": "Kaliningrad, Kaliningradskaya Oblast', Russia",
       "gdelt_event_code": "190",
       "goldstein": -10.0
-    },
-    {
-      "ts": "2026-11-22T20:28:54.901664+00:00",
-      "level": "WATCH",
-      "title": "Huge Kremlin warship destroyed explosion Libyan port suspected drone attack Russian cargo ship attacked Baltic Sea",
-      "source": "GDELT (dailymail.com)",
-      "link": "https://www.dailymail.com/news/article-16313277/Huge-Kremlin-warship-destroyed-explosion-Libyan-port-suspected-drone-attack-Russian-cargo-ship-attacked-Baltic-Sea.html",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "fighting",
-      "gdelt_subcategory": "Naro-Fominsk, Moskovskaya Oblast', Russia",
-      "gdelt_event_code": "190",
-      "goldstein": -10.0
-    },
-    {
-      "ts": "2026-11-22T15:23:12.688679+00:00",
-      "level": "WATCH",
-      "title": "Lithuania rejects accusations of involvement in a drone attack on the Kaliningrad region",
-      "source": "Defence24",
-      "link": "https://defence24.com/geopolitics/lithuania-rejects-accusations-of-involvement-in-a-drone-attack-on-the-kaliningrad-region",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-22T15:23:12.688679+00:00",
-      "level": "WATCH",
-      "title": "\u0412 \u041b\u0438\u0432\u0438\u0438 \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043d \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0439 \u0432\u043e\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u0440\u0432\u0435\u0442 \u00ab\u041c\u0435\u0440\u043a\u0443\u0440\u0438\u0439\u00bb",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/11/22/smi-soobshchili-o-veroiatnom-unichtozhenii-rossiiskogo-korveta-merkurii-v-livii-news",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-22T08:05:50.030893+00:00",
-      "level": "WATCH",
-      "title": "\u041b\u0438\u0442\u0432\u0430 \u043e\u0442\u0432\u0435\u0440\u0433\u043b\u0430 \u043f\u0440\u0438\u0447\u0430\u0441\u0442\u043d\u043e\u0441\u0442\u044c \u043a \u043f\u0440\u0435\u0434\u043f\u043e\u043b\u0430\u0433\u0430\u0435\u043c\u043e\u0439 \u0430\u0442\u0430\u043a\u0435 \u0431\u0435\u0441\u043f\u0438\u043b\u043e\u0442\u043d\u0438\u043a\u043e\u0432 \u043d\u0430 \u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0443\u044e \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/11/22/litva-otvergla-prichastnost-k-predpolagaemoi-atake-bespilotnikov-na-kaliningradskuiu-oblast-news",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-22T08:05:50.030893+00:00",
-      "level": "WATCH",
-      "title": "Suomija patvirtino, kad Ukraina Baltijos j\u016broje atakavo su Rusijos kariuomene siejam\u0105 laiv\u0105",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/suomija-patvirtino-kad-ukraina-baltijos-juroje-atakavo-su-rusijos-kariuomene-siejama-laiva-57-2811654?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-22T08:05:50.030893+00:00",
-      "level": "WATCH",
-      "title": "Russian ship attack is a consequence of Russia's actions, says Estonia's FM, PM",
-      "source": "ERR News (Estonia)",
-      "link": "https://news.err.ee/1610202968/russian-ship-attack-is-a-consequence-of-russia-s-actions-says-estonia-s-fm-pm",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-21T23:54:51.399798+00:00",
-      "level": "WATCH",
-      "title": "VIDEO. K\u0113nigsberg\u0101 skan trauksmes sir\u0113nas; pie Krievijas Baltijas kara flotes b\u0101zes zi\u0146o par spr\u0101dzieniem",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/video-kenigsberga-skan-trauksmes-sirenas-pie-krievijas-baltijas-kara-flotes-bazes-zino-par-spradzieniem",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1668,14 +1643,14 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 174,
-    "alerting_scans": 135,
-    "held_back_total": 62,
+    "scans": 172,
+    "alerting_scans": 134,
+    "held_back_total": 64,
     "held_back_by_reason": [
       {
         "reason": "speculation",
         "label": "Analysis or scenario piece",
-        "count": 30
+        "count": 32
       },
       {
         "reason": "already alerted",
