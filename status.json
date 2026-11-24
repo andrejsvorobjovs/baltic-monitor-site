@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-24T19:00:14.576953+00:00",
+  "last_run_utc": "2026-11-24T20:51:19.789177+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 1.5h ago",
   "since": "2026-07-19",
-  "total_scans": 828,
+  "total_scans": 829,
   "quiet_count": 373,
-  "watch_count": 414,
+  "watch_count": 415,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-24 19:00 UTC",
+  "generated_at": "2026-11-24 22:22 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-24T20:51:19.764923+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 58,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 99,
+      "stale_count": 0,
+      "alert_id": "1124-2051",
+      "items": [
+        {
+          "title": "Prezidentas po svarbaus Lietuvai E\u017dTT sprendimo: Baltarusija s\u0105moningai pasitelk\u0117 migracij\u0105 kaip hibridin\u012f \u012frank\u012f",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/prezidentas-po-eztt-sprendimo-baltarusija-samoningai-pasitelke-migracija-kaip-hibridini-iranki-56-2813684?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-24T19:00:14.593603+00:00",
       "level": "WATCH",
@@ -1210,51 +1240,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-21T20:12:46.602890+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 189,
-      "stale_count": 2,
-      "alert_id": "1121-2012",
-      "items": [
-        {
-          "title": "Russian helicopter suspected of violating Finnish airspace, after tanker hit by drone in Baltic Sea - DW.com",
-          "source": "Baltic MoDs (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWjhmRVhhRTZGREtGOXVMTFBSQjg3Y3V4YkdIR25TU3FUalh1Z25HT2sxU3VHNmg2OXJHd3RqdnEyNmx0VVJpNUhiaHRsTmdlb1B4cWhxMHRrOW9iNFJHNmlrUHVPckYtbngwMkRVaFh6am5GQkZ3bFNnbFQ1RDJnODNkajVoMkExLWo0SmJtVDFZbm5yNnfSAZYBQVVfeXFMTlZhMjNULTZKTFh1ZHZEWlQzN0s4Mm45bElTRVVBejU0dDdVVnl1Y090YU9IVEJyeTNKLVZ6MEdtdmpZMmFFNmFCVUh6MDJtaHpzSjJIVUx6QUNYQW96VzlHMDJOamxLekUxdS1xSUN5WjdpSUxFdWFVaUh2S1NtNkRtVjdCQzZwMUFlVS1uOTdjMDBKaXpR?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "VIDEO \u27e9 K\u0113nigsbergai pirmo reizi uzbr\u016bk droni: Ukrai\u0146i zi\u0146o par uzbrukumiem Krievijas Baltijas j\u016bras flotei",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8587707",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1676,7 +1661,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 175,
-    "alerting_scans": 138,
+    "alerting_scans": 139,
     "held_back_total": 65,
     "held_back_by_reason": [
       {
