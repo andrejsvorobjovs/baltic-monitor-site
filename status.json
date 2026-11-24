@@ -1,20 +1,80 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-24T04:24:19.991843+00:00",
+  "last_run_utc": "2026-11-24T06:20:20.835392+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "freshness_msg": "Last scan: 3.5h ago",
   "since": "2026-07-19",
-  "total_scans": 823,
+  "total_scans": 824,
   "quiet_count": 373,
-  "watch_count": 409,
+  "watch_count": 410,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-24 04:24 UTC",
+  "generated_at": "2026-11-24 09:50 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-24T06:20:20.803770+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 60,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 157,
+      "stale_count": 0,
+      "alert_id": "1124-0620",
+      "items": [
+        {
+          "title": "D\u0117l karo prie\u0161 Ukrain\u0105 padarini\u0173 ir oro erdv\u0117s pa\u017eeidim\u0173 Latvija parei\u0161k\u0117 protest\u0105 Rusijai",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/del-karo-pries-ukraina-padariniu-ir-oro-erdves-pazeidimu-latvija-pareiske-protesta-rusijai-57-2812778?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "TEADUSJULGEOLEK \u27e9 Tiit Land: \u00abN\u00e4itasime Euroopa rektoritele pilte Vene \u00fclikooli mobilisatsioonikeskusest. Ka sellest ei piisanud\u00bb",
+          "source": "Postimees Estonian-language",
+          "link": "https://pmo.ee/8587725",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "France prepares a division to defend Europe. 25,000 troops and 9,000 vehicles",
+          "source": "Defence24",
+          "link": "https://defence24.com/armed-forces/france-prepares-a-division-to-defend-europe-25000-troops-and-9000-vehicles",
+          "categories": [
+            "troop_movement",
+            "baltic_specific"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-24T04:24:20.030938+00:00",
       "level": "WATCH",
@@ -1050,36 +1110,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-21T03:26:18.614613+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 59,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 18,
-      "stale_count": 0,
-      "alert_id": "1121-0326",
-      "items": [
-        {
-          "title": "\u0421\u0438\u043b\u044b \u043e\u0431\u043e\u0440\u043e\u043d\u044b \u042d\u0441\u0442\u043e\u043d\u0438\u0438 \u043e\u0431\u044a\u044f\u0432\u0438\u043b\u0438 \u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u0435 \u043e \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0439 \u0443\u0433\u0440\u043e\u0437\u0435 \u0432 \u041b\u044f\u044d\u043d\u0435- \u0438 \u0418\u0434\u0430-\u0412\u0438\u0440\u0443\u043c\u0430\u0430",
-          "source": "ERR Russian-language",
-          "link": "https://rus.err.ee/1610202562/sily-oborony-jestonii-objavili-preduprezhdenie-o-vozmozhnoj-ugroze-v-ljajene-i-ida-virumaa",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1506,7 +1536,7 @@
   "filter_record": {
     "window_days": 30,
     "scans": 175,
-    "alerting_scans": 136,
+    "alerting_scans": 137,
     "held_back_total": 66,
     "held_back_by_reason": [
       {
