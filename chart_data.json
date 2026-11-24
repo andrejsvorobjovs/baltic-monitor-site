@@ -5739,6 +5739,13 @@
       "count": 2,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-24T00:55:01.934314+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 1,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -6157,6 +6164,10 @@
     {
       "ts": "2026-11-22T00:00:00+00:00",
       "count": 281
+    },
+    {
+      "ts": "2026-11-23T00:00:00+00:00",
+      "count": 154
     }
   ],
   "ais_points": [
@@ -8011,6 +8022,10 @@
     {
       "ts": "2026-11-23T00:18:42.996576+00:00",
       "count": 153
+    },
+    {
+      "ts": "2026-11-24T00:54:07.008408+00:00",
+      "count": 143
     }
   ],
   "military_points": [
@@ -9893,6 +9908,10 @@
     {
       "ts": "2026-11-23T19:19:17.868201+00:00",
       "count": 2
+    },
+    {
+      "ts": "2026-11-24T00:54:07.765311+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -11455,6 +11474,10 @@
     {
       "ts": "2026-11-23T19:19:31.770802+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-24T00:54:16.322393+00:00",
+      "count": 0
     }
   ],
   "entsoe_points": [
@@ -13000,6 +13023,10 @@
     },
     {
       "ts": "2026-11-23T19:19:59.270643+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-24T00:54:32.472834+00:00",
       "count": 0
     }
   ],
@@ -21978,6 +22005,28 @@
         "steady": []
       },
       "band_key": "normal",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-24T00:54:32.476599+00:00",
+      "deviation_pct": -44.17161576084766,
+      "sources_included": 3,
+      "narrative": "thermal hotspots 100% below baseline; GPS jamming, AIS vessel activity steady.",
+      "band": "moderately below normal",
+      "narrative_parts": {
+        "moved": [
+          {
+            "signal": "firms",
+            "pct": 100,
+            "direction": "below"
+          }
+        ],
+        "steady": [
+          "gpsjam",
+          "ais"
+        ]
+      },
+      "band_key": "moderate_below",
       "band_record_scans": null
     }
   ]
