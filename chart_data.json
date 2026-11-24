@@ -5774,6 +5774,13 @@
       "count": 3,
       "tier3_count": 0,
       "tone": null
+    },
+    {
+      "ts": "2026-11-24T11:46:26.625135+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -9948,6 +9955,10 @@
     {
       "ts": "2026-11-24T10:57:38.550060+00:00",
       "count": 7
+    },
+    {
+      "ts": "2026-11-24T11:45:00.548177+00:00",
+      "count": 7
     }
   ],
   "firms_points": [
@@ -11522,6 +11533,10 @@
     {
       "ts": "2026-11-24T10:57:42.156520+00:00",
       "count": 0
+    },
+    {
+      "ts": "2026-11-24T11:45:04.101347+00:00",
+      "count": 26
     }
   ],
   "entsoe_points": [
@@ -13079,6 +13094,10 @@
     },
     {
       "ts": "2026-11-24T10:58:04.173183+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-24T11:45:56.244900+00:00",
       "count": 0
     }
   ],
@@ -22121,6 +22140,21 @@
         ]
       },
       "band_key": "well_below",
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-24T11:45:56.248058+00:00",
+      "deviation_pct": null,
+      "sources_included": 1,
+      "narrative": "All tracked signals within normal range.",
+      "band": null,
+      "narrative_parts": {
+        "moved": [],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": null,
       "band_record_scans": null
     }
   ]
