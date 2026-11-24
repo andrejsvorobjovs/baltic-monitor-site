@@ -1,20 +1,65 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-24T20:51:19.789177+00:00",
+  "last_run_utc": "2026-11-24T23:09:02.023952+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.5h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 829,
+  "total_scans": 830,
   "quiet_count": 373,
-  "watch_count": 415,
+  "watch_count": 416,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-24 22:22 UTC",
+  "generated_at": "2026-11-24 23:09 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-24T23:09:02.039311+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 2,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 249,
+      "stale_count": 8,
+      "alert_id": "1124-2309",
+      "items": [
+        {
+          "title": "Kod\u0117l Lenkija sulaukia daugiau provokacij\u0173 i\u0161 Rusijos? Prakalbo apie 1 Lietuvos kozir\u012f: \u201eRusai puikiai supranta\u201c - tv3.lt",
+          "source": "Lithuanian-language general (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPNzA1UmVJWnlMVHB3eDBFVTEtWXFFVEQ5OFZ4cmdNNXB6THhUVk5UZEg4OHQydTVRbFBVeGhPNFNFU3RSdW9DYjF3R09ObURpai1sVERVT1lnX0U3MGRFcDd2dWNfMnFRby1qNWp2QUxzV2dOdU5tQks2NENUdWJJUE9CTEJHRl83bWdhSVFwQUpjdnhZaE1CZVRzem00b3lOMWZmblN5bXJGMlhZdWVnRUcxTXJlRTVidDBsVVNCcjIzTVJsR1ZfaXc3SWV2aHlLWFhlblRQSE83VzZlZ0hsZmtZZ1dDSnJa?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "\u201eJis \u2013 \u017elug\u0119s \u017emogus\u201c: Vilniaus centre \u2013 Protasevi\u010diaus provokacija Sapegai",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/lietuvoje/jis-zluges-zmogus-vilniaus-centre-protaseviciaus-provokacija-sapegai-120338577",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-24T20:51:19.764923+00:00",
       "level": "WATCH",
@@ -1195,54 +1240,41 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-21T23:54:51.370313+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 1,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 213,
-      "stale_count": 1,
-      "alert_id": "1121-2354",
-      "items": [
-        {
-          "title": "Estonia scrambles NATO allied aircraft over drone threat - \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 \u043f\u0440\u0430\u0432\u0434\u0430",
-          "source": "Baltic MoDs (via GNews)",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9UcHFJSVAzTXNjQm5zVDRQdGpiSUN3d0lKd3hPQWVkaVV0RjUyNkpUTGRjQTlPWlc4V1BteDJkZnlveTVpLWFDUFNVbUJVSlJ3TkFKU3RCal9pMTZISFItOEdITjXSAXBBVV95cUxPZmlvcUJjQUI0ZGV3Q2VrT1JvVFZ5ZGFMQU9IWDZWanRPdkZWSUdMT181QkdDelB3WkNyWGp2cTZlMUFTNmFyQWY2M3ZYZnVkcUhlQjJPcVRBdjB2VDJPSEFscERCNUJKbUVZT240eGd2?oc=5",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "google"
-        },
-        {
-          "title": "VIDEO. K\u0113nigsberg\u0101 skan trauksmes sir\u0113nas; pie Krievijas Baltijas kara flotes b\u0101zes zi\u0146o par spr\u0101dzieniem",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/video-kenigsberga-skan-trauksmes-sirenas-pie-krievijas-baltijas-kara-flotes-bazes-zino-par-spradzieniem",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-24T23:09:02.061985+00:00",
+      "level": "WATCH",
+      "title": "\u201eJis \u2013 \u017elug\u0119s \u017emogus\u201c: Vilniaus centre \u2013 Protasevi\u010diaus provokacija Sapegai",
+      "source": "Delfi Lithuania",
+      "link": "https://www.delfi.lt/naujienos/lietuvoje/jis-zluges-zmogus-vilniaus-centre-protaseviciaus-provokacija-sapegai-120338577",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-24T23:09:02.061985+00:00",
+      "level": "WATCH",
+      "title": "Kod\u0117l Lenkija sulaukia daugiau provokacij\u0173 i\u0161 Rusijos? Prakalbo apie 1 Lietuvos kozir\u012f: \u201eRusai puikiai supranta\u201c - tv3.lt",
+      "source": "Lithuanian-language general (via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPNzA1UmVJWnlMVHB3eDBFVTEtWXFFVEQ5OFZ4cmdNNXB6THhUVk5UZEg4OHQydTVRbFBVeGhPNFNFU3RSdW9DYjF3R09ObURpai1sVERVT1lnX0U3MGRFcDd2dWNfMnFRby1qNWp2QUxzV2dOdU5tQks2NENUdWJJUE9CTEJHRl83bWdhSVFwQUpjdnhZaE1CZVRzem00b3lOMWZmblN5bXJGMlhZdWVnRUcxTXJlRTVidDBsVVNCcjIzTVJsR1ZfaXc3SWV2aHlLWFhlblRQSE83VzZlZ0hsZmtZZ1dDSnJa?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-24T19:00:14.614013+00:00",
       "level": "WATCH",
@@ -1448,36 +1480,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T04:24:20.063700+00:00",
-      "level": "WATCH",
-      "title": "russia warns preventive nuclear attack medvedev claims ukraine nato crossed line",
-      "source": "GDELT (whmi.com)",
-      "link": "https://www.whmi.com/news/fox/russia-warns-preventive-nuclear-attack-medvedev-claims-ukraine-nato-crossed-line",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "a rejection",
-      "gdelt_subcategory": "Kremlin, Moskva, Russia",
-      "gdelt_event_code": "120",
-      "goldstein": -4.0
-    },
-    {
-      "ts": "2026-11-24T04:24:20.063700+00:00",
-      "level": "WATCH",
-      "title": "nato warns putin could strike european army responds points us military model",
-      "source": "GDELT (foxnews.com)",
-      "link": "https://www.foxnews.com/world/nato-warns-putin-could-strike-european-army-responds-points-us-military-model",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "a threat",
-      "gdelt_subcategory": "Moscow, Moskva, Russia",
-      "gdelt_event_code": "130",
-      "goldstein": -4.4
     }
   ],
   "recent_corrections": [
@@ -1660,8 +1662,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 175,
-    "alerting_scans": 139,
+    "scans": 176,
+    "alerting_scans": 140,
     "held_back_total": 65,
     "held_back_by_reason": [
       {
