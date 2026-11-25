@@ -1,20 +1,64 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-25T18:06:29.694078+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 0.0h ago",
+  "last_run_utc": "2026-11-25T20:09:22.601975+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 1.5h ago",
   "since": "2026-07-19",
-  "total_scans": 834,
+  "total_scans": 835,
   "quiet_count": 375,
-  "watch_count": 418,
+  "watch_count": 419,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-25 18:06 UTC",
+  "generated_at": "2026-11-25 21:38 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-25T20:09:22.582970+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 152,
+      "stale_count": 0,
+      "alert_id": "1125-2009",
+      "items": [
+        {
+          "title": "\"Pealtn\u00e4gija\" tutvus Eesti militaarleiutistega",
+          "source": "ERR Eesti (Estonian-language)",
+          "link": "https://www.err.ee/1610206426/pealtnagija-tutvus-eesti-militaarleiutistega",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "NATO vad\u012bt\u0101js: \u201cJa Putins uzbruks, mums vispirms b\u016bs vajadz\u012bgas divas l\u012bdz tr\u012bs ned\u0113\u013cas, lai\u2026\u201d",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/nato-vaditajs-ja-putins-uzbruks-mums-vispirms-bus-vajadzigas-divas-lidz-tris-nedelas-lai",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-25T18:06:29.708759+00:00",
       "level": "QUIET",
@@ -1164,96 +1208,6 @@
       "stale_count": 2,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-11-22T20:28:54.877888+00:00",
-      "level": "WATCH",
-      "count": 5,
-      "failed_count": 0,
-      "tier3_count": 2,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 304,
-      "stale_count": 9,
-      "alert_id": "1122-2028",
-      "items": [
-        {
-          "title": "Huge Kremlin warship destroyed explosion Libyan port suspected drone attack Russian cargo ship attacked Baltic Sea",
-          "source": "GDELT (dailymail.com)",
-          "link": "https://www.dailymail.com/news/article-16313277/Huge-Kremlin-warship-destroyed-explosion-Libyan-port-suspected-drone-attack-Russian-cargo-ship-attacked-Baltic-Sea.html",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "fighting",
-          "gdelt_subcategory": "Naro-Fominsk, Moskovskaya Oblast', Russia",
-          "gdelt_event_code": "190",
-          "goldstein": -10.0,
-          "route": "gdelt"
-        },
-        {
-          "title": "baltic uproar nato flights near kaliningrad and drone strike on russian ship spark blockade alarm",
-          "source": "GDELT (bankingnews.gr)",
-          "link": "https://www.bankingnews.gr/diethni/articles/912592/baltic-uproar-nato-flights-near-kaliningrad-and-drone-strike-on-russian-ship-spark-blockade-alarm",
-          "categories": [
-            "baltic_specific",
-            "nato_conflict_risk"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "fighting",
-          "gdelt_subcategory": "Kaliningrad, Kaliningradskaya Oblast', Russia",
-          "gdelt_event_code": "190",
-          "goldstein": -10.0,
-          "route": "gdelt"
-        },
-        {
-          "title": "Art\u0117jant Estijos sienos su Rusija u\u017edarymui \u2013 sujudimas: gyventojai skuba kirsti sien\u0105",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/artejant-estijos-sienos-su-rusija-uzdarymui-sujudimas-gyventojai-skuba-kirsti-siena-57-2811854?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u0423 \u0431\u0435\u0440\u0435\u0433\u043e\u0432 \u041b\u0438\u0432\u0438\u0438 \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u043d\u043e \u0432\u0442\u043e\u0440\u043e\u0435 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0435 \u0441\u0443\u0434\u043d\u043e",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/11/22/u-beregov-livii-atakovano-vtoroe-rossiiskoe-sudno-news",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NATO apspried\u012bs k\u0101rt\u0113jo Krievijas iebrukumu Polijas gaisa telp\u0101 \u2013 Var\u0161ava run\u0101 par apzin\u0101tu provok\u0101ciju",
-          "source": "Jauns.lv (Latvia)",
-          "link": "https://jauns.lv/raksts/arzemes/739155-nato-apspriedis-kartejo-krievijas-iebrukumu-polijas-gaisa-telpa-varsava-runa-par-apzinatu-provokaciju",
-          "categories": [
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
