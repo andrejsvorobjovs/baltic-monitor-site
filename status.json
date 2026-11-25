@@ -1,20 +1,111 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-25T03:09:30.112157+00:00",
-  "last_level": "QUIET",
-  "freshness_msg": "Last scan: 5.3h ago",
+  "last_run_utc": "2026-11-25T09:53:47.387253+00:00",
+  "last_level": "WATCH",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 831,
+  "total_scans": 832,
   "quiet_count": 374,
-  "watch_count": 416,
+  "watch_count": 417,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-25 08:26 UTC",
+  "generated_at": "2026-11-25 09:53 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-25T09:53:47.399655+00:00",
+      "level": "WATCH",
+      "count": 5,
+      "failed_count": 1,
+      "tier3_count": 1,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 509,
+      "stale_count": 1,
+      "alert_id": "1125-0953",
+      "items": [
+        {
+          "title": "Russia's threats are a 'helpless outburst of anger,' says Estonian diplomat",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610205889/russia-s-threats-are-a-helpless-outburst-of-anger-says-estonian-diplomat",
+          "categories": [
+            "baltic_specific",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Kaune pradeda veikti naujas kibernetini\u0173 pratyb\u0173 poligonas",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/kaune-pradeda-veikti-naujas-kibernetiniu-pratybu-poligonas-56-2813932?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Rink\u0113vi\u010ds ASV medij\u0101 br\u012bdina par Krievijas k\u0101ri p\u0113c riska: \u201cTas var main\u012bties da\u017eu ned\u0113\u013cu, m\u0113ne\u0161a vai p\u0101ris m\u0113ne\u0161u laik\u0101\u201d",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/rinkevics-asv-medija-bridina-par-krievijas-kari-pec-riska-tas-var-mainities-dazu-nedelu-menesa-vai-paris-menesu-laika",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident",
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Krievija izvirza ultim\u0101tu Latvijai \u2013 sekas var\u0113tu just ap 6000 pension\u0101ru",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/krievija-izvirza-ultimatu-latvijai-sekas-varetu-just-ap-6000-pensionaru",
+          "categories": [
+            "baltic_specific",
+            "diplomatic"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Kiberdro\u0161\u012bbas liel\u0101kais risks ir p\u0101rliec\u012bba, ka m\u016bs tas neskars",
+          "source": "Dienas Bizness (Latvia)",
+          "link": "https://db.lv/zinas/kiberdrosibas-lielakais-risks-ir-parlieciba-ka-mus-tas-neskars",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-25T03:09:30.131574+00:00",
       "level": "QUIET",
@@ -1164,39 +1255,90 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-22T12:50:40.008649+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 263,
-      "stale_count": 0,
-      "alert_id": "1122-1250",
-      "items": [
-        {
-          "title": "Diplomatas Bajar\u016bnas sureagavo \u012f \u012fvykius Kaliningrade: \u201egal tai \u2013 pa\u010dios Rusijos provokacija?\u201c",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/diplomatas-bajarunas-sureagavo-i-ivykius-kaliningrade-gal-tai-pacios-rusijos-provokacija-56-2811726?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-25T09:53:47.416509+00:00",
+      "level": "WATCH",
+      "title": "Kiberdro\u0161\u012bbas liel\u0101kais risks ir p\u0101rliec\u012bba, ka m\u016bs tas neskars",
+      "source": "Dienas Bizness (Latvia)",
+      "link": "https://db.lv/zinas/kiberdrosibas-lielakais-risks-ir-parlieciba-ka-mus-tas-neskars",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-25T09:53:47.416509+00:00",
+      "level": "WATCH",
+      "title": "Krievija izvirza ultim\u0101tu Latvijai \u2013 sekas var\u0113tu just ap 6000 pension\u0101ru",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/krievija-izvirza-ultimatu-latvijai-sekas-varetu-just-ap-6000-pensionaru",
+      "categories": [
+        "baltic_specific",
+        "diplomatic"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-25T09:53:47.416509+00:00",
+      "level": "WATCH",
+      "title": "Rink\u0113vi\u010ds ASV medij\u0101 br\u012bdina par Krievijas k\u0101ri p\u0113c riska: \u201cTas var main\u012bties da\u017eu ned\u0113\u013cu, m\u0113ne\u0161a vai p\u0101ris m\u0113ne\u0161u laik\u0101\u201d",
+      "source": "LA.LV (Latvijas Avize)",
+      "link": "https://www.la.lv/rinkevics-asv-medija-bridina-par-krievijas-kari-pec-riska-tas-var-mainities-dazu-nedelu-menesa-vai-paris-menesu-laika",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-25T09:53:47.416509+00:00",
+      "level": "WATCH",
+      "title": "Kaune pradeda veikti naujas kibernetini\u0173 pratyb\u0173 poligonas",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/kaune-pradeda-veikti-naujas-kibernetiniu-pratybu-poligonas-56-2813932?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
+    {
+      "ts": "2026-11-25T09:53:47.416509+00:00",
+      "level": "WATCH",
+      "title": "Russia's threats are a 'helpless outburst of anger,' says Estonian diplomat",
+      "source": "ERR News (Estonia)",
+      "link": "https://news.err.ee/1610205889/russia-s-threats-are-a-helpless-outburst-of-anger-says-estonian-diplomat",
+      "categories": [
+        "baltic_specific",
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-24T23:09:02.061985+00:00",
       "level": "WATCH",
@@ -1345,86 +1487,6 @@
       "title": "Latvia Mulls Possible Border Closure With Russia",
       "source": "Moscow Times",
       "link": "https://www.themoscowtimes.com/2026/11/24/latvia-mulls-possible-border-closure-with-russia-a94359",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T11:46:26.649679+00:00",
-      "level": "WATCH",
-      "title": "Istorin\u0117 byla: Strasb\u016bro teismas pasisak\u0117 d\u0117l migrant\u0173 i\u0161st\u016bmimo i\u0161 Lietuvos \u012f Baltarusij\u0105",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/lietuva/istorine-byla-strasburo-teismas-pasisake-del-migrantu-isstumimo-is-lietuvos-i-baltarusija-56-2813276?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T10:58:33.498825+00:00",
-      "level": "WATCH",
-      "title": "\u201cTele2\u201d SIM kartes atrastas Krievijas dronos: uz\u0146\u0113mums skaidro, k\u0101 t\u0101s tur non\u0101ku\u0161as",
-      "source": "LA.LV (Latvijas Avize)",
-      "link": "https://www.la.lv/tele2-sim-kartes-atrastas-krievijas-dronos-uznemums-skaidro-ka-tas-tur-nonakusas",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T10:58:33.498825+00:00",
-      "level": "WATCH",
-      "title": "NATO to send surveillance aircraft to Poland after Russian missile strikes",
-      "source": "Notes from Poland",
-      "link": "https://notesfrompoland.com/2026/11/24/nato-to-send-surveillance-aircraft-to-poland-after-russian-missile-strikes/",
-      "categories": [
-        "hybrid_incident",
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T10:58:33.498825+00:00",
-      "level": "WATCH",
-      "title": "Krievijas uzbrukumos Ukrain\u0101 izmantotos dronos atrastas Lietuvas SIM kartes, zi\u0146o medijs",
-      "source": "TVNET (Latvia)",
-      "link": "https://pmo.ee/8589088",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T04:24:20.063700+00:00",
-      "level": "WATCH",
-      "title": "Did\u017eiausia prekybinink\u0173 baim\u0117 \u2013 kibernetin\u0117s atakos",
-      "source": "Verslo zinios (Lithuania)",
-      "link": "https://www.vz.lt/prekyba/2026/11/16/didziausia-prekybininku-baime-kibernetines-atakos-592794",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
@@ -1616,8 +1678,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 175,
-    "alerting_scans": 138,
+    "scans": 176,
+    "alerting_scans": 139,
     "held_back_total": 64,
     "held_back_by_reason": [
       {
