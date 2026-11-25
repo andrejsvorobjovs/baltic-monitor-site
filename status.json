@@ -1,20 +1,50 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-25T20:09:22.601975+00:00",
+  "last_run_utc": "2026-11-25T22:36:28.401408+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.5h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 835,
+  "total_scans": 836,
   "quiet_count": 375,
-  "watch_count": 419,
+  "watch_count": 420,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-25 21:38 UTC",
+  "generated_at": "2026-11-25 22:36 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-25T22:36:28.421024+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 277,
+      "stale_count": 13,
+      "alert_id": "1125-2236",
+      "items": [
+        {
+          "title": "Latvija rimtai ruo\u0161iasi dron\u0173 gr\u0117smei \u2013 stato sien\u0105",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/latvija-rimtai-ruosiasi-dronu-gresmei-stato-siena-57-2814648?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-25T20:09:22.582970+00:00",
       "level": "WATCH",
@@ -1194,23 +1224,25 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-23T00:19:56.363864+00:00",
-      "level": "QUIET",
-      "count": 0,
-      "failed_count": 2,
-      "tier3_count": 1,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 138,
-      "stale_count": 2,
-      "alert_id": null,
-      "items": []
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-25T22:36:28.452688+00:00",
+      "level": "WATCH",
+      "title": "Latvija rimtai ruo\u0161iasi dron\u0173 gr\u0117smei \u2013 stato sien\u0105",
+      "source": "15min (Lithuania)",
+      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/latvija-rimtai-ruosiasi-dronu-gresmei-stato-siena-57-2814648?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-25T09:53:47.416509+00:00",
       "level": "WATCH",
@@ -1433,22 +1465,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T11:46:26.649679+00:00",
-      "level": "WATCH",
-      "title": "Latvia Mulls Possible Border Closure With Russia",
-      "source": "Moscow Times",
-      "link": "https://www.themoscowtimes.com/2026/11/24/latvia-mulls-possible-border-closure-with-russia-a94359",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1631,8 +1647,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 176,
-    "alerting_scans": 138,
+    "scans": 177,
+    "alerting_scans": 139,
     "held_back_total": 66,
     "held_back_by_reason": [
       {
