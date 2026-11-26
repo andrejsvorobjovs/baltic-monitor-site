@@ -1,20 +1,63 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-26T19:48:51.112403+00:00",
+  "last_run_utc": "2026-11-26T22:27:13.350259+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 1.7h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 841,
+  "total_scans": 842,
   "quiet_count": 375,
-  "watch_count": 425,
+  "watch_count": 426,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-26 21:27 UTC",
+  "generated_at": "2026-11-26 22:27 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-26T22:27:13.370808+00:00",
+      "level": "WATCH",
+      "count": 2,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 217,
+      "stale_count": 4,
+      "alert_id": "1126-2227",
+      "items": [
+        {
+          "title": "UK steps up war preparations as Russia threatens NATO with nuclear strikes - Ynetnews",
+          "source": "General wire coverage",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xbkExdmxBMDBpVC11WDJxeGRJdmk4WVFDcjZyTXJicjVTazBUUHl4TkIxX3RRTm1ocVFRY29nOEFmMFYzZFJRM01OZk1oVjJaQTVURGN3?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        },
+        {
+          "title": "UK steps up war preparations as Russia threatens NATO with nuclear strikes - Ynetnews",
+          "source": "Baltic MoDs (via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xbkExdmxBMDBpVC11WDJxeGRJdmk4WVFDcjZyTXJicjVTazBUUHl4TkIxX3RRTm1ocVFRY29nOEFmMFYzZFJRM01OZk1oVjJaQTVURGN3?oc=5",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
     {
       "ts": "2026-11-26T19:48:51.080383+00:00",
       "level": "WATCH",
@@ -1028,38 +1071,24 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-24T03:02:39.089537+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 16,
-      "stale_count": 0,
-      "alert_id": "1124-0302",
-      "items": [
-        {
-          "title": "BLOGI \u27e9 1735. s\u00f5jap\u00e4ev Ukrainas: Zelensk\u00f5i kutsus NATO assambleel \u00fcles Ukrainat liikmeks v\u00f5tma",
-          "source": "Postimees Estonian-language",
-          "link": "https://pmo.ee/8588085",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-26T22:27:13.403910+00:00",
+      "level": "WATCH",
+      "title": "UK steps up war preparations as Russia threatens NATO with nuclear strikes - Ynetnews",
+      "source": "General wire coverage",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xbkExdmxBMDBpVC11WDJxeGRJdmk4WVFDcjZyTXJicjVTazBUUHl4TkIxX3RRTm1ocVFRY29nOEFmMFYzZFJRM01OZk1oVjJaQTVURGN3?oc=5",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-26T17:49:59.872680+00:00",
       "level": "WATCH",
@@ -1284,21 +1313,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T19:00:14.614013+00:00",
-      "level": "WATCH",
-      "title": "French Rafale fighters land on a Finnish road. NATO prepares for war with Russia",
-      "source": "Defence24",
-      "link": "https://defence24.com/defence-policy/french-rafale-fighters-land-on-a-finnish-road-nato-prepares-for-war-with-russia",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1481,8 +1495,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 176,
-    "alerting_scans": 139,
+    "scans": 177,
+    "alerting_scans": 140,
     "held_back_total": 65,
     "held_back_by_reason": [
       {
