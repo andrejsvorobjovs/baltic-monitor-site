@@ -1,1187 +1,7 @@
 {
-  "generated_at": "2026-11-26T09:32:12.566666+00:00",
+  "generated_at": "2026-11-26T17:49:59.928937+00:00",
   "window_hours": 72,
   "ais": [
-    {
-      "lat": 60.17617,
-      "lon": 24.96296,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 230052800,
-      "sog": 0,
-      "name": "EMMA",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.50207,
-      "lon": 18.84433,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 265629800,
-      "sog": 0,
-      "name": "ASKUNGEN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.99,
-      "lon": 9.28627,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 304010515,
-      "sog": 6.6,
-      "name": "FREJ",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.59428,
-      "lon": 9.95914,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219002774,
-      "sog": 0,
-      "name": "MARGRETHE GAARDBO",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.31843,
-      "lon": 18.16152,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 265565600,
-      "sog": 0,
-      "name": "POLIS 139-9950",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.52284,
-      "lon": 9.93244,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211587730,
-      "sog": 0,
-      "name": "DEEPENSCHRIEWER 1",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.37457,
-      "lon": 18.68315,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 265628650,
-      "sog": 0,
-      "name": "OBELIX",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.44033,
-      "lon": 10.66354,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 257200920,
-      "sog": 0,
-      "name": "SPJAEROEY",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.19148,
-      "lon": 11.07709,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 636017165,
-      "sog": 11.6,
-      "name": "CHEM SIRIUS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.96515,
-      "lon": 11.77305,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219728000,
-      "sog": 16.5,
-      "name": "BRUSSELS MAERSK",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.31329,
-      "lon": 25.55557,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 266454000,
-      "sog": 0,
-      "name": "DONIA",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.73643,
-      "lon": 10.21362,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 257020800,
-      "sog": 0,
-      "name": "EDDA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.2348,
-      "lon": 22.112,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 230168060,
-      "sog": 0,
-      "name": "ALTERA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.90669,
-      "lon": 10.79552,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 257999929,
-      "sog": 0.3,
-      "name": "SYBERG",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 63.85685,
-      "lon": 9.72972,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 257071540,
-      "sog": 0,
-      "name": "HAVBRIS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 63.43928,
-      "lon": 10.39935,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 257987900,
-      "sog": 0,
-      "name": "HEIMDALL",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.51838,
-      "lon": 9.96657,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211237960,
-      "sog": 0,
-      "name": "KAY",
-      "ship_type": null,
-      "nav_status": 3
-    },
-    {
-      "lat": 59.34249,
-      "lon": 18.43504,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 265674760,
-      "sog": 0,
-      "name": "ALBATROS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.5427,
-      "lon": 9.97941,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211512520,
-      "sog": 0,
-      "name": "(unnamed)",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.52588,
-      "lon": 9.96583,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211222890,
-      "sog": 0,
-      "name": "ENAK",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.32079,
-      "lon": 11.12649,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219006835,
-      "sog": 0,
-      "name": "FN 484 SPIRHOLM",
-      "ship_type": null,
-      "nav_status": 7
-    },
-    {
-      "lat": 55.86642,
-      "lon": 12.82364,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 265524530,
-      "sog": 0,
-      "name": "TILDA",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 55.67901,
-      "lon": 12.64228,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 209681000,
-      "sog": 0.1,
-      "name": "RIX EXPLORER",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.70591,
-      "lon": 18.81043,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 265512370,
-      "sog": 0,
-      "name": "PILOT 776 SE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.59391,
-      "lon": 9.96267,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219012671,
-      "sog": 0,
-      "name": "CHRISTINA MICHELLE",
-      "ship_type": null,
-      "nav_status": 7
-    },
-    {
-      "lat": 56.03394,
-      "lon": 12.61566,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219024336,
-      "sog": 0,
-      "name": "JEPPE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.54247,
-      "lon": 9.97979,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211512430,
-      "sog": 0,
-      "name": "HANSEATIC",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 58.92303,
-      "lon": 10.61205,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 311818000,
-      "sog": 4.4,
-      "name": "ARCTICA HAV",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 63.55322,
-      "lon": 10.22333,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 259032100,
-      "sog": 0,
-      "name": "MJOLNER",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.36895,
-      "lon": 10.13631,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211197960,
-      "sog": 0,
-      "name": "SG1353",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 53.54509,
-      "lon": 9.9713,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211512400,
-      "sog": 0,
-      "name": "JESSICA ABICHT",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.59257,
-      "lon": 9.96511,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219011136,
-      "sog": 0.1,
-      "name": "HG 345 AMANDA",
-      "ship_type": null,
-      "nav_status": 7
-    },
-    {
-      "lat": 58.61799,
-      "lon": 17.03882,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 255805555,
-      "sog": 16.9,
-      "name": "AKACIA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.54242,
-      "lon": 9.97828,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211180550,
-      "sog": 0,
-      "name": "WS37",
-      "ship_type": null,
-      "nav_status": 6
-    },
-    {
-      "lat": 57.69951,
-      "lon": 11.66699,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 265522230,
-      "sog": 0,
-      "name": "GOTA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.59397,
-      "lon": 12.67689,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219003452,
-      "sog": 0,
-      "name": "GERDA IV",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.17043,
-      "lon": 24.96136,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 230998670,
-      "sog": 0,
-      "name": "ASTRID",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.53377,
-      "lon": 9.97401,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 211498060,
-      "sog": 0,
-      "name": "WALTER",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 57.70651,
-      "lon": 11.6584,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219026318,
-      "sog": 0,
-      "name": "STELLA NOVA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.5432,
-      "lon": 9.92031,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 244770477,
-      "sog": 0,
-      "name": "RODIE 2",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.68056,
-      "lon": 9.45237,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 370295000,
-      "sog": 12,
-      "name": "AMIRA MIRUNA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.64512,
-      "lon": 11.85875,
-      "ts": "2026-11-24T00:54:32.485276+00:00",
-      "mmsi": 219689000,
-      "sog": 0,
-      "name": "EMMIE NOAH L520",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.90992,
-      "lon": 10.73091,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 259004160,
-      "sog": 0,
-      "name": "OSLOFJORD II",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.52506,
-      "lon": 10.00478,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211701600,
-      "sog": 0,
-      "name": "JOHANN REINKE",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.82335,
-      "lon": 10.63794,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 220464000,
-      "sog": 19.1,
-      "name": "FICARIA SEAWAYS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.94089,
-      "lon": 11.57255,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 266425000,
-      "sog": 0,
-      "name": "MY EAGLE",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 57.6458,
-      "lon": 11.85882,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265422000,
-      "sog": 0,
-      "name": "DAGNY",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.60308,
-      "lon": 16.54816,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265610890,
-      "sog": 0,
-      "name": "RESCUE ODD F.MALAREN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.93165,
-      "lon": 10.97362,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 244740210,
-      "sog": 6,
-      "name": "BYLGIA",
-      "ship_type": null,
-      "nav_status": 3
-    },
-    {
-      "lat": 56.06898,
-      "lon": 12.63394,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 563326600,
-      "sog": 13.5,
-      "name": "TMB CARINA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.04239,
-      "lon": 14.77108,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265546970,
-      "sog": 0,
-      "name": "RESCUE LOVISA",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 59.64523,
-      "lon": 23.87939,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 311001018,
-      "sog": 15.2,
-      "name": "ORIENTAL REEFER",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.67957,
-      "lon": 11.69244,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219029880,
-      "sog": 0,
-      "name": "TERN FORS",
-      "ship_type": null,
-      "nav_status": 1
-    },
-    {
-      "lat": 60.44286,
-      "lon": 22.15264,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 230991740,
-      "sog": 0,
-      "name": "SAAGA",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.20914,
-      "lon": 19.37316,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211224560,
-      "sog": 0,
-      "name": "DARSS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.31997,
-      "lon": 18.13989,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265064950,
-      "sog": 8.7,
-      "name": "NINA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.90423,
-      "lon": 11.44848,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 257782000,
-      "sog": 0,
-      "name": "NORHEIM",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 60.16242,
-      "lon": 24.96707,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 230108610,
-      "sog": 7.4,
-      "name": "SUOKKI",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.90423,
-      "lon": 10.7007,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 259173000,
-      "sog": 0,
-      "name": "SVANEN",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.65005,
-      "lon": 9.51055,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 255805753,
-      "sog": 0,
-      "name": "CHRISTIAN ESSBERGER",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.36511,
-      "lon": 10.56882,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 257056010,
-      "sog": 12.9,
-      "name": "FALKFJORD",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.53288,
-      "lon": 9.88398,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211257820,
-      "sog": 0,
-      "name": "ST.PAULI",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.91027,
-      "lon": 10.7306,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 259004190,
-      "sog": 0,
-      "name": "OSLOFJORD V",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 57.70522,
-      "lon": 11.69377,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265522210,
-      "sog": 9.7,
-      "name": "ADA",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 57.47027,
-      "lon": 11.39131,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 235108533,
-      "sog": 11.9,
-      "name": "KMARIN RESTRAINT",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.59366,
-      "lon": 9.98129,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 251267110,
-      "sog": 0,
-      "name": "MAX",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.52452,
-      "lon": 9.94067,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211668700,
-      "sog": 0,
-      "name": "LENI TF2",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.15007,
-      "lon": 12.09748,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 210998000,
-      "sog": 0,
-      "name": "AAL GEELONG",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.54233,
-      "lon": 9.98937,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211286160,
-      "sog": 0,
-      "name": "FAIRPLAY VIII",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.4198,
-      "lon": 11.19173,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211516210,
-      "sog": 0,
-      "name": "TUEMMLER",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.90703,
-      "lon": 10.7475,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 257852500,
-      "sog": 0,
-      "name": "VISION OF THE FJORDS",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.73565,
-      "lon": 10.21563,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 257768500,
-      "sog": 0,
-      "name": "MOROEY 2",
-      "ship_type": null,
-      "nav_status": 8
-    },
-    {
-      "lat": 53.5311,
-      "lon": 9.96742,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211178650,
-      "sog": 0,
-      "name": "CARL W",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.38133,
-      "lon": 18.04857,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265085180,
-      "sog": 0,
-      "name": "TAIFUN",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.32644,
-      "lon": 18.04954,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265810010,
-      "sog": 0,
-      "name": "CORNELIA",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 56.15369,
-      "lon": 10.21722,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219002416,
-      "sog": 0,
-      "name": "AROS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.55213,
-      "lon": 11.56966,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 538007597,
-      "sog": 0,
-      "name": "SEAWAYS HATTERAS",
-      "ship_type": null,
-      "nav_status": 1
-    },
-    {
-      "lat": 59.39231,
-      "lon": 18.43498,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265088890,
-      "sog": 0,
-      "name": "PILOT 153 SE",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 54.52462,
-      "lon": 10.39995,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 305982000,
-      "sog": 9.7,
-      "name": "SIEGFRIED LEHMANN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.12937,
-      "lon": 15.56357,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265546920,
-      "sog": 7.9,
-      "name": "YXLAN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.45475,
-      "lon": 22.03374,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 230724000,
-      "sog": 0,
-      "name": "SOFIA VG",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.20536,
-      "lon": 10.94162,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 257201600,
-      "sog": 0,
-      "name": "SAGAOY",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.5367,
-      "lon": 9.87067,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211437280,
-      "sog": 0,
-      "name": "FALKENSTEIN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 57.40529,
-      "lon": 11.53238,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 258407000,
-      "sog": 7.2,
-      "name": "ARCTIC REEFER",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.54315,
-      "lon": 21.04283,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 210547000,
-      "sog": 0,
-      "name": "SWE-FREIGHTER",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 56.03687,
-      "lon": 14.55453,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265636750,
-      "sog": 0,
-      "name": "RESCUE ADAM JOHAN",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 57.70242,
-      "lon": 11.3907,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219543000,
-      "sog": 1.3,
-      "name": "LAURA MAERSK",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.5294,
-      "lon": 10.03719,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211511120,
-      "sog": 0,
-      "name": "JACOB",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 56.15287,
-      "lon": 10.25262,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219017081,
-      "sog": 0,
-      "name": "EXPRESS 1",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.54488,
-      "lon": 9.95771,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211316150,
-      "sog": 0,
-      "name": "REEPERBAHN",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.79053,
-      "lon": 12.68696,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 273296470,
-      "sog": 9,
-      "name": "YASTREB",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 53.5402,
-      "lon": 9.95409,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 538071095,
-      "sog": 0,
-      "name": "LUNA",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 59.63279,
-      "lon": 23.35075,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 353047000,
-      "sog": 11.4,
-      "name": "SOLITAIRE I",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.82728,
-      "lon": 21.58512,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 230063050,
-      "sog": 0,
-      "name": "WORKBOAT",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.85525,
-      "lon": 22.87815,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 230961000,
-      "sog": 4.7,
-      "name": "POLARIS",
-      "ship_type": null,
-      "nav_status": 3
-    },
-    {
-      "lat": 55.85923,
-      "lon": 12.83339,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 304791000,
-      "sog": 0,
-      "name": "VEGA LUISE",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 53.89738,
-      "lon": 9.14845,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211445190,
-      "sog": 0,
-      "name": "TILSIT",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.13212,
-      "lon": 12.09798,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211497360,
-      "sog": 0,
-      "name": "BOCK",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 55.29853,
-      "lon": 10.8088,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219033720,
-      "sog": 0.6,
-      "name": "DBB IDEFIX",
-      "ship_type": null,
-      "nav_status": 12
-    },
-    {
-      "lat": 57.6026,
-      "lon": 9.9512,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219313000,
-      "sog": 0.9,
-      "name": "FREJA R",
-      "ship_type": null,
-      "nav_status": 3
-    },
-    {
-      "lat": 54.43118,
-      "lon": 18.82484,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 538009299,
-      "sog": 0.1,
-      "name": "NORDIC OLYMPIC",
-      "ship_type": 70,
-      "nav_status": 1
-    },
-    {
-      "lat": 54.44494,
-      "lon": 18.84267,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 255805620,
-      "sog": 0,
-      "name": "GERDT OLDENDORFF",
-      "ship_type": null,
-      "nav_status": 1
-    },
-    {
-      "lat": 56.19922,
-      "lon": 12.54634,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265828500,
-      "sog": 0,
-      "name": "RESCUE KULLEN",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 54.17726,
-      "lon": 12.08842,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 211168190,
-      "sog": 0,
-      "name": "KAEPP'N BRASS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.40814,
-      "lon": 18.71807,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 261521000,
-      "sog": 0,
-      "name": "AKUL",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 60.52095,
-      "lon": 21.66025,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 230985650,
-      "sog": 0,
-      "name": "OSMERUS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.40116,
-      "lon": 18.36307,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265546900,
-      "sog": 5.5,
-      "name": "CASTELLA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.99331,
-      "lon": 12.74442,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 265754450,
-      "sog": 0,
-      "name": "RESCUE ULLA BRITA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.52003,
-      "lon": 22.61107,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 304176000,
-      "sog": 10.6,
-      "name": "KARILIIS",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 55.60756,
-      "lon": 12.4783,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219029703,
-      "sog": 0,
-      "name": "SAR BIL GEDSER",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 57.59223,
-      "lon": 9.95688,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219005496,
-      "sog": 0,
-      "name": "HG 89 CHARLOTTE",
-      "ship_type": null,
-      "nav_status": 15
-    },
-    {
-      "lat": 63.69011,
-      "lon": 20.33787,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 230991680,
-      "sog": 0,
-      "name": "HEVI",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 54.40697,
-      "lon": 18.66192,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 261028820,
-      "sog": 1.6,
-      "name": "VEGA",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 54.60407,
-      "lon": 11.33989,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 245693000,
-      "sog": 6.7,
-      "name": "KILSTROOM",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 56.06978,
-      "lon": 10.5817,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219022903,
-      "sog": 21.6,
-      "name": "EXPRESS 3",
-      "ship_type": null,
-      "nav_status": 9
-    },
-    {
-      "lat": 55.67607,
-      "lon": 11.10063,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 219010747,
-      "sog": 0,
-      "name": "VICTOR",
-      "ship_type": null,
-      "nav_status": 5
-    },
-    {
-      "lat": 56.51559,
-      "lon": 20.99958,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 275481000,
-      "sog": 0,
-      "name": "AUSMA",
-      "ship_type": null,
-      "nav_status": 0
-    },
-    {
-      "lat": 59.02469,
-      "lon": 11.03789,
-      "ts": "2026-11-25T18:05:54.578373+00:00",
-      "mmsi": 259029500,
-      "sog": 0,
-      "name": "TORINE",
-      "ship_type": null,
-      "nav_status": 0
-    },
     {
       "lat": 55.71377,
       "lon": 12.62624,
@@ -1501,6 +321,1186 @@
       "name": "LIVE FIRING EXERCISE",
       "ship_type": null,
       "nav_status": 15
+    },
+    {
+      "lat": 59.64873,
+      "lon": 18.93816,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265604490,
+      "sog": 0,
+      "name": "AURORA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54072,
+      "lon": 9.97456,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211437470,
+      "sog": 0,
+      "name": "HARMONIE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.77275,
+      "lon": 11.61803,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 266388000,
+      "sog": 0,
+      "name": "TRISTAN",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 55.72043,
+      "lon": 11.71861,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219012275,
+      "sog": 0,
+      "name": "ALBATROSSEN",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 57.32169,
+      "lon": 11.12757,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219001553,
+      "sog": 0,
+      "name": "GRAESHOLM FN 168",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 53.51816,
+      "lon": 9.96621,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211783290,
+      "sog": 0,
+      "name": "HANSESLOP 6",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.39881,
+      "lon": 18.68205,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 538006176,
+      "sog": 0,
+      "name": "MANTA HATICE",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 57.6853,
+      "lon": 11.88782,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219028337,
+      "sog": 0,
+      "name": "SVITZER EDDA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.32829,
+      "lon": 14.0416,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219028133,
+      "sog": 37.5,
+      "name": "EXPRESS 5",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54248,
+      "lon": 9.97788,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211459920,
+      "sog": 0,
+      "name": "BUNTHAUS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.56158,
+      "lon": 11.00141,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 232005179,
+      "sog": 10.5,
+      "name": "RESOLUTE BAY",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.52477,
+      "lon": 9.97214,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211105740,
+      "sog": 0,
+      "name": "BRGM WEICHMANN",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 63.43827,
+      "lon": 10.41063,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 258030250,
+      "sog": 0,
+      "name": "SAR RITA IRENE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.18182,
+      "lon": 12.08724,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211889210,
+      "sog": 0,
+      "name": "CARPE DIEM",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.40285,
+      "lon": 18.36896,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265576690,
+      "sog": 0,
+      "name": "FENIX FIRE/SAR",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 60.47703,
+      "lon": 21.63467,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 230942640,
+      "sog": 6.5,
+      "name": "ROCKALL",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.46513,
+      "lon": 18.75252,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265630390,
+      "sog": 0,
+      "name": "HEMFJORD",
+      "ship_type": null,
+      "nav_status": 8
+    },
+    {
+      "lat": 63.44512,
+      "lon": 10.4084,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 257432990,
+      "sog": 2.5,
+      "name": "RONJA VIKING",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.4204,
+      "lon": 12.66755,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 636018967,
+      "sog": 12.2,
+      "name": "PRINCESS MIA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.59191,
+      "lon": 9.95371,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219002586,
+      "sog": 102.3,
+      "name": "HG 80 BEATRIX",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 53.52528,
+      "lon": 10.06396,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211437100,
+      "sog": 0,
+      "name": "NECKAR",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 58.97821,
+      "lon": 18.06738,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265519620,
+      "sog": 0,
+      "name": "PILOT 116 SE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.75671,
+      "lon": 12.90341,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265768860,
+      "sog": 0,
+      "name": "RESCUE STEN CLAS",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 54.30904,
+      "lon": 12.25185,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 232007444,
+      "sog": 3,
+      "name": "OEG VENTURE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.32722,
+      "lon": 18.07478,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265321000,
+      "sog": 0,
+      "name": "MYSING",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.11062,
+      "lon": 12.08781,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 218601000,
+      "sog": 0,
+      "name": "ELISABETH M. BORGESE",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 53.51748,
+      "lon": 9.96633,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211519720,
+      "sog": 0,
+      "name": "KRISTIN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.32799,
+      "lon": 18.07727,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265522430,
+      "sog": 0,
+      "name": "NORRSKAR",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 55.36226,
+      "lon": 13.15081,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 210510000,
+      "sog": 5.1,
+      "name": "PETER PAN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 58.38008,
+      "lon": 12.30926,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265541690,
+      "sog": 0,
+      "name": "PILOT 556 SE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.4311,
+      "lon": 11.49787,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 422031300,
+      "sog": 17.8,
+      "name": "BEHTA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.38143,
+      "lon": 18.04886,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265538200,
+      "sog": 0,
+      "name": "ODD FELLOW",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.60218,
+      "lon": 18.80278,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 261004050,
+      "sog": 0,
+      "name": "WLA-116",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 54.4073,
+      "lon": 18.71681,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 255915980,
+      "sog": 4.5,
+      "name": "STEN FRIGG",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 53.53692,
+      "lon": 9.98891,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211892160,
+      "sog": 11.1,
+      "name": "ULLI",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 60.12716,
+      "lon": 19.0458,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 266308000,
+      "sog": 12.5,
+      "name": "ECKERO",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.12006,
+      "lon": 12.54287,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219592000,
+      "sog": 16.8,
+      "name": "NORDIC CROWN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.53687,
+      "lon": 14.8904,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 249799000,
+      "sog": 11.2,
+      "name": "ELENI M II",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.91026,
+      "lon": 10.39797,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219019887,
+      "sog": 12.4,
+      "name": "PRINSESSE ISABELLA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.88705,
+      "lon": 10.74736,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 257090090,
+      "sog": 0,
+      "name": "PELIKAN 2",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.79314,
+      "lon": 9.37777,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211473470,
+      "sog": 10.1,
+      "name": "GLUECKSTADT FS",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 53.88242,
+      "lon": 9.16399,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 210620000,
+      "sog": 8.8,
+      "name": "ANTRACYTH",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.04179,
+      "lon": 12.6131,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219005904,
+      "sog": 0,
+      "name": "AURELIA",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 55.19954,
+      "lon": 10.86125,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219011021,
+      "sog": 8.3,
+      "name": "DANASUND",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54465,
+      "lon": 9.98608,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211302190,
+      "sog": 0,
+      "name": "HANSA II",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.87116,
+      "lon": 10.65675,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 258306500,
+      "sog": 0,
+      "name": "BARONEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.20249,
+      "lon": 14.37813,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 235505000,
+      "sog": 11.5,
+      "name": "HARTLAND POINT",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.51818,
+      "lon": 9.96659,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211672430,
+      "sog": 0,
+      "name": "RESI",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.69099,
+      "lon": 11.89195,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265606380,
+      "sog": 0.1,
+      "name": "SAXKRAN NR2",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 54.42308,
+      "lon": 11.96145,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211727510,
+      "sog": 16,
+      "name": "BERLIN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 63.83852,
+      "lon": 23.03256,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 230988890,
+      "sog": 0,
+      "name": "PILOT L138",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 56.15557,
+      "lon": 14.82087,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 266324000,
+      "sog": 0,
+      "name": "DELTA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.68195,
+      "lon": 11.87035,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265663280,
+      "sog": 0,
+      "name": "GOTE II",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 58.84852,
+      "lon": 17.54062,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265033720,
+      "sog": 0,
+      "name": "YOLDIA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.3269,
+      "lon": 10.5151,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 355320000,
+      "sog": 0,
+      "name": "KIRKEHOLMEN",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 63.43194,
+      "lon": 10.37547,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 257918900,
+      "sog": 0,
+      "name": "RESCUE UNE AMUNDSEN",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 56.65141,
+      "lon": 12.84509,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 212357000,
+      "sog": 0,
+      "name": "MSC YOSHEEN",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 54.50639,
+      "lon": 12.25439,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265874000,
+      "sog": 16.2,
+      "name": "HUCKLEBERRY FINN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.34085,
+      "lon": 12.32522,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 244641000,
+      "sog": 0,
+      "name": "TJALFE R",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.65134,
+      "lon": 9.50984,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211836960,
+      "sog": 0,
+      "name": "VB EMOE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.42064,
+      "lon": 19.06622,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 261011540,
+      "sog": 6.5,
+      "name": "WLA-182",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.84324,
+      "lon": 11.41789,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 266095000,
+      "sog": 7.4,
+      "name": "RAN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.59316,
+      "lon": 9.95969,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219026081,
+      "sog": 0,
+      "name": "JULE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.53994,
+      "lon": 9.98591,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211136510,
+      "sog": 8.1,
+      "name": "HANSA III",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.41157,
+      "lon": 11.37195,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 255916179,
+      "sog": 2.4,
+      "name": "FAIRPLAY-39",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.09947,
+      "lon": 12.11386,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211825200,
+      "sog": 0,
+      "name": "WARNOWSTROMER",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.23174,
+      "lon": 14.67701,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219000217,
+      "sog": 6.1,
+      "name": "DANISH WARSHIP Y311",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.6011,
+      "lon": 12.48273,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219849000,
+      "sog": 0,
+      "name": "CALORIUS",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 54.36175,
+      "lon": 10.14665,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211215730,
+      "sog": 0,
+      "name": "KIEL",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.90323,
+      "lon": 10.7231,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 258509000,
+      "sog": 9.9,
+      "name": "KONGEN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.36573,
+      "lon": 10.16871,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 209823000,
+      "sog": 8.5,
+      "name": "RIX GULF",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.33146,
+      "lon": 18.08009,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265609500,
+      "sog": 0,
+      "name": "OSTANA 1",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.90621,
+      "lon": 12.76113,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265820000,
+      "sog": 11.8,
+      "name": "SWE COAST GUARD 201",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.09206,
+      "lon": 18.36914,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265549580,
+      "sog": 11.4,
+      "name": "EBBA",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 53.54495,
+      "lon": 9.9582,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211437770,
+      "sog": 0,
+      "name": "WILHELMSBURG",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.15159,
+      "lon": 10.23635,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 231356000,
+      "sog": 0,
+      "name": "HELGAFELL",
+      "ship_type": 79,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54307,
+      "lon": 9.92114,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211667590,
+      "sog": 0,
+      "name": "MICHEL",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.2518,
+      "lon": 12.36953,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 244361000,
+      "sog": 8.3,
+      "name": "OLIVIJN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 60.16879,
+      "lon": 24.96974,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 230111080,
+      "sog": 0,
+      "name": "MT1304",
+      "ship_type": null,
+      "nav_status": 3
+    },
+    {
+      "lat": 56.52099,
+      "lon": 11.35169,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 636017845,
+      "sog": 12.7,
+      "name": "AQUADISIAC",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.00664,
+      "lon": 10.9189,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 257465000,
+      "sog": 16.9,
+      "name": "COLOR HYBRID",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 55.60059,
+      "lon": 12.48688,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 246524000,
+      "sog": 0,
+      "name": "LONGERA",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 60.43379,
+      "lon": 22.21868,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 230629000,
+      "sog": 0.3,
+      "name": "VIKING GRACE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.41218,
+      "lon": 10.61047,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 257845600,
+      "sog": 14.6,
+      "name": "BASTO IV",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.78283,
+      "lon": 10.0152,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 636023944,
+      "sog": 10.1,
+      "name": "MSC KYUNGMIN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.32702,
+      "lon": 18.07525,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265522680,
+      "sog": 0,
+      "name": "BLIDOSUND",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 57.59324,
+      "lon": 9.96254,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219429000,
+      "sog": 0,
+      "name": "L 842 HELLE KARIN",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 56.15497,
+      "lon": 14.82673,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 563087500,
+      "sog": 0,
+      "name": "THERESA SCHULTE",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 54.80093,
+      "lon": 10.78692,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211202400,
+      "sog": 5.6,
+      "name": "FREDO",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.15252,
+      "lon": 10.25128,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219005477,
+      "sog": 0,
+      "name": "AARHUS PILOT",
+      "ship_type": null,
+      "nav_status": 10
+    },
+    {
+      "lat": 56.04227,
+      "lon": 14.77128,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265547280,
+      "sog": 0,
+      "name": "RESCUE EDNABENGTSSON",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 59.02305,
+      "lon": 11.08704,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 259029500,
+      "sog": 10.1,
+      "name": "TORINE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 63.55324,
+      "lon": 10.2233,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 258289500,
+      "sog": 0,
+      "name": "FJORDGLIMT",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.45223,
+      "lon": 18.81106,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 538009298,
+      "sog": 0.1,
+      "name": "NORDIC OASIS",
+      "ship_type": null,
+      "nav_status": 1
+    },
+    {
+      "lat": 56.03487,
+      "lon": 14.57969,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265072290,
+      "sog": 0,
+      "name": "HAFNIA",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 59.38029,
+      "lon": 18.33491,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265609490,
+      "sog": 11.5,
+      "name": "MALAR-VICTORIA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.4257,
+      "lon": 19.18604,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 261002913,
+      "sog": 6.5,
+      "name": "WLA-220",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 54.41983,
+      "lon": 11.19175,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211516210,
+      "sog": 0,
+      "name": "TUEMMLER",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.91075,
+      "lon": 11.44667,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211106650,
+      "sog": 0,
+      "name": "STURMMOEWE",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 59.40235,
+      "lon": 18.3689,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265522530,
+      "sog": 0.2,
+      "name": "SOLOGA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 56.00225,
+      "lon": 14.73195,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265593190,
+      "sog": 0,
+      "name": "SAGA SG73",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 59.03939,
+      "lon": 10.04131,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 258656000,
+      "sog": 0,
+      "name": "NORHOLM",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 59.72245,
+      "lon": 19.07103,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 277569000,
+      "sog": 1.5,
+      "name": "SIRENA SEAWAYS",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.44431,
+      "lon": 18.64941,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 257884000,
+      "sog": 0.1,
+      "name": "PATRIOT",
+      "ship_type": null,
+      "nav_status": 1
+    },
+    {
+      "lat": 57.70661,
+      "lon": 10.82403,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219904000,
+      "sog": 6.1,
+      "name": "KATRINE O 111",
+      "ship_type": null,
+      "nav_status": 7
+    },
+    {
+      "lat": 53.52486,
+      "lon": 10.00711,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211771570,
+      "sog": 0,
+      "name": "DUEKER TO",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 57.64494,
+      "lon": 11.85864,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219689000,
+      "sog": 0.1,
+      "name": "EMMIE NOAH L520",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.42589,
+      "lon": 18.34979,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265609080,
+      "sog": 0,
+      "name": "GRANAT",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 59.87935,
+      "lon": 10.72748,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 257681000,
+      "sog": 0.7,
+      "name": "BB ELECTRA",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.32662,
+      "lon": 18.08696,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265073740,
+      "sog": 0,
+      "name": "DECKSTER",
+      "ship_type": null,
+      "nav_status": 15
+    },
+    {
+      "lat": 53.52559,
+      "lon": 10.00331,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211596250,
+      "sog": 0,
+      "name": "CHICAGO",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 56.03306,
+      "lon": 12.61679,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 219622000,
+      "sog": 0,
+      "name": "HAMLET",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.35064,
+      "lon": 10.57226,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 259017000,
+      "sog": 12.8,
+      "name": "HAGLAND CAPTAIN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 54.3766,
+      "lon": 10.19411,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211260120,
+      "sog": 5.6,
+      "name": "SCHILKSEE",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 59.33051,
+      "lon": 18.07882,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 265547830,
+      "sog": 0,
+      "name": "SANDHAMN",
+      "ship_type": null,
+      "nav_status": 0
+    },
+    {
+      "lat": 53.54413,
+      "lon": 9.9536,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 211871870,
+      "sog": 7.1,
+      "name": "GEBR. WRIEDE I",
+      "ship_type": null,
+      "nav_status": 1
+    },
+    {
+      "lat": 53.88757,
+      "lon": 9.18216,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 563355200,
+      "sog": 0,
+      "name": "NORSE MOMENTUM",
+      "ship_type": null,
+      "nav_status": 5
+    },
+    {
+      "lat": 57.71871,
+      "lon": 10.5963,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "mmsi": 259141000,
+      "sog": 0,
+      "name": "SUNNY LADY",
+      "ship_type": null,
+      "nav_status": 0
     }
   ],
   "military_aircraft": [
@@ -1823,6 +1823,46 @@
       "flight": "TX41",
       "type": "?",
       "alt_baro": 375
+    },
+    {
+      "lat": 59.936234,
+      "lon": 10.736618,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "flight": "(no callsign)",
+      "type": "EH10",
+      "alt_baro": "ground"
+    },
+    {
+      "lat": 59.412964,
+      "lon": 24.781677,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "flight": "GAF733",
+      "type": "A21N",
+      "alt_baro": 1275
+    },
+    {
+      "lat": 53.6154,
+      "lon": 12.328651,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "flight": "IRON2",
+      "type": "?",
+      "alt_baro": 8925
+    },
+    {
+      "lat": 59.445206,
+      "lon": 10.323171,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "flight": "NAF14",
+      "type": "GLF6",
+      "alt_baro": 33625
+    },
+    {
+      "lat": 63.38548,
+      "lon": 10.489417,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "flight": "RRR1515",
+      "type": "F900",
+      "alt_baro": 3600
     }
   ],
   "gpsjam_cells": [
@@ -3603,6 +3643,33 @@
       "confidence": "n",
       "acq_date": "2026-11-26",
       "acq_time": "321"
+    },
+    {
+      "lat": 64.64401,
+      "lon": 24.42392,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "frp": 4.87,
+      "confidence": "n",
+      "acq_date": "2026-11-26",
+      "acq_time": "1136"
+    },
+    {
+      "lat": 65.76447,
+      "lon": 24.19102,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "frp": 4.5,
+      "confidence": "n",
+      "acq_date": "2026-11-26",
+      "acq_time": "1136"
+    },
+    {
+      "lat": 65.76879,
+      "lon": 24.18957,
+      "ts": "2026-11-26T17:49:28.735350+00:00",
+      "frp": 4.5,
+      "confidence": "n",
+      "acq_date": "2026-11-26",
+      "acq_time": "1136"
     }
   ]
 }

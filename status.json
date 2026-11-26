@@ -1,20 +1,110 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-26T09:32:12.435758+00:00",
+  "last_run_utc": "2026-11-26T17:49:59.813651+00:00",
   "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 838,
+  "total_scans": 840,
   "quiet_count": 375,
-  "watch_count": 422,
+  "watch_count": 424,
   "warn_count": 41,
   "correction_count": 4,
-  "generated_at": "2026-11-26 09:32 UTC",
+  "generated_at": "2026-11-26 17:49 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-26T17:49:59.846952+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 581,
+      "stale_count": 4,
+      "alert_id": "1126-1749",
+      "items": [
+        {
+          "title": "New Lithuanian Border Guard Chief Says Risk of Provocations on Borders with Belarus and Russia Is Equal - REFORM.news",
+          "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQzdEQmJwSjZZcFJpZTU4SF9Yay1qZlFScHppNWNmZEZIb19vVXpCcEtRcjN4cDhKV2FQRlEySEdtQzY5U2VPcmxLZFR1ejFTZ0x2Z1o4djJJVXBwVm5hcVdZcGlob0dPbUtwd3c1SFdFTXVsaXcybHY4VUUwZ1Y3VW1hR09oeDlobEotMTFkWEN2N0NlbTNvWUpkN0hZODlxakVxblY3ZjZxanZxT1hNUWItYS1HaWthV21EWHg0dHBqRWtqYnfSAcsBQVVfeXFMTWxSdFAycjJRcGthOEdMQjlkMG5OYkQxWjZNdnVWb3h5Xy1yU1pMdzUzYUZqTXd0ZVFpVFRYZGRjUEtSNC04aDRBb3laazJKYlA1Y3BvaHJnWmZELU1aa3V1dzFLSUp2MUpRSnlCNVBld2xKaDBvb2tsdzR0Y015VHd0ZFQ4anNrUzA1Tl9ITjlVaWlaSXZoVHdkZkZodUhSWGFnelNVMDVzc1NVODhfOWxFVDJKLWlESnd1MnQ4T1RfZ21yWUtOYTI2Y1k?oc=5",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "google"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-26T14:23:46.883920+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 394,
+      "stale_count": 0,
+      "alert_id": "1126-1423",
+      "items": [
+        {
+          "title": "Pasienie\u010diai skai\u010diuoja kontrabandinink\u0173 dronus \u2013 nutupdyti jau 74",
+          "source": "Delfi Lithuania",
+          "link": "https://www.delfi.lt/naujienos/kriminalai/pasienieciai-skaiciuoja-kontrabandininku-dronus-nutupdyti-jau-74-120339758",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "Pasienyje sulaikyta 74-oji \u0161iemet skraidykl\u0117 su kontrabandiniu kroviniu",
+          "source": "15min (Lithuania)",
+          "link": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/pasienyje-sulaikyta-74-oji-siemet-skraidykle-su-kontrabandiniu-kroviniu-59-2815228?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u00ab\u0417\u0434\u0435\u0441\u044c \u0445\u043e\u0440\u043e\u0448\u043e, \u0435\u0441\u043b\u0438 \u043d\u0435 \u0432\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u0442\u044c \u043f\u0440\u043e\u0448\u043b\u0443\u044e \u0436\u0438\u0437\u043d\u044c\u00bb",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/26/zdes-khorosho-esli-ne-vspominat-proshluiu-zhizn",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-26T09:32:12.455598+00:00",
       "level": "WATCH",
@@ -951,192 +1041,25 @@
       "stale_count": 7,
       "alert_id": null,
       "items": []
-    },
-    {
-      "ts": "2026-11-23T22:14:27.036743+00:00",
-      "level": "WATCH",
-      "count": 2,
-      "failed_count": 3,
-      "tier3_count": 0,
-      "sources_scanned": 57,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 121,
-      "stale_count": 0,
-      "alert_id": "1123-2214",
-      "items": [
-        {
-          "title": "Laurynas Kas\u010di\u016bnas: NATO \u012f Rusijos provokacijas tur\u0117t\u0173 atsakyti stabdydama \u0161e\u0161\u0117lin\u012f laivyn\u0105",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/laurynas-kasciunas-nato-i-rusijos-provokacijas-turetu-atsakyti-stabdydama-seselini-laivyna-56-2812748?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Russia protests Estonia\u2019s planned land border closure and again accuses it\u00a0of\u00a0letting Ukrainian drones use its airspace",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/news/2026/11/24/russia-protests-estonia-s-planned-land-border-closure-and-again-accuses-it-of-letting-ukrainian-drones-use-its-airspace",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-23T19:20:33.237791+00:00",
-      "level": "WARN",
-      "count": 8,
-      "failed_count": 0,
-      "tier3_count": 4,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": true,
-      "new_items_count": 605,
-      "stale_count": 3,
-      "alert_id": "1123-1920",
-      "items": [
-        {
-          "title": "latvia lodges protest russian federation regarding consequences its war aggression against ukraine and violations airspace european union and nato member states",
-          "source": "GDELT (mfa.gov.lv)",
-          "link": "https://www.mfa.gov.lv/en/article/latvia-lodges-protest-russian-federation-regarding-consequences-its-war-aggression-against-ukraine-and-violations-airspace-european-union-and-nato-member-states",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "a threat",
-          "gdelt_subcategory": "Riga, Riga, Latvia",
-          "gdelt_event_code": "130",
-          "goldstein": -4.4,
-          "route": "gdelt"
-        },
-        {
-          "title": "moscow summons estonian diplomat over border closure a94352",
-          "source": "GDELT (themoscowtimes.com)",
-          "link": "https://www.themoscowtimes.com/2026/11/23/moscow-summons-estonian-diplomat-over-border-closure-a94352",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "a rejection",
-          "gdelt_subcategory": "Tallinn, Harjumaa, Estonia",
-          "gdelt_event_code": "120",
-          "goldstein": -4.0,
-          "route": "gdelt"
-        },
-        {
-          "title": "putin ally warns nato crossed russias nuclear strike red line",
-          "source": "GDELT (newsweek.com)",
-          "link": "https://www.newsweek.com/putin-ally-warns-nato-crossed-russias-nuclear-strike-red-line-12755634",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "gdelt",
-          "gdelt_category": "a threat",
-          "gdelt_subcategory": "Moscow, Moskva, Russia",
-          "gdelt_event_code": "130",
-          "goldstein": -4.4,
-          "route": "gdelt"
-        },
-        {
-          "title": "Russian diplomat summoned yet again by Latvia over ongoing aggression",
-          "source": "LSM (Latvia)",
-          "link": "https://eng.lsm.lv/article/politics/diplomacy/23.11.2026-russian-diplomat-summoned-yet-again-by-latvia-over-ongoing-aggression.a673122/?utm_source=rss&utm_campaign=rss&utm_medium=links",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "I\u0161 ekspert\u0173 \u2013 prognoz\u0117, kas laukia Rusijos, Ukrainos ir Lietuvos",
-          "source": "Delfi Lithuania",
-          "link": "https://www.delfi.lt/naujienos/lietuvoje/is-ekspertu-prognoze-kas-laukia-rusijos-ukrainos-ir-lietuvos-120335824",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Latvija izteikusi protestu Krievijai par uzbrukumiem Ukrainai un gaisa telpas p\u0101rk\u0101pumiem",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8588668",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Moscow Summons Estonian Diplomat Over Border Closure",
-          "source": "Moscow Times",
-          "link": "https://www.themoscowtimes.com/2026/11/23/moscow-summons-estonian-diplomat-over-border-closure-a94352",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u00ab\u0422\u043e\u043f\u0438\u0442\u044c \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u043a\u043e\u0440\u0430\u0431\u043b\u0438 \u0442\u0435\u043f\u0435\u0440\u044c \u043c\u043e\u0436\u043d\u043e \u0432 \u043b\u044e\u0431\u043e\u043c \u0443\u0433\u043e\u043b\u043a\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0433\u043e \u043e\u043a\u0435\u0430\u043d\u0430\u00bb",
-          "source": "Novaya Gazeta Europe",
-          "link": "https://novayagazeta.eu/articles/2026/11/23/topit-rossiiskie-korabli-teper-mozhno-v-liubom-ugolke-mirovogo-okeana",
-          "categories": [
-            "troop_movement",
-            "baltic_specific",
-            "hybrid_incident",
-            "shadow_fleet"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-26T17:49:59.872680+00:00",
+      "level": "WATCH",
+      "title": "New Lithuanian Border Guard Chief Says Risk of Provocations on Borders with Belarus and Russia Is Equal - REFORM.news",
+      "source": "Lithuanian State Border Guard Service (coverage, via GNews)",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQzdEQmJwSjZZcFJpZTU4SF9Yay1qZlFScHppNWNmZEZIb19vVXpCcEtRcjN4cDhKV2FQRlEySEdtQzY5U2VPcmxLZFR1ejFTZ0x2Z1o4djJJVXBwVm5hcVdZcGlob0dPbUtwd3c1SFdFTXVsaXcybHY4VUUwZ1Y3VW1hR09oeDlobEotMTFkWEN2N0NlbTNvWUpkN0hZODlxakVxblY3ZjZxanZxT1hNUWItYS1HaWthV21EWHg0dHBqRWtqYnfSAcsBQVVfeXFMTWxSdFAycjJRcGthOEdMQjlkMG5OYkQxWjZNdnVWb3h5Xy1yU1pMdzUzYUZqTXd0ZVFpVFRYZGRjUEtSNC04aDRBb3laazJKYlA1Y3BvaHJnWmZELU1aa3V1dzFLSUp2MUpRSnlCNVBld2xKaDBvb2tsdzR0Y015VHd0ZFQ4anNrUzA1Tl9ITjlVaWlaSXZoVHdkZkZodUhSWGFnelNVMDVzc1NVODhfOWxFVDJKLWlESnd1MnQ4T1RfZ21yWUtOYTI2Y1k?oc=5",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-26T09:32:12.487307+00:00",
       "level": "WATCH",
@@ -1354,22 +1277,6 @@
       "link": "https://defence24.com/defence-policy/french-rafale-fighters-land-on-a-finnish-road-nato-prepares-for-war-with-russia",
       "categories": [
         "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-24T19:00:14.614013+00:00",
-      "level": "WATCH",
-      "title": "\u041c\u0438\u043d\u0438\u043c\u0443\u043c \u0441\u0435\u043c\u044c \u0447\u0435\u043b\u043e\u0432\u0435\u043a \u043f\u043e\u0433\u0438\u0431\u043b\u0438 \u043f\u0440\u0438 \u043f\u043e\u0436\u0430\u0440\u0435 \u0432 \u043a\u0440\u0430\u0441\u043d\u043e\u0434\u0430\u0440\u0441\u043a\u043e\u0439 \u0432\u043e\u0438\u043d\u0441\u043a\u043e\u0439 \u0447\u0430\u0441\u0442\u0438 22 \u043c\u0430\u044f",
-      "source": "Novaya Gazeta Europe",
-      "link": "https://novayagazeta.eu/articles/2026/11/24/minimum-sem-chelovek-pogibli-pri-pozhare-v-krasnodarskoi-voinskoi-chasti-22-maia-news",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
       ],
       "tier": "tier2",
       "gdelt_category": "",
