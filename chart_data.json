@@ -5921,6 +5921,13 @@
       "count": 4,
       "tier3_count": 1,
       "tone": -5.676699029126214
+    },
+    {
+      "ts": "2026-11-27T22:04:43.116815+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "tier3_count": 0,
+      "tone": null
     }
   ],
   "gpsjam_points": [
@@ -10175,6 +10182,10 @@
     {
       "ts": "2026-11-27T17:33:33.050342+00:00",
       "count": 1
+    },
+    {
+      "ts": "2026-11-27T22:03:23.856649+00:00",
+      "count": 0
     }
   ],
   "firms_points": [
@@ -11805,6 +11816,10 @@
     {
       "ts": "2026-11-27T17:33:36.855714+00:00",
       "count": 8
+    },
+    {
+      "ts": "2026-11-27T22:03:26.965442+00:00",
+      "count": 8
     }
   ],
   "entsoe_points": [
@@ -13418,6 +13433,10 @@
     },
     {
       "ts": "2026-11-27T17:34:06.401079+00:00",
+      "count": 0
+    },
+    {
+      "ts": "2026-11-27T22:04:14.895067+00:00",
       "count": 0
     }
   ],
@@ -22662,6 +22681,21 @@
     },
     {
       "ts": "2026-11-27T17:34:06.404168+00:00",
+      "deviation_pct": null,
+      "sources_included": 1,
+      "narrative": "GPS jamming steady; AIS vessel activity, military aircraft, thermal hotspots not reporting.",
+      "band": null,
+      "narrative_parts": {
+        "moved": [],
+        "steady": [
+          "gpsjam"
+        ]
+      },
+      "band_key": null,
+      "band_record_scans": null
+    },
+    {
+      "ts": "2026-11-27T22:04:14.899040+00:00",
       "deviation_pct": null,
       "sources_included": 1,
       "narrative": "GPS jamming steady; AIS vessel activity, military aircraft, thermal hotspots not reporting.",

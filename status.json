@@ -1,20 +1,34 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-27T17:34:42.951051+00:00",
-  "last_level": "WATCH",
-  "freshness_msg": "Last scan: 3.6h ago",
+  "last_run_utc": "2026-11-27T22:04:43.095366+00:00",
+  "last_level": "QUIET",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 846,
-  "quiet_count": 375,
+  "total_scans": 847,
+  "quiet_count": 376,
   "watch_count": 429,
   "warn_count": 42,
   "correction_count": 4,
-  "generated_at": "2026-11-27 21:12 UTC",
+  "generated_at": "2026-11-27 22:04 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-27T22:04:43.116815+00:00",
+      "level": "QUIET",
+      "count": 0,
+      "failed_count": 1,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 280,
+      "stale_count": 1,
+      "alert_id": null,
+      "items": []
+    },
     {
       "ts": "2026-11-27T17:34:42.984662+00:00",
       "level": "WATCH",
@@ -1010,95 +1024,6 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-24T15:15:04.406871+00:00",
-      "level": "WATCH",
-      "count": 5,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 60,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 384,
-      "stale_count": 0,
-      "alert_id": "1124-1515",
-      "items": [
-        {
-          "title": "Teisingumo ir vidaus reikal\u0173 ministrai sveikina E\u017dTT sprendim\u0105 d\u0117l migrant\u0173, vadina j\u012f istoriniu",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/teisingumo-ir-vidaus-reikalu-ministrai-sveikina-eztt-sprendima-del-migrantu-vadina-ji-istoriniu-56-2813498?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Po karini\u0173 pratyb\u0173 \u2013 klausimai d\u0117l galimos \u017ealos gamtai: \u201eNustebino\u201c",
-          "source": "Lrytas (Lithuania)",
-          "link": "https://www.lrytas.lt/gamta/zeme/2026/11/24/news/po-kariniu-pratybu-klausimai-del-galimos-zalos-gamtai-nustebino--45047820",
-          "categories": [
-            "troop_movement",
-            "baltic_specific"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Poland, Lithuania and Latvia violated rights of migrants sent back to Belarus, finds European court",
-          "source": "Notes from Poland",
-          "link": "https://notesfrompoland.com/2026/11/24/poland-lithuania-and-latvia-violated-rights-of-migrants-sent-back-to-belarus-finds-european-court/",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "ICDS Discussed Europeanising NATO in NATO Capitals",
-          "source": "ICDS (Estonia)",
-          "link": "https://icds.ee/en/icds-discussed-europeanising-nato-in-nato-capitals/",
-          "categories": [
-            "baltic_specific",
-            "diplomatic"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Mercs n\u0101k klaj\u0101 ar skaudru atzi\u0146u par Ukrainu: NATO 2008. gad\u0101 pie\u013c\u0101va likten\u012bgu k\u013c\u016bdu",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/mercs-nak-klaja-ar-skaudru-atzinu-par-ukrainu-nato-2008-gada-pielava-liktenigu-kludu",
-          "categories": [
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
@@ -1520,7 +1445,7 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 175,
+    "scans": 176,
     "alerting_scans": 141,
     "held_back_total": 64,
     "held_back_by_reason": [
