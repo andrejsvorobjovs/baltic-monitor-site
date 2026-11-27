@@ -1,20 +1,153 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-27T09:45:56.415278+00:00",
-  "last_level": "WARN",
+  "last_run_utc": "2026-11-27T17:34:42.951051+00:00",
+  "last_level": "WATCH",
   "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 844,
+  "total_scans": 846,
   "quiet_count": 375,
-  "watch_count": 427,
+  "watch_count": 429,
   "warn_count": 42,
   "correction_count": 4,
-  "generated_at": "2026-11-27 09:45 UTC",
+  "generated_at": "2026-11-27 17:34 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-27T17:34:42.984662+00:00",
+      "level": "WATCH",
+      "count": 4,
+      "failed_count": 2,
+      "tier3_count": 1,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": true,
+      "new_items_count": 516,
+      "stale_count": 4,
+      "alert_id": "1127-1734",
+      "items": [
+        {
+          "title": "nato jets scrambled after drone briefly enters latvian airspace",
+          "source": "GDELT (euronews.com)",
+          "link": "https://www.euronews.com/2026/11/27/nato-jets-scrambled-after-drone-briefly-enters-latvian-airspace",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "coercion",
+          "gdelt_subcategory": "Ludza, Ludzas Novads, Latvia",
+          "gdelt_event_code": "172",
+          "goldstein": -5.0,
+          "route": "gdelt"
+        },
+        {
+          "title": "close ukraine skies nato slowed poland down terror in kyiv over shock strike from russia with record iskanders",
+          "source": "GDELT (bankingnews.gr)",
+          "link": "https://www.bankingnews.gr/diethni/articles/913627/close-ukraine-s-skies-nato-slowed-poland-down-terror-in-kyiv-over-a-shock-strike-from-russia-with-record-iskanders",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "disapproval",
+          "gdelt_subcategory": "Warsaw, (PL67), Poland",
+          "gdelt_event_code": "110",
+          "goldstein": -2.0,
+          "route": "gdelt"
+        },
+        {
+          "title": "drone briefly violates latvian airspace latvian armed forces say",
+          "source": "GDELT (dailymaverick.co.za)",
+          "link": "https://www.dailymaverick.co.za/article/2026-11-27-drone-briefly-violates-latvian-airspace-latvian-armed-forces-say/",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "a force posture",
+          "gdelt_subcategory": "Moscow, Moskva, Russia",
+          "gdelt_event_code": "150",
+          "goldstein": -7.2,
+          "route": "gdelt"
+        },
+        {
+          "title": "britain planning attacks on russia zelenskyy wants clash between moscow and nato maria zakharova",
+          "source": "GDELT (dailythepatriot.com)",
+          "link": "https://dailythepatriot.com/britain-planning-attacks-on-russia-zelenskyy-wants-a-clash-between-moscow-and-nato-maria-zakharova/",
+          "categories": [
+            "nato_conflict_risk"
+          ],
+          "tier": "gdelt",
+          "gdelt_category": "a threat",
+          "gdelt_subcategory": "Moscow, Moskva, Russia",
+          "gdelt_event_code": "138",
+          "goldstein": -7.0,
+          "route": "gdelt"
+        }
+      ]
+    },
+    {
+      "ts": "2026-11-27T14:17:37.095053+00:00",
+      "level": "WATCH",
+      "count": 3,
+      "failed_count": 3,
+      "tier3_count": 0,
+      "sources_scanned": 57,
+      "scan_type": "fast",
+      "gdelt_ran": false,
+      "new_items_count": 422,
+      "stale_count": 2,
+      "alert_id": "1127-1417",
+      "items": [
+        {
+          "title": "Estonia's defense tech sector accelerates innovation amid war in Ukraine",
+          "source": "ERR News (Estonia)",
+          "link": "https://news.err.ee/1610208820/estonia-s-defense-tech-sector-accelerates-innovation-amid-war-in-ukraine",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "\u0420\u043e\u0441\u0441\u0438\u044f\u043d \u0445\u043e\u0442\u044f\u0442 \u043b\u0438\u0448\u0430\u0442\u044c \u0441\u0432\u043e\u0431\u043e\u0434\u044b \u0437\u0430 \u0444\u043e\u0442\u043e \u0438 \u0432\u0438\u0434\u0435\u043e \u0430\u0442\u0430\u043a \u0434\u0440\u043e\u043d\u043e\u0432 \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u043f\u044f\u0442\u0438 \u043b\u0435\u0442",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/27/rossiian-khotiat-lishat-svobody-za-foto-i-video-atak-dronov-na-srok-do-piati-let",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        },
+        {
+          "title": "VIDEO. Zilupes iedz\u012bvot\u0101js nakt\u012b, kad Latvijas gais\u0101 telp\u0101 ielidoja drons, video iem\u016b\u017ein\u0101jis bied\u0113jo\u0161u d\u016bko\u0146u",
+          "source": "LA.LV (Latvijas Avize)",
+          "link": "https://www.la.lv/video-zilupes-iedzivotajs-nakti-kad-latvijas-gaisa-telpa-ielidoja-drons-video-iemuzinajis-biedejosu-dukonu",
+          "categories": [
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-27T09:45:56.436481+00:00",
       "level": "WARN",
@@ -966,129 +1099,71 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-24T11:46:26.625135+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 199,
-      "stale_count": 1,
-      "alert_id": "1124-1146",
-      "items": [
-        {
-          "title": "Istorin\u0117 byla: Strasb\u016bro teismas pasisak\u0117 d\u0117l migrant\u0173 i\u0161st\u016bmimo i\u0161 Lietuvos \u012f Baltarusij\u0105",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/istorine-byla-strasburo-teismas-pasisake-del-migrantu-isstumimo-is-lietuvos-i-baltarusija-56-2813276?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Latvia Mulls Possible Border Closure With Russia",
-          "source": "Moscow Times",
-          "link": "https://www.themoscowtimes.com/2026/11/24/latvia-mulls-possible-border-closure-with-russia-a94359",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "Why is\u00a0Estonia closing its border with Russia? Estonian Foreign Minister Margus Tsahkna explains in\u00a0a\u00a0column for Politico.",
-          "source": "Meduza",
-          "link": "https://meduza.io/en/feature/2026/11/24/why-is-estonia-closing-its-border-with-russia-estonian-foreign-minister-margus-tsahkna-explains-in-a-column-for-politico",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
-    },
-    {
-      "ts": "2026-11-24T10:58:33.467076+00:00",
-      "level": "WATCH",
-      "count": 3,
-      "failed_count": 0,
-      "tier3_count": 0,
-      "sources_scanned": 151,
-      "scan_type": "full",
-      "gdelt_ran": false,
-      "new_items_count": 452,
-      "stale_count": 1,
-      "alert_id": "1124-1058",
-      "items": [
-        {
-          "title": "Krievijas uzbrukumos Ukrain\u0101 izmantotos dronos atrastas Lietuvas SIM kartes, zi\u0146o medijs",
-          "source": "TVNET (Latvia)",
-          "link": "https://pmo.ee/8589088",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "NATO to send surveillance aircraft to Poland after Russian missile strikes",
-          "source": "Notes from Poland",
-          "link": "https://notesfrompoland.com/2026/11/24/nato-to-send-surveillance-aircraft-to-poland-after-russian-missile-strikes/",
-          "categories": [
-            "hybrid_incident",
-            "nato_conflict_risk"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        },
-        {
-          "title": "\u201cTele2\u201d SIM kartes atrastas Krievijas dronos: uz\u0146\u0113mums skaidro, k\u0101 t\u0101s tur non\u0101ku\u0161as",
-          "source": "LA.LV (Latvijas Avize)",
-          "link": "https://www.la.lv/tele2-sim-kartes-atrastas-krievijas-dronos-uznemums-skaidro-ka-tas-tur-nonakusas",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-27T17:34:43.009713+00:00",
+      "level": "WATCH",
+      "title": "britain planning attacks on russia zelenskyy wants clash between moscow and nato maria zakharova",
+      "source": "GDELT (dailythepatriot.com)",
+      "link": "https://dailythepatriot.com/britain-planning-attacks-on-russia-zelenskyy-wants-a-clash-between-moscow-and-nato-maria-zakharova/",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "a threat",
+      "gdelt_subcategory": "Moscow, Moskva, Russia",
+      "gdelt_event_code": "138",
+      "goldstein": -7.0
+    },
+    {
+      "ts": "2026-11-27T17:34:43.009713+00:00",
+      "level": "WATCH",
+      "title": "drone briefly violates latvian airspace latvian armed forces say",
+      "source": "GDELT (dailymaverick.co.za)",
+      "link": "https://www.dailymaverick.co.za/article/2026-11-27-drone-briefly-violates-latvian-airspace-latvian-armed-forces-say/",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "a force posture",
+      "gdelt_subcategory": "Moscow, Moskva, Russia",
+      "gdelt_event_code": "150",
+      "goldstein": -7.2
+    },
+    {
+      "ts": "2026-11-27T17:34:43.009713+00:00",
+      "level": "WATCH",
+      "title": "close ukraine skies nato slowed poland down terror in kyiv over shock strike from russia with record iskanders",
+      "source": "GDELT (bankingnews.gr)",
+      "link": "https://www.bankingnews.gr/diethni/articles/913627/close-ukraine-s-skies-nato-slowed-poland-down-terror-in-kyiv-over-a-shock-strike-from-russia-with-record-iskanders",
+      "categories": [
+        "nato_conflict_risk"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "disapproval",
+      "gdelt_subcategory": "Warsaw, (PL67), Poland",
+      "gdelt_event_code": "110",
+      "goldstein": -2.0
+    },
+    {
+      "ts": "2026-11-27T17:34:43.009713+00:00",
+      "level": "WATCH",
+      "title": "nato jets scrambled after drone briefly enters latvian airspace",
+      "source": "GDELT (euronews.com)",
+      "link": "https://www.euronews.com/2026/11/27/nato-jets-scrambled-after-drone-briefly-enters-latvian-airspace",
+      "categories": [
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "gdelt",
+      "gdelt_category": "coercion",
+      "gdelt_subcategory": "Ludza, Ludzas Novads, Latvia",
+      "gdelt_event_code": "172",
+      "goldstein": -5.0
+    },
     {
       "ts": "2026-11-27T09:45:56.470921+00:00",
       "level": "WARN",
@@ -1254,69 +1329,6 @@
       "title": "\u0425\u0435\u043b\u044c\u043c\u0435: \u0441\u0434\u0435\u043b\u043a\u0430 \u0432\u0435\u043b\u0438\u043a\u0438\u0445 \u0434\u0435\u0440\u0436\u0430\u0432 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442 \u0443\u0433\u0440\u043e\u0437\u0443 \u0432\u043e\u0439\u043d\u044b",
       "source": "ERR Russian-language",
       "link": "https://rus.err.ee/1610206774/helme-sdelka-velikih-derzhav-umenshit-ugrozu-vojny",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-26T09:32:12.487307+00:00",
-      "level": "WATCH",
-      "title": "NATO vadovas: tai \u2013 Trumpo i\u0161bandymas Putinui",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/nato-vadovas-tai-trumpo-isbandymas-putinui-57-2814802?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "nato_conflict_risk"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-26T02:17:26.965989+00:00",
-      "level": "WATCH",
-      "title": "nato sees no russian naval buildup in the med after strike near libya but analysts warn of wider risks",
-      "source": "GDELT (breakingdefense.com)",
-      "link": "https://breakingdefense.com/2026/11/nato-sees-no-russian-naval-buildup-in-the-med-after-strike-near-libya-but-analysts-warn-of-wider-risks/",
-      "categories": [
-        "troop_movement",
-        "nato_conflict_risk"
-      ],
-      "tier": "gdelt",
-      "gdelt_category": "fighting",
-      "gdelt_subcategory": "Moscow, Moskva, Russia",
-      "gdelt_event_code": "190",
-      "goldstein": -10.0
-    },
-    {
-      "ts": "2026-11-25T22:36:28.452688+00:00",
-      "level": "WATCH",
-      "title": "Latvija rimtai ruo\u0161iasi dron\u0173 gr\u0117smei \u2013 stato sien\u0105",
-      "source": "15min (Lithuania)",
-      "link": "https://www.15min.lt/naujiena/aktualu/pasaulis/latvija-rimtai-ruosiasi-dronu-gresmei-stato-siena-57-2814648?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-      "categories": [
-        "baltic_specific",
-        "hybrid_incident"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
-    },
-    {
-      "ts": "2026-11-25T09:53:47.416509+00:00",
-      "level": "WATCH",
-      "title": "Kiberdro\u0161\u012bbas liel\u0101kais risks ir p\u0101rliec\u012bba, ka m\u016bs tas neskars",
-      "source": "Dienas Bizness (Latvia)",
-      "link": "https://db.lv/zinas/kiberdrosibas-lielakais-risks-ir-parlieciba-ka-mus-tas-neskars",
       "categories": [
         "baltic_specific",
         "hybrid_incident"
