@@ -1,20 +1,51 @@
 {
   "status_text": "Operating normally",
-  "last_run_utc": "2026-11-28T02:01:32.123901+00:00",
+  "last_run_utc": "2026-11-28T08:59:11.621506+00:00",
   "last_level": "WATCH",
-  "freshness_msg": "Last scan: 5.7h ago",
+  "freshness_msg": "Last scan: 0.0h ago",
   "since": "2026-07-19",
-  "total_scans": 848,
+  "total_scans": 849,
   "quiet_count": 376,
-  "watch_count": 430,
+  "watch_count": 431,
   "warn_count": 42,
   "correction_count": 4,
-  "generated_at": "2026-11-28 07:43 UTC",
+  "generated_at": "2026-11-28 08:59 UTC",
   "total_sources": 151,
   "tier1_sources": 33,
   "tier2_sources": 109,
   "tier3_sources": 9,
   "recent_history": [
+    {
+      "ts": "2026-11-28T08:59:11.638424+00:00",
+      "level": "WATCH",
+      "count": 1,
+      "failed_count": 0,
+      "tier3_count": 0,
+      "sources_scanned": 151,
+      "scan_type": "full",
+      "gdelt_ran": false,
+      "new_items_count": 283,
+      "stale_count": 0,
+      "alert_id": "1128-0859",
+      "items": [
+        {
+          "title": "\u041d\u0430\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0435 \u043d\u0430 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u0435\u00bb",
+          "source": "Novaya Gazeta Europe",
+          "link": "https://novayagazeta.eu/articles/2026/11/28/nastuplenie-na-rassvete",
+          "categories": [
+            "troop_movement",
+            "baltic_specific",
+            "hybrid_incident"
+          ],
+          "tier": "tier2",
+          "gdelt_category": "",
+          "gdelt_subcategory": "",
+          "gdelt_event_code": "",
+          "goldstein": null,
+          "route": "direct"
+        }
+      ]
+    },
     {
       "ts": "2026-11-28T02:01:32.145131+00:00",
       "level": "WATCH",
@@ -920,39 +951,26 @@
           "route": "direct"
         }
       ]
-    },
-    {
-      "ts": "2026-11-24T20:51:19.764923+00:00",
-      "level": "WATCH",
-      "count": 1,
-      "failed_count": 2,
-      "tier3_count": 0,
-      "sources_scanned": 58,
-      "scan_type": "fast",
-      "gdelt_ran": false,
-      "new_items_count": 99,
-      "stale_count": 0,
-      "alert_id": "1124-2051",
-      "items": [
-        {
-          "title": "Prezidentas po svarbaus Lietuvai E\u017dTT sprendimo: Baltarusija s\u0105moningai pasitelk\u0117 migracij\u0105 kaip hibridin\u012f \u012frank\u012f",
-          "source": "15min (Lithuania)",
-          "link": "https://www.15min.lt/naujiena/aktualu/lietuva/prezidentas-po-eztt-sprendimo-baltarusija-samoningai-pasitelke-migracija-kaip-hibridini-iranki-56-2813684?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-          "categories": [
-            "baltic_specific",
-            "hybrid_incident"
-          ],
-          "tier": "tier2",
-          "gdelt_category": "",
-          "gdelt_subcategory": "",
-          "gdelt_event_code": "",
-          "goldstein": null,
-          "route": "direct"
-        }
-      ]
     }
   ],
   "recent_items": [
+    {
+      "ts": "2026-11-28T08:59:11.664810+00:00",
+      "level": "WATCH",
+      "title": "\u041d\u0430\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0435 \u043d\u0430 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u0435\u00bb",
+      "source": "Novaya Gazeta Europe",
+      "link": "https://novayagazeta.eu/articles/2026/11/28/nastuplenie-na-rassvete",
+      "categories": [
+        "troop_movement",
+        "baltic_specific",
+        "hybrid_incident"
+      ],
+      "tier": "tier2",
+      "gdelt_category": "",
+      "gdelt_subcategory": "",
+      "gdelt_event_code": "",
+      "goldstein": null
+    },
     {
       "ts": "2026-11-28T02:01:32.170961+00:00",
       "level": "WATCH",
@@ -1171,23 +1189,6 @@
       "gdelt_subcategory": "",
       "gdelt_event_code": "",
       "goldstein": null
-    },
-    {
-      "ts": "2026-11-26T09:32:12.487307+00:00",
-      "level": "WATCH",
-      "title": "Germany is rearming at record speed. France is worried, while the US backs Berlin",
-      "source": "Defence24",
-      "link": "https://defence24.com/defence-policy/germany-is-rearming-at-record-speed-france-is-worried-while-the-us-backs-berlin",
-      "categories": [
-        "troop_movement",
-        "baltic_specific",
-        "economic_military"
-      ],
-      "tier": "tier2",
-      "gdelt_category": "",
-      "gdelt_subcategory": "",
-      "gdelt_event_code": "",
-      "goldstein": null
     }
   ],
   "recent_corrections": [
@@ -1370,8 +1371,8 @@
   "direct_feed_new_outlets": 26,
   "filter_record": {
     "window_days": 30,
-    "scans": 174,
-    "alerting_scans": 141,
+    "scans": 175,
+    "alerting_scans": 142,
     "held_back_total": 63,
     "held_back_by_reason": [
       {
